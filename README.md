@@ -48,4 +48,4 @@ src/
 
 ## License
 
-Private for now.
+[MIT](LICENSE)
