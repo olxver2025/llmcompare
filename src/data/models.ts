@@ -27,7 +27,7 @@ export const models: Model[] = [
       "math-500": 95.9,
       simpleqa: 52.8,
       "swe-bench-pro": 64.6,
-      "terminal-bench-2": 91.9,
+      "terminal-bench-2-1": 91.9,
       "bfcl-v3": 84.5,
       "lmarena-elo": 1509,
       "arena-hard": 90.9,
@@ -61,7 +61,7 @@ export const models: Model[] = [
       "math-500": 95.9,
       simpleqa: 52.8,
       "swe-bench-pro": 64.6,
-      "terminal-bench-2": 91.9,
+      "terminal-bench-2-1": 91.9,
       "bfcl-v3": 84.5,
       "lmarena-elo": 1509,
       "arena-hard": 90.9,
@@ -94,7 +94,7 @@ export const models: Model[] = [
       "math-500": 87.4,
       simpleqa: 49.1,
       "swe-bench-pro": 63.4,
-      "terminal-bench-2": 87.4,
+      "terminal-bench-2-1": 87.4,
       "bfcl-v3": 83.1,
       "lmarena-elo": 1505,
       "arena-hard": 90.8,
@@ -126,7 +126,7 @@ export const models: Model[] = [
       "math-500": 83.8,
       simpleqa: 44.7,
       "swe-bench-pro": 62.7,
-      "terminal-bench-2": 84.7,
+      "terminal-bench-2-1": 84.7,
       "bfcl-v3": 78.5,
       "lmarena-elo": 1461,
       "arena-hard": 82.2,
@@ -160,7 +160,7 @@ export const models: Model[] = [
       simpleqa: 50.3,
       "swe-bench-verified": 74.9,
       "swe-bench-pro": 58.6,
-      "terminal-bench-2": 82,
+      "terminal-bench-2-1": 84.3,
       "aider-polyglot": 69.6,
       "bfcl-v3": 88.7,
       "lmarena-elo": 1506,
@@ -222,6 +222,7 @@ export const models: Model[] = [
       simpleqa: 48,
       "swe-bench-verified": 68.2,
       "swe-bench-pro": 57.7,
+      "terminal-bench-2-1": 78.3,
       "aider-polyglot": 62.2,
       "bfcl-v3": 83.8,
       "lmarena-elo": 1465,
@@ -253,6 +254,7 @@ export const models: Model[] = [
       "math-500": 87.2,
       simpleqa: 44,
       "swe-bench-verified": 72.8,
+      "terminal-bench-2-1": 35.2,
       livecodebench: 72,
       "aider-polyglot": 67.5,
       "bfcl-v3": 81.7,
@@ -284,6 +286,7 @@ export const models: Model[] = [
       "math-500": 72.6,
       simpleqa: 34.4,
       "bfcl-v3": 69.3,
+      "terminal-bench-2-1": 3.7,
       "lmarena-elo": 1380,
       "arena-hard": 67.9,
     },
@@ -437,7 +440,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 0.4, outputPer1M: 1.6 },
     speed: { tokensPerSec: 130, ttftSeconds: 0.25 },
-    benchmarks: {},
+    benchmarks: {
+      "terminal-bench-2-1": 10.1,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
     },
@@ -456,7 +461,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 0.1, outputPer1M: 0.4 },
     speed: { tokensPerSec: 160, ttftSeconds: 0.18 },
-    benchmarks: {},
+    benchmarks: {
+      "terminal-bench-2-1": 3.7,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
     },
@@ -478,6 +485,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 150, ttftSeconds: 0.2 },
     benchmarks: {
       "mmlu-pro": 63,
+      "terminal-bench-2-1": 5.6,
       "lmarena-elo": 1270,
     },
     links: {
@@ -517,6 +525,7 @@ export const models: Model[] = [
       "arena-hard": 93.2,
       cursorbench: 70,
       "vibe-code-bench": 88.4,
+      "terminal-bench-2-1": 89.1,
       "webdev-arena": 1712,
     },
     links: {
@@ -548,7 +557,7 @@ export const models: Model[] = [
       "swe-bench-verified": 82.1,
       "swe-bench-pro": 80,
       livecodebench: 86,
-      "terminal-bench-2": 84.3,
+      "terminal-bench-2-1": 84.3,
       "aider-polyglot": 77.3,
       "bfcl-v3": 93.4,
       "lmarena-elo": 1510,
@@ -586,7 +595,7 @@ export const models: Model[] = [
       "swe-bench-pro": 69.2,
       "swe-bench-multilingual": 84.4,
       livecodebench: 78.5,
-      "terminal-bench-2": 74.6,
+      "terminal-bench-2-1": 84.6,
       "aider-polyglot": 73.2,
       "bfcl-v3": 89.3,
       "lmarena-elo": 1503,
@@ -622,7 +631,7 @@ export const models: Model[] = [
       "swe-bench-pro": 63.2,
       "swe-bench-multilingual": 78.3,
       livecodebench: 74,
-      "terminal-bench-2": 80.4,
+      "terminal-bench-2-1": 80.4,
       "aider-polyglot": 67.1,
       "bfcl-v3": 85.6,
       "lmarena-elo": 1485,
@@ -695,6 +704,7 @@ export const models: Model[] = [
       "arena-hard": 81.8,
       "swe-rebench": 60.7,
       "vibe-code-bench": 51.48,
+      "terminal-bench-2-1": 71.2,
       "webdev-arena": 1524,
     },
     links: {
@@ -721,6 +731,7 @@ export const models: Model[] = [
       "math-500": 72,
       simpleqa: 30.5,
       "bfcl-v3": 63.5,
+      "terminal-bench-2-1": 44.2,
       "lmarena-elo": 1360,
       "arena-hard": 63.3,
     },
@@ -742,7 +753,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 3, outputPer1M: 15 },
     speed: { tokensPerSec: 95, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "terminal-bench-2-1": 36.3,
+    },
     links: {
       docs: "https://platform.claude.com/docs/en/about-claude/models/overview",
     },
@@ -761,7 +774,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 0.8, outputPer1M: 4 },
     speed: { tokensPerSec: 160, ttftSeconds: 0.18 },
-    benchmarks: {},
+    benchmarks: {
+      "terminal-bench-2-1": 10.1,
+    },
     links: {
       docs: "https://platform.claude.com/docs/en/about-claude/pricing",
     },
@@ -790,6 +805,7 @@ export const models: Model[] = [
       "math-500": 99.4,
       simpleqa: 53.7,
       "swe-bench-verified": 76,
+      "terminal-bench-2-1": 73.8,
       "aider-polyglot": 71.6,
       "bfcl-v3": 90.3,
       "lmarena-elo": 1504,
@@ -820,6 +836,7 @@ export const models: Model[] = [
       "math-500": 85.6,
       simpleqa: 50.9,
       "bfcl-v3": 83.5,
+      "terminal-bench-2-1": 73.9,
       "lmarena-elo": 1492,
       "arena-hard": 87.9,
     },
@@ -851,6 +868,7 @@ export const models: Model[] = [
       "arena-hard": 91.5,
       cursorbench: 53.5,
       "vibe-code-bench": 57.32,
+      "terminal-bench-2-1": 78,
       "webdev-arena": 1528,
     },
     links: {
@@ -877,6 +895,7 @@ export const models: Model[] = [
       "math-500": 86.9,
       simpleqa: 48.6,
       "bfcl-v3": 81.4,
+      "terminal-bench-2-1": 78.7,
       "lmarena-elo": 1465,
       "arena-hard": 82.9,
     },
@@ -900,7 +919,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 220, ttftSeconds: 0.18 },
     benchmarks: {
       "swe-bench-pro": 54.2,
-      "terminal-bench-2": 54,
+      "terminal-bench-2-1": 54,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -927,6 +946,7 @@ export const models: Model[] = [
       "math-500": 86.4,
       simpleqa: 42,
       "swe-bench-verified": 63.8,
+      "terminal-bench-2-1": 28.5,
       "aider-polyglot": 57.6,
       "bfcl-v3": 79.4,
       "lmarena-elo": 1459,
@@ -987,6 +1007,7 @@ export const models: Model[] = [
       "lmarena-elo": 1449,
       "arena-hard": 81.3,
       "swe-rebench": 41.6,
+      "terminal-bench-2-1": 43.4,
       "webdev-arena": 1364,
     },
     links: {
@@ -1009,7 +1030,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Google AI / self-host", inputPer1M: 0.15, outputPer1M: 0.6 },
     speed: { tokensPerSec: 95, ttftSeconds: 0.28 },
-    benchmarks: {},
+    benchmarks: {
+      "terminal-bench-2-1": 39,
+    },
     links: {
       docs: "https://ai.google.dev/gemma",
       modelCard: "https://huggingface.co/google",
@@ -1062,7 +1085,7 @@ export const models: Model[] = [
       "swe-bench-pro": 64.7,
       "swe-bench-multilingual": 78,
       livecodebench: 78,
-      "terminal-bench-2": 83.3,
+      "terminal-bench-2-1": 83.3,
       "aider-polyglot": 71.7,
       "bfcl-v3": 88.1,
       "lmarena-elo": 1505,
@@ -1091,6 +1114,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 110, ttftSeconds: 0.3 },
     benchmarks: {
       scicode: 47.3,
+      "terminal-bench-2-1": 39.7,
     },
     links: {
       docs: "https://docs.x.ai/developers/models/grok-4.3",
@@ -1110,7 +1134,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "xAI", inputPer1M: 1, outputPer1M: 2 },
     speed: { tokensPerSec: 120, ttftSeconds: 0.28 },
-    benchmarks: {},
+    benchmarks: {
+      "terminal-bench-2-1": 52.1,
+    },
     links: {
       docs: "https://docs.x.ai/developers/models",
     },
@@ -1222,7 +1248,7 @@ export const models: Model[] = [
       "math-500": 86.8,
       simpleqa: 48.3,
       "swe-bench-pro": 61.5,
-      "terminal-bench-2": 80,
+      "terminal-bench-2-1": 80,
       "bfcl-v3": 82.2,
       "lmarena-elo": 1496,
       "arena-hard": 89.6,
@@ -1253,6 +1279,7 @@ export const models: Model[] = [
       "math-500": 75.4,
       simpleqa: 40,
       "swe-bench-verified": 55,
+      "terminal-bench-2-1": 7.9,
       "aider-polyglot": 49.1,
       "bfcl-v3": 73.6,
       "lmarena-elo": 1410,
@@ -1284,6 +1311,7 @@ export const models: Model[] = [
       "math-500": 72.2,
       simpleqa: 32.5,
       "bfcl-v3": 69.2,
+      "terminal-bench-2-1": 3.7,
       "lmarena-elo": 1385,
       "arena-hard": 69,
     },
@@ -1312,6 +1340,7 @@ export const models: Model[] = [
       "aime-2025": 29.8,
       "math-500": 72,
       simpleqa: 22.6,
+      "terminal-bench-2-1": 4.9,
       "lmarena-elo": 1320,
       "arena-hard": 55.6,
     },
@@ -1432,7 +1461,7 @@ export const models: Model[] = [
       "swe-bench-pro": 55.4,
       "swe-bench-multilingual": 76.2,
       livecodebench: 93.5,
-      "terminal-bench-2": 67.9,
+      "terminal-bench-2-1": 67.9,
       "aider-polyglot": 70.9,
       "bfcl-v3": 85.3,
       "lmarena-elo": 1467,
@@ -1469,7 +1498,7 @@ export const models: Model[] = [
       "swe-bench-pro": 52.6,
       "swe-bench-multilingual": 73.3,
       livecodebench: 91.6,
-      "terminal-bench-2": 82.7,
+      "terminal-bench-2-1": 82.7,
       nl2repo: 54.2,
       "bfcl-v3": 77.4,
       "lmarena-elo": 1445,
@@ -1502,6 +1531,7 @@ export const models: Model[] = [
       "math-500": 81.6,
       simpleqa: 40.2,
       "swe-bench-verified": 67.8,
+      "terminal-bench-2-1": 46.8,
       livecodebench: 74.1,
       "aider-polyglot": 65.3,
       "bfcl-v3": 76.9,
@@ -1530,7 +1560,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "DeepSeek / OpenRouter (ref.)", inputPer1M: 0.25, outputPer1M: 0.95 },
     speed: { tokensPerSec: 85, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "terminal-bench-2-1": 44.9,
+    },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
       docs: "https://api-docs.deepseek.com/",
@@ -1591,7 +1623,7 @@ export const models: Model[] = [
       "swe-bench-verified": 80.4,
       "swe-bench-pro": 60.6,
       "swe-bench-multilingual": 78.3,
-      "terminal-bench-2": 69.7,
+      "terminal-bench-2-1": 74.5,
       "aider-polyglot": 73.7,
       "bfcl-v3": 88.9,
       scicode: 53.5,
@@ -1623,6 +1655,7 @@ export const models: Model[] = [
       "math-500": 84.7,
       simpleqa: 45.6,
       "swe-bench-pro": 50.9,
+      "terminal-bench-2-1": 51.3,
       "bfcl-v3": 79.1,
       "lmarena-elo": 1450,
       "arena-hard": 81.1,
@@ -1653,6 +1686,7 @@ export const models: Model[] = [
       "math-500": 77.8,
       simpleqa: 37.4,
       "swe-bench-verified": 61.5,
+      "terminal-bench-2-1": 12,
       livecodebench: 68.2,
       "aider-polyglot": 58.9,
       "bfcl-v3": 72,
@@ -1713,6 +1747,7 @@ export const models: Model[] = [
       "math-500": 83.4,
       simpleqa: 26.8,
       "bfcl-v3": 62.1,
+      "terminal-bench-2-1": 5.2,
       "lmarena-elo": 1350,
       "arena-hard": 60.7,
     },
@@ -1743,6 +1778,7 @@ export const models: Model[] = [
       "math-500": 72,
       simpleqa: 34.2,
       "bfcl-v3": 68.9,
+      "terminal-bench-2-1": 12,
       "lmarena-elo": 1428,
       "arena-hard": 75.8,
     },
@@ -1766,7 +1802,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 1.5, outputPer1M: 7.5 },
     speed: { tokensPerSec: 80, ttftSeconds: 0.4 },
-    benchmarks: {},
+    benchmarks: {
+      "terminal-bench-2-1": 50.6,
+    },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
       announcement: "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/",
@@ -1786,7 +1824,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 0.15, outputPer1M: 0.6 },
     speed: { tokensPerSec: 140, ttftSeconds: 0.2 },
-    benchmarks: {},
+    benchmarks: {
+      "terminal-bench-2-1": 21,
+    },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
     },
@@ -1806,7 +1846,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 0.2, outputPer1M: 0.2 },
     speed: { tokensPerSec: 130, ttftSeconds: 0.2 },
-    benchmarks: {},
+    benchmarks: {
+      "terminal-bench-2-1": 9.7,
+    },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
     },
@@ -1826,7 +1868,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 0.15, outputPer1M: 0.15 },
     speed: { tokensPerSec: 150, ttftSeconds: 0.18 },
-    benchmarks: {},
+    benchmarks: {
+      "terminal-bench-2-1": 4.1,
+    },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
     },
@@ -1865,7 +1909,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 2, outputPer1M: 5 },
     speed: { tokensPerSec: 60, ttftSeconds: 0.8 },
-    benchmarks: {},
+    benchmarks: {
+      "terminal-bench-2-1": 12.4,
+    },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
     },
@@ -1884,7 +1930,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 0.5, outputPer1M: 1.5 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.55 },
-    benchmarks: {},
+    benchmarks: {
+      "terminal-bench-2-1": 4.5,
+    },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
     },
@@ -1904,7 +1952,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 0.4, outputPer1M: 2 },
     speed: { tokensPerSec: 85, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "terminal-bench-2-1": 30.3,
+    },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
     },
@@ -1927,6 +1977,7 @@ export const models: Model[] = [
       "mmlu-pro": 77.2,
       "math-500": 83.2,
       simpleqa: 27.2,
+      "terminal-bench-2-1": 13.9,
       "lmarena-elo": 1401,
       "arena-hard": 70,
     },
@@ -1952,6 +2003,7 @@ export const models: Model[] = [
     benchmarks: {
       "mmlu-pro": 72,
       "math-500": 76.4,
+      "terminal-bench-2-1": 5.6,
     },
     links: {
       modelCard: "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
@@ -2033,6 +2085,7 @@ export const models: Model[] = [
       "arena-hard": 90.3,
       cursorbench: 60.8,
       "vibe-code-bench": 84.96,
+      "terminal-bench-2-1": 88.3,
       "webdev-arena": 1682,
     },
     links: {
@@ -2062,6 +2115,7 @@ export const models: Model[] = [
       simpleqa: 45.5,
       "swe-bench-pro": 50.7,
       "swe-bench-multilingual": 73,
+      "terminal-bench-2-1": 45.7,
       "bfcl-v3": 77.7,
       scicode: 48.7,
       "lmarena-elo": 1451,
@@ -2095,7 +2149,7 @@ export const models: Model[] = [
       simpleqa: 45.8,
       "swe-bench-verified": 72,
       "swe-bench-pro": 62.1,
-      "terminal-bench-2": 81,
+      "terminal-bench-2-1": 82.7,
       "aider-polyglot": 66.9,
       "bfcl-v3": 84.1,
       "lmarena-elo": 1488,
@@ -2164,6 +2218,7 @@ export const models: Model[] = [
       "lmarena-elo": 1445,
       "arena-hard": 80.4,
       "swe-rebench": 58.7,
+      "terminal-bench-2-1": 45.3,
       "webdev-arena": 1433,
     },
     links: {
@@ -2267,6 +2322,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 55, ttftSeconds: 0.5 },
     benchmarks: {
       "swe-bench-verified": 62,
+      "terminal-bench-2-1": 50.2,
       "aider-polyglot": 56.2,
       "bfcl-v3": 67.7,
       "lmarena-elo": 1420,
@@ -2297,7 +2353,7 @@ export const models: Model[] = [
       "math-500": 82.8,
       simpleqa: 41.2,
       "swe-bench-multilingual": 67.7,
-      "terminal-bench-2": 56.4,
+      "terminal-bench-2-1": 56.4,
       "bfcl-v3": 76.6,
       scicode: 44.6,
       "lmarena-elo": 1418,
@@ -2359,7 +2415,7 @@ export const models: Model[] = [
       "swe-bench-verified": 87.6,
       "swe-bench-pro": 64.3,
       livecodebench: 79,
-      "terminal-bench-2": 69.4,
+      "terminal-bench-2-1": 83.1,
       "aider-polyglot": 76.1,
       "bfcl-v3": 91.1,
       "lmarena-elo": 1504,
@@ -2427,7 +2483,7 @@ export const models: Model[] = [
       simpleqa: 54.7,
       "swe-bench-verified": 83,
       "swe-bench-pro": 80.3,
-      "terminal-bench-2": 88,
+      "terminal-bench-2-1": 88,
       "aider-polyglot": 76.5,
       "bfcl-v3": 93,
       "lmarena-elo": 1512,
@@ -2457,6 +2513,7 @@ export const models: Model[] = [
       "math-500": 81.9,
       simpleqa: 41.8,
       "swe-bench-verified": 77.2,
+      "terminal-bench-2-1": 55.8,
       "aider-polyglot": 72,
       "bfcl-v3": 80.7,
       "lmarena-elo": 1420,
@@ -2505,6 +2562,7 @@ export const models: Model[] = [
       "math-500": 83.5,
       simpleqa: 44.5,
       "swe-bench-verified": 68,
+      "terminal-bench-2-1": 59.2,
       "aider-polyglot": 62.8,
       "bfcl-v3": 81.2,
       "lmarena-elo": 1461,
@@ -2534,6 +2592,7 @@ export const models: Model[] = [
       "math-500": 72,
       simpleqa: 31.7,
       "bfcl-v3": 64.6,
+      "terminal-bench-2-1": 60.7,
       "lmarena-elo": 1390,
       "arena-hard": 68.7,
     },
@@ -2591,6 +2650,7 @@ export const models: Model[] = [
       "math-500": 80.2,
       simpleqa: 26.2,
       "bfcl-v3": 61.2,
+      "terminal-bench-2-1": 4.5,
       "lmarena-elo": 1318,
       "arena-hard": 55.2,
     },
@@ -2680,6 +2740,7 @@ export const models: Model[] = [
       "math-500": 72,
       simpleqa: 31.1,
       "bfcl-v3": 65.2,
+      "terminal-bench-2-1": 26.2,
       "lmarena-elo": 1368,
       "arena-hard": 64.4,
     },
@@ -2705,6 +2766,7 @@ export const models: Model[] = [
     benchmarks: {
       "mmlu-pro": 73.6,
       "math-500": 77.8,
+      "terminal-bench-2-1": 13.9,
       "lmarena-elo": 1315,
       "arena-hard": 54.8,
     },
@@ -2732,6 +2794,7 @@ export const models: Model[] = [
       "math-500": 81.1,
       simpleqa: 41.1,
       "bfcl-v3": 75.4,
+      "terminal-bench-2-1": 31.1,
       "lmarena-elo": 1421,
       "arena-hard": 75.1,
     },
@@ -3005,6 +3068,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 90, ttftSeconds: 0.28 },
     benchmarks: {
       "mmlu-pro": 66.9,
+      "terminal-bench-2-1": 4.5,
       "lmarena-elo": 1356,
       "arena-hard": 63.3,
     },
@@ -3574,6 +3638,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 117, ttftSeconds: 0.13 },
     benchmarks: {
       "bfcl-v3": 68.3,
+      "terminal-bench-2-1": 3.4,
     },
     links: {
       modelCard: "https://huggingface.co/ibm-granite/granite-4.1-8b",
@@ -3638,7 +3703,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "NVIDIA NIM", inputPer1M: 0.1, outputPer1M: 0.5 },
     speed: { tokensPerSec: 68, ttftSeconds: 0.4 },
-    benchmarks: {},
+    benchmarks: {
+      "terminal-bench-2-1": 38.6,
+    },
     links: {
       docs: "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-super-120b-a12b",
       modelCard: "https://huggingface.co/nvidia",
@@ -3937,6 +4004,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 90, ttftSeconds: 0.3 },
     benchmarks: {
       "swe-bench-verified": 28.6,
+      "terminal-bench-2-1": 12,
     },
     links: {
       docs: "https://developers.upstage.ai/",
@@ -3982,7 +4050,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 90, ttftSeconds: 0.35 },
     benchmarks: {
       "swe-bench-multilingual": 79.8,
-      "terminal-bench-2": 69.3,
+      "terminal-bench-2-1": 76,
       cursorbench: 56.1,
       "vibe-code-bench": 49.61,
     },
@@ -4007,7 +4075,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 160, ttftSeconds: 0.2 },
     benchmarks: {
       "swe-bench-multilingual": 79.8,
-      "terminal-bench-2": 69.3,
+      "terminal-bench-2-1": 76,
       cursorbench: 56.1,
       "vibe-code-bench": 49.61,
     },
@@ -4032,7 +4100,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 85, ttftSeconds: 0.4 },
     benchmarks: {
       "swe-bench-multilingual": 73.7,
-      "terminal-bench-2": 61.7,
+      "terminal-bench-2-1": 61.7,
       "swe-rebench": 58,
     },
     links: {
@@ -4055,7 +4123,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 140, ttftSeconds: 0.25 },
     benchmarks: {
       "swe-bench-multilingual": 73.7,
-      "terminal-bench-2": 61.7,
+      "terminal-bench-2-1": 61.7,
     },
     links: {
       announcement: "https://cursor.com/changelog/composer-2",
@@ -4085,7 +4153,7 @@ export const models: Model[] = [
       "swe-bench-pro": 64.7,
       "swe-bench-multilingual": 78,
       livecodebench: 78,
-      "terminal-bench-2": 83.3,
+      "terminal-bench-2-1": 83.3,
       "aider-polyglot": 72,
       "bfcl-v3": 87,
       "lmarena-elo": 1505,
@@ -4121,7 +4189,7 @@ export const models: Model[] = [
       "swe-bench-pro": 64.7,
       "swe-bench-multilingual": 78,
       livecodebench: 78,
-      "terminal-bench-2": 83.3,
+      "terminal-bench-2-1": 83.3,
       "aider-polyglot": 70.3,
       "bfcl-v3": 89,
       "lmarena-elo": 1505,
@@ -5472,6 +5540,7 @@ export const models: Model[] = [
       "mmlu-pro": 81.9,
       "gpqa-diamond": 73.8,
       "swe-bench-verified": 68.4,
+      "terminal-bench-2-1": 6.7,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct",
@@ -5580,6 +5649,7 @@ export const models: Model[] = [
       "gpqa-diamond": 78.8,
       "lmarena-elo": 1455,
       "vibe-code-bench": 37.89,
+      "terminal-bench-2-1": 65.9,
       "webdev-arena": 1510,
     },
     links: {
@@ -5624,6 +5694,7 @@ export const models: Model[] = [
     benchmarks: {
       "gpqa-diamond": 87.4,
       "swe-rebench": 51.9,
+      "terminal-bench-2-1": 55.4,
       nl2repo: 39.8,
       "webdev-arena": 1398,
     },
@@ -5868,6 +5939,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 100, ttftSeconds: 0.3 },
     benchmarks: {
       "gpqa-diamond": 86.7,
+      "terminal-bench-2-1": 71.7,
     },
     links: {
       docs: "https://cloud.tencent.com/document/product/1729",
@@ -5889,6 +5961,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 140, ttftSeconds: 0.2 },
     benchmarks: {
       "gpqa-diamond": 59.3,
+      "terminal-bench-2-1": 24.3,
     },
     links: {
       docs: "https://www.inclusionai.com/",

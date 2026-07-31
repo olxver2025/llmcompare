@@ -111,16 +111,16 @@ export const BENCHMARKS: Record<BenchmarkId, BenchmarkMeta> = {
     category: "coding",
     sourceUrl: "https://livecodebench.github.io/",
   },
-  "terminal-bench-2": {
-    id: "terminal-bench-2",
-    name: "Terminal-Bench 2.0",
+  "terminal-bench-2-1": {
+    id: "terminal-bench-2-1",
+    name: "Terminal-Bench 2.1",
     shortName: "TermBench",
     description:
-      "Agentic software engineering in real terminal environments — CLI workflows, debugging, and end-to-end task completion.",
+      "Verified refresh of Terminal-Bench 2.0 — 89 agentic terminal tasks across software engineering, sysadmin, data, and security, with environment/instruction fixes so scores reflect agent capability.",
     higherIsBetter: true,
     unit: "percent",
     category: "coding",
-    sourceUrl: "https://www.tbench.ai/",
+    sourceUrl: "https://www.tbench.ai/leaderboard/terminal-bench/2.1",
   },
   "aider-polyglot": {
     id: "aider-polyglot",
@@ -257,7 +257,7 @@ export const BENCHMARK_CATEGORIES = [
       "swe-bench-pro",
       "swe-bench-multilingual",
       "livecodebench",
-      "terminal-bench-2",
+      "terminal-bench-2-1",
       "aider-polyglot",
       "bfcl-v3",
       "scicode",

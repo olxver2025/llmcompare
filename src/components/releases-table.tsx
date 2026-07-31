@@ -34,7 +34,7 @@ const TABLE_BENCHMARKS: BenchmarkId[] = [
   "aime-2025",
   "swe-bench-verified",
   "swe-bench-pro",
-  "terminal-bench-2",
+  "terminal-bench-2-1",
   "cursorbench",
   "aider-polyglot",
   "lmarena-elo",
