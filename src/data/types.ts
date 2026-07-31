@@ -54,3 +54,46 @@ export type BenchmarkMeta = {
   category: "reasoning" | "coding" | "arena";
   sourceUrl: string;
 };
+
+export type ImageBenchmarkId = "image-arena-elo";
+export type VideoBenchmarkId = "video-arena-elo";
+
+type MediaModelBase = {
+  slug: string;
+  name: string;
+  organization: string;
+  releaseDate: string;
+  openSource: boolean;
+  license?: string;
+  links: { docs?: string; modelCard?: string; announcement?: string };
+  summary: string;
+};
+
+export type ImageModel = MediaModelBase & {
+  specs: {
+    maxResolution: { width: number; height: number };
+    secondsPerImage?: number;
+  };
+  pricing?: { provider: string; perImage: number };
+  benchmarks: Partial<Record<ImageBenchmarkId, number>>;
+};
+
+export type VideoModel = MediaModelBase & {
+  specs: {
+    maxResolution: { width: number; height: number };
+    maxDurationSeconds: number;
+    secondsPerVideoSecond?: number;
+  };
+  pricing?: { provider: string; perSecond: number };
+  benchmarks: Partial<Record<VideoBenchmarkId, number>>;
+};
+
+export type MediaBenchmarkMeta = {
+  id: ImageBenchmarkId | VideoBenchmarkId;
+  name: string;
+  shortName: string;
+  description: string;
+  higherIsBetter: boolean;
+  unit: "elo";
+  sourceUrl: string;
+};
