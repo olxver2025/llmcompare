@@ -9,7 +9,7 @@ export type BenchmarkId =
   | "swe-bench-pro"
   | "swe-bench-multilingual"
   | "livecodebench"
-  | "terminal-bench-2"
+  | "terminal-bench-2-1"
   | "aider-polyglot"
   | "bfcl-v3"
   | "scicode"
