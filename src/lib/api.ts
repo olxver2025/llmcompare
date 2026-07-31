@@ -1,6 +1,18 @@
 import { BENCHMARKS, BENCHMARK_IDS } from "@/data/benchmarks";
-import type { BenchmarkId, Model } from "@/data/types";
+import type { BenchmarkId, ImageModel, Model, VideoModel } from "@/data/types";
 import { MODEL_FAMILIES, modelFamilyId, modelFamilyLabel } from "@/lib/model-family";
+import {
+  compareSlug as mediaCompareSlug,
+  generateMediaVerdict,
+  getAllImageModels,
+  getAllVideoModels,
+  getImageModel,
+  getImageOrganizations,
+  getVideoModel,
+  getVideoOrganizations,
+  mediaCompareBreakdown,
+  type MediaKind,
+} from "@/lib/media-models";
 import {
   compareBreakdown,
   DATA_FRESHNESS,
@@ -56,6 +68,45 @@ export type ModelQuery = {
   order: "asc" | "desc";
   page: number;
   limit: number;
+};
+
+export type MediaModelSort =
+  | "name"
+  | "organization"
+  | "releaseDate"
+  | "slug"
+  | "price"
+  | "elo";
+
+export type MediaModelQuery = {
+  q?: string;
+  organization?: string;
+  openSource?: boolean;
+  sort: MediaModelSort;
+  order: "asc" | "desc";
+  page: number;
+  limit: number;
+};
+
+export type ApiImageModel = ImageModel & {
+  derived: {
+    benchmarkCount: number;
+  };
+};
+
+export type ApiVideoModel = VideoModel & {
+  derived: {
+    benchmarkCount: number;
+  };
+};
+
+type MediaFilterable = {
+  slug: string;
+  name: string;
+  organization: string;
+  releaseDate: string;
+  openSource: boolean;
+  summary: string;
 };
 
 export class ApiQueryError extends Error {
@@ -136,15 +187,19 @@ export function handleApiQueryError(error: unknown) {
 
 export function apiIndex() {
   const models = getAllModels();
+  const imageModels = getAllImageModels();
+  const videoModels = getAllVideoModels();
   return {
     name: "LLMcompare API",
     version: API_VERSION,
     description:
-      "Read-only REST API for the LLMcompare model catalog, benchmarks, releases, organizations, and comparisons.",
+      "Read-only REST API for the LLMcompare model catalog, image and video model catalogs, benchmarks, releases, organizations, and comparisons.",
     dataFreshness: DATA_FRESHNESS,
     statistics: {
       models: models.length,
       openWeightModels: models.filter((model) => model.openSource).length,
+      imageModels: imageModels.length,
+      videoModels: videoModels.length,
       organizations: new Set(models.map((model) => model.organization)).size,
       benchmarks: BENCHMARK_IDS.length,
     },
@@ -152,6 +207,14 @@ export function apiIndex() {
       models: `${API_BASE_PATH}/models`,
       model: `${API_BASE_PATH}/models/{slug}`,
       relatedModels: `${API_BASE_PATH}/models/{slug}/related`,
+      imageModels: `${API_BASE_PATH}/image-models`,
+      imageModel: `${API_BASE_PATH}/image-models/{slug}`,
+      imageCompare: `${API_BASE_PATH}/image-models/compare?a={slug}&b={slug}`,
+      imageCompareBySlug: `${API_BASE_PATH}/image-models/compare/{a}-vs-{b}`,
+      videoModels: `${API_BASE_PATH}/video-models`,
+      videoModel: `${API_BASE_PATH}/video-models/{slug}`,
+      videoCompare: `${API_BASE_PATH}/video-models/compare?a={slug}&b={slug}`,
+      videoCompareBySlug: `${API_BASE_PATH}/video-models/compare/{a}-vs-{b}`,
       benchmarks: `${API_BASE_PATH}/benchmarks`,
       benchmark: `${API_BASE_PATH}/benchmarks/{id}`,
       compare: `${API_BASE_PATH}/compare?a={slug}&b={slug}`,
@@ -370,7 +433,10 @@ export function filterAndSortModels(query: ModelQuery, source = getAllModels()) 
   return filtered;
 }
 
-export function paginateModels(models: Model[], query: ModelQuery) {
+export function paginateModels<T extends { slug: string }>(
+  models: T[],
+  query: { page: number; limit: number }
+) {
   const start = (query.page - 1) * query.limit;
   return {
     items: models.slice(start, start + query.limit),
@@ -383,6 +449,164 @@ export function paginateModels(models: Model[], query: ModelQuery) {
       hasPreviousPage: query.page > 1,
     },
   };
+}
+
+const MEDIA_SORT_KEYS = new Set<MediaModelSort>([
+  "name",
+  "organization",
+  "releaseDate",
+  "slug",
+  "price",
+  "elo",
+]);
+
+export function parseMediaModelQuery(
+  params: URLSearchParams,
+  defaults: Partial<Pick<MediaModelQuery, "sort" | "order" | "limit">> = {}
+): MediaModelQuery {
+  const sortValue = queryValue(params, "sort") ?? defaults.sort ?? "elo";
+  if (!MEDIA_SORT_KEYS.has(sortValue as MediaModelSort)) {
+    throw new ApiQueryError("INVALID_QUERY", "sort is not a supported field.", {
+      parameter: "sort",
+      value: sortValue,
+    });
+  }
+
+  const orderValue = queryValue(params, "order") ?? defaults.order ?? "desc";
+  if (orderValue !== "asc" && orderValue !== "desc") {
+    throw new ApiQueryError("INVALID_QUERY", "order must be asc or desc.", {
+      parameter: "order",
+      value: orderValue,
+    });
+  }
+
+  const license = queryValue(params, "license");
+  const openSource = parseBoolean(queryValue(params, "openSource"), "openSource");
+  if (license && license !== "open" && license !== "closed") {
+    throw new ApiQueryError("INVALID_QUERY", "license must be open or closed.", {
+      parameter: "license",
+      value: license,
+    });
+  }
+
+  return {
+    q: queryValue(params, "q")?.slice(0, 200),
+    organization: queryValue(params, "organization") ?? queryValue(params, "org"),
+    openSource: license === "open" ? true : license === "closed" ? false : openSource,
+    sort: sortValue as MediaModelSort,
+    order: orderValue,
+    page: parsePositiveInteger(queryValue(params, "page"), "page", 1),
+    limit: parsePositiveInteger(
+      queryValue(params, "limit"),
+      "limit",
+      defaults.limit ?? DEFAULT_PAGE_SIZE,
+      MAX_PAGE_SIZE
+    ),
+  };
+}
+
+function mediaSortValue<T extends MediaFilterable>(
+  model: T,
+  sort: MediaModelSort,
+  accessors: {
+    priceOf: (model: T) => number | undefined;
+    eloOf: (model: T) => number | undefined;
+  }
+): number | string | undefined {
+  switch (sort) {
+    case "name":
+      return model.name;
+    case "organization":
+      return model.organization;
+    case "releaseDate":
+      return model.releaseDate;
+    case "slug":
+      return model.slug;
+    case "price":
+      return accessors.priceOf(model);
+    case "elo":
+      return accessors.eloOf(model);
+  }
+}
+
+export function filterAndSortMediaModels<T extends MediaFilterable>(
+  query: MediaModelQuery,
+  source: T[],
+  accessors: {
+    priceOf: (model: T) => number | undefined;
+    eloOf: (model: T) => number | undefined;
+  }
+) {
+  const normalizedQuery = query.q?.toLowerCase();
+  const filtered = source.filter((model) => {
+    if (
+      normalizedQuery &&
+      ![model.name, model.organization, model.slug, model.summary]
+        .join(" ")
+        .toLowerCase()
+        .includes(normalizedQuery)
+    ) {
+      return false;
+    }
+    if (query.organization && model.organization !== query.organization) return false;
+    if (query.openSource !== undefined && model.openSource !== query.openSource) return false;
+    return true;
+  });
+
+  const direction = query.order === "asc" ? 1 : -1;
+  filtered.sort((a, b) => {
+    const aValue = mediaSortValue(a, query.sort, accessors);
+    const bValue = mediaSortValue(b, query.sort, accessors);
+    if (aValue === undefined && bValue === undefined) return a.slug.localeCompare(b.slug);
+    if (aValue === undefined) return 1;
+    if (bValue === undefined) return -1;
+    const comparison =
+      typeof aValue === "string" && typeof bValue === "string"
+        ? aValue.localeCompare(bValue)
+        : Number(aValue) - Number(bValue);
+    return comparison === 0 ? a.slug.localeCompare(b.slug) : comparison * direction;
+  });
+  return filtered;
+}
+
+export function serializeImageModel(model: ImageModel): ApiImageModel {
+  return {
+    ...model,
+    derived: {
+      benchmarkCount: Object.keys(model.benchmarks).length,
+    },
+  };
+}
+
+export function serializeVideoModel(model: VideoModel): ApiVideoModel {
+  return {
+    ...model,
+    derived: {
+      benchmarkCount: Object.keys(model.benchmarks).length,
+    },
+  };
+}
+
+export function imageModelFacets() {
+  return {
+    organizations: getImageOrganizations(),
+  };
+}
+
+export function videoModelFacets() {
+  return {
+    organizations: getVideoOrganizations(),
+  };
+}
+
+export function getImageModelResource(slug: string) {
+  const model = getImageModel(slug);
+  return model ? serializeImageModel(model) : undefined;
+}
+
+export function getVideoModelResource(slug: string) {
+  const model = getVideoModel(slug);
+  return model ? serializeVideoModel(model) : undefined;
 }
 
 export function modelFacets() {
@@ -438,6 +662,64 @@ export function compareResource(aSlug: string, bSlug: string) {
     left: serializeModel(a),
     right: serializeModel(b),
     verdict: generateVerdict(a, b),
+    breakdown,
+  };
+}
+
+/**
+ * Same-type media comparison. Resolves only within the given kind's catalog —
+ * never mixes image/video/LLM models.
+ */
+export function mediaCompareResource(
+  kind: MediaKind,
+  aSlug: string,
+  bSlug: string
+) {
+  if (kind === "image") {
+    const a = getImageModel(aSlug);
+    const b = getImageModel(bSlug);
+    if (!a || !b) {
+      const missing = [
+        !a ? aSlug : null,
+        !b ? bSlug : null,
+      ].filter(Boolean);
+      throw new ApiQueryError(
+        "INVALID_COMPARE",
+        "Both slugs must refer to image models in the catalog.",
+        { kind, missing, a: aSlug, b: bSlug }
+      );
+    }
+    const breakdown = mediaCompareBreakdown("image", a, b);
+    return {
+      kind: "image" as const,
+      slug: mediaCompareSlug(a.slug, b.slug),
+      left: serializeImageModel(a),
+      right: serializeImageModel(b),
+      verdict: generateMediaVerdict("image", a, b),
+      breakdown,
+    };
+  }
+
+  const a = getVideoModel(aSlug);
+  const b = getVideoModel(bSlug);
+  if (!a || !b) {
+    const missing = [
+      !a ? aSlug : null,
+      !b ? bSlug : null,
+    ].filter(Boolean);
+    throw new ApiQueryError(
+      "INVALID_COMPARE",
+      "Both slugs must refer to video models in the catalog.",
+      { kind, missing, a: aSlug, b: bSlug }
+    );
+  }
+  const breakdown = mediaCompareBreakdown("video", a, b);
+  return {
+    kind: "video" as const,
+    slug: mediaCompareSlug(a.slug, b.slug),
+    left: serializeVideoModel(a),
+    right: serializeVideoModel(b),
+    verdict: generateMediaVerdict("video", a, b),
     breakdown,
   };
 }

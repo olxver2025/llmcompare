@@ -1,84 +1,41 @@
-import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { notFound, permanentRedirect } from "next/navigation";
-import type { Model } from "@/data/types";
-import { CompareBars, ComparePriceBars } from "@/components/compare-bars";
+import type { ImageModel, VideoModel } from "@/data/types";
 import { OpenBadge } from "@/components/open-badge";
 import { OrgIcon } from "@/components/org-icon";
 import {
-  compareBreakdown,
-  compareSlug,
-  formatApiAccess,
-  formatContext,
   formatDate,
-  formatLicense,
-  formatModalities,
-  formatParams,
-  formatPrice,
-  formatSpeed,
-  generateVerdict,
-  getModel,
-  modelFamilyLabel,
-  parseCompareSlug,
-  popularComparePairs,
-  type CompareRow,
-} from "@/lib/models";
+  formatDurationSeconds,
+  formatMediaLicense,
+  formatPerImagePrice,
+  formatPerSecondPrice,
+  formatResolution,
+  type MediaCompareBreakdown,
+  type MediaCompareRow,
+  type MediaKind,
+  type MediaModel,
+} from "@/lib/media-models";
 import { cn } from "@/lib/utils";
-
-type Props = { params: Promise<{ slug: string }> };
-
-export const dynamicParams = true;
-
-export function generateStaticParams() {
-  return popularComparePairs().map(([a, b]) => ({
-    slug: compareSlug(a, b),
-  }));
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
-  const parsed = parseCompareSlug(slug);
-  if (!parsed) return { title: "Compare" };
-  const a = getModel(parsed.a);
-  const b = getModel(parsed.b);
-  if (!a || !b) return { title: "Compare" };
-  return {
-    title: `${a.name} vs ${b.name}`,
-    description: generateVerdict(a, b),
-  };
-}
 
 function sideTone(
   winner: "a" | "b" | "tie" | "na" | undefined,
   side: "a" | "b"
 ) {
   if (!winner || winner === "na" || winner === "tie") return "";
-  if (winner === side) {
-    return "font-semibold text-foreground";
-  }
+  if (winner === side) return "font-semibold text-foreground";
   return "text-muted-foreground";
 }
 
-const ROW_GROUP_ORDER = [
-  "spec",
-  "pricing",
-  "speed",
-  "reasoning",
-  "coding",
-  "arena",
-] as const;
+const ROW_GROUP_ORDER = ["arena", "spec", "speed", "pricing"] as const;
 
 const ROW_GROUP_LABELS: Record<(typeof ROW_GROUP_ORDER)[number], string> = {
-  spec: "Specs",
-  pricing: "Pricing",
-  speed: "Speed",
-  reasoning: "Reasoning",
-  coding: "Coding",
   arena: "Arena",
+  spec: "Specs",
+  speed: "Speed",
+  pricing: "Pricing",
 };
 
-function groupRows(rows: CompareRow[]) {
+function groupRows(rows: MediaCompareRow[]) {
   return ROW_GROUP_ORDER.map((cat) => ({
     cat,
     label: ROW_GROUP_LABELS[cat],
@@ -86,43 +43,109 @@ function groupRows(rows: CompareRow[]) {
   })).filter((g) => g.rows.length > 0);
 }
 
-export default async function ComparePage({ params }: Props) {
-  const { slug } = await params;
-  const parsed = parseCompareSlug(slug);
-  if (!parsed) notFound();
+function FragmentGroup({
+  label,
+  children,
+}: {
+  label: string;
+  children: ReactNode;
+}) {
+  return (
+    <>
+      <tr>
+        <td
+          colSpan={4}
+          className="pb-1 pt-5 font-mono text-[10px] uppercase tracking-wider text-muted-foreground"
+        >
+          {label}
+        </td>
+      </tr>
+      {children}
+    </>
+  );
+}
 
-  const canonical = compareSlug(parsed.a, parsed.b);
-  if (slug !== canonical) {
-    permanentRedirect(`/compare/${canonical}`);
-  }
+function SideSummary({
+  kind,
+  model,
+  tone,
+}: {
+  kind: MediaKind;
+  model: MediaModel;
+  tone: "a" | "b";
+}) {
+  const color =
+    tone === "a"
+      ? "text-[color:var(--compare-a)]"
+      : "text-[color:var(--compare-b)]";
+  const image = kind === "image" ? (model as ImageModel) : null;
+  const video = kind === "video" ? (model as VideoModel) : null;
 
-  const a = getModel(parsed.a);
-  const b = getModel(parsed.b);
-  if (!a || !b) notFound();
+  return (
+    <div>
+      <h2 className={cn("text-sm font-semibold", color)}>{model.name}</h2>
+      <dl className="mt-2 space-y-1 text-sm text-muted-foreground">
+        <div className="flex justify-between gap-4">
+          <dt>Max resolution</dt>
+          <dd className="font-mono tabular-nums text-foreground">
+            {formatResolution(model.specs.maxResolution)}
+          </dd>
+        </div>
+        {video ? (
+          <div className="flex justify-between gap-4">
+            <dt>Max duration</dt>
+            <dd className="font-mono tabular-nums text-foreground">
+              {formatDurationSeconds(video.specs.maxDurationSeconds)}
+            </dd>
+          </div>
+        ) : null}
+        <div className="flex justify-between gap-4">
+          <dt>Price</dt>
+          <dd className="font-mono tabular-nums text-foreground">
+            {image
+              ? formatPerImagePrice(image.pricing?.perImage)
+              : formatPerSecondPrice(video?.pricing?.perSecond)}
+          </dd>
+        </div>
+        <div className="flex justify-between gap-4">
+          <dt>License</dt>
+          <dd className="text-right text-foreground">
+            {formatMediaLicense(model)}
+          </dd>
+        </div>
+        <p className="pt-2 text-pretty">{model.summary}</p>
+      </dl>
+    </div>
+  );
+}
 
-  const breakdown = compareBreakdown(a, b);
-  const {
-    wins,
-    overallLead,
-    overallBasis,
-    categoryWins,
-    rows,
-    estimatedCost,
-    highlights,
-  } = breakdown;
+export function MediaCompareView({
+  kind,
+  a,
+  b,
+  breakdown,
+  verdict,
+}: {
+  kind: MediaKind;
+  a: MediaModel;
+  b: MediaModel;
+  breakdown: MediaCompareBreakdown;
+  verdict: string;
+}) {
+  const { points, wins, categoryWins, rows, highlights, overallLead } =
+    breakdown;
   const groupedRows = groupRows(rows);
+  const catalogPath = `/${kind}`;
+  const catalogLabel = kind === "image" ? "Image models" : "Video models";
+  const comparePickerPath = `/${kind}/compare`;
+  const scoredRows = rows.filter((r) => r.winner !== "na");
 
   const metaRows = [
     { label: "Organization", left: a.organization, right: b.organization },
     {
-      label: "Family",
-      left: modelFamilyLabel(a),
-      right: modelFamilyLabel(b),
-    },
-    {
       label: "License",
-      left: formatLicense(a),
-      right: formatLicense(b),
+      left: formatMediaLicense(a),
+      right: formatMediaLicense(b),
     },
     {
       label: "Open weights",
@@ -134,41 +157,22 @@ export default async function ComparePage({ params }: Props) {
       left: formatDate(a.releaseDate),
       right: formatDate(b.releaseDate),
     },
-    {
-      label: "Knowledge cutoff",
-      left: a.knowledgeCutoff ?? "-",
-      right: b.knowledgeCutoff ?? "-",
-    },
-    {
-      label: "API / provider",
-      left: formatApiAccess(a),
-      right: formatApiAccess(b),
-    },
-    {
-      label: "Modalities",
-      left: formatModalities(a),
-      right: formatModalities(b),
-    },
   ];
-
-  const overallScoredCount = wins.a + wins.b + wins.ties;
-  const overallLeadCopy =
-    overallLead === "a"
-      ? `${a.name} leads overall.`
-      : overallLead === "b"
-        ? `${b.name} leads overall.`
-        : "Tied overall.";
-  const overallBasisCopy =
-    overallBasis === "value"
-      ? "Quality is close, so price/speed break the overall tie. "
-      : overallBasis === "tie"
-        ? "Price/speed category wins do not decide overall. "
-        : "";
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-12">
       <nav className="mb-6 text-sm text-muted-foreground">
-        <Link href="/compare" className="hover:text-foreground hover:underline">
+        <Link
+          href={catalogPath}
+          className="hover:text-foreground hover:underline"
+        >
+          {catalogLabel}
+        </Link>
+        <span className="mx-2 text-border">/</span>
+        <Link
+          href={comparePickerPath}
+          className="hover:text-foreground hover:underline"
+        >
           Compare
         </Link>
         <span className="mx-2 text-border">/</span>
@@ -183,13 +187,11 @@ export default async function ComparePage({ params }: Props) {
             <span className="font-mono text-[color:var(--compare-a)]">A</span>
             {" · "}
             <OpenBadge openSource={a.openSource} />
-            <span className="text-border"> · </span>
-            <span className="font-mono text-xs">{modelFamilyLabel(a)}</span>
           </p>
           <h1 className="mt-1 flex items-center gap-2.5 text-2xl font-semibold tracking-tight sm:text-3xl">
             <OrgIcon organization={a.organization} size="lg" />
             <Link
-              href={`/models/${a.slug}`}
+              href={`/${kind}/${a.slug}`}
               className="hover:underline"
               style={{ textDecorationColor: "var(--compare-a)" }}
             >
@@ -206,13 +208,11 @@ export default async function ComparePage({ params }: Props) {
             <span className="font-mono text-[color:var(--compare-b)]">B</span>
             {" · "}
             <OpenBadge openSource={b.openSource} />
-            <span className="text-border"> · </span>
-            <span className="font-mono text-xs">{modelFamilyLabel(b)}</span>
           </p>
           <h1 className="mt-1 flex items-center gap-2.5 text-2xl font-semibold tracking-tight sm:justify-end sm:text-3xl">
             <OrgIcon organization={b.organization} size="lg" />
             <Link
-              href={`/models/${b.slug}`}
+              href={`/${kind}/${b.slug}`}
               className="hover:underline"
               style={{ textDecorationColor: "var(--compare-b)" }}
             >
@@ -226,14 +226,19 @@ export default async function ComparePage({ params }: Props) {
       <section className="section-rule mb-10">
         <div className="flex flex-wrap items-baseline gap-x-6 gap-y-2">
           <p className="font-mono text-2xl tabular-nums">
-            <span className="text-[color:var(--compare-a)]">{wins.a}</span>
+            <span className="text-[color:var(--compare-a)]">{points.a}</span>
             <span className="mx-2 text-muted-foreground">:</span>
-            <span className="text-[color:var(--compare-b)]">{wins.b}</span>
+            <span className="text-[color:var(--compare-b)]">{points.b}</span>
           </p>
           <p className="text-sm text-muted-foreground">
-            overall capability wins ({wins.ties} ties across {overallScoredCount}{" "}
-            scored). {overallBasisCopy}
-            {overallLeadCopy}
+            weighted points ({wins.a}:{wins.b} metric wins, {wins.ties} ties
+            across {scoredRows.length} scored). Arena Elo and specs outweigh
+            price.{" "}
+            {overallLead === "a"
+              ? `${a.name} leads overall.`
+              : overallLead === "b"
+                ? `${b.name} leads overall.`
+                : "Tied overall."}
           </p>
         </div>
         {Object.keys(categoryWins).length > 0 && (
@@ -277,9 +282,7 @@ export default async function ComparePage({ params }: Props) {
 
       <section className="section-rule mb-10">
         <h2 className="text-lg font-semibold">Verdict</h2>
-        <p className="mt-2 text-base text-pretty leading-relaxed">
-          {generateVerdict(a, b)}
-        </p>
+        <p className="mt-2 text-base text-pretty leading-relaxed">{verdict}</p>
         {highlights.length > 1 && (
           <ul className="mt-4 list-disc space-y-1.5 pl-5 text-sm text-muted-foreground">
             {highlights.map((h) => (
@@ -289,50 +292,6 @@ export default async function ComparePage({ params }: Props) {
             ))}
           </ul>
         )}
-      </section>
-
-      <section className="section-rule mb-10 grid gap-8 lg:grid-cols-2">
-        <div>
-          <h2 className="text-lg font-semibold">
-            Cost for 1M in + 250K out
-          </h2>
-          <p className="mt-1 text-sm text-muted-foreground">
-            Illustrative chat workload at primary-provider list prices.
-          </p>
-          <dl className="mt-4 space-y-2">
-            <div className="flex justify-between border-b border-border py-2 text-sm">
-              <dt className="text-[color:var(--compare-a)]">{a.name}</dt>
-              <dd className="font-mono tabular-nums">
-                {estimatedCost.a !== undefined
-                  ? formatPrice(estimatedCost.a)
-                  : "-"}
-              </dd>
-            </div>
-            <div className="flex justify-between border-b border-border py-2 text-sm">
-              <dt className="text-[color:var(--compare-b)]">{b.name}</dt>
-              <dd className="font-mono tabular-nums">
-                {estimatedCost.b !== undefined
-                  ? formatPrice(estimatedCost.b)
-                  : "-"}
-              </dd>
-            </div>
-          </dl>
-          {estimatedCost.cheaper &&
-            estimatedCost.cheaper !== "tie" &&
-            estimatedCost.ratio && (
-              <p className="mt-3 text-sm text-muted-foreground">
-                {(estimatedCost.cheaper === "a" ? a.name : b.name)} is about{" "}
-                <span className="font-mono tabular-nums text-foreground">
-                  {estimatedCost.ratio.toFixed(1)}x
-                </span>{" "}
-                cheaper on this workload.
-              </p>
-            )}
-        </div>
-        <div>
-          <h2 className="mb-3 text-lg font-semibold">Price per 1M tokens</h2>
-          <ComparePriceBars a={a} b={b} />
-        </div>
       </section>
 
       <section className="section-rule mb-10 overflow-x-auto">
@@ -381,6 +340,11 @@ export default async function ComparePage({ params }: Props) {
                   <tr key={row.id} className="border-b border-border">
                     <td className="py-2 pr-4 font-mono text-xs text-muted-foreground">
                       {row.label}
+                      {row.weight > 1 ? (
+                        <span className="ml-1 text-[10px] text-muted-foreground/80">
+                          ×{row.weight}
+                        </span>
+                      ) : null}
                     </td>
                     <td
                       className={cn(
@@ -419,103 +383,25 @@ export default async function ComparePage({ params }: Props) {
       </section>
 
       <section className="section-rule mb-10 grid gap-8 sm:grid-cols-2">
-        <SideSummary model={a} tone="a" />
-        <SideSummary model={b} tone="b" />
-      </section>
-
-      <section className="section-rule mb-10">
-        <h2 className="mb-2 text-lg font-semibold">Benchmark charts</h2>
-        <p className="mb-4 text-sm text-muted-foreground">
-          Winner bars are emphasized. Per-benchmark deltas sit above each chart.
-        </p>
-        <CompareBars a={a} b={b} />
+        <SideSummary kind={kind} model={a} tone="a" />
+        <SideSummary kind={kind} model={b} tone="b" />
       </section>
 
       <p className="text-sm text-muted-foreground">
-        <Link href="/compare" className="text-open underline-offset-4 hover:underline">
+        <Link
+          href={comparePickerPath}
+          className="text-open underline-offset-4 hover:underline"
+        >
           Pick a different pair
         </Link>
         {" · "}
-        <Link href="/" className="underline-offset-4 hover:underline">
-          Back to catalog
+        <Link
+          href={catalogPath}
+          className="underline-offset-4 hover:underline"
+        >
+          Back to {kind} catalog
         </Link>
       </p>
-    </div>
-  );
-}
-
-function FragmentGroup({
-  label,
-  children,
-}: {
-  label: string;
-  children: ReactNode;
-}) {
-  return (
-    <>
-      <tr>
-        <td
-          colSpan={4}
-          className="pb-1 pt-5 font-mono text-[10px] uppercase tracking-wider text-muted-foreground"
-        >
-          {label}
-        </td>
-      </tr>
-      {children}
-    </>
-  );
-}
-
-function SideSummary({
-  model,
-  tone,
-}: {
-  model: Model;
-  tone: "a" | "b";
-}) {
-  const color =
-    tone === "a" ? "text-[color:var(--compare-a)]" : "text-[color:var(--compare-b)]";
-  return (
-    <div>
-      <h2 className={cn("text-sm font-semibold", color)}>{model.name}</h2>
-      <dl className="mt-2 space-y-1 text-sm text-muted-foreground">
-        <div className="flex justify-between gap-4">
-          <dt>Context</dt>
-          <dd className="font-mono tabular-nums text-foreground">
-            {formatContext(model.contextWindow)}
-            {model.maxOutput ? ` / ${formatContext(model.maxOutput)} out` : ""}
-          </dd>
-        </div>
-        <div className="flex justify-between gap-4">
-          <dt>Parameters</dt>
-          <dd className="font-mono tabular-nums text-foreground">
-            {formatParams(model.parameters)}
-          </dd>
-        </div>
-        <div className="flex justify-between gap-4">
-          <dt>Price</dt>
-          <dd className="font-mono tabular-nums text-foreground">
-            {model.pricing
-              ? `${formatPrice(model.pricing.inputPer1M)} / ${formatPrice(model.pricing.outputPer1M)}`
-              : "-"}
-          </dd>
-        </div>
-        <div className="flex justify-between gap-4">
-          <dt>Speed</dt>
-          <dd className="font-mono tabular-nums text-foreground">
-            {formatSpeed(model)}
-          </dd>
-        </div>
-        <div className="flex justify-between gap-4">
-          <dt>Modalities</dt>
-          <dd className="text-right text-foreground">{formatModalities(model)}</dd>
-        </div>
-        <div className="flex justify-between gap-4">
-          <dt>License</dt>
-          <dd className="text-right text-foreground">{formatLicense(model)}</dd>
-        </div>
-        <p className="pt-2 text-pretty">{model.summary}</p>
-      </dl>
     </div>
   );
 }

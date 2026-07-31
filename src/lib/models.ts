@@ -1,7 +1,14 @@
 import { models } from "@/data/models";
 import { BENCHMARKS, BENCHMARK_IDS } from "@/data/benchmarks";
 import type { BenchmarkId, Model } from "@/data/types";
+import {
+  decideOverallLead,
+  QUALITY_COMPARABLE_ELO_BAND,
+  type OverallBasis,
+} from "@/lib/compare-scoring";
 import { modelFamilyId, modelFamilyLabel } from "@/lib/model-family";
+
+export { QUALITY_COMPARABLE_ELO_BAND, type OverallBasis };
 
 export const DATA_FRESHNESS = "2026-07-31";
 
@@ -230,7 +237,10 @@ export type CompareRow = {
 
 export type CompareBreakdown = {
   highlights: string[];
+  /** Headline win tally used for overall lead (excludes price/speed unless quality is comparable). */
   wins: { a: number; b: number; ties: number };
+  overallLead: "a" | "b" | null;
+  overallBasis: OverallBasis;
   categoryWins: Record<
     string,
     { a: number; b: number; label: string }
@@ -245,6 +255,81 @@ export type CompareBreakdown = {
     ratio?: number;
   };
 };
+
+const QUALITY_CATEGORIES = new Set<CompareRow["category"]>([
+  "reasoning",
+  "coding",
+  "arena",
+]);
+const SPEC_CATEGORIES = new Set<CompareRow["category"]>(["spec"]);
+const VALUE_CATEGORIES = new Set<CompareRow["category"]>(["pricing", "speed"]);
+
+function tallyRows(
+  rows: CompareRow[],
+  categories: Set<CompareRow["category"]>
+): { a: number; b: number; ties: number } {
+  const subset = rows.filter(
+    (r) =>
+      categories.has(r.category) &&
+      (r.winner === "a" || r.winner === "b" || r.winner === "tie")
+  );
+  return {
+    a: subset.filter((r) => r.winner === "a").length,
+    b: subset.filter((r) => r.winner === "b").length,
+    ties: subset.filter((r) => r.winner === "tie").length,
+  };
+}
+
+/** Maps compare rows + models onto quality-first overall lead scoring. */
+export function scoreOverallLead(
+  rows: CompareRow[],
+  a: Model,
+  b: Model
+): {
+  lead: "a" | "b" | null;
+  basis: OverallBasis;
+  wins: { a: number; b: number; ties: number };
+} {
+  const quality = tallyRows(rows, QUALITY_CATEGORIES);
+  const specs = tallyRows(rows, SPEC_CATEGORIES);
+  const value = tallyRows(rows, VALUE_CATEGORIES);
+  const shared = sharedBenchmarks(a, b);
+  const coverageA = BENCHMARK_IDS.filter(
+    (id) => a.benchmarks[id] !== undefined
+  ).length;
+  const coverageB = BENCHMARK_IDS.filter(
+    (id) => b.benchmarks[id] !== undefined
+  ).length;
+
+  const { lead, basis, includeValue } = decideOverallLead({
+    quality,
+    specs,
+    value,
+    sharedBenchmarkCount: shared.length,
+    coverageA,
+    coverageB,
+    eloA: a.benchmarks["lmarena-elo"],
+    eloB: b.benchmarks["lmarena-elo"],
+  });
+
+  const overallRows = rows.filter((r) => {
+    if (r.winner !== "a" && r.winner !== "b" && r.winner !== "tie") return false;
+    if (QUALITY_CATEGORIES.has(r.category) || SPEC_CATEGORIES.has(r.category)) {
+      return true;
+    }
+    return includeValue && VALUE_CATEGORIES.has(r.category);
+  });
+
+  return {
+    lead,
+    basis,
+    wins: {
+      a: overallRows.filter((r) => r.winner === "a").length,
+      b: overallRows.filter((r) => r.winner === "b").length,
+      ties: overallRows.filter((r) => r.winner === "tie").length,
+    },
+  };
+}
 
 function rowWinner(
   left?: number,
@@ -390,12 +475,11 @@ export function compareBreakdown(a: Model, b: Model): CompareBreakdown {
     });
   }
 
-  const scored = rows.filter((r) => r.winner === "a" || r.winner === "b" || r.winner === "tie");
-  const wins = {
-    a: scored.filter((r) => r.winner === "a").length,
-    b: scored.filter((r) => r.winner === "b").length,
-    ties: scored.filter((r) => r.winner === "tie").length,
-  };
+  const { lead: overallLead, basis: overallBasis, wins } = scoreOverallLead(
+    rows,
+    a,
+    b
+  );
 
   const categoryWins: CompareBreakdown["categoryWins"] = {};
   for (const cat of ["reasoning", "coding", "arena", "pricing", "speed", "spec"] as const) {
@@ -474,17 +558,7 @@ export function compareBreakdown(a: Model, b: Model): CompareBreakdown {
     }
   }
 
-  if (blendA !== undefined && blendB !== undefined && blendA > 0 && blendB > 0) {
-    const cheaper = blendA < blendB ? a : b;
-    const dearer = blendA < blendB ? b : a;
-    const ratio = Math.max(blendA, blendB) / Math.min(blendA, blendB);
-    if (ratio >= 1.15) {
-      highlights.push(
-        `${cheaper.name} is ~${ratio.toFixed(1)}x cheaper on a blended token basis than ${dearer.name}`
-      );
-    }
-  }
-
+  // Capability / specs before price so verdict copy isn't dominated by cost alone.
   if (a.contextWindow !== b.contextWindow) {
     const longer = a.contextWindow > b.contextWindow ? a : b;
     const shorter = a.contextWindow > b.contextWindow ? b : a;
@@ -494,9 +568,35 @@ export function compareBreakdown(a: Model, b: Model): CompareBreakdown {
     );
   }
 
+  if (
+    a.maxOutput !== undefined &&
+    b.maxOutput !== undefined &&
+    a.maxOutput !== b.maxOutput
+  ) {
+    const higher = a.maxOutput > b.maxOutput ? a : b;
+    const lower = a.maxOutput > b.maxOutput ? b : a;
+    const factor = higher.maxOutput! / lower.maxOutput!;
+    if (factor >= 1.5) {
+      highlights.push(
+        `${higher.name} allows ~${factor.toFixed(1)}x more max output (${formatContext(higher.maxOutput!)} vs ${formatContext(lower.maxOutput!)})`
+      );
+    }
+  }
+
   if (a.openSource !== b.openSource) {
     const open = a.openSource ? a : b;
     highlights.push(`${open.name} ships open weights (${open.license ?? "open"})`);
+  }
+
+  if (blendA !== undefined && blendB !== undefined && blendA > 0 && blendB > 0) {
+    const cheaperModel = blendA < blendB ? a : b;
+    const dearer = blendA < blendB ? b : a;
+    const priceRatio = Math.max(blendA, blendB) / Math.min(blendA, blendB);
+    if (priceRatio >= 1.15) {
+      highlights.push(
+        `${cheaperModel.name} is ~${priceRatio.toFixed(1)}x cheaper on a blended token basis than ${dearer.name}`
+      );
+    }
   }
 
   const tokensIn = WORKLOAD_TOKENS_IN;
@@ -514,6 +614,8 @@ export function compareBreakdown(a: Model, b: Model): CompareBreakdown {
   return {
     highlights,
     wins,
+    overallLead,
+    overallBasis,
     categoryWins,
     rows,
     estimatedCost: { tokensIn, tokensOut, a: costA, b: costB, cheaper, ratio },

@@ -5,6 +5,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { getAllModels } from "@/lib/models";
+import { getAllImageModels, getAllVideoModels } from "@/lib/media-models";
 import "./globals.css";
 
 const sourceSans = Source_Sans_3({
@@ -40,6 +41,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const models = getAllModels();
+  const imageModels = getAllImageModels();
+  const videoModels = getAllVideoModels();
 
   return (
     <html
@@ -50,7 +53,11 @@ export default function RootLayout({
       <body className="flex min-h-full flex-col font-sans">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <TooltipProvider>
-            <SiteHeader models={models} />
+            <SiteHeader
+              models={models}
+              imageModels={imageModels}
+              videoModels={videoModels}
+            />
             <main className="flex-1">{children}</main>
             <SiteFooter />
           </TooltipProvider>

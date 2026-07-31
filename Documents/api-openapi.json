@@ -3,7 +3,7 @@
   "info": {
     "title": "LLMcompare API",
     "version": "1.0.0",
-    "description": "Read-only API for the LLMcompare model catalog, benchmarks, releases, organizations, and comparisons."
+    "description": "Read-only API for the LLMcompare model catalog, image and video model catalogs, benchmarks, releases, organizations, and comparisons."
   },
   "servers": [{ "url": "/api/v1" }],
   "paths": {
@@ -40,6 +40,86 @@
         "responses": { "200": { "$ref": "#/components/responses/Envelope" }, "404": { "$ref": "#/components/responses/Error" } }
       }
     },
+    "/image-models": {
+      "get": {
+        "summary": "List image models",
+        "parameters": [
+          { "$ref": "#/components/parameters/Q" },
+          { "$ref": "#/components/parameters/Organization" },
+          { "$ref": "#/components/parameters/OpenSource" },
+          { "$ref": "#/components/parameters/MediaSort" },
+          { "$ref": "#/components/parameters/Order" },
+          { "$ref": "#/components/parameters/Page" },
+          { "$ref": "#/components/parameters/Limit" }
+        ],
+        "responses": { "200": { "$ref": "#/components/responses/Envelope" }, "400": { "$ref": "#/components/responses/Error" } }
+      }
+    },
+    "/image-models/{slug}": {
+      "get": {
+        "summary": "Get an image model",
+        "parameters": [{ "$ref": "#/components/parameters/Slug" }],
+        "responses": { "200": { "$ref": "#/components/responses/Envelope" }, "404": { "$ref": "#/components/responses/Error" } }
+      }
+    },
+    "/image-models/compare": {
+      "get": {
+        "summary": "Compare two image models",
+        "description": "Same-type only. Both a and b must be image-model slugs; mixed kinds return 400.",
+        "parameters": [
+          { "name": "a", "in": "query", "required": true, "schema": { "type": "string" } },
+          { "name": "b", "in": "query", "required": true, "schema": { "type": "string" } }
+        ],
+        "responses": { "200": { "$ref": "#/components/responses/Envelope" }, "400": { "$ref": "#/components/responses/Error" } }
+      }
+    },
+    "/image-models/compare/{slug}": {
+      "get": {
+        "summary": "Compare image models by canonical slug",
+        "parameters": [{ "$ref": "#/components/parameters/ComparisonSlug" }],
+        "responses": { "200": { "$ref": "#/components/responses/Envelope" }, "400": { "$ref": "#/components/responses/Error" }, "404": { "$ref": "#/components/responses/Error" } }
+      }
+    },
+    "/video-models": {
+      "get": {
+        "summary": "List video models",
+        "parameters": [
+          { "$ref": "#/components/parameters/Q" },
+          { "$ref": "#/components/parameters/Organization" },
+          { "$ref": "#/components/parameters/OpenSource" },
+          { "$ref": "#/components/parameters/MediaSort" },
+          { "$ref": "#/components/parameters/Order" },
+          { "$ref": "#/components/parameters/Page" },
+          { "$ref": "#/components/parameters/Limit" }
+        ],
+        "responses": { "200": { "$ref": "#/components/responses/Envelope" }, "400": { "$ref": "#/components/responses/Error" } }
+      }
+    },
+    "/video-models/{slug}": {
+      "get": {
+        "summary": "Get a video model",
+        "parameters": [{ "$ref": "#/components/parameters/Slug" }],
+        "responses": { "200": { "$ref": "#/components/responses/Envelope" }, "404": { "$ref": "#/components/responses/Error" } }
+      }
+    },
+    "/video-models/compare": {
+      "get": {
+        "summary": "Compare two video models",
+        "description": "Same-type only. Both a and b must be video-model slugs; mixed kinds return 400.",
+        "parameters": [
+          { "name": "a", "in": "query", "required": true, "schema": { "type": "string" } },
+          { "name": "b", "in": "query", "required": true, "schema": { "type": "string" } }
+        ],
+        "responses": { "200": { "$ref": "#/components/responses/Envelope" }, "400": { "$ref": "#/components/responses/Error" } }
+      }
+    },
+    "/video-models/compare/{slug}": {
+      "get": {
+        "summary": "Compare video models by canonical slug",
+        "parameters": [{ "$ref": "#/components/parameters/ComparisonSlug" }],
+        "responses": { "200": { "$ref": "#/components/responses/Envelope" }, "400": { "$ref": "#/components/responses/Error" }, "404": { "$ref": "#/components/responses/Error" } }
+      }
+    },
     "/benchmarks": { "get": { "summary": "List benchmarks and top models", "responses": { "200": { "$ref": "#/components/responses/Envelope" } } } },
     "/benchmarks/{id}": {
       "get": {
@@ -73,6 +153,15 @@
       "BenchmarkId": { "name": "id", "in": "path", "required": true, "schema": { "type": "string" } },
       "MinScore": { "name": "minScore", "in": "query", "schema": { "type": "number" } },
       "Sort": { "name": "sort", "in": "query", "schema": { "type": "string", "default": "lmarena-elo" } },
+      "MediaSort": {
+        "name": "sort",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "enum": ["name", "organization", "releaseDate", "slug", "price", "elo"],
+          "default": "elo"
+        }
+      },
       "Order": { "name": "order", "in": "query", "schema": { "type": "string", "enum": ["asc", "desc"], "default": "desc" } },
       "Page": { "name": "page", "in": "query", "schema": { "type": "integer", "minimum": 1, "default": 1 } },
       "Limit": { "name": "limit", "in": "query", "schema": { "type": "integer", "minimum": 1, "maximum": 250, "default": 50 } },

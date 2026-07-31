@@ -21,6 +21,12 @@ export function SiteFooter() {
           </p>
         </div>
         <nav className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
+          <Link href="/image" className="hover:text-foreground hover:underline">
+            Image models
+          </Link>
+          <Link href="/video" className="hover:text-foreground hover:underline">
+            Video models
+          </Link>
           <Link href="/benchmarks" className="hover:text-foreground hover:underline">
             Benchmarks
           </Link>

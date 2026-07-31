@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import { Check, ChevronsUpDown } from "lucide-react";
-import type { Model } from "@/data/types";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
@@ -21,6 +20,13 @@ import {
 import { OpenBadge } from "@/components/open-badge";
 import { OrgIcon } from "@/components/org-icon";
 
+export type PickerModel = {
+  slug: string;
+  name: string;
+  organization: string;
+  openSource: boolean;
+};
+
 export function ModelPicker({
   models,
   value,
@@ -29,7 +35,7 @@ export function ModelPicker({
   excludeSlug,
   id,
 }: {
-  models: Model[];
+  models: PickerModel[];
   value?: string;
   onChange: (slug: string) => void;
   placeholder?: string;

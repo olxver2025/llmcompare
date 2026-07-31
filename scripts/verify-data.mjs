@@ -6,21 +6,26 @@ const require = createRequire(import.meta.url);
 const ts = require("typescript");
 const asOf = "2026-07-31";
 
-const source = fs.readFileSync("src/data/models.ts", "utf8");
-const compiled = ts.transpileModule(source, {
-  compilerOptions: {
-    module: ts.ModuleKind.CommonJS,
-    target: ts.ScriptTarget.ES2022,
-  },
-}).outputText;
-const compiledModule = { exports: {} };
-vm.runInNewContext(compiled, {
-  exports: compiledModule.exports,
-  module: compiledModule,
-  require,
-});
+function load(path, exportName) {
+  const source = fs.readFileSync(path, "utf8");
+  const compiled = ts.transpileModule(source, {
+    compilerOptions: {
+      module: ts.ModuleKind.CommonJS,
+      target: ts.ScriptTarget.ES2022,
+    },
+  }).outputText;
+  const compiledModule = { exports: {} };
+  vm.runInNewContext(compiled, {
+    exports: compiledModule.exports,
+    module: compiledModule,
+    require,
+  });
+  return compiledModule.exports[exportName];
+}
 
-const models = compiledModule.exports.models;
+const models = load("src/data/models.ts", "models");
+const imageModels = load("src/data/image-models.ts", "imageModels");
+const videoModels = load("src/data/video-models.ts", "videoModels");
 const benchmarkIds = new Set([
   "mmlu-pro",
   "gpqa-diamond",
@@ -98,9 +103,71 @@ const scoreCount = models.reduce(
 );
 check(scoreCount === 74, `expected 74 audited benchmark cells, found ${scoreCount}`);
 
+const imageBenchmarkIds = new Set(["image-arena-elo"]);
+const videoBenchmarkIds = new Set(["video-arena-elo"]);
+const slugPattern = /^[a-z0-9-]+$/;
+
+function verifyMediaCatalog(label, catalog, expectedCount, allowedBenchmarks, kind) {
+  check(
+    catalog.length === expectedCount,
+    `expected ${expectedCount} ${label}, found ${catalog.length}`
+  );
+  check(
+    new Set(catalog.map((model) => model.slug)).size === catalog.length,
+    `duplicate ${label} slug`
+  );
+
+  for (const model of catalog) {
+    check(slugPattern.test(model.slug), `${model.slug} has invalid slug`);
+    check(model.releaseDate <= asOf, `${model.slug} has a future release date`);
+    check(
+      model.specs?.maxResolution?.width > 0 &&
+        model.specs?.maxResolution?.height > 0,
+      `${model.slug} has non-positive resolution`
+    );
+
+    if (model.pricing) {
+      if (kind === "image") {
+        check(
+          model.pricing.perImage > 0,
+          `${model.slug} has non-positive perImage price`
+        );
+      } else {
+        check(
+          model.pricing.perSecond > 0,
+          `${model.slug} has non-positive perSecond price`
+        );
+      }
+    }
+
+    if (kind === "video") {
+      check(
+        model.specs?.maxDurationSeconds > 0,
+        `${model.slug} has non-positive maxDurationSeconds`
+      );
+    }
+
+    for (const id of Object.keys(model.benchmarks ?? {})) {
+      check(
+        allowedBenchmarks.has(id),
+        `${model.slug} has unknown benchmark ${id}`
+      );
+      check(
+        Number.isFinite(model.benchmarks[id]),
+        `${model.slug}/${id} is not numeric`
+      );
+    }
+  }
+}
+
+verifyMediaCatalog("image models", imageModels, 37, imageBenchmarkIds, "image");
+verifyMediaCatalog("video models", videoModels, 30, videoBenchmarkIds, "video");
+
 if (failures.length > 0) {
   console.error(failures.map((failure) => `FAIL ${failure}`).join("\n"));
   process.exitCode = 1;
 } else {
-  console.log(`OK ${models.length} models; ${scoreCount} audited benchmark cells; snapshot ${asOf}`);
+  console.log(
+    `OK ${models.length} models; ${scoreCount} audited benchmark cells; ${imageModels.length} image models; ${videoModels.length} video models; snapshot ${asOf}`
+  );
 }
