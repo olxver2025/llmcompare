@@ -2,7 +2,7 @@ import type { Model } from "./types";
 
 /**
  * Curated static dataset for LLMcompare.
- * Prices: official primary-provider API rates ($/1M tokens) as of ~2026-07-29.
+ * Prices: official primary-provider API rates ($/1M tokens) as of ~2026-07-30.
  * Benchmarks: public leaderboards / model cards; omitted when unverifiable.
  * Scores marked as estimated in notes are still omitted rather than guessed.
  */
@@ -36,10 +36,45 @@ export const models: Model[] = [
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
-      announcement: "https://openai.com/index/introducing-gpt-5-6/",
+      announcement:
+        "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
     },
     summary:
-      "OpenAI's July 2026 flagship reasoning tier, tuned for hard STEM and agentic work; ChatGPT's top API SKU in the 5.6 family.",
+      "OpenAI's July 2026 flagship reasoning tier, tuned for hard STEM and agentic work; ChatGPT's top API SKU in the 5.6 family. Fast mode (2× price) delivers up to 2.5× Standard speed.",
+  },
+  {
+    slug: "gpt-5-6-sol-fast",
+    name: "GPT-5.6 Sol Fast",
+    organization: "OpenAI",
+    releaseDate: "2026-07-30",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 1_050_000,
+    maxOutput: 128_000,
+    modalities: { input: ["text", "image"], output: ["text"] },
+    pricing: { provider: "OpenAI", inputPer1M: 10, outputPer1M: 60 },
+    speed: { tokensPerSec: 240, ttftSeconds: 0.25 },
+    benchmarks: {
+      "mmlu-pro": 90.2,
+      "gpqa-diamond": 92.5,
+      "aime-2025": 85.9,
+      "math-500": 95.9,
+      simpleqa: 52.8,
+      "swe-bench-pro": 64.6,
+      "terminal-bench-2": 91.9,
+      "bfcl-v3": 84.5,
+      "lmarena-elo": 1509,
+      "arena-hard": 90.9,
+      cursorbench: 67.2,
+      "webdev-arena": 1623,
+    },
+    links: {
+      docs: "https://developers.openai.com/api/docs/guides/fast-mode",
+      announcement:
+        "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+    },
+    summary:
+      "GPT-5.6 Sol via API Fast mode (replaces Priority Processing as of 2026-07-30): same intelligence as Standard Sol at 2× price and up to 2.5× throughput.",
   },
   {
     slug: "gpt-5-6-terra",
@@ -51,8 +86,8 @@ export const models: Model[] = [
     contextWindow: 1_050_000,
     maxOutput: 128_000,
     modalities: { input: ["text", "image"], output: ["text"] },
-    pricing: { provider: "OpenAI", inputPer1M: 2.5, outputPer1M: 15 },
-    speed: { tokensPerSec: 110, ttftSeconds: 0.35 },
+    pricing: { provider: "OpenAI", inputPer1M: 2, outputPer1M: 12 },
+    speed: { tokensPerSec: 135, ttftSeconds: 0.3 },
     benchmarks: {
       "mmlu-pro": 89.6,
       "aime-2025": 76.4,
@@ -67,9 +102,11 @@ export const models: Model[] = [
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
+      announcement:
+        "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
     },
     summary:
-      "Balanced GPT-5.6 mid-tier that OpenAI positions as matching GPT-5.5 quality at roughly half the cost; common ChatGPT default path.",
+      "Balanced GPT-5.6 mid-tier for everyday work; July 30, 2026 API cut brought Standard rates to $2/$12 (20% lower), with strong throughput for the price.",
   },
   {
     slug: "gpt-5-6-luna",
@@ -81,8 +118,8 @@ export const models: Model[] = [
     contextWindow: 1_050_000,
     maxOutput: 128_000,
     modalities: { input: ["text", "image"], output: ["text"] },
-    pricing: { provider: "OpenAI", inputPer1M: 1, outputPer1M: 6 },
-    speed: { tokensPerSec: 140, ttftSeconds: 0.25 },
+    pricing: { provider: "OpenAI", inputPer1M: 0.2, outputPer1M: 1.2 },
+    speed: { tokensPerSec: 195, ttftSeconds: 0.2 },
     benchmarks: {
       "mmlu-pro": 87,
       "aime-2025": 71.8,
@@ -97,9 +134,11 @@ export const models: Model[] = [
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
+      announcement:
+        "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
     },
     summary:
-      "Fast, low-cost GPT-5.6 tier for high-volume chat, classification, and light coding.",
+      "Fastest, cheapest GPT-5.6 tier for high-volume chat, classification, and light coding; July 30, 2026 API cut dropped Standard rates 80% to $0.20/$1.20.",
   },
   {
     slug: "gpt-5-5",
