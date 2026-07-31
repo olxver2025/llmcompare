@@ -561,7 +561,7 @@ export const models: Model[] = [
       "swe-bench-pro": 80,
       "swe-bench-multilingual": 86.6,
       livecodebench: 86,
-      "terminal-bench-2-1": 88.0,
+      "terminal-bench-2-1": 84.3,
       "aider-polyglot": 77.3,
       "bfcl-v3": 93.4,
       "lmarena-elo": 1510,
@@ -1245,9 +1245,12 @@ export const models: Model[] = [
     releaseDate: "2026-07-09",
     openSource: false,
     license: "Proprietary",
-    contextWindow: 1_000_000,
-    maxOutput: 64_000,
-    modalities: { input: ["text", "image"], output: ["text"] },
+    contextWindow: 1_048_576,
+    maxOutput: 131_072,
+    modalities: {
+      input: ["text", "image", "video", "audio", "pdf"],
+      output: ["text"],
+    },
     pricing: { provider: "Meta", inputPer1M: 1.25, outputPer1M: 4.25 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.4 },
     benchmarks: {
@@ -1262,7 +1265,8 @@ export const models: Model[] = [
       "arena-hard": 89.6,
     },
     links: {
-      docs: "https://llama.meta.com/",
+      docs: "https://dev.meta.ai/docs/models.md",
+      announcement: "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
     },
     summary:
       "Meta's first paid API model - agentic coding focus with MCP support and 1M context.",
@@ -1958,9 +1962,10 @@ export const models: Model[] = [
     slug: "magistral-small",
     name: "Magistral Small",
     organization: "Mistral",
-    releaseDate: "2025-07-01",
-    openSource: false,
-    license: "Proprietary",
+    releaseDate: "2025-06-10",
+    openSource: true,
+    license: "Apache 2.0",
+    parameters: { total: 24 },
     contextWindow: 128_000,
     maxOutput: 40_000,
     modalities: { input: ["text", "image"], output: ["text"] },
@@ -1970,10 +1975,12 @@ export const models: Model[] = [
       "terminal-bench-2-1": 4.5,
     },
     links: {
-      docs: "https://docs.mistral.ai/getting-started/models/",
+      docs: "https://docs.mistral.ai/models/model-cards/magistral-small-1-2-25-09",
+      modelCard: "https://huggingface.co/mistralai/Magistral-Small-2509",
+      announcement: "https://mistral.ai/news/magistral/",
     },
     summary:
-      "Lightweight Magistral reasoning tier for domain-specific thinking at $0.50/$1.50.",
+      "Open-weight 24B Magistral reasoning model (Apache 2.0); deprecated on Mistral API in favor of Small 4 / Medium 3.5 reasoning modes.",
   },
   {
     slug: "devstral-2",

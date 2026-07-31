@@ -90,7 +90,7 @@ export function BenchmarkDisclosure({
       <div id={panelId} role="region" hidden={!open}>
         {rows.length === 0 ? (
           <p className="pl-6 text-sm text-muted-foreground">
-            No verified scores in the catalog yet.
+            No audited score is published for this benchmark in the current snapshot.
           </p>
         ) : (
           <ol className="border-t border-border">

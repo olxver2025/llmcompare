@@ -141,7 +141,7 @@ export function formatScore(
   id: BenchmarkId,
   value: number | undefined
 ): string {
-  if (value === undefined) return "-";
+  if (value === undefined) return "—";
   const meta = BENCHMARKS[id];
   if (meta.unit === "elo") return Math.round(value).toLocaleString();
   if (value >= 10) return value.toFixed(1);
