@@ -2329,7 +2329,7 @@ export const models: Model[] = [
     contextWindow: 1_000_000,
     maxOutput: 128_000,
     modalities: { input: ["text", "image", "video"], output: ["text"] },
-    pricing: { provider: "MiniMax", inputPer1M: 0.6, outputPer1M: 2.4 },
+    pricing: { provider: "MiniMax", inputPer1M: 0.3, outputPer1M: 1.2 },
     speed: { tokensPerSec: 80, ttftSeconds: 0.35 },
     benchmarks: {
       "gpqa-diamond": 92.9,
