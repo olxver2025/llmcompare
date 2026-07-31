@@ -3,8 +3,8 @@ import type { Model } from "./types";
 /**
  * Curated static dataset for LLMcompare.
  * Prices: official primary-provider API rates ($/1M tokens) as of ~2026-07-30.
- * Benchmarks: public leaderboards / model cards; omitted when unverifiable.
- * Scores marked as estimated in notes are still omitted rather than guessed.
+ * Benchmarks: public leaderboards / model cards / system cards as of ~2026-07-31;
+ * omitted when unverifiable. Scores marked as estimated are omitted rather than guessed.
  */
 export const models: Model[] = [
   // ─── OpenAI ───────────────────────────────────────────────
@@ -22,12 +22,13 @@ export const models: Model[] = [
     speed: { tokensPerSec: 96, ttftSeconds: 0.45 },
     benchmarks: {
       "mmlu-pro": 90.2,
-      "gpqa-diamond": 92.5,
+      "gpqa-diamond": 94.1,
+      hle: 44.5,
       "aime-2025": 85.9,
       "math-500": 95.9,
       simpleqa: 52.8,
       "swe-bench-pro": 64.6,
-      "terminal-bench-2-1": 91.9,
+      "terminal-bench-2-1": 88.8,
       "bfcl-v3": 84.5,
       "lmarena-elo": 1509,
       "arena-hard": 90.9,
@@ -56,12 +57,13 @@ export const models: Model[] = [
     speed: { tokensPerSec: 240, ttftSeconds: 0.25 },
     benchmarks: {
       "mmlu-pro": 90.2,
-      "gpqa-diamond": 92.5,
+      "gpqa-diamond": 94.1,
+      hle: 44.5,
       "aime-2025": 85.9,
       "math-500": 95.9,
       simpleqa: 52.8,
       "swe-bench-pro": 64.6,
-      "terminal-bench-2-1": 91.9,
+      "terminal-bench-2-1": 88.8,
       "bfcl-v3": 84.5,
       "lmarena-elo": 1509,
       "arena-hard": 90.9,
@@ -154,13 +156,14 @@ export const models: Model[] = [
     speed: { tokensPerSec: 70, ttftSeconds: 0.5 },
     benchmarks: {
       "mmlu-pro": 89.6,
-      "gpqa-diamond": 85,
+      "gpqa-diamond": 93.5,
+      hle: 41.4,
       "aime-2025": 74.3,
       "math-500": 85,
       simpleqa: 50.3,
       "swe-bench-verified": 74.9,
       "swe-bench-pro": 58.6,
-      "terminal-bench-2-1": 84.3,
+      "terminal-bench-2-1": 83.4,
       "aider-polyglot": 69.6,
       "bfcl-v3": 88.7,
       "lmarena-elo": 1506,
@@ -511,11 +514,11 @@ export const models: Model[] = [
     benchmarks: {
       "mmlu-pro": 91.6,
       "gpqa-diamond": 90.4,
-      hle: 32,
+      hle: 56.3,
       "aime-2025": 94.5,
       "math-500": 99.4,
       simpleqa: 54,
-      "swe-bench-verified": 80.9,
+      "swe-bench-verified": 96.0,
       "swe-bench-pro": 79.2,
       "swe-bench-multilingual": 89.5,
       livecodebench: 84,
@@ -549,15 +552,16 @@ export const models: Model[] = [
     speed: { tokensPerSec: 58, ttftSeconds: 0.7 },
     benchmarks: {
       "mmlu-pro": 91.5,
-      "gpqa-diamond": 89,
-      hle: 31.5,
+      "gpqa-diamond": 92.6,
+      hle: 53.3,
       "aime-2025": 92.4,
       "math-500": 99.4,
       simpleqa: 53.8,
-      "swe-bench-verified": 82.1,
+      "swe-bench-verified": 95.0,
       "swe-bench-pro": 80,
+      "swe-bench-multilingual": 86.6,
       livecodebench: 86,
-      "terminal-bench-2-1": 84.3,
+      "terminal-bench-2-1": 88.0,
       "aider-polyglot": 77.3,
       "bfcl-v3": 93.4,
       "lmarena-elo": 1510,
@@ -586,12 +590,12 @@ export const models: Model[] = [
     speed: { tokensPerSec: 72, ttftSeconds: 0.55 },
     benchmarks: {
       "mmlu-pro": 90,
-      "gpqa-diamond": 84.5,
-      hle: 26,
+      "gpqa-diamond": 91.0,
+      hle: 49.8,
       "aime-2025": 85.8,
       "math-500": 96,
       simpleqa: 50.1,
-      "swe-bench-verified": 78,
+      "swe-bench-verified": 88.6,
       "swe-bench-pro": 69.2,
       "swe-bench-multilingual": 84.4,
       livecodebench: 78.5,
@@ -627,7 +631,8 @@ export const models: Model[] = [
       "aime-2025": 75.4,
       "math-500": 86.7,
       simpleqa: 48.7,
-      "swe-bench-verified": 72,
+      hle: 43.2,
+      "swe-bench-verified": 85.2,
       "swe-bench-pro": 63.2,
       "swe-bench-multilingual": 78.3,
       livecodebench: 74,
@@ -697,14 +702,15 @@ export const models: Model[] = [
       "aime-2025": 70.4,
       "math-500": 81.5,
       simpleqa: 44.2,
-      "swe-bench-verified": 70.5,
+      hle: 34.6,
+      "swe-bench-verified": 79.6,
       "aider-polyglot": 64.8,
       "bfcl-v3": 82.8,
       "lmarena-elo": 1460,
       "arena-hard": 81.8,
       "swe-rebench": 60.7,
       "vibe-code-bench": 51.48,
-      "terminal-bench-2-1": 71.2,
+      "terminal-bench-2-1": 67.0,
       "webdev-arena": 1524,
     },
     links: {
@@ -800,11 +806,12 @@ export const models: Model[] = [
     benchmarks: {
       "mmlu-pro": 91,
       "gpqa-diamond": 94.3,
-      hle: 28,
+      hle: 44.4,
       "aime-2025": 94.5,
       "math-500": 99.4,
       simpleqa: 53.7,
-      "swe-bench-verified": 76,
+      "swe-bench-verified": 80.6,
+      "swe-bench-pro": 54.2,
       "terminal-bench-2-1": 73.8,
       "aider-polyglot": 71.6,
       "bfcl-v3": 90.3,
@@ -836,7 +843,6 @@ export const models: Model[] = [
       "math-500": 85.6,
       simpleqa: 50.9,
       "bfcl-v3": 83.5,
-      "terminal-bench-2-1": 73.9,
       "lmarena-elo": 1492,
       "arena-hard": 87.9,
     },
@@ -864,6 +870,7 @@ export const models: Model[] = [
       "math-500": 86.1,
       simpleqa: 49.5,
       "bfcl-v3": 84.6,
+      "swe-bench-pro": 58.7,
       "lmarena-elo": 1503,
       "arena-hard": 91.5,
       cursorbench: 53.5,
@@ -895,7 +902,8 @@ export const models: Model[] = [
       "math-500": 86.9,
       simpleqa: 48.6,
       "bfcl-v3": 81.4,
-      "terminal-bench-2-1": 78.7,
+      "swe-bench-pro": 55.1,
+      "terminal-bench-2-1": 76.2,
       "lmarena-elo": 1465,
       "arena-hard": 82.9,
     },
@@ -1604,6 +1612,34 @@ export const models: Model[] = [
 
   // ─── Alibaba / Qwen ───────────────────────────────────────
   {
+    slug: "qwen3-6-plus",
+    name: "Qwen3.6 Plus",
+    organization: "Alibaba",
+    releaseDate: "2026-04-02",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 1_000_000,
+    maxOutput: 65_536,
+    modalities: { input: ["text", "image", "video"], output: ["text"] },
+    pricing: { provider: "Alibaba Cloud", inputPer1M: 0.5, outputPer1M: 3.0 },
+    speed: { tokensPerSec: 70, ttftSeconds: 0.45 },
+    benchmarks: {
+      "mmlu-pro": 88.5,
+      "gpqa-diamond": 90.4,
+      "swe-bench-verified": 78.8,
+      "swe-bench-pro": 56.6,
+      "swe-bench-multilingual": 73.8,
+      livecodebench: 87.1,
+      "terminal-bench-2-1": 61.6,
+    },
+    links: {
+      docs: "https://www.alibabacloud.com/help/en/model-studio/",
+      announcement: "https://qwen.ai/blog?id=qwen3.6",
+    },
+    summary:
+      "Alibaba hosted flagship (Apr 2026) for agentic coding and multimodality — 1M context via DashScope; always-on reasoning.",
+  },
+  {
     slug: "qwen3-7-max",
     name: "Qwen3.7 Max",
     organization: "Alibaba",
@@ -2073,7 +2109,8 @@ export const models: Model[] = [
     speed: { tokensPerSec: 60, ttftSeconds: 0.6 },
     benchmarks: {
       "mmlu-pro": 89.3,
-      hle: 30,
+      "gpqa-diamond": 93.5,
+      hle: 43.5,
       "aime-2025": 87.2,
       "math-500": 96.6,
       simpleqa: 49.6,
@@ -2081,6 +2118,7 @@ export const models: Model[] = [
       livecodebench: 82,
       "aider-polyglot": 75.7,
       "bfcl-v3": 89.6,
+      scicode: 58.7,
       "lmarena-elo": 1506,
       "arena-hard": 90.3,
       cursorbench: 60.8,
@@ -2089,8 +2127,8 @@ export const models: Model[] = [
       "webdev-arena": 1682,
     },
     links: {
-      modelCard: "https://huggingface.co/moonshotai",
-      announcement: "https://www.moonshot.cn/",
+      modelCard: "https://huggingface.co/moonshotai/Kimi-K3",
+      announcement: "https://www.kimi.com/blog/kimi-k3",
     },
     summary:
       "Largest open-weight model (2.8T MoE / 104B active) - top open Intelligence Index and strong agent boards.",
@@ -2144,6 +2182,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 75, ttftSeconds: 0.4 },
     benchmarks: {
       "mmlu-pro": 87.5,
+      "gpqa-diamond": 91.2,
       "aime-2025": 70.7,
       "math-500": 81.7,
       simpleqa: 45.8,
@@ -2279,6 +2318,31 @@ export const models: Model[] = [
     },
     summary:
       "Reasoning-tuned Phi-4 variant for math and science on constrained hardware.",
+  },
+  {
+    slug: "minimax-m3",
+    name: "MiniMax M3",
+    organization: "MiniMax",
+    releaseDate: "2026-06-01",
+    openSource: true,
+    license: "MiniMax Community",
+    contextWindow: 1_000_000,
+    maxOutput: 128_000,
+    modalities: { input: ["text", "image", "video"], output: ["text"] },
+    pricing: { provider: "MiniMax", inputPer1M: 0.6, outputPer1M: 2.4 },
+    speed: { tokensPerSec: 80, ttftSeconds: 0.35 },
+    benchmarks: {
+      "gpqa-diamond": 92.9,
+      "swe-bench-verified": 80.5,
+      "swe-bench-pro": 59.0,
+      "terminal-bench-2-1": 66.0,
+    },
+    links: {
+      docs: "https://www.minimax.io/",
+      announcement: "https://www.minimax.io/blog/minimax-m3",
+    },
+    summary:
+      "MiniMax June 2026 open-weight flagship — frontier coding/agentic scores with MSA 1M context and native multimodality.",
   },
   {
     slug: "minimax-m2-5",
@@ -2477,11 +2541,11 @@ export const models: Model[] = [
     speed: { tokensPerSec: 55, ttftSeconds: 0.75 },
     benchmarks: {
       "mmlu-pro": 91.8,
-      hle: 33,
+      hle: 53.3,
       "aime-2025": 94.3,
       "math-500": 99.4,
       simpleqa: 54.7,
-      "swe-bench-verified": 83,
+      "swe-bench-verified": 93.9,
       "swe-bench-pro": 80.3,
       "terminal-bench-2-1": 88,
       "aider-polyglot": 76.5,
@@ -4050,7 +4114,6 @@ export const models: Model[] = [
     speed: { tokensPerSec: 90, ttftSeconds: 0.35 },
     benchmarks: {
       "swe-bench-multilingual": 79.8,
-      "terminal-bench-2-1": 76,
       cursorbench: 56.1,
       "vibe-code-bench": 49.61,
     },
@@ -4059,7 +4122,7 @@ export const models: Model[] = [
       announcement: "https://cursor.com/composer",
     },
     summary:
-      "Cursor's own agentic coding model (standard tier) - Cursor reports 69.3% Terminal-Bench 2.0 and 79.8% SWE-bench Multilingual; draws from the Cursor Models usage pool at $0.50/$2.50.",
+      "Cursor's own agentic coding model (standard tier) - Cursor reports 69.3% Terminal-Bench 2.0 and 79.8% SWE-bench Multilingual; draws from the Cursor Models usage pool at $0.50/$2.50. Terminal-Bench 2.0 score omitted from the 2.1 column.",
   },
   {
     slug: "composer-2-5-fast",
@@ -4075,7 +4138,6 @@ export const models: Model[] = [
     speed: { tokensPerSec: 160, ttftSeconds: 0.2 },
     benchmarks: {
       "swe-bench-multilingual": 79.8,
-      "terminal-bench-2-1": 76,
       cursorbench: 56.1,
       "vibe-code-bench": 49.61,
     },
@@ -4100,14 +4162,13 @@ export const models: Model[] = [
     speed: { tokensPerSec: 85, ttftSeconds: 0.4 },
     benchmarks: {
       "swe-bench-multilingual": 73.7,
-      "terminal-bench-2-1": 61.7,
       "swe-rebench": 58,
     },
     links: {
       announcement: "https://cursor.com/changelog/composer-2",
     },
     summary:
-      "Prior Cursor in-house coding model (Mar 2026) - continued-pretrain + RL on long-horizon tasks; Cursor cites 61.7% Terminal-Bench 2.0 / 73.7% SWE-bench Multilingual.",
+      "Prior Cursor in-house coding model (Mar 2026) - continued-pretrain + RL on long-horizon tasks; Cursor cites 61.7% Terminal-Bench 2.0 / 73.7% SWE-bench Multilingual. Terminal-Bench 2.0 score omitted from the 2.1 column.",
   },
   {
     slug: "composer-2-fast",
@@ -4123,7 +4184,6 @@ export const models: Model[] = [
     speed: { tokensPerSec: 140, ttftSeconds: 0.25 },
     benchmarks: {
       "swe-bench-multilingual": 73.7,
-      "terminal-bench-2-1": 61.7,
     },
     links: {
       announcement: "https://cursor.com/changelog/composer-2",
@@ -5683,7 +5743,7 @@ export const models: Model[] = [
     slug: "minimax-m2-7",
     name: "MiniMax M2.7",
     organization: "MiniMax",
-    releaseDate: "2026-06-01",
+    releaseDate: "2026-03-18",
     openSource: false,
     license: "Proprietary",
     contextWindow: 204_800,
@@ -5693,16 +5753,18 @@ export const models: Model[] = [
     speed: { tokensPerSec: 85, ttftSeconds: 0.35 },
     benchmarks: {
       "gpqa-diamond": 87.4,
+      "swe-bench-pro": 56.22,
       "swe-rebench": 51.9,
-      "terminal-bench-2-1": 55.4,
+      "terminal-bench-2-1": 57.0,
       nl2repo: 39.8,
       "webdev-arena": 1398,
     },
     links: {
       docs: "https://www.minimax.io/",
+      announcement: "https://www.minimax.io/news/minimax-m27-en",
     },
     summary:
-      "MiniMax flagship after M2.5 — strong STEM and long-context multimodal chat API.",
+      "MiniMax M2.7 (Mar 2026) — prior coding-focused API flagship before M3; strong STEM and long-context multimodal chat.",
   },
   {
     slug: "amazon-titan-text-premier",
