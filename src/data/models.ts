@@ -2,8 +2,8 @@ import type { Model } from "./types";
 
 /**
  * Curated static dataset for LLMcompare.
- * Prices: official primary-provider API rates ($/1M tokens) as of ~2026-07-30.
- * Benchmarks: public leaderboards / model cards / system cards as of ~2026-07-31;
+ * Prices: official primary-provider API rates ($/1M tokens) as of ~2026-08-03.
+ * Benchmarks: public leaderboards / model cards / system cards as of ~2026-08-03;
  * omitted when unverifiable. Scores marked as estimated are omitted rather than guessed.
  */
 export const models: Model[] = [
@@ -1615,6 +1615,32 @@ export const models: Model[] = [
   },
 
   // ─── Alibaba / Qwen ───────────────────────────────────────
+  {
+    slug: "qwen3-8-max",
+    name: "Qwen3.8 Max",
+    organization: "Alibaba",
+    releaseDate: "2026-08-03",
+    openSource: false,
+    license: "Proprietary",
+    parameters: { total: 2400, active: 95 },
+    contextWindow: 1_000_000,
+    maxOutput: 131_072,
+    modalities: { input: ["text", "image", "video"], output: ["text"] },
+    pricing: { provider: "Alibaba Cloud", inputPer1M: 2.0, outputPer1M: 6.0 },
+    benchmarks: {
+      "gpqa-diamond": 92.6,
+      hle: 43.6,
+      "swe-bench-pro": 67.7,
+      "terminal-bench-2-1": 86.6,
+      nl2repo: 55.9,
+    },
+    links: {
+      docs: "https://www.qwencloud.com/models/qwen3.8-max",
+      announcement: "https://qwen.ai/blog?id=qwen3.8",
+    },
+    summary:
+      "Alibaba's Aug 2026 Max flagship (2.4T MoE / 95B active) — 1M multimodal context, frontier agentic coding via QwenCloud / DashScope; open weights announced for the following week.",
+  },
   {
     slug: "qwen3-6-plus",
     name: "Qwen3.6 Plus",
