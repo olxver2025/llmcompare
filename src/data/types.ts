@@ -40,6 +40,8 @@ export type Model = {
   };
   speed?: { tokensPerSec?: number; ttftSeconds?: number };
   benchmarks: Partial<Record<BenchmarkId, number>>;
+  /** Quality scores are inherited from this canonical model record. */
+  benchmarkAliasOf?: string;
   links: { docs?: string; modelCard?: string; announcement?: string };
   summary: string;
 };

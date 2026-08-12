@@ -1,0 +1,1302 @@
+{
+  "asOf": "2026-08-12",
+  "policy": "Every retained numeric cell requires an independently reviewed value plus an explicit source URL, evaluation date, and protocol note. The ledger does not make cross-harness results comparable.",
+  "cells": {
+    "gpt-5-6-sol": {
+      "swe-bench-pro": {
+        "value": 64.6,
+        "sourceUrl": "https://openai.com/index/previewing-gpt-5-6-sol/",
+        "checkedOn": "2026-08-12",
+        "protocol": "GPT-5.6 Sol SWE-bench Pro, OpenAI-reported agent evaluation.",
+        "evaluationDate": "2026-07-09"
+      },
+      "terminal-bench-2-1": {
+        "value": 88.8,
+        "sourceUrl": "https://openai.com/index/previewing-gpt-5-6-sol/",
+        "checkedOn": "2026-08-12",
+        "protocol": "GPT-5.6 Sol Terminal-Bench 2.1, OpenAI-reported terminal-agent evaluation.",
+        "evaluationDate": "2026-07-09"
+      }
+    },
+    "gpt-5-6-sol-fast": {},
+    "gpt-5-6-terra": {
+      "swe-bench-pro": {
+        "value": 63.4,
+        "sourceUrl": "https://openai.com/index/previewing-gpt-5-6-sol/",
+        "checkedOn": "2026-08-12",
+        "protocol": "GPT-5.6 Terra SWE-bench Pro, OpenAI-reported agent evaluation.",
+        "evaluationDate": "2026-07-09"
+      },
+      "terminal-bench-2-1": {
+        "value": 87.4,
+        "sourceUrl": "https://openai.com/index/previewing-gpt-5-6-sol/",
+        "checkedOn": "2026-08-12",
+        "protocol": "GPT-5.6 Terra Terminal-Bench 2.1, OpenAI-reported terminal-agent evaluation.",
+        "evaluationDate": "2026-07-09"
+      }
+    },
+    "gpt-5-6-luna": {
+      "swe-bench-pro": {
+        "value": 62.7,
+        "sourceUrl": "https://openai.com/index/previewing-gpt-5-6-sol/",
+        "checkedOn": "2026-08-12",
+        "protocol": "GPT-5.6 Luna SWE-bench Pro, OpenAI-reported agent evaluation.",
+        "evaluationDate": "2026-07-09"
+      },
+      "terminal-bench-2-1": {
+        "value": 84.7,
+        "sourceUrl": "https://openai.com/index/previewing-gpt-5-6-sol/",
+        "checkedOn": "2026-08-12",
+        "protocol": "GPT-5.6 Luna Terminal-Bench 2.1, OpenAI-reported terminal-agent evaluation.",
+        "evaluationDate": "2026-07-09"
+      }
+    },
+    "gpt-5-6-cyber": {},
+    "gpt-5-5": {
+      "gpqa-diamond": {
+        "value": 93.6,
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-5/",
+        "checkedOn": "2026-08-12",
+        "protocol": "GPQA Diamond, no tools.",
+        "evaluationDate": "2026-04-23"
+      },
+      "hle": {
+        "value": 41.4,
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-5/",
+        "checkedOn": "2026-08-12",
+        "protocol": "Humanity's Last Exam, no tools.",
+        "evaluationDate": "2026-04-23"
+      },
+      "swe-bench-pro": {
+        "value": 58.6,
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-5/",
+        "checkedOn": "2026-08-12",
+        "protocol": "Public SWE-bench Pro, single-pass agent evaluation.",
+        "evaluationDate": "2026-04-23"
+      }
+    },
+    "gpt-5-5-pro": {},
+    "gpt-5-4": {
+      "gpqa-diamond": {
+        "value": 92.8,
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-4/",
+        "checkedOn": "2026-08-12",
+        "protocol": "GPQA Diamond, no tools.",
+        "evaluationDate": "2026-03-05"
+      },
+      "hle": {
+        "value": 39.8,
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-4/",
+        "checkedOn": "2026-08-12",
+        "protocol": "Humanity's Last Exam, no tools.",
+        "evaluationDate": "2026-03-05"
+      },
+      "swe-bench-pro": {
+        "value": 57.7,
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-4/",
+        "checkedOn": "2026-08-12",
+        "protocol": "Public SWE-bench Pro, single-pass agent evaluation.",
+        "evaluationDate": "2026-03-05"
+      }
+    },
+    "gpt-5": {},
+    "gpt-5-mini": {},
+    "gpt-5-nano": {},
+    "o3": {},
+    "gpt-4-1": {},
+    "gpt-4o": {},
+    "gpt-4o-2024-05-13": {},
+    "gpt-4-1-mini": {},
+    "gpt-4-1-nano": {},
+    "gpt-4o-mini": {},
+    "claude-opus-5": {},
+    "claude-fable-5": {},
+    "claude-opus-4-8": {},
+    "claude-sonnet-5": {},
+    "claude-opus-4-5": {},
+    "claude-sonnet-4-6": {},
+    "claude-haiku-4-5": {
+      "swe-bench-verified": {
+        "value": 73.3,
+        "sourceUrl": "https://www.anthropic.com/news/claude-haiku-4-5",
+        "checkedOn": "2026-08-12",
+        "protocol": "SWE-bench Verified, full 500 tasks; bash and string-edit scaffold; 50-trial average; 128K thinking budget; no test-time compute.",
+        "evaluationDate": "2025-10-15"
+      }
+    },
+    "claude-sonnet-4": {},
+    "claude-haiku-3-5": {},
+    "gemini-3-1-pro": {
+      "gpqa-diamond": {
+        "value": 94.3,
+        "sourceUrl": "https://deepmind.google/models/model-cards/gemini-3-1-pro/",
+        "checkedOn": "2026-08-12",
+        "protocol": "GPQA Diamond, Thinking High, no tools.",
+        "evaluationDate": "2026-02-19"
+      },
+      "hle": {
+        "value": 44.4,
+        "sourceUrl": "https://deepmind.google/models/model-cards/gemini-3-1-pro/",
+        "checkedOn": "2026-08-12",
+        "protocol": "Humanity's Last Exam, no tools.",
+        "evaluationDate": "2026-02-19"
+      },
+      "swe-bench-verified": {
+        "value": 80.6,
+        "sourceUrl": "https://deepmind.google/models/model-cards/gemini-3-1-pro/",
+        "checkedOn": "2026-08-12",
+        "protocol": "SWE-bench Verified, Google single-attempt agent scaffold.",
+        "evaluationDate": "2026-02-19"
+      }
+    },
+    "gemini-3-pro": {
+      "gpqa-diamond": {
+        "value": 91.9,
+        "sourceUrl": "https://blog.google/products-and-platforms/products/gemini/gemini-3/",
+        "checkedOn": "2026-08-12",
+        "protocol": "GPQA Diamond, no tools.",
+        "evaluationDate": "2025-11-18"
+      },
+      "hle": {
+        "value": 37.5,
+        "sourceUrl": "https://blog.google/products-and-platforms/products/gemini/gemini-3/",
+        "checkedOn": "2026-08-12",
+        "protocol": "Humanity's Last Exam, no tools.",
+        "evaluationDate": "2025-11-18"
+      },
+      "lmarena-elo": {
+        "value": 1501,
+        "sourceUrl": "https://blog.google/products-and-platforms/products/gemini/gemini-3/",
+        "checkedOn": "2026-08-12",
+        "protocol": "LMArena launch snapshot; volatile Elo, not a timeless model property.",
+        "evaluationDate": "2025-11-18"
+      }
+    },
+    "gemini-3-6-flash": {},
+    "gemini-3-flash": {},
+    "gemini-3-5-flash-lite": {},
+    "gemini-3-5-flash-cyber": {},
+    "gemini-2-5-pro": {},
+    "gemini-2-5-flash": {},
+    "gemma-4-31b": {
+      "mmlu-pro": {
+        "value": 85.2,
+        "sourceUrl": "https://huggingface.co/google/gemma-4-31b-it",
+        "checkedOn": "2026-08-12",
+        "protocol": "Gemma 4 instruction-tuned MMLU Pro result.",
+        "evaluationDate": "2026-04-08"
+      },
+      "gpqa-diamond": {
+        "value": 84.3,
+        "sourceUrl": "https://huggingface.co/google/gemma-4-31b-it",
+        "checkedOn": "2026-08-12",
+        "protocol": "Gemma 4 instruction-tuned GPQA Diamond, no tools.",
+        "evaluationDate": "2026-04-08"
+      },
+      "hle": {
+        "value": 19.5,
+        "sourceUrl": "https://huggingface.co/google/gemma-4-31b-it",
+        "checkedOn": "2026-08-12",
+        "protocol": "Humanity's Last Exam, no tools.",
+        "evaluationDate": "2026-04-08"
+      },
+      "livecodebench": {
+        "value": 80,
+        "sourceUrl": "https://huggingface.co/google/gemma-4-31b-it",
+        "checkedOn": "2026-08-12",
+        "protocol": "LiveCodeBench v6.",
+        "evaluationDate": "2026-04-08"
+      }
+    },
+    "gemma-4-26b": {
+      "mmlu-pro": {
+        "value": 82.6,
+        "sourceUrl": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+        "checkedOn": "2026-08-12",
+        "protocol": "Gemma 4 instruction-tuned MMLU Pro result.",
+        "evaluationDate": "2026-04-08"
+      },
+      "gpqa-diamond": {
+        "value": 82.3,
+        "sourceUrl": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+        "checkedOn": "2026-08-12",
+        "protocol": "Gemma 4 instruction-tuned GPQA Diamond, no tools.",
+        "evaluationDate": "2026-04-08"
+      },
+      "hle": {
+        "value": 8.7,
+        "sourceUrl": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+        "checkedOn": "2026-08-12",
+        "protocol": "Humanity's Last Exam, no tools.",
+        "evaluationDate": "2026-04-08"
+      },
+      "livecodebench": {
+        "value": 77.1,
+        "sourceUrl": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+        "checkedOn": "2026-08-12",
+        "protocol": "LiveCodeBench v6.",
+        "evaluationDate": "2026-04-08"
+      }
+    },
+    "gemma-3-12b": {
+      "mmlu-pro": {
+        "value": 60.6,
+        "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_3",
+        "checkedOn": "2026-08-12",
+        "protocol": "Gemma 3 IT, 0-shot MMLU (Pro).",
+        "evaluationDate": "2025-03-12"
+      },
+      "gpqa-diamond": {
+        "value": 40.9,
+        "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_3",
+        "checkedOn": "2026-08-12",
+        "protocol": "Gemma 3 IT, 0-shot GPQA Diamond.",
+        "evaluationDate": "2025-03-12"
+      },
+      "simpleqa": {
+        "value": 6.3,
+        "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_3",
+        "checkedOn": "2026-08-12",
+        "protocol": "Gemma 3 IT, 0-shot SimpleQA.",
+        "evaluationDate": "2025-03-12"
+      },
+      "livecodebench": {
+        "value": 24.6,
+        "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_3",
+        "checkedOn": "2026-08-12",
+        "protocol": "Gemma 3 IT, 0-shot LiveCodeBench.",
+        "evaluationDate": "2025-03-12"
+      }
+    },
+    "grok-4-5": {},
+    "grok-4-6": {
+      "cursorbench": {
+        "value": 69.9,
+        "sourceUrl": "https://x.ai/news/grok-4-6",
+        "checkedOn": "2026-08-12",
+        "protocol": "Grok 4.6 CursorBench v3.2, SpaceXAI-reported agent evaluation at launch.",
+        "evaluationDate": "2026-08-12"
+      }
+    },
+    "grok-4-3": {},
+    "grok-build-0-1": {},
+    "grok-4-20": {},
+    "grok-4-1": {},
+    "grok-4": {},
+    "muse-spark-1-2": {},
+    "muse-glimmer": {
+      "swe-bench-verified": {
+        "value": 76,
+        "sourceUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+        "checkedOn": "2026-08-12",
+        "protocol": "Muse Glimmer SWE-bench Verified, Meta model-card high reasoning result.",
+        "evaluationDate": "2026-08-10"
+      },
+      "swe-bench-pro": {
+        "value": 51.2,
+        "sourceUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+        "checkedOn": "2026-08-12",
+        "protocol": "Muse Glimmer SWE-bench Pro, Meta model-card agent evaluation.",
+        "evaluationDate": "2026-08-10"
+      },
+      "terminal-bench-2-1": {
+        "value": 51.7,
+        "sourceUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+        "checkedOn": "2026-08-12",
+        "protocol": "Muse Glimmer Terminal-Bench 2.1 with terminus2, Meta model-card result.",
+        "evaluationDate": "2026-08-10"
+      },
+      "gpqa-diamond": {
+        "value": 83.5,
+        "sourceUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+        "checkedOn": "2026-08-12",
+        "protocol": "Muse Glimmer GPQA Diamond (AA), Meta model-card result.",
+        "evaluationDate": "2026-08-10"
+      },
+      "hle": {
+        "value": 22,
+        "sourceUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+        "checkedOn": "2026-08-12",
+        "protocol": "Muse Glimmer HLE Text (AA), Meta model-card result.",
+        "evaluationDate": "2026-08-10"
+      },
+      "scicode": {
+        "value": 43.6,
+        "sourceUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+        "checkedOn": "2026-08-12",
+        "protocol": "Muse Glimmer SciCode, Meta model-card result.",
+        "evaluationDate": "2026-08-10"
+      }
+    },
+    "muse-spark-1-1": {},
+    "llama-4-maverick": {
+      "mmlu-pro": {
+        "value": 80.5,
+        "sourceUrl": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+        "checkedOn": "2026-08-12",
+        "protocol": "Meta Llama 4 Instruct MMLU-Pro result.",
+        "evaluationDate": "2025-04-05"
+      },
+      "livecodebench": {
+        "value": 43.4,
+        "sourceUrl": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+        "checkedOn": "2026-08-12",
+        "protocol": "Meta Llama 4 Instruct LiveCodeBench, published collection window.",
+        "evaluationDate": "2025-04-05"
+      },
+      "aider-polyglot": {
+        "value": 15.6,
+        "sourceUrl": "https://aider.chat/docs/leaderboards/",
+        "checkedOn": "2026-08-12",
+        "protocol": "Aider Polyglot whole benchmark leaderboard snapshot.",
+        "evaluationDate": "2025-04-06"
+      }
+    },
+    "llama-4-scout": {
+      "mmlu-pro": {
+        "value": 74.3,
+        "sourceUrl": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+        "checkedOn": "2026-08-12",
+        "protocol": "Meta Llama 4 Instruct MMLU-Pro result.",
+        "evaluationDate": "2025-04-05"
+      },
+      "livecodebench": {
+        "value": 32.8,
+        "sourceUrl": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+        "checkedOn": "2026-08-12",
+        "protocol": "Meta Llama 4 Instruct LiveCodeBench, published collection window.",
+        "evaluationDate": "2025-04-05"
+      }
+    },
+    "llama-3-3-70b": {
+      "mmlu-pro": {
+        "value": 68.9,
+        "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+        "checkedOn": "2026-08-12",
+        "protocol": "Meta Llama 3.3 Instruct MMLU-Pro result.",
+        "evaluationDate": "2024-12-06"
+      },
+      "gpqa-diamond": {
+        "value": 50.5,
+        "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+        "checkedOn": "2026-08-12",
+        "protocol": "Meta Llama 3.3 Instruct GPQA result, retained under the catalog's GPQA field.",
+        "evaluationDate": "2024-12-06"
+      }
+    },
+    "llama-3-1-70b": {
+      "mmlu-pro": {
+        "value": 66.4,
+        "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "Meta Llama 3.1 Instruct MMLU-Pro, 5-shot CoT.",
+        "evaluationDate": "2024-07-23"
+      }
+    },
+    "llama-3-1-8b": {
+      "mmlu-pro": {
+        "value": 48.3,
+        "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "Meta Llama 3.1 Instruct MMLU-Pro, 5-shot CoT.",
+        "evaluationDate": "2024-07-23"
+      }
+    },
+    "llama-3-2-90b": {},
+    "llama-3-2-11b": {},
+    "deepseek-v4-pro": {},
+    "deepseek-v4-flash": {
+      "terminal-bench-2-1": {
+        "value": 82.7,
+        "sourceUrl": "https://api-docs.deepseek.com/updates/",
+        "checkedOn": "2026-08-12",
+        "protocol": "DeepSeek-V4-Flash-0731 public beta; Terminal-Bench 2.1 with DeepSeek Harness minimal mode, max effort, top_p=0.95, temperature=1.0.",
+        "evaluationDate": "2026-07-31"
+      },
+      "nl2repo": {
+        "value": 54.2,
+        "sourceUrl": "https://api-docs.deepseek.com/updates/",
+        "checkedOn": "2026-08-12",
+        "protocol": "DeepSeek-V4-Flash-0731 public beta; NL2Repo with DeepSeek Harness minimal mode, max effort, top_p=0.95, temperature=1.0.",
+        "evaluationDate": "2026-07-31"
+      }
+    },
+    "deepseek-v3-2": {},
+    "deepseek-v3-1": {
+      "mmlu-pro": {
+        "value": 84.8,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "V3.1 Thinking MMLU-Pro EM.",
+        "evaluationDate": "2025-08-21"
+      },
+      "gpqa-diamond": {
+        "value": 80.1,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "V3.1 Thinking GPQA Diamond pass@1.",
+        "evaluationDate": "2025-08-21"
+      },
+      "hle": {
+        "value": 15.9,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "V3.1 Thinking Humanity's Last Exam pass@1.",
+        "evaluationDate": "2025-08-21"
+      },
+      "aime-2025": {
+        "value": 88.4,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "V3.1 Thinking AIME 2025 pass@1.",
+        "evaluationDate": "2025-08-21"
+      },
+      "livecodebench": {
+        "value": 74.8,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "V3.1 Thinking LiveCodeBench 2408-2505 pass@1.",
+        "evaluationDate": "2025-08-21"
+      },
+      "aider-polyglot": {
+        "value": 76.3,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "V3.1 Thinking Aider-Polyglot accuracy.",
+        "evaluationDate": "2025-08-21"
+      }
+    },
+    "deepseek-r1-0528": {
+      "mmlu-pro": {
+        "value": 85,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "MMLU-Pro EM; official R1-0528 evaluation table.",
+        "evaluationDate": "2025-05-28"
+      },
+      "gpqa-diamond": {
+        "value": 81,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "GPQA Diamond pass@1; official R1-0528 evaluation table.",
+        "evaluationDate": "2025-05-28"
+      },
+      "hle": {
+        "value": 17.7,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "Humanity's Last Exam pass@1 on text-only prompts.",
+        "evaluationDate": "2025-05-28"
+      },
+      "aime-2025": {
+        "value": 87.5,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "AIME 2025 pass@1; 16 samples per question with temperature 0.6 and top-p 0.95.",
+        "evaluationDate": "2025-05-28"
+      },
+      "simpleqa": {
+        "value": 27.8,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "SimpleQA Correct; official R1-0528 evaluation table.",
+        "evaluationDate": "2025-05-28"
+      },
+      "swe-bench-verified": {
+        "value": 57.6,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "SWE-bench Verified resolved rate using the Agentless framework.",
+        "evaluationDate": "2025-05-28"
+      },
+      "livecodebench": {
+        "value": 73.3,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "LiveCodeBench 2408-2505 pass@1.",
+        "evaluationDate": "2025-05-28"
+      },
+      "aider-polyglot": {
+        "value": 71.6,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "Aider-Polyglot accuracy; official R1-0528 evaluation table.",
+        "evaluationDate": "2025-05-28"
+      }
+    },
+    "qwen3-8-max": {},
+    "qwen3-8-27b": {},
+    "qwen3-7-plus": {},
+    "qwen3-7-flash": {},
+    "qwen3-6-plus": {},
+    "qwen3-7-max": {
+      "gpqa-diamond": {
+        "value": 92.4,
+        "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+        "checkedOn": "2026-08-12",
+        "protocol": "Qwen3.7-Max GPQA Diamond, reasoning high.",
+        "evaluationDate": "2026-05-21"
+      },
+      "hle": {
+        "value": 41.4,
+        "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+        "checkedOn": "2026-08-12",
+        "protocol": "Qwen3.7-Max Humanity's Last Exam, reasoning high.",
+        "evaluationDate": "2026-05-21"
+      },
+      "swe-bench-verified": {
+        "value": 80.4,
+        "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+        "checkedOn": "2026-08-12",
+        "protocol": "Qwen3.7-Max SWE-bench Verified using Alibaba's internal agent scaffold.",
+        "evaluationDate": "2026-05-21"
+      },
+      "swe-bench-multilingual": {
+        "value": 78.3,
+        "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+        "checkedOn": "2026-08-12",
+        "protocol": "Qwen3.7-Max SWE-bench Multilingual using Alibaba's internal agent scaffold.",
+        "evaluationDate": "2026-05-21"
+      },
+      "scicode": {
+        "value": 53.5,
+        "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+        "checkedOn": "2026-08-12",
+        "protocol": "Qwen3.7-Max SciCode evaluation.",
+        "evaluationDate": "2026-05-21"
+      }
+    },
+    "qwen3-5-397b": {},
+    "qwen3-235b": {},
+    "qwen3-max": {},
+    "qwen3-32b": {},
+    "mistral-large-3": {},
+    "mistral-medium-3-5": {},
+    "mistral-small-4": {},
+    "ministral-3-14b": {},
+    "ministral-3-8b": {},
+    "ministral-3-3b": {},
+    "magistral-medium": {},
+    "magistral-small": {},
+    "devstral-2": {},
+    "mistral-medium-3-1": {},
+    "mistral-small-3-2": {},
+    "codestral-2508": {},
+    "codestral-22b": {},
+    "kimi-k3": {
+      "gpqa-diamond": {
+        "value": 93.5,
+        "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K3/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "Kimi K3 max GPQA Diamond, no tools; reasoning effort max.",
+        "evaluationDate": "2026-07-16"
+      },
+      "hle": {
+        "value": 43.5,
+        "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K3/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "Kimi K3 max HLE-Full without tools; the card reports 43.5 without tools and 56.0 with tools.",
+        "evaluationDate": "2026-07-16"
+      },
+      "scicode": {
+        "value": 58.7,
+        "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K3/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "Kimi K3 max SciCode evaluation.",
+        "evaluationDate": "2026-07-16"
+      },
+      "terminal-bench-2-1": {
+        "value": 88.3,
+        "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K3/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "Kimi K3 max Terminal-Bench 2.1 using the Kimi Code harness.",
+        "evaluationDate": "2026-07-16"
+      }
+    },
+    "kimi-k3-fast": {},
+    "kimi-k2-7-code": {},
+    "kimi-k2-5": {
+      "mmlu-pro": {
+        "value": 87.1,
+        "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.5",
+        "checkedOn": "2026-08-12",
+        "protocol": "Kimi K2.5 Thinking MMLU-Pro.",
+        "evaluationDate": "2026-01-27"
+      },
+      "gpqa-diamond": {
+        "value": 87.6,
+        "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.5",
+        "checkedOn": "2026-08-12",
+        "protocol": "Kimi K2.5 Thinking GPQA Diamond; 96K maximum completion budget.",
+        "evaluationDate": "2026-01-27"
+      },
+      "hle": {
+        "value": 30.1,
+        "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.5",
+        "checkedOn": "2026-08-12",
+        "protocol": "Kimi K2.5 Thinking HLE-Full without tools; 96K maximum completion budget.",
+        "evaluationDate": "2026-01-27"
+      },
+      "aime-2025": {
+        "value": 96.1,
+        "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.5",
+        "checkedOn": "2026-08-12",
+        "protocol": "Kimi K2.5 Thinking AIME 2025; 96K maximum completion budget.",
+        "evaluationDate": "2026-01-27"
+      },
+      "swe-bench-verified": {
+        "value": 76.8,
+        "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.5",
+        "checkedOn": "2026-08-12",
+        "protocol": "Kimi K2.5 SWE-bench Verified agent evaluation.",
+        "evaluationDate": "2026-01-27"
+      },
+      "swe-bench-pro": {
+        "value": 50.7,
+        "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.5",
+        "checkedOn": "2026-08-12",
+        "protocol": "Kimi K2.5 SWE-bench Pro agent evaluation.",
+        "evaluationDate": "2026-01-27"
+      },
+      "swe-bench-multilingual": {
+        "value": 73,
+        "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.5",
+        "checkedOn": "2026-08-12",
+        "protocol": "Kimi K2.5 SWE-bench Multilingual agent evaluation.",
+        "evaluationDate": "2026-01-27"
+      },
+      "livecodebench": {
+        "value": 85,
+        "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.5",
+        "checkedOn": "2026-08-12",
+        "protocol": "Kimi K2.5 LiveCodeBench v6.",
+        "evaluationDate": "2026-01-27"
+      },
+      "scicode": {
+        "value": 48.7,
+        "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.5",
+        "checkedOn": "2026-08-12",
+        "protocol": "Kimi K2.5 SciCode evaluation.",
+        "evaluationDate": "2026-01-27"
+      }
+    },
+    "glm-5-2": {},
+    "glm-5": {},
+    "glm-4-7": {},
+    "phi-4": {},
+    "phi-4-reasoning": {},
+    "minimax-m3": {},
+    "minimax-m2-5": {},
+    "longcat-2-0": {},
+    "nemotron-3-ultra": {
+      "mmlu-pro": {
+        "value": 86.8,
+        "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+        "checkedOn": "2026-08-12",
+        "protocol": "NVIDIA model card MMLU-Pro evaluation.",
+        "evaluationDate": "2026-06-03"
+      },
+      "swe-bench-verified": {
+        "value": 70.7,
+        "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+        "checkedOn": "2026-08-12",
+        "protocol": "NVIDIA model card SWE-bench Verified agent evaluation.",
+        "evaluationDate": "2026-06-03"
+      },
+      "swe-bench-multilingual": {
+        "value": 67.7,
+        "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+        "checkedOn": "2026-08-12",
+        "protocol": "NVIDIA model card SWE-bench Multilingual agent evaluation.",
+        "evaluationDate": "2026-06-03"
+      },
+      "hle": {
+        "value": 26.7,
+        "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+        "checkedOn": "2026-08-12",
+        "protocol": "Humanity's Last Exam, no tools.",
+        "evaluationDate": "2026-06-03"
+      },
+      "livecodebench": {
+        "value": 89,
+        "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+        "checkedOn": "2026-08-12",
+        "protocol": "LiveCodeBench v6.",
+        "evaluationDate": "2026-06-03"
+      },
+      "terminal-bench-2-1": {
+        "value": 56.4,
+        "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+        "checkedOn": "2026-08-12",
+        "protocol": "Terminal-Bench 2.1.",
+        "evaluationDate": "2026-06-03"
+      }
+    },
+    "amazon-nova-premier": {},
+    "claude-opus-4-7": {},
+    "claude-opus-4-6": {},
+    "claude-mythos-5": {},
+    "claude-sonnet-4-5": {},
+    "claude-opus-4-1": {
+      "swe-bench-verified": {
+        "value": 74.5,
+        "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-1",
+        "checkedOn": "2026-08-12",
+        "protocol": "SWE-bench Verified, full 500-task report using Anthropic's two-tool bash and string-edit scaffold; no extended thinking.",
+        "evaluationDate": "2025-08-05"
+      }
+    },
+    "gpt-5-4-mini": {
+      "gpqa-diamond": {
+        "value": 88,
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+        "checkedOn": "2026-08-12",
+        "protocol": "GPQA Diamond, xhigh reasoning effort, no tools.",
+        "evaluationDate": "2026-03-17"
+      },
+      "hle": {
+        "value": 28.2,
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+        "checkedOn": "2026-08-12",
+        "protocol": "Humanity's Last Exam without tools, xhigh reasoning effort.",
+        "evaluationDate": "2026-03-17"
+      },
+      "swe-bench-pro": {
+        "value": 54.4,
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+        "checkedOn": "2026-08-12",
+        "protocol": "Public SWE-bench Pro, single-pass agent evaluation.",
+        "evaluationDate": "2026-03-17"
+      }
+    },
+    "gpt-5-4-nano": {
+      "gpqa-diamond": {
+        "value": 82.8,
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+        "checkedOn": "2026-08-12",
+        "protocol": "GPQA Diamond, xhigh reasoning effort, no tools.",
+        "evaluationDate": "2026-03-17"
+      },
+      "hle": {
+        "value": 24.3,
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+        "checkedOn": "2026-08-12",
+        "protocol": "Humanity's Last Exam without tools, xhigh reasoning effort.",
+        "evaluationDate": "2026-03-17"
+      },
+      "swe-bench-pro": {
+        "value": 52.4,
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+        "checkedOn": "2026-08-12",
+        "protocol": "Public SWE-bench Pro, single-pass agent evaluation.",
+        "evaluationDate": "2026-03-17"
+      }
+    },
+    "o4-mini": {},
+    "o3-mini": {},
+    "o3-pro": {},
+    "o1": {},
+    "gpt-5-4-pro": {},
+    "gpt-oss-120b": {},
+    "gpt-oss-20b": {},
+    "gemini-3-1-flash-lite": {},
+    "gemini-2-5-flash-lite": {},
+    "grok-4-fast": {},
+    "grok-3": {},
+    "deepseek-v3": {
+      "mmlu-pro": {
+        "value": 75.9,
+        "sourceUrl": "https://arxiv.org/html/2412.19437",
+        "checkedOn": "2026-08-12",
+        "protocol": "DeepSeek-V3 technical report; MMLU-Pro exact match.",
+        "evaluationDate": "2024-12-26"
+      },
+      "math-500": {
+        "value": 90.2,
+        "sourceUrl": "https://arxiv.org/html/2412.19437",
+        "checkedOn": "2026-08-12",
+        "protocol": "DeepSeek-V3 technical report; MATH-500 greedy evaluation.",
+        "evaluationDate": "2024-12-26"
+      },
+      "simpleqa": {
+        "value": 24.9,
+        "sourceUrl": "https://arxiv.org/html/2412.19437",
+        "checkedOn": "2026-08-12",
+        "protocol": "DeepSeek-V3 technical report; SimpleQA Correct metric.",
+        "evaluationDate": "2024-12-26"
+      }
+    },
+    "deepseek-r1": {
+      "mmlu-pro": {
+        "value": 84,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "MMLU-Pro EM; official DeepSeek-R1 evaluation table.",
+        "evaluationDate": "2025-01-20"
+      },
+      "gpqa-diamond": {
+        "value": 71.5,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "GPQA Diamond pass@1; official DeepSeek-R1 evaluation table.",
+        "evaluationDate": "2025-01-20"
+      },
+      "aime-2025": {
+        "value": 70,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "AIME 2025 pass@1; sampled evaluation with temperature 0.6 and top-p 0.95.",
+        "evaluationDate": "2025-01-20"
+      },
+      "math-500": {
+        "value": 97.3,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "MATH-500 pass@1; official DeepSeek-R1 evaluation table.",
+        "evaluationDate": "2025-01-20"
+      },
+      "simpleqa": {
+        "value": 30.1,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "SimpleQA Correct; official DeepSeek-R1 evaluation table.",
+        "evaluationDate": "2025-01-20"
+      },
+      "swe-bench-verified": {
+        "value": 49.2,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "SWE-bench Verified resolved rate; official Agentless evaluation.",
+        "evaluationDate": "2025-01-20"
+      },
+      "aider-polyglot": {
+        "value": 53.3,
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "Aider-Polyglot accuracy; official DeepSeek-R1 evaluation table.",
+        "evaluationDate": "2025-01-20"
+      }
+    },
+    "qwen3-coder-480b": {},
+    "qwen2-5-72b": {},
+    "qwen2-5-32b": {},
+    "qwen2-5-14b": {},
+    "qwen2-72b": {},
+    "gemma-3-27b": {},
+    "llama-3-1-405b": {
+      "mmlu-pro": {
+        "value": 73.3,
+        "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "Meta Llama 3.1 Instruct MMLU-Pro, 5-shot CoT.",
+        "evaluationDate": "2024-07-23"
+      }
+    },
+    "ernie-5-1": {},
+    "seed-2-pro": {
+      "gpqa-diamond": {
+        "value": 88.9,
+        "sourceUrl": "https://seed.bytedance.com/en/seed2",
+        "checkedOn": "2026-08-12",
+        "protocol": "Seed2.0 Pro 0215 pre-release GPQA Diamond.",
+        "evaluationDate": "2026-02-15"
+      },
+      "hle": {
+        "value": 32.4,
+        "sourceUrl": "https://seed.bytedance.com/en/seed2",
+        "checkedOn": "2026-08-12",
+        "protocol": "Seed2.0 Pro 0215 pre-release HLE, no tool and text only.",
+        "evaluationDate": "2026-02-15"
+      },
+      "swe-bench-pro": {
+        "value": 46.9,
+        "sourceUrl": "https://seed.bytedance.com/en/seed2",
+        "checkedOn": "2026-08-12",
+        "protocol": "Seed2.0 Pro 0215 pre-release SWE-bench Pro.",
+        "evaluationDate": "2026-02-15"
+      },
+      "swe-bench-multilingual": {
+        "value": 71.7,
+        "sourceUrl": "https://seed.bytedance.com/en/seed2",
+        "checkedOn": "2026-08-12",
+        "protocol": "Seed2.0 Pro 0215 pre-release SWE Multilingual.",
+        "evaluationDate": "2026-02-15"
+      },
+      "nl2repo": {
+        "value": 27.9,
+        "sourceUrl": "https://seed.bytedance.com/en/seed2",
+        "checkedOn": "2026-08-12",
+        "protocol": "Seed2.0 Pro 0215 pre-release NL2Repo-Bench.",
+        "evaluationDate": "2026-02-15"
+      }
+    },
+    "seedrealtime": {},
+    "command-a": {},
+    "yi-lightning": {},
+    "olmo-3-32b": {},
+    "amazon-nova-pro": {},
+    "amazon-nova-lite": {},
+    "amazon-nova-micro": {},
+    "amazon-nova-2-lite": {},
+    "mistral-nemo": {},
+    "command-r-plus": {},
+    "command-r": {},
+    "command-r7b": {},
+    "command-a-reasoning": {},
+    "command-a-vision": {},
+    "aya-expanse-32b": {},
+    "jamba-large-1-7": {},
+    "jamba-mini-2": {},
+    "jamba-1-5-large": {},
+    "sonar": {},
+    "sonar-small": {},
+    "sonar-pro": {},
+    "sonar-reasoning-pro": {},
+    "granite-4-1-8b": {},
+    "granite-3-8b": {},
+    "granite-4-micro": {},
+    "nemotron-3-super-120b": {},
+    "nemotron-nano-3-30b": {
+      "mmlu-pro": {
+        "value": 78.3,
+        "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+        "checkedOn": "2026-08-12",
+        "protocol": "NVIDIA model card MMLU-Pro evaluation.",
+        "evaluationDate": "2025-12-15"
+      },
+      "hle": {
+        "value": 10.6,
+        "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+        "checkedOn": "2026-08-12",
+        "protocol": "Humanity's Last Exam, no tools.",
+        "evaluationDate": "2025-12-15"
+      },
+      "aime-2025": {
+        "value": 89.1,
+        "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+        "checkedOn": "2026-08-12",
+        "protocol": "AIME 2025, no tools.",
+        "evaluationDate": "2025-12-15"
+      },
+      "livecodebench": {
+        "value": 68.3,
+        "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+        "checkedOn": "2026-08-12",
+        "protocol": "LiveCodeBench v6.",
+        "evaluationDate": "2025-12-15"
+      }
+    },
+    "llama-3-1-nemotron-70b": {},
+    "phi-4-mini": {},
+    "phi-4-multimodal": {},
+    "phi-3-5-mini": {},
+    "phi-3-medium": {},
+    "phi-3-mini": {},
+    "dbrx-instruct": {},
+    "snowflake-arctic-instruct": {},
+    "palmyra-x5": {},
+    "palmyra-x4": {},
+    "reka-flash": {},
+    "reka-core": {},
+    "solar-pro-3": {},
+    "solar-10-7b": {},
+    "composer-2-5": {
+      "swe-bench-multilingual": {
+        "value": 79.8,
+        "sourceUrl": "https://cursor.com/composer",
+        "checkedOn": "2026-08-12",
+        "protocol": "Cursor Composer 2.5 SWE-bench Multilingual result.",
+        "evaluationDate": "2026-05-18"
+      },
+      "cursorbench": {
+        "value": 56.1,
+        "sourceUrl": "https://cursor.com/cursorbench",
+        "checkedOn": "2026-08-12",
+        "protocol": "CursorBench 3.2.",
+        "evaluationDate": "2026-07-08"
+      },
+      "vibe-code-bench": {
+        "value": 49.61,
+        "sourceUrl": "https://www.vals.ai/benchmarks/vibe-code",
+        "checkedOn": "2026-08-12",
+        "protocol": "Vibe Code Bench v1.1 snapshot.",
+        "evaluationDate": "2026-07-13"
+      }
+    },
+    "composer-2-5-fast": {
+      "swe-bench-multilingual": {
+        "value": 79.8,
+        "sourceUrl": "https://cursor.com/composer",
+        "checkedOn": "2026-08-12",
+        "protocol": "Cursor Composer 2.5 SWE-bench Multilingual result; Fast is the same underlying Composer 2.5 intelligence SKU.",
+        "evaluationDate": "2026-05-18"
+      },
+      "cursorbench": {
+        "value": 56.1,
+        "sourceUrl": "https://cursor.com/cursorbench",
+        "checkedOn": "2026-08-12",
+        "protocol": "CursorBench 3.2; same underlying Composer 2.5 intelligence SKU.",
+        "evaluationDate": "2026-07-08"
+      },
+      "vibe-code-bench": {
+        "value": 49.61,
+        "sourceUrl": "https://www.vals.ai/benchmarks/vibe-code",
+        "checkedOn": "2026-08-12",
+        "protocol": "Vibe Code Bench v1.1 snapshot; same underlying Composer 2.5 intelligence SKU.",
+        "evaluationDate": "2026-07-13"
+      }
+    },
+    "composer-2": {},
+    "composer-2-fast": {},
+    "cursor-grok-4-5": {},
+    "cursor-grok-4-5-fast": {},
+    "o1-pro": {},
+    "o1-mini": {},
+    "o1-preview": {},
+    "gpt-4-turbo": {},
+    "gpt-4": {},
+    "gpt-4-32k": {},
+    "gpt-4-5": {},
+    "gpt-3-5-turbo": {},
+    "claude-3-opus": {},
+    "claude-3-5-sonnet": {},
+    "claude-3-5-sonnet-1022": {},
+    "claude-3-7-sonnet": {},
+    "claude-3-haiku": {},
+    "claude-3-sonnet": {},
+    "claude-opus-4": {},
+    "claude-2-1": {},
+    "claude-2": {},
+    "claude-instant-1-2": {},
+    "gemini-3-5-flash": {},
+    "gemini-2-0-flash": {},
+    "gemini-2-0-flash-lite": {},
+    "gemini-2-0-flash-thinking": {},
+    "gemini-1-0-pro": {},
+    "gemini-1-5-pro": {},
+    "gemini-1-5-flash": {},
+    "gemini-1-5-flash-8b": {},
+    "gemma-2-27b": {},
+    "gemma-2-9b": {},
+    "gemma-2-2b": {},
+    "gemma-3-4b": {
+      "mmlu-pro": {
+        "value": 43.6,
+        "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_3",
+        "checkedOn": "2026-08-12",
+        "protocol": "Gemma 3 IT, 0-shot MMLU (Pro).",
+        "evaluationDate": "2025-03-12"
+      },
+      "gpqa-diamond": {
+        "value": 30.8,
+        "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_3",
+        "checkedOn": "2026-08-12",
+        "protocol": "Gemma 3 IT, 0-shot GPQA Diamond.",
+        "evaluationDate": "2025-03-12"
+      },
+      "simpleqa": {
+        "value": 4,
+        "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_3",
+        "checkedOn": "2026-08-12",
+        "protocol": "Gemma 3 IT, 0-shot SimpleQA.",
+        "evaluationDate": "2025-03-12"
+      },
+      "livecodebench": {
+        "value": 12.6,
+        "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_3",
+        "checkedOn": "2026-08-12",
+        "protocol": "Gemma 3 IT, 0-shot LiveCodeBench.",
+        "evaluationDate": "2025-03-12"
+      }
+    },
+    "grok-2": {},
+    "grok-2-mini": {},
+    "grok-3-mini": {},
+    "grok-1": {},
+    "llama-3-70b": {},
+    "llama-3-8b": {},
+    "llama-3-2-3b": {},
+    "llama-3-2-1b": {},
+    "llama-2-70b": {},
+    "codellama-70b": {},
+    "codellama-34b": {},
+    "deepseek-coder-v2": {},
+    "deepseek-coder-v2-lite": {},
+    "deepseek-v2": {},
+    "deepseek-v2-5": {},
+    "deepseek-r1-distill-llama-70b": {},
+    "deepseek-r1-distill-qwen-32b": {},
+    "deepseek-r1-distill-qwen-14b": {},
+    "deepseek-r1-distill-llama-8b": {},
+    "mistral-large-2": {},
+    "mistral-large": {},
+    "mistral-small": {},
+    "mixtral-8x22b": {},
+    "mixtral-8x7b": {},
+    "pixtral-large": {},
+    "pixtral-12b": {},
+    "mistral-7b": {},
+    "voxtral-small": {},
+    "devstral-small": {},
+    "qwen2-5-coder-32b": {},
+    "qwen2-5-coder-7b": {},
+    "qwq-32b": {
+      "aime-2025": {
+        "value": 69.5,
+        "sourceUrl": "https://raw.githubusercontent.com/QwenLM/QwQ/main/eval/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "QwQ-32B AIME25, 64 samples; temperature 0.6, top-p 0.95, top-k 40, max tokens 32768.",
+        "evaluationDate": "2025-03-06"
+      },
+      "livecodebench": {
+        "value": 63.4,
+        "sourceUrl": "https://raw.githubusercontent.com/QwenLM/QwQ/main/eval/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "QwQ-32B LiveCodeBench 2408-2502.",
+        "evaluationDate": "2025-03-06"
+      }
+    },
+    "qwen3-next-80b": {},
+    "qwen3-5-flash": {},
+    "qwen2-5-7b": {},
+    "qwen3-coder-30b": {},
+    "kimi-k2": {},
+    "kimi-k2-6": {},
+    "glm-4-7-flash": {},
+    "minimax-m2-7": {},
+    "amazon-titan-text-premier": {},
+    "amazon-titan-text-express": {},
+    "amazon-titan-text-lite": {},
+    "command-light": {},
+    "command": {},
+    "yi-large": {},
+    "yi-1-5-34b": {},
+    "step-3-5-flash": {},
+    "step-2": {},
+    "lfm-2-5-8b": {},
+    "hunyuan-turbo": {},
+    "hy3-preview": {},
+    "ling-2-6-flash": {},
+    "ling-2-6-1t": {},
+    "trinity-mini": {},
+    "reka-flash-3": {},
+    "seed-1-6-flash": {},
+    "internlm2-5-20b": {},
+    "falcon-180b": {},
+    "falcon-40b": {},
+    "olmo-2-32b": {},
+    "sonar-reasoning": {},
+    "granite-4-0-h-micro": {},
+    "nemotron-nano-9b": {
+      "hle": {
+        "value": 6.5,
+        "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+        "checkedOn": "2026-08-12",
+        "protocol": "NVIDIA NeMo-Skills reasoning-on HLE evaluation.",
+        "evaluationDate": "2025-08-18"
+      },
+      "aime-2025": {
+        "value": 72.1,
+        "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+        "checkedOn": "2026-08-12",
+        "protocol": "NVIDIA NeMo-Skills reasoning-on AIME 2025 evaluation.",
+        "evaluationDate": "2025-08-18"
+      },
+      "math-500": {
+        "value": 97.8,
+        "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+        "checkedOn": "2026-08-12",
+        "protocol": "NVIDIA NeMo-Skills reasoning-on MATH-500 evaluation.",
+        "evaluationDate": "2025-08-18"
+      },
+      "livecodebench": {
+        "value": 71.1,
+        "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+        "checkedOn": "2026-08-12",
+        "protocol": "NVIDIA NeMo-Skills reasoning-on LiveCodeBench evaluation.",
+        "evaluationDate": "2025-08-18"
+      },
+      "bfcl-v3": {
+        "value": 66.9,
+        "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+        "checkedOn": "2026-08-12",
+        "protocol": "NVIDIA NeMo-Skills BFCL v3 evaluation.",
+        "evaluationDate": "2025-08-18"
+      }
+    },
+    "inkling": {
+      "gpqa-diamond": {
+        "value": 87.2,
+        "sourceUrl": "https://thinkingmachines.ai/news/introducing-inkling/",
+        "checkedOn": "2026-08-12",
+        "protocol": "Inkling GPQA Diamond; score reported in the launch comparison table.",
+        "evaluationDate": "2026-07-15"
+      },
+      "swe-bench-verified": {
+        "value": 77.6,
+        "sourceUrl": "https://thinkingmachines.ai/news/introducing-inkling/",
+        "checkedOn": "2026-08-12",
+        "protocol": "Inkling SWE-bench Verified; bash-only agent setup.",
+        "evaluationDate": "2026-07-15"
+      },
+      "swe-bench-pro": {
+        "value": 54.3,
+        "sourceUrl": "https://thinkingmachines.ai/news/introducing-inkling/",
+        "checkedOn": "2026-08-12",
+        "protocol": "Inkling SWE-bench Pro; provider/leaderboard comparison table.",
+        "evaluationDate": "2026-07-15"
+      },
+      "scicode": {
+        "value": 46.1,
+        "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling-Small/raw/main/README.md",
+        "checkedOn": "2026-08-12",
+        "protocol": "Inkling model-card comparison table, SciCode row, Inkling column; score reported as 46.1%.",
+        "evaluationDate": "2026-07-14"
+      },
+      "terminal-bench-2-1": {
+        "value": 63.8,
+        "sourceUrl": "https://thinkingmachines.ai/news/introducing-inkling/",
+        "checkedOn": "2026-08-12",
+        "protocol": "Inkling Terminal-Bench 2.1 comparison table.",
+        "evaluationDate": "2026-07-15"
+      }
+    },
+    "inkling-small": {
+      "gpqa-diamond": {
+        "value": 89.5,
+        "sourceUrl": "https://thinkingmachines.ai/news/inkling-small/",
+        "checkedOn": "2026-08-12",
+        "protocol": "Inkling-Small GPQA Diamond; score reported in the launch comparison table.",
+        "evaluationDate": "2026-07-30"
+      },
+      "swe-bench-verified": {
+        "value": 80.2,
+        "sourceUrl": "https://thinkingmachines.ai/news/inkling-small/",
+        "checkedOn": "2026-08-12",
+        "protocol": "Inkling-Small SWE-bench Verified; bash-only agent setup.",
+        "evaluationDate": "2026-07-30"
+      },
+      "swe-bench-pro": {
+        "value": 55.9,
+        "sourceUrl": "https://thinkingmachines.ai/news/inkling-small/",
+        "checkedOn": "2026-08-12",
+        "protocol": "Inkling-Small SWE-bench Pro; provider/leaderboard comparison table.",
+        "evaluationDate": "2026-07-30"
+      },
+      "scicode": {
+        "value": 48.7,
+        "sourceUrl": "https://thinkingmachines.ai/news/inkling-small/",
+        "checkedOn": "2026-08-12",
+        "protocol": "Inkling-Small SciCode evaluation.",
+        "evaluationDate": "2026-07-30"
+      },
+      "terminal-bench-2-1": {
+        "value": 64.7,
+        "sourceUrl": "https://thinkingmachines.ai/news/inkling-small/",
+        "checkedOn": "2026-08-12",
+        "protocol": "Inkling-Small Terminal-Bench 2.1 comparison table.",
+        "evaluationDate": "2026-07-30"
+      }
+    }
+  }
+}

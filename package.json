@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "generate:evidence": "node scripts/generate-benchmark-evidence.mjs",
     "verify:data": "node scripts/verify-data.mjs"
   },
   "dependencies": {

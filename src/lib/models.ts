@@ -10,7 +10,7 @@ import { modelFamilyId, modelFamilyLabel } from "@/lib/model-family";
 
 export { QUALITY_COMPARABLE_ELO_BAND, type OverallBasis };
 
-export const DATA_FRESHNESS = "2026-07-31";
+export const DATA_FRESHNESS = "2026-08-12";
 
 /** Illustrative chat workload used for cost estimates. */
 export const WORKLOAD_TOKENS_IN = 1_000_000;
@@ -170,6 +170,13 @@ export function blendedPrice(m: Model): number | undefined {
   return m.pricing.inputPer1M * 0.75 + m.pricing.outputPer1M * 0.25;
 }
 
+function benchmarkOwners(id: BenchmarkId): Model[] {
+  return models.filter(
+    (model) =>
+      !model.benchmarkAliasOf && model.benchmarks[id] !== undefined
+  );
+}
+
 export function getBenchmarkRank(
   model: Model,
   id: BenchmarkId
@@ -177,11 +184,15 @@ export function getBenchmarkRank(
   const score = model.benchmarks[id];
   if (score === undefined) return undefined;
   const higher = BENCHMARKS[id].higherIsBetter;
-  const scored = models
+  const canonical = model.benchmarkAliasOf
+    ? getModel(model.benchmarkAliasOf)
+    : model;
+  const scored = benchmarkOwners(id)
     .map((m) => m.benchmarks[id])
     .filter((v): v is number => v !== undefined)
     .sort((a, b) => (higher ? b - a : a - b));
-  return scored.indexOf(score) + 1;
+  const canonicalScore = canonical?.benchmarks[id] ?? score;
+  return scored.indexOf(canonicalScore) + 1;
 }
 
 /** Models with a score for `id`, ranked best-first. */
@@ -190,7 +201,7 @@ export function getTopModelsByBenchmark(
   limit = 10
 ): { model: Model; score: number; rank: number }[] {
   const higher = BENCHMARKS[id].higherIsBetter;
-  return models
+  return benchmarkOwners(id)
     .map((model) => {
       const score = model.benchmarks[id];
       return score === undefined ? null : { model, score };
@@ -202,7 +213,7 @@ export function getTopModelsByBenchmark(
 }
 
 export function getBenchmarkScoredCount(id: BenchmarkId): number {
-  return models.filter((m) => m.benchmarks[id] !== undefined).length;
+  return benchmarkOwners(id).length;
 }
 
 export function sharedBenchmarks(a: Model, b: Model): BenchmarkId[] {

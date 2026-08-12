@@ -19,6 +19,7 @@ import {
   formatSpeed,
   getAllModels,
   getBenchmarkRank,
+  getBenchmarkScoredCount,
   getModel,
   getRelatedModels,
   getSpecRank,
@@ -76,8 +77,7 @@ export default async function ModelPage({ params }: Props) {
   const blend = blendedPrice(model);
   const cost = workloadCost(model);
 
-  const scoredCount = (id: (typeof BENCHMARK_IDS)[number]) =>
-    models.filter((m) => m.benchmarks[id] !== undefined).length;
+  const scoredCount = getBenchmarkScoredCount;
 
   const contextRank = getSpecRank(
     model.contextWindow,
