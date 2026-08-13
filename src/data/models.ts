@@ -21,8 +21,10 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 5, outputPer1M: 30 },
     speed: { tokensPerSec: 96, ttftSeconds: 0.45 },
     benchmarks: {
+      "gpqa-diamond": 94.6,
       "swe-bench-pro": 64.6,
       "terminal-bench-2-1": 88.8,
+      cursorbench: 67.2,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -44,7 +46,12 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 10, outputPer1M: 60 },
     speed: { tokensPerSec: 240, ttftSeconds: 0.25 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 94.6,
+      "swe-bench-pro": 64.6,
+      "terminal-bench-2-1": 88.8,
+      cursorbench: 67.2,
+    },
     links: {
       docs: "https://developers.openai.com/api/docs/guides/fast-mode",
       announcement:
@@ -66,8 +73,10 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 2, outputPer1M: 12 },
     speed: { tokensPerSec: 135, ttftSeconds: 0.3 },
     benchmarks: {
+      "gpqa-diamond": 92.9,
       "swe-bench-pro": 63.4,
       "terminal-bench-2-1": 87.4,
+      cursorbench: 64.9,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -90,8 +99,10 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 0.2, outputPer1M: 1.2 },
     speed: { tokensPerSec: 195, ttftSeconds: 0.2 },
     benchmarks: {
+      "gpqa-diamond": 92.3,
       "swe-bench-pro": 62.7,
       "terminal-bench-2-1": 84.7,
+      cursorbench: 61.1,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -136,6 +147,9 @@ export const models: Model[] = [
       "gpqa-diamond": 93.6,
       hle: 41.4,
       "swe-bench-pro": 58.6,
+      cursorbench: 58.4,
+      "terminal-bench-2-1": 83.1,
+      "lmarena-elo": 1477,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -155,7 +169,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 30, outputPer1M: 180 },
     speed: { tokensPerSec: 68, ttftSeconds: 0.8 },
-    benchmarks: {},
+    benchmarks: {
+      hle: 43.1,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
     },
@@ -178,6 +194,8 @@ export const models: Model[] = [
       "gpqa-diamond": 92.8,
       hle: 39.8,
       "swe-bench-pro": 57.7,
+      "lmarena-elo": 1465,
+      "webdev-arena": 1390,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -198,7 +216,13 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 1.25, outputPer1M: 10 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.4 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 85.7,
+      hle: 24.8,
+      "aime-2025": 94.6,
+      "swe-bench-verified": 74.9,
+      "aider-polyglot": 88,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
       announcement: "https://openai.com/gpt-5/",
@@ -218,7 +242,13 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 0.25, outputPer1M: 2 },
     speed: { tokensPerSec: 160, ttftSeconds: 0.2 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 82.3,
+      hle: 16.7,
+      "aime-2025": 91.1,
+      "swe-bench-verified": 71,
+      "aider-polyglot": 71.6,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
     },
@@ -237,7 +267,13 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 0.05, outputPer1M: 0.4 },
     speed: { tokensPerSec: 200, ttftSeconds: 0.15 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 71.2,
+      hle: 8.7,
+      "aime-2025": 85.2,
+      "swe-bench-verified": 54.7,
+      "aider-polyglot": 48.4,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
     },
@@ -256,7 +292,14 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 2, outputPer1M: 8 },
     speed: { tokensPerSec: 55, ttftSeconds: 1.2 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 83.3,
+      hle: 20.2,
+      "aime-2025": 88.9,
+      "swe-bench-verified": 69.1,
+      "aider-polyglot": 79.6,
+      "lmarena-elo": 1431,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
     },
@@ -276,7 +319,14 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 2, outputPer1M: 8 },
     speed: { tokensPerSec: 95, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 66.3,
+      "swe-bench-verified": 54.6,
+      "aime-2025": 46.4,
+      hle: 5.4,
+      "aider-polyglot": 52.9,
+      "lmarena-elo": 1414,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
     },
@@ -316,7 +366,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 5, outputPer1M: 15 },
     speed: { tokensPerSec: 100, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1346,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
     },
@@ -335,7 +387,14 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 0.4, outputPer1M: 1.6 },
     speed: { tokensPerSec: 130, ttftSeconds: 0.25 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 65,
+      "swe-bench-verified": 23.6,
+      "aime-2025": 40.2,
+      hle: 3.7,
+      "aider-polyglot": 31.6,
+      "lmarena-elo": 1383,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
     },
@@ -354,7 +413,11 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 0.1, outputPer1M: 0.4 },
     speed: { tokensPerSec: 160, ttftSeconds: 0.18 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 50.3,
+      "aider-polyglot": 6.2,
+      "lmarena-elo": 1322,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
     },
@@ -374,7 +437,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 0.15, outputPer1M: 0.6 },
     speed: { tokensPerSec: 150, ttftSeconds: 0.2 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1318,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
     },
@@ -395,7 +460,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 5, outputPer1M: 25 },
     speed: { tokensPerSec: 72, ttftSeconds: 0.55 },
-    benchmarks: {},
+    benchmarks: {
+      cursorbench: 70,
+    },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
       announcement: "https://www.anthropic.com/news/claude-opus-5",
@@ -415,7 +482,14 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 10, outputPer1M: 50 },
     speed: { tokensPerSec: 58, ttftSeconds: 0.7 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 92.6,
+      "swe-bench-pro": 80,
+      cursorbench: 70.5,
+      "terminal-bench-2-1": 83.8,
+      "lmarena-elo": 1507,
+      "webdev-arena": 1627,
+    },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
     },
@@ -434,7 +508,14 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 5, outputPer1M: 25 },
     speed: { tokensPerSec: 72, ttftSeconds: 0.55 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 92,
+      "swe-bench-pro": 69.2,
+      cursorbench: 62.3,
+      "terminal-bench-2-1": 78.9,
+      "lmarena-elo": 1474,
+      "webdev-arena": 1539,
+    },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
     },
@@ -453,7 +534,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 2, outputPer1M: 10 },
     speed: { tokensPerSec: 95, ttftSeconds: 0.4 },
-    benchmarks: {},
+    benchmarks: {
+      cursorbench: 61.5,
+      "terminal-bench-2-1": 74.6,
+    },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
     },
@@ -472,7 +556,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 5, outputPer1M: 25 },
     speed: { tokensPerSec: 65, ttftSeconds: 0.6 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1469,
+      "webdev-arena": 1468,
+    },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
     },
@@ -491,7 +578,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 3, outputPer1M: 15 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.4 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1472,
+      "webdev-arena": 1524,
+    },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
     },
@@ -512,6 +602,8 @@ export const models: Model[] = [
     speed: { tokensPerSec: 150, ttftSeconds: 0.2 },
     benchmarks: {
       "swe-bench-verified": 73.3,
+      "lmarena-elo": 1413,
+      "webdev-arena": 1326,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -532,7 +624,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 3, outputPer1M: 15 },
     speed: { tokensPerSec: 95, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1390,
+      "aider-polyglot": 56.4,
+    },
     links: {
       docs: "https://platform.claude.com/docs/en/about-claude/models/overview",
     },
@@ -551,7 +646,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 0.8, outputPer1M: 4 },
     speed: { tokensPerSec: 160, ttftSeconds: 0.18 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1324,
+    },
     links: {
       docs: "https://platform.claude.com/docs/en/about-claude/pricing",
     },
@@ -576,6 +673,10 @@ export const models: Model[] = [
       "gpqa-diamond": 94.3,
       hle: 44.4,
       "swe-bench-verified": 80.6,
+      "swe-bench-pro": 54.2,
+      "terminal-bench-2-1": 70.7,
+      "lmarena-elo": 1486,
+      "webdev-arena": 1447,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -599,6 +700,7 @@ export const models: Model[] = [
       "gpqa-diamond": 91.9,
       hle: 37.5,
       "lmarena-elo": 1501,
+      "webdev-arena": 1438,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -618,7 +720,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "audio", "video"], output: ["text"] },
     pricing: { provider: "Google", inputPer1M: 1.5, outputPer1M: 7.5 },
     speed: { tokensPerSec: 180, ttftSeconds: 0.22 },
-    benchmarks: {},
+    benchmarks: {
+      cursorbench: 53.5,
+    },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
     },
@@ -637,7 +741,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "audio", "video"], output: ["text"] },
     pricing: { provider: "Google", inputPer1M: 1.5, outputPer1M: 9 },
     speed: { tokensPerSec: 200, ttftSeconds: 0.2 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1473,
+      "webdev-arena": 1438,
+    },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
     },
@@ -656,7 +763,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "audio", "video"], output: ["text"] },
     pricing: { provider: "Google", inputPer1M: 0.3, outputPer1M: 2.5 },
     speed: { tokensPerSec: 220, ttftSeconds: 0.18 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1458,
+      "webdev-arena": 1449,
+    },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
     },
@@ -694,7 +804,13 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "audio", "video"], output: ["text"] },
     pricing: { provider: "Google", inputPer1M: 1.25, outputPer1M: 10 },
     speed: { tokensPerSec: 100, ttftSeconds: 0.45 },
-    benchmarks: {},
+    benchmarks: {
+      hle: 18.8,
+      "swe-bench-verified": 63.8,
+      "lmarena-elo": 1445,
+      "webdev-arena": 1226,
+      "aider-polyglot": 79.1,
+    },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
     },
@@ -713,7 +829,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "audio", "video"], output: ["text"] },
     pricing: { provider: "Google", inputPer1M: 0.3, outputPer1M: 2.5 },
     speed: { tokensPerSec: 220, ttftSeconds: 0.18 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1410,
+    },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
     },
@@ -738,6 +856,8 @@ export const models: Model[] = [
       "gpqa-diamond": 84.3,
       hle: 19.5,
       livecodebench: 80.0,
+      "lmarena-elo": 1451,
+      "webdev-arena": 1365,
     },
     links: {
       modelCard: "https://huggingface.co/google/gemma-4-31b-it",
@@ -764,6 +884,8 @@ export const models: Model[] = [
       "gpqa-diamond": 82.3,
       hle: 8.7,
       livecodebench: 77.1,
+      "lmarena-elo": 1438,
+      "webdev-arena": 1362,
     },
     links: {
       docs: "https://ai.google.dev/gemma",
@@ -790,6 +912,7 @@ export const models: Model[] = [
       "gpqa-diamond": 40.9,
       simpleqa: 6.3,
       livecodebench: 24.6,
+      "lmarena-elo": 1342,
     },
     links: {
       modelCard: "https://huggingface.co/google/gemma-3-12b-it",
@@ -812,7 +935,11 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "xAI", inputPer1M: 2, outputPer1M: 6 },
     speed: { tokensPerSec: 100, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "terminal-bench-2-1": 79.3,
+      "lmarena-elo": 1468,
+      "webdev-arena": 1553,
+    },
     links: {
       docs: "https://docs.x.ai/docs/models",
     },
@@ -854,7 +981,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "xAI", inputPer1M: 1.25, outputPer1M: 2.5 },
     speed: { tokensPerSec: 110, ttftSeconds: 0.3 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1441,
+      "webdev-arena": 1355,
+    },
     links: {
       docs: "https://docs.x.ai/developers/models/grok-4.3",
     },
@@ -912,7 +1042,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "xAI", inputPer1M: 3, outputPer1M: 15 },
     speed: { tokensPerSec: 75, ttftSeconds: 0.45 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1459,
+    },
     links: {
       docs: "https://docs.x.ai/docs/models",
     },
@@ -931,7 +1063,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "xAI", inputPer1M: 3, outputPer1M: 15 },
     speed: { tokensPerSec: 70, ttftSeconds: 0.5 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1409,
+      "aider-polyglot": 79.6,
+    },
     links: {
       docs: "https://docs.x.ai/docs/models",
     },
@@ -955,7 +1090,10 @@ export const models: Model[] = [
     },
     pricing: { provider: "Meta", inputPer1M: 1.25, outputPer1M: 4.25 },
     speed: { tokensPerSec: 95, ttftSeconds: 0.38 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1499,
+      "webdev-arena": 1535,
+    },
     links: {
       docs: "https://developer.meta.com/ai/models/muse-spark/",
       announcement: "https://www.unite.ai/meta-ships-muse-code-coding-agent-with-co-trained-muse-spark-1-2-model/",
@@ -981,6 +1119,8 @@ export const models: Model[] = [
       "gpqa-diamond": 83.5,
       hle: 22.0,
       scicode: 43.6,
+      "lmarena-elo": 1426,
+      "webdev-arena": 1359,
     },
     links: {
       modelCard: "https://huggingface.co/meta-models/Muse-Glimmer-30B",
@@ -1005,7 +1145,11 @@ export const models: Model[] = [
     },
     pricing: { provider: "Meta", inputPer1M: 1.25, outputPer1M: 4.25 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.4 },
-    benchmarks: {},
+    benchmarks: {
+      "terminal-bench-2-1": 76.2,
+      "lmarena-elo": 1489,
+      "webdev-arena": 1539,
+    },
     links: {
       docs: "https://dev.meta.ai/docs/models.md",
       modelCard: "https://ai.meta.com/static-resource/muse-spark-1-1-evaluation-report",
@@ -1031,6 +1175,7 @@ export const models: Model[] = [
       "mmlu-pro": 80.5,
       livecodebench: 43.4,
       "aider-polyglot": 15.6,
+      "lmarena-elo": 1327,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
@@ -1055,6 +1200,8 @@ export const models: Model[] = [
     benchmarks: {
       "mmlu-pro": 74.3,
       livecodebench: 32.8,
+      "gpqa-diamond": 57.2,
+      "lmarena-elo": 1322,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
@@ -1078,6 +1225,8 @@ export const models: Model[] = [
     benchmarks: {
       "mmlu-pro": 68.9,
       "gpqa-diamond": 50.5,
+      livecodebench: 33.3,
+      "lmarena-elo": 1318,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
@@ -1101,6 +1250,8 @@ export const models: Model[] = [
     speed: { tokensPerSec: 75, ttftSeconds: 0.4 },
     benchmarks: {
       "mmlu-pro": 66.4,
+      "lmarena-elo": 1293,
+      "gpqa-diamond": 48,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
@@ -1124,6 +1275,8 @@ export const models: Model[] = [
     speed: { tokensPerSec: 160, ttftSeconds: 0.15 },
     benchmarks: {
       "mmlu-pro": 48.3,
+      "lmarena-elo": 1211,
+      "gpqa-diamond": 31.8,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
@@ -1186,7 +1339,10 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "DeepSeek", inputPer1M: 0.435, outputPer1M: 0.87 },
     speed: { tokensPerSec: 85, ttftSeconds: 0.4 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1458,
+      "webdev-arena": 1445,
+    },
     links: {
       docs: "https://api-docs.deepseek.com/",
       modelCard: "https://huggingface.co/deepseek-ai",
@@ -1210,6 +1366,7 @@ export const models: Model[] = [
     benchmarks: {
       "terminal-bench-2-1": 82.7,
       nl2repo: 54.2,
+      "lmarena-elo": 1435,
     },
     links: {
       docs: "https://api-docs.deepseek.com/",
@@ -1231,7 +1388,12 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "DeepSeek", inputPer1M: 0.28, outputPer1M: 0.42 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "swe-bench-verified": 70,
+      "swe-bench-pro": 15.56,
+      "lmarena-elo": 1425,
+      "webdev-arena": 1324,
+    },
     links: {
       docs: "https://api-docs.deepseek.com/",
     },
@@ -1259,6 +1421,7 @@ export const models: Model[] = [
       "aime-2025": 88.4,
       livecodebench: 74.8,
       "aider-polyglot": 76.3,
+      "lmarena-elo": 1417,
     },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
@@ -1289,6 +1452,7 @@ export const models: Model[] = [
       "swe-bench-verified": 57.6,
       livecodebench: 73.3,
       "aider-polyglot": 71.6,
+      "lmarena-elo": 1422,
     },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
@@ -1311,7 +1475,15 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "video"], output: ["text"] },
     pricing: { provider: "Alibaba Cloud", inputPer1M: 2.0, outputPer1M: 6.0 },
     speed: { tokensPerSec: 86, ttftSeconds: 0.4 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 92.6,
+      hle: 43.6,
+      "swe-bench-pro": 67.7,
+      "terminal-bench-2-1": 86.6,
+      nl2repo: 55.9,
+      "lmarena-elo": 1491,
+      "webdev-arena": 1669,
+    },
     links: {
       docs: "https://www.qwencloud.com/models/qwen3.8-max",
       announcement: "https://qwen.ai/blog?id=qwen3.8",
@@ -1348,7 +1520,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "video"], output: ["text"] },
     pricing: { provider: "Alibaba Cloud", inputPer1M: 0.4, outputPer1M: 1.6 },
     speed: { tokensPerSec: 95, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1458,
+    },
     links: {
       docs: "https://www.alibabacloud.com/help/en/model-studio/",
       announcement:
@@ -1389,7 +1563,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "video"], output: ["text"] },
     pricing: { provider: "Alibaba Cloud", inputPer1M: 0.5, outputPer1M: 3.0 },
     speed: { tokensPerSec: 70, ttftSeconds: 0.45 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1443,
+      "webdev-arena": 1459,
+    },
     links: {
       docs: "https://www.alibabacloud.com/help/en/model-studio/",
       announcement: "https://qwen.ai/blog?id=qwen3.6",
@@ -1415,6 +1592,8 @@ export const models: Model[] = [
       "swe-bench-verified": 80.4,
       "swe-bench-multilingual": 78.3,
       scicode: 53.5,
+      "lmarena-elo": 1474,
+      "webdev-arena": 1517,
     },
     links: {
       docs: "https://www.alibabacloud.com/help/en/model-studio/",
@@ -1436,7 +1615,10 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.4, outputPer1M: 1.2 },
     speed: { tokensPerSec: 75, ttftSeconds: 0.4 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1442,
+      "webdev-arena": 1400,
+    },
     links: {
       modelCard: "https://huggingface.co/Qwen",
     },
@@ -1456,7 +1638,14 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.3, outputPer1M: 0.85 },
     speed: { tokensPerSec: 80, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 71.1,
+      "math-500": 98,
+      "aime-2025": 81.5,
+      "bfcl-v3": 70.8,
+      livecodebench: 70.7,
+      "lmarena-elo": 1375,
+    },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen3-235B-A22B",
     },
@@ -1475,7 +1664,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Alibaba Cloud", inputPer1M: 0.5, outputPer1M: 5 },
     speed: { tokensPerSec: 65, ttftSeconds: 0.5 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1434,
+    },
     links: {
       docs: "https://www.alibabacloud.com/help/en/model-studio/",
     },
@@ -1495,7 +1686,16 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.1, outputPer1M: 0.3 },
     speed: { tokensPerSec: 100, ttftSeconds: 0.25 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 68.4,
+      "math-500": 97.2,
+      "aime-2025": 72.9,
+      "bfcl-v3": 70.3,
+      livecodebench: 65.7,
+      "arena-hard": 93.8,
+      "lmarena-elo": 1347,
+      "aider-polyglot": 40,
+    },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen3-32B",
     },
@@ -1517,7 +1717,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 2, outputPer1M: 6 },
     speed: { tokensPerSec: 70, ttftSeconds: 0.45 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1415,
+      "webdev-arena": 1230,
+    },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
       modelCard: "https://huggingface.co/mistralai",
@@ -1538,7 +1741,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 1.5, outputPer1M: 7.5 },
     speed: { tokensPerSec: 80, ttftSeconds: 0.4 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1427,
+      "webdev-arena": 1266,
+    },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
       announcement: "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/",
@@ -1657,7 +1863,11 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 0.5, outputPer1M: 1.5 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.55 },
-    benchmarks: {},
+    benchmarks: {
+      "aime-2025": 62.76,
+      "gpqa-diamond": 68.18,
+      livecodebench: 55.84,
+    },
     links: {
       docs: "https://docs.mistral.ai/models/model-cards/magistral-small-1-2-25-09",
       modelCard: "https://huggingface.co/mistralai/Magistral-Small-2509",
@@ -1679,7 +1889,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 0.4, outputPer1M: 2 },
     speed: { tokensPerSec: 85, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "webdev-arena": 1194,
+    },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
     },
@@ -1718,7 +1930,12 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 0.1, outputPer1M: 0.3 },
     speed: { tokensPerSec: 140, ttftSeconds: 0.2 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 69.06,
+      "gpqa-diamond": 46.13,
+      simpleqa: 12.1,
+      "arena-hard": 43.1,
+    },
     links: {
       modelCard: "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
     },
@@ -1785,6 +2002,7 @@ export const models: Model[] = [
       hle: 43.5,
       scicode: 58.7,
       "terminal-bench-2-1": 88.3,
+      cursorbench: 60.8,
     },
     links: {
       modelCard: "https://huggingface.co/moonshotai/Kimi-K3",
@@ -1806,7 +2024,13 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "video"], output: ["text"] },
     pricing: { provider: "Moonshot", inputPer1M: 4.5, outputPer1M: 22.5 },
     speed: { tokensPerSec: 95, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 93.5,
+      hle: 43.5,
+      scicode: 58.7,
+      "terminal-bench-2-1": 88.3,
+      cursorbench: 60.8,
+    },
     links: {
       docs: "https://platform.kimi.ai/docs/pricing/chat-k3",
       announcement: "https://www.kimi.com/blog/kimi-k3",
@@ -1827,7 +2051,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Moonshot", inputPer1M: 0.95, outputPer1M: 4 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.5 },
-    benchmarks: {},
+    benchmarks: {
+      cursorbench: 49.7,
+      "webdev-arena": 1473,
+    },
     links: {
       modelCard: "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
       announcement: "https://www.kimi.com/resources/kimi-k2-7-code",
@@ -1879,7 +2106,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Zhipu / Z.ai", inputPer1M: 1.4, outputPer1M: 4.4 },
     speed: { tokensPerSec: 168, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      cursorbench: 55,
+    },
     links: {
       docs: "https://docs.z.ai/",
       modelCard: "https://huggingface.co/zai-org",
@@ -1899,7 +2128,10 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Zhipu / Z.ai", inputPer1M: 0.4, outputPer1M: 1.2 },
     speed: { tokensPerSec: 80, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1457,
+      "webdev-arena": 1436,
+    },
     links: {
       modelCard: "https://huggingface.co/zai-org",
     },
@@ -1918,7 +2150,10 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Zhipu / Z.ai", inputPer1M: 0.2, outputPer1M: 0.8 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.3 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1442,
+      "webdev-arena": 1434,
+    },
     links: {
       modelCard: "https://huggingface.co/zai-org",
     },
@@ -1940,7 +2175,13 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Azure / self-host", inputPer1M: 0.07, outputPer1M: 0.14 },
     speed: { tokensPerSec: 150, ttftSeconds: 0.15 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 56.1,
+      simpleqa: 3,
+      "mmlu-pro": 70.4,
+      "arena-hard": 75.4,
+      "lmarena-elo": 1256,
+    },
     links: {
       modelCard: "https://huggingface.co/microsoft/phi-4",
     },
@@ -1960,7 +2201,13 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Azure / self-host", inputPer1M: 0.07, outputPer1M: 0.14 },
     speed: { tokensPerSec: 80, ttftSeconds: 0.5 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 74.3,
+      "gpqa-diamond": 65.8,
+      "aime-2025": 62.9,
+      livecodebench: 53.8,
+      "arena-hard": 73.3,
+    },
     links: {
       modelCard: "https://huggingface.co/microsoft/Phi-4-reasoning",
     },
@@ -1979,7 +2226,12 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "video"], output: ["text"] },
     pricing: { provider: "MiniMax", inputPer1M: 0.3, outputPer1M: 1.2 },
     speed: { tokensPerSec: 80, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "swe-bench-pro": 59,
+      "terminal-bench-2-1": 66,
+      "lmarena-elo": 1443,
+      "webdev-arena": 1491,
+    },
     links: {
       docs: "https://www.minimax.io/",
       announcement: "https://www.minimax.io/blog/minimax-m3",
@@ -1999,7 +2251,10 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "MiniMax", inputPer1M: 0.3, outputPer1M: 1.2 },
     speed: { tokensPerSec: 85, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1390,
+      "webdev-arena": 1384,
+    },
     links: {
       docs: "https://www.minimax.io/",
     },
@@ -2086,7 +2341,14 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 5, outputPer1M: 25 },
     speed: { tokensPerSec: 68, ttftSeconds: 0.55 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 94.2,
+      hle: 46.9,
+      "swe-bench-pro": 64.3,
+      "terminal-bench-2-1": 68.9,
+      "lmarena-elo": 1494,
+      "webdev-arena": 1558,
+    },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
     },
@@ -2105,7 +2367,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 5, outputPer1M: 25 },
     speed: { tokensPerSec: 65, ttftSeconds: 0.6 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1497,
+      "webdev-arena": 1537,
+    },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
     },
@@ -2143,7 +2408,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 3, outputPer1M: 15 },
     speed: { tokensPerSec: 85, ttftSeconds: 0.4 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1455,
+      "webdev-arena": 1386,
+    },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
     },
@@ -2164,6 +2432,8 @@ export const models: Model[] = [
     speed: { tokensPerSec: 55, ttftSeconds: 0.7 },
     benchmarks: {
       "swe-bench-verified": 74.5,
+      "lmarena-elo": 1447,
+      "webdev-arena": 1389,
     },
     links: {
       docs: "https://platform.claude.com/docs/en/about-claude/models/overview",
@@ -2230,7 +2500,14 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 1.1, outputPer1M: 4.4 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.7 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 81.4,
+      hle: 14.7,
+      "aime-2025": 92.7,
+      "swe-bench-verified": 68.1,
+      "aider-polyglot": 58.2,
+      "lmarena-elo": 1390,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
     },
@@ -2249,7 +2526,10 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 1.1, outputPer1M: 4.4 },
     speed: { tokensPerSec: 100, ttftSeconds: 0.6 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1348,
+      "aider-polyglot": 53.8,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
     },
@@ -2268,7 +2548,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 20, outputPer1M: 80 },
     speed: { tokensPerSec: 40, ttftSeconds: 2.5 },
-    benchmarks: {},
+    benchmarks: {
+      "aider-polyglot": 84.9,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
     },
@@ -2287,7 +2569,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 15, outputPer1M: 60 },
     speed: { tokensPerSec: 35, ttftSeconds: 3 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1402,
+      "aider-polyglot": 61.7,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
     },
@@ -2327,7 +2612,15 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "self-host / partners", inputPer1M: 0.15, outputPer1M: 0.6 },
     speed: { tokensPerSec: 70, ttftSeconds: 0.4 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 80.1,
+      hle: 14.9,
+      "aime-2025": 92.5,
+      simpleqa: 16.8,
+      "swe-bench-verified": 62.4,
+      "aider-polyglot": 44.4,
+      "lmarena-elo": 1352,
+    },
     links: {
       modelCard: "https://huggingface.co/openai/gpt-oss-120b",
     },
@@ -2347,7 +2640,15 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "self-host / partners", inputPer1M: 0.05, outputPer1M: 0.2 },
     speed: { tokensPerSec: 120, ttftSeconds: 0.2 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 71.5,
+      hle: 10.9,
+      "aime-2025": 91.7,
+      simpleqa: 6.7,
+      "swe-bench-verified": 60.7,
+      "aider-polyglot": 34.2,
+      "lmarena-elo": 1318,
+    },
     links: {
       modelCard: "https://huggingface.co/openai/gpt-oss-20b",
     },
@@ -2366,7 +2667,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "audio", "video"], output: ["text"] },
     pricing: { provider: "Google", inputPer1M: 0.25, outputPer1M: 1.5 },
     speed: { tokensPerSec: 240, ttftSeconds: 0.15 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1432,
+      "webdev-arena": 1254,
+    },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
     },
@@ -2423,7 +2727,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "xAI", inputPer1M: 3, outputPer1M: 15 },
     speed: { tokensPerSec: 75, ttftSeconds: 0.45 },
-    benchmarks: {},
+    benchmarks: {
+      "aider-polyglot": 53.3,
+    },
     links: {
       docs: "https://docs.x.ai/docs/models",
     },
@@ -2447,6 +2753,7 @@ export const models: Model[] = [
       "mmlu-pro": 75.9,
       "math-500": 90.2,
       simpleqa: 24.9,
+      "lmarena-elo": 1359,
     },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-V3",
@@ -2475,6 +2782,7 @@ export const models: Model[] = [
       simpleqa: 30.1,
       "swe-bench-verified": 49.2,
       "aider-polyglot": 53.3,
+      "lmarena-elo": 1398,
     },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-R1",
@@ -2495,7 +2803,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.4, outputPer1M: 1.6 },
     speed: { tokensPerSec: 65, ttftSeconds: 0.45 },
-    benchmarks: {},
+    benchmarks: {
+      "swe-bench-pro": 38.7,
+    },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
     },
@@ -2515,7 +2825,12 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.35, outputPer1M: 0.4 },
     speed: { tokensPerSec: 70, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1303,
+      "mmlu-pro": 71.1,
+      livecodebench: 55.5,
+      "arena-hard": 81.2,
+    },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen2.5-72B-Instruct",
     },
@@ -2535,7 +2850,11 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.2, outputPer1M: 0.2 },
     speed: { tokensPerSec: 80, ttftSeconds: 0.3 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 69,
+      livecodebench: 51.2,
+      "arena-hard": 74.5,
+    },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen2.5-32B-Instruct",
     },
@@ -2555,7 +2874,11 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.1, outputPer1M: 0.1 },
     speed: { tokensPerSec: 100, ttftSeconds: 0.25 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 63.7,
+      livecodebench: 42.6,
+      "arena-hard": 68.3,
+    },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen2.5-14B-Instruct",
     },
@@ -2575,7 +2898,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.35, outputPer1M: 0.4 },
     speed: { tokensPerSec: 65, ttftSeconds: 0.4 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1261,
+    },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen2-72B-Instruct",
     },
@@ -2595,7 +2920,13 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Google AI / self-host", inputPer1M: 0.1, outputPer1M: 0.3 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.28 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 67.5,
+      "gpqa-diamond": 42.4,
+      simpleqa: 10,
+      livecodebench: 29.7,
+      "lmarena-elo": 1338,
+    },
     links: {
       modelCard: "https://huggingface.co/google/gemma-3-27b-it",
     },
@@ -2617,6 +2948,8 @@ export const models: Model[] = [
     speed: { tokensPerSec: 40, ttftSeconds: 0.6 },
     benchmarks: {
       "mmlu-pro": 73.3,
+      "gpqa-diamond": 49,
+      livecodebench: 27.7,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct",
@@ -2636,7 +2969,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Baidu Qianfan", inputPer1M: 0.8, outputPer1M: 3.2 },
     speed: { tokensPerSec: 70, ttftSeconds: 0.45 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1468,
+    },
     links: {
       docs: "https://cloud.baidu.com/product/wenxinworkshop",
     },
@@ -2703,7 +3038,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Cohere", inputPer1M: 2.5, outputPer1M: 10 },
     speed: { tokensPerSec: 75, ttftSeconds: 0.4 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1354,
+    },
     links: {
       docs: "https://docs.cohere.com/",
     },
@@ -2722,7 +3059,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "01.AI", inputPer1M: 0.14, outputPer1M: 0.14 },
     speed: { tokensPerSec: 200, ttftSeconds: 0.15 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1328,
+    },
     links: {
       docs: "https://platform.lingyiwanwu.com/",
     },
@@ -2742,7 +3081,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "self-host", inputPer1M: 0.1, outputPer1M: 0.3 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.4 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1305,
+    },
     links: {
       modelCard: "https://huggingface.co/allenai/OLMo-3-32B-Think",
     },
@@ -2860,7 +3201,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Cohere", inputPer1M: 2.5, outputPer1M: 10 },
     speed: { tokensPerSec: 75, ttftSeconds: 0.4 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1276,
+    },
     links: {
       docs: "https://docs.cohere.com/docs/command-r-plus",
     },
@@ -2880,7 +3223,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Cohere", inputPer1M: 0.15, outputPer1M: 0.6 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1250,
+    },
     links: {
       docs: "https://docs.cohere.com/docs/command-r",
     },
@@ -3021,7 +3366,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "AI21", inputPer1M: 2, outputPer1M: 8 },
     speed: { tokensPerSec: 60, ttftSeconds: 0.7 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1289,
+    },
     links: {
       docs: "https://docs.ai21.com/docs/jamba-foundation-models",
       modelCard: "https://huggingface.co/ai21labs/AI21-Jamba-1.5-Large",
@@ -3123,7 +3470,10 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "IBM watsonx", inputPer1M: 0.05, outputPer1M: 0.1 },
     speed: { tokensPerSec: 117, ttftSeconds: 0.13 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1306,
+      "webdev-arena": 1192,
+    },
     links: {
       modelCard: "https://huggingface.co/ibm-granite/granite-4.1-8b",
       docs: "https://www.ibm.com/granite",
@@ -3144,7 +3494,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "IBM watsonx", inputPer1M: 0.05, outputPer1M: 0.1 },
     speed: { tokensPerSec: 110, ttftSeconds: 0.15 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1208,
+    },
     links: {
       modelCard: "https://huggingface.co/ibm-granite/granite-3.1-8b-instruct",
       docs: "https://www.ibm.com/granite",
@@ -3234,7 +3586,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "NVIDIA NIM", inputPer1M: 0.35, outputPer1M: 0.4 },
     speed: { tokensPerSec: 60, ttftSeconds: 0.45 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1299,
+    },
     links: {
       modelCard: "https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct",
       docs: "https://docs.api.nvidia.com/nim/",
@@ -3257,7 +3611,10 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Azure AI Foundry", inputPer1M: 0.075, outputPer1M: 0.3 },
     speed: { tokensPerSec: 140, ttftSeconds: 0.18 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 52.8,
+      "arena-hard": 32.8,
+    },
     links: {
       modelCard: "https://huggingface.co/microsoft/Phi-4-mini-instruct",
       docs: "https://azure.microsoft.com/en-us/products/phi",
@@ -3361,7 +3718,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Databricks Mosaic AI", inputPer1M: 0.75, outputPer1M: 2.25 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.5 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1195,
+    },
     links: {
       modelCard: "https://huggingface.co/databricks/dbrx-instruct",
       announcement: "https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm",
@@ -3382,7 +3741,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 2.4, outputPer1M: 2.4 },
     speed: { tokensPerSec: 45, ttftSeconds: 0.55 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1179,
+    },
     links: {
       modelCard: "https://huggingface.co/Snowflake/snowflake-arctic-instruct",
       announcement: "https://www.snowflake.com/blog/arctic-open-efficient-foundation-language-models-snowflake/",
@@ -3446,7 +3807,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "video"], output: ["text"] },
     pricing: { provider: "Reka", inputPer1M: 0.8, outputPer1M: 2 },
     speed: { tokensPerSec: 95, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1272,
+    },
     links: {
       docs: "https://docs.reka.ai/pricing",
     },
@@ -3465,7 +3828,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "video"], output: ["text"] },
     pricing: { provider: "Reka", inputPer1M: 2, outputPer1M: 6 },
     speed: { tokensPerSec: 70, ttftSeconds: 0.5 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1288,
+    },
     links: {
       docs: "https://docs.reka.ai/pricing",
     },
@@ -3677,7 +4042,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 1.1, outputPer1M: 4.4 },
     speed: { tokensPerSec: 90, ttftSeconds: 1.2 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1337,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
     },
@@ -3715,7 +4082,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 10, outputPer1M: 30 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.6 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1324,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
     },
@@ -3772,7 +4141,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 75, outputPer1M: 150 },
     speed: { tokensPerSec: 45, ttftSeconds: 0.7 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1445,
+      "aider-polyglot": 44.9,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
       announcement: "https://openai.com/index/introducing-gpt-4-5/",
@@ -3811,7 +4183,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 15, outputPer1M: 75 },
     speed: { tokensPerSec: 40, ttftSeconds: 0.9 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1322,
+    },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
     },
@@ -3830,7 +4204,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 3, outputPer1M: 15 },
     speed: { tokensPerSec: 70, ttftSeconds: 0.45 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1343,
+    },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
       announcement: "https://www.anthropic.com/news/claude-3-5-sonnet",
@@ -3850,7 +4226,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 3, outputPer1M: 15 },
     speed: { tokensPerSec: 72, ttftSeconds: 0.42 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1373,
+      "aider-polyglot": 51.6,
+    },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
     },
@@ -3869,7 +4248,11 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 3, outputPer1M: 15 },
     speed: { tokensPerSec: 65, ttftSeconds: 0.5 },
-    benchmarks: {},
+    benchmarks: {
+      "swe-bench-verified": 63.7,
+      "lmarena-elo": 1372,
+      "aider-polyglot": 60.4,
+    },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
       announcement: "https://www.anthropic.com/news/claude-3-7-sonnet",
@@ -3889,7 +4272,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 0.25, outputPer1M: 1.25 },
     speed: { tokensPerSec: 140, ttftSeconds: 0.2 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1261,
+    },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
     },
@@ -3908,7 +4293,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 3, outputPer1M: 15 },
     speed: { tokensPerSec: 65, ttftSeconds: 0.5 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1281,
+    },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
     },
@@ -3927,7 +4314,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 15, outputPer1M: 75 },
     speed: { tokensPerSec: 50, ttftSeconds: 0.75 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1413,
+      "aider-polyglot": 70.7,
+    },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
     },
@@ -4003,7 +4393,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "audio", "video"], output: ["text"] },
     pricing: { provider: "Google", inputPer1M: 1.5, outputPer1M: 9 },
     speed: { tokensPerSec: 160, ttftSeconds: 0.22 },
-    benchmarks: {},
+    benchmarks: {
+      cursorbench: 48.8,
+      "webdev-arena": 1492,
+    },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
     },
@@ -4156,7 +4549,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Groq / Together (ref.)", inputPer1M: 0.27, outputPer1M: 0.27 },
     speed: { tokensPerSec: 80, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1289,
+    },
     links: {
       modelCard: "https://huggingface.co/google/gemma-2-27b-it",
     },
@@ -4176,7 +4571,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Groq / Together (ref.)", inputPer1M: 0.08, outputPer1M: 0.08 },
     speed: { tokensPerSec: 140, ttftSeconds: 0.2 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1267,
+    },
     links: {
       modelCard: "https://huggingface.co/google/gemma-2-9b-it",
     },
@@ -4196,7 +4593,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Groq / Together (ref.)", inputPer1M: 0.04, outputPer1M: 0.04 },
     speed: { tokensPerSec: 200, ttftSeconds: 0.12 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1200,
+    },
     links: {
       modelCard: "https://huggingface.co/google/gemma-2-2b-it",
     },
@@ -4221,6 +4620,7 @@ export const models: Model[] = [
       "gpqa-diamond": 30.8,
       simpleqa: 4.0,
       livecodebench: 12.6,
+      "lmarena-elo": 1303,
     },
     links: {
       modelCard: "https://huggingface.co/google/gemma-3-4b-it",
@@ -4240,7 +4640,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "xAI", inputPer1M: 2, outputPer1M: 10 },
     speed: { tokensPerSec: 70, ttftSeconds: 0.45 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1336,
+    },
     links: {
       docs: "https://docs.x.ai/docs/models",
     },
@@ -4259,7 +4661,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "xAI", inputPer1M: 0.3, outputPer1M: 0.5 },
     speed: { tokensPerSec: 120, ttftSeconds: 0.25 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1308,
+    },
     links: {
       docs: "https://docs.x.ai/docs/models",
     },
@@ -4319,7 +4723,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.88, outputPer1M: 0.88 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.4 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1276,
+    },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
     },
@@ -4339,7 +4745,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Groq / Together (ref.)", inputPer1M: 0.05, outputPer1M: 0.08 },
     speed: { tokensPerSec: 200, ttftSeconds: 0.12 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1223,
+    },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
     },
@@ -4359,7 +4767,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.03, outputPer1M: 0.05 },
     speed: { tokensPerSec: 220, ttftSeconds: 0.1 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1166,
+    },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct",
     },
@@ -4379,7 +4789,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.02, outputPer1M: 0.02 },
     speed: { tokensPerSec: 280, ttftSeconds: 0.08 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1111,
+    },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct",
     },
@@ -4419,7 +4831,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.9, outputPer1M: 0.9 },
     speed: { tokensPerSec: 35, ttftSeconds: 0.55 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1119,
+    },
     links: {
       modelCard: "https://huggingface.co/codellama/CodeLlama-70b-Instruct-hf",
     },
@@ -4439,7 +4853,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.5, outputPer1M: 0.5 },
     speed: { tokensPerSec: 50, ttftSeconds: 0.45 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1136,
+    },
     links: {
       modelCard: "https://huggingface.co/codellama/CodeLlama-34b-Instruct-hf",
     },
@@ -4459,7 +4875,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "DeepSeek / Together (ref.)", inputPer1M: 0.14, outputPer1M: 0.28 },
     speed: { tokensPerSec: 85, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1265,
+    },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct",
     },
@@ -4519,7 +4937,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "DeepSeek", inputPer1M: 0.14, outputPer1M: 0.28 },
     speed: { tokensPerSec: 85, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1307,
+    },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-V2.5",
     },
@@ -4539,7 +4959,11 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.8, outputPer1M: 0.8 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.45 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 65.2,
+      "math-500": 94.5,
+      livecodebench: 57.5,
+    },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
     },
@@ -4559,7 +4983,11 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.3, outputPer1M: 0.3 },
     speed: { tokensPerSec: 70, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 62.1,
+      "math-500": 94.3,
+      livecodebench: 57.2,
+    },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
     },
@@ -4579,7 +5007,11 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.15, outputPer1M: 0.15 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.28 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 59.1,
+      "math-500": 93.9,
+      livecodebench: 53.1,
+    },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
     },
@@ -4599,7 +5031,11 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.1, outputPer1M: 0.1 },
     speed: { tokensPerSec: 130, ttftSeconds: 0.2 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 49,
+      "math-500": 89.1,
+      livecodebench: 39.6,
+    },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
     },
@@ -4757,7 +5193,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.06, outputPer1M: 0.06 },
     speed: { tokensPerSec: 180, ttftSeconds: 0.15 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1110,
+    },
     links: {
       modelCard: "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3",
     },
@@ -4817,7 +5255,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.8, outputPer1M: 0.8 },
     speed: { tokensPerSec: 60, ttftSeconds: 0.4 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1270,
+    },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
     },
@@ -4860,6 +5300,11 @@ export const models: Model[] = [
     benchmarks: {
       "aime-2025": 69.5,
       livecodebench: 63.4,
+      "gpqa-diamond": 65.6,
+      "math-500": 98,
+      "bfcl-v3": 66.4,
+      "arena-hard": 89.5,
+      "lmarena-elo": 1336,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen/QwQ-32B",
@@ -4880,7 +5325,15 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Alibaba / Together (ref.)", inputPer1M: 0.09, outputPer1M: 0.78 },
     speed: { tokensPerSec: 110, ttftSeconds: 0.3 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 80.6,
+      "gpqa-diamond": 72.9,
+      "aime-2025": 69.5,
+      livecodebench: 56.6,
+      "aider-polyglot": 49.8,
+      "bfcl-v3": 70.3,
+      "lmarena-elo": 1401,
+    },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct",
     },
@@ -4899,7 +5352,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Alibaba", inputPer1M: 0.065, outputPer1M: 0.26 },
     speed: { tokensPerSec: 150, ttftSeconds: 0.2 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1397,
+      "webdev-arena": 1238,
+    },
     links: {
       docs: "https://www.alibabacloud.com/help/en/model-studio/",
     },
@@ -4919,7 +5375,11 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.04, outputPer1M: 0.1 },
     speed: { tokensPerSec: 140, ttftSeconds: 0.2 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 56.3,
+      livecodebench: 28.7,
+      "arena-hard": 52,
+    },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
     },
@@ -4959,7 +5419,18 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Moonshot", inputPer1M: 0.6, outputPer1M: 2.5 },
     speed: { tokensPerSec: 50, ttftSeconds: 0.55 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 81.1,
+      "gpqa-diamond": 75.1,
+      hle: 4.7,
+      "aime-2025": 49.5,
+      "math-500": 97.4,
+      simpleqa: 31,
+      "swe-bench-verified": 65.8,
+      "swe-bench-multilingual": 47.3,
+      livecodebench: 53.7,
+      "aider-polyglot": 60,
+    },
     links: {
       modelCard: "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
     },
@@ -4978,7 +5449,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Moonshot", inputPer1M: 0.5, outputPer1M: 2 },
     speed: { tokensPerSec: 70, ttftSeconds: 0.4 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1461,
+      "webdev-arena": 1509,
+    },
     links: {
       docs: "https://platform.moonshot.cn/docs",
     },
@@ -4997,7 +5471,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Zhipu AI", inputPer1M: 0.06, outputPer1M: 0.4 },
     speed: { tokensPerSec: 130, ttftSeconds: 0.22 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1367,
+    },
     links: {
       docs: "https://open.bigmodel.cn/",
     },
@@ -5016,7 +5492,13 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "MiniMax", inputPer1M: 0.3, outputPer1M: 1.2 },
     speed: { tokensPerSec: 85, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "swe-bench-pro": 56.22,
+      "swe-bench-multilingual": 76.5,
+      nl2repo: 39.8,
+      "lmarena-elo": 1416,
+      "webdev-arena": 1398,
+    },
     links: {
       docs: "https://www.minimax.io/",
       announcement: "https://www.minimax.io/news/minimax-m27-en",
@@ -5151,7 +5633,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "01.AI", inputPer1M: 0.5, outputPer1M: 0.5 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.45 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1213,
+    },
     links: {
       modelCard: "https://huggingface.co/01-ai/Yi-1.5-34B-Chat",
     },
@@ -5170,7 +5654,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "StepFun", inputPer1M: 0.09, outputPer1M: 0.3 },
     speed: { tokensPerSec: 120, ttftSeconds: 0.25 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1394,
+    },
     links: {
       docs: "https://platform.stepfun.com/",
     },
@@ -5247,7 +5733,10 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Tencent", inputPer1M: 0.063, outputPer1M: 0.21 },
     speed: { tokensPerSec: 100, ttftSeconds: 0.3 },
-    benchmarks: {},
+    benchmarks: {
+      "lmarena-elo": 1413,
+      "webdev-arena": 1356,
+    },
     links: {
       docs: "https://cloud.tencent.com/document/product/1729",
     },
@@ -5517,6 +6006,8 @@ export const models: Model[] = [
       "swe-bench-pro": 54.3,
       scicode: 46.1,
       "terminal-bench-2-1": 63.8,
+      "lmarena-elo": 1442,
+      "webdev-arena": 1405,
     },
     links: {
       modelCard: "https://huggingface.co/thinkingmachines/Inkling",

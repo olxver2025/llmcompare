@@ -1,28 +1,8 @@
 import fs from "node:fs";
-import vm from "node:vm";
 import { execFileSync } from "node:child_process";
-import { createRequire } from "node:module";
+import { load } from "./update-benchmarks/load.mjs";
 
-const require = createRequire(import.meta.url);
-const ts = require("typescript");
 const asOf = "2026-08-12";
-
-function load(path, exportName) {
-  const source = fs.readFileSync(path, "utf8");
-  const compiled = ts.transpileModule(source, {
-    compilerOptions: {
-      module: ts.ModuleKind.CommonJS,
-      target: ts.ScriptTarget.ES2022,
-    },
-  }).outputText;
-  const compiledModule = { exports: {} };
-  vm.runInNewContext(compiled, {
-    exports: compiledModule.exports,
-    module: compiledModule,
-    require,
-  });
-  return compiledModule.exports[exportName];
-}
 
 const models = load("src/data/models.ts", "models");
 const imageModels = load("src/data/image-models.ts", "imageModels");
@@ -248,6 +228,16 @@ exact("grok-4-20", "releaseDate", "2026-05-20");
 exact("grok-4-20", "contextWindow", 256000);
 exact("mistral-small-4", "releaseDate", "2026-03-01");
 exact("devstral-2", "releaseDate", "2025-12-01");
+exact("gpt-4-1", "benchmarks.gpqa-diamond", 66.3);
+exact("gpt-4-1", "benchmarks.swe-bench-verified", 54.6);
+exact("gpt-4-1-mini", "benchmarks.gpqa-diamond", 65);
+exact("gpt-4-1-mini", "benchmarks.swe-bench-verified", 23.6);
+exact("gpt-4-1-nano", "benchmarks.gpqa-diamond", 50.3);
+exact("claude-3-7-sonnet", "benchmarks.swe-bench-verified", 63.7);
+exact("gemini-2-5-pro", "benchmarks.hle", 18.8);
+exact("gemini-2-5-pro", "benchmarks.swe-bench-verified", 63.8);
+exact("phi-4-mini", "benchmarks.mmlu-pro", 52.8);
+exact("phi-4-mini", "benchmarks.arena-hard", 32.8);
 
 for (const slug of expectedEmptyBenchmarkModels) {
   check(bySlug[slug], `${slug} empty-scorecard guard references an unknown model`);
@@ -261,7 +251,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 141, `expected 141 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 507, `expected 507 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);

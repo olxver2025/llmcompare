@@ -3,137 +3,300 @@
   "cells": {
     "gpt-5-6-sol": {
       "swe-bench-pro": 64.6,
-      "terminal-bench-2-1": 88.8
+      "terminal-bench-2-1": 88.8,
+      "cursorbench": 67.2,
+      "gpqa-diamond": 94.6
     },
-    "gpt-5-6-sol-fast": {},
+    "gpt-5-6-sol-fast": {
+      "swe-bench-pro": 64.6,
+      "terminal-bench-2-1": 88.8,
+      "cursorbench": 67.2,
+      "gpqa-diamond": 94.6
+    },
     "gpt-5-6-terra": {
       "swe-bench-pro": 63.4,
-      "terminal-bench-2-1": 87.4
+      "terminal-bench-2-1": 87.4,
+      "cursorbench": 64.9,
+      "gpqa-diamond": 92.9
     },
     "gpt-5-6-luna": {
       "swe-bench-pro": 62.7,
-      "terminal-bench-2-1": 84.7
+      "terminal-bench-2-1": 84.7,
+      "cursorbench": 61.1,
+      "gpqa-diamond": 92.3
     },
     "gpt-5-6-cyber": {},
     "gpt-5-5": {
       "gpqa-diamond": 93.6,
       "hle": 41.4,
-      "swe-bench-pro": 58.6
+      "swe-bench-pro": 58.6,
+      "cursorbench": 58.4,
+      "terminal-bench-2-1": 83.1,
+      "lmarena-elo": 1477
     },
-    "gpt-5-5-pro": {},
+    "gpt-5-5-pro": {
+      "hle": 43.1
+    },
     "gpt-5-4": {
       "gpqa-diamond": 92.8,
       "hle": 39.8,
-      "swe-bench-pro": 57.7
+      "swe-bench-pro": 57.7,
+      "lmarena-elo": 1465,
+      "webdev-arena": 1390
     },
-    "gpt-5": {},
-    "gpt-5-mini": {},
-    "gpt-5-nano": {},
-    "o3": {},
-    "gpt-4-1": {},
+    "gpt-5": {
+      "aime-2025": 94.6,
+      "swe-bench-verified": 74.9,
+      "aider-polyglot": 88,
+      "gpqa-diamond": 85.7,
+      "hle": 24.8
+    },
+    "gpt-5-mini": {
+      "gpqa-diamond": 82.3,
+      "hle": 16.7,
+      "aime-2025": 91.1,
+      "swe-bench-verified": 71,
+      "aider-polyglot": 71.6
+    },
+    "gpt-5-nano": {
+      "gpqa-diamond": 71.2,
+      "hle": 8.7,
+      "aime-2025": 85.2,
+      "swe-bench-verified": 54.7,
+      "aider-polyglot": 48.4
+    },
+    "o3": {
+      "gpqa-diamond": 83.3,
+      "hle": 20.2,
+      "aime-2025": 88.9,
+      "swe-bench-verified": 69.1,
+      "aider-polyglot": 79.6,
+      "lmarena-elo": 1431
+    },
+    "gpt-4-1": {
+      "gpqa-diamond": 66.3,
+      "swe-bench-verified": 54.6,
+      "aime-2025": 46.4,
+      "hle": 5.4,
+      "aider-polyglot": 52.9,
+      "lmarena-elo": 1414
+    },
     "gpt-4o": {},
-    "gpt-4o-2024-05-13": {},
-    "gpt-4-1-mini": {},
-    "gpt-4-1-nano": {},
-    "gpt-4o-mini": {},
-    "claude-opus-5": {},
-    "claude-fable-5": {},
-    "claude-opus-4-8": {},
-    "claude-sonnet-5": {},
-    "claude-opus-4-5": {},
-    "claude-sonnet-4-6": {},
-    "claude-haiku-4-5": {
-      "swe-bench-verified": 73.3
+    "gpt-4o-2024-05-13": {
+      "lmarena-elo": 1346
     },
-    "claude-sonnet-4": {},
-    "claude-haiku-3-5": {},
+    "gpt-4-1-mini": {
+      "gpqa-diamond": 65,
+      "swe-bench-verified": 23.6,
+      "aime-2025": 40.2,
+      "hle": 3.7,
+      "aider-polyglot": 31.6,
+      "lmarena-elo": 1383
+    },
+    "gpt-4-1-nano": {
+      "gpqa-diamond": 50.3,
+      "aider-polyglot": 6.2,
+      "lmarena-elo": 1322
+    },
+    "gpt-4o-mini": {
+      "lmarena-elo": 1318
+    },
+    "claude-opus-5": {
+      "cursorbench": 70
+    },
+    "claude-fable-5": {
+      "cursorbench": 70.5,
+      "terminal-bench-2-1": 83.8,
+      "lmarena-elo": 1507,
+      "webdev-arena": 1627,
+      "swe-bench-pro": 80,
+      "gpqa-diamond": 92.6
+    },
+    "claude-opus-4-8": {
+      "cursorbench": 62.3,
+      "terminal-bench-2-1": 78.9,
+      "lmarena-elo": 1474,
+      "webdev-arena": 1539,
+      "swe-bench-pro": 69.2,
+      "gpqa-diamond": 92
+    },
+    "claude-sonnet-5": {
+      "cursorbench": 61.5,
+      "terminal-bench-2-1": 74.6
+    },
+    "claude-opus-4-5": {
+      "lmarena-elo": 1469,
+      "webdev-arena": 1468
+    },
+    "claude-sonnet-4-6": {
+      "lmarena-elo": 1472,
+      "webdev-arena": 1524
+    },
+    "claude-haiku-4-5": {
+      "swe-bench-verified": 73.3,
+      "lmarena-elo": 1413,
+      "webdev-arena": 1326
+    },
+    "claude-sonnet-4": {
+      "lmarena-elo": 1390,
+      "aider-polyglot": 56.4
+    },
+    "claude-haiku-3-5": {
+      "lmarena-elo": 1324
+    },
     "gemini-3-1-pro": {
       "gpqa-diamond": 94.3,
       "hle": 44.4,
-      "swe-bench-verified": 80.6
+      "swe-bench-verified": 80.6,
+      "lmarena-elo": 1486,
+      "webdev-arena": 1447,
+      "swe-bench-pro": 54.2,
+      "terminal-bench-2-1": 70.7
     },
     "gemini-3-pro": {
       "gpqa-diamond": 91.9,
       "hle": 37.5,
-      "lmarena-elo": 1501
+      "lmarena-elo": 1501,
+      "webdev-arena": 1438
     },
-    "gemini-3-6-flash": {},
-    "gemini-3-flash": {},
-    "gemini-3-5-flash-lite": {},
+    "gemini-3-6-flash": {
+      "cursorbench": 53.5
+    },
+    "gemini-3-flash": {
+      "lmarena-elo": 1473,
+      "webdev-arena": 1438
+    },
+    "gemini-3-5-flash-lite": {
+      "lmarena-elo": 1458,
+      "webdev-arena": 1449
+    },
     "gemini-3-5-flash-cyber": {},
-    "gemini-2-5-pro": {},
-    "gemini-2-5-flash": {},
+    "gemini-2-5-pro": {
+      "hle": 18.8,
+      "swe-bench-verified": 63.8,
+      "lmarena-elo": 1445,
+      "webdev-arena": 1226,
+      "aider-polyglot": 79.1
+    },
+    "gemini-2-5-flash": {
+      "lmarena-elo": 1410
+    },
     "gemma-4-31b": {
       "mmlu-pro": 85.2,
       "gpqa-diamond": 84.3,
       "hle": 19.5,
-      "livecodebench": 80
+      "livecodebench": 80,
+      "lmarena-elo": 1451,
+      "webdev-arena": 1365
     },
     "gemma-4-26b": {
       "mmlu-pro": 82.6,
       "gpqa-diamond": 82.3,
       "hle": 8.7,
-      "livecodebench": 77.1
+      "livecodebench": 77.1,
+      "lmarena-elo": 1438,
+      "webdev-arena": 1362
     },
     "gemma-3-12b": {
       "mmlu-pro": 60.6,
       "gpqa-diamond": 40.9,
       "simpleqa": 6.3,
-      "livecodebench": 24.6
+      "livecodebench": 24.6,
+      "lmarena-elo": 1342
     },
-    "grok-4-5": {},
+    "grok-4-5": {
+      "terminal-bench-2-1": 79.3,
+      "lmarena-elo": 1468,
+      "webdev-arena": 1553
+    },
     "grok-4-6": {
       "cursorbench": 69.9
     },
-    "grok-4-3": {},
+    "grok-4-3": {
+      "lmarena-elo": 1441,
+      "webdev-arena": 1355
+    },
     "grok-build-0-1": {},
     "grok-4-20": {},
-    "grok-4-1": {},
-    "grok-4": {},
-    "muse-spark-1-2": {},
+    "grok-4-1": {
+      "lmarena-elo": 1459
+    },
+    "grok-4": {
+      "lmarena-elo": 1409,
+      "aider-polyglot": 79.6
+    },
+    "muse-spark-1-2": {
+      "lmarena-elo": 1499,
+      "webdev-arena": 1535
+    },
     "muse-glimmer": {
-      "swe-bench-verified": 76.0,
+      "swe-bench-verified": 76,
       "swe-bench-pro": 51.2,
       "terminal-bench-2-1": 51.7,
       "gpqa-diamond": 83.5,
-      "hle": 22.0,
-      "scicode": 43.6
+      "hle": 22,
+      "scicode": 43.6,
+      "lmarena-elo": 1426,
+      "webdev-arena": 1359
     },
-    "muse-spark-1-1": {},
+    "muse-spark-1-1": {
+      "terminal-bench-2-1": 76.2,
+      "lmarena-elo": 1489,
+      "webdev-arena": 1539
+    },
     "llama-4-maverick": {
       "mmlu-pro": 80.5,
       "livecodebench": 43.4,
-      "aider-polyglot": 15.6
+      "aider-polyglot": 15.6,
+      "lmarena-elo": 1327
     },
     "llama-4-scout": {
       "mmlu-pro": 74.3,
-      "livecodebench": 32.8
+      "gpqa-diamond": 57.2,
+      "livecodebench": 32.8,
+      "lmarena-elo": 1322
     },
     "llama-3-3-70b": {
       "mmlu-pro": 68.9,
-      "gpqa-diamond": 50.5
+      "gpqa-diamond": 50.5,
+      "livecodebench": 33.3,
+      "lmarena-elo": 1318
     },
     "llama-3-1-70b": {
-      "mmlu-pro": 66.4
+      "mmlu-pro": 66.4,
+      "lmarena-elo": 1293,
+      "gpqa-diamond": 48
     },
     "llama-3-1-8b": {
-      "mmlu-pro": 48.3
+      "mmlu-pro": 48.3,
+      "lmarena-elo": 1211,
+      "gpqa-diamond": 31.8
     },
     "llama-3-2-90b": {},
     "llama-3-2-11b": {},
-    "deepseek-v4-pro": {},
+    "deepseek-v4-pro": {
+      "lmarena-elo": 1458,
+      "webdev-arena": 1445
+    },
     "deepseek-v4-flash": {
       "terminal-bench-2-1": 82.7,
-      "nl2repo": 54.2
+      "nl2repo": 54.2,
+      "lmarena-elo": 1435
     },
-    "deepseek-v3-2": {},
+    "deepseek-v3-2": {
+      "swe-bench-verified": 70,
+      "swe-bench-pro": 15.56,
+      "lmarena-elo": 1425,
+      "webdev-arena": 1324
+    },
     "deepseek-v3-1": {
       "mmlu-pro": 84.8,
       "gpqa-diamond": 80.1,
       "hle": 15.9,
       "aime-2025": 88.4,
       "livecodebench": 74.8,
-      "aider-polyglot": 76.3
+      "aider-polyglot": 76.3,
+      "lmarena-elo": 1417
     },
     "deepseek-r1-0528": {
       "mmlu-pro": 85,
@@ -143,45 +306,109 @@
       "simpleqa": 27.8,
       "swe-bench-verified": 57.6,
       "livecodebench": 73.3,
-      "aider-polyglot": 71.6
+      "aider-polyglot": 71.6,
+      "lmarena-elo": 1422
     },
-    "qwen3-8-max": {},
+    "qwen3-8-max": {
+      "gpqa-diamond": 92.6,
+      "hle": 43.6,
+      "swe-bench-pro": 67.7,
+      "terminal-bench-2-1": 86.6,
+      "nl2repo": 55.9,
+      "lmarena-elo": 1491,
+      "webdev-arena": 1669
+    },
     "qwen3-8-27b": {},
-    "qwen3-7-plus": {},
+    "qwen3-7-plus": {
+      "lmarena-elo": 1458
+    },
     "qwen3-7-flash": {},
-    "qwen3-6-plus": {},
+    "qwen3-6-plus": {
+      "lmarena-elo": 1443,
+      "webdev-arena": 1459
+    },
     "qwen3-7-max": {
       "gpqa-diamond": 92.4,
       "hle": 41.4,
       "swe-bench-verified": 80.4,
       "swe-bench-multilingual": 78.3,
-      "scicode": 53.5
+      "scicode": 53.5,
+      "lmarena-elo": 1474,
+      "webdev-arena": 1517
     },
-    "qwen3-5-397b": {},
-    "qwen3-235b": {},
-    "qwen3-max": {},
-    "qwen3-32b": {},
-    "mistral-large-3": {},
-    "mistral-medium-3-5": {},
+    "qwen3-5-397b": {
+      "lmarena-elo": 1442,
+      "webdev-arena": 1400
+    },
+    "qwen3-235b": {
+      "gpqa-diamond": 71.1,
+      "math-500": 98,
+      "aime-2025": 81.5,
+      "bfcl-v3": 70.8,
+      "livecodebench": 70.7,
+      "lmarena-elo": 1375
+    },
+    "qwen3-max": {
+      "lmarena-elo": 1434
+    },
+    "qwen3-32b": {
+      "gpqa-diamond": 68.4,
+      "math-500": 97.2,
+      "aime-2025": 72.9,
+      "bfcl-v3": 70.3,
+      "livecodebench": 65.7,
+      "arena-hard": 93.8,
+      "lmarena-elo": 1347,
+      "aider-polyglot": 40
+    },
+    "mistral-large-3": {
+      "lmarena-elo": 1415,
+      "webdev-arena": 1230
+    },
+    "mistral-medium-3-5": {
+      "lmarena-elo": 1427,
+      "webdev-arena": 1266
+    },
     "mistral-small-4": {},
     "ministral-3-14b": {},
     "ministral-3-8b": {},
     "ministral-3-3b": {},
     "magistral-medium": {},
-    "magistral-small": {},
-    "devstral-2": {},
+    "magistral-small": {
+      "aime-2025": 62.76,
+      "gpqa-diamond": 68.18,
+      "livecodebench": 55.84
+    },
+    "devstral-2": {
+      "webdev-arena": 1194
+    },
     "mistral-medium-3-1": {},
-    "mistral-small-3-2": {},
+    "mistral-small-3-2": {
+      "mmlu-pro": 69.06,
+      "gpqa-diamond": 46.13,
+      "simpleqa": 12.1,
+      "arena-hard": 43.1
+    },
     "codestral-2508": {},
     "codestral-22b": {},
     "kimi-k3": {
       "gpqa-diamond": 93.5,
       "hle": 43.5,
       "scicode": 58.7,
-      "terminal-bench-2-1": 88.3
+      "terminal-bench-2-1": 88.3,
+      "cursorbench": 60.8
     },
-    "kimi-k3-fast": {},
-    "kimi-k2-7-code": {},
+    "kimi-k3-fast": {
+      "gpqa-diamond": 93.5,
+      "hle": 43.5,
+      "scicode": 58.7,
+      "terminal-bench-2-1": 88.3,
+      "cursorbench": 60.8
+    },
+    "kimi-k2-7-code": {
+      "cursorbench": 49.7,
+      "webdev-arena": 1473
+    },
     "kimi-k2-5": {
       "mmlu-pro": 87.1,
       "gpqa-diamond": 87.6,
@@ -193,13 +420,41 @@
       "livecodebench": 85,
       "scicode": 48.7
     },
-    "glm-5-2": {},
-    "glm-5": {},
-    "glm-4-7": {},
-    "phi-4": {},
-    "phi-4-reasoning": {},
-    "minimax-m3": {},
-    "minimax-m2-5": {},
+    "glm-5-2": {
+      "cursorbench": 55
+    },
+    "glm-5": {
+      "lmarena-elo": 1457,
+      "webdev-arena": 1436
+    },
+    "glm-4-7": {
+      "lmarena-elo": 1442,
+      "webdev-arena": 1434
+    },
+    "phi-4": {
+      "gpqa-diamond": 56.1,
+      "simpleqa": 3,
+      "mmlu-pro": 70.4,
+      "arena-hard": 75.4,
+      "lmarena-elo": 1256
+    },
+    "phi-4-reasoning": {
+      "mmlu-pro": 74.3,
+      "gpqa-diamond": 65.8,
+      "aime-2025": 62.9,
+      "livecodebench": 53.8,
+      "arena-hard": 73.3
+    },
+    "minimax-m3": {
+      "swe-bench-pro": 59,
+      "terminal-bench-2-1": 66,
+      "lmarena-elo": 1443,
+      "webdev-arena": 1491
+    },
+    "minimax-m2-5": {
+      "lmarena-elo": 1390,
+      "webdev-arena": 1384
+    },
     "longcat-2-0": {},
     "nemotron-3-ultra": {
       "mmlu-pro": 86.8,
@@ -210,12 +465,27 @@
       "terminal-bench-2-1": 56.4
     },
     "amazon-nova-premier": {},
-    "claude-opus-4-7": {},
-    "claude-opus-4-6": {},
+    "claude-opus-4-7": {
+      "terminal-bench-2-1": 68.9,
+      "lmarena-elo": 1494,
+      "webdev-arena": 1558,
+      "swe-bench-pro": 64.3,
+      "gpqa-diamond": 94.2,
+      "hle": 46.9
+    },
+    "claude-opus-4-6": {
+      "lmarena-elo": 1497,
+      "webdev-arena": 1537
+    },
     "claude-mythos-5": {},
-    "claude-sonnet-4-5": {},
+    "claude-sonnet-4-5": {
+      "lmarena-elo": 1455,
+      "webdev-arena": 1386
+    },
     "claude-opus-4-1": {
-      "swe-bench-verified": 74.5
+      "swe-bench-verified": 74.5,
+      "lmarena-elo": 1447,
+      "webdev-arena": 1389
     },
     "gpt-5-4-mini": {
       "gpqa-diamond": 88,
@@ -227,21 +497,58 @@
       "hle": 24.3,
       "swe-bench-pro": 52.4
     },
-    "o4-mini": {},
-    "o3-mini": {},
-    "o3-pro": {},
-    "o1": {},
+    "o4-mini": {
+      "gpqa-diamond": 81.4,
+      "hle": 14.7,
+      "aime-2025": 92.7,
+      "swe-bench-verified": 68.1,
+      "aider-polyglot": 58.2,
+      "lmarena-elo": 1390
+    },
+    "o3-mini": {
+      "lmarena-elo": 1348,
+      "aider-polyglot": 53.8
+    },
+    "o3-pro": {
+      "aider-polyglot": 84.9
+    },
+    "o1": {
+      "lmarena-elo": 1402,
+      "aider-polyglot": 61.7
+    },
     "gpt-5-4-pro": {},
-    "gpt-oss-120b": {},
-    "gpt-oss-20b": {},
-    "gemini-3-1-flash-lite": {},
+    "gpt-oss-120b": {
+      "gpqa-diamond": 80.1,
+      "hle": 14.9,
+      "aime-2025": 92.5,
+      "simpleqa": 16.8,
+      "swe-bench-verified": 62.4,
+      "aider-polyglot": 44.4,
+      "lmarena-elo": 1352
+    },
+    "gpt-oss-20b": {
+      "gpqa-diamond": 71.5,
+      "hle": 10.9,
+      "aime-2025": 91.7,
+      "simpleqa": 6.7,
+      "swe-bench-verified": 60.7,
+      "aider-polyglot": 34.2,
+      "lmarena-elo": 1318
+    },
+    "gemini-3-1-flash-lite": {
+      "lmarena-elo": 1432,
+      "webdev-arena": 1254
+    },
     "gemini-2-5-flash-lite": {},
     "grok-4-fast": {},
-    "grok-3": {},
+    "grok-3": {
+      "aider-polyglot": 53.3
+    },
     "deepseek-v3": {
       "mmlu-pro": 75.9,
       "math-500": 90.2,
-      "simpleqa": 24.9
+      "simpleqa": 24.9,
+      "lmarena-elo": 1359
     },
     "deepseek-r1": {
       "mmlu-pro": 84,
@@ -250,18 +557,46 @@
       "math-500": 97.3,
       "simpleqa": 30.1,
       "swe-bench-verified": 49.2,
-      "aider-polyglot": 53.3
+      "aider-polyglot": 53.3,
+      "lmarena-elo": 1398
     },
-    "qwen3-coder-480b": {},
-    "qwen2-5-72b": {},
-    "qwen2-5-32b": {},
-    "qwen2-5-14b": {},
-    "qwen2-72b": {},
-    "gemma-3-27b": {},
+    "qwen3-coder-480b": {
+      "swe-bench-pro": 38.7
+    },
+    "qwen2-5-72b": {
+      "lmarena-elo": 1303,
+      "mmlu-pro": 71.1,
+      "livecodebench": 55.5,
+      "arena-hard": 81.2
+    },
+    "qwen2-5-32b": {
+      "mmlu-pro": 69,
+      "livecodebench": 51.2,
+      "arena-hard": 74.5
+    },
+    "qwen2-5-14b": {
+      "mmlu-pro": 63.7,
+      "livecodebench": 42.6,
+      "arena-hard": 68.3
+    },
+    "qwen2-72b": {
+      "lmarena-elo": 1261
+    },
+    "gemma-3-27b": {
+      "mmlu-pro": 67.5,
+      "gpqa-diamond": 42.4,
+      "simpleqa": 10,
+      "livecodebench": 29.7,
+      "lmarena-elo": 1338
+    },
     "llama-3-1-405b": {
-      "mmlu-pro": 73.3
+      "mmlu-pro": 73.3,
+      "gpqa-diamond": 49,
+      "livecodebench": 27.7
     },
-    "ernie-5-1": {},
+    "ernie-5-1": {
+      "lmarena-elo": 1468
+    },
     "seed-2-pro": {
       "gpqa-diamond": 88.9,
       "hle": 32.4,
@@ -270,29 +605,46 @@
       "nl2repo": 27.9
     },
     "seedrealtime": {},
-    "command-a": {},
-    "yi-lightning": {},
-    "olmo-3-32b": {},
+    "command-a": {
+      "lmarena-elo": 1354
+    },
+    "yi-lightning": {
+      "lmarena-elo": 1328
+    },
+    "olmo-3-32b": {
+      "lmarena-elo": 1305
+    },
     "amazon-nova-pro": {},
     "amazon-nova-lite": {},
     "amazon-nova-micro": {},
     "amazon-nova-2-lite": {},
     "mistral-nemo": {},
-    "command-r-plus": {},
-    "command-r": {},
+    "command-r-plus": {
+      "lmarena-elo": 1276
+    },
+    "command-r": {
+      "lmarena-elo": 1250
+    },
     "command-r7b": {},
     "command-a-reasoning": {},
     "command-a-vision": {},
     "aya-expanse-32b": {},
     "jamba-large-1-7": {},
     "jamba-mini-2": {},
-    "jamba-1-5-large": {},
+    "jamba-1-5-large": {
+      "lmarena-elo": 1289
+    },
     "sonar": {},
     "sonar-small": {},
     "sonar-pro": {},
     "sonar-reasoning-pro": {},
-    "granite-4-1-8b": {},
-    "granite-3-8b": {},
+    "granite-4-1-8b": {
+      "lmarena-elo": 1306,
+      "webdev-arena": 1192
+    },
+    "granite-3-8b": {
+      "lmarena-elo": 1208
+    },
     "granite-4-micro": {},
     "nemotron-3-super-120b": {},
     "nemotron-nano-3-30b": {
@@ -301,18 +653,31 @@
       "aime-2025": 89.1,
       "livecodebench": 68.3
     },
-    "llama-3-1-nemotron-70b": {},
-    "phi-4-mini": {},
+    "llama-3-1-nemotron-70b": {
+      "lmarena-elo": 1299
+    },
+    "phi-4-mini": {
+      "mmlu-pro": 52.8,
+      "arena-hard": 32.8
+    },
     "phi-4-multimodal": {},
     "phi-3-5-mini": {},
     "phi-3-medium": {},
     "phi-3-mini": {},
-    "dbrx-instruct": {},
-    "snowflake-arctic-instruct": {},
+    "dbrx-instruct": {
+      "lmarena-elo": 1195
+    },
+    "snowflake-arctic-instruct": {
+      "lmarena-elo": 1179
+    },
     "palmyra-x5": {},
     "palmyra-x4": {},
-    "reka-flash": {},
-    "reka-core": {},
+    "reka-flash": {
+      "lmarena-elo": 1272
+    },
+    "reka-core": {
+      "lmarena-elo": 1288
+    },
     "solar-pro-3": {},
     "solar-10-7b": {},
     "composer-2-5": {
@@ -330,24 +695,52 @@
     "cursor-grok-4-5": {},
     "cursor-grok-4-5-fast": {},
     "o1-pro": {},
-    "o1-mini": {},
+    "o1-mini": {
+      "lmarena-elo": 1337
+    },
     "o1-preview": {},
-    "gpt-4-turbo": {},
+    "gpt-4-turbo": {
+      "lmarena-elo": 1324
+    },
     "gpt-4": {},
     "gpt-4-32k": {},
-    "gpt-4-5": {},
+    "gpt-4-5": {
+      "lmarena-elo": 1445,
+      "aider-polyglot": 44.9
+    },
     "gpt-3-5-turbo": {},
-    "claude-3-opus": {},
-    "claude-3-5-sonnet": {},
-    "claude-3-5-sonnet-1022": {},
-    "claude-3-7-sonnet": {},
-    "claude-3-haiku": {},
-    "claude-3-sonnet": {},
-    "claude-opus-4": {},
+    "claude-3-opus": {
+      "lmarena-elo": 1322
+    },
+    "claude-3-5-sonnet": {
+      "lmarena-elo": 1343
+    },
+    "claude-3-5-sonnet-1022": {
+      "lmarena-elo": 1373,
+      "aider-polyglot": 51.6
+    },
+    "claude-3-7-sonnet": {
+      "swe-bench-verified": 63.7,
+      "lmarena-elo": 1372,
+      "aider-polyglot": 60.4
+    },
+    "claude-3-haiku": {
+      "lmarena-elo": 1261
+    },
+    "claude-3-sonnet": {
+      "lmarena-elo": 1281
+    },
+    "claude-opus-4": {
+      "lmarena-elo": 1413,
+      "aider-polyglot": 70.7
+    },
     "claude-2-1": {},
     "claude-2": {},
     "claude-instant-1-2": {},
-    "gemini-3-5-flash": {},
+    "gemini-3-5-flash": {
+      "cursorbench": 48.8,
+      "webdev-arena": 1492
+    },
     "gemini-2-0-flash": {},
     "gemini-2-0-flash-lite": {},
     "gemini-2-0-flash-thinking": {},
@@ -355,34 +748,77 @@
     "gemini-1-5-pro": {},
     "gemini-1-5-flash": {},
     "gemini-1-5-flash-8b": {},
-    "gemma-2-27b": {},
-    "gemma-2-9b": {},
-    "gemma-2-2b": {},
+    "gemma-2-27b": {
+      "lmarena-elo": 1289
+    },
+    "gemma-2-9b": {
+      "lmarena-elo": 1267
+    },
+    "gemma-2-2b": {
+      "lmarena-elo": 1200
+    },
     "gemma-3-4b": {
       "mmlu-pro": 43.6,
       "gpqa-diamond": 30.8,
       "simpleqa": 4,
-      "livecodebench": 12.6
+      "livecodebench": 12.6,
+      "lmarena-elo": 1303
     },
-    "grok-2": {},
-    "grok-2-mini": {},
+    "grok-2": {
+      "lmarena-elo": 1336
+    },
+    "grok-2-mini": {
+      "lmarena-elo": 1308
+    },
     "grok-3-mini": {},
     "grok-1": {},
-    "llama-3-70b": {},
-    "llama-3-8b": {},
-    "llama-3-2-3b": {},
-    "llama-3-2-1b": {},
+    "llama-3-70b": {
+      "lmarena-elo": 1276
+    },
+    "llama-3-8b": {
+      "lmarena-elo": 1223
+    },
+    "llama-3-2-3b": {
+      "lmarena-elo": 1166
+    },
+    "llama-3-2-1b": {
+      "lmarena-elo": 1111
+    },
     "llama-2-70b": {},
-    "codellama-70b": {},
-    "codellama-34b": {},
-    "deepseek-coder-v2": {},
+    "codellama-70b": {
+      "lmarena-elo": 1119
+    },
+    "codellama-34b": {
+      "lmarena-elo": 1136
+    },
+    "deepseek-coder-v2": {
+      "lmarena-elo": 1265
+    },
     "deepseek-coder-v2-lite": {},
     "deepseek-v2": {},
-    "deepseek-v2-5": {},
-    "deepseek-r1-distill-llama-70b": {},
-    "deepseek-r1-distill-qwen-32b": {},
-    "deepseek-r1-distill-qwen-14b": {},
-    "deepseek-r1-distill-llama-8b": {},
+    "deepseek-v2-5": {
+      "lmarena-elo": 1307
+    },
+    "deepseek-r1-distill-llama-70b": {
+      "gpqa-diamond": 65.2,
+      "math-500": 94.5,
+      "livecodebench": 57.5
+    },
+    "deepseek-r1-distill-qwen-32b": {
+      "gpqa-diamond": 62.1,
+      "math-500": 94.3,
+      "livecodebench": 57.2
+    },
+    "deepseek-r1-distill-qwen-14b": {
+      "gpqa-diamond": 59.1,
+      "math-500": 93.9,
+      "livecodebench": 53.1
+    },
+    "deepseek-r1-distill-llama-8b": {
+      "gpqa-diamond": 49,
+      "math-500": 89.1,
+      "livecodebench": 39.6
+    },
     "mistral-large-2": {},
     "mistral-large": {},
     "mistral-small": {},
@@ -390,35 +826,88 @@
     "mixtral-8x7b": {},
     "pixtral-large": {},
     "pixtral-12b": {},
-    "mistral-7b": {},
+    "mistral-7b": {
+      "lmarena-elo": 1110
+    },
     "voxtral-small": {},
     "devstral-small": {},
-    "qwen2-5-coder-32b": {},
+    "qwen2-5-coder-32b": {
+      "lmarena-elo": 1270
+    },
     "qwen2-5-coder-7b": {},
     "qwq-32b": {
+      "gpqa-diamond": 65.6,
+      "math-500": 98,
       "aime-2025": 69.5,
-      "livecodebench": 63.4
+      "livecodebench": 63.4,
+      "bfcl-v3": 66.4,
+      "arena-hard": 89.5,
+      "lmarena-elo": 1336
     },
-    "qwen3-next-80b": {},
-    "qwen3-5-flash": {},
-    "qwen2-5-7b": {},
+    "qwen3-next-80b": {
+      "mmlu-pro": 80.6,
+      "gpqa-diamond": 72.9,
+      "aime-2025": 69.5,
+      "livecodebench": 56.6,
+      "aider-polyglot": 49.8,
+      "bfcl-v3": 70.3,
+      "lmarena-elo": 1401
+    },
+    "qwen3-5-flash": {
+      "lmarena-elo": 1397,
+      "webdev-arena": 1238
+    },
+    "qwen2-5-7b": {
+      "mmlu-pro": 56.3,
+      "livecodebench": 28.7,
+      "arena-hard": 52
+    },
     "qwen3-coder-30b": {},
-    "kimi-k2": {},
-    "kimi-k2-6": {},
-    "glm-4-7-flash": {},
-    "minimax-m2-7": {},
+    "kimi-k2": {
+      "mmlu-pro": 81.1,
+      "gpqa-diamond": 75.1,
+      "hle": 4.7,
+      "aime-2025": 49.5,
+      "math-500": 97.4,
+      "simpleqa": 31,
+      "swe-bench-verified": 65.8,
+      "swe-bench-multilingual": 47.3,
+      "livecodebench": 53.7,
+      "aider-polyglot": 60
+    },
+    "kimi-k2-6": {
+      "lmarena-elo": 1461,
+      "webdev-arena": 1509
+    },
+    "glm-4-7-flash": {
+      "lmarena-elo": 1367
+    },
+    "minimax-m2-7": {
+      "swe-bench-pro": 56.22,
+      "swe-bench-multilingual": 76.5,
+      "nl2repo": 39.8,
+      "lmarena-elo": 1416,
+      "webdev-arena": 1398
+    },
     "amazon-titan-text-premier": {},
     "amazon-titan-text-express": {},
     "amazon-titan-text-lite": {},
     "command-light": {},
     "command": {},
     "yi-large": {},
-    "yi-1-5-34b": {},
-    "step-3-5-flash": {},
+    "yi-1-5-34b": {
+      "lmarena-elo": 1213
+    },
+    "step-3-5-flash": {
+      "lmarena-elo": 1394
+    },
     "step-2": {},
     "lfm-2-5-8b": {},
     "hunyuan-turbo": {},
-    "hy3-preview": {},
+    "hy3-preview": {
+      "lmarena-elo": 1413,
+      "webdev-arena": 1356
+    },
     "ling-2-6-flash": {},
     "ling-2-6-1t": {},
     "trinity-mini": {},
@@ -442,7 +931,9 @@
       "swe-bench-verified": 77.6,
       "swe-bench-pro": 54.3,
       "scicode": 46.1,
-      "terminal-bench-2-1": 63.8
+      "terminal-bench-2-1": 63.8,
+      "lmarena-elo": 1442,
+      "webdev-arena": 1405
     },
     "inkling-small": {
       "gpqa-diamond": 89.5,

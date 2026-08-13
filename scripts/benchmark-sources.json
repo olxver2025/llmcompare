@@ -1,0 +1,2867 @@
+{
+  "gpt-5-6-sol": {
+    "swe-bench-pro": {
+      "sourceUrl": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "evaluationDate": "2026-07-09",
+      "protocol": "GPT-5.6 Sol SWE-bench Pro, OpenAI-reported agent evaluation."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "evaluationDate": "2026-07-09",
+      "protocol": "GPT-5.6 Sol Terminal-Bench 2.1, OpenAI-reported terminal-agent evaluation."
+    },
+    "cursorbench": {
+      "sourceUrl": "https://cursor.com/cursorbench",
+      "evaluationDate": "2026-07-08",
+      "protocol": "CursorBench 3.2, GPT-5.6 Sol Max effort."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "evaluationDate": "2026-07-09",
+      "protocol": "GPQA Diamond, OpenAI GPT-5.6 official evaluation table."
+    }
+  },
+  "gpt-5-6-sol-fast": {
+    "swe-bench-pro": {
+      "sourceUrl": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+      "evaluationDate": "2026-07-30",
+      "protocol": "Inherited from GPT-5.6 Sol Standard — Fast mode is the same weights/intelligence at 2x price and higher throughput (OpenAI Fast mode docs)."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+      "evaluationDate": "2026-07-30",
+      "protocol": "Inherited from GPT-5.6 Sol Standard — Fast mode is the same weights/intelligence at 2x price and higher throughput (OpenAI Fast mode docs)."
+    },
+    "cursorbench": {
+      "sourceUrl": "https://cursor.com/cursorbench",
+      "evaluationDate": "2026-07-08",
+      "protocol": "Inherited from GPT-5.6 Sol Standard — Fast mode is the same weights/intelligence; CursorBench 3.2 Sol Max."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+      "evaluationDate": "2026-07-30",
+      "protocol": "Inherited from GPT-5.6 Sol Standard — Fast mode is the same weights/intelligence at 2x price and higher throughput (OpenAI Fast mode docs)."
+    }
+  },
+  "gpt-5-6-terra": {
+    "swe-bench-pro": {
+      "sourceUrl": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "evaluationDate": "2026-07-09",
+      "protocol": "GPT-5.6 Terra SWE-bench Pro, OpenAI-reported agent evaluation."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "evaluationDate": "2026-07-09",
+      "protocol": "GPT-5.6 Terra Terminal-Bench 2.1, OpenAI-reported terminal-agent evaluation."
+    },
+    "cursorbench": {
+      "sourceUrl": "https://cursor.com/cursorbench",
+      "evaluationDate": "2026-07-08",
+      "protocol": "CursorBench 3.2, GPT-5.6 Terra Max effort."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "evaluationDate": "2026-07-09",
+      "protocol": "GPQA Diamond, OpenAI GPT-5.6 official evaluation table."
+    }
+  },
+  "gpt-5-6-luna": {
+    "swe-bench-pro": {
+      "sourceUrl": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "evaluationDate": "2026-07-09",
+      "protocol": "GPT-5.6 Luna SWE-bench Pro, OpenAI-reported agent evaluation."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "evaluationDate": "2026-07-09",
+      "protocol": "GPT-5.6 Luna Terminal-Bench 2.1, OpenAI-reported terminal-agent evaluation."
+    },
+    "cursorbench": {
+      "sourceUrl": "https://cursor.com/cursorbench",
+      "evaluationDate": "2026-07-08",
+      "protocol": "CursorBench 3.2, GPT-5.6 Luna Max effort."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "evaluationDate": "2026-07-09",
+      "protocol": "GPQA Diamond, OpenAI GPT-5.6 official evaluation table."
+    }
+  },
+  "gpt-5-5": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-5/",
+      "evaluationDate": "2026-04-23",
+      "protocol": "GPQA Diamond, no tools."
+    },
+    "hle": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-5/",
+      "evaluationDate": "2026-04-23",
+      "protocol": "Humanity's Last Exam, no tools."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-5/",
+      "evaluationDate": "2026-04-23",
+      "protocol": "Public SWE-bench Pro, single-pass agent evaluation."
+    },
+    "cursorbench": {
+      "sourceUrl": "https://cursor.com/cursorbench",
+      "evaluationDate": "2026-07-08",
+      "protocol": "CursorBench 3.2, GPT-5.5 Extra High / High (both 58.4%)."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/2.1",
+      "evaluationDate": "2026-05-01",
+      "protocol": "Official Terminal-Bench 2.1 leaderboard, Codex agent, GPT-5.5, xhigh effort."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gpt-5.5'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gpt-5-4": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-4/",
+      "evaluationDate": "2026-03-05",
+      "protocol": "GPQA Diamond, no tools."
+    },
+    "hle": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-4/",
+      "evaluationDate": "2026-03-05",
+      "protocol": "Humanity's Last Exam, no tools."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-4/",
+      "evaluationDate": "2026-03-05",
+      "protocol": "Public SWE-bench Pro, single-pass agent evaluation."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gpt-5.4'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'gpt-5.4'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gpt-5": {
+    "aime-2025": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "AIME 2025, no tools; OpenAI detailed benchmark table."
+    },
+    "swe-bench-verified": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "SWE-bench Verified; OpenAI evaluation omitting 23 of 500 infrastructure-incompatible tasks."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "Aider Polyglot diff evaluation, high reasoning effort; OpenAI detailed benchmark table."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "GPQA Diamond, no tools; OpenAI detailed benchmark table."
+    },
+    "hle": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "Humanity's Last Exam, no tools; OpenAI detailed benchmark table."
+    }
+  },
+  "gpt-5-mini": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "GPQA Diamond, no tools; OpenAI detailed benchmark table."
+    },
+    "hle": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "Humanity's Last Exam, no tools; OpenAI detailed benchmark table."
+    },
+    "aime-2025": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "AIME 2025, no tools; OpenAI detailed benchmark table."
+    },
+    "swe-bench-verified": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "SWE-bench Verified; OpenAI evaluation omitting 23 of 500 infrastructure-incompatible tasks."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "Aider Polyglot diff evaluation, high reasoning effort; OpenAI detailed benchmark table."
+    }
+  },
+  "gpt-5-nano": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "GPQA Diamond, no tools; OpenAI detailed benchmark table."
+    },
+    "hle": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "Humanity's Last Exam, no tools; OpenAI detailed benchmark table."
+    },
+    "aime-2025": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "AIME 2025, no tools; OpenAI detailed benchmark table."
+    },
+    "swe-bench-verified": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "SWE-bench Verified; OpenAI evaluation omitting 23 of 500 infrastructure-incompatible tasks."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "Aider Polyglot diff evaluation, high reasoning effort; OpenAI detailed benchmark table."
+    }
+  },
+  "o3": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "GPQA Diamond, no tools; OpenAI detailed benchmark table."
+    },
+    "hle": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "Humanity's Last Exam, no tools; OpenAI detailed benchmark table."
+    },
+    "aime-2025": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "AIME 2025, no tools; OpenAI detailed benchmark table."
+    },
+    "swe-bench-verified": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "SWE-bench Verified; OpenAI evaluation omitting 23 of 500 infrastructure-incompatible tasks."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "Aider Polyglot diff evaluation, high reasoning effort; OpenAI detailed benchmark table."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'o3-2025-04-16'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gpt-4-1": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://openai.com/index/gpt-4-1/",
+      "evaluationDate": "2025-04-14",
+      "protocol": "GPT-4.1 GPQA Diamond, OpenAI evaluation with model answer extraction."
+    },
+    "swe-bench-verified": {
+      "sourceUrl": "https://openai.com/index/gpt-4-1/",
+      "evaluationDate": "2025-04-14",
+      "protocol": "GPT-4.1 SWE-bench Verified, OpenAI agent evaluation; 23 of 500 tasks omitted as infrastructure-incompatible."
+    },
+    "aime-2025": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "AIME 2025, no tools; OpenAI detailed benchmark table."
+    },
+    "hle": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "Humanity's Last Exam, no tools; OpenAI detailed benchmark table."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "Aider Polyglot diff evaluation, high reasoning effort for reasoning models; OpenAI detailed benchmark table."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gpt-4.1-2025-04-14'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gpt-4o-2024-05-13": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gpt-4o-2024-05-13'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gpt-4-1-mini": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://openai.com/index/gpt-4-1/",
+      "evaluationDate": "2025-04-14",
+      "protocol": "GPT-4.1 mini GPQA Diamond, OpenAI evaluation with model answer extraction."
+    },
+    "swe-bench-verified": {
+      "sourceUrl": "https://openai.com/index/gpt-4-1/",
+      "evaluationDate": "2025-04-14",
+      "protocol": "GPT-4.1 mini SWE-bench Verified, OpenAI agent evaluation; 23 of 500 tasks omitted as infrastructure-incompatible."
+    },
+    "aime-2025": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "AIME 2025, no tools; OpenAI detailed benchmark table."
+    },
+    "hle": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "Humanity's Last Exam, no tools; OpenAI detailed benchmark table."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "Aider Polyglot diff evaluation, high reasoning effort for reasoning models; OpenAI detailed benchmark table."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gpt-4.1-mini-2025-04-14'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gpt-4-1-nano": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://openai.com/index/gpt-4-1/",
+      "evaluationDate": "2025-04-14",
+      "protocol": "GPT-4.1 nano GPQA Diamond, OpenAI evaluation with model answer extraction."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://aider.chat/docs/leaderboards/",
+      "evaluationDate": "2025-04-14",
+      "protocol": "Aider polyglot official leaderboard, gpt-4.1-nano, whole edit format, pass rate 2."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gpt-4.1-nano-2025-04-14'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gpt-4o-mini": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gpt-4o-mini-2024-07-18'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "claude-opus-5": {
+    "cursorbench": {
+      "sourceUrl": "https://cursor.com/cursorbench",
+      "evaluationDate": "2026-07-08",
+      "protocol": "CursorBench 3.2, Claude Opus 5 Max effort."
+    }
+  },
+  "claude-fable-5": {
+    "cursorbench": {
+      "sourceUrl": "https://cursor.com/cursorbench",
+      "evaluationDate": "2026-07-08",
+      "protocol": "CursorBench 3.2, Claude Fable 5 Max effort."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/2.1",
+      "evaluationDate": "2026-06-07",
+      "protocol": "Official Terminal-Bench 2.1 leaderboard, Claude Code agent, Fable 5, xhigh effort."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "evaluationDate": "2026-07-09",
+      "protocol": "SWE-bench Pro, OpenAI-reported comparison in the GPT-5.6 evaluation table."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "evaluationDate": "2026-07-09",
+      "protocol": "GPQA Diamond, OpenAI-reported comparison in the GPT-5.6 evaluation table."
+    }
+  },
+  "claude-opus-4-8": {
+    "cursorbench": {
+      "sourceUrl": "https://cursor.com/cursorbench",
+      "evaluationDate": "2026-07-08",
+      "protocol": "CursorBench 3.2, Claude Opus 4.8 Max effort."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/2.1",
+      "evaluationDate": "2026-07-09",
+      "protocol": "Official Terminal-Bench 2.1 leaderboard, Claude Code agent, Opus 4.8, high effort."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "evaluationDate": "2026-07-09",
+      "protocol": "SWE-bench Pro, OpenAI-reported comparison in the GPT-5.6 evaluation table."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "evaluationDate": "2026-07-09",
+      "protocol": "GPQA Diamond, OpenAI-reported comparison in the GPT-5.6 evaluation table."
+    }
+  },
+  "claude-sonnet-5": {
+    "cursorbench": {
+      "sourceUrl": "https://cursor.com/cursorbench",
+      "evaluationDate": "2026-07-08",
+      "protocol": "CursorBench 3.2, Claude Sonnet 5 Max effort."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/2.1",
+      "evaluationDate": "2026-07-09",
+      "protocol": "Official Terminal-Bench 2.1 leaderboard, Claude Code agent, Sonnet 5, high effort."
+    }
+  },
+  "claude-opus-4-5": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "claude-sonnet-4-6": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "claude-haiku-4-5": {
+    "swe-bench-verified": {
+      "sourceUrl": "https://www.anthropic.com/news/claude-haiku-4-5",
+      "evaluationDate": "2025-10-15",
+      "protocol": "SWE-bench Verified, full 500 tasks; bash and string-edit scaffold; 50-trial average; 128K thinking budget; no test-time compute."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'claude-haiku-4-5-20251001'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'claude-haiku-4-5-20251001'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "claude-sonnet-4": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'claude-sonnet-4-20250514'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://aider.chat/docs/leaderboards/",
+      "evaluationDate": "2025-05-24",
+      "protocol": "Aider polyglot official leaderboard, claude-sonnet-4-20250514 no thinking, diff edit format, pass rate 2."
+    }
+  },
+  "claude-haiku-3-5": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'claude-3-5-haiku-20241022'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gemini-3-1-pro": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-3-1-pro/",
+      "evaluationDate": "2026-02-19",
+      "protocol": "GPQA Diamond, Thinking High, no tools."
+    },
+    "hle": {
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-3-1-pro/",
+      "evaluationDate": "2026-02-19",
+      "protocol": "Humanity's Last Exam, no tools."
+    },
+    "swe-bench-verified": {
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-3-1-pro/",
+      "evaluationDate": "2026-02-19",
+      "protocol": "SWE-bench Verified, Google single-attempt agent scaffold."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gemini-3.1-pro-preview'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'gemini-3.1-pro-preview'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "evaluationDate": "2026-07-09",
+      "protocol": "SWE-bench Pro, OpenAI-reported comparison in the GPT-5.6 evaluation table."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://openai.com/index/gpt-5-6/",
+      "evaluationDate": "2026-07-09",
+      "protocol": "Terminal-Bench 2.1, OpenAI-reported comparison in the GPT-5.6 evaluation table."
+    }
+  },
+  "gemini-3-pro": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://blog.google/products-and-platforms/products/gemini/gemini-3/",
+      "evaluationDate": "2025-11-18",
+      "protocol": "GPQA Diamond, no tools."
+    },
+    "hle": {
+      "sourceUrl": "https://blog.google/products-and-platforms/products/gemini/gemini-3/",
+      "evaluationDate": "2025-11-18",
+      "protocol": "Humanity's Last Exam, no tools."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://blog.google/products-and-platforms/products/gemini/gemini-3/",
+      "evaluationDate": "2025-11-18",
+      "protocol": "LMArena launch snapshot; volatile Elo, not a timeless model property."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'gemini-3-pro'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gemini-3-6-flash": {
+    "cursorbench": {
+      "sourceUrl": "https://cursor.com/cursorbench",
+      "evaluationDate": "2026-07-08",
+      "protocol": "CursorBench 3.2, Gemini 3.6 Flash High effort."
+    }
+  },
+  "gemini-3-flash": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gemini-3-flash'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'gemini-3-flash'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gemini-3-5-flash-lite": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gemini-3.5-flash-lite'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'gemini-3.5-flash-lite'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gemini-2-5-pro": {
+    "hle": {
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/",
+      "evaluationDate": "2025-03-25",
+      "protocol": "Gemini 2.5 Pro Humanity's Last Exam, no tools; Google-reported result."
+    },
+    "swe-bench-verified": {
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/",
+      "evaluationDate": "2025-03-25",
+      "protocol": "Gemini 2.5 Pro SWE-bench Verified with Google's custom agent setup."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gemini-2.5-pro'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'gemini-2.5-pro'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://aider.chat/docs/leaderboards/",
+      "evaluationDate": "2025-06-06",
+      "protocol": "Aider polyglot official leaderboard, gemini-2.5-pro-preview-06-05 default think, diff-fenced, pass rate 2."
+    }
+  },
+  "gemini-2-5-flash": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gemini-2.5-flash'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gemma-4-31b": {
+    "mmlu-pro": {
+      "sourceUrl": "https://huggingface.co/google/gemma-4-31b-it",
+      "evaluationDate": "2026-04-08",
+      "protocol": "Gemma 4 instruction-tuned MMLU Pro result."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/google/gemma-4-31b-it",
+      "evaluationDate": "2026-04-08",
+      "protocol": "Gemma 4 instruction-tuned GPQA Diamond, no tools."
+    },
+    "hle": {
+      "sourceUrl": "https://huggingface.co/google/gemma-4-31b-it",
+      "evaluationDate": "2026-04-08",
+      "protocol": "Humanity's Last Exam, no tools."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/google/gemma-4-31b-it",
+      "evaluationDate": "2026-04-08",
+      "protocol": "LiveCodeBench v6."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gemma-4-31b'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'gemma-4-31b'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gemma-4-26b": {
+    "mmlu-pro": {
+      "sourceUrl": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "evaluationDate": "2026-04-08",
+      "protocol": "Gemma 4 instruction-tuned MMLU Pro result."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "evaluationDate": "2026-04-08",
+      "protocol": "Gemma 4 instruction-tuned GPQA Diamond, no tools."
+    },
+    "hle": {
+      "sourceUrl": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "evaluationDate": "2026-04-08",
+      "protocol": "Humanity's Last Exam, no tools."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "evaluationDate": "2026-04-08",
+      "protocol": "LiveCodeBench v6."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gemma-4-26b-a4b'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'gemma-4-26b-a4b'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gemma-3-12b": {
+    "mmlu-pro": {
+      "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_3",
+      "evaluationDate": "2025-03-12",
+      "protocol": "Gemma 3 IT, 0-shot MMLU (Pro)."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_3",
+      "evaluationDate": "2025-03-12",
+      "protocol": "Gemma 3 IT, 0-shot GPQA Diamond."
+    },
+    "simpleqa": {
+      "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_3",
+      "evaluationDate": "2025-03-12",
+      "protocol": "Gemma 3 IT, 0-shot SimpleQA."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_3",
+      "evaluationDate": "2025-03-12",
+      "protocol": "Gemma 3 IT, 0-shot LiveCodeBench."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gemma-3-12b-it'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "grok-4-5": {
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/2.1",
+      "evaluationDate": "2026-07-09",
+      "protocol": "Official Terminal-Bench 2.1 leaderboard, Cursor CLI agent, Grok 4.5, high effort."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "grok-4-6": {
+    "cursorbench": {
+      "sourceUrl": "https://x.ai/news/grok-4-6",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Grok 4.6 CursorBench v3.2, SpaceXAI-reported agent evaluation at launch."
+    }
+  },
+  "grok-4-3": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "grok-4-1": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "grok-4": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'grok-4-0709'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://aider.chat/docs/leaderboards/",
+      "evaluationDate": "2025-07-11",
+      "protocol": "Aider polyglot official leaderboard, grok-4 high, diff edit format, pass rate 2."
+    }
+  },
+  "muse-spark-1-2": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "muse-glimmer": {
+    "swe-bench-verified": {
+      "sourceUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "evaluationDate": "2026-08-10",
+      "protocol": "Muse Glimmer SWE-bench Verified, Meta model-card high reasoning result."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "evaluationDate": "2026-08-10",
+      "protocol": "Muse Glimmer SWE-bench Pro, Meta model-card agent evaluation."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "evaluationDate": "2026-08-10",
+      "protocol": "Muse Glimmer Terminal-Bench 2.1 with terminus2, Meta model-card result."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "evaluationDate": "2026-08-10",
+      "protocol": "Muse Glimmer GPQA Diamond (AA), Meta model-card result."
+    },
+    "hle": {
+      "sourceUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "evaluationDate": "2026-08-10",
+      "protocol": "Muse Glimmer HLE Text (AA), Meta model-card result."
+    },
+    "scicode": {
+      "sourceUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "evaluationDate": "2026-08-10",
+      "protocol": "Muse Glimmer SciCode, Meta model-card result."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'muse-glimmer'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'muse-glimmer'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "muse-spark-1-1": {
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/2.1",
+      "evaluationDate": "2026-07-09",
+      "protocol": "Official Terminal-Bench 2.1 leaderboard, mini-SWE-agent, Muse Spark 1.1, xhigh effort."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'muse-spark-1.1'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'muse-spark-1.1'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "llama-4-maverick": {
+    "mmlu-pro": {
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "evaluationDate": "2025-04-05",
+      "protocol": "Meta Llama 4 Instruct MMLU-Pro result."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "evaluationDate": "2025-04-05",
+      "protocol": "Meta Llama 4 Instruct LiveCodeBench, published collection window."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://aider.chat/docs/leaderboards/",
+      "evaluationDate": "2025-04-06",
+      "protocol": "Aider Polyglot whole benchmark leaderboard snapshot."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'llama-4-maverick-17b-128e-instruct'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "llama-4-scout": {
+    "mmlu-pro": {
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "evaluationDate": "2025-04-05",
+      "protocol": "Meta Llama 4 Instruct MMLU-Pro result."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "evaluationDate": "2025-04-05",
+      "protocol": "Meta Llama 4 Instruct GPQA Diamond, 0-shot accuracy."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "evaluationDate": "2025-04-05",
+      "protocol": "Meta Llama 4 Instruct LiveCodeBench, published collection window."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'llama-4-scout-17b-16e-instruct'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "llama-3-3-70b": {
+    "mmlu-pro": {
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+      "evaluationDate": "2024-12-06",
+      "protocol": "Meta Llama 3.3 Instruct MMLU-Pro result."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+      "evaluationDate": "2024-12-06",
+      "protocol": "Meta Llama 3.3 Instruct GPQA result, retained under the catalog's GPQA field."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "evaluationDate": "2025-04-05",
+      "protocol": "Meta Llama 4 instruct comparison table; Llama 3.3 70B LiveCodeBench 10/01/2024-02/01/2025, 0-shot pass@1."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'llama-3.3-70b-instruct'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "llama-3-1-70b": {
+    "mmlu-pro": {
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+      "evaluationDate": "2024-07-23",
+      "protocol": "Meta Llama 3.1 Instruct MMLU-Pro, 5-shot CoT."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'llama-3.1-70b-instruct'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+      "evaluationDate": "2024-12-06",
+      "protocol": "Meta Llama 3.3 instruct comparison table; Llama 3.1 70B Instruct GPQA Diamond, 0-shot CoT."
+    }
+  },
+  "llama-3-1-8b": {
+    "mmlu-pro": {
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+      "evaluationDate": "2024-07-23",
+      "protocol": "Meta Llama 3.1 Instruct MMLU-Pro, 5-shot CoT."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'llama-3.1-8b-instruct'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+      "evaluationDate": "2024-12-06",
+      "protocol": "Meta Llama 3.3 instruct comparison table; Llama 3.1 8B Instruct GPQA Diamond, 0-shot CoT."
+    }
+  },
+  "deepseek-v4-pro": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "deepseek-v4-flash": {
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://api-docs.deepseek.com/updates/",
+      "evaluationDate": "2026-07-31",
+      "protocol": "DeepSeek-V4-Flash-0731 public beta; Terminal-Bench 2.1 with DeepSeek Harness minimal mode, max effort, top_p=0.95, temperature=1.0."
+    },
+    "nl2repo": {
+      "sourceUrl": "https://api-docs.deepseek.com/updates/",
+      "evaluationDate": "2026-07-31",
+      "protocol": "DeepSeek-V4-Flash-0731 public beta; NL2Repo with DeepSeek Harness minimal mode, max effort, top_p=0.95, temperature=1.0."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'deepseek-v4-flash'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "deepseek-v3-2": {
+    "swe-bench-verified": {
+      "sourceUrl": "https://www.swebench.com/",
+      "evaluationDate": "2025-12-01",
+      "protocol": "SWE-bench Verified resolved rate for DeepSeek-V3.2, official SWE-bench leaderboard."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
+      "evaluationDate": "2025-12-01",
+      "protocol": "SWE-bench Pro public leaderboard result for DeepSeek-V3.2."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'deepseek-v3.2'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'deepseek-v3.2'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "deepseek-v3-1": {
+    "mmlu-pro": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1/raw/main/README.md",
+      "evaluationDate": "2025-08-21",
+      "protocol": "V3.1 Thinking MMLU-Pro EM."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1/raw/main/README.md",
+      "evaluationDate": "2025-08-21",
+      "protocol": "V3.1 Thinking GPQA Diamond pass@1."
+    },
+    "hle": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1/raw/main/README.md",
+      "evaluationDate": "2025-08-21",
+      "protocol": "V3.1 Thinking Humanity's Last Exam pass@1."
+    },
+    "aime-2025": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1/raw/main/README.md",
+      "evaluationDate": "2025-08-21",
+      "protocol": "V3.1 Thinking AIME 2025 pass@1."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1/raw/main/README.md",
+      "evaluationDate": "2025-08-21",
+      "protocol": "V3.1 Thinking LiveCodeBench 2408-2505 pass@1."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1/raw/main/README.md",
+      "evaluationDate": "2025-08-21",
+      "protocol": "V3.1 Thinking Aider-Polyglot accuracy."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'deepseek-v3.1'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "deepseek-r1-0528": {
+    "mmlu-pro": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/raw/main/README.md",
+      "evaluationDate": "2025-05-28",
+      "protocol": "MMLU-Pro EM; official R1-0528 evaluation table."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/raw/main/README.md",
+      "evaluationDate": "2025-05-28",
+      "protocol": "GPQA Diamond pass@1; official R1-0528 evaluation table."
+    },
+    "hle": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/raw/main/README.md",
+      "evaluationDate": "2025-05-28",
+      "protocol": "Humanity's Last Exam pass@1 on text-only prompts."
+    },
+    "aime-2025": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/raw/main/README.md",
+      "evaluationDate": "2025-05-28",
+      "protocol": "AIME 2025 pass@1; 16 samples per question with temperature 0.6 and top-p 0.95."
+    },
+    "simpleqa": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/raw/main/README.md",
+      "evaluationDate": "2025-05-28",
+      "protocol": "SimpleQA Correct; official R1-0528 evaluation table."
+    },
+    "swe-bench-verified": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/raw/main/README.md",
+      "evaluationDate": "2025-05-28",
+      "protocol": "SWE-bench Verified resolved rate using the Agentless framework."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/raw/main/README.md",
+      "evaluationDate": "2025-05-28",
+      "protocol": "LiveCodeBench 2408-2505 pass@1."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/raw/main/README.md",
+      "evaluationDate": "2025-05-28",
+      "protocol": "Aider-Polyglot accuracy; official R1-0528 evaluation table."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'deepseek-r1-0528'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "qwen3-8-max": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://qwen.ai/blog?id=qwen3.8",
+      "evaluationDate": "2026-08-03",
+      "protocol": "Qwen3.8 Max GPQA Diamond, Alibaba vendor-published GA evaluation."
+    },
+    "hle": {
+      "sourceUrl": "https://qwen.ai/blog?id=qwen3.8",
+      "evaluationDate": "2026-08-03",
+      "protocol": "Qwen3.8 Max Humanity's Last Exam, Alibaba vendor-published GA evaluation."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://qwen.ai/blog?id=qwen3.8",
+      "evaluationDate": "2026-08-03",
+      "protocol": "Qwen3.8 Max SWE-bench Pro, Alibaba vendor-published agent evaluation."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://qwen.ai/blog?id=qwen3.8",
+      "evaluationDate": "2026-08-03",
+      "protocol": "Qwen3.8 Max Terminal-Bench 2.1, Alibaba vendor-published terminal-agent evaluation."
+    },
+    "nl2repo": {
+      "sourceUrl": "https://qwen.ai/blog?id=qwen3.8",
+      "evaluationDate": "2026-08-03",
+      "protocol": "Qwen3.8 Max NL2Repo-Bench, Alibaba vendor-published GA evaluation."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'qwen3.8-max'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'qwen3.8-max'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "qwen3-7-plus": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'qwen3.7-plus'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "qwen3-6-plus": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'qwen3.6-plus'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'qwen3.6-plus'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "qwen3-7-max": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+      "evaluationDate": "2026-05-21",
+      "protocol": "Qwen3.7-Max GPQA Diamond, reasoning high."
+    },
+    "hle": {
+      "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+      "evaluationDate": "2026-05-21",
+      "protocol": "Qwen3.7-Max Humanity's Last Exam, reasoning high."
+    },
+    "swe-bench-verified": {
+      "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+      "evaluationDate": "2026-05-21",
+      "protocol": "Qwen3.7-Max SWE-bench Verified using Alibaba's internal agent scaffold."
+    },
+    "swe-bench-multilingual": {
+      "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+      "evaluationDate": "2026-05-21",
+      "protocol": "Qwen3.7-Max SWE-bench Multilingual using Alibaba's internal agent scaffold."
+    },
+    "scicode": {
+      "sourceUrl": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154",
+      "evaluationDate": "2026-05-21",
+      "protocol": "Qwen3.7-Max SciCode evaluation."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'qwen3.7-max-preview'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'qwen3.7-max-20260517'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "qwen3-5-397b": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'qwen3.5-397b-a17b'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'qwen3.5-397b-a17b'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "qwen3-235b": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://arxiv.org/html/2505.09388",
+      "evaluationDate": "2025-05-14",
+      "protocol": "Qwen3 Technical Report post-training evaluation; Qwen3-235B-A22B thinking mode GPQA Diamond."
+    },
+    "math-500": {
+      "sourceUrl": "https://arxiv.org/html/2505.09388",
+      "evaluationDate": "2025-05-14",
+      "protocol": "Qwen3 Technical Report post-training evaluation; Qwen3-235B-A22B thinking mode MATH-500."
+    },
+    "aime-2025": {
+      "sourceUrl": "https://arxiv.org/html/2505.09388",
+      "evaluationDate": "2025-05-14",
+      "protocol": "Qwen3 Technical Report; Qwen3-235B-A22B AIME 2025 result with thinking mode and reported sampling budget."
+    },
+    "bfcl-v3": {
+      "sourceUrl": "https://arxiv.org/html/2505.09388",
+      "evaluationDate": "2025-05-14",
+      "protocol": "Qwen3 Technical Report; Qwen3-235B-A22B BFCL v3 function-calling evaluation."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://arxiv.org/html/2505.09388",
+      "evaluationDate": "2025-05-14",
+      "protocol": "Qwen3 Technical Report; Qwen3-235B-A22B LiveCodeBench v5."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'qwen3-235b-a22b'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "qwen3-max": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'qwen3-max-preview'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "qwen3-32b": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://arxiv.org/html/2505.09388",
+      "evaluationDate": "2025-05-14",
+      "protocol": "Qwen3 Technical Report post-training evaluation; Qwen3-32B thinking mode GPQA Diamond."
+    },
+    "math-500": {
+      "sourceUrl": "https://arxiv.org/html/2505.09388",
+      "evaluationDate": "2025-05-14",
+      "protocol": "Qwen3 Technical Report post-training evaluation; Qwen3-32B thinking mode MATH-500."
+    },
+    "aime-2025": {
+      "sourceUrl": "https://arxiv.org/html/2505.09388",
+      "evaluationDate": "2025-05-14",
+      "protocol": "Qwen3 Technical Report; Qwen3-32B AIME 2025 thinking mode, 64-sample average, max output 38912."
+    },
+    "bfcl-v3": {
+      "sourceUrl": "https://arxiv.org/html/2505.09388",
+      "evaluationDate": "2025-05-14",
+      "protocol": "Qwen3 Technical Report; Qwen3-32B thinking mode BFCL v3, FC format."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://arxiv.org/html/2505.09388",
+      "evaluationDate": "2025-05-14",
+      "protocol": "Qwen3 Technical Report; Qwen3-32B thinking mode LiveCodeBench v5 (2024.10-2025.02)."
+    },
+    "arena-hard": {
+      "sourceUrl": "https://arxiv.org/html/2505.09388",
+      "evaluationDate": "2025-05-14",
+      "protocol": "Qwen3 Technical Report; Qwen3-32B thinking mode Arena-Hard."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'qwen3-32b'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://aider.chat/docs/leaderboards/",
+      "evaluationDate": "2025-05-08",
+      "protocol": "Aider polyglot official leaderboard, Qwen3 32B default, diff edit format, pass rate 2."
+    }
+  },
+  "mistral-large-3": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'mistral-large-3'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'mistral-large-3'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "mistral-medium-3-5": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "magistral-small": {
+    "aime-2025": {
+      "sourceUrl": "https://huggingface.co/mistralai/Magistral-Small-2506#benchmark-results",
+      "evaluationDate": "2025-06-10",
+      "protocol": "Magistral Small model card; AIME 2025 pass@1 with temperature 0.7, top_p 0.95, max_tokens 40960."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/mistralai/Magistral-Small-2506#benchmark-results",
+      "evaluationDate": "2025-06-10",
+      "protocol": "Magistral Small model card; GPQA Diamond with temperature 0.7, top_p 0.95, max_tokens 40960."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/mistralai/Magistral-Small-2506#benchmark-results",
+      "evaluationDate": "2025-06-10",
+      "protocol": "Magistral Small model card; LiveCodeBench v5 with temperature 0.7, top_p 0.95, max_tokens 40960."
+    }
+  },
+  "devstral-2": {
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'devstral-2'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "mistral-small-3-2": {
+    "mmlu-pro": {
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506#benchmark-results",
+      "evaluationDate": "2025-06-20",
+      "protocol": "Mistral Small 3.2 model card; MMLU-Pro 5-shot chain-of-thought."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506#benchmark-results",
+      "evaluationDate": "2025-06-20",
+      "protocol": "Mistral Small 3.2 model card; GPQA Diamond 5-shot chain-of-thought."
+    },
+    "simpleqa": {
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506#benchmark-results",
+      "evaluationDate": "2025-06-20",
+      "protocol": "Mistral Small 3.2 model card; SimpleQA TotalAcc."
+    },
+    "arena-hard": {
+      "sourceUrl": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506#benchmark-results",
+      "evaluationDate": "2025-06-20",
+      "protocol": "Mistral Small 3.2 model card; Arena Hard v2."
+    }
+  },
+  "kimi-k3": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K3/raw/main/README.md",
+      "evaluationDate": "2026-07-16",
+      "protocol": "Kimi K3 max GPQA Diamond, no tools; reasoning effort max."
+    },
+    "hle": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K3/raw/main/README.md",
+      "evaluationDate": "2026-07-16",
+      "protocol": "Kimi K3 max HLE-Full without tools; the card reports 43.5 without tools and 56.0 with tools."
+    },
+    "scicode": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K3/raw/main/README.md",
+      "evaluationDate": "2026-07-16",
+      "protocol": "Kimi K3 max SciCode evaluation."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K3/raw/main/README.md",
+      "evaluationDate": "2026-07-16",
+      "protocol": "Kimi K3 max Terminal-Bench 2.1 using the Kimi Code harness."
+    },
+    "cursorbench": {
+      "sourceUrl": "https://cursor.com/cursorbench",
+      "evaluationDate": "2026-07-08",
+      "protocol": "CursorBench 3.2, Kimi K3 Max effort."
+    }
+  },
+  "kimi-k3-fast": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K3/raw/main/README.md",
+      "evaluationDate": "2026-07-16",
+      "protocol": "Inherited from Kimi K3 Standard — Fast is the same 2.8T/104B intelligence SKU; Kimi K3 max GPQA Diamond, no tools."
+    },
+    "hle": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K3/raw/main/README.md",
+      "evaluationDate": "2026-07-16",
+      "protocol": "Inherited from Kimi K3 Standard — Fast is the same intelligence SKU; HLE-Full without tools."
+    },
+    "scicode": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K3/raw/main/README.md",
+      "evaluationDate": "2026-07-16",
+      "protocol": "Inherited from Kimi K3 Standard — Fast is the same intelligence SKU; Kimi K3 max SciCode."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K3/raw/main/README.md",
+      "evaluationDate": "2026-07-16",
+      "protocol": "Inherited from Kimi K3 Standard — Fast is the same intelligence SKU; Terminal-Bench 2.1 with Kimi Code harness."
+    },
+    "cursorbench": {
+      "sourceUrl": "https://cursor.com/cursorbench",
+      "evaluationDate": "2026-07-08",
+      "protocol": "Inherited from Kimi K3 Standard — Fast is the same intelligence SKU; CursorBench 3.2 Max."
+    }
+  },
+  "kimi-k2-7-code": {
+    "cursorbench": {
+      "sourceUrl": "https://cursor.com/cursorbench",
+      "evaluationDate": "2026-07-08",
+      "protocol": "CursorBench 3.2, Kimi K2.7 Code."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'kimi-k2.7-code'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "kimi-k2-5": {
+    "mmlu-pro": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.5",
+      "evaluationDate": "2026-01-27",
+      "protocol": "Kimi K2.5 Thinking MMLU-Pro."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.5",
+      "evaluationDate": "2026-01-27",
+      "protocol": "Kimi K2.5 Thinking GPQA Diamond; 96K maximum completion budget."
+    },
+    "hle": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.5",
+      "evaluationDate": "2026-01-27",
+      "protocol": "Kimi K2.5 Thinking HLE-Full without tools; 96K maximum completion budget."
+    },
+    "aime-2025": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.5",
+      "evaluationDate": "2026-01-27",
+      "protocol": "Kimi K2.5 Thinking AIME 2025; 96K maximum completion budget."
+    },
+    "swe-bench-verified": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.5",
+      "evaluationDate": "2026-01-27",
+      "protocol": "Kimi K2.5 SWE-bench Verified agent evaluation."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.5",
+      "evaluationDate": "2026-01-27",
+      "protocol": "Kimi K2.5 SWE-bench Pro agent evaluation."
+    },
+    "swe-bench-multilingual": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.5",
+      "evaluationDate": "2026-01-27",
+      "protocol": "Kimi K2.5 SWE-bench Multilingual agent evaluation."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.5",
+      "evaluationDate": "2026-01-27",
+      "protocol": "Kimi K2.5 LiveCodeBench v6."
+    },
+    "scicode": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.5",
+      "evaluationDate": "2026-01-27",
+      "protocol": "Kimi K2.5 SciCode evaluation."
+    }
+  },
+  "glm-5-2": {
+    "cursorbench": {
+      "sourceUrl": "https://cursor.com/cursorbench",
+      "evaluationDate": "2026-07-08",
+      "protocol": "CursorBench 3.2, GLM-5.2 Max effort."
+    }
+  },
+  "glm-5": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "glm-4-7": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "phi-4": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/microsoft/phi-4",
+      "evaluationDate": "2024-12-12",
+      "protocol": "Phi-4 official model-card GPQA result (SimpleEval / Microsoft table)."
+    },
+    "simpleqa": {
+      "sourceUrl": "https://huggingface.co/microsoft/phi-4",
+      "evaluationDate": "2024-12-12",
+      "protocol": "Phi-4 official model-card SimpleQA factual-knowledge result."
+    },
+    "mmlu-pro": {
+      "sourceUrl": "https://arxiv.org/html/2412.08905",
+      "evaluationDate": "2024-12-12",
+      "protocol": "Phi-4 Technical Report Table 1; MMLU-Pro under OpenAI simple-evals with published prompts/extraction and temperature 0.5."
+    },
+    "arena-hard": {
+      "sourceUrl": "https://arxiv.org/html/2412.08905",
+      "evaluationDate": "2024-12-12",
+      "protocol": "Phi-4 Technical Report Table 1; ArenaHard under OpenAI simple-evals with published prompts/extraction and temperature 0.5."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'phi-4'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "phi-4-reasoning": {
+    "mmlu-pro": {
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-4-reasoning",
+      "evaluationDate": "2025-04-30",
+      "protocol": "Phi-4-reasoning official model-card MMLUPro result."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-4-reasoning",
+      "evaluationDate": "2025-04-30",
+      "protocol": "Phi-4-reasoning official model-card GPQA-D result."
+    },
+    "aime-2025": {
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-4-reasoning",
+      "evaluationDate": "2025-04-30",
+      "protocol": "Phi-4-reasoning official model-card AIME 25 result."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-4-reasoning",
+      "evaluationDate": "2025-04-30",
+      "protocol": "Phi-4-reasoning official model-card LiveCodeBench (8/1/24–2/1/25)."
+    },
+    "arena-hard": {
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-4-reasoning",
+      "evaluationDate": "2025-04-30",
+      "protocol": "Phi-4-reasoning official model-card ArenaHard result."
+    }
+  },
+  "minimax-m3": {
+    "swe-bench-pro": {
+      "sourceUrl": "https://www.minimax.io/blog/minimax-m3",
+      "evaluationDate": "2026-06-01",
+      "protocol": "MiniMax M3 SWE-Bench Pro; internal infrastructure, Claude Code scaffolding, official evaluation logic."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://www.minimax.io/blog/minimax-m3",
+      "evaluationDate": "2026-06-01",
+      "protocol": "MiniMax M3 Terminal-Bench 2.1; Terminus 2 scaffolding, 8C16G sandbox, 2-hour timeout, 128K max output."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "minimax-m2-5": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'minimax-m2.5'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'minimax-m2.5'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "nemotron-3-ultra": {
+    "mmlu-pro": {
+      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+      "evaluationDate": "2026-06-03",
+      "protocol": "NVIDIA model card MMLU-Pro evaluation."
+    },
+    "swe-bench-verified": {
+      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+      "evaluationDate": "2026-06-03",
+      "protocol": "NVIDIA model card SWE-bench Verified agent evaluation."
+    },
+    "swe-bench-multilingual": {
+      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+      "evaluationDate": "2026-06-03",
+      "protocol": "NVIDIA model card SWE-bench Multilingual agent evaluation."
+    },
+    "hle": {
+      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+      "evaluationDate": "2026-06-03",
+      "protocol": "Humanity's Last Exam, no tools."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+      "evaluationDate": "2026-06-03",
+      "protocol": "LiveCodeBench v6."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+      "evaluationDate": "2026-06-03",
+      "protocol": "Terminal-Bench 2.1."
+    }
+  },
+  "claude-opus-4-7": {
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/2.1",
+      "evaluationDate": "2026-05-01",
+      "protocol": "Official Terminal-Bench 2.1 leaderboard, Claude Code agent, Opus 4.7, max effort."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-5/",
+      "evaluationDate": "2026-04-23",
+      "protocol": "SWE-bench Pro (public), OpenAI-reported comparison in the GPT-5.5 evaluation table."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-5/",
+      "evaluationDate": "2026-04-23",
+      "protocol": "GPQA Diamond, OpenAI-reported comparison in the GPT-5.5 evaluation table."
+    },
+    "hle": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-5/",
+      "evaluationDate": "2026-04-23",
+      "protocol": "Humanity's Last Exam, no tools; OpenAI-reported comparison in the GPT-5.5 evaluation table."
+    }
+  },
+  "claude-opus-4-6": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "claude-sonnet-4-5": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'claude-sonnet-4-5-20250929'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'claude-sonnet-4-5-20250929'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "claude-opus-4-1": {
+    "swe-bench-verified": {
+      "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-1",
+      "evaluationDate": "2025-08-05",
+      "protocol": "SWE-bench Verified, full 500-task report using Anthropic's two-tool bash and string-edit scaffold; no extended thinking."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'claude-opus-4-1-20250805'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'claude-opus-4-1-20250805'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gpt-5-4-mini": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+      "evaluationDate": "2026-03-17",
+      "protocol": "GPQA Diamond, xhigh reasoning effort, no tools."
+    },
+    "hle": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+      "evaluationDate": "2026-03-17",
+      "protocol": "Humanity's Last Exam without tools, xhigh reasoning effort."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+      "evaluationDate": "2026-03-17",
+      "protocol": "Public SWE-bench Pro, single-pass agent evaluation."
+    }
+  },
+  "gpt-5-4-nano": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+      "evaluationDate": "2026-03-17",
+      "protocol": "GPQA Diamond, xhigh reasoning effort, no tools."
+    },
+    "hle": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+      "evaluationDate": "2026-03-17",
+      "protocol": "Humanity's Last Exam without tools, xhigh reasoning effort."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+      "evaluationDate": "2026-03-17",
+      "protocol": "Public SWE-bench Pro, single-pass agent evaluation."
+    }
+  },
+  "o4-mini": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "GPQA Diamond, no tools; OpenAI detailed benchmark table."
+    },
+    "hle": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "Humanity's Last Exam, no tools; OpenAI detailed benchmark table."
+    },
+    "aime-2025": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "AIME 2025, no tools; OpenAI detailed benchmark table."
+    },
+    "swe-bench-verified": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "SWE-bench Verified; OpenAI evaluation omitting 23 of 500 infrastructure-incompatible tasks."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "evaluationDate": "2025-08-07",
+      "protocol": "Aider Polyglot diff evaluation, high reasoning effort; OpenAI detailed benchmark table."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'o4-mini-2025-04-16'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "o3-mini": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'o3-mini'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://aider.chat/docs/leaderboards/",
+      "evaluationDate": "2025-01-31",
+      "protocol": "Aider polyglot official leaderboard, o3-mini medium, diff edit format, pass rate 2."
+    }
+  },
+  "o3-pro": {
+    "aider-polyglot": {
+      "sourceUrl": "https://aider.chat/docs/leaderboards/",
+      "evaluationDate": "2025-06-28",
+      "protocol": "Aider polyglot official leaderboard, o3-pro high, diff edit format, pass rate 2."
+    }
+  },
+  "o1": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'o1-2024-12-17'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://aider.chat/docs/leaderboards/",
+      "evaluationDate": "2024-12-21",
+      "protocol": "Aider polyglot official leaderboard, o1-2024-12-17 high, diff edit format, pass rate 2."
+    }
+  },
+  "gpt-oss-120b": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://arxiv.org/html/2508.10925",
+      "evaluationDate": "2025-08-05",
+      "protocol": "gpt-oss-120b GPQA Diamond, no tools, reasoning high; official model card Table 3."
+    },
+    "hle": {
+      "sourceUrl": "https://arxiv.org/html/2508.10925",
+      "evaluationDate": "2025-08-05",
+      "protocol": "gpt-oss-120b Humanity's Last Exam, no tools, reasoning high; official model card Table 3."
+    },
+    "aime-2025": {
+      "sourceUrl": "https://arxiv.org/html/2508.10925",
+      "evaluationDate": "2025-08-05",
+      "protocol": "gpt-oss-120b AIME 2025, no tools, reasoning high; official model card Table 3."
+    },
+    "simpleqa": {
+      "sourceUrl": "https://arxiv.org/html/2508.10925",
+      "evaluationDate": "2025-08-05",
+      "protocol": "gpt-oss-120b SimpleQA accuracy, no browsing; official model card Table 9."
+    },
+    "swe-bench-verified": {
+      "sourceUrl": "https://arxiv.org/html/2508.10925",
+      "evaluationDate": "2025-08-05",
+      "protocol": "gpt-oss-120b SWE-Bench Verified, reasoning high; official model card Table 3."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://arxiv.org/html/2508.10925",
+      "evaluationDate": "2025-08-05",
+      "protocol": "gpt-oss-120b Aider Polyglot, reasoning high; official model card Table 3."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gpt-oss-120b'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gpt-oss-20b": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://arxiv.org/html/2508.10925",
+      "evaluationDate": "2025-08-05",
+      "protocol": "gpt-oss-20b GPQA Diamond, no tools, reasoning high; official model card Table 3."
+    },
+    "hle": {
+      "sourceUrl": "https://arxiv.org/html/2508.10925",
+      "evaluationDate": "2025-08-05",
+      "protocol": "gpt-oss-20b Humanity's Last Exam, no tools, reasoning high; official model card Table 3."
+    },
+    "aime-2025": {
+      "sourceUrl": "https://arxiv.org/html/2508.10925",
+      "evaluationDate": "2025-08-05",
+      "protocol": "gpt-oss-20b AIME 2025, no tools, reasoning high; official model card Table 3."
+    },
+    "simpleqa": {
+      "sourceUrl": "https://arxiv.org/html/2508.10925",
+      "evaluationDate": "2025-08-05",
+      "protocol": "gpt-oss-20b SimpleQA accuracy, no browsing; official model card Table 9."
+    },
+    "swe-bench-verified": {
+      "sourceUrl": "https://arxiv.org/html/2508.10925",
+      "evaluationDate": "2025-08-05",
+      "protocol": "gpt-oss-20b SWE-Bench Verified, reasoning high; official model card Table 3."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://arxiv.org/html/2508.10925",
+      "evaluationDate": "2025-08-05",
+      "protocol": "gpt-oss-20b Aider Polyglot, reasoning high; official model card Table 3."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gpt-oss-20b'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gemini-3-1-flash-lite": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gemini-3.1-flash-lite-preview'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'gemini-3.1-flash-lite-preview'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "grok-3": {
+    "aider-polyglot": {
+      "sourceUrl": "https://aider.chat/docs/leaderboards/",
+      "evaluationDate": "2025-04-10",
+      "protocol": "Aider polyglot official leaderboard, Grok 3 Beta, diff edit format, pass rate 2."
+    }
+  },
+  "deepseek-v3": {
+    "mmlu-pro": {
+      "sourceUrl": "https://arxiv.org/html/2412.19437",
+      "evaluationDate": "2024-12-26",
+      "protocol": "DeepSeek-V3 technical report; MMLU-Pro exact match."
+    },
+    "math-500": {
+      "sourceUrl": "https://arxiv.org/html/2412.19437",
+      "evaluationDate": "2024-12-26",
+      "protocol": "DeepSeek-V3 technical report; MATH-500 greedy evaluation."
+    },
+    "simpleqa": {
+      "sourceUrl": "https://arxiv.org/html/2412.19437",
+      "evaluationDate": "2024-12-26",
+      "protocol": "DeepSeek-V3 technical report; SimpleQA Correct metric."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'deepseek-v3'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "deepseek-r1": {
+    "mmlu-pro": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1/raw/main/README.md",
+      "evaluationDate": "2025-01-20",
+      "protocol": "MMLU-Pro EM; official DeepSeek-R1 evaluation table."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1/raw/main/README.md",
+      "evaluationDate": "2025-01-20",
+      "protocol": "GPQA Diamond pass@1; official DeepSeek-R1 evaluation table."
+    },
+    "aime-2025": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1/raw/main/README.md",
+      "evaluationDate": "2025-01-20",
+      "protocol": "AIME 2025 pass@1; sampled evaluation with temperature 0.6 and top-p 0.95."
+    },
+    "math-500": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1/raw/main/README.md",
+      "evaluationDate": "2025-01-20",
+      "protocol": "MATH-500 pass@1; official DeepSeek-R1 evaluation table."
+    },
+    "simpleqa": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1/raw/main/README.md",
+      "evaluationDate": "2025-01-20",
+      "protocol": "SimpleQA Correct; official DeepSeek-R1 evaluation table."
+    },
+    "swe-bench-verified": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1/raw/main/README.md",
+      "evaluationDate": "2025-01-20",
+      "protocol": "SWE-bench Verified resolved rate; official Agentless evaluation."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1/raw/main/README.md",
+      "evaluationDate": "2025-01-20",
+      "protocol": "Aider-Polyglot accuracy; official DeepSeek-R1 evaluation table."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'deepseek-r1'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "qwen3-coder-480b": {
+    "swe-bench-pro": {
+      "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
+      "evaluationDate": "2025-07-22",
+      "protocol": "SWE-bench Pro public leaderboard result for Qwen3-Coder-480B-A35B-Instruct."
+    }
+  },
+  "qwen2-5-72b": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'qwen2.5-72b-instruct'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "mmlu-pro": {
+      "sourceUrl": "https://arxiv.org/html/2412.15115",
+      "evaluationDate": "2025-01-03",
+      "protocol": "Qwen2.5 Technical Report Table 6; Qwen2.5-72B-Instruct MMLU-Pro."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://arxiv.org/html/2412.15115",
+      "evaluationDate": "2025-01-03",
+      "protocol": "Qwen2.5 Technical Report Table 6; Qwen2.5-72B-Instruct LiveCodeBench 2305-2409."
+    },
+    "arena-hard": {
+      "sourceUrl": "https://arxiv.org/html/2412.15115",
+      "evaluationDate": "2025-01-03",
+      "protocol": "Qwen2.5 Technical Report Table 6; Qwen2.5-72B-Instruct Arena-Hard."
+    }
+  },
+  "qwen2-5-32b": {
+    "mmlu-pro": {
+      "sourceUrl": "https://arxiv.org/html/2412.15115",
+      "evaluationDate": "2025-01-03",
+      "protocol": "Qwen2.5 Technical Report Table 7; Qwen2.5-32B-Instruct MMLU-Pro."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://arxiv.org/html/2412.15115",
+      "evaluationDate": "2025-01-03",
+      "protocol": "Qwen2.5 Technical Report Table 7; Qwen2.5-32B-Instruct LiveCodeBench 2305-2409."
+    },
+    "arena-hard": {
+      "sourceUrl": "https://arxiv.org/html/2412.15115",
+      "evaluationDate": "2025-01-03",
+      "protocol": "Qwen2.5 Technical Report Table 7; Qwen2.5-32B-Instruct Arena-Hard."
+    }
+  },
+  "qwen2-5-14b": {
+    "mmlu-pro": {
+      "sourceUrl": "https://arxiv.org/html/2412.15115",
+      "evaluationDate": "2025-01-03",
+      "protocol": "Qwen2.5 Technical Report Table 7; Qwen2.5-14B-Instruct MMLU-Pro."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://arxiv.org/html/2412.15115",
+      "evaluationDate": "2025-01-03",
+      "protocol": "Qwen2.5 Technical Report Table 7; Qwen2.5-14B-Instruct LiveCodeBench 2305-2409."
+    },
+    "arena-hard": {
+      "sourceUrl": "https://arxiv.org/html/2412.15115",
+      "evaluationDate": "2025-01-03",
+      "protocol": "Qwen2.5 Technical Report Table 7; Qwen2.5-14B-Instruct Arena-Hard."
+    }
+  },
+  "qwen2-72b": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'qwen2-72b-instruct'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gemma-3-27b": {
+    "mmlu-pro": {
+      "sourceUrl": "https://arxiv.org/html/2503.19786",
+      "evaluationDate": "2025-03-25",
+      "protocol": "Gemma 3 Technical Report Table 6; instruction-tuned Gemma 3 27B zero-shot MMLU-Pro."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://arxiv.org/html/2503.19786",
+      "evaluationDate": "2025-03-25",
+      "protocol": "Gemma 3 Technical Report Table 6; instruction-tuned Gemma 3 27B zero-shot GPQA Diamond."
+    },
+    "simpleqa": {
+      "sourceUrl": "https://arxiv.org/html/2503.19786",
+      "evaluationDate": "2025-03-25",
+      "protocol": "Gemma 3 Technical Report Table 6; instruction-tuned Gemma 3 27B zero-shot SimpleQA."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://arxiv.org/html/2503.19786",
+      "evaluationDate": "2025-03-25",
+      "protocol": "Gemma 3 Technical Report Table 6; instruction-tuned Gemma 3 27B LiveCodeBench."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://arxiv.org/html/2503.19786",
+      "evaluationDate": "2025-03-08",
+      "protocol": "Gemma 3 Technical Report Table 5; preliminary LMSYS Chatbot Arena Elo snapshot received March 8, 2025."
+    }
+  },
+  "llama-3-1-405b": {
+    "mmlu-pro": {
+      "sourceUrl": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+      "evaluationDate": "2024-07-23",
+      "protocol": "Meta Llama 3.1 Instruct MMLU-Pro, 5-shot CoT."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+      "evaluationDate": "2024-12-06",
+      "protocol": "Meta Llama 3.3 instruct comparison table; Llama 3.1 405B Instruct GPQA Diamond, 0-shot CoT."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "evaluationDate": "2025-04-05",
+      "protocol": "Meta Llama 4 instruct comparison table; Llama 3.1 405B LiveCodeBench 10/01/2024-02/01/2025, 0-shot pass@1."
+    }
+  },
+  "ernie-5-1": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'ernie-5.1'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "seed-2-pro": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://seed.bytedance.com/en/seed2",
+      "evaluationDate": "2026-02-15",
+      "protocol": "Seed2.0 Pro 0215 pre-release GPQA Diamond."
+    },
+    "hle": {
+      "sourceUrl": "https://seed.bytedance.com/en/seed2",
+      "evaluationDate": "2026-02-15",
+      "protocol": "Seed2.0 Pro 0215 pre-release HLE, no tool and text only."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://seed.bytedance.com/en/seed2",
+      "evaluationDate": "2026-02-15",
+      "protocol": "Seed2.0 Pro 0215 pre-release SWE-bench Pro."
+    },
+    "swe-bench-multilingual": {
+      "sourceUrl": "https://seed.bytedance.com/en/seed2",
+      "evaluationDate": "2026-02-15",
+      "protocol": "Seed2.0 Pro 0215 pre-release SWE Multilingual."
+    },
+    "nl2repo": {
+      "sourceUrl": "https://seed.bytedance.com/en/seed2",
+      "evaluationDate": "2026-02-15",
+      "protocol": "Seed2.0 Pro 0215 pre-release NL2Repo-Bench."
+    }
+  },
+  "command-a": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'command-a-03-2025'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "yi-lightning": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'yi-lightning'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "olmo-3-32b": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'olmo-3-32b-think'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "command-r-plus": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'command-r-plus-08-2024'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "command-r": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'command-r-08-2024'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "jamba-1-5-large": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'jamba-1.5-large'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "granite-4-1-8b": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'granite-4.1-8b'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'granite-4.1-8b'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "granite-3-8b": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'granite-3.1-8b-instruct'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "nemotron-nano-3-30b": {
+    "mmlu-pro": {
+      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+      "evaluationDate": "2025-12-15",
+      "protocol": "NVIDIA model card MMLU-Pro evaluation."
+    },
+    "hle": {
+      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+      "evaluationDate": "2025-12-15",
+      "protocol": "Humanity's Last Exam, no tools."
+    },
+    "aime-2025": {
+      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+      "evaluationDate": "2025-12-15",
+      "protocol": "AIME 2025, no tools."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+      "evaluationDate": "2025-12-15",
+      "protocol": "LiveCodeBench v6."
+    }
+  },
+  "llama-3-1-nemotron-70b": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'llama-3.1-nemotron-70b-instruct'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "phi-4-mini": {
+    "mmlu-pro": {
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+      "evaluationDate": "2025-02-01",
+      "protocol": "Phi-4-mini-instruct MMLU-Pro, 0-shot chain-of-thought; Microsoft model-card evaluation."
+    },
+    "arena-hard": {
+      "sourceUrl": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+      "evaluationDate": "2025-02-01",
+      "protocol": "Phi-4-mini-instruct Arena Hard; Microsoft model-card evaluation."
+    }
+  },
+  "dbrx-instruct": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'dbrx-instruct-preview'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "snowflake-arctic-instruct": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'snowflake-arctic-instruct'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "reka-flash": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'reka-flash-20240904'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "reka-core": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'reka-core-20240904'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "composer-2-5": {
+    "swe-bench-multilingual": {
+      "sourceUrl": "https://cursor.com/composer",
+      "evaluationDate": "2026-05-18",
+      "protocol": "Cursor Composer 2.5 SWE-bench Multilingual result."
+    },
+    "cursorbench": {
+      "sourceUrl": "https://cursor.com/cursorbench",
+      "evaluationDate": "2026-07-08",
+      "protocol": "CursorBench 3.2."
+    },
+    "vibe-code-bench": {
+      "sourceUrl": "https://www.vals.ai/benchmarks/vibe-code",
+      "evaluationDate": "2026-07-13",
+      "protocol": "Vibe Code Bench v1.1 snapshot."
+    }
+  },
+  "composer-2-5-fast": {
+    "swe-bench-multilingual": {
+      "sourceUrl": "https://cursor.com/composer",
+      "evaluationDate": "2026-05-18",
+      "protocol": "Cursor Composer 2.5 SWE-bench Multilingual result; Fast is the same underlying Composer 2.5 intelligence SKU."
+    },
+    "cursorbench": {
+      "sourceUrl": "https://cursor.com/cursorbench",
+      "evaluationDate": "2026-07-08",
+      "protocol": "CursorBench 3.2; same underlying Composer 2.5 intelligence SKU."
+    },
+    "vibe-code-bench": {
+      "sourceUrl": "https://www.vals.ai/benchmarks/vibe-code",
+      "evaluationDate": "2026-07-13",
+      "protocol": "Vibe Code Bench v1.1 snapshot; same underlying Composer 2.5 intelligence SKU."
+    }
+  },
+  "o1-mini": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'o1-mini'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gpt-4-turbo": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gpt-4-turbo-2024-04-09'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gpt-4-5": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gpt-4.5-preview-2025-02-27'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://aider.chat/docs/leaderboards/",
+      "evaluationDate": "2025-02-27",
+      "protocol": "Aider polyglot official leaderboard, gpt-4.5-preview, diff edit format, pass rate 2."
+    }
+  },
+  "claude-3-opus": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'claude-3-opus-20240229'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "claude-3-5-sonnet": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'claude-3-5-sonnet-20240620'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "claude-3-5-sonnet-1022": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'claude-3-5-sonnet-20241022'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://aider.chat/docs/leaderboards/",
+      "evaluationDate": "2025-01-17",
+      "protocol": "Aider polyglot official leaderboard, claude-3-5-sonnet-20241022, diff edit format, pass rate 2."
+    }
+  },
+  "claude-3-7-sonnet": {
+    "swe-bench-verified": {
+      "sourceUrl": "https://www.anthropic.com/news/claude-3-7-sonnet",
+      "evaluationDate": "2025-02-24",
+      "protocol": "Claude 3.7 Sonnet vanilla pass@1, no extended thinking; Anthropic-reported 63.7% on the 489-task solvable subset, with 11 infrastructure-incompatible tasks excluded from that subset."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'claude-3-7-sonnet-20250219'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://aider.chat/docs/leaderboards/",
+      "evaluationDate": "2025-02-24",
+      "protocol": "Aider polyglot official leaderboard, claude-3-7-sonnet-20250219 no thinking, diff edit format, pass rate 2."
+    }
+  },
+  "claude-3-haiku": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'claude-3-haiku-20240307'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "claude-3-sonnet": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'claude-3-sonnet-20240229'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "claude-opus-4": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'claude-opus-4-20250514'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://aider.chat/docs/leaderboards/",
+      "evaluationDate": "2025-05-25",
+      "protocol": "Aider polyglot official leaderboard, claude-opus-4-20250514 no think, diff edit format, pass rate 2."
+    }
+  },
+  "gemini-3-5-flash": {
+    "cursorbench": {
+      "sourceUrl": "https://cursor.com/cursorbench",
+      "evaluationDate": "2026-07-08",
+      "protocol": "CursorBench 3.2, Gemini 3.5 Flash."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'gemini-3.5-flash'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gemma-2-27b": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gemma-2-27b-it'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gemma-2-9b": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gemma-2-9b-it'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gemma-2-2b": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gemma-2-2b-it'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "gemma-3-4b": {
+    "mmlu-pro": {
+      "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_3",
+      "evaluationDate": "2025-03-12",
+      "protocol": "Gemma 3 IT, 0-shot MMLU (Pro)."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_3",
+      "evaluationDate": "2025-03-12",
+      "protocol": "Gemma 3 IT, 0-shot GPQA Diamond."
+    },
+    "simpleqa": {
+      "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_3",
+      "evaluationDate": "2025-03-12",
+      "protocol": "Gemma 3 IT, 0-shot SimpleQA."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_3",
+      "evaluationDate": "2025-03-12",
+      "protocol": "Gemma 3 IT, 0-shot LiveCodeBench."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gemma-3-4b-it'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "grok-2": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'grok-2-2024-08-13'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "grok-2-mini": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'grok-2-mini-2024-08-13'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "llama-3-70b": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'llama-3-70b-instruct'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "llama-3-8b": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'llama-3-8b-instruct'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "llama-3-2-3b": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'llama-3.2-3b-instruct'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "llama-3-2-1b": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'llama-3.2-1b-instruct'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "codellama-70b": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'codellama-70b-instruct'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "codellama-34b": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'codellama-34b-instruct'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "deepseek-coder-v2": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'deepseek-coder-v2'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "deepseek-v2-5": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'deepseek-v2.5'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "deepseek-r1-distill-llama-70b": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+      "evaluationDate": "2025-01-20",
+      "protocol": "DeepSeek-R1-Distill-Llama-70B GPQA Diamond pass@1; official distilled-model table."
+    },
+    "math-500": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+      "evaluationDate": "2025-01-20",
+      "protocol": "DeepSeek-R1-Distill-Llama-70B MATH-500 pass@1; official distilled-model table."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+      "evaluationDate": "2025-01-20",
+      "protocol": "DeepSeek-R1-Distill-Llama-70B LiveCodeBench pass@1; official distilled-model table."
+    }
+  },
+  "deepseek-r1-distill-qwen-32b": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+      "evaluationDate": "2025-01-20",
+      "protocol": "DeepSeek-R1-Distill-Qwen-32B GPQA Diamond pass@1; official distilled-model table."
+    },
+    "math-500": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+      "evaluationDate": "2025-01-20",
+      "protocol": "DeepSeek-R1-Distill-Qwen-32B MATH-500 pass@1; official distilled-model table."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+      "evaluationDate": "2025-01-20",
+      "protocol": "DeepSeek-R1-Distill-Qwen-32B LiveCodeBench pass@1; official distilled-model table."
+    }
+  },
+  "deepseek-r1-distill-qwen-14b": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+      "evaluationDate": "2025-01-20",
+      "protocol": "DeepSeek-R1-Distill-Qwen-14B GPQA Diamond pass@1; official distilled-model table."
+    },
+    "math-500": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+      "evaluationDate": "2025-01-20",
+      "protocol": "DeepSeek-R1-Distill-Qwen-14B MATH-500 pass@1; official distilled-model table."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+      "evaluationDate": "2025-01-20",
+      "protocol": "DeepSeek-R1-Distill-Qwen-14B LiveCodeBench pass@1; official distilled-model table."
+    }
+  },
+  "deepseek-r1-distill-llama-8b": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+      "evaluationDate": "2025-01-20",
+      "protocol": "DeepSeek-R1-Distill-Llama-8B GPQA Diamond pass@1; official distilled-model table."
+    },
+    "math-500": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+      "evaluationDate": "2025-01-20",
+      "protocol": "DeepSeek-R1-Distill-Llama-8B MATH-500 pass@1; official distilled-model table."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+      "evaluationDate": "2025-01-20",
+      "protocol": "DeepSeek-R1-Distill-Llama-8B LiveCodeBench pass@1; official distilled-model table."
+    }
+  },
+  "mistral-7b": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'mistral-7b-instruct'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "qwen2-5-coder-32b": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'qwen2.5-coder-32b-instruct'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "qwq-32b": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://arxiv.org/html/2505.09388",
+      "evaluationDate": "2025-05-14",
+      "protocol": "Qwen3 Technical Report Table 13 reasoning baseline; QwQ-32B GPQA Diamond."
+    },
+    "math-500": {
+      "sourceUrl": "https://arxiv.org/html/2505.09388",
+      "evaluationDate": "2025-05-14",
+      "protocol": "Qwen3 Technical Report Table 13 reasoning baseline; QwQ-32B MATH-500."
+    },
+    "aime-2025": {
+      "sourceUrl": "https://raw.githubusercontent.com/QwenLM/QwQ/main/eval/README.md",
+      "evaluationDate": "2025-03-06",
+      "protocol": "QwQ-32B AIME25, 64 samples; temperature 0.6, top-p 0.95, top-k 40, max tokens 32768."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://raw.githubusercontent.com/QwenLM/QwQ/main/eval/README.md",
+      "evaluationDate": "2025-03-06",
+      "protocol": "QwQ-32B LiveCodeBench 2408-2502."
+    },
+    "bfcl-v3": {
+      "sourceUrl": "https://arxiv.org/html/2505.09388",
+      "evaluationDate": "2025-05-14",
+      "protocol": "Qwen3 Technical Report Table 13 reasoning baseline; QwQ-32B BFCL v3."
+    },
+    "arena-hard": {
+      "sourceUrl": "https://arxiv.org/html/2505.09388",
+      "evaluationDate": "2025-05-14",
+      "protocol": "Qwen3 Technical Report Table 13 reasoning baseline; QwQ-32B Arena-Hard."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'qwq-32b'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "qwen3-next-80b": {
+    "mmlu-pro": {
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct",
+      "evaluationDate": "2025-09-15",
+      "protocol": "Qwen3-Next-80B-A3B-Instruct official performance table, MMLU-Pro."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct",
+      "evaluationDate": "2025-09-15",
+      "protocol": "Qwen3-Next-80B-A3B-Instruct official performance table, GPQA."
+    },
+    "aime-2025": {
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct",
+      "evaluationDate": "2025-09-15",
+      "protocol": "Qwen3-Next-80B-A3B-Instruct official performance table, AIME25."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct",
+      "evaluationDate": "2025-09-15",
+      "protocol": "Qwen3-Next-80B-A3B-Instruct official performance table, LiveCodeBench v6 (25.02-25.05)."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct",
+      "evaluationDate": "2025-09-15",
+      "protocol": "Qwen3-Next-80B-A3B-Instruct official performance table, Aider-Polyglot."
+    },
+    "bfcl-v3": {
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct",
+      "evaluationDate": "2025-09-15",
+      "protocol": "Qwen3-Next-80B-A3B-Instruct official performance table, BFCL-v3."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'qwen3-next-80b-a3b-instruct'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "qwen3-5-flash": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'qwen3.5-flash'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'qwen3.5-flash'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "qwen2-5-7b": {
+    "mmlu-pro": {
+      "sourceUrl": "https://arxiv.org/html/2412.15115",
+      "evaluationDate": "2025-01-03",
+      "protocol": "Qwen2.5 Technical Report Table 8; Qwen2.5-7B-Instruct MMLU-Pro."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://arxiv.org/html/2412.15115",
+      "evaluationDate": "2025-01-03",
+      "protocol": "Qwen2.5 Technical Report Table 8; Qwen2.5-7B-Instruct LiveCodeBench 2305-2409."
+    },
+    "arena-hard": {
+      "sourceUrl": "https://arxiv.org/html/2412.15115",
+      "evaluationDate": "2025-01-03",
+      "protocol": "Qwen2.5 Technical Report Table 8; Qwen2.5-7B-Instruct Arena-Hard."
+    }
+  },
+  "kimi-k2": {
+    "mmlu-pro": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+      "evaluationDate": "2025-07-11",
+      "protocol": "Kimi K2 Instruct MMLU-Pro EM; official evaluation table."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+      "evaluationDate": "2025-07-11",
+      "protocol": "Kimi K2 Instruct GPQA-Diamond Avg@8; official evaluation table."
+    },
+    "hle": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+      "evaluationDate": "2025-07-11",
+      "protocol": "Kimi K2 Instruct Humanity's Last Exam, text only."
+    },
+    "aime-2025": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+      "evaluationDate": "2025-07-11",
+      "protocol": "Kimi K2 Instruct AIME 2025 Avg@64; official evaluation table."
+    },
+    "math-500": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+      "evaluationDate": "2025-07-11",
+      "protocol": "Kimi K2 Instruct MATH-500 Acc; official evaluation table."
+    },
+    "simpleqa": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+      "evaluationDate": "2025-07-11",
+      "protocol": "Kimi K2 Instruct SimpleQA Correct; official evaluation table."
+    },
+    "swe-bench-verified": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+      "evaluationDate": "2025-07-11",
+      "protocol": "Kimi K2 Instruct SWE-bench Verified agentic coding, single attempt, bash/editor tools."
+    },
+    "swe-bench-multilingual": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+      "evaluationDate": "2025-07-11",
+      "protocol": "Kimi K2 Instruct SWE-bench Multilingual agentic coding, single attempt."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+      "evaluationDate": "2025-07-11",
+      "protocol": "Kimi K2 Instruct LiveCodeBench v6 Pass@1."
+    },
+    "aider-polyglot": {
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+      "evaluationDate": "2025-07-11",
+      "protocol": "Kimi K2 Instruct Aider-Polyglot accuracy; official evaluation table."
+    }
+  },
+  "kimi-k2-6": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'kimi-k2.6'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'kimi-k2.6'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "glm-4-7-flash": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'glm-4.7-flash'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "minimax-m2-7": {
+    "swe-bench-pro": {
+      "sourceUrl": "https://www.minimax.io/news/minimax-m27-en",
+      "evaluationDate": "2026-03-18",
+      "protocol": "MiniMax M2.7 SWE-Pro, vendor-published launch evaluation."
+    },
+    "swe-bench-multilingual": {
+      "sourceUrl": "https://www.minimax.io/news/minimax-m27-en",
+      "evaluationDate": "2026-03-18",
+      "protocol": "MiniMax M2.7 SWE Multilingual, vendor-published launch evaluation."
+    },
+    "nl2repo": {
+      "sourceUrl": "https://www.minimax.io/news/minimax-m27-en",
+      "evaluationDate": "2026-03-18",
+      "protocol": "MiniMax M2.7 NL2Repo, vendor-published launch evaluation."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'minimax-m2.7'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'minimax-m2.7'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "yi-1-5-34b": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'yi-1.5-34b-chat'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "step-3-5-flash": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'step-3.5-flash'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "hy3-preview": {
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'hunyuan-hy3-preview'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'hunyuan-hy3-preview'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "nemotron-nano-9b": {
+    "hle": {
+      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+      "evaluationDate": "2025-08-18",
+      "protocol": "NVIDIA NeMo-Skills reasoning-on HLE evaluation."
+    },
+    "aime-2025": {
+      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+      "evaluationDate": "2025-08-18",
+      "protocol": "NVIDIA NeMo-Skills reasoning-on AIME 2025 evaluation."
+    },
+    "math-500": {
+      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+      "evaluationDate": "2025-08-18",
+      "protocol": "NVIDIA NeMo-Skills reasoning-on MATH-500 evaluation."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+      "evaluationDate": "2025-08-18",
+      "protocol": "NVIDIA NeMo-Skills reasoning-on LiveCodeBench evaluation."
+    },
+    "bfcl-v3": {
+      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+      "evaluationDate": "2025-08-18",
+      "protocol": "NVIDIA NeMo-Skills BFCL v3 evaluation."
+    }
+  },
+  "inkling": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://thinkingmachines.ai/news/introducing-inkling/",
+      "evaluationDate": "2026-07-15",
+      "protocol": "Inkling GPQA Diamond; score reported in the launch comparison table."
+    },
+    "swe-bench-verified": {
+      "sourceUrl": "https://thinkingmachines.ai/news/introducing-inkling/",
+      "evaluationDate": "2026-07-15",
+      "protocol": "Inkling SWE-bench Verified; bash-only agent setup."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://thinkingmachines.ai/news/introducing-inkling/",
+      "evaluationDate": "2026-07-15",
+      "protocol": "Inkling SWE-bench Pro; provider/leaderboard comparison table."
+    },
+    "scicode": {
+      "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling-Small/raw/main/README.md",
+      "evaluationDate": "2026-07-14",
+      "protocol": "Inkling model-card comparison table, SciCode row, Inkling column; score reported as 46.1%."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://thinkingmachines.ai/news/introducing-inkling/",
+      "evaluationDate": "2026-07-15",
+      "protocol": "Inkling Terminal-Bench 2.1 comparison table."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'inkling'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'inkling'. Elo rating is a volatile leaderboard snapshot."
+    }
+  },
+  "inkling-small": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://thinkingmachines.ai/news/inkling-small/",
+      "evaluationDate": "2026-07-30",
+      "protocol": "Inkling-Small GPQA Diamond; score reported in the launch comparison table."
+    },
+    "swe-bench-verified": {
+      "sourceUrl": "https://thinkingmachines.ai/news/inkling-small/",
+      "evaluationDate": "2026-07-30",
+      "protocol": "Inkling-Small SWE-bench Verified; bash-only agent setup."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://thinkingmachines.ai/news/inkling-small/",
+      "evaluationDate": "2026-07-30",
+      "protocol": "Inkling-Small SWE-bench Pro; provider/leaderboard comparison table."
+    },
+    "scicode": {
+      "sourceUrl": "https://thinkingmachines.ai/news/inkling-small/",
+      "evaluationDate": "2026-07-30",
+      "protocol": "Inkling-Small SciCode evaluation."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://thinkingmachines.ai/news/inkling-small/",
+      "evaluationDate": "2026-07-30",
+      "protocol": "Inkling-Small Terminal-Bench 2.1 comparison table."
+    }
+  },
+  "gpt-5-5-pro": {
+    "hle": {
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-5/",
+      "evaluationDate": "2026-04-23",
+      "protocol": "Humanity's Last Exam, no tools; OpenAI GPT-5.5 official evaluation table."
+    }
+  }
+}

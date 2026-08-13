@@ -1,0 +1,28 @@
+{
+  "sources": {
+    "aider": {
+      "claude-opus-4": "claude-opus-4-20250514 (no think)",
+      "claude-sonnet-4": "claude-sonnet-4-20250514 (no thinking)",
+      "claude-3-7-sonnet": "claude-3-7-sonnet-20250219 (no thinking)",
+      "claude-3-5-sonnet-1022": "claude-3-5-sonnet-20241022",
+      "o3-pro": "o3-pro (high)",
+      "o3": "o3 (high)",
+      "o3-mini": "o3-mini (medium)",
+      "o1": "o1-2024-12-17 (high)",
+      "grok-4": "grok-4 (high)",
+      "grok-3": "Grok 3 Beta",
+      "gemini-2-5-pro": "gemini-2.5-pro-preview-06-05 (default think)",
+      "gpt-5": "gpt-5 (high)",
+      "gpt-4-5": "gpt-4.5-preview",
+      "qwen3-32b": "Qwen3 32B",
+      "qwen3-235b": "Qwen3 235B A22B diff, no think, Alibaba API",
+      "deepseek-r1": "DeepSeek R1",
+      "deepseek-r1-0528": "DeepSeek R1 (0528)",
+      "deepseek-v3": "DeepSeek V3 (0324)",
+      "gpt-oss-120b": "gpt-oss-120b (high)",
+      "gemma-3-27b": "gemma-3-27b-it"
+    },
+    "swebench": {},
+    "swe-rebench": {}
+  }
+}
