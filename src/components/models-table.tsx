@@ -2,7 +2,7 @@
 
 import { useMemo, useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
-import { ArrowDown, ArrowUp, ArrowUpDown } from "lucide-react";
+import { ArrowDown, ArrowUp, ArrowUpDown, Zap } from "lucide-react";
 import type { BenchmarkId, Model } from "@/data/types";
 import { BENCHMARKS } from "@/data/benchmarks";
 import {
@@ -30,6 +30,8 @@ import {
 } from "@/components/ui/table";
 import { cn } from "@/lib/utils";
 import { MODEL_FAMILIES, modelFamilyId } from "@/lib/model-family";
+import { getModelThinking, highestThinkingLevel } from "@/lib/thinking";
+
 
 type SortKey =
   | "name"
@@ -50,8 +52,26 @@ const TABLE_BENCHMARKS: BenchmarkId[] = [
   "cursorbench",
   "aider-polyglot",
   "lmarena-elo",
-  "arena-hard",
 ];
+
+function CatalogThinkingLabel({ model }: { model: Model }) {
+  const thinking = getModelThinking(model);
+  if (!thinking) return null;
+  return (
+    <span className="font-mono text-[11px] font-normal text-muted-foreground">
+      {highestThinkingLevel(thinking).label}
+    </span>
+  );
+}
+
+function FastModeBadge() {
+  return (
+    <Zap
+      className="size-3.5 shrink-0 fill-amber-400 text-amber-500"
+      aria-label="Fast/turbo mode available via API"
+    />
+  );
+}
 
 function compareValues(
   a: Model,
@@ -290,6 +310,8 @@ export function ModelsTable({
                   <span className="inline-flex items-center gap-2">
                     <OrgIcon organization={m.organization} size="md" />
                     {m.name}
+                    {m.fast ? <FastModeBadge /> : null}
+                    <CatalogThinkingLabel model={m} />
                   </span>
                 </TableCell>
                 <TableCell className="text-muted-foreground whitespace-nowrap">

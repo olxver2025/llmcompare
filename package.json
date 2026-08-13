@@ -10,7 +10,8 @@
     "lint": "eslint",
     "generate:evidence": "node scripts/generate-benchmark-evidence.mjs",
     "verify:data": "node scripts/verify-data.mjs",
-    "update:benchmarks": "node scripts/update-benchmarks/cli.mjs"
+    "update:benchmarks": "node scripts/update-benchmarks/cli.mjs",
+    "download:benchmarks": "node scripts/download-benchmark-scores.mjs"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",

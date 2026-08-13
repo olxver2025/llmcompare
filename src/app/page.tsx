@@ -60,6 +60,7 @@ export default function HomePage() {
           <h2 className="text-xl font-semibold tracking-tight">Catalog</h2>
           <p className="mt-1 text-sm text-muted-foreground">
             Sort any column. Missing scores show as -. Click a row for details.
+            Models with documented thinking levels use the highest level.
           </p>
         </div>
         <ModelsTable models={models} organizations={organizations} />

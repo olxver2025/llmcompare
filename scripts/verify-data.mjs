@@ -2,7 +2,7 @@ import fs from "node:fs";
 import { execFileSync } from "node:child_process";
 import { load } from "./update-benchmarks/load.mjs";
 
-const asOf = "2026-08-12";
+const asOf = "2026-08-13";
 
 const models = load("src/data/models.ts", "models");
 const imageModels = load("src/data/image-models.ts", "imageModels");
@@ -28,22 +28,27 @@ const expectedBenchmarkIds = new Set([
   "hle",
   "aime-2025",
   "math-500",
-  "simpleqa",
   "swe-bench-verified",
   "swe-bench-pro",
   "swe-bench-multilingual",
   "livecodebench",
   "terminal-bench-2-1",
+  "terminal-bench-3",
   "aider-polyglot",
-  "bfcl-v3",
   "scicode",
   "cursorbench",
   "swe-rebench",
   "nl2repo",
-  "vibe-code-bench",
+  "cybergym",
+  "deepswe",
+  "toolathlon-verified",
+  "agents-last-exam",
+  "automation-bench",
   "webdev-arena",
+  "bigcodebench",
+  "tau-bench",
+  "matharena",
   "lmarena-elo",
-  "arena-hard",
 ]);
 
 try {
@@ -57,7 +62,7 @@ try {
   check(false, `benchmark evidence ledger is not reproducible: ${detail}`);
 }
 
-check(benchmarkIds.size === 21, `expected 21 benchmark IDs, found ${benchmarkIds.size}`);
+check(benchmarkIds.size === 26, `expected 26 benchmark IDs, found ${benchmarkIds.size}`);
 check(
   benchmarkIds.size === Object.keys(benchmarkCatalog).length,
   "benchmark metadata and benchmark ID exports disagree"
@@ -65,7 +70,7 @@ check(
 check(
   benchmarkIds.size === expectedBenchmarkIds.size &&
     [...benchmarkIds].every((id) => expectedBenchmarkIds.has(id)),
-  "benchmark IDs changed outside the audited 21-field scope"
+  "benchmark IDs changed outside the audited 35-field scope"
 );
 check(evidenceLedger.asOf === asOf, `evidence ledger is not dated ${asOf}`);
 check(
@@ -81,20 +86,18 @@ check(
   "evidence ledger must include every model, including intentional empty records"
 );
 
-check(models.length === 269, `expected 269 models, found ${models.length}`);
+check(models.length === 266, `expected 266 models, found ${models.length}`);
 check(new Set(models.map((model) => model.slug)).size === models.length, "duplicate model slug");
 const expectedEmptyBenchmarkModels = new Set(emptyBenchmarkManifest.slugs);
 check(
   expectedEmptyBenchmarkModels.size === emptyBenchmarkManifest.slugs.length,
   "empty benchmark manifest contains duplicate model slugs"
 );
-check(bySlug["gpt-5-6-sol-fast"], "GPT-5.6 Sol Fast should be catalogued");
 check(bySlug["qwen3-7-plus"], "Qwen3.7 Plus should be catalogued");
 check(bySlug["qwen3-7-flash"], "Qwen3.7 Flash should be catalogued");
 check(bySlug["kimi-k2-7-code"], "Kimi K2.7 Code should be catalogued");
 check(bySlug["muse-spark-1-2"], "Muse Spark 1.2 should be catalogued");
 check(bySlug["gemini-3-5-flash-cyber"], "Gemini 3.5 Flash Cyber should be catalogued");
-check(bySlug["kimi-k3-fast"], "Kimi K3 Fast should be catalogued");
 check(bySlug["inkling"], "Inkling should be catalogued");
 check(bySlug["inkling-small"], "Inkling-Small should be catalogued");
 
@@ -237,7 +240,6 @@ exact("claude-3-7-sonnet", "benchmarks.swe-bench-verified", 63.7);
 exact("gemini-2-5-pro", "benchmarks.hle", 18.8);
 exact("gemini-2-5-pro", "benchmarks.swe-bench-verified", 63.8);
 exact("phi-4-mini", "benchmarks.mmlu-pro", 52.8);
-exact("phi-4-mini", "benchmarks.arena-hard", 32.8);
 
 for (const slug of expectedEmptyBenchmarkModels) {
   check(bySlug[slug], `${slug} empty-scorecard guard references an unknown model`);
@@ -251,7 +253,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 507, `expected 507 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 1182, `expected 1182 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);

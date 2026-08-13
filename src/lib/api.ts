@@ -1,5 +1,13 @@
 import { BENCHMARKS, BENCHMARK_IDS } from "@/data/benchmarks";
-import type { BenchmarkId, ImageModel, Model, VideoModel } from "@/data/types";
+import type {
+  BenchmarkId,
+  ImageModel,
+  Model,
+  ResolvedThinking,
+  VideoModel,
+} from "@/data/types";
+import { BENCHMARK_THINKING_LEVELS } from "@/data/thinking";
+import { getModelThinking } from "@/lib/thinking";
 import { MODEL_FAMILIES, modelFamilyId, modelFamilyLabel } from "@/lib/model-family";
 import {
   compareSlug as mediaCompareSlug,
@@ -37,6 +45,8 @@ const MAX_PAGE_SIZE = 250;
 export type ApiModel = Model & {
   family: string;
   familyLabel: string;
+  thinking?: ResolvedThinking;
+  benchmarkThinkingLevels?: Partial<Record<BenchmarkId, string>>;
   derived: {
     apiProvider?: string;
     blendedPricePer1M?: number;
@@ -229,10 +239,14 @@ export function apiIndex() {
 export function serializeModel(model: Model): ApiModel {
   const cost = workloadCost(model);
   const price = blendedPrice(model);
+  const thinking = getModelThinking(model);
+  const benchmarkThinkingLevels = BENCHMARK_THINKING_LEVELS[model.slug];
   return {
     ...model,
     family: modelFamilyId(model),
     familyLabel: modelFamilyLabel(model),
+    ...(thinking ? { thinking } : {}),
+    ...(benchmarkThinkingLevels ? { benchmarkThinkingLevels } : {}),
     derived: {
       ...(model.pricing ? { apiProvider: formatApiAccess(model) } : {}),
       ...(price !== undefined ? { blendedPricePer1M: price } : {}),

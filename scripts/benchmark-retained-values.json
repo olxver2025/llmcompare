@@ -1,38 +1,45 @@
 {
-  "asOf": "2026-08-12",
+  "asOf": "2026-08-13",
   "cells": {
     "gpt-5-6-sol": {
       "swe-bench-pro": 64.6,
       "terminal-bench-2-1": 88.8,
       "cursorbench": 67.2,
-      "gpqa-diamond": 94.6
-    },
-    "gpt-5-6-sol-fast": {
-      "swe-bench-pro": 64.6,
-      "terminal-bench-2-1": 88.8,
-      "cursorbench": 67.2,
-      "gpqa-diamond": 94.6
+      "gpqa-diamond": 94.6,
+      "terminal-bench-3": 34.6,
+      "matharena": 79.7,
+      "swe-rebench": 62.3,
+      "lmarena-elo": 1481,
+      "hle": 46,
+      "scicode": 56.9
     },
     "gpt-5-6-terra": {
       "swe-bench-pro": 63.4,
       "terminal-bench-2-1": 87.4,
       "cursorbench": 64.9,
-      "gpqa-diamond": 92.9
+      "gpqa-diamond": 92.9,
+      "terminal-bench-3": 20.8,
+      "lmarena-elo": 1464,
+      "hle": 38.5,
+      "scicode": 50.1
     },
     "gpt-5-6-luna": {
       "swe-bench-pro": 62.7,
       "terminal-bench-2-1": 84.7,
       "cursorbench": 61.1,
-      "gpqa-diamond": 92.3
+      "gpqa-diamond": 92.3,
+      "terminal-bench-3": 14.3,
+      "swe-rebench": 43.6,
+      "lmarena-elo": 1450
     },
-    "gpt-5-6-cyber": {},
     "gpt-5-5": {
       "gpqa-diamond": 93.6,
       "hle": 41.4,
       "swe-bench-pro": 58.6,
       "cursorbench": 58.4,
       "terminal-bench-2-1": 83.1,
-      "lmarena-elo": 1477
+      "lmarena-elo": 1477,
+      "matharena": 77.8
     },
     "gpt-5-5-pro": {
       "hle": 43.1
@@ -56,7 +63,8 @@
       "hle": 16.7,
       "aime-2025": 91.1,
       "swe-bench-verified": 71,
-      "aider-polyglot": 71.6
+      "aider-polyglot": 71.6,
+      "swe-bench-multilingual": 39.7
     },
     "gpt-5-nano": {
       "gpqa-diamond": 71.2,
@@ -71,7 +79,12 @@
       "aime-2025": 88.9,
       "swe-bench-verified": 69.1,
       "aider-polyglot": 79.6,
-      "lmarena-elo": 1431
+      "lmarena-elo": 1431,
+      "mmlu-pro": 85.3,
+      "math-500": 99.2,
+      "scicode": 41,
+      "livecodebench": 80.8,
+      "swe-rebench": 38.1
     },
     "gpt-4-1": {
       "gpqa-diamond": 66.3,
@@ -79,11 +92,22 @@
       "aime-2025": 46.4,
       "hle": 5.4,
       "aider-polyglot": 52.9,
-      "lmarena-elo": 1414
+      "lmarena-elo": 1414,
+      "mmlu-pro": 80.6,
+      "math-500": 91.3,
+      "scicode": 38.1,
+      "livecodebench": 45.7,
+      "swe-rebench": 30.1
     },
-    "gpt-4o": {},
     "gpt-4o-2024-05-13": {
-      "lmarena-elo": 1346
+      "lmarena-elo": 1346,
+      "gpqa-diamond": 52.6,
+      "hle": 1.8,
+      "livecodebench": 33.4,
+      "math-500": 79.1,
+      "mmlu-pro": 74,
+      "scicode": 30.9,
+      "bigcodebench": 51.1
     },
     "gpt-4-1-mini": {
       "gpqa-diamond": 65,
@@ -91,18 +115,52 @@
       "aime-2025": 40.2,
       "hle": 3.7,
       "aider-polyglot": 31.6,
-      "lmarena-elo": 1383
+      "lmarena-elo": 1383,
+      "mmlu-pro": 78.1,
+      "math-500": 92.5,
+      "scicode": 40.4,
+      "livecodebench": 48.3,
+      "terminal-bench-2-1": 10.1,
+      "bigcodebench": 48.9,
+      "swe-rebench": 25.5
     },
     "gpt-4-1-nano": {
       "gpqa-diamond": 50.3,
       "aider-polyglot": 6.2,
-      "lmarena-elo": 1322
+      "lmarena-elo": 1322,
+      "mmlu-pro": 65.7,
+      "hle": 3.8,
+      "aime-2025": 24,
+      "math-500": 84.8,
+      "scicode": 25.9,
+      "livecodebench": 32.6,
+      "terminal-bench-2-1": 3.7,
+      "swe-rebench": 0.3
     },
     "gpt-4o-mini": {
-      "lmarena-elo": 1318
+      "lmarena-elo": 1318,
+      "aider-polyglot": 3.6,
+      "mmlu-pro": 64.8,
+      "gpqa-diamond": 42.6,
+      "hle": 4.2,
+      "aime-2025": 14.7,
+      "math-500": 78.9,
+      "scicode": 22.9,
+      "livecodebench": 23.4,
+      "terminal-bench-2-1": 5.6,
+      "bigcodebench": 46.1
     },
     "claude-opus-5": {
-      "cursorbench": 70
+      "cursorbench": 70,
+      "terminal-bench-3": 42.7,
+      "tau-bench": 48.7,
+      "matharena": 84.4,
+      "swe-rebench": 63.4,
+      "lmarena-elo": 1493,
+      "gpqa-diamond": 93.7,
+      "hle": 52.8,
+      "scicode": 54.3,
+      "terminal-bench-2-1": 87.6
     },
     "claude-fable-5": {
       "cursorbench": 70.5,
@@ -110,7 +168,11 @@
       "lmarena-elo": 1507,
       "webdev-arena": 1627,
       "swe-bench-pro": 80,
-      "gpqa-diamond": 92.6
+      "gpqa-diamond": 92.6,
+      "terminal-bench-3": 34.1,
+      "swe-rebench": 64.5,
+      "hle": 55.5,
+      "scicode": 60.2
     },
     "claude-opus-4-8": {
       "cursorbench": 62.3,
@@ -118,31 +180,54 @@
       "lmarena-elo": 1474,
       "webdev-arena": 1539,
       "swe-bench-pro": 69.2,
-      "gpqa-diamond": 92
+      "gpqa-diamond": 92,
+      "terminal-bench-3": 21.1,
+      "swe-rebench": 56.5
     },
     "claude-sonnet-5": {
       "cursorbench": 61.5,
-      "terminal-bench-2-1": 74.6
+      "terminal-bench-2-1": 74.6,
+      "terminal-bench-3": 14.6,
+      "swe-rebench": 56.8,
+      "lmarena-elo": 1462,
+      "gpqa-diamond": 91.1,
+      "hle": 41.3,
+      "scicode": 53.6
     },
     "claude-opus-4-5": {
       "lmarena-elo": 1469,
-      "webdev-arena": 1468
+      "webdev-arena": 1468,
+      "swe-rebench": 53.1,
+      "swe-bench-multilingual": 70.7
     },
     "claude-sonnet-4-6": {
       "lmarena-elo": 1472,
-      "webdev-arena": 1524
+      "webdev-arena": 1524,
+      "swe-rebench": 54.5
     },
     "claude-haiku-4-5": {
       "swe-bench-verified": 73.3,
       "lmarena-elo": 1413,
-      "webdev-arena": 1326
+      "webdev-arena": 1326,
+      "swe-bench-multilingual": 64.7
     },
     "claude-sonnet-4": {
       "lmarena-elo": 1390,
-      "aider-polyglot": 56.4
+      "aider-polyglot": 56.4,
+      "swe-rebench": 44.6,
+      "livecodebench": 59.4
     },
     "claude-haiku-3-5": {
-      "lmarena-elo": 1324
+      "lmarena-elo": 1324,
+      "gpqa-diamond": 40.8,
+      "hle": 3.6,
+      "livecodebench": 31.4,
+      "math-500": 72.1,
+      "mmlu-pro": 63.4,
+      "scicode": 27.4,
+      "terminal-bench-2-1": 10.1,
+      "swe-bench-verified": 40.6,
+      "bigcodebench": 46.1
     },
     "gemini-3-1-pro": {
       "gpqa-diamond": 94.3,
@@ -151,35 +236,58 @@
       "lmarena-elo": 1486,
       "webdev-arena": 1447,
       "swe-bench-pro": 54.2,
-      "terminal-bench-2-1": 70.7
+      "terminal-bench-2-1": 70.7,
+      "swe-rebench": 54.9
     },
     "gemini-3-pro": {
       "gpqa-diamond": 91.9,
       "hle": 37.5,
       "lmarena-elo": 1501,
-      "webdev-arena": 1438
+      "webdev-arena": 1438,
+      "terminal-bench-2-1": 73.9,
+      "swe-bench-multilingual": 68.7,
+      "swe-rebench": 50.7
     },
     "gemini-3-6-flash": {
-      "cursorbench": 53.5
+      "cursorbench": 53.5,
+      "gpqa-diamond": 92.8,
+      "hle": 40.8,
+      "scicode": 52.7,
+      "terminal-bench-2-1": 77.5
     },
     "gemini-3-flash": {
       "lmarena-elo": 1473,
-      "webdev-arena": 1438
+      "webdev-arena": 1438,
+      "swe-bench-multilingual": 72.7
     },
     "gemini-3-5-flash-lite": {
       "lmarena-elo": 1458,
-      "webdev-arena": 1449
+      "webdev-arena": 1449,
+      "gpqa-diamond": 83.8,
+      "hle": 18.8,
+      "scicode": 40.9,
+      "terminal-bench-2-1": 53.6
     },
-    "gemini-3-5-flash-cyber": {},
     "gemini-2-5-pro": {
       "hle": 18.8,
       "swe-bench-verified": 63.8,
       "lmarena-elo": 1445,
       "webdev-arena": 1226,
-      "aider-polyglot": 79.1
+      "aider-polyglot": 79.1,
+      "mmlu-pro": 86.2,
+      "gpqa-diamond": 84.4,
+      "aime-2025": 87.7,
+      "math-500": 96.7,
+      "scicode": 42.8,
+      "livecodebench": 80.1,
+      "terminal-bench-2-1": 28.5,
+      "swe-rebench": 23.5
     },
     "gemini-2-5-flash": {
-      "lmarena-elo": 1410
+      "lmarena-elo": 1410,
+      "swe-rebench": 19.9,
+      "swe-bench-verified": 28.7,
+      "livecodebench": 75.1
     },
     "gemma-4-31b": {
       "mmlu-pro": 85.2,
@@ -187,7 +295,8 @@
       "hle": 19.5,
       "livecodebench": 80,
       "lmarena-elo": 1451,
-      "webdev-arena": 1365
+      "webdev-arena": 1365,
+      "swe-rebench": 25.1
     },
     "gemma-4-26b": {
       "mmlu-pro": 82.6,
@@ -200,34 +309,59 @@
     "gemma-3-12b": {
       "mmlu-pro": 60.6,
       "gpqa-diamond": 40.9,
-      "simpleqa": 6.3,
       "livecodebench": 24.6,
-      "lmarena-elo": 1342
+      "lmarena-elo": 1342,
+      "aime-2025": 18.3,
+      "hle": 4.2,
+      "math-500": 85.3,
+      "scicode": 17.4,
+      "terminal-bench-2-1": 0
     },
     "grok-4-5": {
       "terminal-bench-2-1": 79.3,
       "lmarena-elo": 1468,
-      "webdev-arena": 1553
+      "webdev-arena": 1553,
+      "terminal-bench-3": 15.7,
+      "tau-bench": 47.9,
+      "swe-rebench": 63.8,
+      "gpqa-diamond": 93.1,
+      "hle": 42.7,
+      "scicode": 54.1
     },
     "grok-4-6": {
-      "cursorbench": 69.9
+      "cursorbench": 69.9,
+      "terminal-bench-3": 26.5,
+      "gpqa-diamond": 94.9,
+      "hle": 42.9,
+      "scicode": 53.6,
+      "terminal-bench-2-1": 88.4
     },
     "grok-4-3": {
       "lmarena-elo": 1441,
       "webdev-arena": 1355
     },
-    "grok-build-0-1": {},
-    "grok-4-20": {},
     "grok-4-1": {
       "lmarena-elo": 1459
     },
     "grok-4": {
       "lmarena-elo": 1409,
-      "aider-polyglot": 79.6
+      "aider-polyglot": 79.6,
+      "mmlu-pro": 86.6,
+      "gpqa-diamond": 87.7,
+      "hle": 26.7,
+      "aime-2025": 92.7,
+      "math-500": 99,
+      "scicode": 45.7,
+      "livecodebench": 81.9,
+      "swe-rebench": 38.3
     },
     "muse-spark-1-2": {
       "lmarena-elo": 1499,
-      "webdev-arena": 1535
+      "webdev-arena": 1535,
+      "gpqa-diamond": 90.4,
+      "hle": 45.5,
+      "scicode": 56.4,
+      "terminal-bench-2-1": 80.1
     },
     "muse-glimmer": {
       "swe-bench-verified": 76,
@@ -242,52 +376,131 @@
     "muse-spark-1-1": {
       "terminal-bench-2-1": 76.2,
       "lmarena-elo": 1489,
-      "webdev-arena": 1539
+      "webdev-arena": 1539,
+      "gpqa-diamond": 89.8,
+      "hle": 46.2,
+      "scicode": 58.2
     },
     "llama-4-maverick": {
       "mmlu-pro": 80.5,
       "livecodebench": 43.4,
       "aider-polyglot": 15.6,
-      "lmarena-elo": 1327
+      "lmarena-elo": 1327,
+      "gpqa-diamond": 67.1,
+      "hle": 4.9,
+      "aime-2025": 19.3,
+      "math-500": 88.9,
+      "scicode": 33.1,
+      "terminal-bench-2-1": 7.9,
+      "bigcodebench": 49.7,
+      "swe-rebench": 11,
+      "swe-bench-verified": 21
     },
     "llama-4-scout": {
       "mmlu-pro": 74.3,
       "gpqa-diamond": 57.2,
       "livecodebench": 32.8,
-      "lmarena-elo": 1322
+      "lmarena-elo": 1322,
+      "hle": 3.8,
+      "aime-2025": 14,
+      "math-500": 84.4,
+      "scicode": 17,
+      "terminal-bench-2-1": 3.7,
+      "swe-rebench": 6.6,
+      "swe-bench-verified": 9.1
     },
     "llama-3-3-70b": {
       "mmlu-pro": 68.9,
       "gpqa-diamond": 50.5,
       "livecodebench": 33.3,
-      "lmarena-elo": 1318
+      "lmarena-elo": 1318,
+      "swe-rebench": 11.5,
+      "bigcodebench": 46.9
     },
     "llama-3-1-70b": {
       "mmlu-pro": 66.4,
       "lmarena-elo": 1293,
-      "gpqa-diamond": 48
+      "gpqa-diamond": 48,
+      "aime-2025": 4,
+      "hle": 4.5,
+      "livecodebench": 23.2,
+      "math-500": 64.9,
+      "scicode": 26.7,
+      "bigcodebench": 46.1
     },
     "llama-3-1-8b": {
       "mmlu-pro": 48.3,
       "lmarena-elo": 1211,
-      "gpqa-diamond": 31.8
+      "gpqa-diamond": 31.8,
+      "aime-2025": 4.3,
+      "hle": 5.3,
+      "livecodebench": 11.6,
+      "math-500": 51.9,
+      "scicode": 13.2,
+      "terminal-bench-2-1": 1.5,
+      "bigcodebench": 32.8
     },
-    "llama-3-2-90b": {},
-    "llama-3-2-11b": {},
     "deepseek-v4-pro": {
       "lmarena-elo": 1458,
-      "webdev-arena": 1445
+      "webdev-arena": 1445,
+      "terminal-bench-2-1": 72.1,
+      "nl2repo": 38.5,
+      "cybergym": 52.7,
+      "deepswe": 12.8,
+      "toolathlon-verified": 55.9,
+      "agents-last-exam": 16.5,
+      "automation-bench": 12.8,
+      "swe-rebench": 41.4,
+      "gpqa-diamond": 90.5,
+      "hle": 35.2,
+      "scicode": 46.4
     },
     "deepseek-v4-flash": {
+      "terminal-bench-2-1": 61.8,
+      "nl2repo": 39.4,
+      "cybergym": 38.7,
+      "deepswe": 7.3,
+      "toolathlon-verified": 49.7,
+      "agents-last-exam": 15.8,
+      "automation-bench": 10.8,
+      "lmarena-elo": 1435,
+      "swe-rebench": 38.4
+    },
+    "deepseek-v4-flash-0731": {
       "terminal-bench-2-1": 82.7,
       "nl2repo": 54.2,
-      "lmarena-elo": 1435
+      "cybergym": 76.7,
+      "deepswe": 54.4,
+      "toolathlon-verified": 70.3,
+      "agents-last-exam": 25.2,
+      "automation-bench": 25.1
+    },
+    "deepseek-v4-pro-0813": {
+      "hle": 42.7,
+      "terminal-bench-2-1": 87.9,
+      "nl2repo": 61.5,
+      "cybergym": 83.3,
+      "deepswe": 62.7,
+      "toolathlon-verified": 74.1,
+      "agents-last-exam": 25.7,
+      "automation-bench": 31.8,
+      "gpqa-diamond": 92.8,
+      "scicode": 49.2
     },
     "deepseek-v3-2": {
       "swe-bench-verified": 70,
       "swe-bench-pro": 15.56,
       "lmarena-elo": 1425,
-      "webdev-arena": 1324
+      "webdev-arena": 1324,
+      "swe-bench-multilingual": 59,
+      "swe-rebench": 48.9,
+      "mmlu-pro": 86.2,
+      "gpqa-diamond": 84,
+      "hle": 24.6,
+      "aime-2025": 92,
+      "scicode": 38.9,
+      "livecodebench": 86.2,
+      "terminal-bench-2-1": 46.8
     },
     "deepseek-v3-1": {
       "mmlu-pro": 84.8,
@@ -296,18 +509,21 @@
       "aime-2025": 88.4,
       "livecodebench": 74.8,
       "aider-polyglot": 76.3,
-      "lmarena-elo": 1417
+      "lmarena-elo": 1417,
+      "swe-rebench": 28
     },
     "deepseek-r1-0528": {
       "mmlu-pro": 85,
       "gpqa-diamond": 81,
       "hle": 17.7,
       "aime-2025": 87.5,
-      "simpleqa": 27.8,
       "swe-bench-verified": 57.6,
       "livecodebench": 73.3,
       "aider-polyglot": 71.6,
-      "lmarena-elo": 1422
+      "lmarena-elo": 1422,
+      "swe-rebench": 22.3,
+      "math-500": 98.3,
+      "scicode": 40.3
     },
     "qwen3-8-max": {
       "gpqa-diamond": 92.6,
@@ -316,16 +532,24 @@
       "terminal-bench-2-1": 86.6,
       "nl2repo": 55.9,
       "lmarena-elo": 1491,
-      "webdev-arena": 1669
+      "webdev-arena": 1669,
+      "scicode": 52.9,
+      "tau-bench": 55.2
     },
-    "qwen3-8-27b": {},
     "qwen3-7-plus": {
-      "lmarena-elo": 1458
+      "lmarena-elo": 1458,
+      "gpqa-diamond": 90,
+      "hle": 35.6,
+      "scicode": 45.5,
+      "terminal-bench-2-1": 61
     },
-    "qwen3-7-flash": {},
     "qwen3-6-plus": {
       "lmarena-elo": 1443,
-      "webdev-arena": 1459
+      "webdev-arena": 1459,
+      "gpqa-diamond": 88.2,
+      "hle": 27.8,
+      "scicode": 40.7,
+      "terminal-bench-2-1": 61.4
     },
     "qwen3-7-max": {
       "gpqa-diamond": 92.4,
@@ -334,80 +558,139 @@
       "swe-bench-multilingual": 78.3,
       "scicode": 53.5,
       "lmarena-elo": 1474,
-      "webdev-arena": 1517
+      "webdev-arena": 1517,
+      "terminal-bench-2-1": 74.5
     },
     "qwen3-5-397b": {
       "lmarena-elo": 1442,
-      "webdev-arena": 1400
+      "webdev-arena": 1400,
+      "swe-rebench": 59.9
     },
     "qwen3-235b": {
       "gpqa-diamond": 71.1,
       "math-500": 98,
       "aime-2025": 81.5,
-      "bfcl-v3": 70.8,
       "livecodebench": 70.7,
-      "lmarena-elo": 1375
+      "lmarena-elo": 1375,
+      "swe-rebench": 18.5
     },
     "qwen3-max": {
-      "lmarena-elo": 1434
+      "lmarena-elo": 1434,
+      "mmlu-pro": 84.1,
+      "gpqa-diamond": 76.4,
+      "hle": 11.9,
+      "aime-2025": 80.7,
+      "scicode": 38.3,
+      "livecodebench": 76.7
     },
     "qwen3-32b": {
       "gpqa-diamond": 68.4,
       "math-500": 97.2,
       "aime-2025": 72.9,
-      "bfcl-v3": 70.3,
       "livecodebench": 65.7,
-      "arena-hard": 93.8,
       "lmarena-elo": 1347,
-      "aider-polyglot": 40
+      "aider-polyglot": 40,
+      "swe-rebench": 8.1
     },
     "mistral-large-3": {
       "lmarena-elo": 1415,
-      "webdev-arena": 1230
+      "webdev-arena": 1230,
+      "mmlu-pro": 80.7,
+      "gpqa-diamond": 68,
+      "hle": 4.2,
+      "aime-2025": 38,
+      "scicode": 36.2,
+      "livecodebench": 46.5,
+      "terminal-bench-2-1": 12
     },
     "mistral-medium-3-5": {
       "lmarena-elo": 1427,
-      "webdev-arena": 1266
+      "webdev-arena": 1266,
+      "gpqa-diamond": 74.8,
+      "hle": 13.8,
+      "scicode": 39.6,
+      "terminal-bench-2-1": 50.6
     },
-    "mistral-small-4": {},
-    "ministral-3-14b": {},
-    "ministral-3-8b": {},
-    "ministral-3-3b": {},
-    "magistral-medium": {},
+    "ministral-3-14b": {
+      "mmlu-pro": 69.3,
+      "gpqa-diamond": 57.2,
+      "hle": 4.6,
+      "aime-2025": 30,
+      "scicode": 23.6,
+      "livecodebench": 35.1,
+      "terminal-bench-2-1": 9.7
+    },
+    "ministral-3-8b": {
+      "mmlu-pro": 64.2,
+      "gpqa-diamond": 47.1,
+      "hle": 4.3,
+      "aime-2025": 31.7,
+      "scicode": 20.8,
+      "livecodebench": 30.3,
+      "terminal-bench-2-1": 4.1
+    },
+    "ministral-3-3b": {
+      "mmlu-pro": 52.4,
+      "gpqa-diamond": 35.8,
+      "hle": 5.4,
+      "aime-2025": 22,
+      "scicode": 14.4,
+      "livecodebench": 24.7,
+      "terminal-bench-2-1": 0
+    },
     "magistral-small": {
       "aime-2025": 62.76,
       "gpqa-diamond": 68.18,
       "livecodebench": 55.84
     },
     "devstral-2": {
-      "webdev-arena": 1194
+      "webdev-arena": 1194,
+      "mmlu-pro": 76.2,
+      "gpqa-diamond": 59.4,
+      "hle": 3.6,
+      "aime-2025": 36.7,
+      "scicode": 33.1,
+      "livecodebench": 44.8,
+      "terminal-bench-2-1": 30.3,
+      "swe-rebench": 42
     },
-    "mistral-medium-3-1": {},
+    "mistral-medium-3-1": {
+      "mmlu-pro": 68.3,
+      "gpqa-diamond": 58.8,
+      "hle": 4.7,
+      "aime-2025": 38.3,
+      "scicode": 33.8,
+      "livecodebench": 40.6,
+      "terminal-bench-2-1": 13.9
+    },
     "mistral-small-3-2": {
       "mmlu-pro": 69.06,
       "gpqa-diamond": 46.13,
-      "simpleqa": 12.1,
-      "arena-hard": 43.1
+      "hle": 4.3,
+      "aime-2025": 27,
+      "math-500": 88.3,
+      "scicode": 26.4,
+      "livecodebench": 27.5,
+      "terminal-bench-2-1": 5.6
     },
-    "codestral-2508": {},
-    "codestral-22b": {},
+    "codestral-22b": {
+      "bigcodebench": 41.8
+    },
     "kimi-k3": {
       "gpqa-diamond": 93.5,
       "hle": 43.5,
       "scicode": 58.7,
       "terminal-bench-2-1": 88.3,
-      "cursorbench": 60.8
-    },
-    "kimi-k3-fast": {
-      "gpqa-diamond": 93.5,
-      "hle": 43.5,
-      "scicode": 58.7,
-      "terminal-bench-2-1": 88.3,
-      "cursorbench": 60.8
+      "cursorbench": 60.8,
+      "matharena": 69.7
     },
     "kimi-k2-7-code": {
       "cursorbench": 49.7,
-      "webdev-arena": 1473
+      "webdev-arena": 1473,
+      "gpqa-diamond": 89.6,
+      "hle": 35,
+      "scicode": 47.5,
+      "terminal-bench-2-1": 67.4
     },
     "kimi-k2-5": {
       "mmlu-pro": 87.1,
@@ -418,44 +701,69 @@
       "swe-bench-pro": 50.7,
       "swe-bench-multilingual": 73,
       "livecodebench": 85,
-      "scicode": 48.7
+      "scicode": 48.7,
+      "swe-rebench": 49
     },
     "glm-5-2": {
-      "cursorbench": 55
+      "cursorbench": 55,
+      "terminal-bench-3": 4.6,
+      "swe-rebench": 57
     },
     "glm-5": {
       "lmarena-elo": 1457,
-      "webdev-arena": 1436
+      "webdev-arena": 1436,
+      "swe-bench-multilingual": 69.7,
+      "swe-rebench": 53.3,
+      "swe-bench-verified": 72.8
     },
     "glm-4-7": {
       "lmarena-elo": 1442,
-      "webdev-arena": 1434
+      "webdev-arena": 1434,
+      "swe-rebench": 45.5
     },
     "phi-4": {
       "gpqa-diamond": 56.1,
-      "simpleqa": 3,
       "mmlu-pro": 70.4,
-      "arena-hard": 75.4,
-      "lmarena-elo": 1256
+      "lmarena-elo": 1256,
+      "hle": 3.8,
+      "aime-2025": 18,
+      "math-500": 81,
+      "scicode": 26,
+      "livecodebench": 23.1,
+      "bigcodebench": 45.5
     },
     "phi-4-reasoning": {
       "mmlu-pro": 74.3,
       "gpqa-diamond": 65.8,
       "aime-2025": 62.9,
-      "livecodebench": 53.8,
-      "arena-hard": 73.3
+      "livecodebench": 53.8
     },
     "minimax-m3": {
       "swe-bench-pro": 59,
       "terminal-bench-2-1": 66,
       "lmarena-elo": 1443,
-      "webdev-arena": 1491
+      "webdev-arena": 1491,
+      "gpqa-diamond": 92.9,
+      "hle": 39,
+      "scicode": 45.4,
+      "swe-rebench": 46.4
     },
     "minimax-m2-5": {
       "lmarena-elo": 1390,
-      "webdev-arena": 1384
+      "webdev-arena": 1384,
+      "gpqa-diamond": 84.8,
+      "hle": 20.5,
+      "scicode": 42.6,
+      "swe-bench-multilingual": 68.3,
+      "swe-rebench": 47.7,
+      "swe-bench-verified": 75.8
     },
-    "longcat-2-0": {},
+    "longcat-2-0": {
+      "gpqa-diamond": 78,
+      "hle": 33.7,
+      "scicode": 35.4,
+      "terminal-bench-2-1": 50.2
+    },
     "nemotron-3-ultra": {
       "mmlu-pro": 86.8,
       "swe-bench-verified": 70.7,
@@ -464,28 +772,45 @@
       "livecodebench": 89,
       "terminal-bench-2-1": 56.4
     },
-    "amazon-nova-premier": {},
     "claude-opus-4-7": {
       "terminal-bench-2-1": 68.9,
       "lmarena-elo": 1494,
       "webdev-arena": 1558,
       "swe-bench-pro": 64.3,
       "gpqa-diamond": 94.2,
-      "hle": 46.9
+      "hle": 46.9,
+      "swe-rebench": 53.1
     },
     "claude-opus-4-6": {
       "lmarena-elo": 1497,
-      "webdev-arena": 1537
+      "webdev-arena": 1537,
+      "swe-rebench": 53.3,
+      "swe-bench-verified": 75.6,
+      "swe-bench-multilingual": 72
     },
-    "claude-mythos-5": {},
+    "claude-mythos-5": {
+      "gpqa-diamond": 92.6,
+      "hle": 32.5,
+      "aime-2025": 97,
+      "swe-bench-verified": 86.3,
+      "swe-bench-pro": 80,
+      "livecodebench": 88.1,
+      "terminal-bench-2-1": 83.8,
+      "terminal-bench-3": 34.1,
+      "cursorbench": 70.5,
+      "cybergym": 83.8
+    },
     "claude-sonnet-4-5": {
       "lmarena-elo": 1455,
-      "webdev-arena": 1386
+      "webdev-arena": 1386,
+      "swe-rebench": 52.4,
+      "swe-bench-multilingual": 67
     },
     "claude-opus-4-1": {
       "swe-bench-verified": 74.5,
       "lmarena-elo": 1447,
-      "webdev-arena": 1389
+      "webdev-arena": 1389,
+      "swe-rebench": 43.5
     },
     "gpt-5-4-mini": {
       "gpqa-diamond": 88,
@@ -503,81 +828,118 @@
       "aime-2025": 92.7,
       "swe-bench-verified": 68.1,
       "aider-polyglot": 58.2,
-      "lmarena-elo": 1390
+      "lmarena-elo": 1390,
+      "swe-rebench": 27.5
     },
     "o3-mini": {
       "lmarena-elo": 1348,
-      "aider-polyglot": 53.8
+      "aider-polyglot": 53.8,
+      "mmlu-pro": 79.1,
+      "gpqa-diamond": 74.8,
+      "hle": 7.9,
+      "math-500": 97.3,
+      "scicode": 39.9,
+      "livecodebench": 71.7
     },
     "o3-pro": {
-      "aider-polyglot": 84.9
+      "aider-polyglot": 84.9,
+      "gpqa-diamond": 84.5
     },
     "o1": {
       "lmarena-elo": 1402,
-      "aider-polyglot": 61.7
+      "aider-polyglot": 61.7,
+      "mmlu-pro": 84.1,
+      "gpqa-diamond": 74.7,
+      "hle": 7,
+      "math-500": 97,
+      "scicode": 35.8,
+      "livecodebench": 67.9
     },
-    "gpt-5-4-pro": {},
     "gpt-oss-120b": {
       "gpqa-diamond": 80.1,
       "hle": 14.9,
       "aime-2025": 92.5,
-      "simpleqa": 16.8,
       "swe-bench-verified": 62.4,
-      "aider-polyglot": 44.4,
-      "lmarena-elo": 1352
+      "aider-polyglot": 41.8,
+      "lmarena-elo": 1352,
+      "swe-rebench": 27.3
     },
     "gpt-oss-20b": {
       "gpqa-diamond": 71.5,
       "hle": 10.9,
       "aime-2025": 91.7,
-      "simpleqa": 6.7,
       "swe-bench-verified": 60.7,
       "aider-polyglot": 34.2,
-      "lmarena-elo": 1318
+      "lmarena-elo": 1318,
+      "swe-rebench": 8.1
     },
     "gemini-3-1-flash-lite": {
       "lmarena-elo": 1432,
-      "webdev-arena": 1254
+      "webdev-arena": 1254,
+      "gpqa-diamond": 82.2,
+      "hle": 17.2,
+      "scicode": 41.9,
+      "terminal-bench-2-1": 31.1
     },
-    "gemini-2-5-flash-lite": {},
-    "grok-4-fast": {},
     "grok-3": {
-      "aider-polyglot": 53.3
+      "aider-polyglot": 53.3,
+      "mmlu-pro": 79.9,
+      "gpqa-diamond": 69.3,
+      "hle": 4.1,
+      "aime-2025": 58,
+      "math-500": 87,
+      "scicode": 36.8,
+      "livecodebench": 42.5
     },
     "deepseek-v3": {
       "mmlu-pro": 75.9,
       "math-500": 90.2,
-      "simpleqa": 24.9,
-      "lmarena-elo": 1359
+      "lmarena-elo": 1359,
+      "bigcodebench": 50,
+      "swe-rebench": 23.3,
+      "aime-2025": 26,
+      "gpqa-diamond": 55.7,
+      "hle": 2.9,
+      "scicode": 35.4,
+      "terminal-bench-2-1": 16.9,
+      "livecodebench": 49.6
     },
     "deepseek-r1": {
       "mmlu-pro": 84,
       "gpqa-diamond": 71.5,
       "aime-2025": 70,
       "math-500": 97.3,
-      "simpleqa": 30.1,
       "swe-bench-verified": 49.2,
       "aider-polyglot": 53.3,
       "lmarena-elo": 1398
     },
     "qwen3-coder-480b": {
-      "swe-bench-pro": 38.7
+      "swe-bench-pro": 38.7,
+      "aime-2025": 39.3,
+      "gpqa-diamond": 61.8,
+      "hle": 4.5,
+      "livecodebench": 58.5,
+      "math-500": 94.2,
+      "mmlu-pro": 78.8,
+      "scicode": 35.9,
+      "swe-rebench": 36.3
     },
     "qwen2-5-72b": {
       "lmarena-elo": 1303,
       "mmlu-pro": 71.1,
       "livecodebench": 55.5,
-      "arena-hard": 81.2
+      "swe-rebench": 10.1,
+      "bigcodebench": 45.8
     },
     "qwen2-5-32b": {
       "mmlu-pro": 69,
       "livecodebench": 51.2,
-      "arena-hard": 74.5
+      "bigcodebench": 45
     },
     "qwen2-5-14b": {
       "mmlu-pro": 63.7,
       "livecodebench": 42.6,
-      "arena-hard": 68.3
+      "bigcodebench": 39.8
     },
     "qwen2-72b": {
       "lmarena-elo": 1261
@@ -585,14 +947,23 @@
     "gemma-3-27b": {
       "mmlu-pro": 67.5,
       "gpqa-diamond": 42.4,
-      "simpleqa": 10,
       "livecodebench": 29.7,
-      "lmarena-elo": 1338
+      "lmarena-elo": 1338,
+      "aime-2025": 20.7,
+      "hle": 4.4,
+      "math-500": 88.3,
+      "scicode": 21.2,
+      "terminal-bench-2-1": 4.5,
+      "swe-rebench": 5.4
     },
     "llama-3-1-405b": {
       "mmlu-pro": 73.3,
       "gpqa-diamond": 49,
-      "livecodebench": 27.7
+      "livecodebench": 27.7,
+      "aime-2025": 3,
+      "hle": 4,
+      "math-500": 70.3,
+      "scicode": 29.9
     },
     "ernie-5-1": {
       "lmarena-elo": 1468
@@ -604,49 +975,84 @@
       "swe-bench-multilingual": 71.7,
       "nl2repo": 27.9
     },
-    "seedrealtime": {},
     "command-a": {
-      "lmarena-elo": 1354
+      "lmarena-elo": 1354,
+      "mmlu-pro": 71.2,
+      "gpqa-diamond": 52.7,
+      "hle": 4,
+      "aime-2025": 13,
+      "math-500": 81.9,
+      "scicode": 28.1,
+      "livecodebench": 28.7,
+      "terminal-bench-2-1": 22.8
     },
     "yi-lightning": {
-      "lmarena-elo": 1328
+      "lmarena-elo": 1328,
+      "aider-polyglot": 12.9
     },
     "olmo-3-32b": {
-      "lmarena-elo": 1305
+      "lmarena-elo": 1305,
+      "mmlu-pro": 75.9,
+      "gpqa-diamond": 61,
+      "hle": 6.4,
+      "aime-2025": 73.7,
+      "scicode": 28.6,
+      "livecodebench": 67.2
     },
-    "amazon-nova-pro": {},
-    "amazon-nova-lite": {},
-    "amazon-nova-micro": {},
-    "amazon-nova-2-lite": {},
-    "mistral-nemo": {},
     "command-r-plus": {
       "lmarena-elo": 1276
     },
     "command-r": {
-      "lmarena-elo": 1250
+      "lmarena-elo": 1250,
+      "bigcodebench": 33.8
     },
-    "command-r7b": {},
-    "command-a-reasoning": {},
-    "command-a-vision": {},
-    "aya-expanse-32b": {},
-    "jamba-large-1-7": {},
-    "jamba-mini-2": {},
     "jamba-1-5-large": {
-      "lmarena-elo": 1289
+      "lmarena-elo": 1289,
+      "mmlu-pro": 57.2,
+      "gpqa-diamond": 42.7,
+      "hle": 4.1,
+      "math-500": 60.6,
+      "scicode": 16.3,
+      "livecodebench": 14.3
     },
-    "sonar": {},
-    "sonar-small": {},
-    "sonar-pro": {},
-    "sonar-reasoning-pro": {},
+    "sonar": {
+      "mmlu-pro": 68.9,
+      "gpqa-diamond": 47.1,
+      "hle": 4.9,
+      "math-500": 81.7,
+      "scicode": 22.9,
+      "livecodebench": 29.5
+    },
+    "sonar-pro": {
+      "mmlu-pro": 75.5,
+      "gpqa-diamond": 57.8,
+      "hle": 6.6,
+      "math-500": 74.5,
+      "scicode": 22.6,
+      "livecodebench": 27.5
+    },
+    "sonar-reasoning-pro": {
+      "math-500": 95.7
+    },
     "granite-4-1-8b": {
       "lmarena-elo": 1306,
-      "webdev-arena": 1192
+      "webdev-arena": 1192,
+      "gpqa-diamond": 43.3,
+      "hle": 3.8,
+      "scicode": 21.8,
+      "terminal-bench-2-1": 3.4
     },
     "granite-3-8b": {
       "lmarena-elo": 1208
     },
-    "granite-4-micro": {},
-    "nemotron-3-super-120b": {},
+    "granite-4-micro": {
+      "mmlu-pro": 44.7,
+      "gpqa-diamond": 33.6,
+      "hle": 5,
+      "aime-2025": 6,
+      "scicode": 11.9,
+      "livecodebench": 18
+    },
     "nemotron-nano-3-30b": {
       "mmlu-pro": 78.3,
       "hle": 10.6,
@@ -654,70 +1060,145 @@
       "livecodebench": 68.3
     },
     "llama-3-1-nemotron-70b": {
-      "lmarena-elo": 1299
+      "lmarena-elo": 1299,
+      "bigcodebench": 38.7,
+      "aime-2025": 11,
+      "gpqa-diamond": 46.5,
+      "hle": 4.2,
+      "livecodebench": 16.9,
+      "math-500": 73.3,
+      "mmlu-pro": 69,
+      "scicode": 23.3
     },
     "phi-4-mini": {
       "mmlu-pro": 52.8,
-      "arena-hard": 32.8
+      "aime-2025": 6.7,
+      "gpqa-diamond": 33.1,
+      "hle": 4.5,
+      "livecodebench": 12.6,
+      "math-500": 69.6,
+      "scicode": 10.8,
+      "terminal-bench-2-1": 0.4
     },
-    "phi-4-multimodal": {},
-    "phi-3-5-mini": {},
-    "phi-3-medium": {},
-    "phi-3-mini": {},
+    "phi-4-multimodal": {
+      "gpqa-diamond": 31.5,
+      "hle": 5,
+      "livecodebench": 13.1,
+      "math-500": 69.3,
+      "mmlu-pro": 48.5,
+      "scicode": 11
+    },
+    "phi-3-medium": {
+      "bigcodebench": 37.6
+    },
+    "phi-3-mini": {
+      "aime-2025": 0.3,
+      "gpqa-diamond": 31.9,
+      "hle": 5,
+      "livecodebench": 11.6,
+      "math-500": 45.7,
+      "mmlu-pro": 43.5,
+      "scicode": 9,
+      "bigcodebench": 29.6
+    },
     "dbrx-instruct": {
-      "lmarena-elo": 1195
+      "lmarena-elo": 1195,
+      "mmlu-pro": 39.7,
+      "gpqa-diamond": 33.1,
+      "hle": 2.9,
+      "math-500": 27.9,
+      "scicode": 11.8,
+      "livecodebench": 9.3
     },
     "snowflake-arctic-instruct": {
       "lmarena-elo": 1179
     },
-    "palmyra-x5": {},
-    "palmyra-x4": {},
     "reka-flash": {
       "lmarena-elo": 1272
     },
     "reka-core": {
       "lmarena-elo": 1288
     },
-    "solar-pro-3": {},
-    "solar-10-7b": {},
+    "solar-pro-3": {
+      "gpqa-diamond": 72.4,
+      "hle": 10.3,
+      "scicode": 24.7,
+      "terminal-bench-2-1": 12
+    },
     "composer-2-5": {
       "swe-bench-multilingual": 79.8,
-      "cursorbench": 56.1,
-      "vibe-code-bench": 49.61
+      "cursorbench": 56.1
     },
-    "composer-2-5-fast": {
-      "swe-bench-multilingual": 79.8,
-      "cursorbench": 56.1,
-      "vibe-code-bench": 49.61
-    },
-    "composer-2": {},
-    "composer-2-fast": {},
-    "cursor-grok-4-5": {},
-    "cursor-grok-4-5-fast": {},
-    "o1-pro": {},
     "o1-mini": {
-      "lmarena-elo": 1337
+      "lmarena-elo": 1337,
+      "aider-polyglot": 32.9,
+      "mmlu-pro": 74.2,
+      "gpqa-diamond": 60.3,
+      "hle": 3.6,
+      "math-500": 94.4,
+      "scicode": 32.3,
+      "livecodebench": 57.6
     },
-    "o1-preview": {},
+    "o1-preview": {
+      "mmlu-pro": 84.8,
+      "gpqa-diamond": 76.5,
+      "aime-2025": 79.3,
+      "math-500": 92.4,
+      "lmarena-elo": 1388.5
+    },
     "gpt-4-turbo": {
-      "lmarena-elo": 1324
+      "lmarena-elo": 1324,
+      "mmlu-pro": 69.4,
+      "hle": 3.1,
+      "math-500": 73.7,
+      "scicode": 31.9,
+      "livecodebench": 29.1,
+      "bigcodebench": 48.2
     },
-    "gpt-4": {},
-    "gpt-4-32k": {},
+    "gpt-4": {
+      "mmlu-pro": 56.2,
+      "gpqa-diamond": 34.9,
+      "math-500": 56.8
+    },
     "gpt-4-5": {
       "lmarena-elo": 1445,
       "aider-polyglot": 44.9
     },
-    "gpt-3-5-turbo": {},
+    "gpt-3-5-turbo": {
+      "mmlu-pro": 46.2,
+      "gpqa-diamond": 29.7,
+      "math-500": 44.1
+    },
     "claude-3-opus": {
-      "lmarena-elo": 1322
+      "lmarena-elo": 1322,
+      "mmlu-pro": 69.6,
+      "gpqa-diamond": 48.9,
+      "hle": 2.8,
+      "math-500": 64.1,
+      "scicode": 23.3,
+      "livecodebench": 27.9,
+      "bigcodebench": 45.5
     },
     "claude-3-5-sonnet": {
-      "lmarena-elo": 1343
+      "lmarena-elo": 1343,
+      "bigcodebench": 46.8,
+      "gpqa-diamond": 56,
+      "hle": 3.2,
+      "math-500": 69.5,
+      "mmlu-pro": 75.1,
+      "scicode": 31.6,
+      "swe-rebench": 30.3,
+      "swe-bench-verified": 33.6
     },
     "claude-3-5-sonnet-1022": {
       "lmarena-elo": 1373,
-      "aider-polyglot": 51.6
+      "aider-polyglot": 51.6,
+      "gpqa-diamond": 59.9,
+      "hle": 3.7,
+      "math-500": 77.1,
+      "mmlu-pro": 77.2,
+      "scicode": 36.6,
+      "livecodebench": 48.7
     },
     "claude-3-7-sonnet": {
       "swe-bench-verified": 63.7,
@@ -725,34 +1206,73 @@
       "aider-polyglot": 60.4
     },
     "claude-3-haiku": {
-      "lmarena-elo": 1261
+      "lmarena-elo": 1261,
+      "gpqa-diamond": 37.4,
+      "hle": 4.1,
+      "math-500": 39.4,
+      "scicode": 18.6,
+      "livecodebench": 15.4,
+      "bigcodebench": 39.4
     },
     "claude-3-sonnet": {
-      "lmarena-elo": 1281
+      "lmarena-elo": 1281,
+      "mmlu-pro": 57.9,
+      "gpqa-diamond": 40,
+      "hle": 3.6,
+      "math-500": 41.4,
+      "scicode": 22.9,
+      "livecodebench": 17.5,
+      "bigcodebench": 42.7
     },
     "claude-opus-4": {
       "lmarena-elo": 1413,
-      "aider-polyglot": 70.7
+      "aider-polyglot": 70.7,
+      "livecodebench": 62.4
     },
-    "claude-2-1": {},
-    "claude-2": {},
-    "claude-instant-1-2": {},
+    "claude-2-1": {
+      "mmlu-pro": 49.5,
+      "gpqa-diamond": 31.9,
+      "hle": 3.9,
+      "math-500": 37.4,
+      "scicode": 18.4,
+      "livecodebench": 19.5
+    },
+    "claude-2": {
+      "gpqa-diamond": 34.4,
+      "livecodebench": 17.1,
+      "mmlu-pro": 48.6,
+      "scicode": 19.4
+    },
     "gemini-3-5-flash": {
       "cursorbench": 48.8,
       "webdev-arena": 1492
     },
-    "gemini-2-0-flash": {},
-    "gemini-2-0-flash-lite": {},
-    "gemini-2-0-flash-thinking": {},
-    "gemini-1-0-pro": {},
-    "gemini-1-5-pro": {},
-    "gemini-1-5-flash": {},
-    "gemini-1-5-flash-8b": {},
+    "gemini-2-0-flash": {
+      "swe-rebench": 9.1
+    },
+    "gemini-1-0-pro": {
+      "mmlu-pro": 43.1,
+      "gpqa-diamond": 27.7,
+      "hle": 4.2,
+      "math-500": 40.3,
+      "scicode": 11.7,
+      "livecodebench": 11.6
+    },
+    "gemini-1-5-flash-8b": {
+      "mmlu-pro": 56.9,
+      "gpqa-diamond": 35.9,
+      "hle": 4.7,
+      "math-500": 68.9,
+      "scicode": 22.9,
+      "livecodebench": 21.7
+    },
     "gemma-2-27b": {
-      "lmarena-elo": 1289
+      "lmarena-elo": 1289,
+      "bigcodebench": 42.8
     },
     "gemma-2-9b": {
-      "lmarena-elo": 1267
+      "lmarena-elo": 1267,
+      "bigcodebench": 34.7
     },
     "gemma-2-2b": {
       "lmarena-elo": 1200
@@ -760,9 +1280,13 @@
     "gemma-3-4b": {
       "mmlu-pro": 43.6,
       "gpqa-diamond": 30.8,
-      "simpleqa": 4,
       "livecodebench": 12.6,
-      "lmarena-elo": 1303
+      "lmarena-elo": 1303,
+      "aime-2025": 12.7,
+      "hle": 5.3,
+      "math-500": 76.6,
+      "scicode": 7.3,
+      "terminal-bench-2-1": 0.4
     },
     "grok-2": {
       "lmarena-elo": 1336
@@ -770,79 +1294,152 @@
     "grok-2-mini": {
       "lmarena-elo": 1308
     },
-    "grok-3-mini": {},
-    "grok-1": {},
     "llama-3-70b": {
-      "lmarena-elo": 1276
+      "lmarena-elo": 1276,
+      "bigcodebench": 43.6
     },
     "llama-3-8b": {
-      "lmarena-elo": 1223
+      "lmarena-elo": 1223,
+      "bigcodebench": 31.9
     },
     "llama-3-2-3b": {
-      "lmarena-elo": 1166
+      "lmarena-elo": 1166,
+      "bigcodebench": 23.4
     },
     "llama-3-2-1b": {
-      "lmarena-elo": 1111
+      "lmarena-elo": 1111,
+      "bigcodebench": 8.2
     },
-    "llama-2-70b": {},
     "codellama-70b": {
-      "lmarena-elo": 1119
+      "lmarena-elo": 1119,
+      "bigcodebench": 40.7
     },
     "codellama-34b": {
-      "lmarena-elo": 1136
+      "lmarena-elo": 1136,
+      "bigcodebench": 29
     },
     "deepseek-coder-v2": {
-      "lmarena-elo": 1265
+      "lmarena-elo": 1265,
+      "math-500": 74.3,
+      "bigcodebench": 48.2
     },
-    "deepseek-coder-v2-lite": {},
-    "deepseek-v2": {},
+    "deepseek-coder-v2-lite": {
+      "gpqa-diamond": 31.9,
+      "hle": 5.4,
+      "livecodebench": 15.8,
+      "mmlu-pro": 42.9,
+      "scicode": 13.9,
+      "bigcodebench": 36.8
+    },
     "deepseek-v2-5": {
       "lmarena-elo": 1307
     },
     "deepseek-r1-distill-llama-70b": {
       "gpqa-diamond": 65.2,
       "math-500": 94.5,
-      "livecodebench": 57.5
+      "livecodebench": 57.5,
+      "mmlu-pro": 79.5,
+      "hle": 5.1,
+      "aime-2025": 53.7,
+      "scicode": 31.3,
+      "bigcodebench": 35.3
     },
     "deepseek-r1-distill-qwen-32b": {
       "gpqa-diamond": 62.1,
       "math-500": 94.3,
-      "livecodebench": 57.2
+      "livecodebench": 57.2,
+      "mmlu-pro": 73.9,
+      "hle": 4.6,
+      "aime-2025": 63,
+      "scicode": 37.6,
+      "bigcodebench": 43.9
     },
     "deepseek-r1-distill-qwen-14b": {
       "gpqa-diamond": 59.1,
       "math-500": 93.9,
-      "livecodebench": 53.1
+      "livecodebench": 53.1,
+      "mmlu-pro": 74,
+      "hle": 4.1,
+      "aime-2025": 55.7,
+      "scicode": 23.9,
+      "bigcodebench": 38.1
     },
     "deepseek-r1-distill-llama-8b": {
       "gpqa-diamond": 49,
       "math-500": 89.1,
-      "livecodebench": 39.6
+      "livecodebench": 39.6,
+      "mmlu-pro": 54.3,
+      "aime-2025": 41.3,
+      "scicode": 11.9,
+      "bigcodebench": 10.6
     },
-    "mistral-large-2": {},
-    "mistral-large": {},
-    "mistral-small": {},
-    "mixtral-8x22b": {},
-    "mixtral-8x7b": {},
-    "pixtral-large": {},
-    "pixtral-12b": {},
+    "mistral-large": {
+      "gpqa-diamond": 35.1,
+      "hle": 3.5,
+      "livecodebench": 17.8,
+      "math-500": 52.7,
+      "mmlu-pro": 51.5,
+      "scicode": 20.8,
+      "bigcodebench": 30
+    },
+    "mistral-small": {
+      "gpqa-diamond": 38.1,
+      "hle": 4.3,
+      "livecodebench": 14.1,
+      "math-500": 56.3,
+      "mmlu-pro": 52.9,
+      "scicode": 15.6
+    },
+    "mixtral-8x22b": {
+      "gpqa-diamond": 33.2,
+      "hle": 4,
+      "livecodebench": 14.8,
+      "math-500": 54.5,
+      "mmlu-pro": 53.7,
+      "scicode": 18.8,
+      "bigcodebench": 40.6
+    },
+    "mixtral-8x7b": {
+      "gpqa-diamond": 29.2,
+      "hle": 4.7,
+      "livecodebench": 6.6,
+      "math-500": 29.9,
+      "mmlu-pro": 38.7,
+      "scicode": 2.8
+    },
+    "pixtral-large": {
+      "mmlu-pro": 70.1,
+      "gpqa-diamond": 50.5,
+      "hle": 2.8,
+      "aime-2025": 2.3,
+      "math-500": 71.4,
+      "scicode": 29.2,
+      "livecodebench": 26.1
+    },
     "mistral-7b": {
-      "lmarena-elo": 1110
+      "lmarena-elo": 1110,
+      "bigcodebench": 19.5
     },
-    "voxtral-small": {},
-    "devstral-small": {},
+    "devstral-small": {
+      "swe-rebench": 14.6,
+      "swe-bench-verified": 46.8
+    },
     "qwen2-5-coder-32b": {
-      "lmarena-elo": 1270
+      "lmarena-elo": 1270,
+      "swe-rebench": 3.1,
+      "swe-bench-verified": 9,
+      "bigcodebench": 49
     },
-    "qwen2-5-coder-7b": {},
     "qwq-32b": {
       "gpqa-diamond": 65.6,
       "math-500": 98,
       "aime-2025": 69.5,
       "livecodebench": 63.4,
-      "bfcl-v3": 66.4,
-      "arena-hard": 89.5,
-      "lmarena-elo": 1336
+      "lmarena-elo": 1336,
+      "mmlu-pro": 76.4,
+      "hle": 7.4,
+      "scicode": 35.8,
+      "aider-polyglot": 20.9
     },
     "qwen3-next-80b": {
       "mmlu-pro": 80.6,
@@ -850,8 +1447,8 @@
       "aime-2025": 69.5,
       "livecodebench": 56.6,
       "aider-polyglot": 49.8,
-      "bfcl-v3": 70.3,
-      "lmarena-elo": 1401
+      "lmarena-elo": 1401,
+      "swe-rebench": 20.1
     },
     "qwen3-5-flash": {
       "lmarena-elo": 1397,
@@ -860,71 +1457,116 @@
     "qwen2-5-7b": {
       "mmlu-pro": 56.3,
       "livecodebench": 28.7,
-      "arena-hard": 52
+      "bigcodebench": 37.6
     },
-    "qwen3-coder-30b": {},
+    "qwen3-coder-30b": {
+      "aime-2025": 29,
+      "gpqa-diamond": 51.6,
+      "hle": 3.8,
+      "livecodebench": 40.3,
+      "math-500": 89.3,
+      "mmlu-pro": 70.6,
+      "scicode": 27.8,
+      "swe-rebench": 21.6
+    },
     "kimi-k2": {
       "mmlu-pro": 81.1,
       "gpqa-diamond": 75.1,
       "hle": 4.7,
       "aime-2025": 49.5,
       "math-500": 97.4,
-      "simpleqa": 31,
       "swe-bench-verified": 65.8,
       "swe-bench-multilingual": 47.3,
       "livecodebench": 53.7,
-      "aider-polyglot": 60
+      "aider-polyglot": 60,
+      "scicode": 34.5,
+      "swe-rebench": 34.6
     },
     "kimi-k2-6": {
       "lmarena-elo": 1461,
-      "webdev-arena": 1509
+      "webdev-arena": 1509,
+      "gpqa-diamond": 91.1,
+      "hle": 37.5,
+      "scicode": 53.5,
+      "terminal-bench-2-1": 65.9,
+      "swe-rebench": 46.5
     },
     "glm-4-7-flash": {
-      "lmarena-elo": 1367
+      "lmarena-elo": 1367,
+      "swe-rebench": 30.1
     },
     "minimax-m2-7": {
       "swe-bench-pro": 56.22,
       "swe-bench-multilingual": 76.5,
       "nl2repo": 39.8,
       "lmarena-elo": 1416,
-      "webdev-arena": 1398
+      "webdev-arena": 1398,
+      "gpqa-diamond": 87.4,
+      "hle": 29.6,
+      "scicode": 47,
+      "terminal-bench-2-1": 55.4,
+      "swe-rebench": 51.9
     },
-    "amazon-titan-text-premier": {},
-    "amazon-titan-text-express": {},
-    "amazon-titan-text-lite": {},
-    "command-light": {},
-    "command": {},
-    "yi-large": {},
+    "yi-large": {
+      "bigcodebench": 37.7
+    },
     "yi-1-5-34b": {
-      "lmarena-elo": 1213
+      "lmarena-elo": 1213,
+      "bigcodebench": 33.9
     },
     "step-3-5-flash": {
-      "lmarena-elo": 1394
+      "lmarena-elo": 1394,
+      "gpqa-diamond": 83.1,
+      "hle": 21.1,
+      "scicode": 40.4,
+      "swe-rebench": 59.6
     },
-    "step-2": {},
-    "lfm-2-5-8b": {},
-    "hunyuan-turbo": {},
+    "lfm-2-5-8b": {
+      "gpqa-diamond": 51.3,
+      "hle": 6.9,
+      "scicode": 7.8
+    },
     "hy3-preview": {
       "lmarena-elo": 1413,
       "webdev-arena": 1356
     },
-    "ling-2-6-flash": {},
-    "ling-2-6-1t": {},
-    "trinity-mini": {},
-    "reka-flash-3": {},
-    "seed-1-6-flash": {},
-    "internlm2-5-20b": {},
-    "falcon-180b": {},
-    "falcon-40b": {},
-    "olmo-2-32b": {},
-    "sonar-reasoning": {},
-    "granite-4-0-h-micro": {},
+    "ling-2-6-flash": {
+      "gpqa-diamond": 59.3,
+      "hle": 6.3,
+      "scicode": 27.1,
+      "terminal-bench-2-1": 24.3
+    },
+    "ling-2-6-1t": {
+      "gpqa-diamond": 75.2,
+      "hle": 8.7,
+      "scicode": 37
+    },
+    "reka-flash-3": {
+      "mmlu-pro": 66.9,
+      "gpqa-diamond": 52.9,
+      "hle": 4.4,
+      "aime-2025": 33.7,
+      "math-500": 89.3,
+      "scicode": 26.7,
+      "livecodebench": 43.5
+    },
+    "olmo-2-32b": {
+      "mmlu-pro": 51.1,
+      "gpqa-diamond": 32.8,
+      "hle": 3.6,
+      "aime-2025": 3.3,
+      "scicode": 8,
+      "livecodebench": 6.8
+    },
+    "sonar-reasoning": {
+      "gpqa-diamond": 62.3,
+      "math-500": 92.1
+    },
     "nemotron-nano-9b": {
       "hle": 6.5,
       "aime-2025": 72.1,
       "math-500": 97.8,
-      "livecodebench": 71.1,
-      "bfcl-v3": 66.9
+      "livecodebench": 71.1
     },
     "inkling": {
       "gpqa-diamond": 87.2,
@@ -940,7 +1582,12 @@
       "swe-bench-verified": 80.2,
       "swe-bench-pro": 55.9,
       "scicode": 48.7,
-      "terminal-bench-2-1": 64.7
+      "terminal-bench-2-1": 64.7,
+      "hle": 33.3,
+      "lmarena-elo": 1430.5
+    },
+    "cursor-grok-4-5": {
+      "cursorbench": 66.7
     }
   }
 }

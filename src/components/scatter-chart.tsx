@@ -29,24 +29,20 @@ import { Button } from "@/components/ui/button";
 
 const Y_OPTIONS: BenchmarkId[] = [
   "lmarena-elo",
-  "arena-hard",
   "mmlu-pro",
   "gpqa-diamond",
   "aime-2025",
   "math-500",
-  "simpleqa",
   "swe-bench-verified",
   "swe-bench-pro",
   "swe-bench-multilingual",
   "livecodebench",
   "terminal-bench-2-1",
   "aider-polyglot",
-  "bfcl-v3",
   "scicode",
   "cursorbench",
   "swe-rebench",
   "nl2repo",
-  "vibe-code-bench",
   "webdev-arena",
   "hle",
 ];
@@ -227,6 +223,14 @@ export function PricePerformanceScatter({ models }: { models: Model[] }) {
   const meta = BENCHMARKS[yAxis];
   const labelsActive = showLabels || points.length <= 12;
 
+  // Recharts derives ticks for a numeric/log XAxis from the raw data values;
+  // when several models share the same blended price it emits duplicate tick
+  // keys. Hand it a deduplicated set so positions stay identical but keys are unique.
+  const xTicks = useMemo(
+    () => [...new Set(points.map((p) => p.x))].sort((a, b) => a - b),
+    [points]
+  );
+
   const makeShape =
     (shape: "circle" | "diamond") =>
     (props: { cx?: number; cy?: number; payload?: Point }) => {
@@ -384,6 +388,7 @@ export function PricePerformanceScatter({ models }: { models: Model[] }) {
                 name="price"
                 scale="log"
                 domain={["auto", "auto"]}
+                ticks={xTicks}
                 tickFormatter={(v) => `$${Number(v).toPrecision(2)}`}
                 label={{
                   value: "Blended $/1M tokens (log)",

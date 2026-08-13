@@ -19,6 +19,10 @@ function formatBenchKey(id) {
   return needsQuotedKey(id) ? JSON.stringify(id) : id;
 }
 
+function cellValue(cell) {
+  return cell.newValue ?? cell.value;
+}
+
 function benchKeyPattern(id) {
   return needsQuotedKey(id) ? JSON.stringify(id) : id;
 }
@@ -78,7 +82,7 @@ function patchBenchmarks(region, cells) {
     const key = benchKeyPattern(cell.benchmarkId);
     const valueRe = new RegExp(`(${escapeRegExp(key)}\\s*:\\s*)(-?\\d+(?:\\.\\d+)?)`);
     if (valueRe.test(body)) {
-      body = body.replace(valueRe, `$1${formatNumber(cell.value)}`);
+      body = body.replace(valueRe, `$1${formatNumber(cellValue(cell))}`);
     } else {
       inserts.push(cell);
     }
@@ -86,7 +90,8 @@ function patchBenchmarks(region, cells) {
 
   if (inserts.length > 0) {
     const lines = inserts.map(
-      (cell) => `${formatBenchKey(cell.benchmarkId)}: ${formatNumber(cell.value)},`
+      (cell) =>
+        `${formatBenchKey(cell.benchmarkId)}: ${formatNumber(cellValue(cell))},`
     );
     if (/^\{\s*\}$/.test(body)) {
       body = `{\n      ${lines.join("\n      ")}\n    }`;
@@ -125,7 +130,7 @@ function writeJson(filePath, value) {
 function bumpAsOf(filePath, today, pattern, replacement) {
   const source = fs.readFileSync(filePath, "utf8");
   const next = source.replace(pattern, replacement);
-  if (next === source) {
+  if (next === source && !pattern.test(source)) {
     throw new Error(`Failed to bump asOf in ${filePath}`);
   }
   fs.writeFileSync(filePath, next);
@@ -149,8 +154,10 @@ function updateExactChecks(source, cells) {
         `(exact\\("${escapedSlug}", "benchmarks\\.${escapedId}", )${oldText.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(\\))`
       );
       if (re.test(next)) {
-        next = next.replace(re, `$1${formatNumber(cell.value)}$2`);
-        updated.push(`${cell.slug}/${cell.benchmarkId} ${oldText} -> ${formatNumber(cell.value)}`);
+        next = next.replace(re, `$1${formatNumber(cellValue(cell))}$2`);
+        updated.push(
+          `${cell.slug}/${cell.benchmarkId} ${oldText} -> ${formatNumber(cellValue(cell))}`
+        );
         break;
       }
     }
@@ -180,7 +187,7 @@ export function expandWithAliases(proposals, models) {
 
 function assertOnlyIntendedChanges(before, after, cells) {
   const intended = new Map(
-    cells.map((cell) => [`${cell.slug}/${cell.benchmarkId}`, cell.value])
+    cells.map((cell) => [`${cell.slug}/${cell.benchmarkId}`, cellValue(cell)])
   );
   const beforeBySlug = Object.fromEntries(before.map((model) => [model.slug, model]));
   if (after.length !== before.length) {
@@ -225,7 +232,7 @@ export async function applyProposals(proposals, { today, models }) {
   retained.cells ??= {};
   for (const cell of cells) {
     retained.cells[cell.slug] ??= {};
-    retained.cells[cell.slug][cell.benchmarkId] = cell.value;
+    retained.cells[cell.slug][cell.benchmarkId] = cellValue(cell);
   }
   writeJson(RETAINED_PATH, retained);
 
@@ -268,7 +275,6 @@ export async function applyProposals(proposals, { today, models }) {
     /const asOf = "\d{4}-\d{2}-\d{2}"/,
     `const asOf = "${today}"`
   );
-  if (asOfNext === verifySource) throw new Error("Failed to bump asOf in verify-data.mjs");
   verifySource = asOfNext;
 
   const reloaded = load(MODELS_PATH, "models");
@@ -280,7 +286,10 @@ export async function applyProposals(proposals, { today, models }) {
     /scoreCount === \d+/,
     `scoreCount === ${scoreCount}`
   );
-  if (scoreNext === verifySource) {
+  if (
+    scoreNext === verifySource &&
+    !verifySource.includes(`scoreCount === ${scoreCount}`)
+  ) {
     throw new Error("Failed to rewrite scoreCount in verify-data.mjs");
   }
   verifySource = scoreNext.replace(

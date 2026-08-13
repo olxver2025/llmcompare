@@ -12,6 +12,7 @@ export const BENCHMARKS: Record<BenchmarkId, BenchmarkMeta> = {
     category: "reasoning",
     sourceUrl: "https://github.com/TIGER-AI-Lab/MMLU-Pro",
   },
+
   "gpqa-diamond": {
     id: "gpqa-diamond",
     name: "GPQA Diamond",
@@ -55,17 +56,6 @@ export const BENCHMARKS: Record<BenchmarkId, BenchmarkMeta> = {
     unit: "percent",
     category: "reasoning",
     sourceUrl: "https://huggingface.co/datasets/HuggingFaceH4/MATH-500",
-  },
-  simpleqa: {
-    id: "simpleqa",
-    name: "SimpleQA",
-    shortName: "SimpleQA",
-    description:
-      "Short-form factuality benchmark measuring whether models give correct answers to challenging fact questions; the result depends on the exact evaluation release and grading policy.",
-    higherIsBetter: true,
-    unit: "percent",
-    category: "reasoning",
-    sourceUrl: "https://openai.com/index/introducing-simpleqa/",
   },
   "swe-bench-verified": {
     id: "swe-bench-verified",
@@ -133,16 +123,63 @@ export const BENCHMARKS: Record<BenchmarkId, BenchmarkMeta> = {
     category: "coding",
     sourceUrl: "https://aider.chat/docs/leaderboards/",
   },
-  "bfcl-v3": {
-    id: "bfcl-v3",
-    name: "BFCL v3",
-    shortName: "BFCL",
+
+  "terminal-bench-3": {
+    id: "terminal-bench-3",
+    name: "Terminal-Bench 3",
+    shortName: "TermBench 3",
     description:
-      "Berkeley Function-Calling Leaderboard v3 — historical tool/API calling accuracy across single and multi-turn scenarios; do not confuse this frozen v3 snapshot with the current BFCL v4 leaderboard.",
+      "Next-generation agentic terminal benchmark (Frontier-Bench); scores are agent-system results that vary with harness, effort, and evaluation date.",
     higherIsBetter: true,
     unit: "percent",
     category: "coding",
-    sourceUrl: "https://gorilla.cs.berkeley.edu/blogs/13_bfcl_v3_multi_turn.html",
+    sourceUrl: "https://www.frontierbench.ai/",
+  },
+
+  bigcodebench: {
+    id: "bigcodebench",
+    name: "BigCodeBench",
+    shortName: "BigCodeBench",
+    description:
+      "Realistic function-level coding benchmark with 1,140 tasks across 7 languages; pass@1 depends on the release and prompting.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "coding",
+    sourceUrl: "https://bigcode-bench.github.io/",
+  },
+
+  "tau-bench": {
+    id: "tau-bench",
+    name: "Tau-bench",
+    shortName: "Tau-bench",
+    description:
+      "Realistic tool-agent user interactions in airline, retail, and banking domains; scores are agent-system results, not model-only capability.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "tool",
+    sourceUrl: "https://github.com/sierra-research/tau-bench",
+  },
+
+
+
+
+
+
+
+
+
+
+
+  matharena: {
+    id: "matharena",
+    name: "MathArena",
+    shortName: "MathArena",
+    description:
+      "MathArena contest-math leaderboard (AIME, AMC, olympiad-style); results depend on answer-format extraction and evaluation date.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "math",
+    sourceUrl: "https://matharena.ai/",
   },
   scicode: {
     id: "scicode",
@@ -188,16 +225,60 @@ export const BENCHMARKS: Record<BenchmarkId, BenchmarkMeta> = {
     category: "coding",
     sourceUrl: "https://github.com/multimodal-art-projection/NL2RepoBench",
   },
-  "vibe-code-bench": {
-    id: "vibe-code-bench",
-    name: "Vibe Code Bench",
-    shortName: "Vibe Code",
+  cybergym: {
+    id: "cybergym",
+    name: "CyberGym",
+    shortName: "CyberGym",
     description:
-      "End-to-end web app builds from natural-language specs in a production-like agent environment (Vals.ai Vibe Code Bench); scores are scaffold- and task-release-specific.",
+      "Cybersecurity benchmark (UC Berkeley Sunblaze) evaluating AI agents on real-world vulnerability discovery and exploitation tasks; scores are agent-system results that vary with harness and environment.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "agent",
+    sourceUrl: "https://github.com/sunblaze-ucb/cybergym",
+  },
+  deepswe: {
+    id: "deepswe",
+    name: "DeepSWE",
+    shortName: "DeepSWE",
+    description:
+      "DataCurve's long-horizon software-engineering benchmark of 113 original tasks across TypeScript, Go, Python, JavaScript, and Rust with program-based verifiers; scores are agent-system results under the eval harness.",
     higherIsBetter: true,
     unit: "percent",
     category: "coding",
-    sourceUrl: "https://www.vals.ai/benchmarks/vibe-code",
+    sourceUrl: "https://github.com/datacurve-ai/deep-swe",
+  },
+  "toolathlon-verified": {
+    id: "toolathlon-verified",
+    name: "Toolathlon-Verified",
+    shortName: "Toolathlon V.",
+    description:
+      "Verified subset of Toolathlon, a tool-use benchmark measuring selecting, sequencing, and completing multi-step tasks with external tools; keep distinct from unverified Toolathlon runs.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "tool",
+    sourceUrl: "https://toolathlon.xyz/docs/leaderboard",
+  },
+  "agents-last-exam": {
+    id: "agents-last-exam",
+    name: "Agents' Last Exam",
+    shortName: "ALE",
+    description:
+      "Agent benchmark of long-horizon, real-world tasks requiring tool use and multi-step execution; results are agent-system measurements published by the evaluating provider.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "agent",
+    sourceUrl: "https://agents-last-exam.org/",
+  },
+  "automation-bench": {
+    id: "automation-bench",
+    name: "AutomationBench (Public)",
+    shortName: "AutoBench",
+    description:
+      "Zapier benchmark evaluating how reliably agents complete realistic business workflows across 47 simulated SaaS tools; scores are agent-system results and depend on the scaffold.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "agent",
+    sourceUrl: "https://github.com/zapier/AutomationBench",
   },
   "webdev-arena": {
     id: "webdev-arena",
@@ -221,17 +302,6 @@ export const BENCHMARKS: Record<BenchmarkId, BenchmarkMeta> = {
     category: "arena",
     sourceUrl: "https://arena.ai/leaderboard",
   },
-  "arena-hard": {
-    id: "arena-hard",
-    name: "Arena-Hard-Auto",
-    shortName: "Arena-Hard",
-    description:
-      "Hard-prompt preference win rate evaluated automatically against a strong baseline (Arena-Hard-Auto v2); benchmark version and judge model are required for comparison.",
-    higherIsBetter: true,
-    unit: "percent",
-    category: "arena",
-    sourceUrl: "https://github.com/lmarena/arena-hard-auto",
-  },
 };
 
 export const BENCHMARK_IDS = Object.keys(BENCHMARKS) as BenchmarkId[];
@@ -246,8 +316,12 @@ export const BENCHMARK_CATEGORIES = [
       "hle",
       "aime-2025",
       "math-500",
-      "simpleqa",
     ] as BenchmarkId[],
+  },
+  {
+    id: "math" as const,
+    label: "Math",
+    ids: ["matharena"] as BenchmarkId[],
   },
   {
     id: "coding" as const,
@@ -258,19 +332,37 @@ export const BENCHMARK_CATEGORIES = [
       "swe-bench-multilingual",
       "livecodebench",
       "terminal-bench-2-1",
+      "terminal-bench-3",
       "aider-polyglot",
-      "bfcl-v3",
       "scicode",
       "cursorbench",
       "swe-rebench",
       "nl2repo",
-      "vibe-code-bench",
+      "deepswe",
       "webdev-arena",
+      "bigcodebench",
+    ] as BenchmarkId[],
+  },
+  {
+    id: "tool" as const,
+    label: "Tool use & function calling",
+    ids: [
+      "tau-bench",
+      "toolathlon-verified",
+    ] as BenchmarkId[],
+  },
+  {
+    id: "agent" as const,
+    label: "Agents & computer use",
+    ids: [
+      "cybergym",
+      "agents-last-exam",
+      "automation-bench",
     ] as BenchmarkId[],
   },
   {
     id: "arena" as const,
     label: "Arena",
-    ids: ["lmarena-elo", "arena-hard"] as BenchmarkId[],
+    ids: ["lmarena-elo"] as BenchmarkId[],
   },
 ];

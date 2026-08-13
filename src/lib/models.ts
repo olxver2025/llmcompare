@@ -10,7 +10,7 @@ import { modelFamilyId, modelFamilyLabel } from "@/lib/model-family";
 
 export { QUALITY_COMPARABLE_ELO_BAND, type OverallBasis };
 
-export const DATA_FRESHNESS = "2026-08-12";
+export const DATA_FRESHNESS = "2026-08-13";
 
 /** Illustrative chat workload used for cost estimates. */
 export const WORKLOAD_TOKENS_IN = 1_000_000;
@@ -236,7 +236,16 @@ export function generateVerdict(a: Model, b: Model): string {
 export type CompareRow = {
   id: string;
   label: string;
-  category: "spec" | "pricing" | "speed" | "reasoning" | "coding" | "arena";
+  category:
+    | "spec"
+    | "pricing"
+    | "speed"
+    | "reasoning"
+    | "coding"
+    | "arena"
+    | "agent"
+    | "tool"
+    | "math";
   left: string;
   right: string;
   leftNum?: number;
@@ -271,6 +280,9 @@ const QUALITY_CATEGORIES = new Set<CompareRow["category"]>([
   "reasoning",
   "coding",
   "arena",
+  "agent",
+  "tool",
+  "math",
 ]);
 const SPEC_CATEGORIES = new Set<CompareRow["category"]>(["spec"]);
 const VALUE_CATEGORIES = new Set<CompareRow["category"]>(["pricing", "speed"]);
@@ -493,24 +505,24 @@ export function compareBreakdown(a: Model, b: Model): CompareBreakdown {
   );
 
   const categoryWins: CompareBreakdown["categoryWins"] = {};
-  for (const cat of ["reasoning", "coding", "arena", "pricing", "speed", "spec"] as const) {
+  const categoryLabels: Record<CompareRow["category"], string> = {
+    reasoning: "Reasoning",
+    coding: "Coding",
+    arena: "Arena",
+    agent: "Agents",
+    tool: "Tool use",
+    math: "Math",
+    pricing: "Pricing",
+    speed: "Speed",
+    spec: "Specs",
+  };
+  for (const cat of Object.keys(categoryLabels) as CompareRow["category"][]) {
     const subset = rows.filter((r) => r.category === cat && (r.winner === "a" || r.winner === "b"));
     if (subset.length === 0) continue;
     categoryWins[cat] = {
       a: subset.filter((r) => r.winner === "a").length,
       b: subset.filter((r) => r.winner === "b").length,
-      label:
-        cat === "reasoning"
-          ? "Reasoning"
-          : cat === "coding"
-            ? "Coding"
-            : cat === "arena"
-              ? "Arena"
-              : cat === "pricing"
-                ? "Pricing"
-                : cat === "speed"
-                  ? "Speed"
-                  : "Specs",
+      label: categoryLabels[cat],
     };
   }
 
@@ -665,7 +677,6 @@ export function popularComparePairs(): [string, string][] {
     ["composer-2-5", "claude-opus-5"],
     ["composer-2-5", "gpt-5-6-terra"],
     ["composer-2-5", "cursor-grok-4-5"],
-    ["composer-2-5-fast", "claude-sonnet-5"],
     ["cursor-grok-4-5", "claude-opus-5"],
     ["cursor-grok-4-5", "grok-4-5"],
   ];

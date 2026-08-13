@@ -4,22 +4,27 @@ export type BenchmarkId =
   | "hle"
   | "aime-2025"
   | "math-500"
-  | "simpleqa"
   | "swe-bench-verified"
   | "swe-bench-pro"
   | "swe-bench-multilingual"
   | "livecodebench"
   | "terminal-bench-2-1"
+  | "terminal-bench-3"
   | "aider-polyglot"
-  | "bfcl-v3"
   | "scicode"
   | "cursorbench"
   | "swe-rebench"
   | "nl2repo"
-  | "vibe-code-bench"
+  | "cybergym"
+  | "deepswe"
+  | "toolathlon-verified"
+  | "agents-last-exam"
+  | "automation-bench"
   | "webdev-arena"
-  | "lmarena-elo"
-  | "arena-hard";
+  | "bigcodebench"
+  | "tau-bench"
+  | "matharena"
+  | "lmarena-elo";
 
 export type Model = {
   slug: string;
@@ -39,11 +44,39 @@ export type Model = {
     outputPer1M: number;
   };
   speed?: { tokensPerSec?: number; ttftSeconds?: number };
+  fast?: {
+    pricing: {
+      provider: string;
+      inputPer1M: number;
+      outputPer1M: number;
+    };
+    speed?: { tokensPerSec?: number; ttftSeconds?: number };
+  };
   benchmarks: Partial<Record<BenchmarkId, number>>;
   /** Quality scores are inherited from this canonical model record. */
   benchmarkAliasOf?: string;
   links: { docs?: string; modelCard?: string; announcement?: string };
   summary: string;
+};
+
+export type ThinkingLevel = {
+  id: string;
+  label: string;
+};
+
+export type ThinkingFamily = {
+  id: string;
+  param: string;
+  sourceUrl: string;
+  levels: ThinkingLevel[];
+};
+
+export type ResolvedThinking = {
+  familyId: string;
+  param: string;
+  sourceUrl: string;
+  levels: ThinkingLevel[];
+  highestLevel: string;
 };
 
 export type BenchmarkMeta = {
@@ -53,7 +86,13 @@ export type BenchmarkMeta = {
   description: string;
   higherIsBetter: boolean;
   unit: "percent" | "elo";
-  category: "reasoning" | "coding" | "arena";
+  category:
+    | "reasoning"
+    | "coding"
+    | "arena"
+    | "agent"
+    | "tool"
+    | "math";
   sourceUrl: string;
 };
 

@@ -20,11 +20,21 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 5, outputPer1M: 30 },
     speed: { tokensPerSec: 96, ttftSeconds: 0.45 },
+    fast: {
+      pricing: { provider: "OpenAI", inputPer1M: 10, outputPer1M: 60 },
+      speed: { tokensPerSec: 240, ttftSeconds: 0.25 },
+    },
     benchmarks: {
       "gpqa-diamond": 94.6,
       "swe-bench-pro": 64.6,
       "terminal-bench-2-1": 88.8,
       cursorbench: 67.2,
+      "terminal-bench-3": 34.6,
+      matharena: 79.7,
+      "swe-rebench": 62.3,
+      "lmarena-elo": 1481,
+      hle: 46,
+      scicode: 56.9,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -33,32 +43,6 @@ export const models: Model[] = [
     },
     summary:
       "OpenAI's July 2026 flagship reasoning tier, tuned for hard STEM and agentic work; ChatGPT's top API SKU in the 5.6 family. Fast mode (2× price) delivers up to 2.5× Standard speed.",
-  },
-  {
-    slug: "gpt-5-6-sol-fast",
-    name: "GPT-5.6 Sol Fast",
-    organization: "OpenAI",
-    releaseDate: "2026-07-30",
-    openSource: false,
-    license: "Proprietary",
-    contextWindow: 1_050_000,
-    maxOutput: 128_000,
-    modalities: { input: ["text", "image"], output: ["text"] },
-    pricing: { provider: "OpenAI", inputPer1M: 10, outputPer1M: 60 },
-    speed: { tokensPerSec: 240, ttftSeconds: 0.25 },
-    benchmarks: {
-      "gpqa-diamond": 94.6,
-      "swe-bench-pro": 64.6,
-      "terminal-bench-2-1": 88.8,
-      cursorbench: 67.2,
-    },
-    links: {
-      docs: "https://developers.openai.com/api/docs/guides/fast-mode",
-      announcement:
-        "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
-    },
-    summary:
-      "GPT-5.6 Sol via API Fast mode (replaces Priority Processing as of 2026-07-30): same intelligence as Standard Sol at 2× price and up to 2.5× throughput.",
   },
   {
     slug: "gpt-5-6-terra",
@@ -77,6 +61,10 @@ export const models: Model[] = [
       "swe-bench-pro": 63.4,
       "terminal-bench-2-1": 87.4,
       cursorbench: 64.9,
+      "terminal-bench-3": 20.8,
+      "lmarena-elo": 1464,
+      hle: 38.5,
+      scicode: 50.1,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -103,6 +91,9 @@ export const models: Model[] = [
       "swe-bench-pro": 62.7,
       "terminal-bench-2-1": 84.7,
       cursorbench: 61.1,
+      "terminal-bench-3": 14.3,
+      "swe-rebench": 43.6,
+      "lmarena-elo": 1450,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -150,6 +141,7 @@ export const models: Model[] = [
       cursorbench: 58.4,
       "terminal-bench-2-1": 83.1,
       "lmarena-elo": 1477,
+      matharena: 77.8,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -248,6 +240,7 @@ export const models: Model[] = [
       "aime-2025": 91.1,
       "swe-bench-verified": 71,
       "aider-polyglot": 71.6,
+      "swe-bench-multilingual": 39.7,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -299,6 +292,11 @@ export const models: Model[] = [
       "swe-bench-verified": 69.1,
       "aider-polyglot": 79.6,
       "lmarena-elo": 1431,
+      "mmlu-pro": 85.3,
+      "math-500": 99.2,
+      scicode: 41,
+      livecodebench: 80.8,
+      "swe-rebench": 38.1,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -326,6 +324,11 @@ export const models: Model[] = [
       hle: 5.4,
       "aider-polyglot": 52.9,
       "lmarena-elo": 1414,
+      "mmlu-pro": 80.6,
+      "math-500": 91.3,
+      scicode: 38.1,
+      livecodebench: 45.7,
+      "swe-rebench": 30.1,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -368,6 +371,13 @@ export const models: Model[] = [
     speed: { tokensPerSec: 100, ttftSeconds: 0.35 },
     benchmarks: {
       "lmarena-elo": 1346,
+      "gpqa-diamond": 52.6,
+      hle: 1.8,
+      livecodebench: 33.4,
+      "math-500": 79.1,
+      "mmlu-pro": 74,
+      scicode: 30.9,
+      bigcodebench: 51.1,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -394,6 +404,13 @@ export const models: Model[] = [
       hle: 3.7,
       "aider-polyglot": 31.6,
       "lmarena-elo": 1383,
+      "mmlu-pro": 78.1,
+      "math-500": 92.5,
+      scicode: 40.4,
+      livecodebench: 48.3,
+      "terminal-bench-2-1": 10.1,
+      bigcodebench: 48.9,
+      "swe-rebench": 25.5,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -417,6 +434,14 @@ export const models: Model[] = [
       "gpqa-diamond": 50.3,
       "aider-polyglot": 6.2,
       "lmarena-elo": 1322,
+      "mmlu-pro": 65.7,
+      hle: 3.8,
+      "aime-2025": 24,
+      "math-500": 84.8,
+      scicode: 25.9,
+      livecodebench: 32.6,
+      "terminal-bench-2-1": 3.7,
+      "swe-rebench": 0.3,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -439,6 +464,16 @@ export const models: Model[] = [
     speed: { tokensPerSec: 150, ttftSeconds: 0.2 },
     benchmarks: {
       "lmarena-elo": 1318,
+      "aider-polyglot": 3.6,
+      "mmlu-pro": 64.8,
+      "gpqa-diamond": 42.6,
+      hle: 4.2,
+      "aime-2025": 14.7,
+      "math-500": 78.9,
+      scicode: 22.9,
+      livecodebench: 23.4,
+      "terminal-bench-2-1": 5.6,
+      bigcodebench: 46.1,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -462,6 +497,15 @@ export const models: Model[] = [
     speed: { tokensPerSec: 72, ttftSeconds: 0.55 },
     benchmarks: {
       cursorbench: 70,
+      "terminal-bench-3": 42.7,
+      "tau-bench": 48.7,
+      matharena: 84.4,
+      "swe-rebench": 63.4,
+      "lmarena-elo": 1493,
+      "gpqa-diamond": 93.7,
+      hle: 52.8,
+      scicode: 54.3,
+      "terminal-bench-2-1": 87.6,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -489,6 +533,10 @@ export const models: Model[] = [
       "terminal-bench-2-1": 83.8,
       "lmarena-elo": 1507,
       "webdev-arena": 1627,
+      "terminal-bench-3": 34.1,
+      "swe-rebench": 64.5,
+      hle: 55.5,
+      scicode: 60.2,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -515,6 +563,8 @@ export const models: Model[] = [
       "terminal-bench-2-1": 78.9,
       "lmarena-elo": 1474,
       "webdev-arena": 1539,
+      "terminal-bench-3": 21.1,
+      "swe-rebench": 56.5,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -537,6 +587,12 @@ export const models: Model[] = [
     benchmarks: {
       cursorbench: 61.5,
       "terminal-bench-2-1": 74.6,
+      "terminal-bench-3": 14.6,
+      "swe-rebench": 56.8,
+      "lmarena-elo": 1462,
+      "gpqa-diamond": 91.1,
+      hle: 41.3,
+      scicode: 53.6,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -559,6 +615,8 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1469,
       "webdev-arena": 1468,
+      "swe-rebench": 53.1,
+      "swe-bench-multilingual": 70.7,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -581,6 +639,7 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1472,
       "webdev-arena": 1524,
+      "swe-rebench": 54.5,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -604,6 +663,7 @@ export const models: Model[] = [
       "swe-bench-verified": 73.3,
       "lmarena-elo": 1413,
       "webdev-arena": 1326,
+      "swe-bench-multilingual": 64.7,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -627,6 +687,8 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1390,
       "aider-polyglot": 56.4,
+      "swe-rebench": 44.6,
+      livecodebench: 59.4,
     },
     links: {
       docs: "https://platform.claude.com/docs/en/about-claude/models/overview",
@@ -648,6 +710,15 @@ export const models: Model[] = [
     speed: { tokensPerSec: 160, ttftSeconds: 0.18 },
     benchmarks: {
       "lmarena-elo": 1324,
+      "gpqa-diamond": 40.8,
+      hle: 3.6,
+      livecodebench: 31.4,
+      "math-500": 72.1,
+      "mmlu-pro": 63.4,
+      scicode: 27.4,
+      "terminal-bench-2-1": 10.1,
+      "swe-bench-verified": 40.6,
+      bigcodebench: 46.1,
     },
     links: {
       docs: "https://platform.claude.com/docs/en/about-claude/pricing",
@@ -677,6 +748,7 @@ export const models: Model[] = [
       "terminal-bench-2-1": 70.7,
       "lmarena-elo": 1486,
       "webdev-arena": 1447,
+      "swe-rebench": 54.9,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -701,6 +773,9 @@ export const models: Model[] = [
       hle: 37.5,
       "lmarena-elo": 1501,
       "webdev-arena": 1438,
+      "terminal-bench-2-1": 73.9,
+      "swe-bench-multilingual": 68.7,
+      "swe-rebench": 50.7,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -722,6 +797,10 @@ export const models: Model[] = [
     speed: { tokensPerSec: 180, ttftSeconds: 0.22 },
     benchmarks: {
       cursorbench: 53.5,
+      "gpqa-diamond": 92.8,
+      hle: 40.8,
+      scicode: 52.7,
+      "terminal-bench-2-1": 77.5,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -744,6 +823,7 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1473,
       "webdev-arena": 1438,
+      "swe-bench-multilingual": 72.7,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -766,6 +846,10 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1458,
       "webdev-arena": 1449,
+      "gpqa-diamond": 83.8,
+      hle: 18.8,
+      scicode: 40.9,
+      "terminal-bench-2-1": 53.6,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -810,6 +894,14 @@ export const models: Model[] = [
       "lmarena-elo": 1445,
       "webdev-arena": 1226,
       "aider-polyglot": 79.1,
+      "mmlu-pro": 86.2,
+      "gpqa-diamond": 84.4,
+      "aime-2025": 87.7,
+      "math-500": 96.7,
+      scicode: 42.8,
+      livecodebench: 80.1,
+      "terminal-bench-2-1": 28.5,
+      "swe-rebench": 23.5,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -831,6 +923,9 @@ export const models: Model[] = [
     speed: { tokensPerSec: 220, ttftSeconds: 0.18 },
     benchmarks: {
       "lmarena-elo": 1410,
+      "swe-rebench": 19.9,
+      "swe-bench-verified": 28.7,
+      livecodebench: 75.1,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -858,6 +953,7 @@ export const models: Model[] = [
       livecodebench: 80.0,
       "lmarena-elo": 1451,
       "webdev-arena": 1365,
+      "swe-rebench": 25.1,
     },
     links: {
       modelCard: "https://huggingface.co/google/gemma-4-31b-it",
@@ -910,9 +1006,13 @@ export const models: Model[] = [
     benchmarks: {
       "mmlu-pro": 60.6,
       "gpqa-diamond": 40.9,
-      simpleqa: 6.3,
       livecodebench: 24.6,
       "lmarena-elo": 1342,
+      "aime-2025": 18.3,
+      hle: 4.2,
+      "math-500": 85.3,
+      scicode: 17.4,
+      "terminal-bench-2-1": 0,
     },
     links: {
       modelCard: "https://huggingface.co/google/gemma-3-12b-it",
@@ -939,6 +1039,12 @@ export const models: Model[] = [
       "terminal-bench-2-1": 79.3,
       "lmarena-elo": 1468,
       "webdev-arena": 1553,
+      "terminal-bench-3": 15.7,
+      "tau-bench": 47.9,
+      "swe-rebench": 63.8,
+      "gpqa-diamond": 93.1,
+      hle: 42.7,
+      scicode: 54.1,
     },
     links: {
       docs: "https://docs.x.ai/docs/models",
@@ -960,6 +1066,11 @@ export const models: Model[] = [
     pricing: { provider: "xAI", inputPer1M: 2, outputPer1M: 6 },
     benchmarks: {
       cursorbench: 69.9,
+      "terminal-bench-3": 26.5,
+      "gpqa-diamond": 94.9,
+      hle: 42.9,
+      scicode: 53.6,
+      "terminal-bench-2-1": 88.4,
     },
     links: {
       docs: "https://docs.x.ai/developers/models/grok-4.6",
@@ -1066,6 +1177,14 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1409,
       "aider-polyglot": 79.6,
+      "mmlu-pro": 86.6,
+      "gpqa-diamond": 87.7,
+      hle: 26.7,
+      "aime-2025": 92.7,
+      "math-500": 99,
+      scicode: 45.7,
+      livecodebench: 81.9,
+      "swe-rebench": 38.3,
     },
     links: {
       docs: "https://docs.x.ai/docs/models",
@@ -1093,6 +1212,10 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1499,
       "webdev-arena": 1535,
+      "gpqa-diamond": 90.4,
+      hle: 45.5,
+      scicode: 56.4,
+      "terminal-bench-2-1": 80.1,
     },
     links: {
       docs: "https://developer.meta.com/ai/models/muse-spark/",
@@ -1149,6 +1272,9 @@ export const models: Model[] = [
       "terminal-bench-2-1": 76.2,
       "lmarena-elo": 1489,
       "webdev-arena": 1539,
+      "gpqa-diamond": 89.8,
+      hle: 46.2,
+      scicode: 58.2,
     },
     links: {
       docs: "https://dev.meta.ai/docs/models.md",
@@ -1176,6 +1302,15 @@ export const models: Model[] = [
       livecodebench: 43.4,
       "aider-polyglot": 15.6,
       "lmarena-elo": 1327,
+      "gpqa-diamond": 67.1,
+      hle: 4.9,
+      "aime-2025": 19.3,
+      "math-500": 88.9,
+      scicode: 33.1,
+      "terminal-bench-2-1": 7.9,
+      bigcodebench: 49.7,
+      "swe-rebench": 11,
+      "swe-bench-verified": 21,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
@@ -1202,6 +1337,13 @@ export const models: Model[] = [
       livecodebench: 32.8,
       "gpqa-diamond": 57.2,
       "lmarena-elo": 1322,
+      hle: 3.8,
+      "aime-2025": 14,
+      "math-500": 84.4,
+      scicode: 17,
+      "terminal-bench-2-1": 3.7,
+      "swe-rebench": 6.6,
+      "swe-bench-verified": 9.1,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
@@ -1227,6 +1369,8 @@ export const models: Model[] = [
       "gpqa-diamond": 50.5,
       livecodebench: 33.3,
       "lmarena-elo": 1318,
+      "swe-rebench": 11.5,
+      bigcodebench: 46.9,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
@@ -1252,6 +1396,12 @@ export const models: Model[] = [
       "mmlu-pro": 66.4,
       "lmarena-elo": 1293,
       "gpqa-diamond": 48,
+      "aime-2025": 4,
+      hle: 4.5,
+      livecodebench: 23.2,
+      "math-500": 64.9,
+      scicode: 26.7,
+      bigcodebench: 46.1,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
@@ -1277,6 +1427,13 @@ export const models: Model[] = [
       "mmlu-pro": 48.3,
       "lmarena-elo": 1211,
       "gpqa-diamond": 31.8,
+      "aime-2025": 4.3,
+      hle: 5.3,
+      livecodebench: 11.6,
+      "math-500": 51.9,
+      scicode: 13.2,
+      "terminal-bench-2-1": 1.5,
+      bigcodebench: 32.8,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
@@ -1342,13 +1499,24 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1458,
       "webdev-arena": 1445,
+      "terminal-bench-2-1": 72.1,
+      nl2repo: 38.5,
+      cybergym: 52.7,
+      deepswe: 12.8,
+      "toolathlon-verified": 55.9,
+      "agents-last-exam": 16.5,
+      "automation-bench": 12.8,
+      "swe-rebench": 41.4,
+      "gpqa-diamond": 90.5,
+      hle: 35.2,
+      scicode: 46.4,
     },
     links: {
       docs: "https://api-docs.deepseek.com/",
       modelCard: "https://huggingface.co/deepseek-ai",
     },
     summary:
-      "Open-weight frontier MoE - exceptional quality-per-dollar with MIT license and 1M context.",
+      "Open-weight frontier MoE - exceptional quality-per-dollar with MIT license and 1M context. Scores shown are the original preview; the GA 0813 release improves agentic coding substantially.",
   },
   {
     slug: "deepseek-v4-flash",
@@ -1364,16 +1532,82 @@ export const models: Model[] = [
     pricing: { provider: "DeepSeek", inputPer1M: 0.14, outputPer1M: 0.28 },
     speed: { tokensPerSec: 120, ttftSeconds: 0.25 },
     benchmarks: {
-      "terminal-bench-2-1": 82.7,
-      nl2repo: 54.2,
+      "terminal-bench-2-1": 61.8,
+      nl2repo: 39.4,
+      cybergym: 38.7,
+      deepswe: 7.3,
+      "toolathlon-verified": 49.7,
+      "agents-last-exam": 15.8,
+      "automation-bench": 10.8,
       "lmarena-elo": 1435,
+      "swe-rebench": 38.4,
     },
     links: {
       docs: "https://api-docs.deepseek.com/",
       announcement: "https://api-docs.deepseek.com/updates/",
     },
     summary:
-      "Budget DeepSeek V4 API tier — the July 31 public-beta update reports 82.7 on Terminal-Bench 2.1 and 54.2 on NL2Repo using DeepSeek's minimal harness.",
+      "Budget DeepSeek V4 API tier (Apr 2026 preview). Superseded by DeepSeek-V4-Flash-0731 (public beta), which re-post-trains the same architecture and reports far stronger agent benchmarks.",
+  },
+  {
+    slug: "deepseek-v4-flash-0731",
+    name: "DeepSeek V4 Flash 0731",
+    organization: "DeepSeek",
+    releaseDate: "2026-07-31",
+    openSource: true,
+    license: "MIT",
+    parameters: { total: 304 },
+    contextWindow: 1_000_000,
+    maxOutput: 384_000,
+    modalities: { input: ["text"], output: ["text"] },
+    pricing: { provider: "DeepSeek", inputPer1M: 0.14, outputPer1M: 0.28 },
+    benchmarks: {
+      "terminal-bench-2-1": 82.7,
+      nl2repo: 54.2,
+      cybergym: 76.7,
+      deepswe: 54.4,
+      "toolathlon-verified": 70.3,
+      "agents-last-exam": 25.2,
+      "automation-bench": 25.1,
+    },
+    links: {
+      docs: "https://api-docs.deepseek.com/",
+      modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      announcement: "https://api-docs.deepseek.com/updates/",
+    },
+    summary:
+      "Official DeepSeek-V4-Flash release (Jul 31, 2026 public beta) superseding the preview - same base architecture plus a DSpark speculative-decoding module (304B total), MIT weights on Hugging Face, and agent benchmarks well above V4-Pro-Preview (Terminal-Bench 2.1 82.7, NL2Repo 54.2).",
+  },
+  {
+    slug: "deepseek-v4-pro-0813",
+    name: "DeepSeek V4 Pro 0813",
+    organization: "DeepSeek",
+    releaseDate: "2026-08-13",
+    openSource: false,
+    license: "Proprietary",
+    parameters: { total: 1600, active: 49 },
+    contextWindow: 1_000_000,
+    maxOutput: 384_000,
+    modalities: { input: ["text"], output: ["text"] },
+    pricing: { provider: "DeepSeek", inputPer1M: 0.435, outputPer1M: 0.87 },
+    benchmarks: {
+      hle: 42.7,
+      "terminal-bench-2-1": 87.9,
+      nl2repo: 61.5,
+      cybergym: 83.3,
+      deepswe: 62.7,
+      "toolathlon-verified": 74.1,
+      "agents-last-exam": 25.7,
+      "automation-bench": 31.8,
+      "gpqa-diamond": 92.8,
+      scicode: 49.2,
+    },
+    links: {
+      docs: "https://api-docs.deepseek.com/",
+      announcement: "https://api-docs.deepseek.com/updates/",
+    },
+    summary:
+      "GA release of DeepSeek-V4-Pro (Aug 13, 2026) with substantially enhanced agentic coding (Terminal-Bench 2.1 87.9, NL2Repo 61.5, DeepSWE 62.7), native Responses API support, and low/high/max thinking-effort control. HLE is 42.7 without tools and 60.0 with tools. The hosted 0813 checkpoint weights are not yet published; peak/off-peak API pricing takes effect Aug 16, 2026.",
   },
   {
     slug: "deepseek-v3-2",
@@ -1393,6 +1627,15 @@ export const models: Model[] = [
       "swe-bench-pro": 15.56,
       "lmarena-elo": 1425,
       "webdev-arena": 1324,
+      "swe-bench-multilingual": 59,
+      "swe-rebench": 48.9,
+      "mmlu-pro": 86.2,
+      "gpqa-diamond": 84,
+      hle: 24.6,
+      "aime-2025": 92,
+      scicode: 38.9,
+      livecodebench: 86.2,
+      "terminal-bench-2-1": 46.8,
     },
     links: {
       docs: "https://api-docs.deepseek.com/",
@@ -1422,6 +1665,7 @@ export const models: Model[] = [
       livecodebench: 74.8,
       "aider-polyglot": 76.3,
       "lmarena-elo": 1417,
+      "swe-rebench": 28,
     },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
@@ -1444,15 +1688,17 @@ export const models: Model[] = [
     pricing: { provider: "DeepSeek", inputPer1M: 0.5, outputPer1M: 2.15 },
     speed: { tokensPerSec: 50, ttftSeconds: 1.0 },
     benchmarks: {
-      "mmlu-pro": 85.0,
-      "gpqa-diamond": 81.0,
+      "mmlu-pro": 85,
+      "gpqa-diamond": 81,
       hle: 17.7,
       "aime-2025": 87.5,
-      simpleqa: 27.8,
       "swe-bench-verified": 57.6,
       livecodebench: 73.3,
       "aider-polyglot": 71.6,
       "lmarena-elo": 1422,
+      "swe-rebench": 22.3,
+      "math-500": 98.3,
+      scicode: 40.3,
     },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
@@ -1483,6 +1729,8 @@ export const models: Model[] = [
       nl2repo: 55.9,
       "lmarena-elo": 1491,
       "webdev-arena": 1669,
+      scicode: 52.9,
+      "tau-bench": 55.2,
     },
     links: {
       docs: "https://www.qwencloud.com/models/qwen3.8-max",
@@ -1522,6 +1770,10 @@ export const models: Model[] = [
     speed: { tokensPerSec: 95, ttftSeconds: 0.35 },
     benchmarks: {
       "lmarena-elo": 1458,
+      "gpqa-diamond": 90,
+      hle: 35.6,
+      scicode: 45.5,
+      "terminal-bench-2-1": 61,
     },
     links: {
       docs: "https://www.alibabacloud.com/help/en/model-studio/",
@@ -1566,6 +1818,10 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1443,
       "webdev-arena": 1459,
+      "gpqa-diamond": 88.2,
+      hle: 27.8,
+      scicode: 40.7,
+      "terminal-bench-2-1": 61.4,
     },
     links: {
       docs: "https://www.alibabacloud.com/help/en/model-studio/",
@@ -1594,6 +1850,7 @@ export const models: Model[] = [
       scicode: 53.5,
       "lmarena-elo": 1474,
       "webdev-arena": 1517,
+      "terminal-bench-2-1": 74.5,
     },
     links: {
       docs: "https://www.alibabacloud.com/help/en/model-studio/",
@@ -1618,6 +1875,7 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1442,
       "webdev-arena": 1400,
+      "swe-rebench": 59.9,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen",
@@ -1642,9 +1900,9 @@ export const models: Model[] = [
       "gpqa-diamond": 71.1,
       "math-500": 98,
       "aime-2025": 81.5,
-      "bfcl-v3": 70.8,
       livecodebench: 70.7,
       "lmarena-elo": 1375,
+      "swe-rebench": 18.5,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen3-235B-A22B",
@@ -1666,6 +1924,12 @@ export const models: Model[] = [
     speed: { tokensPerSec: 65, ttftSeconds: 0.5 },
     benchmarks: {
       "lmarena-elo": 1434,
+      "mmlu-pro": 84.1,
+      "gpqa-diamond": 76.4,
+      hle: 11.9,
+      "aime-2025": 80.7,
+      scicode: 38.3,
+      livecodebench: 76.7,
     },
     links: {
       docs: "https://www.alibabacloud.com/help/en/model-studio/",
@@ -1690,11 +1954,10 @@ export const models: Model[] = [
       "gpqa-diamond": 68.4,
       "math-500": 97.2,
       "aime-2025": 72.9,
-      "bfcl-v3": 70.3,
       livecodebench: 65.7,
-      "arena-hard": 93.8,
       "lmarena-elo": 1347,
       "aider-polyglot": 40,
+      "swe-rebench": 8.1,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen3-32B",
@@ -1720,6 +1983,13 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1415,
       "webdev-arena": 1230,
+      "mmlu-pro": 80.7,
+      "gpqa-diamond": 68,
+      hle: 4.2,
+      "aime-2025": 38,
+      scicode: 36.2,
+      livecodebench: 46.5,
+      "terminal-bench-2-1": 12,
     },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
@@ -1744,6 +2014,10 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1427,
       "webdev-arena": 1266,
+      "gpqa-diamond": 74.8,
+      hle: 13.8,
+      scicode: 39.6,
+      "terminal-bench-2-1": 50.6,
     },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
@@ -1784,7 +2058,15 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 0.2, outputPer1M: 0.2 },
     speed: { tokensPerSec: 130, ttftSeconds: 0.2 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 69.3,
+      "gpqa-diamond": 57.2,
+      hle: 4.6,
+      "aime-2025": 30,
+      scicode: 23.6,
+      livecodebench: 35.1,
+      "terminal-bench-2-1": 9.7,
+    },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
     },
@@ -1804,7 +2086,15 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 0.15, outputPer1M: 0.15 },
     speed: { tokensPerSec: 150, ttftSeconds: 0.18 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 64.2,
+      "gpqa-diamond": 47.1,
+      hle: 4.3,
+      "aime-2025": 31.7,
+      scicode: 20.8,
+      livecodebench: 30.3,
+      "terminal-bench-2-1": 4.1,
+    },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
     },
@@ -1824,7 +2114,15 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 0.1, outputPer1M: 0.1 },
     speed: { tokensPerSec: 180, ttftSeconds: 0.15 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 52.4,
+      "gpqa-diamond": 35.8,
+      hle: 5.4,
+      "aime-2025": 22,
+      scicode: 14.4,
+      livecodebench: 24.7,
+      "terminal-bench-2-1": 0,
+    },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
     },
@@ -1891,6 +2189,14 @@ export const models: Model[] = [
     speed: { tokensPerSec: 85, ttftSeconds: 0.35 },
     benchmarks: {
       "webdev-arena": 1194,
+      "mmlu-pro": 76.2,
+      "gpqa-diamond": 59.4,
+      hle: 3.6,
+      "aime-2025": 36.7,
+      scicode: 33.1,
+      livecodebench: 44.8,
+      "terminal-bench-2-1": 30.3,
+      "swe-rebench": 42,
     },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
@@ -1910,7 +2216,15 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 0.4, outputPer1M: 2 },
     speed: { tokensPerSec: 100, ttftSeconds: 0.3 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 68.3,
+      "gpqa-diamond": 58.8,
+      hle: 4.7,
+      "aime-2025": 38.3,
+      scicode: 33.8,
+      livecodebench: 40.6,
+      "terminal-bench-2-1": 13.9,
+    },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
     },
@@ -1933,8 +2247,12 @@ export const models: Model[] = [
     benchmarks: {
       "mmlu-pro": 69.06,
       "gpqa-diamond": 46.13,
-      simpleqa: 12.1,
-      "arena-hard": 43.1,
+      hle: 4.3,
+      "aime-2025": 27,
+      "math-500": 88.3,
+      scicode: 26.4,
+      livecodebench: 27.5,
+      "terminal-bench-2-1": 5.6,
     },
     links: {
       modelCard: "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
@@ -1974,7 +2292,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Mistral / Together (ref.)", inputPer1M: 0.2, outputPer1M: 0.6 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.3 },
-    benchmarks: {},
+    benchmarks: {
+      bigcodebench: 41.8,
+    },
     links: {
       modelCard: "https://huggingface.co/mistralai/Codestral-22B-v0.1",
       docs: "https://docs.mistral.ai/getting-started/models/",
@@ -1997,12 +2317,17 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "video"], output: ["text"] },
     pricing: { provider: "Moonshot", inputPer1M: 3, outputPer1M: 15 },
     speed: { tokensPerSec: 60, ttftSeconds: 0.6 },
+    fast: {
+      pricing: { provider: "Moonshot", inputPer1M: 4.5, outputPer1M: 22.5 },
+      speed: { tokensPerSec: 95, ttftSeconds: 0.35 },
+    },
     benchmarks: {
       "gpqa-diamond": 93.5,
       hle: 43.5,
       scicode: 58.7,
       "terminal-bench-2-1": 88.3,
       cursorbench: 60.8,
+      matharena: 69.7,
     },
     links: {
       modelCard: "https://huggingface.co/moonshotai/Kimi-K3",
@@ -2010,33 +2335,6 @@ export const models: Model[] = [
     },
     summary:
       "Largest open-weight model (2.8T MoE / 104B active) — official card reports strong reasoning and agentic coding results.",
-  },
-  {
-    slug: "kimi-k3-fast",
-    name: "Kimi K3 Fast",
-    organization: "Moonshot",
-    releaseDate: "2026-07-27",
-    openSource: false,
-    license: "Proprietary",
-    parameters: { total: 2800, active: 104 },
-    contextWindow: 1_048_576,
-    maxOutput: 131_072,
-    modalities: { input: ["text", "image", "video"], output: ["text"] },
-    pricing: { provider: "Moonshot", inputPer1M: 4.5, outputPer1M: 22.5 },
-    speed: { tokensPerSec: 95, ttftSeconds: 0.35 },
-    benchmarks: {
-      "gpqa-diamond": 93.5,
-      hle: 43.5,
-      scicode: 58.7,
-      "terminal-bench-2-1": 88.3,
-      cursorbench: 60.8,
-    },
-    links: {
-      docs: "https://platform.kimi.ai/docs/pricing/chat-k3",
-      announcement: "https://www.kimi.com/blog/kimi-k3",
-    },
-    summary:
-      "Fast-inference Kimi K3 variant — same 2.8T MoE / 104B active and 1M context at ~1.5× Standard API rates; no separate public quality scorecard retained.",
   },
   {
     slug: "kimi-k2-7-code",
@@ -2054,6 +2352,10 @@ export const models: Model[] = [
     benchmarks: {
       cursorbench: 49.7,
       "webdev-arena": 1473,
+      "gpqa-diamond": 89.6,
+      hle: 35,
+      scicode: 47.5,
+      "terminal-bench-2-1": 67.4,
     },
     links: {
       modelCard: "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
@@ -2085,6 +2387,7 @@ export const models: Model[] = [
       "swe-bench-multilingual": 73.0,
       livecodebench: 85.0,
       scicode: 48.7,
+      "swe-rebench": 49,
     },
     links: {
       modelCard: "https://huggingface.co/moonshotai/Kimi-K2.5",
@@ -2108,6 +2411,8 @@ export const models: Model[] = [
     speed: { tokensPerSec: 168, ttftSeconds: 0.35 },
     benchmarks: {
       cursorbench: 55,
+      "terminal-bench-3": 4.6,
+      "swe-rebench": 57,
     },
     links: {
       docs: "https://docs.z.ai/",
@@ -2131,6 +2436,9 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1457,
       "webdev-arena": 1436,
+      "swe-bench-multilingual": 69.7,
+      "swe-rebench": 53.3,
+      "swe-bench-verified": 72.8,
     },
     links: {
       modelCard: "https://huggingface.co/zai-org",
@@ -2153,6 +2461,7 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1442,
       "webdev-arena": 1434,
+      "swe-rebench": 45.5,
     },
     links: {
       modelCard: "https://huggingface.co/zai-org",
@@ -2177,10 +2486,14 @@ export const models: Model[] = [
     speed: { tokensPerSec: 150, ttftSeconds: 0.15 },
     benchmarks: {
       "gpqa-diamond": 56.1,
-      simpleqa: 3,
       "mmlu-pro": 70.4,
-      "arena-hard": 75.4,
       "lmarena-elo": 1256,
+      hle: 3.8,
+      "aime-2025": 18,
+      "math-500": 81,
+      scicode: 26,
+      livecodebench: 23.1,
+      bigcodebench: 45.5,
     },
     links: {
       modelCard: "https://huggingface.co/microsoft/phi-4",
@@ -2206,7 +2519,6 @@ export const models: Model[] = [
       "gpqa-diamond": 65.8,
       "aime-2025": 62.9,
       livecodebench: 53.8,
-      "arena-hard": 73.3,
     },
     links: {
       modelCard: "https://huggingface.co/microsoft/Phi-4-reasoning",
@@ -2231,6 +2543,10 @@ export const models: Model[] = [
       "terminal-bench-2-1": 66,
       "lmarena-elo": 1443,
       "webdev-arena": 1491,
+      "gpqa-diamond": 92.9,
+      hle: 39,
+      scicode: 45.4,
+      "swe-rebench": 46.4,
     },
     links: {
       docs: "https://www.minimax.io/",
@@ -2254,6 +2570,12 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1390,
       "webdev-arena": 1384,
+      "gpqa-diamond": 84.8,
+      hle: 20.5,
+      scicode: 42.6,
+      "swe-bench-multilingual": 68.3,
+      "swe-rebench": 47.7,
+      "swe-bench-verified": 75.8,
     },
     links: {
       docs: "https://www.minimax.io/",
@@ -2272,9 +2594,13 @@ export const models: Model[] = [
     contextWindow: 1_000_000,
     maxOutput: 64_000,
     modalities: { input: ["text"], output: ["text"] },
-    pricing: undefined,
     speed: { tokensPerSec: 55, ttftSeconds: 0.5 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 78,
+      hle: 33.7,
+      scicode: 35.4,
+      "terminal-bench-2-1": 50.2,
+    },
     links: {
       modelCard: "https://huggingface.co/meituan-longcat",
     },
@@ -2348,6 +2674,7 @@ export const models: Model[] = [
       "terminal-bench-2-1": 68.9,
       "lmarena-elo": 1494,
       "webdev-arena": 1558,
+      "swe-rebench": 53.1,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -2370,6 +2697,9 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1497,
       "webdev-arena": 1537,
+      "swe-rebench": 53.3,
+      "swe-bench-verified": 75.6,
+      "swe-bench-multilingual": 72,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -2389,9 +2719,21 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 10, outputPer1M: 50 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.75 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 92.6,
+      hle: 32.5,
+      "aime-2025": 97,
+      "swe-bench-verified": 86.3,
+      "swe-bench-pro": 80,
+      livecodebench: 88.1,
+      "terminal-bench-2-1": 83.8,
+      "terminal-bench-3": 34.1,
+      cursorbench: 70.5,
+      cybergym: 83.8,
+    },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
+      announcement: "https://www.anthropic.com/news/claude-fable-5-mythos-5",
     },
     summary:
       "Limited-availability Mythos-class model (Project Glasswing) - Fable's unrestricted sibling for trusted partners.",
@@ -2411,6 +2753,8 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1455,
       "webdev-arena": 1386,
+      "swe-rebench": 52.4,
+      "swe-bench-multilingual": 67,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -2434,6 +2778,7 @@ export const models: Model[] = [
       "swe-bench-verified": 74.5,
       "lmarena-elo": 1447,
       "webdev-arena": 1389,
+      "swe-rebench": 43.5,
     },
     links: {
       docs: "https://platform.claude.com/docs/en/about-claude/models/overview",
@@ -2507,6 +2852,7 @@ export const models: Model[] = [
       "swe-bench-verified": 68.1,
       "aider-polyglot": 58.2,
       "lmarena-elo": 1390,
+      "swe-rebench": 27.5,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -2529,6 +2875,12 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1348,
       "aider-polyglot": 53.8,
+      "mmlu-pro": 79.1,
+      "gpqa-diamond": 74.8,
+      hle: 7.9,
+      "math-500": 97.3,
+      scicode: 39.9,
+      livecodebench: 71.7,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -2550,6 +2902,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 40, ttftSeconds: 2.5 },
     benchmarks: {
       "aider-polyglot": 84.9,
+      "gpqa-diamond": 84.5,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -2572,6 +2925,12 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1402,
       "aider-polyglot": 61.7,
+      "mmlu-pro": 84.1,
+      "gpqa-diamond": 74.7,
+      hle: 7,
+      "math-500": 97,
+      scicode: 35.8,
+      livecodebench: 67.9,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -2616,10 +2975,10 @@ export const models: Model[] = [
       "gpqa-diamond": 80.1,
       hle: 14.9,
       "aime-2025": 92.5,
-      simpleqa: 16.8,
       "swe-bench-verified": 62.4,
-      "aider-polyglot": 44.4,
+      "aider-polyglot": 41.8,
       "lmarena-elo": 1352,
+      "swe-rebench": 27.3,
     },
     links: {
       modelCard: "https://huggingface.co/openai/gpt-oss-120b",
@@ -2644,10 +3003,10 @@ export const models: Model[] = [
       "gpqa-diamond": 71.5,
       hle: 10.9,
       "aime-2025": 91.7,
-      simpleqa: 6.7,
       "swe-bench-verified": 60.7,
       "aider-polyglot": 34.2,
       "lmarena-elo": 1318,
+      "swe-rebench": 8.1,
     },
     links: {
       modelCard: "https://huggingface.co/openai/gpt-oss-20b",
@@ -2670,6 +3029,10 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1432,
       "webdev-arena": 1254,
+      "gpqa-diamond": 82.2,
+      hle: 17.2,
+      scicode: 41.9,
+      "terminal-bench-2-1": 31.1,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -2729,6 +3092,13 @@ export const models: Model[] = [
     speed: { tokensPerSec: 75, ttftSeconds: 0.45 },
     benchmarks: {
       "aider-polyglot": 53.3,
+      "mmlu-pro": 79.9,
+      "gpqa-diamond": 69.3,
+      hle: 4.1,
+      "aime-2025": 58,
+      "math-500": 87,
+      scicode: 36.8,
+      livecodebench: 42.5,
     },
     links: {
       docs: "https://docs.x.ai/docs/models",
@@ -2752,8 +3122,15 @@ export const models: Model[] = [
     benchmarks: {
       "mmlu-pro": 75.9,
       "math-500": 90.2,
-      simpleqa: 24.9,
       "lmarena-elo": 1359,
+      bigcodebench: 50,
+      "swe-rebench": 23.3,
+      "aime-2025": 26,
+      "gpqa-diamond": 55.7,
+      hle: 2.9,
+      scicode: 35.4,
+      "terminal-bench-2-1": 16.9,
+      livecodebench: 49.6,
     },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-V3",
@@ -2775,11 +3152,10 @@ export const models: Model[] = [
     pricing: { provider: "DeepSeek", inputPer1M: 0.55, outputPer1M: 2.19 },
     speed: { tokensPerSec: 45, ttftSeconds: 1.2 },
     benchmarks: {
-      "mmlu-pro": 84.0,
+      "mmlu-pro": 84,
       "gpqa-diamond": 71.5,
-      "aime-2025": 70.0,
+      "aime-2025": 70,
       "math-500": 97.3,
-      simpleqa: 30.1,
       "swe-bench-verified": 49.2,
       "aider-polyglot": 53.3,
       "lmarena-elo": 1398,
@@ -2805,6 +3181,14 @@ export const models: Model[] = [
     speed: { tokensPerSec: 65, ttftSeconds: 0.45 },
     benchmarks: {
       "swe-bench-pro": 38.7,
+      "aime-2025": 39.3,
+      "gpqa-diamond": 61.8,
+      hle: 4.5,
+      livecodebench: 58.5,
+      "math-500": 94.2,
+      "mmlu-pro": 78.8,
+      scicode: 35.9,
+      "swe-rebench": 36.3,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
@@ -2829,7 +3213,8 @@ export const models: Model[] = [
       "lmarena-elo": 1303,
       "mmlu-pro": 71.1,
       livecodebench: 55.5,
-      "arena-hard": 81.2,
+      "swe-rebench": 10.1,
+      bigcodebench: 45.8,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen2.5-72B-Instruct",
@@ -2853,7 +3238,7 @@ export const models: Model[] = [
     benchmarks: {
       "mmlu-pro": 69,
       livecodebench: 51.2,
-      "arena-hard": 74.5,
+      bigcodebench: 45,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen2.5-32B-Instruct",
@@ -2877,7 +3262,7 @@ export const models: Model[] = [
     benchmarks: {
       "mmlu-pro": 63.7,
       livecodebench: 42.6,
-      "arena-hard": 68.3,
+      bigcodebench: 39.8,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen2.5-14B-Instruct",
@@ -2923,9 +3308,14 @@ export const models: Model[] = [
     benchmarks: {
       "mmlu-pro": 67.5,
       "gpqa-diamond": 42.4,
-      simpleqa: 10,
       livecodebench: 29.7,
       "lmarena-elo": 1338,
+      "aime-2025": 20.7,
+      hle: 4.4,
+      "math-500": 88.3,
+      scicode: 21.2,
+      "terminal-bench-2-1": 4.5,
+      "swe-rebench": 5.4,
     },
     links: {
       modelCard: "https://huggingface.co/google/gemma-3-27b-it",
@@ -2950,6 +3340,10 @@ export const models: Model[] = [
       "mmlu-pro": 73.3,
       "gpqa-diamond": 49,
       livecodebench: 27.7,
+      "aime-2025": 3,
+      hle: 4,
+      "math-500": 70.3,
+      scicode: 29.9,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct",
@@ -3040,6 +3434,14 @@ export const models: Model[] = [
     speed: { tokensPerSec: 75, ttftSeconds: 0.4 },
     benchmarks: {
       "lmarena-elo": 1354,
+      "mmlu-pro": 71.2,
+      "gpqa-diamond": 52.7,
+      hle: 4,
+      "aime-2025": 13,
+      "math-500": 81.9,
+      scicode: 28.1,
+      livecodebench: 28.7,
+      "terminal-bench-2-1": 22.8,
     },
     links: {
       docs: "https://docs.cohere.com/",
@@ -3061,6 +3463,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 200, ttftSeconds: 0.15 },
     benchmarks: {
       "lmarena-elo": 1328,
+      "aider-polyglot": 12.9,
     },
     links: {
       docs: "https://platform.lingyiwanwu.com/",
@@ -3083,6 +3486,12 @@ export const models: Model[] = [
     speed: { tokensPerSec: 55, ttftSeconds: 0.4 },
     benchmarks: {
       "lmarena-elo": 1305,
+      "mmlu-pro": 75.9,
+      "gpqa-diamond": 61,
+      hle: 6.4,
+      "aime-2025": 73.7,
+      scicode: 28.6,
+      livecodebench: 67.2,
     },
     links: {
       modelCard: "https://huggingface.co/allenai/OLMo-3-32B-Think",
@@ -3225,6 +3634,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 90, ttftSeconds: 0.35 },
     benchmarks: {
       "lmarena-elo": 1250,
+      bigcodebench: 33.8,
     },
     links: {
       docs: "https://docs.cohere.com/docs/command-r",
@@ -3368,6 +3778,12 @@ export const models: Model[] = [
     speed: { tokensPerSec: 60, ttftSeconds: 0.7 },
     benchmarks: {
       "lmarena-elo": 1289,
+      "mmlu-pro": 57.2,
+      "gpqa-diamond": 42.7,
+      hle: 4.1,
+      "math-500": 60.6,
+      scicode: 16.3,
+      livecodebench: 14.3,
     },
     links: {
       docs: "https://docs.ai21.com/docs/jamba-foundation-models",
@@ -3390,7 +3806,14 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Perplexity", inputPer1M: 1, outputPer1M: 1 },
     speed: { tokensPerSec: 122, ttftSeconds: 2.3 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 68.9,
+      "gpqa-diamond": 47.1,
+      hle: 4.9,
+      "math-500": 81.7,
+      scicode: 22.9,
+      livecodebench: 29.5,
+    },
     links: {
       docs: "https://docs.perplexity.ai/docs/sonar/models/sonar",
     },
@@ -3428,7 +3851,14 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Perplexity", inputPer1M: 3, outputPer1M: 15 },
     speed: { tokensPerSec: 81, ttftSeconds: 2.1 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 75.5,
+      "gpqa-diamond": 57.8,
+      hle: 6.6,
+      "math-500": 74.5,
+      scicode: 22.6,
+      livecodebench: 27.5,
+    },
     links: {
       docs: "https://docs.perplexity.ai/docs/sonar/models/sonar-pro",
       announcement: "https://www.perplexity.ai/hub/blog/introducing-the-sonar-pro-api",
@@ -3448,7 +3878,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Perplexity", inputPer1M: 2, outputPer1M: 8 },
     speed: { tokensPerSec: 98, ttftSeconds: 6.8 },
-    benchmarks: {},
+    benchmarks: {
+      "math-500": 95.7,
+    },
     links: {
       docs: "https://docs.perplexity.ai/docs/sonar/models",
     },
@@ -3473,6 +3905,10 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1306,
       "webdev-arena": 1192,
+      "gpqa-diamond": 43.3,
+      hle: 3.8,
+      scicode: 21.8,
+      "terminal-bench-2-1": 3.4,
     },
     links: {
       modelCard: "https://huggingface.co/ibm-granite/granite-4.1-8b",
@@ -3516,7 +3952,14 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "IBM watsonx", inputPer1M: 0.0636, outputPer1M: 0.265 },
     speed: { tokensPerSec: 130, ttftSeconds: 0.15 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 44.7,
+      "gpqa-diamond": 33.6,
+      hle: 5,
+      "aime-2025": 6,
+      scicode: 11.9,
+      livecodebench: 18,
+    },
     links: {
       docs: "https://www.ibm.com/products/watsonx-ai/pricing",
       modelCard: "https://huggingface.co/ibm-granite",
@@ -3588,6 +4031,14 @@ export const models: Model[] = [
     speed: { tokensPerSec: 60, ttftSeconds: 0.45 },
     benchmarks: {
       "lmarena-elo": 1299,
+      bigcodebench: 38.7,
+      "aime-2025": 11,
+      "gpqa-diamond": 46.5,
+      hle: 4.2,
+      livecodebench: 16.9,
+      "math-500": 73.3,
+      "mmlu-pro": 69,
+      scicode: 23.3,
     },
     links: {
       modelCard: "https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct",
@@ -3613,7 +4064,13 @@ export const models: Model[] = [
     speed: { tokensPerSec: 140, ttftSeconds: 0.18 },
     benchmarks: {
       "mmlu-pro": 52.8,
-      "arena-hard": 32.8,
+      "aime-2025": 6.7,
+      "gpqa-diamond": 33.1,
+      hle: 4.5,
+      livecodebench: 12.6,
+      "math-500": 69.6,
+      scicode: 10.8,
+      "terminal-bench-2-1": 0.4,
     },
     links: {
       modelCard: "https://huggingface.co/microsoft/Phi-4-mini-instruct",
@@ -3634,7 +4091,14 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "audio"], output: ["text"] },
     pricing: { provider: "Azure AI Foundry", inputPer1M: 0.08, outputPer1M: 0.32 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.35 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 31.5,
+      hle: 5,
+      livecodebench: 13.1,
+      "math-500": 69.3,
+      "mmlu-pro": 48.5,
+      scicode: 11,
+    },
     links: {
       modelCard: "https://huggingface.co/microsoft/Phi-4-multimodal-instruct",
       docs: "https://azure.microsoft.com/en-us/products/phi",
@@ -3675,7 +4139,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Azure AI Foundry", inputPer1M: 0.17, outputPer1M: 0.68 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.28 },
-    benchmarks: {},
+    benchmarks: {
+      bigcodebench: 37.6,
+    },
     links: {
       modelCard: "https://huggingface.co/microsoft/Phi-3-medium-128k-instruct",
     },
@@ -3695,7 +4161,16 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Azure AI Foundry", inputPer1M: 0.13, outputPer1M: 0.52 },
     speed: { tokensPerSec: 140, ttftSeconds: 0.18 },
-    benchmarks: {},
+    benchmarks: {
+      "aime-2025": 0.3,
+      "gpqa-diamond": 31.9,
+      hle: 5,
+      livecodebench: 11.6,
+      "math-500": 45.7,
+      "mmlu-pro": 43.5,
+      scicode: 9,
+      bigcodebench: 29.6,
+    },
     links: {
       modelCard: "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
     },
@@ -3720,6 +4195,12 @@ export const models: Model[] = [
     speed: { tokensPerSec: 55, ttftSeconds: 0.5 },
     benchmarks: {
       "lmarena-elo": 1195,
+      "mmlu-pro": 39.7,
+      "gpqa-diamond": 33.1,
+      hle: 2.9,
+      "math-500": 27.9,
+      scicode: 11.8,
+      livecodebench: 9.3,
     },
     links: {
       modelCard: "https://huggingface.co/databricks/dbrx-instruct",
@@ -3852,7 +4333,12 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Upstage", inputPer1M: 0.15, outputPer1M: 0.6 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.3 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 72.4,
+      hle: 10.3,
+      scicode: 24.7,
+      "terminal-bench-2-1": 12,
+    },
     links: {
       docs: "https://developers.upstage.ai/",
       modelCard: "https://huggingface.co/upstage",
@@ -3895,10 +4381,13 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Cursor", inputPer1M: 0.5, outputPer1M: 2.5 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.35 },
+    fast: {
+      pricing: { provider: "Cursor", inputPer1M: 3, outputPer1M: 15 },
+      speed: { tokensPerSec: 160, ttftSeconds: 0.2 },
+    },
     benchmarks: {
       "swe-bench-multilingual": 79.8,
       cursorbench: 56.1,
-      "vibe-code-bench": 49.61,
     },
     links: {
       docs: "https://cursor.com/docs/models/cursor-composer-2-5",
@@ -3906,31 +4395,6 @@ export const models: Model[] = [
     },
     summary:
       "Cursor's own agentic coding model (standard tier) — Cursor reports 69.3% Terminal-Bench 2.0 and 79.8% SWE-bench Multilingual; draws from the Cursor Models usage pool at $0.50/$2.50.",
-  },
-  {
-    slug: "composer-2-5-fast",
-    name: "Composer 2.5 Fast",
-    organization: "Cursor",
-    releaseDate: "2026-05-18",
-    openSource: false,
-    license: "Proprietary",
-    contextWindow: 200_000,
-    maxOutput: 64_000,
-    modalities: { input: ["text"], output: ["text"] },
-    pricing: { provider: "Cursor", inputPer1M: 3, outputPer1M: 15 },
-    speed: { tokensPerSec: 160, ttftSeconds: 0.2 },
-    benchmarkAliasOf: "composer-2-5",
-    benchmarks: {
-      "swe-bench-multilingual": 79.8,
-      cursorbench: 56.1,
-      "vibe-code-bench": 49.61,
-    },
-    links: {
-      docs: "https://cursor.com/docs/models/cursor-composer-2-5",
-      announcement: "https://cursor.com/composer",
-    },
-    summary:
-      "Same intelligence as Composer 2.5 Standard with higher throughput - the default interactive variant in the Cursor IDE ($3/$15).",
   },
   {
     slug: "composer-2",
@@ -3944,31 +4408,16 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Cursor", inputPer1M: 0.5, outputPer1M: 2.5 },
     speed: { tokensPerSec: 85, ttftSeconds: 0.4 },
+    fast: {
+      pricing: { provider: "Cursor", inputPer1M: 1.5, outputPer1M: 7.5 },
+      speed: { tokensPerSec: 140, ttftSeconds: 0.25 },
+    },
     benchmarks: {},
     links: {
       announcement: "https://cursor.com/changelog/composer-2",
     },
     summary:
       "Prior Cursor in-house coding model (Mar 2026) - continued-pretrain + RL on long-horizon tasks; Cursor cites 61.7% Terminal-Bench 2.0 / 73.7% SWE-bench Multilingual. Terminal-Bench 2.0 score omitted from the 2.1 column.",
-  },
-  {
-    slug: "composer-2-fast",
-    name: "Composer 2 Fast",
-    organization: "Cursor",
-    releaseDate: "2026-03-19",
-    openSource: false,
-    license: "Proprietary",
-    contextWindow: 200_000,
-    maxOutput: 64_000,
-    modalities: { input: ["text"], output: ["text"] },
-    pricing: { provider: "Cursor", inputPer1M: 1.5, outputPer1M: 7.5 },
-    speed: { tokensPerSec: 140, ttftSeconds: 0.25 },
-    benchmarks: {},
-    links: {
-      announcement: "https://cursor.com/changelog/composer-2",
-    },
-    summary:
-      "Faster Composer 2 tier with identical intelligence - former IDE default before Composer 2.5 Fast ($1.50/$7.50).",
   },
   {
     slug: "cursor-grok-4-5",
@@ -3982,32 +4431,19 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Cursor", inputPer1M: 2, outputPer1M: 6 },
     speed: { tokensPerSec: 95, ttftSeconds: 0.4 },
-    benchmarks: {},
+    fast: {
+      pricing: { provider: "Cursor", inputPer1M: 4, outputPer1M: 18 },
+      speed: { tokensPerSec: 140, ttftSeconds: 0.25 },
+    },
+    benchmarks: {
+      cursorbench: 66.7,
+    },
     links: {
       docs: "https://cursor.com/docs/models/grok-4-5",
       announcement: "https://cursor.com/help/models-and-usage/grok-4-5",
     },
     summary:
       "Cursor's flagship - jointly trained with SpaceXAI on Cursor agent data; effort levels (low/medium/high) for hard long-running work. Distinct from the public xAI Grok 4.5 API SKU.",
-  },
-  {
-    slug: "cursor-grok-4-5-fast",
-    name: "Cursor Grok 4.5 Fast",
-    organization: "Cursor",
-    releaseDate: "2026-07-09",
-    openSource: false,
-    license: "Proprietary",
-    contextWindow: 500_000,
-    maxOutput: 128_000,
-    modalities: { input: ["text", "image"], output: ["text"] },
-    pricing: { provider: "Cursor", inputPer1M: 4, outputPer1M: 18 },
-    speed: { tokensPerSec: 140, ttftSeconds: 0.25 },
-    benchmarks: {},
-    links: {
-      docs: "https://cursor.com/docs/models/grok-4-5",
-    },
-    summary:
-      "Higher-throughput Cursor Grok 4.5 variant at 2x input / 3x output list price - for interactive sessions that need lower latency.",
   },
 
   // ─── Expanded catalog (classics + 2025–26 gaps) ───────────
@@ -4044,6 +4480,13 @@ export const models: Model[] = [
     speed: { tokensPerSec: 90, ttftSeconds: 1.2 },
     benchmarks: {
       "lmarena-elo": 1337,
+      "aider-polyglot": 32.9,
+      "mmlu-pro": 74.2,
+      "gpqa-diamond": 60.3,
+      hle: 3.6,
+      "math-500": 94.4,
+      scicode: 32.3,
+      livecodebench: 57.6,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -4063,7 +4506,13 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 15, outputPer1M: 60 },
     speed: { tokensPerSec: 40, ttftSeconds: 4 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 84.8,
+      "gpqa-diamond": 76.5,
+      "aime-2025": 79.3,
+      "math-500": 92.4,
+      "lmarena-elo": 1388.5,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
     },
@@ -4084,6 +4533,12 @@ export const models: Model[] = [
     speed: { tokensPerSec: 55, ttftSeconds: 0.6 },
     benchmarks: {
       "lmarena-elo": 1324,
+      "mmlu-pro": 69.4,
+      hle: 3.1,
+      "math-500": 73.7,
+      scicode: 31.9,
+      livecodebench: 29.1,
+      bigcodebench: 48.2,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -4103,7 +4558,11 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 30, outputPer1M: 60 },
     speed: { tokensPerSec: 35, ttftSeconds: 0.8 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 56.2,
+      "gpqa-diamond": 34.9,
+      "math-500": 56.8,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
     },
@@ -4164,7 +4623,11 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 0.5, outputPer1M: 1.5 },
     speed: { tokensPerSec: 120, ttftSeconds: 0.25 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 46.2,
+      "gpqa-diamond": 29.7,
+      "math-500": 44.1,
+    },
     links: {
       docs: "https://platform.openai.com/docs/models",
     },
@@ -4185,6 +4648,13 @@ export const models: Model[] = [
     speed: { tokensPerSec: 40, ttftSeconds: 0.9 },
     benchmarks: {
       "lmarena-elo": 1322,
+      "mmlu-pro": 69.6,
+      "gpqa-diamond": 48.9,
+      hle: 2.8,
+      "math-500": 64.1,
+      scicode: 23.3,
+      livecodebench: 27.9,
+      bigcodebench: 45.5,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -4206,6 +4676,14 @@ export const models: Model[] = [
     speed: { tokensPerSec: 70, ttftSeconds: 0.45 },
     benchmarks: {
       "lmarena-elo": 1343,
+      bigcodebench: 46.8,
+      "gpqa-diamond": 56,
+      hle: 3.2,
+      "math-500": 69.5,
+      "mmlu-pro": 75.1,
+      scicode: 31.6,
+      "swe-rebench": 30.3,
+      "swe-bench-verified": 33.6,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -4229,6 +4707,12 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1373,
       "aider-polyglot": 51.6,
+      "gpqa-diamond": 59.9,
+      hle: 3.7,
+      "math-500": 77.1,
+      "mmlu-pro": 77.2,
+      scicode: 36.6,
+      livecodebench: 48.7,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -4274,6 +4758,12 @@ export const models: Model[] = [
     speed: { tokensPerSec: 140, ttftSeconds: 0.2 },
     benchmarks: {
       "lmarena-elo": 1261,
+      "gpqa-diamond": 37.4,
+      hle: 4.1,
+      "math-500": 39.4,
+      scicode: 18.6,
+      livecodebench: 15.4,
+      bigcodebench: 39.4,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -4295,6 +4785,13 @@ export const models: Model[] = [
     speed: { tokensPerSec: 65, ttftSeconds: 0.5 },
     benchmarks: {
       "lmarena-elo": 1281,
+      "mmlu-pro": 57.9,
+      "gpqa-diamond": 40,
+      hle: 3.6,
+      "math-500": 41.4,
+      scicode: 22.9,
+      livecodebench: 17.5,
+      bigcodebench: 42.7,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -4317,6 +4814,7 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1413,
       "aider-polyglot": 70.7,
+      livecodebench: 62.4,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -4336,7 +4834,14 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 8, outputPer1M: 24 },
     speed: { tokensPerSec: 50, ttftSeconds: 0.7 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 49.5,
+      "gpqa-diamond": 31.9,
+      hle: 3.9,
+      "math-500": 37.4,
+      scicode: 18.4,
+      livecodebench: 19.5,
+    },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
     },
@@ -4355,7 +4860,12 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 8, outputPer1M: 24 },
     speed: { tokensPerSec: 45, ttftSeconds: 0.8 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 34.4,
+      livecodebench: 17.1,
+      "mmlu-pro": 48.6,
+      scicode: 19.4,
+    },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
     },
@@ -4415,7 +4925,9 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "audio", "video"], output: ["text"] },
     pricing: { provider: "Google", inputPer1M: 0.1, outputPer1M: 0.4 },
     speed: { tokensPerSec: 180, ttftSeconds: 0.2 },
-    benchmarks: {},
+    benchmarks: {
+      "swe-rebench": 9.1,
+    },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
     },
@@ -4472,7 +4984,14 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Google", inputPer1M: 0.5, outputPer1M: 1.5 },
     speed: { tokensPerSec: 80, ttftSeconds: 0.4 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 43.1,
+      "gpqa-diamond": 27.7,
+      hle: 4.2,
+      "math-500": 40.3,
+      scicode: 11.7,
+      livecodebench: 11.6,
+    },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
     },
@@ -4529,7 +5048,14 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "audio", "video"], output: ["text"] },
     pricing: { provider: "Google", inputPer1M: 0.0375, outputPer1M: 0.15 },
     speed: { tokensPerSec: 180, ttftSeconds: 0.2 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 56.9,
+      "gpqa-diamond": 35.9,
+      hle: 4.7,
+      "math-500": 68.9,
+      scicode: 22.9,
+      livecodebench: 21.7,
+    },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
     },
@@ -4551,6 +5077,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 80, ttftSeconds: 0.35 },
     benchmarks: {
       "lmarena-elo": 1289,
+      bigcodebench: 42.8,
     },
     links: {
       modelCard: "https://huggingface.co/google/gemma-2-27b-it",
@@ -4573,6 +5100,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 140, ttftSeconds: 0.2 },
     benchmarks: {
       "lmarena-elo": 1267,
+      bigcodebench: 34.7,
     },
     links: {
       modelCard: "https://huggingface.co/google/gemma-2-9b-it",
@@ -4618,9 +5146,13 @@ export const models: Model[] = [
     benchmarks: {
       "mmlu-pro": 43.6,
       "gpqa-diamond": 30.8,
-      simpleqa: 4.0,
       livecodebench: 12.6,
       "lmarena-elo": 1303,
+      "aime-2025": 12.7,
+      hle: 5.3,
+      "math-500": 76.6,
+      scicode: 7.3,
+      "terminal-bench-2-1": 0.4,
     },
     links: {
       modelCard: "https://huggingface.co/google/gemma-3-4b-it",
@@ -4725,6 +5257,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 55, ttftSeconds: 0.4 },
     benchmarks: {
       "lmarena-elo": 1276,
+      bigcodebench: 43.6,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
@@ -4747,6 +5280,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 200, ttftSeconds: 0.12 },
     benchmarks: {
       "lmarena-elo": 1223,
+      bigcodebench: 31.9,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
@@ -4769,6 +5303,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 220, ttftSeconds: 0.1 },
     benchmarks: {
       "lmarena-elo": 1166,
+      bigcodebench: 23.4,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct",
@@ -4791,6 +5326,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 280, ttftSeconds: 0.08 },
     benchmarks: {
       "lmarena-elo": 1111,
+      bigcodebench: 8.2,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct",
@@ -4833,6 +5369,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 35, ttftSeconds: 0.55 },
     benchmarks: {
       "lmarena-elo": 1119,
+      bigcodebench: 40.7,
     },
     links: {
       modelCard: "https://huggingface.co/codellama/CodeLlama-70b-Instruct-hf",
@@ -4855,6 +5392,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 50, ttftSeconds: 0.45 },
     benchmarks: {
       "lmarena-elo": 1136,
+      bigcodebench: 29,
     },
     links: {
       modelCard: "https://huggingface.co/codellama/CodeLlama-34b-Instruct-hf",
@@ -4877,6 +5415,8 @@ export const models: Model[] = [
     speed: { tokensPerSec: 85, ttftSeconds: 0.35 },
     benchmarks: {
       "lmarena-elo": 1265,
+      "math-500": 74.3,
+      bigcodebench: 48.2,
     },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct",
@@ -4897,7 +5437,14 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "DeepSeek / Together (ref.)", inputPer1M: 0.1, outputPer1M: 0.2 },
     speed: { tokensPerSec: 110, ttftSeconds: 0.28 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 31.9,
+      hle: 5.4,
+      livecodebench: 15.8,
+      "mmlu-pro": 42.9,
+      scicode: 13.9,
+      bigcodebench: 36.8,
+    },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
     },
@@ -4963,6 +5510,11 @@ export const models: Model[] = [
       "gpqa-diamond": 65.2,
       "math-500": 94.5,
       livecodebench: 57.5,
+      "mmlu-pro": 79.5,
+      hle: 5.1,
+      "aime-2025": 53.7,
+      scicode: 31.3,
+      bigcodebench: 35.3,
     },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
@@ -4987,6 +5539,11 @@ export const models: Model[] = [
       "gpqa-diamond": 62.1,
       "math-500": 94.3,
       livecodebench: 57.2,
+      "mmlu-pro": 73.9,
+      hle: 4.6,
+      "aime-2025": 63,
+      scicode: 37.6,
+      bigcodebench: 43.9,
     },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
@@ -5011,6 +5568,11 @@ export const models: Model[] = [
       "gpqa-diamond": 59.1,
       "math-500": 93.9,
       livecodebench: 53.1,
+      "mmlu-pro": 74,
+      hle: 4.1,
+      "aime-2025": 55.7,
+      scicode: 23.9,
+      bigcodebench: 38.1,
     },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
@@ -5035,6 +5597,10 @@ export const models: Model[] = [
       "gpqa-diamond": 49,
       "math-500": 89.1,
       livecodebench: 39.6,
+      "mmlu-pro": 54.3,
+      "aime-2025": 41.3,
+      scicode: 11.9,
+      bigcodebench: 10.6,
     },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
@@ -5074,7 +5640,15 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 4, outputPer1M: 12 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.55 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 35.1,
+      hle: 3.5,
+      livecodebench: 17.8,
+      "math-500": 52.7,
+      "mmlu-pro": 51.5,
+      scicode: 20.8,
+      bigcodebench: 30,
+    },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
     },
@@ -5093,7 +5667,14 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 0.2, outputPer1M: 0.6 },
     speed: { tokensPerSec: 110, ttftSeconds: 0.25 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 38.1,
+      hle: 4.3,
+      livecodebench: 14.1,
+      "math-500": 56.3,
+      "mmlu-pro": 52.9,
+      scicode: 15.6,
+    },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
     },
@@ -5113,7 +5694,15 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 1.2, outputPer1M: 1.2 },
     speed: { tokensPerSec: 50, ttftSeconds: 0.5 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 33.2,
+      hle: 4,
+      livecodebench: 14.8,
+      "math-500": 54.5,
+      "mmlu-pro": 53.7,
+      scicode: 18.8,
+      bigcodebench: 40.6,
+    },
     links: {
       modelCard: "https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1",
     },
@@ -5133,7 +5722,14 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.24, outputPer1M: 0.24 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.3 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 29.2,
+      hle: 4.7,
+      livecodebench: 6.6,
+      "math-500": 29.9,
+      "mmlu-pro": 38.7,
+      scicode: 2.8,
+    },
     links: {
       modelCard: "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
     },
@@ -5153,7 +5749,15 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 2, outputPer1M: 6 },
     speed: { tokensPerSec: 60, ttftSeconds: 0.5 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 70.1,
+      "gpqa-diamond": 50.5,
+      hle: 2.8,
+      "aime-2025": 2.3,
+      "math-500": 71.4,
+      scicode: 29.2,
+      livecodebench: 26.1,
+    },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
     },
@@ -5195,6 +5799,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 180, ttftSeconds: 0.15 },
     benchmarks: {
       "lmarena-elo": 1110,
+      bigcodebench: 19.5,
     },
     links: {
       modelCard: "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3",
@@ -5235,7 +5840,10 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 0.07, outputPer1M: 0.28 },
     speed: { tokensPerSec: 100, ttftSeconds: 0.28 },
-    benchmarks: {},
+    benchmarks: {
+      "swe-rebench": 14.6,
+      "swe-bench-verified": 46.8,
+    },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
     },
@@ -5257,6 +5865,9 @@ export const models: Model[] = [
     speed: { tokensPerSec: 60, ttftSeconds: 0.4 },
     benchmarks: {
       "lmarena-elo": 1270,
+      "swe-rebench": 3.1,
+      "swe-bench-verified": 9,
+      bigcodebench: 49,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
@@ -5302,9 +5913,11 @@ export const models: Model[] = [
       livecodebench: 63.4,
       "gpqa-diamond": 65.6,
       "math-500": 98,
-      "bfcl-v3": 66.4,
-      "arena-hard": 89.5,
       "lmarena-elo": 1336,
+      "mmlu-pro": 76.4,
+      hle: 7.4,
+      scicode: 35.8,
+      "aider-polyglot": 20.9,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen/QwQ-32B",
@@ -5331,8 +5944,8 @@ export const models: Model[] = [
       "aime-2025": 69.5,
       livecodebench: 56.6,
       "aider-polyglot": 49.8,
-      "bfcl-v3": 70.3,
       "lmarena-elo": 1401,
+      "swe-rebench": 20.1,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct",
@@ -5378,7 +5991,7 @@ export const models: Model[] = [
     benchmarks: {
       "mmlu-pro": 56.3,
       livecodebench: 28.7,
-      "arena-hard": 52,
+      bigcodebench: 37.6,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
@@ -5399,7 +6012,16 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Alibaba / Together (ref.)", inputPer1M: 0.07, outputPer1M: 0.27 },
     speed: { tokensPerSec: 120, ttftSeconds: 0.25 },
-    benchmarks: {},
+    benchmarks: {
+      "aime-2025": 29,
+      "gpqa-diamond": 51.6,
+      hle: 3.8,
+      livecodebench: 40.3,
+      "math-500": 89.3,
+      "mmlu-pro": 70.6,
+      scicode: 27.8,
+      "swe-rebench": 21.6,
+    },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
     },
@@ -5425,11 +6047,12 @@ export const models: Model[] = [
       hle: 4.7,
       "aime-2025": 49.5,
       "math-500": 97.4,
-      simpleqa: 31,
       "swe-bench-verified": 65.8,
       "swe-bench-multilingual": 47.3,
       livecodebench: 53.7,
       "aider-polyglot": 60,
+      scicode: 34.5,
+      "swe-rebench": 34.6,
     },
     links: {
       modelCard: "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
@@ -5452,6 +6075,11 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1461,
       "webdev-arena": 1509,
+      "gpqa-diamond": 91.1,
+      hle: 37.5,
+      scicode: 53.5,
+      "terminal-bench-2-1": 65.9,
+      "swe-rebench": 46.5,
     },
     links: {
       docs: "https://platform.moonshot.cn/docs",
@@ -5473,6 +6101,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 130, ttftSeconds: 0.22 },
     benchmarks: {
       "lmarena-elo": 1367,
+      "swe-rebench": 30.1,
     },
     links: {
       docs: "https://open.bigmodel.cn/",
@@ -5498,6 +6127,11 @@ export const models: Model[] = [
       nl2repo: 39.8,
       "lmarena-elo": 1416,
       "webdev-arena": 1398,
+      "gpqa-diamond": 87.4,
+      hle: 29.6,
+      scicode: 47,
+      "terminal-bench-2-1": 55.4,
+      "swe-rebench": 51.9,
     },
     links: {
       docs: "https://www.minimax.io/",
@@ -5613,7 +6247,9 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "01.AI", inputPer1M: 3, outputPer1M: 3 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.5 },
-    benchmarks: {},
+    benchmarks: {
+      bigcodebench: 37.7,
+    },
     links: {
       docs: "https://platform.01.ai/",
     },
@@ -5635,6 +6271,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 55, ttftSeconds: 0.45 },
     benchmarks: {
       "lmarena-elo": 1213,
+      bigcodebench: 33.9,
     },
     links: {
       modelCard: "https://huggingface.co/01-ai/Yi-1.5-34B-Chat",
@@ -5656,6 +6293,10 @@ export const models: Model[] = [
     speed: { tokensPerSec: 120, ttftSeconds: 0.25 },
     benchmarks: {
       "lmarena-elo": 1394,
+      "gpqa-diamond": 83.1,
+      hle: 21.1,
+      scicode: 40.4,
+      "swe-rebench": 59.6,
     },
     links: {
       docs: "https://platform.stepfun.com/",
@@ -5695,7 +6336,11 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Liquid AI", inputPer1M: 0.03, outputPer1M: 0.12 },
     speed: { tokensPerSec: 160, ttftSeconds: 0.18 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 51.3,
+      hle: 6.9,
+      scicode: 7.8,
+    },
     links: {
       docs: "https://www.liquid.ai/",
     },
@@ -5755,7 +6400,12 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "InclusionAI", inputPer1M: 0.01, outputPer1M: 0.03 },
     speed: { tokensPerSec: 140, ttftSeconds: 0.2 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 59.3,
+      hle: 6.3,
+      scicode: 27.1,
+      "terminal-bench-2-1": 24.3,
+    },
     links: {
       docs: "https://www.inclusionai.com/",
     },
@@ -5774,7 +6424,11 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "InclusionAI", inputPer1M: 0.075, outputPer1M: 0.625 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.55 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 75.2,
+      hle: 8.7,
+      scicode: 37,
+    },
     links: {
       docs: "https://www.inclusionai.com/",
     },
@@ -5814,7 +6468,15 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "video"], output: ["text"] },
     pricing: { provider: "Reka", inputPer1M: 0.1, outputPer1M: 0.2 },
     speed: { tokensPerSec: 110, ttftSeconds: 0.28 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 66.9,
+      "gpqa-diamond": 52.9,
+      hle: 4.4,
+      "aime-2025": 33.7,
+      "math-500": 89.3,
+      scicode: 26.7,
+      livecodebench: 43.5,
+    },
     links: {
       modelCard: "https://huggingface.co/RekaAI/reka-flash-3",
     },
@@ -5913,7 +6575,14 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.4, outputPer1M: 0.4 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.45 },
-    benchmarks: {},
+    benchmarks: {
+      "mmlu-pro": 51.1,
+      "gpqa-diamond": 32.8,
+      hle: 3.6,
+      "aime-2025": 3.3,
+      scicode: 8,
+      livecodebench: 6.8,
+    },
     links: {
       modelCard: "https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct",
     },
@@ -5932,7 +6601,10 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Perplexity", inputPer1M: 1, outputPer1M: 5 },
     speed: { tokensPerSec: 60, ttftSeconds: 1.5 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 62.3,
+      "math-500": 92.1,
+    },
     links: {
       docs: "https://docs.perplexity.ai/",
     },
@@ -5977,7 +6649,6 @@ export const models: Model[] = [
       "aime-2025": 72.1,
       "math-500": 97.8,
       livecodebench: 71.1,
-      "bfcl-v3": 66.9,
     },
     links: {
       modelCard: "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
@@ -6035,6 +6706,8 @@ export const models: Model[] = [
       "swe-bench-pro": 55.9,
       scicode: 48.7,
       "terminal-bench-2-1": 64.7,
+      hle: 33.3,
+      "lmarena-elo": 1430.5,
     },
     links: {
       modelCard: "https://huggingface.co/thinkingmachines/Inkling-Small",

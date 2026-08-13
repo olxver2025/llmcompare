@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 import Link from "next/link";
-import { notFound } from "next/navigation";
-import { BENCHMARK_CATEGORIES, BENCHMARK_IDS, BENCHMARKS } from "@/data/benchmarks";
+import { notFound, redirect } from "next/navigation";
+import { BENCHMARK_IDS } from "@/data/benchmarks";
+import type { BenchmarkId, Model, ResolvedThinking } from "@/data/types";
+import { baseSlugForFastSlug } from "@/data/model-variants";
 import { OpenBadge } from "@/components/open-badge";
 import { OrgIcon } from "@/components/org-icon";
 import { CompareWithPicker } from "@/components/compare-with-picker";
+import { ModelBenchmarks } from "@/components/model-benchmarks";
+import { Spec } from "@/components/spec-row";
+import { SpeedModeProvider } from "@/components/model-speed-context";
+import {
+  ModelSpeedPricingCard,
+  ModelSpeedSpecRow,
+} from "@/components/model-speed-panel";
 import {
   blendedPrice,
   formatApiAccess,
@@ -15,7 +23,6 @@ import {
   formatModalities,
   formatParams,
   formatPrice,
-  formatScore,
   formatSpeed,
   getAllModels,
   getBenchmarkRank,
@@ -26,6 +33,7 @@ import {
   modelFamilyLabel,
   workloadCost,
 } from "@/lib/models";
+import { getModelThinking, thinkingLevelLabel } from "@/lib/thinking";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -43,34 +51,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-function Spec({
-  label,
-  value,
-  hint,
-}: {
-  label: string;
-  value: ReactNode;
-  hint?: string;
-}) {
-  return (
-    <div className="grid grid-cols-[8rem_1fr] gap-2 border-b border-border py-2.5 last:border-0 sm:grid-cols-[9rem_1fr]">
-      <dt className="font-mono text-xs text-muted-foreground">{label}</dt>
-      <dd className="font-mono text-sm tabular-nums text-foreground">
-        {value}
-        {hint ? (
-          <span className="mt-0.5 block font-sans text-xs font-normal normal-case tabular-nums text-muted-foreground">
-            {hint}
-          </span>
-        ) : null}
-      </dd>
-    </div>
-  );
-}
-
 export default async function ModelPage({ params }: Props) {
   const { slug } = await params;
+
+  const baseSlug = baseSlugForFastSlug(slug);
+  if (baseSlug) redirect(`/models/${baseSlug}`);
+
   const model = getModel(slug);
   if (!model) notFound();
+
+  const hasFast = model.fast !== undefined;
 
   const models = getAllModels();
   const related = getRelatedModels(model);
@@ -102,6 +92,13 @@ export default async function ModelPage({ params }: Props) {
   const scoredBenchmarks = BENCHMARK_IDS.filter(
     (id) => model.benchmarks[id] !== undefined
   ).length;
+  const thinking = getModelThinking(model);
+  const ranks = Object.fromEntries(
+    BENCHMARK_IDS.map((id) => [id, getBenchmarkRank(model, id)])
+  );
+  const scoredCounts = Object.fromEntries(
+    BENCHMARK_IDS.map((id) => [id, scoredCount(id)])
+  );
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-12">
@@ -174,9 +171,83 @@ export default async function ModelPage({ params }: Props) {
               {scoredBenchmarks}/{BENCHMARK_IDS.length}
             </span>
           </li>
+          {thinking ? (
+            <li>
+              Thinking{" "}
+              <span className="text-foreground">
+                {thinkingLevelLabel(thinking, thinking.highestLevel)}
+              </span>
+              <span>
+                {" "}
+                · {thinking.levels.map((level) => level.label).join(" / ")}
+              </span>
+            </li>
+          ) : null}
         </ul>
       </header>
 
+      {(() => {
+        const grid = buildGrid({
+          model,
+          hasFast,
+          models,
+          related,
+          blend,
+          cost,
+          contextRank,
+          priceRank,
+          pricedCount,
+          thinking,
+          ranks,
+          scoredCounts,
+        });
+        return hasFast ? (
+          <SpeedModeProvider baseModel={model}>{grid}</SpeedModeProvider>
+        ) : (
+          grid
+        );
+      })()}
+
+      <p className="mt-12 border-t border-border pt-6 text-sm text-muted-foreground">
+        <Link
+          href="/compare"
+          className="text-open underline-offset-4 hover:underline"
+        >
+          Open the compare picker
+        </Link>
+      </p>
+    </div>
+  );
+}
+
+function buildGrid({
+  model,
+  hasFast,
+  models,
+  related,
+  blend,
+  cost,
+  contextRank,
+  priceRank,
+  pricedCount,
+  thinking,
+  ranks,
+  scoredCounts,
+}: {
+  model: Model;
+  hasFast: boolean;
+  models: Model[];
+  related: Model[];
+  blend: number | undefined;
+  cost: number | undefined;
+  contextRank: number | undefined;
+  priceRank: number | undefined;
+  pricedCount: number;
+  thinking: ResolvedThinking | undefined;
+  ranks: Partial<Record<BenchmarkId, number>>;
+  scoredCounts: Partial<Record<BenchmarkId, number>>;
+}) {
+  return (
       <div className="grid gap-12 lg:grid-cols-[1.25fr_0.75fr]">
         <div className="space-y-10">
           <section className="section-rule">
@@ -207,112 +278,83 @@ export default async function ModelPage({ params }: Props) {
               <Spec label="Release" value={formatDate(model.releaseDate)} />
               <Spec label="Cutoff" value={model.knowledgeCutoff ?? "-"} />
               <Spec label="Modalities" value={formatModalities(model)} />
-              <Spec label="Speed" value={formatSpeed(model)} />
+              {hasFast ? (
+                <ModelSpeedSpecRow />
+              ) : (
+                <Spec label="Speed" value={formatSpeed(model)} />
+              )}
               <Spec label="API" value={formatApiAccess(model)} />
+              {thinking ? (
+                <Spec
+                  label="Thinking"
+                  value={thinking.levels.map((level) => level.label).join(" / ")}
+                  hint={`${thinking.param}; catalog uses ${thinkingLevelLabel(thinking, thinking.highestLevel)}`}
+                />
+              ) : null}
             </dl>
           </section>
 
-          <section className="section-rule">
-            <h2 className="text-lg font-semibold">Benchmarks</h2>
-            <div className="mt-3 space-y-6">
-              {BENCHMARK_CATEGORIES.map((cat) => (
-                <div key={cat.id}>
-                  <h3 className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
-                    {cat.label}
-                  </h3>
-                  <ul className="mt-1">
-                    {cat.ids.map((id) => {
-                      const score = model.benchmarks[id];
-                      const rank = getBenchmarkRank(model, id);
-                      const meta = BENCHMARKS[id];
-                      return (
-                        <li
-                          key={id}
-                          className="flex flex-wrap items-baseline justify-between gap-2 border-b border-border py-3 last:border-0"
-                        >
-                          <div>
-                            <p className="font-medium">{meta.name}</p>
-                            <p className="max-w-md text-xs text-muted-foreground text-pretty">
-                              {meta.description}{" "}
-                              <a
-                                href={meta.sourceUrl}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="underline-offset-2 hover:underline"
-                              >
-                                (source)
-                              </a>
-                            </p>
-                          </div>
-                          <div className="text-right">
-                            <p className="font-mono text-base font-medium tabular-nums">
-                              {formatScore(id, score)}
-                              {meta.unit === "percent" && score !== undefined
-                                ? "%"
-                                : ""}
-                            </p>
-                            {rank !== undefined ? (
-                              <p className="font-mono text-xs tabular-nums text-muted-foreground">
-                                #{rank} of {scoredCount(id)}
-                              </p>
-                            ) : (
-                              <p className="font-mono text-xs text-muted-foreground">
-                                unreported
-                              </p>
-                            )}
-                          </div>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </section>
+          <ModelBenchmarks
+            model={model}
+            thinking={thinking}
+            ranks={ranks}
+            scoredCounts={scoredCounts}
+          />
         </div>
 
         <aside className="space-y-10">
-          <section className="section-rule">
-            <h2 className="text-lg font-semibold">Pricing</h2>
-            {model.pricing ? (
-              <div className="mt-3 space-y-3">
-                <p className="text-sm text-muted-foreground">
-                  {model.pricing.provider}, $ per 1M tokens
-                </p>
-                <dl>
-                  <Spec
-                    label="Input"
-                    value={formatPrice(model.pricing.inputPer1M)}
-                  />
-                  <Spec
-                    label="Output"
-                    value={formatPrice(model.pricing.outputPer1M)}
-                  />
-                  <Spec
-                    label="Blended"
-                    value={blend !== undefined ? formatPrice(blend) : "-"}
-                    hint="3∶1 input:output mix"
-                  />
-                  <Spec
-                    label="1M+250K"
-                    value={cost !== undefined ? formatPrice(cost) : "-"}
-                    hint="Illustrative chat workload"
-                  />
-                  {priceRank !== undefined ? (
+          {hasFast ? (
+            <ModelSpeedPricingCard
+              thinking={thinking}
+              priceRank={priceRank}
+              pricedCount={pricedCount}
+            />
+          ) : (
+            <section className="section-rule">
+              <h2 className="text-lg font-semibold">Pricing</h2>
+              {model.pricing ? (
+                <div className="mt-3 space-y-3">
+                  <p className="text-sm text-muted-foreground">
+                    {model.pricing.provider}, $ per 1M tokens
+                    {thinking
+                      ? ". Thinking tokens bill as output; list rates do not change by effort."
+                      : ""}
+                  </p>
+                  <dl>
                     <Spec
-                      label="Catalog rank"
-                      value={`#${priceRank} of ${pricedCount}`}
-                      hint="Lower blended price ranks higher"
+                      label="Input"
+                      value={formatPrice(model.pricing.inputPer1M)}
                     />
-                  ) : null}
-                </dl>
-              </div>
-            ) : (
-              <p className="mt-3 text-sm text-muted-foreground">
-                No primary-provider API pricing in this dataset.
-              </p>
-            )}
-          </section>
+                    <Spec
+                      label="Output"
+                      value={formatPrice(model.pricing.outputPer1M)}
+                    />
+                    <Spec
+                      label="Blended"
+                      value={blend !== undefined ? formatPrice(blend) : "-"}
+                      hint="3∶1 input:output mix"
+                    />
+                    <Spec
+                      label="1M+250K"
+                      value={cost !== undefined ? formatPrice(cost) : "-"}
+                      hint="Illustrative chat workload"
+                    />
+                    {priceRank !== undefined ? (
+                      <Spec
+                        label="Catalog rank"
+                        value={`#${priceRank} of ${pricedCount}`}
+                        hint="Lower blended price ranks higher"
+                      />
+                    ) : null}
+                  </dl>
+                </div>
+              ) : (
+                <p className="mt-3 text-sm text-muted-foreground">
+                  No primary-provider API pricing in this dataset.
+                </p>
+              )}
+            </section>
+          )}
 
           <section className="section-rule">
             <h2 className="mb-3 text-lg font-semibold">Compare with</h2>
@@ -385,15 +427,5 @@ export default async function ModelPage({ params }: Props) {
           </section>
         </aside>
       </div>
-
-      <p className="mt-12 border-t border-border pt-6 text-sm text-muted-foreground">
-        <Link
-          href="/compare"
-          className="text-open underline-offset-4 hover:underline"
-        >
-          Open the compare picker
-        </Link>
-      </p>
-    </div>
   );
 }

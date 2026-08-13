@@ -38,7 +38,6 @@ const TABLE_BENCHMARKS: BenchmarkId[] = [
   "cursorbench",
   "aider-polyglot",
   "lmarena-elo",
-  "arena-hard",
 ];
 
 function compareValues(
