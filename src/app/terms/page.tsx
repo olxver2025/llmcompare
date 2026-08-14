@@ -9,12 +9,20 @@ export default function TermsPage() {
   return (
     <div className="mx-auto max-w-2xl px-4 py-12 sm:px-6">
       <h1 className="text-2xl font-semibold tracking-tight">Terms of Service</h1>
-      <p className="mt-2 text-sm text-muted-foreground">Last updated: 2026-07-29</p>
+      <p className="mt-2 text-sm text-muted-foreground">Last updated: 2026-08-14</p>
       <div className="mt-8 space-y-4 text-sm leading-relaxed text-muted-foreground">
         <p>
           LLMcompare is a static reference site. Content is provided for
           informational and educational purposes only. Benchmark scores and prices change often;
           verify critical numbers with primary sources before you rely on them.
+        </p>
+        <p>
+          The site uses aggregate, cookie-free analytics to measure traffic.
+          Browsing the site constitutes consent to that tracking; see the{" "}
+          <Link href="/privacy" className="text-open underline-offset-4 hover:underline">
+            Privacy Policy
+          </Link>{" "}
+          for details.
         </p>
         <p>
           You may browse and share links to pages on this site. You may not

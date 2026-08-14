@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { IBM_Plex_Mono, Source_Sans_3 } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { SiteHeader } from "@/components/site-header";
@@ -60,6 +61,7 @@ export default function RootLayout({
             />
             <main className="flex-1">{children}</main>
             <SiteFooter />
+            <Analytics />
           </TooltipProvider>
         </ThemeProvider>
       </body>
