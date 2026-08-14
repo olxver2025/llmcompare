@@ -26,6 +26,15 @@ export type BenchmarkId =
   | "matharena"
   | "lmarena-elo";
 
+export type SpeedTier = {
+  pricing?: {
+    provider: string;
+    inputPer1M: number;
+    outputPer1M: number;
+  };
+  speed?: { tokensPerSec?: number; ttftSeconds?: number };
+};
+
 export type Model = {
   slug: string;
   name: string;
@@ -44,14 +53,8 @@ export type Model = {
     outputPer1M: number;
   };
   speed?: { tokensPerSec?: number; ttftSeconds?: number };
-  fast?: {
-    pricing: {
-      provider: string;
-      inputPer1M: number;
-      outputPer1M: number;
-    };
-    speed?: { tokensPerSec?: number; ttftSeconds?: number };
-  };
+  fast?: SpeedTier;
+  ultrafast?: SpeedTier;
   benchmarks: Partial<Record<BenchmarkId, number>>;
   /** Quality scores are inherited from this canonical model record. */
   benchmarkAliasOf?: string;

@@ -21,6 +21,7 @@ export function BenchmarkDisclosure({
   name,
   description,
   sourceUrl,
+  detailHref,
   scored,
   rows,
   defaultOpen = false,
@@ -28,7 +29,9 @@ export function BenchmarkDisclosure({
   id: string;
   name: string;
   description: string;
-  sourceUrl: string;
+  /** Omitted for site-computed rankings, which have no external source. */
+  sourceUrl?: string;
+  detailHref?: string;
   scored: number;
   rows: BenchmarkLeaderboardRow[];
   defaultOpen?: boolean;
@@ -70,19 +73,21 @@ export function BenchmarkDisclosure({
             </button>
           </h3>
           <Link
-            href={`/benchmarks/${id}`}
+            href={detailHref ?? `/benchmarks/${id}`}
             className="font-mono text-xs text-muted-foreground underline-offset-2 hover:text-foreground hover:underline"
           >
             Full information
           </Link>
-          <a
-            href={sourceUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="font-mono text-xs text-muted-foreground underline-offset-2 hover:text-foreground hover:underline"
-          >
-            source
-          </a>
+          {sourceUrl ? (
+            <a
+              href={sourceUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="font-mono text-xs text-muted-foreground underline-offset-2 hover:text-foreground hover:underline"
+            >
+              source
+            </a>
+          ) : null}
         </div>
         <p className="mt-1.5 pl-6 text-sm text-muted-foreground text-pretty">
           {description}

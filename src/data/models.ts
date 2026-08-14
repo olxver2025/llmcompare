@@ -24,6 +24,9 @@ export const models: Model[] = [
       pricing: { provider: "OpenAI", inputPer1M: 10, outputPer1M: 60 },
       speed: { tokensPerSec: 240, ttftSeconds: 0.25 },
     },
+    ultrafast: {
+      speed: { tokensPerSec: 750 },
+    },
     benchmarks: {
       "gpqa-diamond": 94.6,
       "swe-bench-pro": 64.6,
@@ -42,7 +45,7 @@ export const models: Model[] = [
         "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
     },
     summary:
-      "OpenAI's July 2026 flagship reasoning tier, tuned for hard STEM and agentic work; ChatGPT's top API SKU in the 5.6 family. Fast mode (2× price) delivers up to 2.5× Standard speed.",
+      "OpenAI's July 2026 flagship reasoning tier, tuned for hard STEM and agentic work; ChatGPT's top API SKU in the 5.6 family. Fast mode (2× price) delivers up to 2.5× Standard speed, and the Cerebras-powered Ultrafast preview reaches up to 750 tok/s.",
   },
   {
     slug: "gpt-5-6-terra",

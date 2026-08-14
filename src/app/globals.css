@@ -151,4 +151,22 @@
   .section-rule {
     @apply border-t border-foreground/20 pt-4;
   }
+  /* Slim, always-visible horizontal scrollbars for wide tables */
+  .scroll-rail {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+  }
+  .scroll-rail::-webkit-scrollbar {
+    height: 10px;
+  }
+  .scroll-rail::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scroll-rail::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 999px;
+  }
+  .scroll-rail:hover::-webkit-scrollbar-thumb {
+    background: var(--muted-foreground);
+  }
 }

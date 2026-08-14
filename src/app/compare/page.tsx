@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { CompareForm } from "@/components/compare-form";
 import { getAllModels } from "@/lib/models";
 
@@ -19,8 +20,15 @@ export default function ComparePickerPage() {
         </h1>
         <p className="mt-3 text-muted-foreground text-pretty">
           Choose a pair for a shareable vs page with specs, charts, and a short
-          verdict. Pair URLs use alphabetical slug order so each matchup has one
-          canonical link.
+          verdict.
+        </p>
+        <p className="mt-3 text-sm">
+          <Link
+            href="/compare/multi"
+            className="text-open underline-offset-4 hover:underline"
+          >
+            Comparing 3 or more models? Use the multi-model table →
+          </Link>
         </p>
       </div>
       <div className="section-rule">

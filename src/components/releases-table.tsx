@@ -159,7 +159,7 @@ export function ReleasesTable({
         </p>
       </div>
 
-      <div className="overflow-x-auto border border-border">
+      <div className="border border-border">
         <Table>
           <TableHeader>
             <TableRow className="hover:bg-transparent">

@@ -4,7 +4,12 @@ import { useMemo, useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowDown, ArrowUp, ArrowUpDown, Zap } from "lucide-react";
 import type { BenchmarkId, Model } from "@/data/types";
-import { BENCHMARKS } from "@/data/benchmarks";
+import { BENCHMARK_CATEGORIES, BENCHMARKS } from "@/data/benchmarks";
+import {
+  formatZScore,
+  LLMCOMPARE_INDEX,
+  type IndexScore,
+} from "@/lib/benchmark-composite";
 import {
   formatContext,
   formatPrice,
@@ -40,19 +45,16 @@ type SortKey =
   | "input"
   | "output"
   | "tokensPerSec"
+  | "llmcompare-index"
   | BenchmarkId;
 
-const TABLE_BENCHMARKS: BenchmarkId[] = [
-  "mmlu-pro",
-  "gpqa-diamond",
-  "aime-2025",
-  "swe-bench-verified",
-  "swe-bench-pro",
-  "terminal-bench-2-1",
-  "cursorbench",
-  "aider-polyglot",
-  "lmarena-elo",
-];
+/** Every benchmark in the catalog, grouped the same way model pages group them. */
+const TABLE_BENCHMARKS: BenchmarkId[] = BENCHMARK_CATEGORIES.flatMap(
+  (cat) => cat.ids
+);
+
+/** Model, Org, Type, Ctx, In, Out, LC Index, tok/s */
+const FIXED_COLUMNS = 8;
 
 function CatalogThinkingLabel({ model }: { model: Model }) {
   const thinking = getModelThinking(model);
@@ -77,13 +79,20 @@ function compareValues(
   a: Model,
   b: Model,
   key: SortKey,
-  dir: "asc" | "desc"
+  dir: "asc" | "desc",
+  indexScores?: Record<string, IndexScore>
 ): number {
   const mul = dir === "asc" ? 1 : -1;
   const num = (v: number | undefined) =>
     v === undefined ? (dir === "asc" ? Infinity : -Infinity) : v;
 
   switch (key) {
+    case LLMCOMPARE_INDEX.id:
+      return (
+        mul *
+        (num(indexScores?.[a.slug]?.zScore) -
+          num(indexScores?.[b.slug]?.zScore))
+      );
     case "name":
       return mul * a.name.localeCompare(b.name);
     case "organization":
@@ -104,9 +113,12 @@ function compareValues(
 export function ModelsTable({
   models,
   organizations,
+  indexScores,
 }: {
   models: Model[];
   organizations: string[];
+  /** LLMcompare Index by slug; adds the index column when provided. */
+  indexScores?: Record<string, IndexScore>;
 }) {
   const router = useRouter();
   const [, startTransition] = useTransition();
@@ -142,8 +154,18 @@ export function ModelsTable({
           m.slug.includes(q)
         );
       })
-      .sort((a, b) => compareValues(a, b, sortKey, sortDir));
-  }, [models, query, org, family, license, modality, sortKey, sortDir]);
+      .sort((a, b) => compareValues(a, b, sortKey, sortDir, indexScores));
+  }, [
+    models,
+    query,
+    org,
+    family,
+    license,
+    modality,
+    sortKey,
+    sortDir,
+    indexScores,
+  ]);
 
   function toggleSort(key: SortKey) {
     if (sortKey === key) {
@@ -156,7 +178,9 @@ export function ModelsTable({
     }
   }
 
-  function SortIcon({ col }: { col: SortKey }) {
+  // Called as a function rather than rendered as a nested component so it
+  // is not redefined as a new component type on every render.
+  function sortIcon(col: SortKey) {
     if (sortKey !== col)
       return <ArrowUpDown className="ml-1 inline size-3 opacity-40" />;
     return sortDir === "asc" ? (
@@ -236,7 +260,7 @@ export function ModelsTable({
         </p>
       </div>
 
-      <div className="overflow-x-auto border border-border">
+      <div className="border border-border">
         <Table>
           <TableHeader>
             <TableRow className="hover:bg-transparent">
@@ -245,14 +269,14 @@ export function ModelsTable({
                 onClick={() => toggleSort("name")}
               >
                 Model
-                <SortIcon col="name" />
+                {sortIcon("name")}
               </TableHead>
               <TableHead
                 className={headClass}
                 onClick={() => toggleSort("organization")}
               >
                 Org
-                <SortIcon col="organization" />
+                {sortIcon("organization")}
               </TableHead>
               <TableHead className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
                 Type
@@ -262,30 +286,41 @@ export function ModelsTable({
                 onClick={() => toggleSort("contextWindow")}
               >
                 Ctx
-                <SortIcon col="contextWindow" />
+                {sortIcon("contextWindow")}
               </TableHead>
               <TableHead
                 className={cn(headClass, "text-right")}
                 onClick={() => toggleSort("input")}
               >
                 In $/1M
-                <SortIcon col="input" />
+                {sortIcon("input")}
               </TableHead>
               <TableHead
                 className={cn(headClass, "text-right")}
                 onClick={() => toggleSort("output")}
               >
                 Out $/1M
-                <SortIcon col="output" />
+                {sortIcon("output")}
               </TableHead>
+              {indexScores ? (
+                <TableHead
+                  className={cn(headClass, "text-right")}
+                  onClick={() => toggleSort(LLMCOMPARE_INDEX.id)}
+                  title={`${LLMCOMPARE_INDEX.name} — site-computed composite across all benchmarks`}
+                >
+                  {LLMCOMPARE_INDEX.shortName}
+                  {sortIcon(LLMCOMPARE_INDEX.id)}
+                </TableHead>
+              ) : null}
               {TABLE_BENCHMARKS.map((id) => (
                 <TableHead
                   key={id}
                   className={cn(headClass, "text-right")}
                   onClick={() => toggleSort(id)}
+                  title={BENCHMARKS[id].name}
                 >
                   {BENCHMARKS[id].shortName}
-                  <SortIcon col={id} />
+                  {sortIcon(id)}
                 </TableHead>
               ))}
               <TableHead
@@ -293,7 +328,7 @@ export function ModelsTable({
                 onClick={() => toggleSort("tokensPerSec")}
               >
                 tok/s
-                <SortIcon col="tokensPerSec" />
+                {sortIcon("tokensPerSec")}
               </TableHead>
             </TableRow>
           </TableHeader>
@@ -329,6 +364,13 @@ export function ModelsTable({
                 <TableCell className="text-right font-mono tabular-nums">
                   {formatPrice(m.pricing?.outputPer1M)}
                 </TableCell>
+                {indexScores ? (
+                  <TableCell className="text-right font-mono tabular-nums">
+                    {indexScores[m.slug]
+                      ? formatZScore(indexScores[m.slug].zScore)
+                      : "—"}
+                  </TableCell>
+                ) : null}
                 {TABLE_BENCHMARKS.map((id) => (
                   <TableCell
                     key={id}
@@ -345,7 +387,7 @@ export function ModelsTable({
             {filtered.length === 0 && (
               <TableRow>
                 <TableCell
-                  colSpan={8 + TABLE_BENCHMARKS.length}
+                  colSpan={FIXED_COLUMNS + TABLE_BENCHMARKS.length}
                   className="h-24 text-center text-muted-foreground"
                 >
                   No models match these filters. Clear a filter to widen the

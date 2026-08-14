@@ -55,6 +55,12 @@ export function SiteHeader({
             Benchmarks
           </Link>
           <Link
+            href="/organizations"
+            className="text-muted-foreground hover:text-foreground"
+          >
+            Organizations
+          </Link>
+          <Link
             href="/releases"
             className="text-muted-foreground hover:text-foreground"
           >

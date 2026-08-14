@@ -20,7 +20,7 @@ export function ModelSpeedPricingCard({
   priceRank?: number;
   pricedCount: number;
 }) {
-  const { fast, activeModel } = useSpeedMode();
+  const { mode, activeModel } = useSpeedMode();
   const blend = blendedPrice(activeModel);
   const cost = workloadCost(activeModel);
 
@@ -57,7 +57,7 @@ export function ModelSpeedPricingCard({
               value={cost !== undefined ? formatPrice(cost) : "-"}
               hint="Illustrative chat workload"
             />
-            {!fast && priceRank !== undefined ? (
+            {mode === "standard" && priceRank !== undefined ? (
               <Spec
                 label="Catalog rank"
                 value={`#${priceRank} of ${pricedCount}`}

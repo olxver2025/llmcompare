@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ModelsTable } from "@/components/models-table";
 import { PricePerformanceScatter } from "@/components/scatter-chart";
+import { getLlmcompareIndexBySlug } from "@/lib/benchmark-composite";
 import {
   DATA_FRESHNESS,
   getAllModels,
@@ -10,6 +11,7 @@ import {
 export default function HomePage() {
   const models = getAllModels();
   const organizations = getOrganizations();
+  const indexScores = getLlmcompareIndexBySlug();
   const openCount = models.filter((m) => m.openSource).length;
 
   return (
@@ -52,18 +54,24 @@ export default function HomePage() {
       </section>
 
       <section className="section-rule mb-12">
-        <PricePerformanceScatter models={models} />
+        <PricePerformanceScatter models={models} indexScores={indexScores} />
       </section>
 
       <section id="catalog" className="section-rule scroll-mt-16">
         <div className="mb-4">
           <h2 className="text-xl font-semibold tracking-tight">Catalog</h2>
           <p className="mt-1 text-sm text-muted-foreground">
-            Sort any column. Missing scores show as -. Click a row for details.
-            Models with documented thinking levels use the highest level.
+            Every benchmark in the catalog is a column — scroll sideways from
+            the bar above the table. Sort any column. Missing scores show as -.
+            Click a row for details. Models with documented thinking levels use
+            the highest level.
           </p>
         </div>
-        <ModelsTable models={models} organizations={organizations} />
+        <ModelsTable
+          models={models}
+          organizations={organizations}
+          indexScores={indexScores}
+        />
       </section>
     </div>
   );

@@ -35,6 +35,7 @@ import {
   compareSlug,
   generateVerdict,
 } from "@/lib/models";
+import { organizationSummaries } from "@/lib/organizations";
 
 export const API_VERSION = "v1";
 export const API_BASE_PATH = `/api/${API_VERSION}`;
@@ -650,20 +651,7 @@ export function benchmarkResource(id: BenchmarkId) {
 }
 
 export function organizationResources() {
-  const grouped = new Map<string, Model[]>();
-  for (const model of getAllModels()) {
-    const existing = grouped.get(model.organization) ?? [];
-    existing.push(model);
-    grouped.set(model.organization, existing);
-  }
-  return [...grouped.entries()]
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([name, models]) => ({
-      name,
-      modelCount: models.length,
-      openWeightModelCount: models.filter((model) => model.openSource).length,
-      modelSlugs: models.map((model) => model.slug).sort(),
-    }));
+  return organizationSummaries();
 }
 
 export function compareResource(aSlug: string, bSlug: string) {

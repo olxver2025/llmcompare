@@ -34,6 +34,7 @@ import {
   workloadCost,
 } from "@/lib/models";
 import { getModelThinking, thinkingLevelLabel } from "@/lib/thinking";
+import { orgSlug } from "@/lib/organizations";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -60,7 +61,8 @@ export default async function ModelPage({ params }: Props) {
   const model = getModel(slug);
   if (!model) notFound();
 
-  const hasFast = model.fast !== undefined;
+  const hasSpeedModes =
+    model.fast !== undefined || model.ultrafast !== undefined;
 
   const models = getAllModels();
   const related = getRelatedModels(model);
@@ -113,7 +115,12 @@ export default async function ModelPage({ params }: Props) {
       <header className="mb-10 max-w-2xl">
         <p className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted-foreground">
           <OrgIcon organization={model.organization} size="md" />
-          <span>{model.organization}</span>
+          <Link
+            href={`/organizations/${orgSlug(model.organization)}`}
+            className="hover:text-foreground hover:underline"
+          >
+            {model.organization}
+          </Link>
           <span className="text-border">·</span>
           <span className="font-mono text-xs">{modelFamilyLabel(model)}</span>
           <span className="text-border">·</span>
@@ -189,7 +196,7 @@ export default async function ModelPage({ params }: Props) {
       {(() => {
         const grid = buildGrid({
           model,
-          hasFast,
+          hasSpeedModes,
           models,
           related,
           blend,
@@ -201,7 +208,7 @@ export default async function ModelPage({ params }: Props) {
           ranks,
           scoredCounts,
         });
-        return hasFast ? (
+        return hasSpeedModes ? (
           <SpeedModeProvider baseModel={model}>{grid}</SpeedModeProvider>
         ) : (
           grid
@@ -222,7 +229,7 @@ export default async function ModelPage({ params }: Props) {
 
 function buildGrid({
   model,
-  hasFast,
+  hasSpeedModes,
   models,
   related,
   blend,
@@ -235,7 +242,7 @@ function buildGrid({
   scoredCounts,
 }: {
   model: Model;
-  hasFast: boolean;
+  hasSpeedModes: boolean;
   models: Model[];
   related: Model[];
   blend: number | undefined;
@@ -278,7 +285,7 @@ function buildGrid({
               <Spec label="Release" value={formatDate(model.releaseDate)} />
               <Spec label="Cutoff" value={model.knowledgeCutoff ?? "-"} />
               <Spec label="Modalities" value={formatModalities(model)} />
-              {hasFast ? (
+              {hasSpeedModes ? (
                 <ModelSpeedSpecRow />
               ) : (
                 <Spec label="Speed" value={formatSpeed(model)} />
@@ -303,7 +310,7 @@ function buildGrid({
         </div>
 
         <aside className="space-y-10">
-          {hasFast ? (
+          {hasSpeedModes ? (
             <ModelSpeedPricingCard
               thinking={thinking}
               priceRank={priceRank}

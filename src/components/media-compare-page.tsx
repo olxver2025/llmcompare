@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { ImageModel, VideoModel } from "@/data/types";
 import { OpenBadge } from "@/components/open-badge";
 import { OrgIcon } from "@/components/org-icon";
+import { ScrollX } from "@/components/scroll-x";
 import {
   formatDate,
   formatDurationSeconds,
@@ -294,92 +295,94 @@ export function MediaCompareView({
         )}
       </section>
 
-      <section className="section-rule mb-10 overflow-x-auto">
+      <section className="section-rule mb-10">
         <h2 className="mb-3 text-lg font-semibold">Full comparison</h2>
-        <table className="w-full min-w-[640px] text-sm">
-          <thead>
-            <tr className="border-b border-foreground/20 text-left">
-              <th className="py-2 pr-4 font-mono text-xs font-medium text-muted-foreground">
-                Metric
-              </th>
-              <th className="py-2 pr-4 font-medium text-[color:var(--compare-a)]">
-                {a.name}
-              </th>
-              <th className="py-2 pr-4 font-medium text-[color:var(--compare-b)]">
-                {b.name}
-              </th>
-              <th className="py-2 font-mono text-xs font-medium text-muted-foreground">
-                Delta
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td
-                colSpan={4}
-                className="pb-1 pt-4 font-mono text-[10px] uppercase tracking-wider text-muted-foreground"
-              >
-                Identity
-              </td>
-            </tr>
-            {metaRows.map((row) => (
-              <tr key={row.label} className="border-b border-border">
-                <td className="py-2 pr-4 font-mono text-xs text-muted-foreground">
-                  {row.label}
-                </td>
-                <td className="py-2 pr-4">{row.left}</td>
-                <td className="py-2 pr-4">{row.right}</td>
-                <td className="py-2 font-mono text-xs text-muted-foreground">
-                  -
+        <ScrollX>
+          <table className="w-full min-w-[640px] text-sm">
+            <thead>
+              <tr className="border-b border-foreground/20 text-left">
+                <th className="py-2 pr-4 font-mono text-xs font-medium text-muted-foreground">
+                  Metric
+                </th>
+                <th className="py-2 pr-4 font-medium text-[color:var(--compare-a)]">
+                  {a.name}
+                </th>
+                <th className="py-2 pr-4 font-medium text-[color:var(--compare-b)]">
+                  {b.name}
+                </th>
+                <th className="py-2 font-mono text-xs font-medium text-muted-foreground">
+                  Delta
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td
+                  colSpan={4}
+                  className="pb-1 pt-4 font-mono text-[10px] uppercase tracking-wider text-muted-foreground"
+                >
+                  Identity
                 </td>
               </tr>
-            ))}
-            {groupedRows.map((group) => (
-              <FragmentGroup key={group.cat} label={group.label}>
-                {group.rows.map((row) => (
-                  <tr key={row.id} className="border-b border-border">
-                    <td className="py-2 pr-4 font-mono text-xs text-muted-foreground">
-                      {row.label}
-                      {row.weight > 1 ? (
-                        <span className="ml-1 text-[10px] text-muted-foreground/80">
-                          ×{row.weight}
-                        </span>
-                      ) : null}
-                    </td>
-                    <td
-                      className={cn(
-                        "py-2 pr-4 font-mono tabular-nums",
-                        sideTone(row.winner, "a")
-                      )}
-                    >
-                      {row.left}
-                    </td>
-                    <td
-                      className={cn(
-                        "py-2 pr-4 font-mono tabular-nums",
-                        sideTone(row.winner, "b")
-                      )}
-                    >
-                      {row.right}
-                    </td>
-                    <td
-                      className={cn(
-                        "py-2 font-mono text-xs tabular-nums",
-                        row.winner === "a"
-                          ? "text-[color:var(--compare-a)]"
-                          : row.winner === "b"
-                            ? "text-[color:var(--compare-b)]"
-                            : "text-muted-foreground"
-                      )}
-                    >
-                      {row.deltaLabel ?? "-"}
-                    </td>
-                  </tr>
-                ))}
-              </FragmentGroup>
-            ))}
-          </tbody>
-        </table>
+              {metaRows.map((row) => (
+                <tr key={row.label} className="border-b border-border">
+                  <td className="py-2 pr-4 font-mono text-xs text-muted-foreground">
+                    {row.label}
+                  </td>
+                  <td className="py-2 pr-4">{row.left}</td>
+                  <td className="py-2 pr-4">{row.right}</td>
+                  <td className="py-2 font-mono text-xs text-muted-foreground">
+                    -
+                  </td>
+                </tr>
+              ))}
+              {groupedRows.map((group) => (
+                <FragmentGroup key={group.cat} label={group.label}>
+                  {group.rows.map((row) => (
+                    <tr key={row.id} className="border-b border-border">
+                      <td className="py-2 pr-4 font-mono text-xs text-muted-foreground">
+                        {row.label}
+                        {row.weight > 1 ? (
+                          <span className="ml-1 text-[10px] text-muted-foreground/80">
+                            ×{row.weight}
+                          </span>
+                        ) : null}
+                      </td>
+                      <td
+                        className={cn(
+                          "py-2 pr-4 font-mono tabular-nums",
+                          sideTone(row.winner, "a")
+                        )}
+                      >
+                        {row.left}
+                      </td>
+                      <td
+                        className={cn(
+                          "py-2 pr-4 font-mono tabular-nums",
+                          sideTone(row.winner, "b")
+                        )}
+                      >
+                        {row.right}
+                      </td>
+                      <td
+                        className={cn(
+                          "py-2 font-mono text-xs tabular-nums",
+                          row.winner === "a"
+                            ? "text-[color:var(--compare-a)]"
+                            : row.winner === "b"
+                              ? "text-[color:var(--compare-b)]"
+                              : "text-muted-foreground"
+                        )}
+                      >
+                        {row.deltaLabel ?? "-"}
+                      </td>
+                    </tr>
+                  ))}
+                </FragmentGroup>
+              ))}
+            </tbody>
+          </table>
+        </ScrollX>
       </section>
 
       <section className="section-rule mb-10 grid gap-8 sm:grid-cols-2">
