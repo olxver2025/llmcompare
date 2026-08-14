@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-13",
+  "asOf": "2026-08-14",
   "cells": {
     "gpt-5-6-sol": {
       "swe-bench-pro": 64.6,
@@ -255,6 +255,13 @@
       "scicode": 52.7,
       "terminal-bench-2-1": 77.5
     },
+    "gemini-3-7-flash": {
+      "cursorbench": 61.6,
+      "terminal-bench-2-1": 85.8,
+      "terminal-bench-3": 14.9,
+      "deepswe": 65.3,
+      "webdev-arena": 1588
+    },
     "gemini-3-flash": {
       "lmarena-elo": 1473,
       "webdev-arena": 1438,
@@ -329,7 +336,7 @@
       "scicode": 54.1
     },
     "grok-4-6": {
-      "cursorbench": 69.9,
+      "cursorbench": 70.8,
       "terminal-bench-3": 26.5,
       "gpqa-diamond": 94.9,
       "hle": 42.9,
@@ -708,6 +715,12 @@
       "cursorbench": 55,
       "terminal-bench-3": 4.6,
       "swe-rebench": 57
+    },
+    "glm-5-3": {
+      "terminal-bench-3": 28.3,
+      "deepswe": 66.9,
+      "agents-last-exam": 28.5,
+      "cybergym": 84.5
     },
     "glm-5": {
       "lmarena-elo": 1457,

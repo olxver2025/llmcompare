@@ -159,9 +159,17 @@ function assignLabels(
   }));
 }
 
-export function PricePerformanceScatter({ models }: { models: Model[] }) {
+export function PricePerformanceScatter({
+  models,
+  fixedY,
+  compact = false,
+}: {
+  models: Model[];
+  fixedY?: BenchmarkId;
+  compact?: boolean;
+}) {
   const router = useRouter();
-  const [yAxis, setYAxis] = useState<BenchmarkId>("lmarena-elo");
+  const [yAxis, setYAxis] = useState<BenchmarkId>(fixedY ?? "lmarena-elo");
   const [org, setOrg] = useState<string>("all");
   const [family, setFamily] = useState<string>("all");
   const [license, setLicense] = useState<"all" | "open" | "closed">("all");
@@ -283,31 +291,41 @@ export function PricePerformanceScatter({ models }: { models: Model[] }) {
   return (
     <div className="space-y-4">
       <div className="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
-        <div>
-          <h2 className="text-lg font-semibold tracking-tight">
-            Price vs performance
-          </h2>
-          <p className="mt-1 text-sm text-muted-foreground">
-            Blended price (3:1 in:out), log scale. Hover for names; labels stay
-            sparse so the plot stays readable. Filter to zoom in on a line.
+        {compact ? (
+          <p className="text-sm text-muted-foreground">
+            Blended price (3:1 in:out), log scale. Models without a listed
+            price are omitted from the plot.
           </p>
-        </div>
+        ) : (
+          <div>
+            <h2 className="text-lg font-semibold tracking-tight">
+              Price vs performance
+            </h2>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Blended price (3:1 in:out), log scale. Hover for names; labels
+              stay sparse so the plot stays readable. Filter to zoom in on a
+              line.
+            </p>
+          </div>
+        )}
         <div className="flex flex-wrap gap-2">
-          <Select
-            value={yAxis}
-            onValueChange={(v) => setYAxis(v as BenchmarkId)}
-          >
-            <SelectTrigger className="h-9 w-[9.5rem]">
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              {Y_OPTIONS.map((id) => (
-                <SelectItem key={id} value={id}>
-                  Y: {BENCHMARKS[id].shortName}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
+          {fixedY ? null : (
+            <Select
+              value={yAxis}
+              onValueChange={(v) => setYAxis(v as BenchmarkId)}
+            >
+              <SelectTrigger className="h-9 w-[9.5rem]">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                {Y_OPTIONS.map((id) => (
+                  <SelectItem key={id} value={id}>
+                    Y: {BENCHMARKS[id].shortName}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          )}
           <Select value={org} onValueChange={setOrg}>
             <SelectTrigger className="h-9 w-[9.5rem]">
               <SelectValue placeholder="Organization" />

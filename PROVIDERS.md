@@ -6,7 +6,7 @@ Reference guide for identifying providers, model slug patterns, sibling model fa
 
 
 
-> \*\*Last checked:\*\* 2026-08-13
+> \*\*Last checked:\*\* 2026-08-14
 
 > \*\*Primary repo source:\*\* \[`src/data/models.ts`](https://github.com/olxver2025/llmcompare/blob/master/src/data/models.ts)
 
@@ -204,11 +204,11 @@ Gemma
 
 ```text
 
+gemini-3-7-flash
+
 gemini-3-6-flash
 
 gemini-3-5-flash-lite
-
-gemini-3-5-flash-cyber
 
 ```
 
@@ -654,11 +654,11 @@ GLM | GLM-5 | GLM-5.2 | GLM-4.x
 
 ```text
 
+glm-5-3
+
 glm-5-2
 
 glm-5
-
-glm-4-7-flash
 
 ```
 

@@ -2,8 +2,8 @@ import type { Model } from "./types";
 
 /**
  * Curated static dataset for LLMcompare.
- * Prices: official primary-provider API rates ($/1M tokens) as of ~2026-08-12.
- * Benchmarks: public leaderboards / model cards / system cards as of ~2026-08-12;
+ * Prices: official primary-provider API rates ($/1M tokens) as of ~2026-08-14.
+ * Benchmarks: public leaderboards / model cards / system cards as of ~2026-08-14;
  * omitted when unverifiable. Scores marked as estimated are omitted rather than guessed.
  */
 export const models: Model[] = [
@@ -809,6 +809,34 @@ export const models: Model[] = [
       "Newest Flash model powering the free Gemini app - cheaper output tokens and strong price/performance.",
   },
   {
+    slug: "gemini-3-7-flash",
+    name: "Gemini 3.7 Flash",
+    organization: "Google",
+    releaseDate: "2026-08-13",
+    knowledgeCutoff: "2026-03",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 1_048_576,
+    maxOutput: 65_536,
+    modalities: { input: ["text", "image", "audio", "video"], output: ["text"] },
+    pricing: { provider: "Google", inputPer1M: 0.75, outputPer1M: 3.75 },
+    benchmarks: {
+      cursorbench: 61.6,
+      "terminal-bench-2-1": 85.8,
+      "terminal-bench-3": 14.9,
+      deepswe: 65.3,
+      "webdev-arena": 1588,
+    },
+    links: {
+      docs: "https://ai.google.dev/gemini-api/docs/models",
+      modelCard: "https://deepmind.google/models/model-cards/gemini-3-7-flash/",
+      announcement:
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+    },
+    summary:
+      "Google's Aug 13, 2026 workhorse Flash - algorithmic gains over 3.6 Flash for coding, knowledge work, and web development; introductory $0.75/$3.75 through Dec 31, 2026 (then $1.50/$7.50).",
+  },
+  {
     slug: "gemini-3-flash",
     name: "Gemini 3.5 Flash",
     organization: "Google",
@@ -1065,7 +1093,7 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "xAI", inputPer1M: 2, outputPer1M: 6 },
     benchmarks: {
-      cursorbench: 69.9,
+      cursorbench: 70.8,
       "terminal-bench-3": 26.5,
       "gpqa-diamond": 94.9,
       hle: 42.9,
@@ -2420,6 +2448,28 @@ export const models: Model[] = [
     },
     summary:
       "Open MIT GLM-5.2 - competitive open Arena Elo and strong Chinese/English bilingual performance.",
+  },
+  {
+    slug: "glm-5-3",
+    name: "GLM-5.3",
+    organization: "Zhipu AI",
+    releaseDate: "2026-08-14",
+    openSource: false,
+    contextWindow: 1_000_000,
+    maxOutput: 128_000,
+    modalities: { input: ["text"], output: ["text"] },
+    benchmarks: {
+      "terminal-bench-3": 28.3,
+      deepswe: 66.9,
+      "agents-last-exam": 28.5,
+      cybergym: 84.5,
+    },
+    links: {
+      docs: "https://docs.bigmodel.cn/cn/guide/models/text/glm-5.3",
+      announcement: "https://z.ai/blog/glm-5.3",
+    },
+    summary:
+      "Zhipu's Aug 14, 2026 flagship - GLM-5.2 base re-post-trained for complex software engineering, terminal, and real-world agent tasks, with SOTA open-weights coding and emergent cybersecurity skills (CyberGym 84.5). GLM Coding Plan at launch; API and open weights pending.",
   },
   {
     slug: "glm-5",

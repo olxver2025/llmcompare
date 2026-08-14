@@ -10,7 +10,7 @@ import { modelFamilyId, modelFamilyLabel } from "@/lib/model-family";
 
 export { QUALITY_COMPARABLE_ELO_BAND, type OverallBasis };
 
-export const DATA_FRESHNESS = "2026-08-13";
+export const DATA_FRESHNESS = "2026-08-14";
 
 /** Illustrative chat workload used for cost estimates. */
 export const WORKLOAD_TOKENS_IN = 1_000_000;
@@ -195,10 +195,8 @@ export function getBenchmarkRank(
   return scored.indexOf(canonicalScore) + 1;
 }
 
-/** Models with a score for `id`, ranked best-first. */
-export function getTopModelsByBenchmark(
-  id: BenchmarkId,
-  limit = 10
+export function getRankedModelsByBenchmark(
+  id: BenchmarkId
 ): { model: Model; score: number; rank: number }[] {
   const higher = BENCHMARKS[id].higherIsBetter;
   return benchmarkOwners(id)
@@ -208,8 +206,14 @@ export function getTopModelsByBenchmark(
     })
     .filter((row): row is { model: Model; score: number } => row !== null)
     .sort((a, b) => (higher ? b.score - a.score : a.score - b.score))
-    .slice(0, limit)
     .map((row, i) => ({ ...row, rank: i + 1 }));
+}
+
+export function getTopModelsByBenchmark(
+  id: BenchmarkId,
+  limit = 10
+): { model: Model; score: number; rank: number }[] {
+  return getRankedModelsByBenchmark(id).slice(0, limit);
 }
 
 export function getBenchmarkScoredCount(id: BenchmarkId): number {

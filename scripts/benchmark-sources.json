@@ -1098,6 +1098,33 @@
       "protocol": "Artificial Analysis terminal-bench-2-1 evaluation snapshot, Gemini 3.6 Flash (high), terminalbench_v2_1 score."
     }
   },
+  "gemini-3-7-flash": {
+    "cursorbench": {
+      "sourceUrl": "https://cursor.com/cursorbench",
+      "evaluationDate": "2026-08-14",
+      "protocol": "CursorBench 3.2, Gemini 3.7 Flash High effort."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-3-7-flash/",
+      "evaluationDate": "2026-08-13",
+      "protocol": "Gemini 3.7 Flash model card; Terminal-Bench 2.1 agentic terminal coding."
+    },
+    "terminal-bench-3": {
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-3-7-flash/",
+      "evaluationDate": "2026-08-13",
+      "protocol": "Gemini 3.7 Flash model card; Terminal-Bench 3.0 general agent capabilities."
+    },
+    "deepswe": {
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-3-7-flash/",
+      "evaluationDate": "2026-08-13",
+      "protocol": "Gemini 3.7 Flash model card; DeepSWE v1.1 long-horizon software engineering."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://deepmind.google/models/model-cards/gemini-3-7-flash/",
+      "evaluationDate": "2026-08-13",
+      "protocol": "Gemini 3.7 Flash model card; Code Arena web development Elo."
+    }
+  },
   "gemini-3-flash": {
     "lmarena-elo": {
       "sourceUrl": "https://lmarena.ai/leaderboard/text",
@@ -1401,9 +1428,9 @@
   },
   "grok-4-6": {
     "cursorbench": {
-      "sourceUrl": "https://x.ai/news/grok-4-6",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Grok 4.6 CursorBench v3.2, SpaceXAI-reported agent evaluation at launch."
+      "sourceUrl": "https://cursor.com/cursorbench",
+      "evaluationDate": "2026-08-14",
+      "protocol": "CursorBench 3.2, Grok 4.6 Extra High effort."
     },
     "terminal-bench-3": {
       "sourceUrl": "https://www.frontierbench.ai/",
@@ -2819,6 +2846,28 @@
       "sourceUrl": "https://swe-rebench.com/",
       "evaluationDate": "2026-08-13",
       "protocol": "SWE-rebench official leaderboard listing 'GLM-5.2 [high]', agent tools, current task window resolved rate."
+    }
+  },
+  "glm-5-3": {
+    "terminal-bench-3": {
+      "sourceUrl": "https://docs.bigmodel.cn/cn/guide/models/text/glm-5.3",
+      "evaluationDate": "2026-08-14",
+      "protocol": "GLM-5.3 official docs; Terminal-Bench 3.0 score 28.3 (GLM-5.2 4.6)."
+    },
+    "deepswe": {
+      "sourceUrl": "https://docs.bigmodel.cn/cn/guide/models/text/glm-5.3",
+      "evaluationDate": "2026-08-14",
+      "protocol": "GLM-5.3 official docs; DeepSWE v1.1 score 66.9 (GLM-5.2 46.2)."
+    },
+    "agents-last-exam": {
+      "sourceUrl": "https://docs.bigmodel.cn/cn/guide/models/text/glm-5.3",
+      "evaluationDate": "2026-08-14",
+      "protocol": "GLM-5.3 official docs; Agents' Last Exam score 28.5 (GLM-5.2 23.8)."
+    },
+    "cybergym": {
+      "sourceUrl": "https://docs.bigmodel.cn/cn/guide/models/text/glm-5.3",
+      "evaluationDate": "2026-08-14",
+      "protocol": "GLM-5.3 official docs; CyberGym vulnerability discovery score 84.5 (GLM-5.2 77.2)."
     }
   },
   "glm-5": {

@@ -69,6 +69,12 @@ export function BenchmarkDisclosure({
               </span>
             </button>
           </h3>
+          <Link
+            href={`/benchmarks/${id}`}
+            className="font-mono text-xs text-muted-foreground underline-offset-2 hover:text-foreground hover:underline"
+          >
+            Full information
+          </Link>
           <a
             href={sourceUrl}
             target="_blank"
