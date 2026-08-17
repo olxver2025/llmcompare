@@ -223,6 +223,14 @@ exact("qwen3-7-max", "pricing.outputPer1M", 7.5);
 exact("qwen3-7-plus", "pricing.inputPer1M", 0.4);
 exact("qwen3-7-flash", "pricing.inputPer1M", 0.03);
 exact("kimi-k2-7-code", "pricing.inputPer1M", 0.95);
+exact("deepseek-v4-pro-0813", "pricing.inputPer1M", 1.32);
+exact("deepseek-v4-pro-0813", "pricing.outputPer1M", 3.96);
+exact("deepseek-v4-pro-0813", "pricing.offPeak.inputPer1M", 0.66);
+exact("deepseek-v4-pro-0813", "pricing.offPeak.outputPer1M", 1.98);
+exact("deepseek-v4-flash-0731", "pricing.inputPer1M", 0.44);
+exact("deepseek-v4-flash-0731", "pricing.outputPer1M", 1.32);
+exact("deepseek-v4-flash-0731", "pricing.offPeak.inputPer1M", 0.22);
+exact("deepseek-v4-flash-0731", "pricing.offPeak.outputPer1M", 0.66);
 exact("gemma-4-31b", "contextWindow", 256000);
 exact("gemma-4-26b", "parameters.total", 26);
 exact("gemma-4-26b", "parameters.active", 3.8);
@@ -253,7 +261,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 1191, `expected 1191 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 1201, `expected 1201 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);

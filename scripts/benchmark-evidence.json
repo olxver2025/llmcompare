@@ -3129,9 +3129,80 @@
         "checkedOn": "2026-08-14",
         "protocol": "Tau-bench official leaderboard, Qwen 3.8 Max Qwen, pass@1.",
         "evaluationDate": "2026-08-13"
+      },
+      "toolathlon-verified": {
+        "value": 72.5,
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+        "checkedOn": "2026-08-14",
+        "protocol": "Qwen3.8-2.4T-A95B model card benchmark table, Toolathlon Verified (Pass@1) row, Qwen3.8-Max column.",
+        "evaluationDate": "2026-08-12"
+      },
+      "automation-bench": {
+        "value": 27.3,
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+        "checkedOn": "2026-08-14",
+        "protocol": "Qwen3.8-2.4T-A95B model card benchmark table, Automation-Bench (Pass@1) row, Qwen3.8-Max column.",
+        "evaluationDate": "2026-08-12"
+      },
+      "deepswe": {
+        "value": 56.6,
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+        "checkedOn": "2026-08-14",
+        "protocol": "Qwen3.8-2.4T-A95B model card benchmark table, DeepSWE 1.1 row, Qwen3.8-Max column; Claude Code harness.",
+        "evaluationDate": "2026-08-12"
       }
     },
-    "qwen3-8-27b": {},
+    "qwen3-8-27b": {
+      "gpqa-diamond": {
+        "value": 89.2,
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+        "checkedOn": "2026-08-14",
+        "protocol": "Qwen3.8-27B model card benchmark table, GPQA Diamond row.",
+        "evaluationDate": "2026-08-14"
+      },
+      "hle": {
+        "value": 30.8,
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+        "checkedOn": "2026-08-14",
+        "protocol": "Qwen3.8-27B model card benchmark table, HLE row.",
+        "evaluationDate": "2026-08-14"
+      },
+      "swe-bench-pro": {
+        "value": 61.7,
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+        "checkedOn": "2026-08-14",
+        "protocol": "Qwen3.8-27B model card benchmark table, SWE-bench Pro row (Claude Code harness, temp=1.0, top_p=0.95, 256K context).",
+        "evaluationDate": "2026-08-14"
+      },
+      "terminal-bench-2-1": {
+        "value": 73,
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+        "checkedOn": "2026-08-14",
+        "protocol": "Qwen3.8-27B model card benchmark table, Terminal Bench 2.1 (Terminus) row.",
+        "evaluationDate": "2026-08-14"
+      },
+      "nl2repo": {
+        "value": 42.3,
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+        "checkedOn": "2026-08-14",
+        "protocol": "Qwen3.8-27B model card benchmark table, NL2Repo-Bench row (Claude Code harness).",
+        "evaluationDate": "2026-08-14"
+      },
+      "deepswe": {
+        "value": 42.2,
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+        "checkedOn": "2026-08-14",
+        "protocol": "Qwen3.8-27B model card benchmark table, DeepSWE 1.1 row (Claude Code harness, temp=1.0, top_p=0.95, 256K context).",
+        "evaluationDate": "2026-08-14"
+      },
+      "livecodebench": {
+        "value": 90.3,
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+        "checkedOn": "2026-08-14",
+        "protocol": "Qwen3.8-27B model card benchmark table, LiveCodeBench v6 row.",
+        "evaluationDate": "2026-08-14"
+      }
+    },
     "qwen3-7-plus": {
       "lmarena-elo": {
         "value": 1458,

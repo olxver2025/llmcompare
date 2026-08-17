@@ -12,7 +12,7 @@ import {
 } from "@/lib/benchmark-composite";
 import {
   formatContext,
-  formatPrice,
+  formatRateWithOffPeak,
   formatScore,
 } from "@/lib/models";
 import { OpenBadge } from "@/components/open-badge";
@@ -359,10 +359,16 @@ export function ModelsTable({
                   {formatContext(m.contextWindow)}
                 </TableCell>
                 <TableCell className="text-right font-mono tabular-nums">
-                  {formatPrice(m.pricing?.inputPer1M)}
+                  {formatRateWithOffPeak(
+                    m.pricing?.inputPer1M,
+                    m.pricing?.offPeak?.inputPer1M
+                  )}
                 </TableCell>
                 <TableCell className="text-right font-mono tabular-nums">
-                  {formatPrice(m.pricing?.outputPer1M)}
+                  {formatRateWithOffPeak(
+                    m.pricing?.outputPer1M,
+                    m.pricing?.offPeak?.outputPer1M
+                  )}
                 </TableCell>
                 {indexScores ? (
                   <TableCell className="text-right font-mono tabular-nums">

@@ -26,12 +26,20 @@ export type BenchmarkId =
   | "matharena"
   | "lmarena-elo";
 
+export type ModelPricing = {
+  provider: string;
+  /** Default (peak/list) rate, $ per 1M tokens. */
+  inputPer1M: number;
+  /** Default (peak/list) rate, $ per 1M tokens. */
+  outputPer1M: number;
+  /** Off-peak rates, $ per 1M tokens, when the provider uses time-of-day pricing. */
+  offPeak?: { inputPer1M: number; outputPer1M: number };
+  /** Human-readable peak-hours window (UTC) when time-of-day pricing applies. */
+  peakHours?: string;
+};
+
 export type SpeedTier = {
-  pricing?: {
-    provider: string;
-    inputPer1M: number;
-    outputPer1M: number;
-  };
+  pricing?: ModelPricing;
   speed?: { tokensPerSec?: number; ttftSeconds?: number };
 };
 
@@ -47,11 +55,7 @@ export type Model = {
   contextWindow: number;
   maxOutput?: number;
   modalities: { input: string[]; output: string[] };
-  pricing?: {
-    provider: string;
-    inputPer1M: number;
-    outputPer1M: number;
-  };
+  pricing?: ModelPricing;
   speed?: { tokensPerSec?: number; ttftSeconds?: number };
   fast?: SpeedTier;
   ultrafast?: SpeedTier;

@@ -541,7 +541,19 @@
       "lmarena-elo": 1491,
       "webdev-arena": 1669,
       "scicode": 52.9,
-      "tau-bench": 55.2
+      "tau-bench": 55.2,
+      "toolathlon-verified": 72.5,
+      "automation-bench": 27.3,
+      "deepswe": 56.6
+    },
+    "qwen3-8-27b": {
+      "gpqa-diamond": 89.2,
+      "hle": 30.8,
+      "swe-bench-pro": 61.7,
+      "terminal-bench-2-1": 73,
+      "nl2repo": 42.3,
+      "deepswe": 42.2,
+      "livecodebench": 90.3
     },
     "qwen3-7-plus": {
       "lmarena-elo": 1458,

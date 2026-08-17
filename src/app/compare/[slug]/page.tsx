@@ -17,6 +17,7 @@ import {
   formatModalities,
   formatParams,
   formatPrice,
+  formatPricePair,
   formatSpeed,
   generateVerdict,
   getModel,
@@ -498,9 +499,7 @@ function SideSummary({
         <div className="flex justify-between gap-4">
           <dt>Price</dt>
           <dd className="font-mono tabular-nums text-foreground">
-            {model.pricing
-              ? `${formatPrice(model.pricing.inputPer1M)} / ${formatPrice(model.pricing.outputPer1M)}`
-              : "-"}
+            {formatPricePair(model.pricing)}
           </dd>
         </div>
         <div className="flex justify-between gap-4">

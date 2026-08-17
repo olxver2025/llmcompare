@@ -2304,6 +2304,58 @@
       "sourceUrl": "https://www.taubench.com/",
       "evaluationDate": "2026-08-13",
       "protocol": "Tau-bench official leaderboard, Qwen 3.8 Max Qwen, pass@1."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Qwen3.8-2.4T-A95B model card benchmark table, Toolathlon Verified (Pass@1) row, Qwen3.8-Max column."
+    },
+    "automation-bench": {
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Qwen3.8-2.4T-A95B model card benchmark table, Automation-Bench (Pass@1) row, Qwen3.8-Max column."
+    },
+    "deepswe": {
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "evaluationDate": "2026-08-12",
+      "protocol": "Qwen3.8-2.4T-A95B model card benchmark table, DeepSWE 1.1 row, Qwen3.8-Max column; Claude Code harness."
+    }
+  },
+  "qwen3-8-27b": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "evaluationDate": "2026-08-14",
+      "protocol": "Qwen3.8-27B model card benchmark table, GPQA Diamond row."
+    },
+    "hle": {
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "evaluationDate": "2026-08-14",
+      "protocol": "Qwen3.8-27B model card benchmark table, HLE row."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "evaluationDate": "2026-08-14",
+      "protocol": "Qwen3.8-27B model card benchmark table, SWE-bench Pro row (Claude Code harness, temp=1.0, top_p=0.95, 256K context)."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "evaluationDate": "2026-08-14",
+      "protocol": "Qwen3.8-27B model card benchmark table, Terminal Bench 2.1 (Terminus) row."
+    },
+    "nl2repo": {
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "evaluationDate": "2026-08-14",
+      "protocol": "Qwen3.8-27B model card benchmark table, NL2Repo-Bench row (Claude Code harness)."
+    },
+    "deepswe": {
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "evaluationDate": "2026-08-14",
+      "protocol": "Qwen3.8-27B model card benchmark table, DeepSWE 1.1 row (Claude Code harness, temp=1.0, top_p=0.95, 256K context)."
+    },
+    "livecodebench": {
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "evaluationDate": "2026-08-14",
+      "protocol": "Qwen3.8-27B model card benchmark table, LiveCodeBench v6 row."
     }
   },
   "qwen3-7-plus": {

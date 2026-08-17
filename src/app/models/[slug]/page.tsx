@@ -23,6 +23,7 @@ import {
   formatModalities,
   formatParams,
   formatPrice,
+  formatRateWithOffPeak,
   formatSpeed,
   getAllModels,
   getBenchmarkRank,
@@ -31,6 +32,8 @@ import {
   getRelatedModels,
   getSpecRank,
   modelFamilyLabel,
+  offPeakBlendedPrice,
+  offPeakWorkloadCost,
   workloadCost,
 } from "@/lib/models";
 import { getModelThinking, thinkingLevelLabel } from "@/lib/thinking";
@@ -323,6 +326,13 @@ function buildGrid({
                 <div className="mt-3 space-y-3">
                   <p className="text-sm text-muted-foreground">
                     {model.pricing.provider}, $ per 1M tokens
+                    {model.pricing.offPeak
+                      ? ` (peak / off-peak${
+                          model.pricing.peakHours
+                            ? `; peak hours ${model.pricing.peakHours}`
+                            : ""
+                        }).`
+                      : ""}
                     {thinking
                       ? ". Thinking tokens bill as output; list rates do not change by effort."
                       : ""}
@@ -330,20 +340,32 @@ function buildGrid({
                   <dl>
                     <Spec
                       label="Input"
-                      value={formatPrice(model.pricing.inputPer1M)}
+                      value={formatRateWithOffPeak(
+                        model.pricing.inputPer1M,
+                        model.pricing.offPeak?.inputPer1M
+                      )}
                     />
                     <Spec
                       label="Output"
-                      value={formatPrice(model.pricing.outputPer1M)}
+                      value={formatRateWithOffPeak(
+                        model.pricing.outputPer1M,
+                        model.pricing.offPeak?.outputPer1M
+                      )}
                     />
                     <Spec
                       label="Blended"
-                      value={blend !== undefined ? formatPrice(blend) : "-"}
+                      value={formatRateWithOffPeak(
+                        blend,
+                        offPeakBlendedPrice(model)
+                      )}
                       hint="3∶1 input:output mix"
                     />
                     <Spec
                       label="1M+250K"
-                      value={cost !== undefined ? formatPrice(cost) : "-"}
+                      value={formatRateWithOffPeak(
+                        cost,
+                        offPeakWorkloadCost(model)
+                      )}
                       hint="Illustrative chat workload"
                     />
                     {priceRank !== undefined ? (

@@ -70,6 +70,15 @@ export function workloadCost(m: Model): number | undefined {
   );
 }
 
+/** Off-peak workload cost for models with time-of-day pricing. */
+export function offPeakWorkloadCost(m: Model): number | undefined {
+  if (!m.pricing?.offPeak) return undefined;
+  return (
+    (WORKLOAD_TOKENS_IN / 1e6) * m.pricing.offPeak.inputPer1M +
+    (WORKLOAD_TOKENS_OUT / 1e6) * m.pricing.offPeak.outputPer1M
+  );
+}
+
 /** 1-based rank among models with a defined numeric value (higher/lower as specified). */
 export function getSpecRank(
   value: number | undefined,
@@ -112,11 +121,23 @@ export function formatPrice(n: number | undefined): string {
   return `$${n.toFixed(2)}`;
 }
 
+/** Format a rate pair as "peak / off-peak" when time-of-day pricing is present. */
+export function formatRateWithOffPeak(
+  peak: number | undefined,
+  offPeak: number | undefined
+): string {
+  if (peak === undefined) return "-";
+  if (offPeak === undefined) return formatPrice(peak);
+  return `${formatPrice(peak)} / ${formatPrice(offPeak)}`;
+}
+
 export function formatPricePair(
   pricing: Model["pricing"] | undefined
 ): string {
   if (!pricing) return "-";
-  return `${formatPrice(pricing.inputPer1M)} / ${formatPrice(pricing.outputPer1M)}`;
+  const base = `${formatPrice(pricing.inputPer1M)} / ${formatPrice(pricing.outputPer1M)}`;
+  if (!pricing.offPeak) return base;
+  return `${base} peak · ${formatPrice(pricing.offPeak.inputPer1M)} / ${formatPrice(pricing.offPeak.outputPer1M)} off-peak`;
 }
 
 export function formatContext(tokens: number): string {
@@ -168,6 +189,15 @@ export function blendedPrice(m: Model): number | undefined {
   if (!m.pricing) return undefined;
   // 3:1 input:output blend common for chat workloads
   return m.pricing.inputPer1M * 0.75 + m.pricing.outputPer1M * 0.25;
+}
+
+/** Off-peak blended price for models with time-of-day pricing. */
+export function offPeakBlendedPrice(m: Model): number | undefined {
+  if (!m.pricing?.offPeak) return undefined;
+  return (
+    m.pricing.offPeak.inputPer1M * 0.75 +
+    m.pricing.offPeak.outputPer1M * 0.25
+  );
 }
 
 function benchmarkOwners(id: BenchmarkId): Model[] {

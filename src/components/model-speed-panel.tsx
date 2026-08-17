@@ -4,7 +4,7 @@ import type { ResolvedThinking } from "@/data/types";
 import { Spec } from "@/components/spec-row";
 import { ModelSpeedToggle } from "@/components/model-speed-toggle";
 import { useSpeedMode } from "@/components/model-speed-context";
-import { blendedPrice, formatPrice, formatSpeed, workloadCost } from "@/lib/models";
+import { blendedPrice, formatRateWithOffPeak, formatSpeed, offPeakBlendedPrice, offPeakWorkloadCost, workloadCost } from "@/lib/models";
 
 export function ModelSpeedSpecRow() {
   const { activeModel } = useSpeedMode();
@@ -23,6 +23,8 @@ export function ModelSpeedPricingCard({
   const { mode, activeModel } = useSpeedMode();
   const blend = blendedPrice(activeModel);
   const cost = workloadCost(activeModel);
+  const offPeakBlend = offPeakBlendedPrice(activeModel);
+  const offPeakCost = offPeakWorkloadCost(activeModel);
 
   return (
     <section className="section-rule">
@@ -34,6 +36,13 @@ export function ModelSpeedPricingCard({
         <div className="mt-3 space-y-3">
           <p className="text-sm text-muted-foreground">
             {activeModel.pricing.provider}, $ per 1M tokens
+            {activeModel.pricing.offPeak
+              ? ` (peak / off-peak${
+                  activeModel.pricing.peakHours
+                    ? `; peak hours ${activeModel.pricing.peakHours}`
+                    : ""
+                }).`
+              : ""}
             {thinking
               ? ". Thinking tokens bill as output; list rates do not change by effort."
               : ""}
@@ -41,20 +50,26 @@ export function ModelSpeedPricingCard({
           <dl>
             <Spec
               label="Input"
-              value={formatPrice(activeModel.pricing.inputPer1M)}
+              value={formatRateWithOffPeak(
+                activeModel.pricing.inputPer1M,
+                activeModel.pricing.offPeak?.inputPer1M
+              )}
             />
             <Spec
               label="Output"
-              value={formatPrice(activeModel.pricing.outputPer1M)}
+              value={formatRateWithOffPeak(
+                activeModel.pricing.outputPer1M,
+                activeModel.pricing.offPeak?.outputPer1M
+              )}
             />
             <Spec
               label="Blended"
-              value={blend !== undefined ? formatPrice(blend) : "-"}
+              value={formatRateWithOffPeak(blend, offPeakBlend)}
               hint="3∶1 input:output mix"
             />
             <Spec
               label="1M+250K"
-              value={cost !== undefined ? formatPrice(cost) : "-"}
+              value={formatRateWithOffPeak(cost, offPeakCost)}
               hint="Illustrative chat workload"
             />
             {mode === "standard" && priceRank !== undefined ? (
