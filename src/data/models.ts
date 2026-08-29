@@ -601,7 +601,7 @@ export const models: Model[] = [
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
     },
     summary:
-      "Default Claude model for Free/Pro with intro pricing; closes much of the gap to prior Opus on agentic tasks.",
+      "Default Claude model for Free/Pro at $2/$10 (the launch introductory rate, made permanent on 2026-08-10 - the planned 2026-09-01 increase to $3/$15 was cancelled); closes much of the gap to prior Opus on agentic tasks.",
   },
   {
     slug: "claude-opus-4-5",
@@ -1616,6 +1616,32 @@ export const models: Model[] = [
       "Official DeepSeek-V4-Flash release (Jul 31, 2026 public beta) superseding the preview - same base architecture plus a DSpark speculative-decoding module (304B total), MIT weights on Hugging Face, and agent benchmarks well above V4-Pro-Preview (Terminal-Bench 2.1 82.7, NL2Repo 54.2). Peak/off-peak API pricing took effect Aug 16, 2026: $0.44 in / $1.32 out peak, $0.22 in / $0.66 out off-peak (per 1M tokens).",
   },
   {
+    slug: "deepseek-v4-flash-vision-exp",
+    name: "DeepSeek V4 Flash Vision Exp",
+    organization: "DeepSeek",
+    releaseDate: "2026-08-21",
+    openSource: false,
+    license: "Proprietary",
+    parameters: { total: 304 },
+    contextWindow: 1_000_000,
+    maxOutput: 384_000,
+    modalities: { input: ["text", "image"], output: ["text"] },
+    pricing: {
+      provider: "DeepSeek",
+      inputPer1M: 0.44,
+      outputPer1M: 1.32,
+      offPeak: { inputPer1M: 0.22, outputPer1M: 0.66 },
+      peakHours: "01:00-04:00 and 06:00-10:00 UTC",
+    },
+    benchmarks: {},
+    links: {
+      docs: "https://api-docs.deepseek.com/",
+      announcement: "https://api-docs.deepseek.com/news/news260821/",
+    },
+    summary:
+      "Experimental API-only vision variant of DeepSeek-V4-Flash-0731 (released Aug 21, 2026), adding image input (up to 600 images/request) while matching the text model on agents, reasoning, and world knowledge. Same rate card as V4-Flash: $0.44 in / $1.32 out peak, $0.22 / $0.66 off-peak, cache-hit $0.007 (per 1M). Benchmarks are DeepSeek's self-reported Harness numbers — close to but trailing Opus 4.8 on most rows (Terminal-Bench 2.1 83.9).",
+  },
+  {
     slug: "deepseek-v4-pro-0813",
     name: "DeepSeek V4 Pro 0813",
     organization: "DeepSeek",
@@ -1812,6 +1838,31 @@ export const models: Model[] = [
     },
     summary:
       "Open-weight Qwen3.8 27B dense vision-language model (Apache-2.0, released Aug 14, 2026) — native image and video understanding, 262K context extensible to 1M, flexible thinking control via reasoning_effort, and strong agentic coding for its size (Terminal-Bench 2.1 73.0, SWE-bench Pro 61.7, GPQA Diamond 89.2).",
+  },
+  {
+    slug: "qwen3-8-flash-next",
+    name: "Qwen3.8 Flash Next",
+    organization: "Alibaba",
+    releaseDate: "2026-08-26",
+    openSource: true,
+    license: "Qwen Community License 1.0",
+    parameters: { active: 6 },
+    contextWindow: 262_144,
+    maxOutput: 131_072,
+    modalities: { input: ["text", "image", "video"], output: ["text"] },
+    pricing: {
+      provider: "Alibaba (QwenCloud)",
+      inputPer1M: 0.15,
+      outputPer1M: 0.47,
+    },
+    speed: { tokensPerSec: 77.3, ttftSeconds: 2.79 },
+    benchmarks: {},
+    links: {
+      modelCard: "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      announcement: "https://qwen.ai/blog?id=qwen3.8-flash-next",
+    },
+    summary:
+      "Open-weight sparse-MoE Flash tier (6B active) previewing the Qwen4 architecture, released Aug 26, 2026 — 262K native context extensible to ~1M with YaRN, tuned for cost efficiency at $0.15/$0.47 per 1M (cache-hit $0.016). Reported total parameter count varies by source (~125-180B). Benchmark figures are Alibaba's self-reported launch numbers (SWE-bench Pro 62.5, HLE 35.9); Artificial Analysis places it at 56 on its Intelligence Index.",
   },
   {
     slug: "qwen3-7-plus",
@@ -2499,6 +2550,32 @@ export const models: Model[] = [
     },
     summary:
       "Zhipu's Aug 14, 2026 flagship - GLM-5.2 base re-post-trained for complex software engineering, terminal, and real-world agent tasks, with SOTA open-weights coding and emergent cybersecurity skills (CyberGym 84.5). GLM Coding Plan at launch; API and open weights pending.",
+  },
+  {
+    slug: "glm-5-3-flash",
+    name: "GLM-5.3 Flash",
+    organization: "Zhipu AI",
+    releaseDate: "2026-08-26",
+    openSource: true,
+    license: "MIT",
+    parameters: { total: 320, active: 18 },
+    contextWindow: 1_000_000,
+    maxOutput: 128_000,
+    modalities: { input: ["text", "image", "video"], output: ["text"] },
+    pricing: {
+      provider: "Zhipu / Z.ai",
+      inputPer1M: 0.15,
+      outputPer1M: 0.5,
+    },
+    speed: { tokensPerSec: 49.8, ttftSeconds: 1.51 },
+    benchmarks: {},
+    links: {
+      docs: "https://docs.z.ai/",
+      announcement: "https://z.ai/blog/glm-5.3-flash",
+      modelCard: "https://huggingface.co/zai-org/GLM-5.3-Flash",
+    },
+    summary:
+      "First natively multimodal GLM-5 (text/image/video in), MIT open weights, 320B total / 18B active MoE with 1M context, released Aug 26, 2026. List pricing $0.15/$0.50 per 1M (cache-hit ~$0.03), halved by a launch promo through Sept 9, 2026. Benchmark figures are Z.ai's self-reported launch numbers (DeepSWE 63.4, AutomationBench 48.8, Terminal-Bench 2.1 84.3); Artificial Analysis places it at 57 on its Intelligence Index.",
   },
   {
     slug: "glm-5",

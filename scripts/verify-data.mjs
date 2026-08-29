@@ -2,7 +2,7 @@ import fs from "node:fs";
 import { execFileSync } from "node:child_process";
 import { load } from "./update-benchmarks/load.mjs";
 
-const asOf = "2026-08-14";
+const asOf = "2026-08-29";
 
 const models = load("src/data/models.ts", "models");
 const imageModels = load("src/data/image-models.ts", "imageModels");
@@ -86,7 +86,7 @@ check(
   "evidence ledger must include every model, including intentional empty records"
 );
 
-check(models.length === 268, `expected 268 models, found ${models.length}`);
+check(models.length === 271, `expected 271 models, found ${models.length}`);
 check(new Set(models.map((model) => model.slug)).size === models.length, "duplicate model slug");
 const expectedEmptyBenchmarkModels = new Set(emptyBenchmarkManifest.slugs);
 check(
