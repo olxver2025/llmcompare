@@ -36,9 +36,9 @@ export function SiteFooter() {
           <Link href="/compare" className="hover:text-foreground hover:underline">
             Compare
           </Link>
-          <a href="/api" className="hover:text-foreground hover:underline">
+          <Link href="/api/docs" className="hover:text-foreground hover:underline">
             API
-          </a>
+          </Link>
           <Link href="/terms" className="hover:text-foreground hover:underline">
             Terms of Service
           </Link>

@@ -74,6 +74,12 @@ export function SiteHeader({
           </Link>
         </nav>
         <div className="ml-auto flex items-center gap-2">
+          <Link
+            href="/api/docs"
+            className="text-sm text-muted-foreground hover:text-foreground"
+          >
+            API
+          </Link>
           <ModelSearch
             models={models}
             imageModels={imageModels}
