@@ -2,8 +2,8 @@ import type { Model } from "./types";
 
 /**
  * Curated static dataset for LLMcompare.
- * Prices: official primary-provider API rates ($/1M tokens) as of ~2026-08-14.
- * Benchmarks: public leaderboards / model cards / system cards as of ~2026-08-14;
+ * Prices: official primary-provider API rates ($/1M tokens) as of ~2026-09-01.
+ * Benchmarks: public leaderboards / model cards / system cards as of ~2026-09-01;
  * omitted when unverifiable. Scores marked as estimated are omitted rather than guessed.
  */
 export const models: Model[] = [
@@ -13,15 +13,16 @@ export const models: Model[] = [
     name: "GPT-5.6 Sol",
     organization: "OpenAI",
     releaseDate: "2026-07-09",
+    knowledgeCutoff: "2026-02-16",
     openSource: false,
     license: "Proprietary",
     contextWindow: 1_050_000,
     maxOutput: 128_000,
     modalities: { input: ["text", "image"], output: ["text"] },
-    pricing: { provider: "OpenAI", inputPer1M: 5, outputPer1M: 30 },
+    pricing: { provider: "OpenAI", inputPer1M: 4, outputPer1M: 20 },
     speed: { tokensPerSec: 96, ttftSeconds: 0.45 },
     fast: {
-      pricing: { provider: "OpenAI", inputPer1M: 10, outputPer1M: 60 },
+      pricing: { provider: "OpenAI", inputPer1M: 8, outputPer1M: 40 },
       speed: { tokensPerSec: 240, ttftSeconds: 0.25 },
     },
     ultrafast: {
@@ -40,12 +41,12 @@ export const models: Model[] = [
       scicode: 56.9,
     },
     links: {
-      docs: "https://platform.openai.com/docs/models",
+      docs: "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
       announcement:
         "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
     },
     summary:
-      "OpenAI's July 2026 flagship reasoning tier, tuned for hard STEM and agentic work; ChatGPT's top API SKU in the 5.6 family. Fast mode (2× price) delivers up to 2.5× Standard speed, and the Cerebras-powered Ultrafast preview reaches up to 750 tok/s.",
+      "OpenAI's July 2026 flagship reasoning tier, tuned for hard STEM and agentic work; ChatGPT's top API SKU in the 5.6 family. Promotional Standard rates are $4/$20 (through at least Nov 21, 2026). Fast mode (2× price) delivers up to 2.5× Standard speed, and the Cerebras-powered Ultrafast preview reaches up to 750 tok/s.",
   },
   {
     slug: "gpt-5-6-terra",
@@ -869,7 +870,7 @@ export const models: Model[] = [
   },
   {
     slug: "gemini-3-flash",
-    name: "Gemini 3.5 Flash",
+    name: "Gemini 3 Flash",
     organization: "Google",
     releaseDate: "2026-05-19",
     openSource: false,
@@ -1188,17 +1189,17 @@ export const models: Model[] = [
     releaseDate: "2026-05-20",
     openSource: false,
     license: "Proprietary",
-    contextWindow: 256_000,
+    contextWindow: 1_000_000,
     maxOutput: 64_000,
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "xAI", inputPer1M: 1.25, outputPer1M: 2.5 },
     speed: { tokensPerSec: 83, ttftSeconds: 0.4 },
     benchmarks: {},
     links: {
-      docs: "https://docs.x.ai/docs/models",
+      docs: "https://docs.x.ai/developers/models/grok-4.20",
     },
     summary:
-      "Aggressive price/performance Grok 4.x mid-tier with strong chat preference scores.",
+      "High-speed Grok 4.x mid-tier with 1M context at $1.25/$2.50 (doubles above 200k prompt tokens); current API snapshot is grok-4.20-0309-reasoning.",
   },
   {
     slug: "grok-4-1",
@@ -2482,9 +2483,13 @@ export const models: Model[] = [
     parameters: { total: 1000, active: 32 },
     contextWindow: 262_144,
     maxOutput: 32_768,
-    modalities: { input: ["text", "image"], output: ["text"] },
+    modalities: { input: ["text", "image", "video"], output: ["text"] },
     pricing: { provider: "Moonshot", inputPer1M: 0.95, outputPer1M: 4 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.5 },
+    fast: {
+      pricing: { provider: "Moonshot", inputPer1M: 1.9, outputPer1M: 8 },
+      speed: { tokensPerSec: 180 },
+    },
     benchmarks: {
       cursorbench: 49.7,
       "webdev-arena": 1473,
@@ -2498,7 +2503,7 @@ export const models: Model[] = [
       announcement: "https://www.kimi.com/resources/kimi-k2-7-code",
     },
     summary:
-      "Open-weight coding specialist (1T MoE / 32B active) — long-horizon agentic software engineering at ~$0.95/$4; vendor coding benches only, so public leaderboard cells omitted.",
+      "Open-weight coding specialist (1T MoE / 32B active) with text/image/video input — long-horizon agentic software engineering at $0.95/$4; HighSpeed SKU is $1.90/$8 at ~180 tok/s.",
   },
   {
     slug: "kimi-k2-5",

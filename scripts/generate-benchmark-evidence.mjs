@@ -111,7 +111,7 @@ const output = `${JSON.stringify(
 const ledgerPath = "scripts/benchmark-evidence.json";
 
 if (checkOnly) {
-  const existing = fs.readFileSync(ledgerPath, "utf8");
+  const existing = fs.readFileSync(ledgerPath, "utf8").replace(/\r\n/g, "\n");
   if (existing !== output) {
     console.error(`${ledgerPath} is stale; run npm run generate:evidence`);
     process.exitCode = 1;

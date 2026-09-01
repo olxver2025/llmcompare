@@ -206,8 +206,10 @@ const exact = (slug, path, expected) => {
   check(value === expected, `${slug}.${path} expected ${expected}, found ${value}`);
 };
 
-exact("gpt-5-6-sol", "pricing.inputPer1M", 5);
-exact("gpt-5-6-sol", "pricing.outputPer1M", 30);
+exact("gpt-5-6-sol", "pricing.inputPer1M", 4);
+exact("gpt-5-6-sol", "pricing.outputPer1M", 20);
+exact("gpt-5-6-sol", "fast.pricing.inputPer1M", 8);
+exact("gpt-5-6-sol", "fast.pricing.outputPer1M", 40);
 exact("gpt-5-6-terra", "pricing.inputPer1M", 2);
 exact("gpt-5-6-terra", "pricing.outputPer1M", 12);
 exact("gpt-5-6-luna", "pricing.inputPer1M", 0.2);
@@ -241,7 +243,7 @@ exact("gemma-4-26b", "parameters.total", 26);
 exact("gemma-4-26b", "parameters.active", 3.8);
 exact("gemma-4-26b", "contextWindow", 256000);
 exact("grok-4-20", "releaseDate", "2026-05-20");
-exact("grok-4-20", "contextWindow", 256000);
+exact("grok-4-20", "contextWindow", 1000000);
 exact("mistral-small-4", "releaseDate", "2026-03-01");
 exact("devstral-2", "releaseDate", "2025-12-01");
 exact("gpt-4-1", "benchmarks.gpqa-diamond", 66.3);
