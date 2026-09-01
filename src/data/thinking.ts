@@ -252,6 +252,10 @@ export const MODEL_THINKING: Record<string, ModelThinkingAssignment> = {
     familyId: "anthropic-effort-xhigh-max",
     levelIds: ["low", "medium", "high", "xhigh", "max"],
   },
+  "claude-fable-5-1": {
+    familyId: "anthropic-effort-xhigh-max",
+    levelIds: ["low", "medium", "high", "xhigh", "max"],
+  },
   "claude-mythos-5": {
     familyId: "anthropic-effort-xhigh-max",
     levelIds: ["low", "medium", "high", "xhigh", "max"],
@@ -384,6 +388,12 @@ export const BENCHMARK_THINKING_LEVELS: Record<
   "claude-fable-5": {
     cursorbench: "max",
     "terminal-bench-2-1": "xhigh",
+  },
+  "claude-fable-5-1": {
+    cursorbench: "max",
+    "terminal-bench-2-1": "max",
+    "gpqa-diamond": "max",
+    scicode: "max",
   },
   "claude-mythos-5": {
     cursorbench: "max",

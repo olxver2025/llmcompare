@@ -507,6 +507,9 @@ export const models: Model[] = [
       hle: 60.9,
       "automation-bench": 31.4,
       cursorbench: 73.4,
+      "gpqa-diamond": 93.7,
+      "terminal-bench-2-1": 91.4,
+      scicode: 62,
     },
     links: {
       docs: "https://platform.claude.com/docs/en/models/fable-5-1/whats-new-fable-5-1",

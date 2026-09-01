@@ -268,7 +268,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 1210, `expected 1210 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 1213, `expected 1213 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);

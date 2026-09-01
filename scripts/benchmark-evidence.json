@@ -923,6 +923,27 @@
         "checkedOn": "2026-09-01",
         "protocol": "Anthropic's Fable 5.1 / Mythos 5.1 launch comparison table, CursorBench 3.2.0 score for Claude Fable 5.1 at max effort.",
         "evaluationDate": "2026-09-01"
+      },
+      "gpqa-diamond": {
+        "value": 93.7,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-01",
+        "protocol": "Artificial Analysis gpqa-diamond evaluation snapshot, Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback), gpqa score.",
+        "evaluationDate": "2026-09-01"
+      },
+      "terminal-bench-2-1": {
+        "value": 91.4,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+        "checkedOn": "2026-09-01",
+        "protocol": "Artificial Analysis terminal-bench-2-1 evaluation snapshot, Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback), terminalbench_v2_1 score.",
+        "evaluationDate": "2026-09-01"
+      },
+      "scicode": {
+        "value": 62,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-01",
+        "protocol": "Artificial Analysis scicode evaluation snapshot, Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback), scicode score.",
+        "evaluationDate": "2026-09-01"
       }
     },
     "claude-opus-5": {
