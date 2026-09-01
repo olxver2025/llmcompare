@@ -2,7 +2,7 @@ import fs from "node:fs";
 import { execFileSync } from "node:child_process";
 import { load } from "./update-benchmarks/load.mjs";
 
-const asOf = "2026-08-29";
+const asOf = "2026-09-01";
 
 const models = load("src/data/models.ts", "models");
 const imageModels = load("src/data/image-models.ts", "imageModels");
@@ -49,6 +49,11 @@ const expectedBenchmarkIds = new Set([
   "tau-bench",
   "matharena",
   "lmarena-elo",
+  "terminal-bench-4",
+  "terminal-bench-science",
+  "gdpval-aa",
+  "osworld-2-partial",
+  "osworld-2-strict",
 ]);
 
 try {
@@ -62,7 +67,7 @@ try {
   check(false, `benchmark evidence ledger is not reproducible: ${detail}`);
 }
 
-check(benchmarkIds.size === 26, `expected 26 benchmark IDs, found ${benchmarkIds.size}`);
+check(benchmarkIds.size === 31, `expected 31 benchmark IDs, found ${benchmarkIds.size}`);
 check(
   benchmarkIds.size === Object.keys(benchmarkCatalog).length,
   "benchmark metadata and benchmark ID exports disagree"
@@ -86,7 +91,7 @@ check(
   "evidence ledger must include every model, including intentional empty records"
 );
 
-check(models.length === 271, `expected 271 models, found ${models.length}`);
+check(models.length === 273, `expected 273 models, found ${models.length}`);
 check(new Set(models.map((model) => model.slug)).size === models.length, "duplicate model slug");
 const expectedEmptyBenchmarkModels = new Set(emptyBenchmarkManifest.slugs);
 check(
@@ -261,7 +266,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 1201, `expected 1201 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 1210, `expected 1210 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);

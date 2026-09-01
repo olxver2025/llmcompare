@@ -1,6 +1,19 @@
 {
-  "asOf": "2026-08-29",
+  "asOf": "2026-09-01",
   "cells": {
+    "claude-fable-5-1": {
+      "terminal-bench-science": 52.6,
+      "terminal-bench-4": 55.8,
+      "gdpval-aa": 1853,
+      "osworld-2-partial": 77.9,
+      "osworld-2-strict": 41.7,
+      "hle": 60.9,
+      "automation-bench": 31.4,
+      "cursorbench": 73.4
+    },
+    "claude-mythos-5-1": {
+      "terminal-bench-4": 60.9
+    },
     "gpt-5-6-sol": {
       "swe-bench-pro": 64.6,
       "terminal-bench-2-1": 88.8,

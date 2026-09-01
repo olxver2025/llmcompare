@@ -487,6 +487,34 @@ export const models: Model[] = [
 
   // ─── Anthropic ────────────────────────────────────────────
   {
+    slug: "claude-fable-5-1",
+    name: "Claude Fable 5.1",
+    organization: "Anthropic",
+    releaseDate: "2026-09-01",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 1_000_000,
+    maxOutput: 128_000,
+    modalities: { input: ["text", "image"], output: ["text"] },
+    pricing: { provider: "Anthropic", inputPer1M: 10, outputPer1M: 50 },
+    benchmarks: {
+      "terminal-bench-science": 52.6,
+      "terminal-bench-4": 55.8,
+      "gdpval-aa": 1853,
+      "osworld-2-partial": 77.9,
+      "osworld-2-strict": 41.7,
+      hle: 60.9,
+      "automation-bench": 31.4,
+      cursorbench: 73.4,
+    },
+    links: {
+      docs: "https://platform.claude.com/docs/en/models/fable-5-1/whats-new-fable-5-1",
+      announcement: "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+    },
+    summary:
+      "Anthropic's September 2026 successor to Fable 5 - same input/output pricing with cache reads cut to a quarter of the price, and gains concentrated in long-horizon agentic coding, knowledge work, research, and computer use.",
+  },
+  {
     slug: "claude-opus-5",
     name: "Claude Opus 5",
     organization: "Anthropic",
@@ -2893,6 +2921,27 @@ export const models: Model[] = [
     },
     summary:
       "Limited-availability Mythos-class model (Project Glasswing) - Fable's unrestricted sibling for trusted partners.",
+  },
+  {
+    slug: "claude-mythos-5-1",
+    name: "Claude Mythos 5.1",
+    organization: "Anthropic",
+    releaseDate: "2026-09-01",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 1_000_000,
+    maxOutput: 128_000,
+    modalities: { input: ["text", "image"], output: ["text"] },
+    pricing: { provider: "Anthropic", inputPer1M: 10, outputPer1M: 50 },
+    benchmarks: {
+      "terminal-bench-4": 60.9,
+    },
+    links: {
+      docs: "https://platform.claude.com/docs/en/models/fable-5-1/whats-new-fable-5-1",
+      announcement: "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+    },
+    summary:
+      "Successor to Mythos 5, restricted to Anthropic's Cyber Verification and Life Sciences Verification programs - same underlying model as Fable 5.1 with more permissive safeguards for vetted cybersecurity and biology work.",
   },
   {
     slug: "claude-sonnet-4-5",
