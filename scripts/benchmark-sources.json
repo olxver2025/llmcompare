@@ -1,4 +1,53 @@
 {
+  "claude-fable-5-1": {
+    "terminal-bench-science": {
+      "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "evaluationDate": "2026-09-01",
+      "protocol": "Anthropic's Fable 5.1 / Mythos 5.1 launch comparison table, Terminal-Bench-Science 0.1, Claude Fable 5.1 at max effort; standard error is roughly ±3.5-4.5 pts per model."
+    },
+    "terminal-bench-4": {
+      "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "evaluationDate": "2026-09-01",
+      "protocol": "Anthropic's Fable 5.1 / Mythos 5.1 launch comparison table, Terminal-Bench 4.0, Claude Fable 5.1 at max effort with production safeguards enabled."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "evaluationDate": "2026-09-01",
+      "protocol": "Anthropic's Fable 5.1 / Mythos 5.1 launch comparison table, GDPval-AA v2 Elo score for Claude Fable 5.1."
+    },
+    "osworld-2-partial": {
+      "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "evaluationDate": "2026-09-01",
+      "protocol": "Anthropic's Fable 5.1 / Mythos 5.1 launch comparison table, OSWorld 2.0 partial-credit score for Claude Fable 5.1 on the benchmark authors' August 2026 task release, production safeguards enabled."
+    },
+    "osworld-2-strict": {
+      "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "evaluationDate": "2026-09-01",
+      "protocol": "Anthropic's Fable 5.1 / Mythos 5.1 launch comparison table, OSWorld 2.0 strict score for Claude Fable 5.1 on the benchmark authors' August 2026 task release, production safeguards enabled."
+    },
+    "hle": {
+      "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "evaluationDate": "2026-09-01",
+      "protocol": "Anthropic's Fable 5.1 / Mythos 5.1 launch comparison table, Humanity's Last Exam no-tools score for Claude Fable 5.1."
+    },
+    "automation-bench": {
+      "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "evaluationDate": "2026-09-01",
+      "protocol": "Anthropic's Fable 5.1 / Mythos 5.1 launch comparison table, AutomationBench score for Claude Fable 5.1, production safeguards enabled."
+    },
+    "cursorbench": {
+      "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "evaluationDate": "2026-09-01",
+      "protocol": "Anthropic's Fable 5.1 / Mythos 5.1 launch comparison table, CursorBench 3.2.0 score for Claude Fable 5.1 at max effort."
+    }
+  },
+  "claude-mythos-5-1": {
+    "terminal-bench-4": {
+      "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "evaluationDate": "2026-09-01",
+      "protocol": "Anthropic's Fable 5.1 / Mythos 5.1 launch comparison table, Terminal-Bench 4.0 qualifier score reported for Claude Mythos 5.1 at max effort."
+    }
+  },
   "gpt-5-6-sol": {
     "swe-bench-pro": {
       "sourceUrl": "https://openai.com/index/previewing-gpt-5-6-sol/",

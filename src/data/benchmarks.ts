@@ -302,6 +302,61 @@ export const BENCHMARKS: Record<BenchmarkId, BenchmarkMeta> = {
     category: "arena",
     sourceUrl: "https://arena.ai/leaderboard",
   },
+  "terminal-bench-4": {
+    id: "terminal-bench-4",
+    name: "Terminal-Bench 4.0",
+    shortName: "TermBench 4",
+    description:
+      "Semantically-versioned continuation of Terminal-Bench with recalibrated task resources and a refreshed, less-saturated task set; scores are agent-system results that vary with harness, effort level, and evaluation date, and are not directly comparable to Terminal-Bench 2.x or 3 results.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "coding",
+    sourceUrl: "https://www.tbench.ai/leaderboard/terminal-bench/4.0",
+  },
+  "terminal-bench-science": {
+    id: "terminal-bench-science",
+    name: "Terminal-Bench-Science 0.1",
+    shortName: "TB-Science",
+    description:
+      "Agentic scientific-research workflows across the life, physical, Earth, mathematical, and engineering sciences, built on the Terminal-Bench harness with tasks authored by domain experts and verified programmatically. Scores are agent-system results with a wide per-model standard error (roughly ±3.5-4.5 pts) and are not comparable across benchmark releases.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "agent",
+    sourceUrl: "https://www.tbench.ai/news/terminal-bench-science-0-1",
+  },
+  "gdpval-aa": {
+    id: "gdpval-aa",
+    name: "GDPval-AA v2",
+    shortName: "GDPval-AA",
+    description:
+      "Artificial Analysis's agentic evaluation of OpenAI's GDPval task set, covering real-world knowledge work across dozens of occupations and industries. Scored via blind pairwise comparison fit to a Bradley-Terry Elo model anchored at 1000 for human-expert deliverables; requires shell and browser access through an agent harness (Stirrup), so it is not a raw model-only capability score.",
+    higherIsBetter: true,
+    unit: "elo",
+    category: "agent",
+    sourceUrl: "https://artificialanalysis.ai/evaluations/gdpval-aa",
+  },
+  "osworld-2-partial": {
+    id: "osworld-2-partial",
+    name: "OSWorld 2.0 (Partial Credit)",
+    shortName: "OSWorld Partial",
+    description:
+      "OSWorld 2.0 long-horizon computer-use benchmark under partial-credit scoring, which awards credit for subtasks completed within a long real-world desktop workflow. Agent-system result tied to harness, tool access, and the specific task release used; not comparable to pre-2.0 OSWorld results.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "agent",
+    sourceUrl: "https://os-world.github.io/",
+  },
+  "osworld-2-strict": {
+    id: "osworld-2-strict",
+    name: "OSWorld 2.0 (Strict)",
+    shortName: "OSWorld Strict",
+    description:
+      "OSWorld 2.0 long-horizon computer-use benchmark under strict scoring, which requires the full task to complete for credit. Agent-system result tied to harness, tool access, and the specific task release used; not comparable to partial-credit OSWorld 2.0 scores or to pre-2.0 OSWorld results.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "agent",
+    sourceUrl: "https://os-world.github.io/",
+  },
 };
 
 export const BENCHMARK_IDS = Object.keys(BENCHMARKS) as BenchmarkId[];
@@ -333,6 +388,7 @@ export const BENCHMARK_CATEGORIES = [
       "livecodebench",
       "terminal-bench-2-1",
       "terminal-bench-3",
+      "terminal-bench-4",
       "aider-polyglot",
       "scicode",
       "cursorbench",
@@ -358,6 +414,10 @@ export const BENCHMARK_CATEGORIES = [
       "cybergym",
       "agents-last-exam",
       "automation-bench",
+      "terminal-bench-science",
+      "gdpval-aa",
+      "osworld-2-partial",
+      "osworld-2-strict",
     ] as BenchmarkId[],
   },
   {

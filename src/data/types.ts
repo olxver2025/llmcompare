@@ -24,7 +24,12 @@ export type BenchmarkId =
   | "bigcodebench"
   | "tau-bench"
   | "matharena"
-  | "lmarena-elo";
+  | "lmarena-elo"
+  | "terminal-bench-4"
+  | "terminal-bench-science"
+  | "gdpval-aa"
+  | "osworld-2-partial"
+  | "osworld-2-strict";
 
 export type ModelPricing = {
   provider: string;
