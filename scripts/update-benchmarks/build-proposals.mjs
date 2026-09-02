@@ -37,7 +37,7 @@ function resolveFromMap(adapterName, sourceName) {
   return hits.length === 1 ? hits[0] : null;
 }
 
-const PRIORITY = ["tbench", "frontierbench", "bigcodebench", "swebench-verified", "swebench-multilingual"];
+const PRIORITY = ["tbench", "bigcodebench", "livecodebench"];
 
 async function main() {
   const cells = new Map(); // slug/bid -> proposal
@@ -91,9 +91,8 @@ async function main() {
   console.log(`proposals: ${proposals.length} (all adds)`);
   console.log(`unmatched: ${unmatchedList.length}`);
 
-  const out = { generatedAt: "2026-08-13", proposals, unmatched: unmatchedList };
-  fs.writeFileSync("C:/Users/olxvrr/AppData/Local/Temp/opencode/bench-extract/proposals-adds.json", JSON.stringify(out, null, 2));
-  fs.writeFileSync("C:/Users/olxvrr/AppData/Local/Temp/opencode/bench-extract/unmatched-adds.txt", unmatchedList.map((u) => `${u.source}\t${u.sourceModelName}`).join("\n") + "\n", "utf8");
+  const out = { generatedAt: new Date().toISOString().slice(0, 10), proposals, unmatched: unmatchedList };
+  fs.writeFileSync("scripts/update-benchmarks/proposals-adds.json", `${JSON.stringify(out, null, 2)}\n`);
 
   const byBench = {};
   for (const p of proposals) byBench[p.benchmarkId] = (byBench[p.benchmarkId] ?? 0) + 1;

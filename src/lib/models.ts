@@ -10,7 +10,7 @@ import { modelFamilyId, modelFamilyLabel } from "@/lib/model-family";
 
 export { QUALITY_COMPARABLE_ELO_BAND, type OverallBasis };
 
-export const DATA_FRESHNESS = "2026-09-01";
+export const DATA_FRESHNESS = "2026-09-02";
 
 /** Illustrative chat workload used for cost estimates. */
 export const WORKLOAD_TOKENS_IN = 1_000_000;
