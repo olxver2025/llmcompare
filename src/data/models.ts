@@ -39,6 +39,8 @@ export const models: Model[] = [
       "lmarena-elo": 1481,
       hle: 46,
       scicode: 56.9,
+      "terminal-bench-4": 37.3,
+      "webdev-arena": 1616.4,
     },
     links: {
       docs: "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
@@ -69,6 +71,8 @@ export const models: Model[] = [
       "lmarena-elo": 1464,
       hle: 38.5,
       scicode: 50.1,
+      "terminal-bench-4": 21.5,
+      "webdev-arena": 1519,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -98,6 +102,10 @@ export const models: Model[] = [
       "terminal-bench-3": 14.3,
       "swe-rebench": 43.6,
       "lmarena-elo": 1450,
+      hle: 39.5,
+      scicode: 52.5,
+      "terminal-bench-4": 17.3,
+      "webdev-arena": 1519,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -146,6 +154,9 @@ export const models: Model[] = [
       "terminal-bench-2-1": 83.1,
       "lmarena-elo": 1477,
       matharena: 77.8,
+      "swe-rebench": 62.7,
+      scicode: 56.1,
+      "webdev-arena": 1509.4,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -192,6 +203,9 @@ export const models: Model[] = [
       "swe-bench-pro": 57.7,
       "lmarena-elo": 1465,
       "webdev-arena": 1390,
+      "swe-rebench": 57.6,
+      scicode: 56.6,
+      "terminal-bench-2-1": 78.3,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -510,6 +524,7 @@ export const models: Model[] = [
       "gpqa-diamond": 93.7,
       "terminal-bench-2-1": 91.4,
       scicode: 62,
+      "webdev-arena": 1765.4,
     },
     links: {
       docs: "https://platform.claude.com/docs/en/models/fable-5-1/whats-new-fable-5-1",
@@ -541,6 +556,8 @@ export const models: Model[] = [
       hle: 52.8,
       scicode: 54.3,
       "terminal-bench-2-1": 87.6,
+      "terminal-bench-4": 51.8,
+      "webdev-arena": 1687.2,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -572,6 +589,7 @@ export const models: Model[] = [
       "swe-rebench": 64.5,
       hle: 55.5,
       scicode: 60.2,
+      "terminal-bench-4": 44.6,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -600,6 +618,9 @@ export const models: Model[] = [
       "webdev-arena": 1539,
       "terminal-bench-3": 21.1,
       "swe-rebench": 56.5,
+      hle: 48.7,
+      scicode: 53.5,
+      "terminal-bench-4": 23.6,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -628,6 +649,8 @@ export const models: Model[] = [
       "gpqa-diamond": 91.1,
       hle: 41.3,
       scicode: 53.6,
+      "terminal-bench-4": 12.4,
+      "webdev-arena": 1536.5,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -675,6 +698,10 @@ export const models: Model[] = [
       "lmarena-elo": 1472,
       "webdev-arena": 1524,
       "swe-rebench": 54.5,
+      "gpqa-diamond": 87.5,
+      hle: 33.6,
+      scicode: 46.8,
+      "terminal-bench-2-1": 71.2,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -836,6 +863,8 @@ export const models: Model[] = [
       hle: 40.8,
       scicode: 52.7,
       "terminal-bench-2-1": 77.5,
+      "lmarena-elo": 1480.1,
+      "webdev-arena": 1538.1,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -861,6 +890,10 @@ export const models: Model[] = [
       "terminal-bench-3": 14.9,
       deepswe: 65.3,
       "webdev-arena": 1588,
+      "gpqa-diamond": 94.5,
+      hle: 47.9,
+      scicode: 56.8,
+      "lmarena-elo": 1490.9,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -1017,6 +1050,8 @@ export const models: Model[] = [
       "lmarena-elo": 1451,
       "webdev-arena": 1365,
       "swe-rebench": 25.1,
+      scicode: 43.4,
+      "terminal-bench-2-1": 43.4,
     },
     links: {
       modelCard: "https://huggingface.co/google/gemma-4-31b-it",
@@ -1108,6 +1143,7 @@ export const models: Model[] = [
       "gpqa-diamond": 93.1,
       hle: 42.7,
       scicode: 54.1,
+      "terminal-bench-4": 12.4,
     },
     links: {
       docs: "https://docs.x.ai/docs/models",
@@ -1134,6 +1170,9 @@ export const models: Model[] = [
       hle: 42.9,
       scicode: 53.6,
       "terminal-bench-2-1": 88.4,
+      "terminal-bench-4": 20.3,
+      "lmarena-elo": 1461.2,
+      "webdev-arena": 1629.1,
     },
     links: {
       docs: "https://docs.x.ai/developers/models/grok-4.6",
@@ -1158,6 +1197,10 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1441,
       "webdev-arena": 1355,
+      "gpqa-diamond": 90.1,
+      hle: 37.2,
+      scicode: 47.3,
+      "terminal-bench-2-1": 39.7,
     },
     links: {
       docs: "https://docs.x.ai/developers/models/grok-4.3",
@@ -1604,6 +1647,10 @@ export const models: Model[] = [
       "automation-bench": 10.8,
       "lmarena-elo": 1435,
       "swe-rebench": 38.4,
+      "gpqa-diamond": 89.4,
+      hle: 34.8,
+      scicode: 44.9,
+      "webdev-arena": 1580.9,
     },
     links: {
       docs: "https://api-docs.deepseek.com/",
@@ -1638,6 +1685,9 @@ export const models: Model[] = [
       "toolathlon-verified": 70.3,
       "agents-last-exam": 25.2,
       "automation-bench": 25.1,
+      "gpqa-diamond": 90.8,
+      hle: 38.6,
+      scicode: 49.9,
     },
     links: {
       docs: "https://api-docs.deepseek.com/",
@@ -1863,6 +1913,9 @@ export const models: Model[] = [
       nl2repo: 42.3,
       deepswe: 42.2,
       livecodebench: 90.3,
+      scicode: 44.7,
+      "lmarena-elo": 1435.1,
+      "webdev-arena": 1597.5,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen3.8-27B",
@@ -1888,7 +1941,13 @@ export const models: Model[] = [
       outputPer1M: 0.47,
     },
     speed: { tokensPerSec: 77.3, ttftSeconds: 2.79 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 92.3,
+      hle: 38,
+      scicode: 46.9,
+      "terminal-bench-2-1": 86.1,
+      "webdev-arena": 1622.3,
+    },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
       announcement: "https://qwen.ai/blog?id=qwen3.8-flash-next",
@@ -2468,6 +2527,8 @@ export const models: Model[] = [
       "terminal-bench-2-1": 88.3,
       cursorbench: 60.8,
       matharena: 69.7,
+      "lmarena-elo": 1488.9,
+      "webdev-arena": 1673.8,
     },
     links: {
       modelCard: "https://huggingface.co/moonshotai/Kimi-K3",
@@ -2557,6 +2618,12 @@ export const models: Model[] = [
       cursorbench: 55,
       "terminal-bench-3": 4.6,
       "swe-rebench": 57,
+      "gpqa-diamond": 89.5,
+      hle: 41.1,
+      scicode: 50.5,
+      "terminal-bench-2-1": 77.9,
+      "lmarena-elo": 1471.7,
+      "webdev-arena": 1585.4,
     },
     links: {
       docs: "https://docs.z.ai/",
@@ -2579,6 +2646,13 @@ export const models: Model[] = [
       deepswe: 66.9,
       "agents-last-exam": 28.5,
       cybergym: 84.5,
+      "gpqa-diamond": 91.7,
+      hle: 42.3,
+      scicode: 56.5,
+      "terminal-bench-2-1": 83.9,
+      "terminal-bench-4": 41.8,
+      "lmarena-elo": 1482.1,
+      "webdev-arena": 1609.2,
     },
     links: {
       docs: "https://docs.bigmodel.cn/cn/guide/models/text/glm-5.3",
@@ -2604,7 +2678,14 @@ export const models: Model[] = [
       outputPer1M: 0.5,
     },
     speed: { tokensPerSec: 49.8, ttftSeconds: 1.51 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 91.2,
+      hle: 39.9,
+      scicode: 46.1,
+      "terminal-bench-2-1": 84.3,
+      "lmarena-elo": 1473.1,
+      "webdev-arena": 1604.4,
+    },
     links: {
       docs: "https://docs.z.ai/",
       announcement: "https://z.ai/blog/glm-5.3-flash",
@@ -2867,6 +2948,7 @@ export const models: Model[] = [
       "lmarena-elo": 1494,
       "webdev-arena": 1558,
       "swe-rebench": 53.1,
+      scicode: 54.5,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -3016,6 +3098,10 @@ export const models: Model[] = [
       "gpqa-diamond": 88.0,
       hle: 28.2,
       "swe-bench-pro": 54.4,
+      scicode: 49.9,
+      "terminal-bench-2-1": 59.2,
+      "lmarena-elo": 1448.2,
+      "webdev-arena": 1397.2,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -3039,6 +3125,9 @@ export const models: Model[] = [
       "gpqa-diamond": 82.8,
       hle: 24.3,
       "swe-bench-pro": 52.4,
+      scicode: 46.9,
+      "terminal-bench-2-1": 60.7,
+      "lmarena-elo": 1402.2,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -5119,6 +5208,12 @@ export const models: Model[] = [
     benchmarks: {
       cursorbench: 48.8,
       "webdev-arena": 1492,
+      "swe-rebench": 49.5,
+      "gpqa-diamond": 92.2,
+      hle: 42.7,
+      scicode: 53.1,
+      "terminal-bench-2-1": 78.7,
+      "lmarena-elo": 1479.4,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -6594,6 +6689,9 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1413,
       "webdev-arena": 1356,
+      "gpqa-diamond": 86.7,
+      hle: 27.8,
+      scicode: 41.2,
     },
     links: {
       docs: "https://cloud.tencent.com/document/product/1729",
@@ -6892,6 +6990,7 @@ export const models: Model[] = [
       "terminal-bench-2-1": 63.8,
       "lmarena-elo": 1442,
       "webdev-arena": 1405,
+      hle: 31.9,
     },
     links: {
       modelCard: "https://huggingface.co/thinkingmachines/Inkling",
@@ -6921,6 +7020,7 @@ export const models: Model[] = [
       "terminal-bench-2-1": 64.7,
       hle: 33.3,
       "lmarena-elo": 1430.5,
+      "webdev-arena": 1404.6,
     },
     links: {
       modelCard: "https://huggingface.co/thinkingmachines/Inkling-Small",

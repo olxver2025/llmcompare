@@ -31,26 +31,26 @@ export function extractArenaEntries(file) {
   return null;
 }
 
-export function extractLMArenaElo() {
+export function extractLMArenaElo(evaluationDate = "2026-08-12") {
   const entries = extractArenaEntries("benchmarks/lmarena-elo/arena.ai-leaderboard.html");
   return (entries ?? []).map((e) => ({
     benchmarkId: "lmarena-elo",
     sourceModelName: e.modelDisplayName,
     value: Math.round(e.rating * 10) / 10,
     sourceUrl: "https://arena.ai/leaderboard",
-    evaluationDate: "2026-08-12",
-    protocol: `LMArena Elo leaderboard snapshot, ${e.modelDisplayName}, style-control overall Elo.`,
+    evaluationDate,
+    protocol: `Arena Text Overall leaderboard snapshot dated ${evaluationDate}; listing '${e.modelDisplayName}'. Elo rating is a volatile leaderboard snapshot.`,
   })).filter((s) => Number.isFinite(s.value));
 }
 
-export function extractWebDevArena() {
+export function extractWebDevArena(evaluationDate = "2026-08-12") {
   const entries = extractArenaEntries("benchmarks/webdev-arena/arena.ai-leaderboard-code-webdev.html");
   return (entries ?? []).map((e) => ({
     benchmarkId: "webdev-arena",
     sourceModelName: e.modelDisplayName,
     value: Math.round(e.rating * 10) / 10,
     sourceUrl: "https://arena.ai/leaderboard/code/webdev",
-    evaluationDate: "2026-08-12",
-    protocol: `WebDev Arena leaderboard snapshot, ${e.modelDisplayName}, overall Elo.`,
+    evaluationDate,
+    protocol: `Arena Code/WebDev Overall leaderboard snapshot dated ${evaluationDate}; listing '${e.modelDisplayName}'. Elo rating is a volatile leaderboard snapshot.`,
   })).filter((s) => Number.isFinite(s.value));
 }

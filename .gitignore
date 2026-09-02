@@ -50,3 +50,4 @@ next-env.d.ts
 /.claude/
 /.serena/
 /.tokensave/
+/scripts/update-benchmarks/proposals-adds.json
