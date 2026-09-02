@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-01",
+  "asOf": "2026-09-02",
   "cells": {
     "claude-fable-5-1": {
       "terminal-bench-science": 52.6,
@@ -277,6 +277,16 @@
       "terminal-bench-3": 14.9,
       "deepswe": 65.3,
       "webdev-arena": 1588
+    },
+    "gemini-3-8-flash": {
+      "deepswe": 73.7,
+      "gdpval-aa": 1545,
+      "terminal-bench-2-1": 89.4,
+      "terminal-bench-4": 19.1,
+      "osworld-2-partial": 59
+    },
+    "gemini-3-8-flash-cyber": {
+      "cybergym": 86.2
     },
     "gemini-3-flash": {
       "lmarena-elo": 1473,

@@ -1189,6 +1189,40 @@
       "protocol": "Gemini 3.7 Flash model card; Code Arena web development Elo."
     }
   },
+  "gemini-3-8-flash": {
+    "deepswe": {
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-8-Flash-Model-Card.pdf",
+      "evaluationDate": "2026-09-02",
+      "protocol": "Gemini 3.8 Flash model card results table; DeepSWE v1.1 long-horizon software engineering."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-8-Flash-Model-Card.pdf",
+      "evaluationDate": "2026-09-02",
+      "protocol": "Gemini 3.8 Flash model card results table; GDPval-AA v2 knowledge-work Elo."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-8-Flash-Model-Card.pdf",
+      "evaluationDate": "2026-09-02",
+      "protocol": "Gemini 3.8 Flash model card results table; Terminal-Bench 2.1 agentic terminal coding."
+    },
+    "terminal-bench-4": {
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-8-Flash-Model-Card.pdf",
+      "evaluationDate": "2026-09-02",
+      "protocol": "Gemini 3.8 Flash model card results table; Terminal-Bench 4.0 general agent capabilities."
+    },
+    "osworld-2-partial": {
+      "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-8-Flash-Model-Card.pdf",
+      "evaluationDate": "2026-09-02",
+      "protocol": "Gemini 3.8 Flash model card results table; OSWorld 2.0 partial-credit score, batch tool enabled."
+    }
+  },
+  "gemini-3-8-flash-cyber": {
+    "cybergym": {
+      "sourceUrl": "https://deepmind.google/models/gemini/cyber/",
+      "evaluationDate": "2026-09-02",
+      "protocol": "Google DeepMind Gemini 3.8 Flash Cyber product page; CyberGym pass@1 vulnerability discovery."
+    }
+  },
   "gemini-3-flash": {
     "lmarena-elo": {
       "sourceUrl": "https://lmarena.ai/leaderboard/text",
