@@ -128,6 +128,16 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-02",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'gpt-5.6-sol-xhigh (codex-harness)'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "terminal-bench-science": {
+      "sourceUrl": "https://www.tbench.ai/news/terminal-bench-science-0-1",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Terminal-Bench-Science 0.1 official results table, GPT-5.6 Sol with Codex agent, resolution rate."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, GPT-5.6 Sol (max), Elo (±15)."
     }
   },
   "gpt-5-6-terra": {
@@ -180,6 +190,16 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-02",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'gpt-5.6-terra-xhigh (codex-harness)'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "terminal-bench-science": {
+      "sourceUrl": "https://www.tbench.ai/news/terminal-bench-science-0-1",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Terminal-Bench-Science 0.1 official results table, GPT-5.6 Terra with Codex agent, resolution rate."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, GPT-5.6 Terra (max), Elo (±15)."
     }
   },
   "gpt-5-6-luna": {
@@ -237,6 +257,16 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-02",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'gpt-5.6-luna-xhigh (codex-harness)'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "terminal-bench-science": {
+      "sourceUrl": "https://www.tbench.ai/news/terminal-bench-science-0-1",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Terminal-Bench-Science 0.1 official results table, GPT-5.6 Luna with Codex agent, resolution rate."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, GPT-5.6 Luna (max), Elo (±15)."
     }
   },
   "gpt-5-5": {
@@ -289,6 +319,16 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-02",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'gpt-5.5-xhigh (codex-harness)'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Toolathlon-Verified official leaderboard, GPT-5.5 (xhigh), Pass@1."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, GPT-5.5 (xhigh), Elo (±15)."
     }
   },
   "gpt-5-4": {
@@ -358,6 +398,11 @@
       "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
       "evaluationDate": "2025-08-07",
       "protocol": "Humanity's Last Exam, no tools; OpenAI detailed benchmark table."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
+      "evaluationDate": "2026-09-03",
+      "protocol": "SWE-bench Pro public leaderboard, gpt-5-2025-08-07 (High), resolved % (±3.49)."
     }
   },
   "gpt-5-mini": {
@@ -816,6 +861,16 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-02",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'claude-opus-5-max'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "terminal-bench-science": {
+      "sourceUrl": "https://www.tbench.ai/news/terminal-bench-science-0-1",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Terminal-Bench-Science 0.1 official results table, Claude Opus 5 with Claude Code agent, resolution rate."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, Claude Opus 5 (Adaptive Reasoning, Max Effort), Elo (±18)."
     }
   },
   "claude-fable-5": {
@@ -873,6 +928,11 @@
       "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/4.0",
       "evaluationDate": "2026-06-09",
       "protocol": "Terminal-Bench 4.0 official leaderboard, Fable 5 with the Claude Code agent at max reasoning effort, 330 trials, accuracy%."
+    },
+    "terminal-bench-science": {
+      "sourceUrl": "https://www.tbench.ai/news/terminal-bench-science-0-1",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Terminal-Bench-Science 0.1 official results table, Claude Fable 5 with Claude Code agent, resolution rate."
     }
   },
   "claude-mythos-5": {
@@ -982,6 +1042,21 @@
       "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/4.0",
       "evaluationDate": "2026-05-28",
       "protocol": "Terminal-Bench 4.0 official leaderboard, Opus 4.8 with the Claude Code agent at max reasoning effort, 330 trials, accuracy%."
+    },
+    "terminal-bench-science": {
+      "sourceUrl": "https://www.tbench.ai/news/terminal-bench-science-0-1",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Terminal-Bench-Science 0.1 official results table, Claude Opus 4.8 with Claude Code agent, resolution rate."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Toolathlon-Verified official leaderboard, Claude Opus 4.8 (max), Pass@1."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, Claude Opus 4.8 (Adaptive Reasoning, Max Effort), Elo (±15)."
     }
   },
   "claude-sonnet-5": {
@@ -1034,6 +1109,16 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-02",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'claude-sonnet-5-high'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Toolathlon-Verified official leaderboard, Claude Sonnet 5 (max), Pass@1."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, Claude Sonnet 5 (Adaptive Reasoning, Max Effort), Elo (±15)."
     }
   },
   "claude-opus-4-5": {
@@ -1056,6 +1141,11 @@
       "sourceUrl": "https://www.swebench.com/multilingual.html",
       "evaluationDate": "2026-02-13",
       "protocol": "SWE-bench Multilingual official leaderboard, Claude 4.5 Opus, agent mini-SWE-agent, resolved %."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
+      "evaluationDate": "2026-09-03",
+      "protocol": "SWE-bench Pro public leaderboard, claude-opus-4-5-20251101, resolved % (±3.60)."
     }
   },
   "claude-sonnet-4-6": {
@@ -1115,6 +1205,11 @@
       "sourceUrl": "https://www.swebench.com/multilingual.html",
       "evaluationDate": "2026-02-13",
       "protocol": "SWE-bench Multilingual official leaderboard, Claude 4.5 Haiku, agent mini-SWE-agent, resolved %."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
+      "evaluationDate": "2026-09-03",
+      "protocol": "SWE-bench Pro public leaderboard, claude-4-5-haiku, resolved % (±3.55)."
     }
   },
   "claude-sonnet-4": {
@@ -1137,6 +1232,11 @@
       "sourceUrl": "https://livecodebench.github.io/",
       "evaluationDate": "2026-08-12",
       "protocol": "LiveCodeBench official performances (pass@1 across questions), Claude-Sonnet-4."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
+      "evaluationDate": "2026-09-03",
+      "protocol": "SWE-bench Pro public leaderboard, claude-4-Sonnet, resolved % (±3.59)."
     }
   },
   "claude-haiku-3-5": {
@@ -1231,6 +1331,11 @@
       "sourceUrl": "https://swe-rebench.com/",
       "evaluationDate": "2026-08-13",
       "protocol": "SWE-rebench official leaderboard listing 'Gemini 3.1 Pro Preview', agent tools, current task window resolved rate."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Toolathlon-Verified official leaderboard, Gemini 3.1 Pro (high), Pass@1."
     }
   },
   "gemini-3-pro": {
@@ -1352,6 +1457,11 @@
       "sourceUrl": "https://arena.ai/leaderboard",
       "evaluationDate": "2026-09-02",
       "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'gemini-3.7-flash-high'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, Gemini 3.7 Flash (high), Elo (±17)."
     }
   },
   "gemini-3-8-flash": {
@@ -1379,6 +1489,16 @@
       "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-8-Flash-Model-Card.pdf",
       "evaluationDate": "2026-09-02",
       "protocol": "Gemini 3.8 Flash model card results table; OSWorld 2.0 partial-credit score, batch tool enabled."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-09-02",
+      "protocol": "LMArena WebDev Arena leaderboard, gemini-3.8-flash-high (Preliminary), Elo."
+    },
+    "cursorbench": {
+      "sourceUrl": "https://cursor.com/cursorbench",
+      "evaluationDate": "2026-09-02",
+      "protocol": "CursorBench 3.2 official leaderboard changelog ('Added Gemini 3.8 Flash results'), Gemini 3.8 Flash High effort."
     }
   },
   "gemini-3-8-flash-cyber": {
@@ -1403,6 +1523,11 @@
       "sourceUrl": "https://www.swebench.com/multilingual.html",
       "evaluationDate": "2026-02-13",
       "protocol": "SWE-bench Multilingual official leaderboard, Gemini 3 Flash, agent mini-SWE-agent, resolved %."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
+      "evaluationDate": "2026-09-03",
+      "protocol": "SWE-bench Pro public leaderboard, gemini-3-flash, resolved % (±3.55)."
     }
   },
   "gemini-3-5-flash-lite": {
@@ -1435,6 +1560,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
       "evaluationDate": "2026-08-12",
       "protocol": "Artificial Analysis terminal-bench-2-1 evaluation snapshot, Gemini 3.5 Flash-Lite, terminalbench_v2_1 score."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Toolathlon-Verified official leaderboard, Gemini 3.5 Flash-Lite (high), Pass@1."
     }
   },
   "gemini-2-5-pro": {
@@ -1702,6 +1832,11 @@
       "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/4.0",
       "evaluationDate": "2026-07-16",
       "protocol": "Terminal-Bench 4.0 official leaderboard, Grok 4.5 with the Grok Build agent at high reasoning effort, 330 trials, accuracy%."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, Grok 4.5 (high), Elo (±17)."
     }
   },
   "grok-4-6": {
@@ -1749,6 +1884,16 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-02",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'grok-4.6-high'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "terminal-bench-science": {
+      "sourceUrl": "https://www.tbench.ai/news/terminal-bench-science-0-1",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Terminal-Bench-Science 0.1 official results table, Grok 4.6 with Grok Build agent, resolution rate."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, Grok 4.6 (xhigh), Elo (±18)."
     }
   },
   "grok-4-3": {
@@ -1872,6 +2017,16 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
       "evaluationDate": "2026-08-12",
       "protocol": "Artificial Analysis terminal-bench-2-1 evaluation snapshot, Muse Spark 1.2 (xhigh), terminalbench_v2_1 score."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Toolathlon-Verified official leaderboard, Muse Spark 1.2 (xhigh), Pass@1."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, Muse Spark 1.2 (xhigh), Elo (±17)."
     }
   },
   "muse-glimmer": {
@@ -1946,6 +2101,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
       "evaluationDate": "2026-08-12",
       "protocol": "Artificial Analysis scicode evaluation snapshot, Muse Spark 1.1 (xhigh), scicode score."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Toolathlon-Verified official leaderboard, Muse Spark 1.1 (xhigh), Pass@1."
     }
   },
   "llama-4-maverick": {
@@ -2013,6 +2173,11 @@
       "sourceUrl": "https://www.swebench.com/verified.html",
       "evaluationDate": "2025-07-20",
       "protocol": "SWE-bench Verified official leaderboard, mini-SWE-agent + Llama 4 Maverick Instruct, agent mini-SWE-agent, resolved %."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
+      "evaluationDate": "2026-09-03",
+      "protocol": "SWE-bench Pro public leaderboard, llama4-maverick-17b-instruct, resolved % (±1.24)."
     }
   },
   "llama-4-scout": {
@@ -2387,6 +2552,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
       "evaluationDate": "2026-09-02",
       "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'DeepSeek V4 Flash 0731 (Reasoning, Max Effort)', scicode score."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, DeepSeek V4 Flash 0731 (Reasoning, Max Effort), Elo (±17)."
     }
   },
   "deepseek-v4-pro-0813": {
@@ -2439,6 +2609,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
       "evaluationDate": "2026-08-12",
       "protocol": "Artificial Analysis scicode evaluation snapshot, DeepSeek V4 Pro 0813 (Reasoning, Max Effort), scicode score."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, DeepSeek V4 Pro 0813 (Reasoning, Max Effort), Elo (±18)."
     }
   },
   "deepseek-v3-2": {
@@ -2667,6 +2842,11 @@
       "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
       "evaluationDate": "2026-08-12",
       "protocol": "Qwen3.8-2.4T-A95B model card benchmark table, DeepSWE 1.1 row, Qwen3.8-Max column; Claude Code harness."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, Qwen3.8 Max (max), Elo (±16)."
     }
   },
   "qwen3-8-27b": {
@@ -2719,6 +2899,11 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-02",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'qwen3.8-27b'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, Qwen3.8 27B (xhigh), Elo (±18)."
     }
   },
   "qwen3-7-plus": {
@@ -2837,6 +3022,11 @@
       "sourceUrl": "https://swe-rebench.com/",
       "evaluationDate": "2026-08-13",
       "protocol": "SWE-rebench official leaderboard listing 'Qwen3.5-397B-A17B [tools]', agent tools, current task window resolved rate."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Toolathlon-Verified official leaderboard, Qwen3.5 397B-A17B, Pass@1."
     }
   },
   "qwen3-235b": {
@@ -2869,6 +3059,11 @@
       "sourceUrl": "https://swe-rebench.com/",
       "evaluationDate": "2026-08-13",
       "protocol": "SWE-rebench official leaderboard listing 'Qwen3-235B-A22B [tools]', agent tools, current task window resolved rate."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
+      "evaluationDate": "2026-09-03",
+      "protocol": "SWE-bench Pro public leaderboard, qwen3-235b-a22b, resolved % (±2.25)."
     }
   },
   "qwen3-max": {
@@ -3170,6 +3365,21 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-02",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'kimi-k3-max'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "terminal-bench-science": {
+      "sourceUrl": "https://www.tbench.ai/news/terminal-bench-science-0-1",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Terminal-Bench-Science 0.1 official results table, Kimi K3 with Claude Code agent, resolution rate."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Toolathlon-Verified official leaderboard, Kimi K3 (max), Pass@1."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, Kimi K3 (max), Elo (±17)."
     }
   },
   "kimi-k2-7-code": {
@@ -3202,6 +3412,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
       "evaluationDate": "2026-08-12",
       "protocol": "Artificial Analysis terminal-bench-2-1 evaluation snapshot, Kimi K2.7 Code, terminalbench_v2_1 score."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Toolathlon-Verified official leaderboard, Kimi K2.7 Code, Pass@1."
     }
   },
   "kimi-k2-5": {
@@ -3254,6 +3469,11 @@
       "sourceUrl": "https://swe-rebench.com/",
       "evaluationDate": "2026-08-13",
       "protocol": "SWE-rebench official leaderboard listing 'Kimi K2.5 [tools]', agent tools, current task window resolved rate."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Toolathlon-Verified official leaderboard, Kimi K2.5, Pass@1."
     }
   },
   "glm-5-2": {
@@ -3301,6 +3521,16 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-02",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'glm-5.2-max'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Toolathlon-Verified official leaderboard, GLM-5.2 (max), Pass@1."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, GLM-5.2 (max), Elo (±14)."
     }
   },
   "glm-5-3": {
@@ -3358,6 +3588,16 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-02",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'glm-5.3-max'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "terminal-bench-science": {
+      "sourceUrl": "https://www.tbench.ai/news/terminal-bench-science-0-1",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Terminal-Bench-Science 0.1 official results table, GLM-5.3 with Claude Code agent, resolution rate."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, GLM-5.3 (max), Elo (±18)."
     }
   },
   "glm-5": {
@@ -3587,6 +3827,11 @@
       "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
       "evaluationDate": "2026-06-03",
       "protocol": "Terminal-Bench 2.1."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Toolathlon-Verified official leaderboard, Nemotron 3 Ultra, Pass@1."
     }
   },
   "claude-opus-4-7": {
@@ -3629,6 +3874,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
       "evaluationDate": "2026-09-02",
       "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Claude Opus 4.7 (Adaptive Reasoning, Max Effort)', scicode score."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, Claude Opus 4.7 (Adaptive Reasoning, Max Effort), Elo (±15)."
     }
   },
   "claude-opus-4-6": {
@@ -3678,6 +3928,11 @@
       "sourceUrl": "https://www.swebench.com/multilingual.html",
       "evaluationDate": "2026-02-13",
       "protocol": "SWE-bench Multilingual official leaderboard, Claude 4.5 Sonnet, agent mini-SWE-agent, resolved %."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
+      "evaluationDate": "2026-09-03",
+      "protocol": "SWE-bench Pro public leaderboard, claude-4-5-Sonnet, resolved % (±3.60)."
     }
   },
   "claude-opus-4-1": {
@@ -3939,6 +4194,11 @@
       "sourceUrl": "https://swe-rebench.com/",
       "evaluationDate": "2026-08-13",
       "protocol": "SWE-rebench official leaderboard listing 'gpt-oss-120b [tools]', agent tools, current task window resolved rate."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
+      "evaluationDate": "2026-09-03",
+      "protocol": "SWE-bench Pro public leaderboard, gpt-oss-120b, resolved % (±2.67)."
     }
   },
   "gpt-oss-20b": {
@@ -4311,6 +4571,11 @@
       "sourceUrl": "https://swe-rebench.com/",
       "evaluationDate": "2026-08-13",
       "protocol": "SWE-rebench official leaderboard listing 'gemma-3-27b-it', agent text, current task window resolved rate."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
+      "evaluationDate": "2026-09-03",
+      "protocol": "SWE-bench Pro public leaderboard, gemma-3-27b-it, resolved % (±2.15)."
     }
   },
   "llama-3-1-405b": {
@@ -4348,6 +4613,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
       "evaluationDate": "2026-08-12",
       "protocol": "Artificial Analysis scicode evaluation snapshot, Llama 3.1 Instruct 405B, scicode score."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
+      "evaluationDate": "2026-09-03",
+      "protocol": "SWE-bench Pro public leaderboard, llama3-1-405b-instruct, resolved % (±2.15)."
     }
   },
   "ernie-5-1": {
@@ -5131,6 +5401,11 @@
       "sourceUrl": "https://arena.ai/leaderboard",
       "evaluationDate": "2026-09-02",
       "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'gemini-3.5-flash-high'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Toolathlon-Verified official leaderboard, Gemini 3.5 Flash (high), Pass@1."
     }
   },
   "gemma-2-27b": {
@@ -5686,6 +5961,11 @@
       "sourceUrl": "https://swe-rebench.com/",
       "evaluationDate": "2026-08-13",
       "protocol": "SWE-rebench official leaderboard listing 'Kimi K2 [tools]', agent tools, current task window resolved rate."
+    },
+    "swe-bench-pro": {
+      "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
+      "evaluationDate": "2026-09-03",
+      "protocol": "SWE-bench Pro public leaderboard, kimi-k2-instruct, resolved % (±3.25)."
     }
   },
   "kimi-k2-6": {
@@ -5723,6 +6003,11 @@
       "sourceUrl": "https://swe-rebench.com/",
       "evaluationDate": "2026-08-13",
       "protocol": "SWE-rebench official leaderboard listing 'Kimi K2.6 [tools]', agent tools, current task window resolved rate."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Toolathlon-Verified official leaderboard, Kimi K2.6, Pass@1."
     }
   },
   "glm-4-7-flash": {
@@ -5787,6 +6072,11 @@
       "sourceUrl": "https://swe-rebench.com/",
       "evaluationDate": "2026-08-13",
       "protocol": "SWE-rebench official leaderboard listing 'MiniMax M2.7 [tools]', agent tools, current task window resolved rate."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Toolathlon-Verified official leaderboard, MiniMax M2.7, Pass@1."
     }
   },
   "yi-1-5-34b": {
@@ -5853,6 +6143,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
       "evaluationDate": "2026-09-02",
       "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Hy3-preview (Reasoning)', scicode score."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Toolathlon-Verified official leaderboard, Hy3 (high), Pass@1."
     }
   },
   "nemotron-nano-9b": {
@@ -5917,6 +6212,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
       "evaluationDate": "2026-09-02",
       "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Inkling (xhigh)', hle score."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Toolathlon-Verified official leaderboard, Inkling (xhigh), Pass@1."
     }
   },
   "inkling-small": {
@@ -5959,6 +6259,11 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-02",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'Inkling Small'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Toolathlon-Verified official leaderboard, Inkling-Small (xhigh), Pass@1."
     }
   },
   "gpt-5-5-pro": {
@@ -6979,6 +7284,16 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-02",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'glm-5.3-flash'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "toolathlon-verified": {
+      "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
+      "evaluationDate": "2026-09-03",
+      "protocol": "Toolathlon-Verified official leaderboard, GLM-5.3 Flash (max), Pass@1."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, GLM-5.3-Flash, Elo (±18)."
     }
   },
   "qwen3-8-flash-next": {
@@ -7006,6 +7321,18 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-02",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'qwen3.8-flash-next'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-03",
+      "protocol": "GDPval-AA v2 leaderboard, Qwen3.8-Flash-Next, Elo (±21)."
+    }
+  },
+  "muse-spark-1-3": {
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-02",
+      "protocol": "GDPval-AA v2 leaderboard, Muse Spark 1.3 (max), Elo (±23)."
     }
   }
 }

@@ -29,6 +29,8 @@ export const models: Model[] = [
       speed: { tokensPerSec: 750 },
     },
     benchmarks: {
+      "terminal-bench-science": 22.4,
+      "gdpval-aa": 1710,
       "gpqa-diamond": 94.6,
       "swe-bench-pro": 64.6,
       "terminal-bench-2-1": 88.8,
@@ -63,6 +65,8 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 2, outputPer1M: 12 },
     speed: { tokensPerSec: 135, ttftSeconds: 0.3 },
     benchmarks: {
+      "terminal-bench-science": 8.6,
+      "gdpval-aa": 1566,
       "gpqa-diamond": 92.9,
       "swe-bench-pro": 63.4,
       "terminal-bench-2-1": 87.4,
@@ -95,6 +99,8 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 0.2, outputPer1M: 1.2 },
     speed: { tokensPerSec: 195, ttftSeconds: 0.2 },
     benchmarks: {
+      "terminal-bench-science": 3.3,
+      "gdpval-aa": 1569,
       "gpqa-diamond": 92.3,
       "swe-bench-pro": 62.7,
       "terminal-bench-2-1": 84.7,
@@ -147,6 +153,8 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 5, outputPer1M: 30 },
     speed: { tokensPerSec: 70, ttftSeconds: 0.5 },
     benchmarks: {
+      "toolathlon-verified": 73.5,
+      "gdpval-aa": 1482,
       "gpqa-diamond": 93.6,
       hle: 41.4,
       "swe-bench-pro": 58.6,
@@ -227,6 +235,7 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 1.25, outputPer1M: 10 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.4 },
     benchmarks: {
+      "swe-bench-pro": 41.78,
       "gpqa-diamond": 85.7,
       hle: 24.8,
       "aime-2025": 94.6,
@@ -546,6 +555,8 @@ export const models: Model[] = [
     pricing: { provider: "Anthropic", inputPer1M: 5, outputPer1M: 25 },
     speed: { tokensPerSec: 72, ttftSeconds: 0.55 },
     benchmarks: {
+      "terminal-bench-science": 30.0,
+      "gdpval-aa": 1824,
       cursorbench: 70,
       "terminal-bench-3": 42.7,
       "tau-bench": 48.7,
@@ -579,6 +590,7 @@ export const models: Model[] = [
     pricing: { provider: "Anthropic", inputPer1M: 10, outputPer1M: 50 },
     speed: { tokensPerSec: 58, ttftSeconds: 0.7 },
     benchmarks: {
+      "terminal-bench-science": 21.4,
       "gpqa-diamond": 92.6,
       "swe-bench-pro": 80,
       cursorbench: 70.5,
@@ -610,6 +622,9 @@ export const models: Model[] = [
     pricing: { provider: "Anthropic", inputPer1M: 5, outputPer1M: 25 },
     speed: { tokensPerSec: 72, ttftSeconds: 0.55 },
     benchmarks: {
+      "terminal-bench-science": 10.5,
+      "toolathlon-verified": 76.2,
+      "gdpval-aa": 1578,
       "gpqa-diamond": 92,
       "swe-bench-pro": 69.2,
       cursorbench: 62.3,
@@ -641,6 +656,8 @@ export const models: Model[] = [
     pricing: { provider: "Anthropic", inputPer1M: 2, outputPer1M: 10 },
     speed: { tokensPerSec: 95, ttftSeconds: 0.4 },
     benchmarks: {
+      "toolathlon-verified": 71.6,
+      "gdpval-aa": 1584,
       cursorbench: 61.5,
       "terminal-bench-2-1": 74.6,
       "terminal-bench-3": 14.6,
@@ -671,6 +688,7 @@ export const models: Model[] = [
     pricing: { provider: "Anthropic", inputPer1M: 5, outputPer1M: 25 },
     speed: { tokensPerSec: 65, ttftSeconds: 0.6 },
     benchmarks: {
+      "swe-bench-pro": 45.89,
       "lmarena-elo": 1469,
       "webdev-arena": 1468,
       "swe-rebench": 53.1,
@@ -722,6 +740,7 @@ export const models: Model[] = [
     pricing: { provider: "Anthropic", inputPer1M: 1, outputPer1M: 5 },
     speed: { tokensPerSec: 150, ttftSeconds: 0.2 },
     benchmarks: {
+      "swe-bench-pro": 39.45,
       "swe-bench-verified": 73.3,
       "lmarena-elo": 1413,
       "webdev-arena": 1326,
@@ -747,6 +766,7 @@ export const models: Model[] = [
     pricing: { provider: "Anthropic", inputPer1M: 3, outputPer1M: 15 },
     speed: { tokensPerSec: 95, ttftSeconds: 0.35 },
     benchmarks: {
+      "swe-bench-pro": 42.7,
       "lmarena-elo": 1390,
       "aider-polyglot": 56.4,
       "swe-rebench": 44.6,
@@ -803,6 +823,7 @@ export const models: Model[] = [
     pricing: { provider: "Google", inputPer1M: 2, outputPer1M: 12 },
     speed: { tokensPerSec: 128, ttftSeconds: 0.4 },
     benchmarks: {
+      "toolathlon-verified": 61.1,
       "gpqa-diamond": 94.3,
       hle: 44.4,
       "swe-bench-verified": 80.6,
@@ -885,6 +906,8 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "audio", "video"], output: ["text"] },
     pricing: { provider: "Google", inputPer1M: 0.75, outputPer1M: 3.75 },
     benchmarks: {
+      "webdev-arena": 1567,
+      cursorbench: 69.2,
       deepswe: 73.7,
       "gdpval-aa": 1545,
       "terminal-bench-2-1": 89.4,
@@ -934,6 +957,7 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "audio", "video"], output: ["text"] },
     pricing: { provider: "Google", inputPer1M: 0.75, outputPer1M: 3.75 },
     benchmarks: {
+      "gdpval-aa": 1516,
       cursorbench: 61.6,
       "terminal-bench-2-1": 85.8,
       "terminal-bench-3": 14.9,
@@ -966,6 +990,7 @@ export const models: Model[] = [
     pricing: { provider: "Google", inputPer1M: 1.5, outputPer1M: 9 },
     speed: { tokensPerSec: 200, ttftSeconds: 0.2 },
     benchmarks: {
+      "swe-bench-pro": 34.63,
       "lmarena-elo": 1473,
       "webdev-arena": 1438,
       "swe-bench-multilingual": 72.7,
@@ -989,6 +1014,7 @@ export const models: Model[] = [
     pricing: { provider: "Google", inputPer1M: 0.3, outputPer1M: 2.5 },
     speed: { tokensPerSec: 220, ttftSeconds: 0.18 },
     benchmarks: {
+      "toolathlon-verified": 57.1,
       "lmarena-elo": 1458,
       "webdev-arena": 1449,
       "gpqa-diamond": 83.8,
@@ -1183,6 +1209,7 @@ export const models: Model[] = [
     pricing: { provider: "xAI", inputPer1M: 2, outputPer1M: 6 },
     speed: { tokensPerSec: 100, ttftSeconds: 0.35 },
     benchmarks: {
+      "gdpval-aa": 1518,
       "terminal-bench-2-1": 79.3,
       "lmarena-elo": 1468,
       "webdev-arena": 1553,
@@ -1213,6 +1240,8 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "xAI", inputPer1M: 2, outputPer1M: 6 },
     benchmarks: {
+      "terminal-bench-science": 7.1,
+      "gdpval-aa": 1755,
       cursorbench: 70.8,
       "terminal-bench-3": 26.5,
       "gpqa-diamond": 94.9,
@@ -1350,6 +1379,29 @@ export const models: Model[] = [
 
   // ─── Meta ─────────────────────────────────────────────────
   {
+    slug: "muse-spark-1-3",
+    name: "Muse Spark 1.3",
+    organization: "Meta",
+    releaseDate: "2026-09-02",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 1_048_576,
+    modalities: {
+      input: ["text", "image", "video", "pdf"],
+      output: ["text"],
+    },
+    pricing: { provider: "Meta", inputPer1M: 1.25, outputPer1M: 4.25 },
+    benchmarks: {
+      "gdpval-aa": 1754,
+    },
+    links: {
+      docs: "https://developer.meta.com/ai/models/muse-spark/",
+      announcement: "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+    },
+    summary:
+      "Meta's Sept 2026 coding/agentic upgrade to Muse Spark — ~20% fewer tool calls and ~25% fewer tokens than 1.2 in internal comparisons, with longer-horizon multi-workflow persistence and more proactive clarifying questions. Same 1M context and $1.25/$4.25 Meta Model API pricing as 1.2 (contributor tier $0.10/$0.20). Open weights planned but not yet released; max reasoning mode pending further safety testing.",
+  },
+  {
     slug: "muse-spark-1-2",
     name: "Muse Spark 1.2",
     organization: "Meta",
@@ -1365,6 +1417,8 @@ export const models: Model[] = [
     pricing: { provider: "Meta", inputPer1M: 1.25, outputPer1M: 4.25 },
     speed: { tokensPerSec: 95, ttftSeconds: 0.38 },
     benchmarks: {
+      "toolathlon-verified": 75.9,
+      "gdpval-aa": 1615,
       "lmarena-elo": 1499,
       "webdev-arena": 1535,
       "gpqa-diamond": 90.4,
@@ -1424,6 +1478,7 @@ export const models: Model[] = [
     pricing: { provider: "Meta", inputPer1M: 1.25, outputPer1M: 4.25 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.4 },
     benchmarks: {
+      "toolathlon-verified": 75.6,
       "terminal-bench-2-1": 76.2,
       "lmarena-elo": 1489,
       "webdev-arena": 1539,
@@ -1453,6 +1508,7 @@ export const models: Model[] = [
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.27, outputPer1M: 0.85 },
     speed: { tokensPerSec: 95, ttftSeconds: 0.35 },
     benchmarks: {
+      "swe-bench-pro": 5.24,
       "mmlu-pro": 80.5,
       livecodebench: 43.4,
       "aider-polyglot": 15.6,
@@ -1727,6 +1783,7 @@ export const models: Model[] = [
       peakHours: "01:00-04:00 and 06:00-10:00 UTC",
     },
     benchmarks: {
+      "gdpval-aa": 1547,
       "terminal-bench-2-1": 82.7,
       nl2repo: 54.2,
       cybergym: 76.7,
@@ -1791,6 +1848,7 @@ export const models: Model[] = [
       peakHours: "01:00-04:00 and 06:00-10:00 UTC",
     },
     benchmarks: {
+      "gdpval-aa": 1577,
       hle: 42.7,
       "terminal-bench-2-1": 87.9,
       nl2repo: 61.5,
@@ -1922,6 +1980,7 @@ export const models: Model[] = [
     pricing: { provider: "Alibaba Cloud", inputPer1M: 2.0, outputPer1M: 6.0 },
     speed: { tokensPerSec: 86, ttftSeconds: 0.4 },
     benchmarks: {
+      "gdpval-aa": 1721,
       "gpqa-diamond": 92.6,
       hle: 43.6,
       "swe-bench-pro": 67.7,
@@ -1955,6 +2014,7 @@ export const models: Model[] = [
     maxOutput: 131_072,
     modalities: { input: ["text", "image", "video"], output: ["text"] },
     benchmarks: {
+      "gdpval-aa": 1543,
       "gpqa-diamond": 89.2,
       hle: 30.8,
       "swe-bench-pro": 61.7,
@@ -1991,6 +2051,7 @@ export const models: Model[] = [
     },
     speed: { tokensPerSec: 77.3, ttftSeconds: 2.79 },
     benchmarks: {
+      "gdpval-aa": 1743,
       "gpqa-diamond": 92.3,
       hle: 38,
       scicode: 46.9,
@@ -2121,6 +2182,7 @@ export const models: Model[] = [
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.4, outputPer1M: 1.2 },
     speed: { tokensPerSec: 75, ttftSeconds: 0.4 },
     benchmarks: {
+      "toolathlon-verified": 40.7,
       "lmarena-elo": 1442,
       "webdev-arena": 1400,
       "swe-rebench": 59.9,
@@ -2145,6 +2207,7 @@ export const models: Model[] = [
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.3, outputPer1M: 0.85 },
     speed: { tokensPerSec: 80, ttftSeconds: 0.35 },
     benchmarks: {
+      "swe-bench-pro": 21.41,
       "gpqa-diamond": 71.1,
       "math-500": 98,
       "aime-2025": 81.5,
@@ -2570,6 +2633,9 @@ export const models: Model[] = [
       speed: { tokensPerSec: 95, ttftSeconds: 0.35 },
     },
     benchmarks: {
+      "terminal-bench-science": 7.1,
+      "toolathlon-verified": 76.5,
+      "gdpval-aa": 1668,
       "gpqa-diamond": 93.5,
       hle: 43.5,
       scicode: 58.7,
@@ -2604,6 +2670,7 @@ export const models: Model[] = [
       speed: { tokensPerSec: 180 },
     },
     benchmarks: {
+      "toolathlon-verified": 58.0,
       cursorbench: 49.7,
       "webdev-arena": 1473,
       "gpqa-diamond": 89.6,
@@ -2632,6 +2699,7 @@ export const models: Model[] = [
     pricing: { provider: "Moonshot", inputPer1M: 0.6, outputPer1M: 2.5 },
     speed: { tokensPerSec: 70, ttftSeconds: 0.45 },
     benchmarks: {
+      "toolathlon-verified": 33.0,
       "mmlu-pro": 87.1,
       "gpqa-diamond": 87.6,
       hle: 30.1,
@@ -2664,6 +2732,8 @@ export const models: Model[] = [
     pricing: { provider: "Zhipu / Z.ai", inputPer1M: 1.4, outputPer1M: 4.4 },
     speed: { tokensPerSec: 168, ttftSeconds: 0.35 },
     benchmarks: {
+      "toolathlon-verified": 59.9,
+      "gdpval-aa": 1498,
       cursorbench: 55,
       "terminal-bench-3": 4.6,
       "swe-rebench": 57,
@@ -2691,6 +2761,8 @@ export const models: Model[] = [
     maxOutput: 128_000,
     modalities: { input: ["text"], output: ["text"] },
     benchmarks: {
+      "terminal-bench-science": 8.1,
+      "gdpval-aa": 1758,
       "terminal-bench-3": 28.3,
       deepswe: 66.9,
       "agents-last-exam": 28.5,
@@ -2728,6 +2800,8 @@ export const models: Model[] = [
     },
     speed: { tokensPerSec: 49.8, ttftSeconds: 1.51 },
     benchmarks: {
+      "toolathlon-verified": 78.4,
+      "gdpval-aa": 1765,
       "gpqa-diamond": 91.2,
       hle: 39.9,
       scicode: 46.1,
@@ -2943,6 +3017,7 @@ export const models: Model[] = [
     pricing: { provider: "NVIDIA NIM / self-host", inputPer1M: 0.6, outputPer1M: 1.8 },
     speed: { tokensPerSec: 100, ttftSeconds: 0.3 },
     benchmarks: {
+      "toolathlon-verified": 34.3,
       "mmlu-pro": 86.8,
       "swe-bench-verified": 70.7,
       "swe-bench-multilingual": 67.7,
@@ -2990,6 +3065,7 @@ export const models: Model[] = [
     pricing: { provider: "Anthropic", inputPer1M: 5, outputPer1M: 25 },
     speed: { tokensPerSec: 68, ttftSeconds: 0.55 },
     benchmarks: {
+      "gdpval-aa": 1483,
       "gpqa-diamond": 94.2,
       hle: 46.9,
       "swe-bench-pro": 64.3,
@@ -3095,6 +3171,7 @@ export const models: Model[] = [
     pricing: { provider: "Anthropic", inputPer1M: 3, outputPer1M: 15 },
     speed: { tokensPerSec: 85, ttftSeconds: 0.4 },
     benchmarks: {
+      "swe-bench-pro": 43.6,
       "lmarena-elo": 1455,
       "webdev-arena": 1386,
       "swe-rebench": 52.4,
@@ -3323,6 +3400,7 @@ export const models: Model[] = [
     pricing: { provider: "self-host / partners", inputPer1M: 0.15, outputPer1M: 0.6 },
     speed: { tokensPerSec: 70, ttftSeconds: 0.4 },
     benchmarks: {
+      "swe-bench-pro": 16.2,
       "gpqa-diamond": 80.1,
       hle: 14.9,
       "aime-2025": 92.5,
@@ -3657,6 +3735,7 @@ export const models: Model[] = [
     pricing: { provider: "Google AI / self-host", inputPer1M: 0.1, outputPer1M: 0.3 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.28 },
     benchmarks: {
+      "swe-bench-pro": 11.38,
       "mmlu-pro": 67.5,
       "gpqa-diamond": 42.4,
       livecodebench: 29.7,
@@ -3688,6 +3767,7 @@ export const models: Model[] = [
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 3.5, outputPer1M: 3.5 },
     speed: { tokensPerSec: 40, ttftSeconds: 0.6 },
     benchmarks: {
+      "swe-bench-pro": 11.18,
       "mmlu-pro": 73.3,
       "gpqa-diamond": 49,
       livecodebench: 27.7,
@@ -5255,6 +5335,7 @@ export const models: Model[] = [
     pricing: { provider: "Google", inputPer1M: 1.5, outputPer1M: 9 },
     speed: { tokensPerSec: 160, ttftSeconds: 0.22 },
     benchmarks: {
+      "toolathlon-verified": 67.3,
       cursorbench: 48.8,
       "webdev-arena": 1492,
       "swe-rebench": 49.5,
@@ -6399,6 +6480,7 @@ export const models: Model[] = [
     pricing: { provider: "Moonshot", inputPer1M: 0.6, outputPer1M: 2.5 },
     speed: { tokensPerSec: 50, ttftSeconds: 0.55 },
     benchmarks: {
+      "swe-bench-pro": 27.67,
       "mmlu-pro": 81.1,
       "gpqa-diamond": 75.1,
       hle: 4.7,
@@ -6430,6 +6512,7 @@ export const models: Model[] = [
     pricing: { provider: "Moonshot", inputPer1M: 0.5, outputPer1M: 2 },
     speed: { tokensPerSec: 70, ttftSeconds: 0.4 },
     benchmarks: {
+      "toolathlon-verified": 58.0,
       "lmarena-elo": 1461,
       "webdev-arena": 1509,
       "gpqa-diamond": 91.1,
@@ -6479,6 +6562,7 @@ export const models: Model[] = [
     pricing: { provider: "MiniMax", inputPer1M: 0.3, outputPer1M: 1.2 },
     speed: { tokensPerSec: 85, ttftSeconds: 0.35 },
     benchmarks: {
+      "toolathlon-verified": 47.5,
       "swe-bench-pro": 56.22,
       "swe-bench-multilingual": 76.5,
       nl2repo: 39.8,
@@ -6736,6 +6820,7 @@ export const models: Model[] = [
     pricing: { provider: "Tencent", inputPer1M: 0.063, outputPer1M: 0.21 },
     speed: { tokensPerSec: 100, ttftSeconds: 0.3 },
     benchmarks: {
+      "toolathlon-verified": 56.8,
       "lmarena-elo": 1413,
       "webdev-arena": 1356,
       "gpqa-diamond": 86.7,
@@ -7032,6 +7117,7 @@ export const models: Model[] = [
     pricing: { provider: "OpenRouter / Tinker (ref.)", inputPer1M: 1.0, outputPer1M: 4.05 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.55 },
     benchmarks: {
+      "toolathlon-verified": 45.5,
       "gpqa-diamond": 87.2,
       "swe-bench-verified": 77.6,
       "swe-bench-pro": 54.3,
@@ -7062,6 +7148,7 @@ export const models: Model[] = [
     pricing: { provider: "Tinker (ref.)", inputPer1M: 0.58, outputPer1M: 1.44 },
     speed: { tokensPerSec: 85, ttftSeconds: 0.35 },
     benchmarks: {
+      "toolathlon-verified": 54.4,
       "gpqa-diamond": 89.5,
       "swe-bench-verified": 80.2,
       "swe-bench-pro": 55.9,
