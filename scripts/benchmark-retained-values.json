@@ -13,7 +13,8 @@
       "gpqa-diamond": 93.7,
       "terminal-bench-2-1": 91.4,
       "scicode": 62,
-      "webdev-arena": 1765.4
+      "webdev-arena": 1765.4,
+      "lmarena-elo": 1504
     },
     "claude-mythos-5-1": {
       "terminal-bench-4": 60.9
@@ -26,7 +27,7 @@
       "terminal-bench-3": 34.6,
       "matharena": 79.7,
       "swe-rebench": 62.3,
-      "lmarena-elo": 1481,
+      "lmarena-elo": 1483,
       "hle": 46,
       "scicode": 56.9,
       "terminal-bench-4": 37.3,
@@ -40,7 +41,7 @@
       "cursorbench": 64.9,
       "gpqa-diamond": 92.9,
       "terminal-bench-3": 20.8,
-      "lmarena-elo": 1464,
+      "lmarena-elo": 1466,
       "hle": 38.5,
       "scicode": 50.1,
       "terminal-bench-4": 21.5,
@@ -55,7 +56,7 @@
       "gpqa-diamond": 92.3,
       "terminal-bench-3": 14.3,
       "swe-rebench": 43.6,
-      "lmarena-elo": 1450,
+      "lmarena-elo": 1453,
       "hle": 39.5,
       "scicode": 52.5,
       "terminal-bench-4": 17.3,
@@ -84,7 +85,7 @@
       "gpqa-diamond": 92.8,
       "hle": 39.8,
       "swe-bench-pro": 57.7,
-      "lmarena-elo": 1465,
+      "lmarena-elo": 1466,
       "webdev-arena": 1390,
       "swe-rebench": 57.6,
       "scicode": 56.6,
@@ -104,14 +105,16 @@
       "aime-2025": 91.1,
       "swe-bench-verified": 71,
       "aider-polyglot": 71.6,
-      "swe-bench-multilingual": 39.7
+      "swe-bench-multilingual": 39.7,
+      "lmarena-elo": 1389
     },
     "gpt-5-nano": {
       "gpqa-diamond": 71.2,
       "hle": 8.7,
       "aime-2025": 85.2,
       "swe-bench-verified": 54.7,
-      "aider-polyglot": 48.4
+      "aider-polyglot": 48.4,
+      "lmarena-elo": 1337
     },
     "o3": {
       "gpqa-diamond": 83.3,
@@ -155,7 +158,7 @@
       "aime-2025": 40.2,
       "hle": 3.7,
       "aider-polyglot": 31.6,
-      "lmarena-elo": 1383,
+      "lmarena-elo": 1382,
       "mmlu-pro": 78.1,
       "math-500": 92.5,
       "scicode": 40.4,
@@ -178,7 +181,7 @@
       "swe-rebench": 0.3
     },
     "gpt-4o-mini": {
-      "lmarena-elo": 1318,
+      "lmarena-elo": 1317,
       "aider-polyglot": 3.6,
       "mmlu-pro": 64.8,
       "gpqa-diamond": 42.6,
@@ -203,7 +206,7 @@
       "terminal-bench-2-1": 87.6,
       "terminal-bench-4": 51.8,
       "webdev-arena": 1687.2,
-      "terminal-bench-science": 30.0,
+      "terminal-bench-science": 30,
       "gdpval-aa": 1824
     },
     "claude-fable-5": {
@@ -223,7 +226,7 @@
     "claude-opus-4-8": {
       "cursorbench": 62.3,
       "terminal-bench-2-1": 78.9,
-      "lmarena-elo": 1474,
+      "lmarena-elo": 1473,
       "webdev-arena": 1539,
       "swe-bench-pro": 69.2,
       "gpqa-diamond": 92,
@@ -296,7 +299,7 @@
       "gpqa-diamond": 94.3,
       "hle": 44.4,
       "swe-bench-verified": 80.6,
-      "lmarena-elo": 1486,
+      "lmarena-elo": 1487,
       "webdev-arena": 1447,
       "swe-bench-pro": 54.2,
       "terminal-bench-2-1": 70.7,
@@ -306,7 +309,7 @@
     "gemini-3-pro": {
       "gpqa-diamond": 91.9,
       "hle": 37.5,
-      "lmarena-elo": 1501,
+      "lmarena-elo": 1486,
       "webdev-arena": 1438,
       "terminal-bench-2-1": 73.9,
       "swe-bench-multilingual": 68.7,
@@ -318,7 +321,7 @@
       "hle": 40.8,
       "scicode": 52.7,
       "terminal-bench-2-1": 77.5,
-      "lmarena-elo": 1480.1,
+      "lmarena-elo": 1480,
       "webdev-arena": 1538.1
     },
     "gemini-3-7-flash": {
@@ -330,7 +333,7 @@
       "gpqa-diamond": 94.5,
       "hle": 47.9,
       "scicode": 56.8,
-      "lmarena-elo": 1490.9,
+      "lmarena-elo": 1491,
       "gdpval-aa": 1516
     },
     "gemini-3-8-flash": {
@@ -340,19 +343,20 @@
       "terminal-bench-4": 19.1,
       "osworld-2-partial": 59,
       "webdev-arena": 1567,
-      "cursorbench": 69.2
+      "cursorbench": 69.2,
+      "lmarena-elo": 1494
     },
     "gemini-3-8-flash-cyber": {
       "cybergym": 86.2
     },
     "gemini-3-flash": {
-      "lmarena-elo": 1473,
+      "lmarena-elo": 1474,
       "webdev-arena": 1438,
       "swe-bench-multilingual": 72.7,
       "swe-bench-pro": 34.63
     },
     "gemini-3-5-flash-lite": {
-      "lmarena-elo": 1458,
+      "lmarena-elo": 1457,
       "webdev-arena": 1449,
       "gpqa-diamond": 83.8,
       "hle": 18.8,
@@ -363,7 +367,7 @@
     "gemini-2-5-pro": {
       "hle": 18.8,
       "swe-bench-verified": 63.8,
-      "lmarena-elo": 1445,
+      "lmarena-elo": 1446,
       "webdev-arena": 1226,
       "aider-polyglot": 79.1,
       "mmlu-pro": 86.2,
@@ -413,7 +417,7 @@
     },
     "grok-4-5": {
       "terminal-bench-2-1": 79.3,
-      "lmarena-elo": 1468,
+      "lmarena-elo": 1471,
       "webdev-arena": 1553,
       "terminal-bench-3": 15.7,
       "tau-bench": 47.9,
@@ -432,13 +436,13 @@
       "scicode": 53.6,
       "terminal-bench-2-1": 88.4,
       "terminal-bench-4": 20.3,
-      "lmarena-elo": 1461.2,
+      "lmarena-elo": 1461,
       "webdev-arena": 1629.1,
       "terminal-bench-science": 7.1,
       "gdpval-aa": 1755
     },
     "grok-4-3": {
-      "lmarena-elo": 1441,
+      "lmarena-elo": 1443,
       "webdev-arena": 1355,
       "gpqa-diamond": 90.1,
       "hle": 37.2,
@@ -449,7 +453,7 @@
       "lmarena-elo": 1459
     },
     "grok-4": {
-      "lmarena-elo": 1409,
+      "lmarena-elo": 1411,
       "aider-polyglot": 79.6,
       "mmlu-pro": 86.6,
       "gpqa-diamond": 87.7,
@@ -477,12 +481,12 @@
       "gpqa-diamond": 83.5,
       "hle": 22,
       "scicode": 43.6,
-      "lmarena-elo": 1426,
+      "lmarena-elo": 1427,
       "webdev-arena": 1359
     },
     "muse-spark-1-1": {
       "terminal-bench-2-1": 76.2,
-      "lmarena-elo": 1489,
+      "lmarena-elo": 1492,
       "webdev-arena": 1539,
       "gpqa-diamond": 89.8,
       "hle": 46.2,
@@ -509,7 +513,7 @@
       "mmlu-pro": 74.3,
       "gpqa-diamond": 57.2,
       "livecodebench": 32.8,
-      "lmarena-elo": 1322,
+      "lmarena-elo": 1321,
       "hle": 3.8,
       "aime-2025": 14,
       "math-500": 84.4,
@@ -522,7 +526,7 @@
       "mmlu-pro": 68.9,
       "gpqa-diamond": 50.5,
       "livecodebench": 33.3,
-      "lmarena-elo": 1318,
+      "lmarena-elo": 1317,
       "swe-rebench": 11.5,
       "bigcodebench": 46.9
     },
@@ -572,7 +576,7 @@
       "toolathlon-verified": 49.7,
       "agents-last-exam": 15.8,
       "automation-bench": 10.8,
-      "lmarena-elo": 1435,
+      "lmarena-elo": 1436,
       "swe-rebench": 38.4,
       "gpqa-diamond": 89.4,
       "hle": 34.8,
@@ -638,7 +642,7 @@
       "swe-bench-verified": 57.6,
       "livecodebench": 73.3,
       "aider-polyglot": 71.6,
-      "lmarena-elo": 1422,
+      "lmarena-elo": 1421,
       "swe-rebench": 22.3,
       "math-500": 98.3,
       "scicode": 40.3
@@ -649,7 +653,7 @@
       "swe-bench-pro": 67.7,
       "terminal-bench-2-1": 86.6,
       "nl2repo": 55.9,
-      "lmarena-elo": 1491,
+      "lmarena-elo": 1480,
       "webdev-arena": 1669,
       "scicode": 52.9,
       "tau-bench": 55.2,
@@ -667,19 +671,19 @@
       "deepswe": 42.2,
       "livecodebench": 90.3,
       "scicode": 44.7,
-      "lmarena-elo": 1435.1,
+      "lmarena-elo": 1436,
       "webdev-arena": 1597.5,
       "gdpval-aa": 1543
     },
     "qwen3-7-plus": {
-      "lmarena-elo": 1458,
+      "lmarena-elo": 1455,
       "gpqa-diamond": 90,
       "hle": 35.6,
       "scicode": 45.5,
       "terminal-bench-2-1": 61
     },
     "qwen3-6-plus": {
-      "lmarena-elo": 1443,
+      "lmarena-elo": 1444,
       "webdev-arena": 1459,
       "gpqa-diamond": 88.2,
       "hle": 27.8,
@@ -697,7 +701,7 @@
       "terminal-bench-2-1": 74.5
     },
     "qwen3-5-397b": {
-      "lmarena-elo": 1442,
+      "lmarena-elo": 1441,
       "webdev-arena": 1400,
       "swe-rebench": 59.9,
       "toolathlon-verified": 40.7
@@ -712,7 +716,7 @@
       "swe-bench-pro": 21.41
     },
     "qwen3-max": {
-      "lmarena-elo": 1434,
+      "lmarena-elo": 1424,
       "mmlu-pro": 84.1,
       "gpqa-diamond": 76.4,
       "hle": 11.9,
@@ -730,7 +734,7 @@
       "swe-rebench": 8.1
     },
     "mistral-large-3": {
-      "lmarena-elo": 1415,
+      "lmarena-elo": 1414,
       "webdev-arena": 1230,
       "mmlu-pro": 80.7,
       "gpqa-diamond": 68,
@@ -820,7 +824,7 @@
       "terminal-bench-2-1": 88.3,
       "cursorbench": 60.8,
       "matharena": 69.7,
-      "lmarena-elo": 1488.9,
+      "lmarena-elo": 1489,
       "webdev-arena": 1673.8,
       "terminal-bench-science": 7.1,
       "toolathlon-verified": 76.5,
@@ -833,7 +837,7 @@
       "hle": 35,
       "scicode": 47.5,
       "terminal-bench-2-1": 67.4,
-      "toolathlon-verified": 58.0
+      "toolathlon-verified": 58
     },
     "kimi-k2-5": {
       "mmlu-pro": 87.1,
@@ -846,7 +850,7 @@
       "livecodebench": 85,
       "scicode": 48.7,
       "swe-rebench": 49,
-      "toolathlon-verified": 33.0
+      "toolathlon-verified": 33
     },
     "glm-5-2": {
       "cursorbench": 55,
@@ -856,7 +860,7 @@
       "hle": 41.1,
       "scicode": 50.5,
       "terminal-bench-2-1": 77.9,
-      "lmarena-elo": 1471.7,
+      "lmarena-elo": 1472,
       "webdev-arena": 1585.4,
       "toolathlon-verified": 59.9,
       "gdpval-aa": 1498
@@ -877,7 +881,7 @@
       "gdpval-aa": 1758
     },
     "glm-5": {
-      "lmarena-elo": 1457,
+      "lmarena-elo": 1458,
       "webdev-arena": 1436,
       "swe-bench-multilingual": 69.7,
       "swe-rebench": 53.3,
@@ -916,7 +920,7 @@
       "swe-rebench": 46.4
     },
     "minimax-m2-5": {
-      "lmarena-elo": 1390,
+      "lmarena-elo": 1391,
       "webdev-arena": 1384,
       "gpqa-diamond": 84.8,
       "hle": 20.5,
@@ -952,7 +956,7 @@
       "gdpval-aa": 1483
     },
     "claude-opus-4-6": {
-      "lmarena-elo": 1497,
+      "lmarena-elo": 1498,
       "webdev-arena": 1537,
       "swe-rebench": 53.3,
       "swe-bench-verified": 75.6,
@@ -979,7 +983,7 @@
     },
     "claude-opus-4-1": {
       "swe-bench-verified": 74.5,
-      "lmarena-elo": 1447,
+      "lmarena-elo": 1448,
       "webdev-arena": 1389,
       "swe-rebench": 43.5
     },
@@ -989,7 +993,7 @@
       "swe-bench-pro": 54.4,
       "scicode": 49.9,
       "terminal-bench-2-1": 59.2,
-      "lmarena-elo": 1448.2,
+      "lmarena-elo": 1448,
       "webdev-arena": 1397.2
     },
     "gpt-5-4-nano": {
@@ -998,7 +1002,7 @@
       "swe-bench-pro": 52.4,
       "scicode": 46.9,
       "terminal-bench-2-1": 60.7,
-      "lmarena-elo": 1402.2
+      "lmarena-elo": 1402
     },
     "o4-mini": {
       "gpqa-diamond": 81.4,
@@ -1006,7 +1010,7 @@
       "aime-2025": 92.7,
       "swe-bench-verified": 68.1,
       "aider-polyglot": 58.2,
-      "lmarena-elo": 1390,
+      "lmarena-elo": 1391,
       "swe-rebench": 27.5
     },
     "o3-mini": {
@@ -1049,7 +1053,7 @@
       "aime-2025": 91.7,
       "swe-bench-verified": 60.7,
       "aider-polyglot": 34.2,
-      "lmarena-elo": 1318,
+      "lmarena-elo": 1317,
       "swe-rebench": 8.1
     },
     "gemini-3-1-flash-lite": {
@@ -1073,7 +1077,7 @@
     "deepseek-v3": {
       "mmlu-pro": 75.9,
       "math-500": 90.2,
-      "lmarena-elo": 1359,
+      "lmarena-elo": 1358,
       "bigcodebench": 50,
       "swe-rebench": 23.3,
       "aime-2025": 26,
@@ -1101,7 +1105,8 @@
       "math-500": 94.2,
       "mmlu-pro": 78.8,
       "scicode": 35.9,
-      "swe-rebench": 36.3
+      "swe-rebench": 36.3,
+      "lmarena-elo": 1387
     },
     "qwen2-5-72b": {
       "lmarena-elo": 1303,
@@ -1127,7 +1132,7 @@
       "mmlu-pro": 67.5,
       "gpqa-diamond": 42.4,
       "livecodebench": 29.7,
-      "lmarena-elo": 1338,
+      "lmarena-elo": 1365,
       "aime-2025": 20.7,
       "hle": 4.4,
       "math-500": 88.3,
@@ -1172,7 +1177,7 @@
       "aider-polyglot": 12.9
     },
     "olmo-3-32b": {
-      "lmarena-elo": 1305,
+      "lmarena-elo": 1307,
       "mmlu-pro": 75.9,
       "gpqa-diamond": 61,
       "hle": 6.4,
@@ -1181,10 +1186,10 @@
       "livecodebench": 67.2
     },
     "command-r-plus": {
-      "lmarena-elo": 1276
+      "lmarena-elo": 1261
     },
     "command-r": {
-      "lmarena-elo": 1250,
+      "lmarena-elo": 1226,
       "bigcodebench": 33.8
     },
     "jamba-1-5-large": {
@@ -1270,7 +1275,8 @@
       "scicode": 11
     },
     "phi-3-medium": {
-      "bigcodebench": 37.6
+      "bigcodebench": 37.6,
+      "lmarena-elo": 1197
     },
     "phi-3-mini": {
       "aime-2025": 0.3,
@@ -1325,7 +1331,7 @@
       "gpqa-diamond": 76.5,
       "aime-2025": 79.3,
       "math-500": 92.4,
-      "lmarena-elo": 1388.5
+      "lmarena-elo": 1388
     },
     "gpt-4-turbo": {
       "lmarena-elo": 1324,
@@ -1406,7 +1412,7 @@
       "bigcodebench": 42.7
     },
     "claude-opus-4": {
-      "lmarena-elo": 1413,
+      "lmarena-elo": 1414,
       "aider-polyglot": 70.7,
       "livecodebench": 62.4
     },
@@ -1436,7 +1442,8 @@
       "toolathlon-verified": 67.3
     },
     "gemini-2-0-flash": {
-      "swe-rebench": 9.1
+      "swe-rebench": 9.1,
+      "lmarena-elo": 1360
     },
     "gemini-1-0-pro": {
       "mmlu-pro": 43.1,
@@ -1452,7 +1459,8 @@
       "hle": 4.7,
       "math-500": 68.9,
       "scicode": 22.9,
-      "livecodebench": 21.7
+      "livecodebench": 21.7,
+      "lmarena-elo": 1258
     },
     "gemma-2-27b": {
       "lmarena-elo": 1289,
@@ -1477,7 +1485,7 @@
       "terminal-bench-2-1": 0.4
     },
     "grok-2": {
-      "lmarena-elo": 1336
+      "lmarena-elo": 1335
     },
     "grok-2-mini": {
       "lmarena-elo": 1308
@@ -1576,7 +1584,8 @@
       "livecodebench": 14.1,
       "math-500": 56.3,
       "mmlu-pro": 52.9,
-      "scicode": 15.6
+      "scicode": 15.6,
+      "lmarena-elo": 1357
     },
     "mixtral-8x22b": {
       "gpqa-diamond": 33.2,
@@ -1585,7 +1594,8 @@
       "math-500": 54.5,
       "mmlu-pro": 53.7,
       "scicode": 18.8,
-      "bigcodebench": 40.6
+      "bigcodebench": 40.6,
+      "lmarena-elo": 1229
     },
     "mixtral-8x7b": {
       "gpqa-diamond": 29.2,
@@ -1593,7 +1603,8 @@
       "livecodebench": 6.6,
       "math-500": 29.9,
       "mmlu-pro": 38.7,
-      "scicode": 2.8
+      "scicode": 2.8,
+      "lmarena-elo": 1197
     },
     "pixtral-large": {
       "mmlu-pro": 70.1,
@@ -1679,17 +1690,17 @@
       "scicode": 53.5,
       "terminal-bench-2-1": 65.9,
       "swe-rebench": 46.5,
-      "toolathlon-verified": 58.0
+      "toolathlon-verified": 58
     },
     "glm-4-7-flash": {
-      "lmarena-elo": 1367,
+      "lmarena-elo": 1366,
       "swe-rebench": 30.1
     },
     "minimax-m2-7": {
       "swe-bench-pro": 56.22,
       "swe-bench-multilingual": 76.5,
       "nl2repo": 39.8,
-      "lmarena-elo": 1416,
+      "lmarena-elo": 1415,
       "webdev-arena": 1398,
       "gpqa-diamond": 87.4,
       "hle": 29.6,
@@ -1702,7 +1713,7 @@
       "bigcodebench": 37.7
     },
     "yi-1-5-34b": {
-      "lmarena-elo": 1213,
+      "lmarena-elo": 1212,
       "bigcodebench": 33.9
     },
     "step-3-5-flash": {
@@ -1769,7 +1780,7 @@
       "swe-bench-pro": 54.3,
       "scicode": 46.1,
       "terminal-bench-2-1": 63.8,
-      "lmarena-elo": 1442,
+      "lmarena-elo": 1439,
       "webdev-arena": 1405,
       "hle": 31.9,
       "toolathlon-verified": 45.5
@@ -1781,7 +1792,7 @@
       "scicode": 48.7,
       "terminal-bench-2-1": 64.7,
       "hle": 33.3,
-      "lmarena-elo": 1430.5,
+      "lmarena-elo": 1407,
       "webdev-arena": 1404.6,
       "toolathlon-verified": 54.4
     },
@@ -1793,7 +1804,7 @@
       "hle": 39.9,
       "scicode": 46.1,
       "terminal-bench-2-1": 84.3,
-      "lmarena-elo": 1473.1,
+      "lmarena-elo": 1474,
       "webdev-arena": 1604.4,
       "toolathlon-verified": 78.4,
       "gdpval-aa": 1765
