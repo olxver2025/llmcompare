@@ -30,6 +30,8 @@ export const models: Model[] = [
       "agents-last-exam": 59.3,
       "automation-bench": 41.4,
       "osworld-2-partial": 72.6,
+      "terminal-bench-4": 56.7,
+      "frontiermath-tier-4-v2": 97.6,
     },
     links: {
       docs: "https://developers.openai.com/api/docs/models/gpt-6-astra",

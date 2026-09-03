@@ -54,6 +54,7 @@ const expectedBenchmarkIds = new Set([
   "gdpval-aa",
   "osworld-2-partial",
   "osworld-2-strict",
+  "frontiermath-tier-4-v2",
 ]);
 
 try {
@@ -67,7 +68,7 @@ try {
   check(false, `benchmark evidence ledger is not reproducible: ${detail}`);
 }
 
-check(benchmarkIds.size === 31, `expected 31 benchmark IDs, found ${benchmarkIds.size}`);
+check(benchmarkIds.size === 32, `expected 32 benchmark IDs, found ${benchmarkIds.size}`);
 check(
   benchmarkIds.size === Object.keys(benchmarkCatalog).length,
   "benchmark metadata and benchmark ID exports disagree"
@@ -268,7 +269,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 1406, `expected 1406 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 1408, `expected 1408 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);

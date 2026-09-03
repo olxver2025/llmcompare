@@ -29,7 +29,8 @@ export type BenchmarkId =
   | "terminal-bench-science"
   | "gdpval-aa"
   | "osworld-2-partial"
-  | "osworld-2-strict";
+  | "osworld-2-strict"
+  | "frontiermath-tier-4-v2";
 
 export type ModelPricing = {
   provider: string;
