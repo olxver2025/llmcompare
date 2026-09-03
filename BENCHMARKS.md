@@ -542,3 +542,8 @@ https://arxiv.org/abs/2403.04132
 
 https://arxiv.org/abs/2412.04604
 
+
+
+\## Artificial Analysis Model Leaderboard
+
+https://artificialanalysis.ai/leaderboards/models

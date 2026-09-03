@@ -1,32 +1,14 @@
 import fs from "node:fs";
-import { extractAA, extractJsonArrayNear, flightSegments } from "./artificial-analysis.mjs";
-
-function writeJson(path, data) {
-  fs.writeFileSync(path, `${JSON.stringify(data, null, 2)}\n`);
-}
+import { extractAA, extractJsonArrayNear } from "./artificial-analysis.mjs";
 
 function extractGenericRowsNear(file, key) {
-  const segs = flightSegments(file);
-  const long = segs.slice().sort((a, b) => b.length - a.length)[0] ?? "";
-  const i = long.indexOf(`"${key}"`);
-  if (i < 0) return null;
-  let depth = 0, inStr = false, esc = false, arrStart = -1, arrEnd = -1;
-  for (let k = i + key.length + 2; k < long.length; k++) {
-    const ch = long[k];
-    if (inStr) { if (esc) esc = false; else if (ch === "\\") esc = true; else if (ch === '"') inStr = false; continue; }
-    if (ch === '"') { inStr = true; continue; }
-    if (ch === "[") { depth++; if (arrStart < 0) arrStart = k; }
-    else if (ch === "]") { depth--; if (depth === 0) { arrEnd = k; break; } }
-  }
-  if (arrStart < 0) return null;
-  try {
-    return JSON.parse(long.slice(arrStart, arrEnd + 1));
-  } catch {
-    return null;
-  }
+  return extractJsonArrayNear(file, key);
 }
 
-// Terminal-Bench 2.1 (tbench.ai)
+// Terminal-Bench, tbench.ai. Every /leaderboard/terminal-bench/<version> URL now
+// serves the current board (4.0); older versions are no longer published there, so
+// this extractor reports Terminal-Bench 4.0 only. frontierbench.ai likewise
+// redirects to tbench.ai and no longer serves Terminal-Bench 3 results.
 function extractTBench() {
   const rows = extractGenericRowsNear(
     "benchmarks/terminal-bench-2-1/www.tbench.ai-leaderboard-terminal-bench-2.1.html",
@@ -37,40 +19,20 @@ function extractTBench() {
     const label = row.metadata?.model_display?.label;
     const accuracy = row.metrics?.accuracy;
     const date = row.metadata?.date;
+    const agent = row.metadata?.agent_display?.label ?? "unknown agent";
+    const effort = row.metadata?.reasoning_effort;
+    const trials = row.metrics?.n_trials;
     if (typeof label !== "string" || !label.trim()) continue;
     if (!Number.isFinite(accuracy)) continue;
     scores.push({
-      benchmarkId: "terminal-bench-2-1",
+      benchmarkId: "terminal-bench-4",
       sourceModelName: label,
       value: Math.round(accuracy * 10) / 10,
-      sourceUrl: "https://www.tbench.ai/leaderboard/terminal-bench/2.1",
-      evaluationDate: date ?? "2026-08-12",
-      protocol: `Terminal-Bench 2.1 official leaderboard, ${label}, accuracy%.`,
-    });
-  }
-  return scores;
-}
-
-// Terminal-Bench 3 / Frontier-Bench
-function extractFrontierBench() {
-  const rows = extractGenericRowsNear(
-    "benchmarks/terminal-bench-3-frontier-bench/www.frontierbench.ai.html",
-    "rows"
-  );
-  const scores = [];
-  for (const row of rows ?? []) {
-    const label = row.metadata?.model_display?.label;
-    const accuracy = row.metrics?.accuracy;
-    const date = row.metadata?.date;
-    if (typeof label !== "string" || !label.trim()) continue;
-    if (!Number.isFinite(accuracy)) continue;
-    scores.push({
-      benchmarkId: "terminal-bench-3",
-      sourceModelName: label,
-      value: Math.round(accuracy * 10) / 10,
-      sourceUrl: "https://www.frontierbench.ai/",
-      evaluationDate: date ?? "2026-08-12",
-      protocol: `Terminal-Bench 3 / Frontier-Bench official leaderboard, ${label}, accuracy%.`,
+      sourceUrl: "https://www.tbench.ai/leaderboard/terminal-bench/4.0",
+      evaluationDate: date ?? "2026-09-02",
+      protocol: `Terminal-Bench 4.0 official leaderboard, ${label} with the ${agent} agent${
+        effort ? ` at ${effort} reasoning effort` : ""
+      }${Number.isFinite(trials) ? `, ${trials} trials` : ""}, accuracy%.`,
     });
   }
   return scores;
@@ -183,13 +145,12 @@ function extractLiveCodeBenchJson() {
   return scores;
 }
 
-export function extractAll() {
+export function extractAll({ evaluationDate = "2026-09-02" } = {}) {
   const out = {};
-  for (const key of ["mmlu-pro", "gpqa-diamond", "humanitys-last-exam", "aime-2025", "math-500", "scicode", "livecodebench", "terminal-bench-2-1"]) {
-    out[key] = extractAA(key);
+  for (const id of ["gpqa-diamond", "hle", "scicode", "terminal-bench-2-1"]) {
+    out[id] = extractAA(id, { evaluationDate });
   }
-  out["tbench-terminal-bench-2-1"] = extractTBench();
-  out["terminal-bench-3-frontier-bench"] = extractFrontierBench();
+  out["terminal-bench-4"] = extractTBench();
   out["swebench"] = extractSweBench();
   out["bigcodebench"] = extractBigCodeBench();
   out["evalplus"] = extractEvalPlus();
@@ -202,5 +163,4 @@ if (process.argv[1]?.endsWith("extract-scores.mjs")) {
   for (const [name, scores] of Object.entries(out)) {
     console.log(`${name}: ${scores.length} scores`);
   }
-  writeJson("C:/Users/olxvrr/AppData/Local/Temp/opencode/bench-extract/raw-extract.json", out);
 }

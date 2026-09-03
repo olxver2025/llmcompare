@@ -1,52 +1,31 @@
 import fs from "node:fs";
 
-const AA_PAGES = {
-  "mmlu-pro": {
-    file: "benchmarks/mmlu-pro/artificialanalysis.ai-evaluations-mmlu-pro.html",
-    field: "mmlu_pro",
-    benchmarkId: "mmlu-pro",
-    sourceUrl: "https://artificialanalysis.ai/evaluations/mmlu-pro",
-  },
+// Artificial Analysis no longer embeds a full leaderboard in each /evaluations/<slug>
+// page (those pages ship only the handful of models pre-selected for the chart).
+// The complete per-model evaluation table is embedded in the model leaderboard page,
+// so every AA-backed benchmark is read from that single snapshot.
+export const AA_LEADERBOARD_FILE =
+  "benchmarks/artificial-analysis-model-leaderboard/artificialanalysis.ai-leaderboards-models.html";
+
+const AA_FIELDS = {
   "gpqa-diamond": {
-    file: "benchmarks/gpqa-diamond/artificialanalysis.ai-evaluations-gpqa-diamond.html",
     field: "gpqa",
-    benchmarkId: "gpqa-diamond",
+    label: "GPQA Diamond",
     sourceUrl: "https://artificialanalysis.ai/evaluations/gpqa-diamond",
   },
-  "humanitys-last-exam": {
-    file: "benchmarks/humanitys-last-exam/artificialanalysis.ai-evaluations-humanitys-last-exam.html",
+  hle: {
     field: "hle",
-    benchmarkId: "hle",
+    label: "Humanity's Last Exam",
     sourceUrl: "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
   },
-  "aime-2025": {
-    file: "benchmarks/aime-2025/artificialanalysis.ai-evaluations-aime-2025.html",
-    field: "aime25",
-    benchmarkId: "aime-2025",
-    sourceUrl: "https://artificialanalysis.ai/evaluations/aime-2025",
-  },
-  "math-500": {
-    file: "benchmarks/math-500/artificialanalysis.ai-evaluations-math-500.html",
-    field: "math_500",
-    benchmarkId: "math-500",
-    sourceUrl: "https://artificialanalysis.ai/evaluations/math-500",
-  },
   scicode: {
-    file: "benchmarks/scicode/artificialanalysis.ai-evaluations-scicode.html",
     field: "scicode",
-    benchmarkId: "scicode",
+    label: "SciCode",
     sourceUrl: "https://artificialanalysis.ai/evaluations/scicode",
   },
-  livecodebench: {
-    file: "benchmarks/livecodebench/artificialanalysis.ai-evaluations-livecodebench.html",
-    field: "livecodebench",
-    benchmarkId: "livecodebench",
-    sourceUrl: "https://artificialanalysis.ai/evaluations/livecodebench",
-  },
   "terminal-bench-2-1": {
-    file: "benchmarks/terminal-bench-2-1/artificialanalysis.ai-evaluations-terminalbench-v2-1.html",
-    field: "terminalbench_v2_1",
-    benchmarkId: "terminal-bench-2-1",
+    field: "terminalbenchV21",
+    label: "Terminal-Bench 2.1",
     sourceUrl: "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
   },
 };
@@ -68,50 +47,118 @@ export function flightSegments(file) {
   });
 }
 
-export function extractJsonArrayNear(file, key) {
-  const segs = flightSegments(file);
-  const long = segs.slice().sort((a, b) => b.length - a.length)[0] ?? "";
-  const i = long.indexOf(`"${key}"`);
+function arrayAfterKey(text, key, from = 0) {
+  const i = text.indexOf(`"${key}"`, from);
   if (i < 0) return null;
   let depth = 0, inStr = false, esc = false, arrStart = -1, arrEnd = -1;
-  for (let k = i + key.length + 2; k < long.length; k++) {
-    const ch = long[k];
+  for (let k = i + key.length + 2; k < text.length; k++) {
+    const ch = text[k];
     if (inStr) { if (esc) esc = false; else if (ch === "\\") esc = true; else if (ch === '"') inStr = false; continue; }
     if (ch === '"') { inStr = true; continue; }
     if (ch === "[") { depth++; if (arrStart < 0) arrStart = k; }
     else if (ch === "]") { depth--; if (depth === 0) { arrEnd = k; break; } }
   }
-  if (arrStart < 0 || arrEnd < 0) return null;
+  if (arrStart < 0 || arrEnd < 0) return { parsed: null, next: i + key.length };
   try {
-    return JSON.parse(long.slice(arrStart, arrEnd + 1));
+    return { parsed: JSON.parse(text.slice(arrStart, arrEnd + 1)), next: arrEnd + 1 };
   } catch {
-    return null;
+    return { parsed: null, next: arrEnd + 1 };
   }
 }
 
-export function extractAA(pageKey) {
-  const cfg = AA_PAGES[pageKey];
-  const data = extractJsonArrayNear(cfg.file, "defaultData");
-  if (!data) throw new Error(`AA page ${pageKey}: defaultData not found`);
-  const scores = [];
-  for (const row of data) {
+/**
+ * Find the first JSON array stored under `key` in any flight segment.
+ * Segments are searched longest-first; `predicate` (when given) rejects arrays
+ * that parse but are not the table we are after.
+ */
+export function extractJsonArrayNear(file, key, predicate) {
+  const segments = flightSegments(file).slice().sort((a, b) => b.length - a.length);
+  for (const segment of segments) {
+    let from = 0;
+    while (from < segment.length) {
+      const hit = arrayAfterKey(segment, key, from);
+      if (!hit) break;
+      from = hit.next;
+      if (!Array.isArray(hit.parsed)) continue;
+      if (predicate && !predicate(hit.parsed)) continue;
+      return hit.parsed;
+    }
+  }
+  return null;
+}
+
+function baseName(name) {
+  return name.replace(/\s*\([^)]*\)\s*$/, "").trim();
+}
+
+export function parseAALeaderboard(file = AA_LEADERBOARD_FILE) {
+  const rows = extractJsonArrayNear(
+    file,
+    "models",
+    (parsed) => parsed.length > 0 && parsed.every((row) => row && typeof row.slug === "string") &&
+      parsed.some((row) => "intelligenceIndex" in row)
+  );
+  if (!rows) {
+    throw new Error(`Artificial Analysis leaderboard payload not found in ${file}`);
+  }
+  return rows;
+}
+
+/**
+ * Artificial Analysis lists one row per reasoning/effort variant. Rows are grouped
+ * by the release name (the row name without its trailing qualifier) and one row is
+ * chosen to represent the release:
+ *
+ *  - reasoning rows win over non-reasoning ones, so a reasoning model is never
+ *    represented by its non-thinking listing (AA sometimes gives the non-reasoning
+ *    variant the unsuffixed slug). A release with only non-reasoning rows keeps them.
+ *  - among the remaining rows the shortest slug wins, i.e. the release's own slug
+ *    without an effort suffix, which is AA's default listing for that release.
+ *  - groups without a single shortest slug are skipped rather than guessed at.
+ */
+export function canonicalAARows(rows) {
+  const groups = new Map();
+  for (const row of rows) {
     if (typeof row.name !== "string" || !row.name.trim()) continue;
+    const key = baseName(row.name);
+    if (!key) continue;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(row);
+  }
+  const canonical = [];
+  for (const [key, group] of groups) {
+    const reasoning = group.filter((row) => row.isReasoning);
+    const candidates = reasoning.length > 0 ? reasoning : group;
+    const sorted = candidates.slice().sort((a, b) => a.slug.length - b.slug.length);
+    if (sorted.length > 1 && sorted[0].slug.length === sorted[1].slug.length) continue;
+    canonical.push({ baseName: key, row: sorted[0] });
+  }
+  return canonical;
+}
+
+export function extractAA(benchmarkId, { file = AA_LEADERBOARD_FILE, evaluationDate } = {}) {
+  const cfg = AA_FIELDS[benchmarkId];
+  if (!cfg) throw new Error(`No Artificial Analysis field mapped for ${benchmarkId}`);
+  const scores = [];
+  for (const { baseName: name, row } of canonicalAARows(parseAALeaderboard(file))) {
     const raw = row[cfg.field];
-    if (typeof raw !== "number" || !Number.isFinite(raw)) continue;
+    // AA stores "not evaluated" as null and, for some rows, as an exact 0; a
+    // frontier model scoring exactly 0 is not a value worth publishing either way.
+    if (typeof raw !== "number" || !Number.isFinite(raw) || raw <= 0) continue;
     scores.push({
-      benchmarkId: cfg.benchmarkId,
-      sourceModelName: row.name,
+      benchmarkId,
+      sourceModelName: name,
       value: Math.round(raw * 1000) / 10,
       sourceUrl: cfg.sourceUrl,
-      evaluationDate: "2026-08-12",
-      protocol: `Artificial Analysis ${cfg.benchmarkId} evaluation snapshot, ${row.name}, ${cfg.field} score.`,
+      evaluationDate,
+      protocol: `Artificial Analysis ${cfg.label} leaderboard snapshot, listing '${row.name}', ${cfg.field} score.`,
     });
   }
   return scores;
 }
 
-export function extractAllAA() {
+export function extractAllAA(options) {
   const out = {};
-  for (const key of Object.keys(AA_PAGES)) out[key] = extractAA(key);
+  for (const id of Object.keys(AA_FIELDS)) out[id] = extractAA(id, options);
   return out;
 }

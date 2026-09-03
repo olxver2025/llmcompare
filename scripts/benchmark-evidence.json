@@ -72,6 +72,20 @@
         "checkedOn": "2026-09-02",
         "protocol": "Artificial Analysis scicode evaluation snapshot, GPT-5.6 Sol (high), scicode score.",
         "evaluationDate": "2026-08-12"
+      },
+      "terminal-bench-4": {
+        "value": 37.3,
+        "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/4.0",
+        "checkedOn": "2026-09-02",
+        "protocol": "Terminal-Bench 4.0 official leaderboard, GPT-5.6 Sol with the Codex agent at max reasoning effort, 330 trials, accuracy%.",
+        "evaluationDate": "2026-06-26"
+      },
+      "webdev-arena": {
+        "value": 1616.4,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'gpt-5.6-sol-xhigh (codex-harness)'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "gpt-5-6-terra": {
@@ -130,6 +144,20 @@
         "checkedOn": "2026-09-02",
         "protocol": "Artificial Analysis scicode evaluation snapshot, GPT-5.6 Terra (high), scicode score.",
         "evaluationDate": "2026-08-12"
+      },
+      "terminal-bench-4": {
+        "value": 21.5,
+        "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/4.0",
+        "checkedOn": "2026-09-02",
+        "protocol": "Terminal-Bench 4.0 official leaderboard, GPT-5.6 Terra with the Codex agent at max reasoning effort, 330 trials, accuracy%.",
+        "evaluationDate": "2026-06-26"
+      },
+      "webdev-arena": {
+        "value": 1519,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'gpt-5.6-terra-xhigh (codex-harness)'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "gpt-5-6-luna": {
@@ -181,6 +209,34 @@
         "checkedOn": "2026-09-02",
         "protocol": "Arena Text Overall leaderboard snapshot dated 2026-08-12; listing 'gpt-5.6-luna-xhigh'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-08-12"
+      },
+      "hle": {
+        "value": 39.5,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'GPT-5.6 Luna (max)', hle score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "scicode": {
+        "value": 52.5,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'GPT-5.6 Luna (max)', scicode score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "terminal-bench-4": {
+        "value": 17.3,
+        "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/4.0",
+        "checkedOn": "2026-09-02",
+        "protocol": "Terminal-Bench 4.0 official leaderboard, GPT-5.6 Luna with the Codex agent at max reasoning effort, 330 trials, accuracy%.",
+        "evaluationDate": "2026-06-26"
+      },
+      "webdev-arena": {
+        "value": 1519,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'gpt-5.6-luna-xhigh (codex-harness)'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "gpt-5-6-cyber": {},
@@ -233,6 +289,27 @@
         "checkedOn": "2026-09-02",
         "protocol": "MathArena leaderboard, GPT-5.5 (xhigh), expected performance %.",
         "evaluationDate": "2026-08-13"
+      },
+      "swe-rebench": {
+        "value": 62.7,
+        "sourceUrl": "https://swe-rebench.com/",
+        "checkedOn": "2026-09-02",
+        "protocol": "SWE-rebench official leaderboard listing 'gpt-5.5-2026-04-23-xhigh', agent tools, current task window resolved rate.",
+        "evaluationDate": "2026-09-02"
+      },
+      "scicode": {
+        "value": 56.1,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'GPT-5.5 (xhigh)', scicode score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "webdev-arena": {
+        "value": 1509.4,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'gpt-5.5-xhigh (codex-harness)'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "gpt-5-5-pro": {
@@ -279,6 +356,27 @@
         "checkedOn": "2026-09-02",
         "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'gpt-5.4'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-08-12"
+      },
+      "swe-rebench": {
+        "value": 57.6,
+        "sourceUrl": "https://swe-rebench.com/",
+        "checkedOn": "2026-09-02",
+        "protocol": "SWE-rebench official leaderboard listing 'gpt-5.4-2026-03-05-medium', agent tools, current task window resolved rate.",
+        "evaluationDate": "2026-09-02"
+      },
+      "scicode": {
+        "value": 56.6,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'GPT-5.4 (xhigh)', scicode score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "terminal-bench-2-1": {
+        "value": 78.3,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Terminal-Bench 2.1 leaderboard snapshot, listing 'GPT-5.4 (xhigh)', terminalbenchV21 score.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "gpt-5": {
@@ -944,6 +1042,13 @@
         "checkedOn": "2026-09-02",
         "protocol": "Artificial Analysis scicode evaluation snapshot, Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback), scicode score.",
         "evaluationDate": "2026-09-01"
+      },
+      "webdev-arena": {
+        "value": 1765.4,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'claude-fable-5.1-max'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "claude-opus-5": {
@@ -1016,6 +1121,20 @@
         "checkedOn": "2026-09-02",
         "protocol": "Artificial Analysis terminal-bench-2-1 evaluation snapshot, Claude Opus 5 (Adaptive Reasoning, High Effort), terminalbench_v2_1 score.",
         "evaluationDate": "2026-08-12"
+      },
+      "terminal-bench-4": {
+        "value": 51.8,
+        "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/4.0",
+        "checkedOn": "2026-09-02",
+        "protocol": "Terminal-Bench 4.0 official leaderboard, Opus 5 with the Claude Code agent at max reasoning effort, 330 trials, accuracy%.",
+        "evaluationDate": "2026-07-24"
+      },
+      "webdev-arena": {
+        "value": 1687.2,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'claude-opus-5-max'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "claude-fable-5": {
@@ -1088,6 +1207,13 @@
         "checkedOn": "2026-09-02",
         "protocol": "Artificial Analysis scicode evaluation snapshot, Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback), scicode score.",
         "evaluationDate": "2026-08-12"
+      },
+      "terminal-bench-4": {
+        "value": 44.6,
+        "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/4.0",
+        "checkedOn": "2026-09-02",
+        "protocol": "Terminal-Bench 4.0 official leaderboard, Fable 5 with the Claude Code agent at max reasoning effort, 330 trials, accuracy%.",
+        "evaluationDate": "2026-06-09"
       }
     },
     "claude-opus-4-8": {
@@ -1146,6 +1272,27 @@
         "checkedOn": "2026-09-02",
         "protocol": "SWE-rebench official leaderboard listing 'Claude Opus 4.8-xhigh', agent tools, current task window resolved rate.",
         "evaluationDate": "2026-08-13"
+      },
+      "hle": {
+        "value": 48.7,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Claude Opus 4.8 (Adaptive Reasoning, Max Effort)', hle score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "scicode": {
+        "value": 53.5,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Claude Opus 4.8 (Adaptive Reasoning, Max Effort)', scicode score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "terminal-bench-4": {
+        "value": 23.6,
+        "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/4.0",
+        "checkedOn": "2026-09-02",
+        "protocol": "Terminal-Bench 4.0 official leaderboard, Opus 4.8 with the Claude Code agent at max reasoning effort, 330 trials, accuracy%.",
+        "evaluationDate": "2026-05-28"
       }
     },
     "claude-sonnet-5": {
@@ -1204,6 +1351,20 @@
         "checkedOn": "2026-09-02",
         "protocol": "Artificial Analysis scicode evaluation snapshot, Claude Sonnet 5 (Adaptive Reasoning, Max Effort), scicode score.",
         "evaluationDate": "2026-08-12"
+      },
+      "terminal-bench-4": {
+        "value": 12.4,
+        "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/4.0",
+        "checkedOn": "2026-09-02",
+        "protocol": "Terminal-Bench 4.0 official leaderboard, Sonnet 5 with the Claude Code agent at max reasoning effort, 330 trials, accuracy%.",
+        "evaluationDate": "2026-06-30"
+      },
+      "webdev-arena": {
+        "value": 1536.5,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'claude-sonnet-5-high'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "claude-opus-4-5": {
@@ -1257,6 +1418,34 @@
         "checkedOn": "2026-09-02",
         "protocol": "SWE-rebench official leaderboard listing 'Claude Sonnet 4.6 [tools]', agent tools, current task window resolved rate.",
         "evaluationDate": "2026-08-13"
+      },
+      "gpqa-diamond": {
+        "value": 87.5,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)', gpqa score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "hle": {
+        "value": 33.6,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)', hle score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "scicode": {
+        "value": 46.8,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)', scicode score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "terminal-bench-2-1": {
+        "value": 71.2,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Terminal-Bench 2.1 leaderboard snapshot, listing 'Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)', terminalbenchV21 score.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "claude-haiku-4-5": {
@@ -1535,6 +1724,20 @@
         "checkedOn": "2026-09-02",
         "protocol": "Artificial Analysis terminal-bench-2-1 evaluation snapshot, Gemini 3.6 Flash (high), terminalbench_v2_1 score.",
         "evaluationDate": "2026-08-12"
+      },
+      "lmarena-elo": {
+        "value": 1480.1,
+        "sourceUrl": "https://arena.ai/leaderboard",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'gemini-3.6-flash-high'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      },
+      "webdev-arena": {
+        "value": 1538.1,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'gemini-3.6-flash-high'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "gemini-3-8-flash": {
@@ -1618,6 +1821,34 @@
         "checkedOn": "2026-09-02",
         "protocol": "Gemini 3.7 Flash model card; Code Arena web development Elo.",
         "evaluationDate": "2026-08-13"
+      },
+      "gpqa-diamond": {
+        "value": 94.5,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Gemini 3.7 Flash (high)', gpqa score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "hle": {
+        "value": 47.9,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Gemini 3.7 Flash (high)', hle score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "scicode": {
+        "value": 56.8,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Gemini 3.7 Flash (high)', scicode score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "lmarena-elo": {
+        "value": 1490.9,
+        "sourceUrl": "https://arena.ai/leaderboard",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'gemini-3.7-flash-high'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "gemini-3-flash": {
@@ -1860,6 +2091,20 @@
         "checkedOn": "2026-09-02",
         "protocol": "SWE-rebench official leaderboard listing 'Gemma 4 31B [tools]', agent tools, current task window resolved rate.",
         "evaluationDate": "2026-08-13"
+      },
+      "scicode": {
+        "value": 43.4,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Gemma 4 31B (Reasoning)', scicode score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "terminal-bench-2-1": {
+        "value": 43.4,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Terminal-Bench 2.1 leaderboard snapshot, listing 'Gemma 4 31B (Reasoning)', terminalbenchV21 score.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "gemma-4-26b": {
@@ -2034,6 +2279,13 @@
         "checkedOn": "2026-09-02",
         "protocol": "Artificial Analysis scicode evaluation snapshot, Grok 4.5 (high), scicode score.",
         "evaluationDate": "2026-08-12"
+      },
+      "terminal-bench-4": {
+        "value": 12.4,
+        "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/4.0",
+        "checkedOn": "2026-09-02",
+        "protocol": "Terminal-Bench 4.0 official leaderboard, Grok 4.5 with the Grok Build agent at high reasoning effort, 330 trials, accuracy%.",
+        "evaluationDate": "2026-07-16"
       }
     },
     "grok-4-6": {
@@ -2078,6 +2330,27 @@
         "checkedOn": "2026-09-02",
         "protocol": "Artificial Analysis terminal-bench-2-1 evaluation snapshot, Grok 4.6 (high), terminalbench_v2_1 score.",
         "evaluationDate": "2026-08-12"
+      },
+      "terminal-bench-4": {
+        "value": 20.3,
+        "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/4.0",
+        "checkedOn": "2026-09-02",
+        "protocol": "Terminal-Bench 4.0 official leaderboard, Grok 4.6 with the Grok Build agent at high reasoning effort, 330 trials, accuracy%.",
+        "evaluationDate": "2026-08-12"
+      },
+      "lmarena-elo": {
+        "value": 1461.2,
+        "sourceUrl": "https://arena.ai/leaderboard",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'grok-4.6-high'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      },
+      "webdev-arena": {
+        "value": 1629.1,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'grok-4.6-high'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "grok-4-3": {
@@ -2094,6 +2367,34 @@
         "checkedOn": "2026-09-02",
         "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-08-12"
+      },
+      "gpqa-diamond": {
+        "value": 90.1,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Grok 4.3 (high)', gpqa score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "hle": {
+        "value": 37.2,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Grok 4.3 (high)', hle score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "scicode": {
+        "value": 47.3,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Grok 4.3 (high)', scicode score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "terminal-bench-2-1": {
+        "value": 39.7,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Terminal-Bench 2.1 leaderboard snapshot, listing 'Grok 4.3 (high)', terminalbenchV21 score.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "grok-build-0-1": {},
@@ -2836,6 +3137,34 @@
         "checkedOn": "2026-09-02",
         "protocol": "SWE-rebench official leaderboard listing 'DeepSeek-V4 Flash [high]', agent tools, current task window resolved rate.",
         "evaluationDate": "2026-08-13"
+      },
+      "gpqa-diamond": {
+        "value": 89.4,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'DeepSeek V4 Flash (Reasoning, Max Effort)', gpqa score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "hle": {
+        "value": 34.8,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'DeepSeek V4 Flash (Reasoning, Max Effort)', hle score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "scicode": {
+        "value": 44.9,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'DeepSeek V4 Flash (Reasoning, Max Effort)', scicode score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "webdev-arena": {
+        "value": 1580.9,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'deepseek-v4-flash-high'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "deepseek-v4-flash-0731": {
@@ -2887,6 +3216,27 @@
         "checkedOn": "2026-09-02",
         "protocol": "DeepSeek-V4-Flash-0731 public beta; AutomationBench (public) with DeepSeek Harness minimal mode, max effort, top_p=0.95, temperature=1.0.",
         "evaluationDate": "2026-07-31"
+      },
+      "gpqa-diamond": {
+        "value": 90.8,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'DeepSeek V4 Flash 0731 (Reasoning, Max Effort)', gpqa score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "hle": {
+        "value": 38.6,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'DeepSeek V4 Flash 0731 (Reasoning, Max Effort)', hle score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "scicode": {
+        "value": 49.9,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'DeepSeek V4 Flash 0731 (Reasoning, Max Effort)', scicode score.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "deepseek-v4-flash-vision-exp": {},
@@ -3327,9 +3677,66 @@
         "checkedOn": "2026-09-02",
         "protocol": "Qwen3.8-27B model card benchmark table, LiveCodeBench v6 row.",
         "evaluationDate": "2026-08-14"
+      },
+      "scicode": {
+        "value": 44.7,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Qwen3.8 27B (xhigh)', scicode score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "lmarena-elo": {
+        "value": 1435.1,
+        "sourceUrl": "https://arena.ai/leaderboard",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'qwen3.8-27b'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      },
+      "webdev-arena": {
+        "value": 1597.5,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'qwen3.8-27b'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
       }
     },
-    "qwen3-8-flash-next": {},
+    "qwen3-8-flash-next": {
+      "gpqa-diamond": {
+        "value": 92.3,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Qwen3.8-Flash-Next', gpqa score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "hle": {
+        "value": 38,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Qwen3.8-Flash-Next', hle score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "scicode": {
+        "value": 46.9,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Qwen3.8-Flash-Next', scicode score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "terminal-bench-2-1": {
+        "value": 86.1,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Terminal-Bench 2.1 leaderboard snapshot, listing 'Qwen3.8-Flash-Next', terminalbenchV21 score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "webdev-arena": {
+        "value": 1622.3,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'qwen3.8-flash-next'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      }
+    },
     "qwen3-7-plus": {
       "lmarena-elo": {
         "value": 1458,
@@ -4152,6 +4559,20 @@
         "checkedOn": "2026-09-02",
         "protocol": "MathArena leaderboard, Kimi K3 (Think), expected performance %.",
         "evaluationDate": "2026-08-13"
+      },
+      "lmarena-elo": {
+        "value": 1488.9,
+        "sourceUrl": "https://arena.ai/leaderboard",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'kimi-k3-max'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      },
+      "webdev-arena": {
+        "value": 1673.8,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'kimi-k3-max'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "kimi-k2-7-code": {
@@ -4291,6 +4712,48 @@
         "checkedOn": "2026-09-02",
         "protocol": "SWE-rebench official leaderboard listing 'GLM-5.2 [high]', agent tools, current task window resolved rate.",
         "evaluationDate": "2026-08-13"
+      },
+      "gpqa-diamond": {
+        "value": 89.5,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'GLM-5.2 (max)', gpqa score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "hle": {
+        "value": 41.1,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'GLM-5.2 (max)', hle score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "scicode": {
+        "value": 50.5,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'GLM-5.2 (max)', scicode score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "terminal-bench-2-1": {
+        "value": 77.9,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Terminal-Bench 2.1 leaderboard snapshot, listing 'GLM-5.2 (max)', terminalbenchV21 score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "lmarena-elo": {
+        "value": 1471.7,
+        "sourceUrl": "https://arena.ai/leaderboard",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'glm-5.2-max'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      },
+      "webdev-arena": {
+        "value": 1585.4,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'glm-5.2-max'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "glm-5-3": {
@@ -4321,9 +4784,101 @@
         "checkedOn": "2026-09-02",
         "protocol": "GLM-5.3 official docs; CyberGym vulnerability discovery score 84.5 (GLM-5.2 77.2).",
         "evaluationDate": "2026-08-14"
+      },
+      "gpqa-diamond": {
+        "value": 91.7,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'GLM-5.3 (max)', gpqa score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "hle": {
+        "value": 42.3,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'GLM-5.3 (max)', hle score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "scicode": {
+        "value": 56.5,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'GLM-5.3 (max)', scicode score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "terminal-bench-2-1": {
+        "value": 83.9,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Terminal-Bench 2.1 leaderboard snapshot, listing 'GLM-5.3 (max)', terminalbenchV21 score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "terminal-bench-4": {
+        "value": 41.8,
+        "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/4.0",
+        "checkedOn": "2026-09-02",
+        "protocol": "Terminal-Bench 4.0 official leaderboard, GLM-5.3 with the Claude Code agent at max reasoning effort, 330 trials, accuracy%.",
+        "evaluationDate": "2026-08-14"
+      },
+      "lmarena-elo": {
+        "value": 1482.1,
+        "sourceUrl": "https://arena.ai/leaderboard",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'glm-5.3-max'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      },
+      "webdev-arena": {
+        "value": 1609.2,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'glm-5.3-max'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
       }
     },
-    "glm-5-3-flash": {},
+    "glm-5-3-flash": {
+      "gpqa-diamond": {
+        "value": 91.2,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'GLM-5.3-Flash', gpqa score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "hle": {
+        "value": 39.9,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'GLM-5.3-Flash', hle score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "scicode": {
+        "value": 46.1,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'GLM-5.3-Flash', scicode score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "terminal-bench-2-1": {
+        "value": 84.3,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Terminal-Bench 2.1 leaderboard snapshot, listing 'GLM-5.3-Flash', terminalbenchV21 score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "lmarena-elo": {
+        "value": 1473.1,
+        "sourceUrl": "https://arena.ai/leaderboard",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'glm-5.3-flash'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      },
+      "webdev-arena": {
+        "value": 1604.4,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'glm-5.3-flash'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      }
+    },
     "glm-5": {
       "lmarena-elo": {
         "value": 1457,
@@ -4719,6 +5274,13 @@
         "checkedOn": "2026-09-02",
         "protocol": "SWE-rebench official leaderboard listing 'Claude Opus 4.7-high', agent tools, current task window resolved rate.",
         "evaluationDate": "2026-08-13"
+      },
+      "scicode": {
+        "value": 54.5,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Claude Opus 4.7 (Adaptive Reasoning, Max Effort)', scicode score.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "claude-opus-4-6": {
@@ -4920,6 +5482,34 @@
         "checkedOn": "2026-09-02",
         "protocol": "Public SWE-bench Pro, single-pass agent evaluation.",
         "evaluationDate": "2026-03-17"
+      },
+      "scicode": {
+        "value": 49.9,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'GPT-5.4 mini (xhigh)', scicode score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "terminal-bench-2-1": {
+        "value": 59.2,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Terminal-Bench 2.1 leaderboard snapshot, listing 'GPT-5.4 mini (xhigh)', terminalbenchV21 score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "lmarena-elo": {
+        "value": 1448.2,
+        "sourceUrl": "https://arena.ai/leaderboard",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'gpt-5.4-mini-high'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      },
+      "webdev-arena": {
+        "value": 1397.2,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'gpt-5.4-mini-high'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "gpt-5-4-nano": {
@@ -4943,6 +5533,27 @@
         "checkedOn": "2026-09-02",
         "protocol": "Public SWE-bench Pro, single-pass agent evaluation.",
         "evaluationDate": "2026-03-17"
+      },
+      "scicode": {
+        "value": 46.9,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'GPT-5.4 nano (xhigh)', scicode score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "terminal-bench-2-1": {
+        "value": 60.7,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Terminal-Bench 2.1 leaderboard snapshot, listing 'GPT-5.4 nano (xhigh)', terminalbenchV21 score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "lmarena-elo": {
+        "value": 1402.2,
+        "sourceUrl": "https://arena.ai/leaderboard",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'gpt-5.4-nano-high'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "o4-mini": {
@@ -7244,6 +7855,48 @@
         "checkedOn": "2026-09-02",
         "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'gemini-3.5-flash'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-08-12"
+      },
+      "swe-rebench": {
+        "value": 49.5,
+        "sourceUrl": "https://swe-rebench.com/",
+        "checkedOn": "2026-09-02",
+        "protocol": "SWE-rebench official leaderboard listing 'Gemini 3.5 Flash', agent tools, current task window resolved rate.",
+        "evaluationDate": "2026-09-02"
+      },
+      "gpqa-diamond": {
+        "value": 92.2,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Gemini 3.5 Flash (high)', gpqa score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "hle": {
+        "value": 42.7,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Gemini 3.5 Flash (high)', hle score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "scicode": {
+        "value": 53.1,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Gemini 3.5 Flash (high)', scicode score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "terminal-bench-2-1": {
+        "value": 78.7,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Terminal-Bench 2.1 leaderboard snapshot, listing 'Gemini 3.5 Flash (high)', terminalbenchV21 score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "lmarena-elo": {
+        "value": 1479.4,
+        "sourceUrl": "https://arena.ai/leaderboard",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'gemini-3.5-flash-high'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "gemini-2-0-flash": {
@@ -8716,6 +9369,27 @@
         "checkedOn": "2026-09-02",
         "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'hunyuan-hy3-preview'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-08-12"
+      },
+      "gpqa-diamond": {
+        "value": 86.7,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Hy3-preview (Reasoning)', gpqa score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "hle": {
+        "value": 27.8,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Hy3-preview (Reasoning)', hle score.",
+        "evaluationDate": "2026-09-02"
+      },
+      "scicode": {
+        "value": 41.2,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Hy3-preview (Reasoning)', scicode score.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "ling-2-6-flash": {
@@ -8967,6 +9641,13 @@
         "checkedOn": "2026-09-02",
         "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'inkling'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-08-12"
+      },
+      "hle": {
+        "value": 31.9,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-02",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Inkling (xhigh)', hle score.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "inkling-small": {
@@ -9018,6 +9699,13 @@
         "checkedOn": "2026-09-02",
         "protocol": "LMArena Elo leaderboard snapshot, inkling-small, style-control overall Elo.",
         "evaluationDate": "2026-08-12"
+      },
+      "webdev-arena": {
+        "value": 1404.6,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-02",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'Inkling Small'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
       }
     }
   }
