@@ -235,6 +235,7 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 1.25, outputPer1M: 10 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.4 },
     benchmarks: {
+      "lmarena-elo": 1434,
       "swe-bench-pro": 41.78,
       "gpqa-diamond": 85.7,
       hle: 24.8,
@@ -3524,6 +3525,7 @@ export const models: Model[] = [
     pricing: { provider: "xAI", inputPer1M: 3, outputPer1M: 15 },
     speed: { tokensPerSec: 75, ttftSeconds: 0.45 },
     benchmarks: {
+      "lmarena-elo": 1411,
       "aider-polyglot": 53.3,
       "mmlu-pro": 79.9,
       "gpqa-diamond": 69.3,
@@ -3772,6 +3774,7 @@ export const models: Model[] = [
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 3.5, outputPer1M: 3.5 },
     speed: { tokensPerSec: 40, ttftSeconds: 0.6 },
     benchmarks: {
+      "lmarena-elo": 1335,
       "swe-bench-pro": 11.18,
       "mmlu-pro": 73.3,
       "gpqa-diamond": 49,
@@ -4599,6 +4602,7 @@ export const models: Model[] = [
     pricing: { provider: "Azure AI Foundry", inputPer1M: 0.13, outputPer1M: 0.52 },
     speed: { tokensPerSec: 140, ttftSeconds: 0.18 },
     benchmarks: {
+      "lmarena-elo": 1128,
       "aime-2025": 0.3,
       "gpqa-diamond": 31.9,
       hle: 5,
@@ -4996,6 +5000,7 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 30, outputPer1M: 60 },
     speed: { tokensPerSec: 35, ttftSeconds: 0.8 },
     benchmarks: {
+      "lmarena-elo": 1287,
       "mmlu-pro": 56.2,
       "gpqa-diamond": 34.9,
       "math-500": 56.8,
@@ -5061,6 +5066,7 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 0.5, outputPer1M: 1.5 },
     speed: { tokensPerSec: 120, ttftSeconds: 0.25 },
     benchmarks: {
+      "lmarena-elo": 1225,
       "mmlu-pro": 46.2,
       "gpqa-diamond": 29.7,
       "math-500": 44.1,
@@ -6087,6 +6093,7 @@ export const models: Model[] = [
     pricing: { provider: "Mistral", inputPer1M: 4, outputPer1M: 12 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.55 },
     benchmarks: {
+      "lmarena-elo": 1242,
       "gpqa-diamond": 35.1,
       hle: 3.5,
       livecodebench: 17.8,

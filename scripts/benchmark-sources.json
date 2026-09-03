@@ -408,6 +408,11 @@
       "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
       "evaluationDate": "2026-09-03",
       "protocol": "SWE-bench Pro public leaderboard, gpt-5-2025-08-07 (High), resolved % (±3.49)."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-09-02",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; catalog entry names no specific dated/effort variant, so mapped to the most defensible listed row ('gpt-5-high') by editorial judgment (earliest original release, or the plain/unqualified listing where one exists) rather than a confirmed 1:1 identity. Elo rating is a volatile leaderboard snapshot."
     }
   },
   "gpt-5-mini": {
@@ -4330,6 +4335,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/livecodebench",
       "evaluationDate": "2026-08-12",
       "protocol": "Artificial Analysis livecodebench evaluation snapshot, Grok 3, livecodebench score."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-09-02",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; catalog entry names no specific dated/effort variant, so mapped to the most defensible listed row ('grok-3-preview-02-24') by editorial judgment (earliest original release, or the plain/unqualified listing where one exists) rather than a confirmed 1:1 identity. Elo rating is a volatile leaderboard snapshot."
     }
   },
   "deepseek-v3": {
@@ -4643,6 +4653,11 @@
       "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
       "evaluationDate": "2026-09-03",
       "protocol": "SWE-bench Pro public leaderboard, llama3-1-405b-instruct, resolved % (±2.15)."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-09-02",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; catalog entry names no specific dated/effort variant, so mapped to the most defensible listed row ('llama-3.1-405b-instruct-bf16') by editorial judgment (earliest original release, or the plain/unqualified listing where one exists) rather than a confirmed 1:1 identity. Elo rating is a volatile leaderboard snapshot."
     }
   },
   "ernie-5-1": {
@@ -6520,6 +6535,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/math-500",
       "evaluationDate": "2026-08-12",
       "protocol": "Artificial Analysis math-500 evaluation snapshot, GPT-3.5 Turbo, math_500 score."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-09-02",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; catalog entry names no specific dated/effort variant, so mapped to the most defensible listed row ('gpt-3.5-turbo-0125') by editorial judgment (earliest original release, or the plain/unqualified listing where one exists) rather than a confirmed 1:1 identity. Elo rating is a volatile leaderboard snapshot."
     }
   },
   "gpt-4": {
@@ -6537,6 +6557,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/math-500",
       "evaluationDate": "2026-08-12",
       "protocol": "Artificial Analysis math-500 evaluation snapshot, GPT-4, math_500 score."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-09-02",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; catalog entry names no specific dated/effort variant, so mapped to the most defensible listed row ('gpt-4-0314') by editorial judgment (earliest original release, or the plain/unqualified listing where one exists) rather than a confirmed 1:1 identity. Elo rating is a volatile leaderboard snapshot."
     }
   },
   "gemini-1-5-flash-8b": {
@@ -6988,6 +7013,11 @@
       "sourceUrl": "https://bigcode-bench.github.io/",
       "evaluationDate": "2024-05-21",
       "protocol": "BigCodeBench official results, Phi-3-Mini-128K-Instruct, pass@1 instruct."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-09-02",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; catalog entry names no specific dated/effort variant, so mapped to the most defensible listed row ('phi-3-mini-4k-instruct') by editorial judgment (earliest original release, or the plain/unqualified listing where one exists) rather than a confirmed 1:1 identity. Elo rating is a volatile leaderboard snapshot."
     }
   },
   "phi-3-medium": {
@@ -7091,6 +7121,11 @@
       "sourceUrl": "https://bigcode-bench.github.io/",
       "evaluationDate": "2024-02-26",
       "protocol": "BigCodeBench official results, Mistral-Large-2402, pass@1 instruct."
+    },
+    "lmarena-elo": {
+      "sourceUrl": "https://lmarena.ai/leaderboard/text",
+      "evaluationDate": "2026-09-02",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; catalog entry names no specific dated/effort variant, so mapped to the most defensible listed row ('mistral-large-2402') by editorial judgment (earliest original release, or the plain/unqualified listing where one exists) rather than a confirmed 1:1 identity. Elo rating is a volatile leaderboard snapshot."
     }
   },
   "mistral-small": {

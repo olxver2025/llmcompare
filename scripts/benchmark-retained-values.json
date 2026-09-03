@@ -97,7 +97,8 @@
       "aider-polyglot": 88,
       "gpqa-diamond": 85.7,
       "hle": 24.8,
-      "swe-bench-pro": 41.78
+      "swe-bench-pro": 41.78,
+      "lmarena-elo": 1434
     },
     "gpt-5-mini": {
       "gpqa-diamond": 82.3,
@@ -1072,7 +1073,8 @@
       "aime-2025": 58,
       "math-500": 87,
       "scicode": 36.8,
-      "livecodebench": 42.5
+      "livecodebench": 42.5,
+      "lmarena-elo": 1411
     },
     "deepseek-v3": {
       "mmlu-pro": 75.9,
@@ -1149,7 +1151,8 @@
       "hle": 4,
       "math-500": 70.3,
       "scicode": 29.9,
-      "swe-bench-pro": 11.18
+      "swe-bench-pro": 11.18,
+      "lmarena-elo": 1335
     },
     "ernie-5-1": {
       "lmarena-elo": 1468
@@ -1286,7 +1289,8 @@
       "math-500": 45.7,
       "mmlu-pro": 43.5,
       "scicode": 9,
-      "bigcodebench": 29.6
+      "bigcodebench": 29.6,
+      "lmarena-elo": 1128
     },
     "dbrx-instruct": {
       "lmarena-elo": 1195,
@@ -1345,7 +1349,8 @@
     "gpt-4": {
       "mmlu-pro": 56.2,
       "gpqa-diamond": 34.9,
-      "math-500": 56.8
+      "math-500": 56.8,
+      "lmarena-elo": 1287
     },
     "gpt-4-5": {
       "lmarena-elo": 1445,
@@ -1354,7 +1359,8 @@
     "gpt-3-5-turbo": {
       "mmlu-pro": 46.2,
       "gpqa-diamond": 29.7,
-      "math-500": 44.1
+      "math-500": 44.1,
+      "lmarena-elo": 1225
     },
     "claude-3-opus": {
       "lmarena-elo": 1322,
@@ -1576,7 +1582,8 @@
       "math-500": 52.7,
       "mmlu-pro": 51.5,
       "scicode": 20.8,
-      "bigcodebench": 30
+      "bigcodebench": 30,
+      "lmarena-elo": 1242
     },
     "mistral-small": {
       "gpqa-diamond": 38.1,

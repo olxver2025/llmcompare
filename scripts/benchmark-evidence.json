@@ -436,6 +436,13 @@
       }
     },
     "gpt-5": {
+      "lmarena-elo": {
+        "value": 1434,
+        "sourceUrl": "https://lmarena.ai/leaderboard/text",
+        "checkedOn": "2026-09-03",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; catalog entry names no specific dated/effort variant, so mapped to the most defensible listed row ('gpt-5-high') by editorial judgment (earliest original release, or the plain/unqualified listing where one exists) rather than a confirmed 1:1 identity. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      },
       "swe-bench-pro": {
         "value": 41.78,
         "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
@@ -6311,6 +6318,13 @@
     "gemini-2-5-flash-lite": {},
     "grok-4-fast": {},
     "grok-3": {
+      "lmarena-elo": {
+        "value": 1411,
+        "sourceUrl": "https://lmarena.ai/leaderboard/text",
+        "checkedOn": "2026-09-03",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; catalog entry names no specific dated/effort variant, so mapped to the most defensible listed row ('grok-3-preview-02-24') by editorial judgment (earliest original release, or the plain/unqualified listing where one exists) rather than a confirmed 1:1 identity. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      },
       "aider-polyglot": {
         "value": 53.3,
         "sourceUrl": "https://aider.chat/docs/leaderboards/",
@@ -6742,6 +6756,13 @@
       }
     },
     "llama-3-1-405b": {
+      "lmarena-elo": {
+        "value": 1335,
+        "sourceUrl": "https://lmarena.ai/leaderboard/text",
+        "checkedOn": "2026-09-03",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; catalog entry names no specific dated/effort variant, so mapped to the most defensible listed row ('llama-3.1-405b-instruct-bf16') by editorial judgment (earliest original release, or the plain/unqualified listing where one exists) rather than a confirmed 1:1 identity. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      },
       "swe-bench-pro": {
         "value": 11.18,
         "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
@@ -7476,6 +7497,13 @@
       }
     },
     "phi-3-mini": {
+      "lmarena-elo": {
+        "value": 1128,
+        "sourceUrl": "https://lmarena.ai/leaderboard/text",
+        "checkedOn": "2026-09-03",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; catalog entry names no specific dated/effort variant, so mapped to the most defensible listed row ('phi-3-mini-4k-instruct') by editorial judgment (earliest original release, or the plain/unqualified listing where one exists) rather than a confirmed 1:1 identity. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      },
       "aime-2025": {
         "value": 0.3,
         "sourceUrl": "https://artificialanalysis.ai/evaluations/aime-2025",
@@ -7818,6 +7846,13 @@
       }
     },
     "gpt-4": {
+      "lmarena-elo": {
+        "value": 1287,
+        "sourceUrl": "https://lmarena.ai/leaderboard/text",
+        "checkedOn": "2026-09-03",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; catalog entry names no specific dated/effort variant, so mapped to the most defensible listed row ('gpt-4-0314') by editorial judgment (earliest original release, or the plain/unqualified listing where one exists) rather than a confirmed 1:1 identity. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      },
       "mmlu-pro": {
         "value": 56.2,
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mmlu-pro",
@@ -7858,6 +7893,13 @@
       }
     },
     "gpt-3-5-turbo": {
+      "lmarena-elo": {
+        "value": 1225,
+        "sourceUrl": "https://lmarena.ai/leaderboard/text",
+        "checkedOn": "2026-09-03",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; catalog entry names no specific dated/effort variant, so mapped to the most defensible listed row ('gpt-3.5-turbo-0125') by editorial judgment (earliest original release, or the plain/unqualified listing where one exists) rather than a confirmed 1:1 identity. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      },
       "mmlu-pro": {
         "value": 46.2,
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mmlu-pro",
@@ -8998,6 +9040,13 @@
     },
     "mistral-large-2": {},
     "mistral-large": {
+      "lmarena-elo": {
+        "value": 1242,
+        "sourceUrl": "https://lmarena.ai/leaderboard/text",
+        "checkedOn": "2026-09-03",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; catalog entry names no specific dated/effort variant, so mapped to the most defensible listed row ('mistral-large-2402') by editorial judgment (earliest original release, or the plain/unqualified listing where one exists) rather than a confirmed 1:1 identity. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      },
       "gpqa-diamond": {
         "value": 35.1,
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
