@@ -8,6 +8,9 @@ import { OpenBadge } from "@/components/open-badge";
 import { OrgIcon } from "@/components/org-icon";
 import { CompareWithPicker } from "@/components/compare-with-picker";
 import { ModelBenchmarks } from "@/components/model-benchmarks";
+import { ModelPeers } from "@/components/model-peers";
+import { ModelScoreStrip } from "@/components/model-score-strip";
+import { PricingRates } from "@/components/pricing-rates";
 import { Spec } from "@/components/spec-row";
 import { SpeedModeProvider } from "@/components/model-speed-context";
 import {
@@ -23,7 +26,6 @@ import {
   formatModalities,
   formatParams,
   formatPrice,
-  formatRateWithOffPeak,
   formatSpeed,
   getAllModels,
   getBenchmarkRank,
@@ -32,12 +34,11 @@ import {
   getRelatedModels,
   getSpecRank,
   modelFamilyLabel,
-  offPeakBlendedPrice,
-  offPeakWorkloadCost,
   workloadCost,
 } from "@/lib/models";
 import { getModelThinking, thinkingLevelLabel } from "@/lib/thinking";
 import { orgSlug } from "@/lib/organizations";
+import { getLlmcompareIndexBySlug } from "@/lib/benchmark-composite";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -104,6 +105,7 @@ export default async function ModelPage({ params }: Props) {
   const scoredCounts = Object.fromEntries(
     BENCHMARK_IDS.map((id) => [id, scoredCount(id)])
   );
+  const indexScore = getLlmcompareIndexBySlug()[model.slug];
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-12">
@@ -195,6 +197,13 @@ export default async function ModelPage({ params }: Props) {
           ) : null}
         </ul>
       </header>
+
+      <ModelScoreStrip
+        model={model}
+        indexScore={indexScore}
+        ranks={ranks}
+        scoredCounts={scoredCounts}
+      />
 
       {(() => {
         const grid = buildGrid({
@@ -322,72 +331,23 @@ function buildGrid({
           ) : (
             <section className="section-rule">
               <h2 className="text-lg font-semibold">Pricing</h2>
-              {model.pricing ? (
-                <div className="mt-3 space-y-3">
-                  <p className="text-sm text-muted-foreground">
-                    {model.pricing.provider}, $ per 1M tokens
-                    {model.pricing.offPeak
-                      ? ` (peak / off-peak${
-                          model.pricing.peakHours
-                            ? `; peak hours ${model.pricing.peakHours}`
-                            : ""
-                        }).`
-                      : ""}
-                    {thinking
-                      ? ". Thinking tokens bill as output; list rates do not change by effort."
-                      : ""}
-                  </p>
-                  <dl>
-                    <Spec
-                      label="Input"
-                      value={formatRateWithOffPeak(
-                        model.pricing.inputPer1M,
-                        model.pricing.offPeak?.inputPer1M
-                      )}
-                    />
-                    <Spec
-                      label="Output"
-                      value={formatRateWithOffPeak(
-                        model.pricing.outputPer1M,
-                        model.pricing.offPeak?.outputPer1M
-                      )}
-                    />
-                    <Spec
-                      label="Blended"
-                      value={formatRateWithOffPeak(
-                        blend,
-                        offPeakBlendedPrice(model)
-                      )}
-                      hint="3∶1 input:output mix"
-                    />
-                    <Spec
-                      label="1M+250K"
-                      value={formatRateWithOffPeak(
-                        cost,
-                        offPeakWorkloadCost(model)
-                      )}
-                      hint="Illustrative chat workload"
-                    />
-                    {priceRank !== undefined ? (
-                      <Spec
-                        label="Catalog rank"
-                        value={`#${priceRank} of ${pricedCount}`}
-                        hint="Lower blended price ranks higher"
-                      />
-                    ) : null}
-                  </dl>
-                </div>
-              ) : (
-                <p className="mt-3 text-sm text-muted-foreground">
-                  No primary-provider API pricing in this dataset.
-                </p>
-              )}
+              <PricingRates
+                model={model}
+                blend={blend}
+                cost={cost}
+                priceRank={priceRank}
+                pricedCount={pricedCount}
+                thinking={thinking}
+              />
             </section>
           )}
 
           <section className="section-rule">
             <h2 className="mb-3 text-lg font-semibold">Compare with</h2>
-            <CompareWithPicker models={models} currentSlug={model.slug} />
+            <ModelPeers model={model} related={related} />
+            <div className="mt-3">
+              <CompareWithPicker models={models} currentSlug={model.slug} />
+            </div>
           </section>
 
           {related.length > 0 ? (

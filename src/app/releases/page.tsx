@@ -52,7 +52,8 @@ export default function ReleasesPage() {
         <div className="mb-4">
           <h2 className="text-xl font-semibold tracking-tight">Timeline</h2>
           <p className="mt-1 text-sm text-muted-foreground">
-            Click a column to sort. Click a row for model details.
+            Grouped by month, newest first. Arena Elo sits on the right when
+            published. Click a row for model details.
           </p>
         </div>
         <ReleasesTable models={models} organizations={organizations} />

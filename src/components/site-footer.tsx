@@ -27,6 +27,9 @@ export function SiteFooter() {
           <Link href="/video" className="hover:text-foreground hover:underline">
             Video models
           </Link>
+          <Link href="/organizations" className="hover:text-foreground hover:underline">
+            Organizations
+          </Link>
           <Link href="/benchmarks" className="hover:text-foreground hover:underline">
             Benchmarks
           </Link>

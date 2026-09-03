@@ -4,6 +4,8 @@ import Link from "next/link";
 import { notFound, permanentRedirect } from "next/navigation";
 import type { Model } from "@/data/types";
 import { CompareBars, ComparePriceBars } from "@/components/compare-bars";
+import { CompareDeltaBar } from "@/components/compare-delta";
+import { CompareSwitch } from "@/components/compare-switch";
 import { OpenBadge } from "@/components/open-badge";
 import { OrgIcon } from "@/components/org-icon";
 import { ScrollX } from "@/components/scroll-x";
@@ -20,7 +22,9 @@ import {
   formatPricePair,
   formatSpeed,
   generateVerdict,
+  getAllModels,
   getModel,
+  MISSING,
   modelFamilyLabel,
   parseCompareSlug,
   popularComparePairs,
@@ -102,6 +106,7 @@ export default async function ComparePage({ params }: Props) {
   const b = getModel(parsed.b);
   if (!a || !b) notFound();
 
+  const catalog = getAllModels();
   const breakdown = compareBreakdown(a, b);
   const {
     wins,
@@ -226,6 +231,10 @@ export default async function ComparePage({ params }: Props) {
       </header>
 
       <section className="section-rule mb-10">
+        <CompareSwitch models={catalog} a={a.slug} b={b.slug} />
+      </section>
+
+      <section className="section-rule mb-10">
         <div className="flex flex-wrap items-baseline gap-x-6 gap-y-2">
           <p className="font-mono text-2xl tabular-nums">
             <span className="text-[color:var(--compare-a)]">{wins.a}</span>
@@ -339,6 +348,46 @@ export default async function ComparePage({ params }: Props) {
 
       <section className="section-rule mb-10">
         <h2 className="mb-3 text-lg font-semibold">Full comparison</h2>
+        <div className="md:hidden divide-y divide-border">
+          {metaRows.map((row) => (
+            <div key={row.label} className="py-3">
+              <p className="font-mono text-xs text-muted-foreground">
+                {row.label}
+              </p>
+              <div className="mt-1 grid grid-cols-2 gap-3 text-sm">
+                <p>{row.left}</p>
+                <p>{row.right}</p>
+              </div>
+            </div>
+          ))}
+          {groupedRows.map((group) => (
+            <div key={group.cat} className="contents">
+              <p className="pt-4 pb-1 font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
+                {group.label}
+              </p>
+              {group.rows.map((row) => (
+                <div key={row.id} className="py-3">
+                  <p className="font-mono text-xs text-muted-foreground">
+                    {row.label}
+                  </p>
+                  <div className="mt-1 grid grid-cols-2 gap-3 font-mono text-sm tabular-nums">
+                    <p className={sideTone(row.winner, "a")}>{row.left}</p>
+                    <p className={sideTone(row.winner, "b")}>{row.right}</p>
+                  </div>
+                  <div className="mt-2">
+                    <CompareDeltaBar
+                      a={row.leftNum}
+                      b={row.rightNum}
+                      winner={row.winner}
+                      label={row.deltaLabel}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+        <div className="hidden md:block">
         <ScrollX>
           <table className="w-full min-w-[640px] text-sm">
             <thead>
@@ -374,7 +423,7 @@ export default async function ComparePage({ params }: Props) {
                   <td className="py-2 pr-4">{row.left}</td>
                   <td className="py-2 pr-4">{row.right}</td>
                   <td className="py-2 font-mono text-xs text-muted-foreground">
-                    -
+                    {MISSING}
                   </td>
                 </tr>
               ))}
@@ -401,17 +450,13 @@ export default async function ComparePage({ params }: Props) {
                       >
                         {row.right}
                       </td>
-                      <td
-                        className={cn(
-                          "py-2 font-mono text-xs tabular-nums",
-                          row.winner === "a"
-                            ? "text-[color:var(--compare-a)]"
-                            : row.winner === "b"
-                              ? "text-[color:var(--compare-b)]"
-                              : "text-muted-foreground"
-                        )}
-                      >
-                        {row.deltaLabel ?? "-"}
+                      <td className="py-2">
+                        <CompareDeltaBar
+                          a={row.leftNum}
+                          b={row.rightNum}
+                          winner={row.winner}
+                          label={row.deltaLabel}
+                        />
                       </td>
                     </tr>
                   ))}
@@ -420,6 +465,7 @@ export default async function ComparePage({ params }: Props) {
             </tbody>
           </table>
         </ScrollX>
+        </div>
       </section>
 
       <section className="section-rule mb-10 grid gap-8 sm:grid-cols-2">

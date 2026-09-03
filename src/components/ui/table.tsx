@@ -5,14 +5,25 @@ import * as React from "react"
 import { ScrollX } from "@/components/scroll-x"
 import { cn } from "@/lib/utils"
 
-function Table({ className, ...props }: React.ComponentProps<"table">) {
+function Table({
+  className,
+  container = true,
+  ...props
+}: React.ComponentProps<"table"> & {
+  /** Wrap in the dual horizontal scrollbar. Set false when the parent scrolls. */
+  container?: boolean
+}) {
+  const table = (
+    <table
+      data-slot="table"
+      className={cn("w-full caption-bottom text-sm", className)}
+      {...props}
+    />
+  )
+  if (!container) return table
   return (
     <ScrollX data-slot="table-container" className="w-full">
-      <table
-        data-slot="table"
-        className={cn("w-full caption-bottom text-sm", className)}
-        {...props}
-      />
+      {table}
     </ScrollX>
   )
 }

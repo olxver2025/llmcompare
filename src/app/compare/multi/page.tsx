@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { MultiCompareForm } from "@/components/multi-compare-form";
+import { CompareForm } from "@/components/compare-form";
 import { MultiCompareTable } from "@/components/multi-compare-table";
 import { MAX_MULTI_COMPARE } from "@/lib/multi-compare";
 import { getAllModels, getModel } from "@/lib/models";
@@ -43,14 +43,14 @@ export default async function MultiComparePage({ searchParams }: Props) {
           Compare multiple models
         </h1>
         <p className="mt-3 text-muted-foreground text-pretty">
-          Pick 2 to {MAX_MULTI_COMPARE} models for a shared spec, pricing, and
-          benchmark table. The leading value in each row is bolded; ties and
-          missing scores are left unmarked.
+          Pick 2 to {MAX_MULTI_COMPARE} models. Two models open the vs page;
+          three or more stay on this table. The leading value in each row is
+          bolded; ties and missing scores are left unmarked.
         </p>
       </div>
 
       <div className="section-rule mb-10">
-        <MultiCompareForm models={models} initialSlugs={uniqueSlugs} />
+        <CompareForm models={models} initialSlugs={uniqueSlugs} />
         {missing.length > 0 ? (
           <p className="mt-3 text-sm text-destructive">
             Unknown model slug{missing.length > 1 ? "s" : ""}: {missing.join(", ")}

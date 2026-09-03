@@ -1,11 +1,9 @@
 "use client";
 
-import { useMemo, useState, useTransition } from "react";
-import { useRouter } from "next/navigation";
-import { ArrowDown, ArrowUp, ArrowUpDown } from "lucide-react";
-import type { BenchmarkId, Model } from "@/data/types";
-import { BENCHMARKS } from "@/data/benchmarks";
-import { formatDate, formatScore } from "@/lib/models";
+import { useMemo, useState } from "react";
+import Link from "next/link";
+import type { Model } from "@/data/types";
+import { formatDate, formatScore, MISSING } from "@/lib/models";
 import { OpenBadge } from "@/components/open-badge";
 import { OrgIcon } from "@/components/org-icon";
 import { Input } from "@/components/ui/input";
@@ -16,50 +14,21 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-import { cn } from "@/lib/utils";
 
-type SortKey = "name" | "organization" | "releaseDate" | BenchmarkId;
+function monthKey(iso: string): string {
+  return iso.slice(0, 7);
+}
 
-const TABLE_BENCHMARKS: BenchmarkId[] = [
-  "mmlu-pro",
-  "gpqa-diamond",
-  "aime-2025",
-  "swe-bench-verified",
-  "swe-bench-pro",
-  "terminal-bench-2-1",
-  "cursorbench",
-  "aider-polyglot",
-  "lmarena-elo",
-];
+function monthLabel(key: string): string {
+  const [year, month] = key.split("-").map(Number);
+  return new Date(year, month - 1, 1).toLocaleDateString("en-US", {
+    month: "long",
+    year: "numeric",
+  });
+}
 
-function compareValues(
-  a: Model,
-  b: Model,
-  key: SortKey,
-  dir: "asc" | "desc"
-): number {
-  const mul = dir === "asc" ? 1 : -1;
-  const num = (v: number | undefined) =>
-    v === undefined ? (dir === "asc" ? Infinity : -Infinity) : v;
-
-  switch (key) {
-    case "name":
-      return mul * a.name.localeCompare(b.name);
-    case "organization":
-      return mul * a.organization.localeCompare(b.organization);
-    case "releaseDate":
-      return mul * a.releaseDate.localeCompare(b.releaseDate);
-    default:
-      return mul * (num(a.benchmarks[key]) - num(b.benchmarks[key]));
-  }
+function dayOfMonth(iso: string): string {
+  return String(Number(iso.slice(8, 10)));
 }
 
 export function ReleasesTable({
@@ -69,13 +38,9 @@ export function ReleasesTable({
   models: Model[];
   organizations: string[];
 }) {
-  const router = useRouter();
-  const [, startTransition] = useTransition();
   const [query, setQuery] = useState("");
   const [org, setOrg] = useState<string>("all");
   const [license, setLicense] = useState<"all" | "open" | "closed">("all");
-  const [sortKey, setSortKey] = useState<SortKey>("releaseDate");
-  const [sortDir, setSortDir] = useState<"asc" | "desc">("desc");
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -91,30 +56,23 @@ export function ReleasesTable({
           m.slug.includes(q)
         );
       })
-      .sort((a, b) => compareValues(a, b, sortKey, sortDir));
-  }, [models, query, org, license, sortKey, sortDir]);
+      .sort(
+        (a, b) =>
+          b.releaseDate.localeCompare(a.releaseDate) ||
+          a.name.localeCompare(b.name)
+      );
+  }, [models, query, org, license]);
 
-  function toggleSort(key: SortKey) {
-    if (sortKey === key) {
-      setSortDir((d) => (d === "asc" ? "desc" : "asc"));
-    } else {
-      setSortKey(key);
-      setSortDir(key === "name" || key === "organization" ? "asc" : "desc");
+  const groups = useMemo(() => {
+    const map = new Map<string, Model[]>();
+    for (const model of filtered) {
+      const key = monthKey(model.releaseDate);
+      const list = map.get(key);
+      if (list) list.push(model);
+      else map.set(key, [model]);
     }
-  }
-
-  function SortIcon({ col }: { col: SortKey }) {
-    if (sortKey !== col)
-      return <ArrowUpDown className="ml-1 inline size-3 opacity-40" />;
-    return sortDir === "asc" ? (
-      <ArrowUp className="ml-1 inline size-3 text-open" />
-    ) : (
-      <ArrowDown className="ml-1 inline size-3 text-open" />
-    );
-  }
-
-  const headClass =
-    "cursor-pointer select-none whitespace-nowrap font-mono text-[11px] uppercase tracking-wider text-muted-foreground hover:text-foreground";
+    return [...map.entries()];
+  }, [filtered]);
 
   return (
     <div className="space-y-4">
@@ -159,96 +117,66 @@ export function ReleasesTable({
         </p>
       </div>
 
-      <div className="border border-border">
-        <Table>
-          <TableHeader>
-            <TableRow className="hover:bg-transparent">
-              <TableHead
-                className={headClass}
-                onClick={() => toggleSort("releaseDate")}
-              >
-                Released
-                <SortIcon col="releaseDate" />
-              </TableHead>
-              <TableHead
-                className={headClass}
-                onClick={() => toggleSort("name")}
-              >
-                Model
-                <SortIcon col="name" />
-              </TableHead>
-              <TableHead
-                className={headClass}
-                onClick={() => toggleSort("organization")}
-              >
-                Org
-                <SortIcon col="organization" />
-              </TableHead>
-              <TableHead className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
-                Type
-              </TableHead>
-              {TABLE_BENCHMARKS.map((id) => (
-                <TableHead
-                  key={id}
-                  className={cn(headClass, "text-right")}
-                  onClick={() => toggleSort(id)}
-                >
-                  {BENCHMARKS[id].shortName}
-                  <SortIcon col={id} />
-                </TableHead>
-              ))}
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {filtered.map((m) => (
-              <TableRow
-                key={m.slug}
-                className="cursor-pointer"
-                onClick={() =>
-                  startTransition(() => router.push(`/models/${m.slug}`))
-                }
-              >
-                <TableCell className="whitespace-nowrap font-mono text-sm tabular-nums text-muted-foreground">
-                  <time dateTime={m.releaseDate}>
-                    {formatDate(m.releaseDate)}
-                  </time>
-                </TableCell>
-                <TableCell className="font-medium whitespace-nowrap">
-                  <span className="inline-flex items-center gap-2">
-                    <OrgIcon organization={m.organization} size="md" />
-                    {m.name}
-                  </span>
-                </TableCell>
-                <TableCell className="text-muted-foreground whitespace-nowrap">
-                  {m.organization}
-                </TableCell>
-                <TableCell>
-                  <OpenBadge openSource={m.openSource} />
-                </TableCell>
-                {TABLE_BENCHMARKS.map((id) => (
-                  <TableCell
-                    key={id}
-                    className="text-right font-mono tabular-nums"
+      {groups.length === 0 ? (
+        <p className="py-12 text-center text-sm text-muted-foreground">
+          No releases match these filters. Clear a filter to widen the list.
+        </p>
+      ) : (
+        <ol className="space-y-10">
+          {groups.map(([month, items]) => (
+            <li key={month}>
+              <h3 className="sticky top-12 z-10 -mx-4 bg-background px-4 py-2 text-sm font-semibold tracking-tight sm:-mx-0 sm:px-0">
+                {monthLabel(month)}
+              </h3>
+              <ol>
+                {items.map((m) => (
+                  <li
+                    key={m.slug}
+                    className="border-b border-border last:border-0"
                   >
-                    {formatScore(id, m.benchmarks[id])}
-                  </TableCell>
+                    <Link
+                      href={`/models/${m.slug}`}
+                      prefetch={false}
+                      className="flex items-baseline gap-3 py-2.5 text-sm hover:bg-muted/50"
+                    >
+                      <time
+                        dateTime={m.releaseDate}
+                        title={formatDate(m.releaseDate)}
+                        className="w-6 shrink-0 font-mono text-xs tabular-nums text-muted-foreground"
+                      >
+                        {dayOfMonth(m.releaseDate)}
+                      </time>
+                      <span className="inline-flex min-w-0 items-baseline gap-2">
+                        <OrgIcon
+                          organization={m.organization}
+                          size="sm"
+                          className="translate-y-0.5"
+                        />
+                        <span className="truncate font-medium">{m.name}</span>
+                      </span>
+                      <span className="hidden truncate text-muted-foreground sm:inline">
+                        {m.organization}
+                      </span>
+                      <OpenBadge
+                        openSource={m.openSource}
+                        className="hidden sm:inline"
+                      />
+                      <span className="ml-auto shrink-0 font-mono text-xs tabular-nums text-muted-foreground">
+                        {m.benchmarks["lmarena-elo"] !== undefined
+                          ? formatScore(
+                              "lmarena-elo",
+                              m.benchmarks["lmarena-elo"]
+                            )
+                          : MISSING}
+                      </span>
+                    </Link>
+                  </li>
                 ))}
-              </TableRow>
-            ))}
-            {filtered.length === 0 && (
-              <TableRow>
-                <TableCell
-                  colSpan={4 + TABLE_BENCHMARKS.length}
-                  className="h-24 text-center text-muted-foreground"
-                >
-                  No releases match these filters. Clear a filter to widen the
-                  list.
-                </TableCell>
-              </TableRow>
-            )}
-          </TableBody>
-        </Table>
-      </div>
+              </ol>
+            </li>
+          ))}
+        </ol>
+      )}
     </div>
   );
 }

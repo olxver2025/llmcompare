@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { MediaModelsTable } from "@/components/media-models-table";
 import {
   DATA_FRESHNESS,
@@ -37,6 +38,20 @@ export default function VideoCatalogPage() {
         <p className="mt-3 text-sm text-muted-foreground text-pretty">
           Scores and list prices are compiled from public sources — re-check
           primary docs before you rely on them.
+        </p>
+        <p className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+          <Link
+            href="/video/compare"
+            className="font-medium text-open underline-offset-4 hover:underline"
+          >
+            Compare video models
+          </Link>
+          <Link
+            href="/image"
+            className="text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
+          >
+            Image models
+          </Link>
         </p>
       </section>
 

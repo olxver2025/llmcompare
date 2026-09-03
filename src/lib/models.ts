@@ -12,12 +12,24 @@ export { QUALITY_COMPARABLE_ELO_BAND, type OverallBasis };
 
 export const DATA_FRESHNESS = "2026-09-03";
 
+/** Display for an absent numeric or text field. Never a guessed zero. */
+export const MISSING = "—";
+
 /** Illustrative chat workload used for cost estimates. */
 export const WORKLOAD_TOKENS_IN = 1_000_000;
 export const WORKLOAD_TOKENS_OUT = 250_000;
 
 export function getAllModels(): Model[] {
   return models;
+}
+
+export function getRecentModels(limit = 8): Model[] {
+  return [...models]
+    .sort(
+      (a, b) =>
+        b.releaseDate.localeCompare(a.releaseDate) || a.name.localeCompare(b.name)
+    )
+    .slice(0, limit);
 }
 
 export function getModel(slug: string): Model | undefined {
@@ -50,7 +62,7 @@ export function formatSpeed(m: Model): string {
   if (m.speed?.ttftSeconds !== undefined) {
     parts.push(`${m.speed.ttftSeconds}s TTFT`);
   }
-  return parts.length > 0 ? parts.join(" · ") : "-";
+  return parts.length > 0 ? parts.join(" · ") : MISSING;
 }
 
 export function formatLicense(m: Model): string {
@@ -113,7 +125,7 @@ export function parseCompareSlug(
 }
 
 export function formatPrice(n: number | undefined): string {
-  if (n === undefined) return "-";
+  if (n === undefined) return MISSING;
   if (n === 0) return "$0";
   if (n < 0.01) return `$${n.toFixed(3)}`;
   if (n < 1) return `$${n.toFixed(2)}`;
@@ -126,7 +138,7 @@ export function formatRateWithOffPeak(
   peak: number | undefined,
   offPeak: number | undefined
 ): string {
-  if (peak === undefined) return "-";
+  if (peak === undefined) return MISSING;
   if (offPeak === undefined) return formatPrice(peak);
   return `${formatPrice(peak)} / ${formatPrice(offPeak)}`;
 }
@@ -134,7 +146,7 @@ export function formatRateWithOffPeak(
 export function formatPricePair(
   pricing: Model["pricing"] | undefined
 ): string {
-  if (!pricing) return "-";
+  if (!pricing) return MISSING;
   const base = `${formatPrice(pricing.inputPer1M)} / ${formatPrice(pricing.outputPer1M)}`;
   if (!pricing.offPeak) return base;
   return `${base} peak · ${formatPrice(pricing.offPeak.inputPer1M)} / ${formatPrice(pricing.offPeak.outputPer1M)} off-peak`;
@@ -155,7 +167,7 @@ export function formatContext(tokens: number): string {
 export function formatParams(
   parameters: Model["parameters"] | undefined
 ): string {
-  if (!parameters?.total) return "-";
+  if (!parameters?.total) return MISSING;
   const total = parameters.total;
   const totalStr =
     total >= 1000 ? `${(total / 1000).toFixed(1)}T` : `${total}B`;

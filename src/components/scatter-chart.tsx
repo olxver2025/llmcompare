@@ -337,7 +337,7 @@ export function PricePerformanceScatter({
         )}
       </p>
 
-      <div className="h-[400px] w-full">
+      <div className={compact ? "h-[280px] w-full" : "h-[340px] w-full"}>
         {points.length === 0 ? (
           <div className="flex h-full items-center justify-center border border-dashed border-border text-sm text-muted-foreground">
             No models match these filters with both price and this benchmark.

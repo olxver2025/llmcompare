@@ -151,7 +151,7 @@
   .section-rule {
     @apply border-t border-foreground/20 pt-4;
   }
-  /* Slim, always-visible horizontal scrollbars for wide tables */
+  /* Slim, always-visible scrollbars for wide tables and catalog panes */
   .scroll-rail {
     scrollbar-width: thin;
     scrollbar-color: var(--border) transparent;

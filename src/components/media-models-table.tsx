@@ -1,7 +1,7 @@
 "use client";
 
-import { useMemo, useState, useTransition } from "react";
-import { useRouter } from "next/navigation";
+import { useMemo, useState } from "react";
+import Link from "next/link";
 import { ArrowDown, ArrowUp, ArrowUpDown } from "lucide-react";
 import type { ImageModel, VideoModel } from "@/data/types";
 import {
@@ -114,8 +114,6 @@ export function MediaModelsTable({
   models: MediaModel[];
   organizations: string[];
 }) {
-  const router = useRouter();
-  const [, startTransition] = useTransition();
   const [query, setQuery] = useState("");
   const [org, setOrg] = useState<string>("all");
   const [license, setLicense] = useState<"all" | "open" | "closed">("all");
@@ -211,29 +209,76 @@ export function MediaModelsTable({
         </p>
       </div>
 
-      <div className="border border-border">
-        <Table>
+      <ul className="divide-y divide-border md:hidden">
+        {filtered.map((m) => (
+          <li key={m.slug}>
+            <Link
+              href={`/${kind}/${m.slug}`}
+              prefetch={false}
+              className="flex flex-col gap-1 py-3"
+            >
+              <span className="inline-flex items-center gap-2 font-medium">
+                <OrgIcon organization={m.organization} size="md" />
+                {m.name}
+                <OpenBadge openSource={m.openSource} className="ml-auto" />
+              </span>
+              <span className="flex flex-wrap gap-x-3 font-mono text-xs tabular-nums text-muted-foreground">
+                <span>{m.organization}</span>
+                <span>{formatResolution(m.specs.maxResolution)}</span>
+                <span>
+                  {kind === "image"
+                    ? formatPerImagePrice((m as ImageModel).pricing?.perImage)
+                    : formatPerSecondPrice(
+                        (m as VideoModel).pricing?.perSecond
+                      )}
+                </span>
+                <span>
+                  {formatMediaScore(eloOf(kind, m))}
+                </span>
+              </span>
+            </Link>
+          </li>
+        ))}
+        {filtered.length === 0 ? (
+          <li className="py-8 text-center text-sm text-muted-foreground">
+            No models match these filters. Clear a filter to widen the catalog.
+          </li>
+        ) : null}
+      </ul>
+
+      <div className="hidden border border-border md:block">
+        <div className="max-h-[min(72vh,56rem)] overflow-auto scroll-rail">
+        <Table container={false}>
           <TableHeader>
             <TableRow className="hover:bg-transparent">
               <TableHead
-                className={headClass}
+                className={cn(
+                  headClass,
+                  "sticky left-0 top-0 z-30 bg-background shadow-[1px_0_0_0_var(--border),0_1px_0_0_var(--border)]"
+                )}
                 onClick={() => toggleSort("name")}
               >
                 Model
                 {sortIcon("name")}
               </TableHead>
               <TableHead
-                className={headClass}
+                className={cn(
+                  headClass,
+                  "sticky top-0 z-20 bg-background shadow-[0_1px_0_0_var(--border)]"
+                )}
                 onClick={() => toggleSort("organization")}
               >
                 Org
                 {sortIcon("organization")}
               </TableHead>
-              <TableHead className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
+              <TableHead className="sticky top-0 z-20 bg-background font-mono text-[11px] uppercase tracking-wider text-muted-foreground shadow-[0_1px_0_0_var(--border)]">
                 Type
               </TableHead>
               <TableHead
-                className={cn(headClass, "text-right")}
+                className={cn(
+                  headClass,
+                  "sticky top-0 z-20 bg-background text-right shadow-[0_1px_0_0_var(--border)]"
+                )}
                 onClick={() => toggleSort("maxRes")}
               >
                 Max res
@@ -241,7 +286,10 @@ export function MediaModelsTable({
               </TableHead>
               {kind === "video" ? (
                 <TableHead
-                  className={cn(headClass, "text-right")}
+                  className={cn(
+                    headClass,
+                    "sticky top-0 z-20 bg-background text-right shadow-[0_1px_0_0_var(--border)]"
+                  )}
                   onClick={() => toggleSort("maxDuration")}
                 >
                   Max duration
@@ -249,28 +297,40 @@ export function MediaModelsTable({
                 </TableHead>
               ) : null}
               <TableHead
-                className={cn(headClass, "text-right")}
+                className={cn(
+                  headClass,
+                  "sticky top-0 z-20 bg-background text-right shadow-[0_1px_0_0_var(--border)]"
+                )}
                 onClick={() => toggleSort("price")}
               >
                 {kind === "image" ? "$/image" : "$/s"}
                 {sortIcon("price")}
               </TableHead>
               <TableHead
-                className={cn(headClass, "text-right")}
+                className={cn(
+                  headClass,
+                  "sticky top-0 z-20 bg-background text-right shadow-[0_1px_0_0_var(--border)]"
+                )}
                 onClick={() => toggleSort("elo")}
               >
                 Arena Elo
                 {sortIcon("elo")}
               </TableHead>
               <TableHead
-                className={cn(headClass, "text-right")}
+                className={cn(
+                  headClass,
+                  "sticky top-0 z-20 bg-background text-right shadow-[0_1px_0_0_var(--border)]"
+                )}
                 onClick={() => toggleSort("speed")}
               >
                 {kind === "image" ? "s/image" : "s/s"}
                 {sortIcon("speed")}
               </TableHead>
               <TableHead
-                className={cn(headClass, "text-right")}
+                className={cn(
+                  headClass,
+                  "sticky top-0 z-20 bg-background text-right shadow-[0_1px_0_0_var(--border)]"
+                )}
                 onClick={() => toggleSort("release")}
               >
                 Release
@@ -280,18 +340,16 @@ export function MediaModelsTable({
           </TableHeader>
           <TableBody>
             {filtered.map((m) => (
-              <TableRow
-                key={m.slug}
-                className="cursor-pointer"
-                onClick={() =>
-                  startTransition(() => router.push(`/${kind}/${m.slug}`))
-                }
-              >
-                <TableCell className="font-medium whitespace-nowrap">
-                  <span className="inline-flex items-center gap-2">
+              <TableRow key={m.slug} className="group">
+                <TableCell className="sticky left-0 z-10 bg-background font-medium whitespace-nowrap shadow-[1px_0_0_0_var(--border)] group-hover:bg-muted/50">
+                  <Link
+                    href={`/${kind}/${m.slug}`}
+                    prefetch={false}
+                    className="inline-flex items-center gap-2 hover:underline"
+                  >
                     <OrgIcon organization={m.organization} size="md" />
                     {m.name}
-                  </span>
+                  </Link>
                 </TableCell>
                 <TableCell className="text-muted-foreground whitespace-nowrap">
                   {m.organization}
@@ -320,7 +378,7 @@ export function MediaModelsTable({
                   {formatMediaScore(eloOf(kind, m))}
                 </TableCell>
                 <TableCell className="text-right font-mono tabular-nums text-muted-foreground">
-                  {speedOf(kind, m) ?? "-"}
+                  {speedOf(kind, m) ?? "—"}
                 </TableCell>
                 <TableCell className="text-right font-mono tabular-nums text-muted-foreground whitespace-nowrap">
                   {formatDate(m.releaseDate)}
@@ -340,6 +398,7 @@ export function MediaModelsTable({
             )}
           </TableBody>
         </Table>
+        </div>
       </div>
     </div>
   );

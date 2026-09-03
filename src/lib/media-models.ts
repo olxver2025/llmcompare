@@ -71,12 +71,12 @@ export function formatResolution(res: {
 }
 
 export function formatPerImagePrice(perImage: number | undefined): string {
-  if (perImage === undefined) return "-";
+  if (perImage === undefined) return "—";
   return `${formatPrice(perImage)} / image`;
 }
 
 export function formatPerSecondPrice(perSecond: number | undefined): string {
-  if (perSecond === undefined) return "-";
+  if (perSecond === undefined) return "—";
   return `${formatPrice(perSecond)} / s`;
 }
 
@@ -90,7 +90,7 @@ export function formatGenerationSpeed(
   seconds: number | undefined,
   per: "image" | "video-second" = "image"
 ): string {
-  if (seconds === undefined) return "-";
+  if (seconds === undefined) return "—";
   return per === "image" ? `${seconds}s / image` : `${seconds}s / s`;
 }
 
