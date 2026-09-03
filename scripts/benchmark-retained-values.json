@@ -311,6 +311,16 @@
       "scicode": 56.8,
       "lmarena-elo": 1490.9
     },
+    "gemini-3-8-flash": {
+      "deepswe": 73.7,
+      "gdpval-aa": 1545,
+      "terminal-bench-2-1": 89.4,
+      "terminal-bench-4": 19.1,
+      "osworld-2-partial": 59
+    },
+    "gemini-3-8-flash-cyber": {
+      "cybergym": 86.2
+    },
     "gemini-3-flash": {
       "lmarena-elo": 1473,
       "webdev-arena": 1438,

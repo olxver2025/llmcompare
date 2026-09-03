@@ -1740,6 +1740,52 @@
         "evaluationDate": "2026-09-02"
       }
     },
+    "gemini-3-8-flash": {
+      "deepswe": {
+        "value": 73.7,
+        "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-8-Flash-Model-Card.pdf",
+        "checkedOn": "2026-09-02",
+        "protocol": "Gemini 3.8 Flash model card results table; DeepSWE v1.1 long-horizon software engineering.",
+        "evaluationDate": "2026-09-02"
+      },
+      "gdpval-aa": {
+        "value": 1545,
+        "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-8-Flash-Model-Card.pdf",
+        "checkedOn": "2026-09-02",
+        "protocol": "Gemini 3.8 Flash model card results table; GDPval-AA v2 knowledge-work Elo.",
+        "evaluationDate": "2026-09-02"
+      },
+      "terminal-bench-2-1": {
+        "value": 89.4,
+        "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-8-Flash-Model-Card.pdf",
+        "checkedOn": "2026-09-02",
+        "protocol": "Gemini 3.8 Flash model card results table; Terminal-Bench 2.1 agentic terminal coding.",
+        "evaluationDate": "2026-09-02"
+      },
+      "terminal-bench-4": {
+        "value": 19.1,
+        "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-8-Flash-Model-Card.pdf",
+        "checkedOn": "2026-09-02",
+        "protocol": "Gemini 3.8 Flash model card results table; Terminal-Bench 4.0 general agent capabilities.",
+        "evaluationDate": "2026-09-02"
+      },
+      "osworld-2-partial": {
+        "value": 59,
+        "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-8-Flash-Model-Card.pdf",
+        "checkedOn": "2026-09-02",
+        "protocol": "Gemini 3.8 Flash model card results table; OSWorld 2.0 partial-credit score, batch tool enabled.",
+        "evaluationDate": "2026-09-02"
+      }
+    },
+    "gemini-3-8-flash-cyber": {
+      "cybergym": {
+        "value": 86.2,
+        "sourceUrl": "https://deepmind.google/models/gemini/cyber/",
+        "checkedOn": "2026-09-02",
+        "protocol": "Google DeepMind Gemini 3.8 Flash Cyber product page; CyberGym pass@1 vulnerability discovery.",
+        "evaluationDate": "2026-09-02"
+      }
+    },
     "gemini-3-7-flash": {
       "cursorbench": {
         "value": 61.6,

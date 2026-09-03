@@ -873,6 +873,55 @@ export const models: Model[] = [
       "Newest Flash model powering the free Gemini app - cheaper output tokens and strong price/performance.",
   },
   {
+    slug: "gemini-3-8-flash",
+    name: "Gemini 3.8 Flash",
+    organization: "Google",
+    releaseDate: "2026-09-02",
+    knowledgeCutoff: "2026-03",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 1_048_576,
+    maxOutput: 65_536,
+    modalities: { input: ["text", "image", "audio", "video"], output: ["text"] },
+    pricing: { provider: "Google", inputPer1M: 0.75, outputPer1M: 3.75 },
+    benchmarks: {
+      deepswe: 73.7,
+      "gdpval-aa": 1545,
+      "terminal-bench-2-1": 89.4,
+      "terminal-bench-4": 19.1,
+      "osworld-2-partial": 59,
+    },
+    links: {
+      docs: "https://ai.google.dev/gemini-api/docs/models",
+      modelCard: "https://deepmind.google/models/model-cards/gemini-3-8-flash/",
+      announcement:
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+    },
+    summary:
+      "Google's Sep 2, 2026 Flash update over 3.7 Flash - gains on long-horizon software engineering, agentic knowledge work, and computer use; introductory $0.75/$3.75 through Dec 31, 2026 (then $1.50/$7.50).",
+  },
+  {
+    slug: "gemini-3-8-flash-cyber",
+    name: "Gemini 3.8 Flash Cyber",
+    organization: "Google",
+    releaseDate: "2026-09-02",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 1_048_576,
+    maxOutput: 65_536,
+    modalities: { input: ["text"], output: ["text"] },
+    benchmarks: {
+      cybergym: 86.2,
+    },
+    links: {
+      docs: "https://deepmind.google/models/gemini/cyber/",
+      announcement:
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+    },
+    summary:
+      "Cybersecurity-specialized Gemini 3.8 Flash fine-tune for autonomous vulnerability discovery and automated patching - limited to the Fairwind Program for governments, critical-infrastructure operators, and trusted software maintainers (no public API).",
+  },
+  {
     slug: "gemini-3-7-flash",
     name: "Gemini 3.7 Flash",
     organization: "Google",
