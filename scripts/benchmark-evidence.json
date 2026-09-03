@@ -2,6 +2,22 @@
   "asOf": "2026-09-03",
   "policy": "Every retained numeric cell requires an independently reviewed value plus an explicit source URL, evaluation date, and protocol note. The ledger does not make cross-harness results comparable.",
   "cells": {
+    "gpt-6-astra": {
+      "gpqa-diamond": {
+        "value": 96,
+        "sourceUrl": "https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch benchmarks reported 2026-09-03; GPQA Diamond score.",
+        "evaluationDate": "2026-09-03"
+      },
+      "deepswe": {
+        "value": 74.1,
+        "sourceUrl": "https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch benchmarks reported 2026-09-03; DeepSWE v1.1 score.",
+        "evaluationDate": "2026-09-03"
+      }
+    },
     "gpt-5-6-sol": {
       "terminal-bench-science": {
         "value": 22.4,

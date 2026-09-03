@@ -1826,6 +1826,10 @@
     },
     "muse-spark-1-3": {
       "gdpval-aa": 1754
+    },
+    "gpt-6-astra": {
+      "gpqa-diamond": 96,
+      "deepswe": 74.1
     }
   }
 }

@@ -9,6 +9,32 @@ import type { Model } from "./types";
 export const models: Model[] = [
   // ─── OpenAI ───────────────────────────────────────────────
   {
+    slug: "gpt-6-astra",
+    name: "GPT-6 Astra",
+    organization: "OpenAI",
+    releaseDate: "2026-09-03",
+    knowledgeCutoff: "2026-04-30",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 1_050_000,
+    maxOutput: 128_000,
+    modalities: { input: ["text", "image"], output: ["text"] },
+    pricing: { provider: "OpenAI", inputPer1M: 10, outputPer1M: 50 },
+    fast: {
+      pricing: { provider: "OpenAI", inputPer1M: 20, outputPer1M: 100 },
+    },
+    benchmarks: {
+      "gpqa-diamond": 96,
+      deepswe: 74.1,
+    },
+    links: {
+      docs: "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      announcement: "https://openai.com/index/gpt-6-astra/",
+    },
+    summary:
+      "OpenAI's September 2026 flagship, the first model OpenAI designates as reaching the Preparedness Framework's Critical cybersecurity capability threshold; rolling out first to Daybreak-program enterprises before wider ChatGPT/API/AWS availability. Standard API pricing is $10/$50 per 1M tokens (input/output), with a Fast mode at $20/$100.",
+  },
+  {
     slug: "gpt-5-6-sol",
     name: "GPT-5.6 Sol",
     organization: "OpenAI",
