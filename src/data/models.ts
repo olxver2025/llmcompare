@@ -26,6 +26,10 @@ export const models: Model[] = [
     benchmarks: {
       "gpqa-diamond": 96,
       deepswe: 74.1,
+      "terminal-bench-science": 64.6,
+      "agents-last-exam": 59.3,
+      "automation-bench": 41.4,
+      "osworld-2-partial": 72.6,
     },
     links: {
       docs: "https://developers.openai.com/api/docs/models/gpt-6-astra",

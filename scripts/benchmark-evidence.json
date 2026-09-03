@@ -16,6 +16,34 @@
         "checkedOn": "2026-09-03",
         "protocol": "OpenAI GPT-6 Astra launch benchmarks reported 2026-09-03; DeepSWE v1.1 score.",
         "evaluationDate": "2026-09-03"
+      },
+      "terminal-bench-science": {
+        "value": 64.6,
+        "sourceUrl": "https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch benchmarks reported 2026-09-03; Terminal-Bench Science 0.1 score, up from 22.4% for GPT-5.6 Sol.",
+        "evaluationDate": "2026-09-03"
+      },
+      "agents-last-exam": {
+        "value": 59.3,
+        "sourceUrl": "https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch benchmarks reported 2026-09-03; Agents' Last Exam score.",
+        "evaluationDate": "2026-09-03"
+      },
+      "automation-bench": {
+        "value": 41.4,
+        "sourceUrl": "https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch benchmarks reported 2026-09-03; AutomationBench score.",
+        "evaluationDate": "2026-09-03"
+      },
+      "osworld-2-partial": {
+        "value": 72.6,
+        "sourceUrl": "https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch benchmarks reported 2026-09-03; OSWorld 2.0 offline-subset partial-credit score (v2026.08.08 task release), ~40 min/task vs 75 min/task for GPT-5.6 Sol.",
+        "evaluationDate": "2026-09-03"
       }
     },
     "gpt-5-6-sol": {
