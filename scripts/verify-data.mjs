@@ -54,6 +54,7 @@ const expectedBenchmarkIds = new Set([
   "gdpval-aa",
   "osworld-2-partial",
   "osworld-2-strict",
+  "frontiermath-tier-4-v2",
 ]);
 
 try {
@@ -67,7 +68,7 @@ try {
   check(false, `benchmark evidence ledger is not reproducible: ${detail}`);
 }
 
-check(benchmarkIds.size === 31, `expected 31 benchmark IDs, found ${benchmarkIds.size}`);
+check(benchmarkIds.size === 32, `expected 32 benchmark IDs, found ${benchmarkIds.size}`);
 check(
   benchmarkIds.size === Object.keys(benchmarkCatalog).length,
   "benchmark metadata and benchmark ID exports disagree"
@@ -91,7 +92,7 @@ check(
   "evidence ledger must include every model, including intentional empty records"
 );
 
-check(models.length === 276, `expected 276 models, found ${models.length}`);
+check(models.length === 277, `expected 277 models, found ${models.length}`);
 check(new Set(models.map((model) => model.slug)).size === models.length, "duplicate model slug");
 const expectedEmptyBenchmarkModels = new Set(emptyBenchmarkManifest.slugs);
 check(
@@ -268,7 +269,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 1400, `expected 1400 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 1408, `expected 1408 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);

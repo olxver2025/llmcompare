@@ -357,6 +357,17 @@ export const BENCHMARKS: Record<BenchmarkId, BenchmarkMeta> = {
     category: "agent",
     sourceUrl: "https://os-world.github.io/",
   },
+  "frontiermath-tier-4-v2": {
+    id: "frontiermath-tier-4-v2",
+    name: "FrontierMath Tier 4 (v2)",
+    shortName: "FrontierMath T4",
+    description:
+      "Epoch AI's FrontierMath benchmark, Tier 4 (v2 problem set): exceptionally difficult, original research-level mathematics problems vetted by expert mathematicians. Tier 4 is not comparable to FrontierMath Tiers 1-3, and v2 problem sets are not comparable to v1 results.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "math",
+    sourceUrl: "https://epoch.ai/benchmarks/frontiermath-tier-4-v2",
+  },
 };
 
 export const BENCHMARK_IDS = Object.keys(BENCHMARKS) as BenchmarkId[];
