@@ -5,6 +5,17 @@ import {
   BENCHMARKS,
 } from "@/data/benchmarks";
 import { DATA_FRESHNESS, getAllModels } from "@/lib/models";
+import {
+  COMPOSITE_PSEUDOCOUNT_RATE,
+  compositePseudocount,
+  shrinkCompositeZ,
+} from "@/lib/composite-shrink";
+
+export {
+  COMPOSITE_PSEUDOCOUNT_RATE,
+  compositePseudocount,
+  shrinkCompositeZ,
+};
 
 export type CategoryId = BenchmarkMeta["category"];
 
@@ -106,9 +117,10 @@ export type CategoryCompositeRow = {
 /**
  * Composite ranking within one benchmark category. Each eligible benchmark's
  * scores are z-score normalized against models released in the last
- * {@link COMPOSITE_PEER_MONTHS} months, then averaged over the full category
- * battery. A missing score contributes 0, not an omitted slot. Saturated and
- * thinly scored benches are excluded.
+ * {@link COMPOSITE_PEER_MONTHS} months. The composite is a shrunken mean:
+ * sum of published z-scores over (n + k), with k dummy average observations
+ * so thin coverage still cannot dominate. Saturated and thinly scored
+ * benches are excluded.
  *
  * This is a derived statistic, not a sourced benchmark score.
  */
@@ -156,8 +168,11 @@ function computeComposite(
     }
     if (contributions.length < minBenchmarks) continue;
 
-    const zScore =
-      contributions.reduce((sum, c) => sum + c.z, 0) / batterySize;
+    const zScore = shrinkCompositeZ(
+      contributions.reduce((sum, c) => sum + c.z, 0),
+      contributions.length,
+      batterySize
+    );
     rows.push({
       model,
       zScore,
@@ -185,7 +200,7 @@ export const LLMCOMPARE_INDEX = {
   shortName: "LC Index",
   href: "/benchmarks/llmcompare-index",
   description:
-    "An LLMcompare-computed index, not a published benchmark. Eligible benches are z-scored against models released in the past year, then averaged over the full battery. Missing scores contribute nothing rather than being dropped from the average, so thin brochure sets cannot outrank a broader evaluation, and beating a long tail of older models does not inflate the index. Saturated and thinly scored benches are left out. Models with fewer than three published eligible scores are unranked, and every contributing score stays visible with its own provenance.",
+    "An LLMcompare-computed index, not a published benchmark. Eligible benches are z-scored against models released in the past year. The index is a shrunken mean of those z-scores — sum(z) / (published count + k), with k dummy average results — so a new model that is far above peers on every measured bench is not treated as average on the rest, while a short brochure set still cannot dominate. Beating a long tail of older models does not inflate the index. Saturated and thinly scored benches are left out. Models with fewer than three published eligible scores are unranked, and every contributing score stays visible with its own provenance.",
 } as const;
 
 export type LlmcompareIndexId = typeof LLMCOMPARE_INDEX.id;

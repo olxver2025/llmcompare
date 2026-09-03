@@ -119,11 +119,12 @@ export default function BenchmarksPage() {
         <p className="max-w-3xl pl-6 text-sm text-muted-foreground text-pretty">
           Coverage differs between models: a model needs{" "}
           {MIN_COMPOSITE_BENCHMARKS} published eligible scores to appear at
-          all. The index z-scores against models from the past year, then
-          averages over all {LLMCOMPARE_INDEX_BENCHMARK_TOTAL} well-covered
-          benches — missing scores contribute 0. The count next to each score
-          shows how many of those benches the model actually has. The
-          published benchmarks below are the source of truth.
+          all. The index z-scores against models from the past year, then takes
+          a shrunken mean of those z-scores so a new model that leads every
+          measured bench is not treated as average on the rest. The count next
+          to each score shows how many of the {LLMCOMPARE_INDEX_BENCHMARK_TOTAL}{" "}
+          eligible benches the model actually has. The published benchmarks
+          below are the source of truth.
         </p>
       </section>
 

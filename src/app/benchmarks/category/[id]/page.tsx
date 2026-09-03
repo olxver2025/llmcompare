@@ -8,6 +8,7 @@ import {
   COMPOSITE_PEER_MONTHS,
   compositeEligibleCategories,
   compositePeerCutoff,
+  compositePseudocount,
   getCategoryBatteryIds,
   getCategoryComposite,
   MIN_COMPOSITE_BENCHMARKS,
@@ -45,6 +46,7 @@ export default async function CategoryCompositePage({ params }: Props) {
   const benchmarkIds = getCategoryBatteryIds(id);
   const rows = getCategoryComposite(id);
   const MIN_BENCHMARKS = MIN_COMPOSITE_BENCHMARKS;
+  const k = compositePseudocount(benchmarkIds.length);
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 sm:py-12">
@@ -75,13 +77,13 @@ export default async function CategoryCompositePage({ params }: Props) {
         <p className="mt-2 text-sm text-muted-foreground text-pretty">
           Each eligible benchmark&apos;s scores are z-score normalized against
           models released in the past {COMPOSITE_PEER_MONTHS} months (since{" "}
-          {compositePeerCutoff()}), then averaged over the full category
-          battery. A missing score contributes 0 rather than being dropped
-          from the average. Saturated benches and benches scored on fewer
-          than ten peer models are excluded. A model needs a published score
-          on at least {MIN_BENCHMARKS} of the {benchmarkIds.length} benchmarks
-          below to receive a composite; every contributing score is shown so
-          nothing is hidden behind the composite number.
+          {compositePeerCutoff()}), then combined as a shrunken mean: sum(z) /
+          (n + {k}), with {k} dummy average results so thin coverage still
+          cannot dominate. Saturated benches and benches scored on fewer than
+          ten peer models are excluded. A model needs a published score on at
+          least {MIN_BENCHMARKS} of the {benchmarkIds.length} benchmarks below
+          to receive a composite; every contributing score is shown so nothing
+          is hidden behind the composite number.
         </p>
         <dl className="mt-4">
           <Spec

@@ -6,6 +6,7 @@ import { Spec } from "@/components/spec-row";
 import {
   COMPOSITE_PEER_MONTHS,
   compositePeerCutoff,
+  compositePseudocount,
   getIndexBatteryIds,
   getLlmcompareIndex,
   LLMCOMPARE_INDEX,
@@ -17,12 +18,13 @@ import { DATA_FRESHNESS, getAllModels } from "@/lib/models";
 export const metadata: Metadata = {
   title: LLMCOMPARE_INDEX.name,
   description:
-    "A site-computed composite z-scored against models from the past year. Missing scores contribute 0 so thin coverage cannot outrank a broader evaluation.",
+    "A site-computed composite z-scored against models from the past year. A shrunken mean so new frontier models are not treated as average on every unpublished bench, while thin brochure sets still cannot dominate.",
 };
 
 export default function LlmcompareIndexPage() {
   const rows = getLlmcompareIndex();
   const catalogCount = getAllModels().length;
+  const k = compositePseudocount(LLMCOMPARE_INDEX_BENCHMARK_TOTAL);
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 sm:py-12">
@@ -60,12 +62,13 @@ export default function LlmcompareIndexPage() {
           models released in the past {COMPOSITE_PEER_MONTHS} months (since{" "}
           {compositePeerCutoff()}), not against the full catalog. That stops
           older models from farming the index by beating a long tail of retired
-          systems on saturated exams. The index is the mean of those z-scores
-          over the full battery: a missing score contributes 0, so a short
-          brochure set cannot outrank a broader evaluation. Saturated benches
-          and benches scored on fewer than ten peer models are excluded.
-          Lower-is-better benches are inverted so a higher index is always
-          better.
+          systems on saturated exams. The index is a shrunken mean of published
+          z-scores: sum(z) / (n + {k}), where {k} dummy average results pull
+          incomplete coverage toward the peer mean without treating every
+          missing bench as exactly average. A short brochure set still cannot
+          outrank a broader evaluation. Saturated benches and benches scored
+          on fewer than ten peer models are excluded. Lower-is-better benches
+          are inverted so a higher index is always better.
         </p>
         <p className="mt-3 text-sm text-muted-foreground text-pretty">
           A model needs published scores on at least {MIN_COMPOSITE_BENCHMARKS}{" "}
@@ -78,8 +81,8 @@ export default function LlmcompareIndexPage() {
         <dl className="mt-4">
           <Spec
             label="Metric"
-            value="Mean z-score over the eligible battery"
-            hint="Z-scores vs models from the past year; missing scores contribute 0"
+            value={`Shrunken mean z-score (k=${k})`}
+            hint="sum(published z) / (n + k); k dummy average results shrink thin coverage toward 0"
           />
           <Spec label="Direction" value="Higher is better" />
           <Spec
