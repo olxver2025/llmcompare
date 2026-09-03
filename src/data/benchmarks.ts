@@ -387,7 +387,7 @@ export const BENCHMARK_CATEGORIES = [
   {
     id: "math" as const,
     label: "Math",
-    ids: ["matharena"] as BenchmarkId[],
+    ids: ["matharena", "frontiermath-tier-4-v2"] as BenchmarkId[],
   },
   {
     id: "coding" as const,

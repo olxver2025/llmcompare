@@ -75,6 +75,11 @@ export const models: Model[] = [
       scicode: 56.9,
       "terminal-bench-4": 37.3,
       "webdev-arena": 1616.4,
+      deepswe: 72.7,
+      "agents-last-exam": 53.6,
+      "osworld-2-partial": 65.7,
+      "automation-bench": 18.1,
+      "frontiermath-tier-4-v2": 83,
     },
     links: {
       docs: "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
@@ -144,6 +149,7 @@ export const models: Model[] = [
       scicode: 52.5,
       "terminal-bench-4": 17.3,
       "webdev-arena": 1519,
+      deepswe: 67,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -197,6 +203,7 @@ export const models: Model[] = [
       "swe-rebench": 62.7,
       scicode: 56.1,
       "webdev-arena": 1509.4,
+      deepswe: 67,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -570,6 +577,8 @@ export const models: Model[] = [
       "terminal-bench-2-1": 91.4,
       scicode: 62,
       "webdev-arena": 1765.4,
+      deepswe: 67.4,
+      "frontiermath-tier-4-v2": 87.8,
     },
     links: {
       docs: "https://platform.claude.com/docs/en/models/fable-5-1/whats-new-fable-5-1",
@@ -605,6 +614,12 @@ export const models: Model[] = [
       "terminal-bench-2-1": 87.6,
       "terminal-bench-4": 51.8,
       "webdev-arena": 1687.2,
+      "agents-last-exam": 55.5,
+      "automation-bench": 26.9,
+      "osworld-2-partial": 70.2,
+      "osworld-2-strict": 39.6,
+      "frontiermath-tier-4-v2": 73.2,
+      deepswe: 73.7,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -638,6 +653,12 @@ export const models: Model[] = [
       hle: 55.5,
       scicode: 60.2,
       "terminal-bench-4": 44.6,
+      "agents-last-exam": 48.7,
+      "automation-bench": 17.4,
+      "osworld-2-partial": 72.9,
+      "osworld-2-strict": 36.1,
+      "frontiermath-tier-4-v2": 87.8,
+      deepswe: 69.9,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -672,6 +693,7 @@ export const models: Model[] = [
       hle: 48.7,
       scicode: 53.5,
       "terminal-bench-4": 23.6,
+      deepswe: 59,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -704,6 +726,7 @@ export const models: Model[] = [
       scicode: 53.6,
       "terminal-bench-4": 12.4,
       "webdev-arena": 1536.5,
+      deepswe: 54,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -922,6 +945,7 @@ export const models: Model[] = [
       "terminal-bench-2-1": 77.5,
       "lmarena-elo": 1480,
       "webdev-arena": 1538.1,
+      deepswe: 47,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -950,6 +974,8 @@ export const models: Model[] = [
       "terminal-bench-2-1": 89.4,
       "terminal-bench-4": 19.1,
       "osworld-2-partial": 59,
+      "gpqa-diamond": 95.3,
+      "terminal-bench-science": 12.4,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -1004,6 +1030,7 @@ export const models: Model[] = [
       hle: 47.9,
       scicode: 56.8,
       "lmarena-elo": 1491,
+      "terminal-bench-science": 5.7,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -1285,6 +1312,7 @@ export const models: Model[] = [
       hle: 42.9,
       scicode: 53.6,
       "terminal-bench-2-1": 88.4,
+      deepswe: 67,
       "terminal-bench-4": 20.3,
       "lmarena-elo": 1461,
       "webdev-arena": 1629.1,
@@ -1461,6 +1489,7 @@ export const models: Model[] = [
       "gpqa-diamond": 90.4,
       hle: 45.5,
       scicode: 56.4,
+      deepswe: 55,
       "terminal-bench-2-1": 80.1,
     },
     links: {
@@ -2038,6 +2067,29 @@ export const models: Model[] = [
     },
     summary:
       "Alibaba's Aug 2026 Max flagship (2.4T MoE / 95B active) — frontier agentic coding via QwenCloud / DashScope with 1M multimodal context and $2/$6 API pricing. Open weights released Aug 12, 2026 as Qwen3.8-2.4T-A95B (text-only, thinking-mandatory, Qwen3.8-Max license); the hosted version adds vision input, non-thinking mode, and built-in tools.",
+  },
+  {
+    slug: "qwen3-8-max-0902",
+    name: "Qwen3.8 Max 0902",
+    organization: "Alibaba",
+    releaseDate: "2026-09-02",
+    openSource: false,
+    license: "Proprietary",
+    parameters: { total: 2400, active: 95 },
+    contextWindow: 1_000_000,
+    maxOutput: 131_072,
+    modalities: { input: ["text", "image", "video"], output: ["text"] },
+    pricing: { provider: "Alibaba Cloud", inputPer1M: 2.0, outputPer1M: 6.0 },
+    benchmarks: {
+      "webdev-arena": 1688,
+    },
+    links: {
+      docs: "https://www.qwencloud.com/models/qwen3.8-max",
+      announcement:
+        "https://www.alizila.com/alibaba-unveils-qwen3-8-max-most-capable-flagship-model-to-date/",
+    },
+    summary:
+      "September 2, 2026 hosted post-training snapshot of Qwen3.8-Max, further trained for coding and workplace/agent workflows. Same 2.4T MoE / 95B active architecture, 1M multimodal context, and $2/$6 QwenCloud pricing as the August 3 Max release. Arena Code/WebDev listed qwen3.8-max-0902 at 1688 (preliminary) on the Sep 2, 2026 snapshot.",
   },
   {
     slug: "qwen3-8-27b",
@@ -2679,6 +2731,7 @@ export const models: Model[] = [
       "terminal-bench-2-1": 88.3,
       cursorbench: 60.8,
       matharena: 69.7,
+      deepswe: 69,
       "lmarena-elo": 1489,
       "webdev-arena": 1673.8,
     },
@@ -2780,6 +2833,7 @@ export const models: Model[] = [
       "terminal-bench-2-1": 77.9,
       "lmarena-elo": 1472,
       "webdev-arena": 1585.4,
+      deepswe: 44,
     },
     links: {
       docs: "https://docs.z.ai/",
@@ -2793,7 +2847,9 @@ export const models: Model[] = [
     name: "GLM-5.3",
     organization: "Zhipu AI",
     releaseDate: "2026-08-14",
-    openSource: false,
+    openSource: true,
+    license: "GLM-5.3 License",
+    parameters: { total: 744, active: 40 },
     contextWindow: 1_000_000,
     maxOutput: 128_000,
     modalities: { input: ["text"], output: ["text"] },
@@ -2811,13 +2867,17 @@ export const models: Model[] = [
       "terminal-bench-4": 41.8,
       "lmarena-elo": 1482.1,
       "webdev-arena": 1609.2,
+      nl2repo: 58,
+      "toolathlon-verified": 73,
+      "automation-bench": 48.2,
     },
     links: {
-      docs: "https://docs.bigmodel.cn/cn/guide/models/text/glm-5.3",
+      docs: "https://docs.z.ai/guides/llm/glm-5.3",
       announcement: "https://z.ai/blog/glm-5.3",
+      modelCard: "https://huggingface.co/zai-org/GLM-5.3",
     },
     summary:
-      "Zhipu's Aug 14, 2026 flagship - GLM-5.2 base re-post-trained for complex software engineering, terminal, and real-world agent tasks, with SOTA open-weights coding and emergent cybersecurity skills (CyberGym 84.5). GLM Coding Plan at launch; API and open weights pending.",
+      "Zhipu's Aug 14, 2026 flagship — GLM-5.2 base re-post-trained for complex software engineering, terminal, and real-world agent tasks, with SOTA open-weights coding and emergent cybersecurity skills (CyberGym 84.5). Open weights (744B MoE / 40B active) are on Hugging Face under the GLM-5.3 license; thinking effort is low/high/max (default max).",
   },
   {
     slug: "glm-5-3-flash",
@@ -2844,6 +2904,7 @@ export const models: Model[] = [
       scicode: 46.1,
       "terminal-bench-2-1": 84.3,
       "lmarena-elo": 1474,
+      deepswe: 63,
       "webdev-arena": 1604.4,
     },
     links: {
@@ -4361,6 +4422,64 @@ export const models: Model[] = [
 
   // ─── IBM Granite ──────────────────────────────────────────
   {
+    slug: "granite-4-2-30b",
+    name: "Granite 4.2 30B",
+    organization: "IBM",
+    releaseDate: "2026-08-25",
+    openSource: true,
+    license: "Apache 2.0",
+    parameters: { total: 30 },
+    contextWindow: 131_072,
+    maxOutput: 8192,
+    modalities: { input: ["text"], output: ["text"] },
+    benchmarks: {
+      "swe-bench-verified": 57,
+      "swe-bench-multilingual": 41.89,
+      "swe-bench-pro": 33.29,
+      "terminal-bench-2-1": 29.24,
+      "aime-2025": 89.17,
+      "mmlu-pro": 77.6,
+      scicode: 38.76,
+      livecodebench: 75.77,
+    },
+    links: {
+      modelCard: "https://huggingface.co/ibm-granite/granite-4.2-30b",
+      docs: "https://www.ibm.com/granite/docs/models/granite4-2",
+      announcement: "https://research.ibm.com/blog/introducing-granite-4-2",
+    },
+    summary:
+      "IBM's Aug 25, 2026 flagship dense reasoning model (Apache 2.0) — native 128K context with a 512K long-context extension, switchable thinking / non-thinking / low-effort modes, and agentic RL on software-engineering, terminal, and search tasks. IBM reports SWE-bench Verified 57.00 and Terminal-Bench 2.1 29.24 under its NeMo Evaluator setup.",
+  },
+  {
+    slug: "granite-4-2-8b",
+    name: "Granite 4.2 8B",
+    organization: "IBM",
+    releaseDate: "2026-08-25",
+    openSource: true,
+    license: "Apache 2.0",
+    parameters: { total: 8 },
+    contextWindow: 131_072,
+    maxOutput: 8192,
+    modalities: { input: ["text"], output: ["text"] },
+    benchmarks: {
+      "swe-bench-verified": 47.67,
+      "swe-bench-multilingual": 30.78,
+      "swe-bench-pro": 19.11,
+      "terminal-bench-2-1": 20.56,
+      "aime-2025": 86.67,
+      "mmlu-pro": 74.04,
+      scicode: 36.09,
+      livecodebench: 73.24,
+    },
+    links: {
+      modelCard: "https://huggingface.co/ibm-granite/granite-4.2-8b",
+      docs: "https://www.ibm.com/granite/docs/models/granite4-2",
+      announcement: "https://research.ibm.com/blog/introducing-granite-4-2",
+    },
+    summary:
+      "Mid-size Granite 4.2 dense reasoning model (Apache 2.0, Aug 25, 2026) with native 128K context and the same thinking-mode switch as the 30B flagship. The 8B and 30B sizes received agentic RL; IBM reports SWE-bench Verified 47.67 and Terminal-Bench 2.1 20.56.",
+  },
+  {
     slug: "granite-4-1-8b",
     name: "Granite 4.1 8B",
     organization: "IBM",
@@ -5388,6 +5507,7 @@ export const models: Model[] = [
       scicode: 53.1,
       "terminal-bench-2-1": 78.7,
       "lmarena-elo": 1479.4,
+      deepswe: 36,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -6858,6 +6978,34 @@ export const models: Model[] = [
       "Tencent Hunyuan turbo MoE API — strong Chinese enterprise chat and agent workflows.",
   },
   {
+    slug: "hy4-preview",
+    name: "Hy4 Preview",
+    organization: "Tencent",
+    releaseDate: "2026-08-28",
+    openSource: true,
+    license: "Apache 2.0",
+    parameters: { total: 770, active: 49 },
+    contextWindow: 1_000_000,
+    modalities: { input: ["text"], output: ["text"] },
+    pricing: { provider: "Tencent Cloud TokenHub", inputPer1M: 0.834, outputPer1M: 2.501 },
+    benchmarks: {
+      "gpqa-diamond": 92.3,
+      "terminal-bench-2-1": 85.4,
+      "swe-bench-multilingual": 82.9,
+      "swe-bench-pro": 65.7,
+      deepswe: 64.3,
+      "toolathlon-verified": 74.1,
+      "webdev-arena": 1626,
+    },
+    links: {
+      modelCard: "https://huggingface.co/tencent/Hy4-preview",
+      announcement: "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/",
+      docs: "https://hy.tencent.ai/research/hy4-preview",
+    },
+    summary:
+      "Tencent Hy Team's Aug 28, 2026 open-weight flagship (770B MoE / 49B active, Apache 2.0) with a 1M context window and default high reasoning effort. Text-only instruct weights on Hugging Face; hosted API at $0.834/$2.501 per 1M tokens via TokenHub and OpenRouter.",
+  },
+  {
     slug: "hy3-preview",
     name: "Hunyuan 3 Preview",
     organization: "Tencent",
@@ -6906,6 +7054,28 @@ export const models: Model[] = [
     },
     summary:
       "Ultra-cheap InclusionAI Flash model for high-volume Chinese/English API workloads.",
+  },
+  {
+    slug: "ling-3-0-flash",
+    name: "Ling-3.0 Flash",
+    organization: "InclusionAI",
+    releaseDate: "2026-08-04",
+    openSource: true,
+    license: "MIT",
+    parameters: { total: 124, active: 5.1 },
+    contextWindow: 262_144,
+    modalities: { input: ["text"], output: ["text"] },
+    benchmarks: {
+      "swe-bench-multilingual": 72.4,
+      "swe-bench-pro": 56.6,
+      hle: 22.7,
+    },
+    links: {
+      modelCard: "https://huggingface.co/inclusionAI/Ling-3.0-flash",
+      docs: "https://developer.ant-ling.com/zh-CN/docs/models/ling/",
+    },
+    summary:
+      "InclusionAI / Ant Ling hybrid-linear MoE (124B total / 5.1B active, MIT) with native 256K context, default thinking mode, and open BF16/FP8 weights. Official Hugging Face eval results include SWE-bench Pro 56.6, SWE-bench Multilingual 72.4, and HLE 22.7.",
   },
   {
     slug: "ling-2-6-1t",

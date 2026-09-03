@@ -14,7 +14,9 @@
       "terminal-bench-2-1": 91.4,
       "scicode": 62,
       "webdev-arena": 1765.4,
-      "lmarena-elo": 1504
+      "lmarena-elo": 1504,
+      "deepswe": 67.4,
+      "frontiermath-tier-4-v2": 87.8
     },
     "claude-mythos-5-1": {
       "terminal-bench-4": 60.9
@@ -33,7 +35,12 @@
       "terminal-bench-4": 37.3,
       "webdev-arena": 1616.4,
       "terminal-bench-science": 22.4,
-      "gdpval-aa": 1710
+      "gdpval-aa": 1710,
+      "deepswe": 72.7,
+      "agents-last-exam": 53.6,
+      "osworld-2-partial": 65.7,
+      "automation-bench": 18.1,
+      "frontiermath-tier-4-v2": 83
     },
     "gpt-5-6-terra": {
       "swe-bench-pro": 63.4,
@@ -62,7 +69,8 @@
       "terminal-bench-4": 17.3,
       "webdev-arena": 1519,
       "terminal-bench-science": 3.3,
-      "gdpval-aa": 1569
+      "gdpval-aa": 1569,
+      "deepswe": 67
     },
     "gpt-5-5": {
       "gpqa-diamond": 93.6,
@@ -76,7 +84,8 @@
       "scicode": 56.1,
       "webdev-arena": 1509.4,
       "toolathlon-verified": 73.5,
-      "gdpval-aa": 1482
+      "gdpval-aa": 1482,
+      "deepswe": 67
     },
     "gpt-5-5-pro": {
       "hle": 43.1
@@ -208,7 +217,13 @@
       "terminal-bench-4": 51.8,
       "webdev-arena": 1687.2,
       "terminal-bench-science": 30,
-      "gdpval-aa": 1824
+      "gdpval-aa": 1824,
+      "agents-last-exam": 55.5,
+      "automation-bench": 26.9,
+      "osworld-2-partial": 70.2,
+      "osworld-2-strict": 39.6,
+      "frontiermath-tier-4-v2": 73.2,
+      "deepswe": 73.7
     },
     "claude-fable-5": {
       "cursorbench": 70.5,
@@ -222,7 +237,13 @@
       "hle": 55.5,
       "scicode": 60.2,
       "terminal-bench-4": 44.6,
-      "terminal-bench-science": 21.4
+      "terminal-bench-science": 21.4,
+      "agents-last-exam": 48.7,
+      "automation-bench": 17.4,
+      "osworld-2-partial": 72.9,
+      "osworld-2-strict": 36.1,
+      "frontiermath-tier-4-v2": 87.8,
+      "deepswe": 69.9
     },
     "claude-opus-4-8": {
       "cursorbench": 62.3,
@@ -238,7 +259,8 @@
       "terminal-bench-4": 23.6,
       "terminal-bench-science": 10.5,
       "toolathlon-verified": 76.2,
-      "gdpval-aa": 1578
+      "gdpval-aa": 1578,
+      "deepswe": 59
     },
     "claude-sonnet-5": {
       "cursorbench": 61.5,
@@ -252,7 +274,8 @@
       "terminal-bench-4": 12.4,
       "webdev-arena": 1536.5,
       "toolathlon-verified": 71.6,
-      "gdpval-aa": 1584
+      "gdpval-aa": 1584,
+      "deepswe": 54
     },
     "claude-opus-4-5": {
       "lmarena-elo": 1469,
@@ -323,7 +346,8 @@
       "scicode": 52.7,
       "terminal-bench-2-1": 77.5,
       "lmarena-elo": 1480,
-      "webdev-arena": 1538.1
+      "webdev-arena": 1538.1,
+      "deepswe": 47
     },
     "gemini-3-7-flash": {
       "cursorbench": 61.6,
@@ -335,7 +359,8 @@
       "hle": 47.9,
       "scicode": 56.8,
       "lmarena-elo": 1491,
-      "gdpval-aa": 1516
+      "gdpval-aa": 1516,
+      "terminal-bench-science": 5.7
     },
     "gemini-3-8-flash": {
       "deepswe": 73.7,
@@ -345,7 +370,9 @@
       "osworld-2-partial": 59,
       "webdev-arena": 1567,
       "cursorbench": 69.2,
-      "lmarena-elo": 1494
+      "lmarena-elo": 1494,
+      "gpqa-diamond": 95.3,
+      "terminal-bench-science": 12.4
     },
     "gemini-3-8-flash-cyber": {
       "cybergym": 86.2
@@ -440,7 +467,8 @@
       "lmarena-elo": 1461,
       "webdev-arena": 1629.1,
       "terminal-bench-science": 7.1,
-      "gdpval-aa": 1755
+      "gdpval-aa": 1755,
+      "deepswe": 67
     },
     "grok-4-3": {
       "lmarena-elo": 1443,
@@ -473,7 +501,8 @@
       "scicode": 56.4,
       "terminal-bench-2-1": 80.1,
       "toolathlon-verified": 75.9,
-      "gdpval-aa": 1615
+      "gdpval-aa": 1615,
+      "deepswe": 55
     },
     "muse-glimmer": {
       "swe-bench-verified": 76,
@@ -829,7 +858,8 @@
       "webdev-arena": 1673.8,
       "terminal-bench-science": 7.1,
       "toolathlon-verified": 76.5,
-      "gdpval-aa": 1668
+      "gdpval-aa": 1668,
+      "deepswe": 69
     },
     "kimi-k2-7-code": {
       "cursorbench": 49.7,
@@ -864,7 +894,8 @@
       "lmarena-elo": 1472,
       "webdev-arena": 1585.4,
       "toolathlon-verified": 59.9,
-      "gdpval-aa": 1498
+      "gdpval-aa": 1498,
+      "deepswe": 44
     },
     "glm-5-3": {
       "terminal-bench-3": 28.3,
@@ -879,7 +910,10 @@
       "lmarena-elo": 1482.1,
       "webdev-arena": 1609.2,
       "terminal-bench-science": 8.1,
-      "gdpval-aa": 1758
+      "gdpval-aa": 1758,
+      "nl2repo": 58,
+      "toolathlon-verified": 73,
+      "automation-bench": 48.2
     },
     "glm-5": {
       "lmarena-elo": 1458,
@@ -1445,7 +1479,8 @@
       "scicode": 53.1,
       "terminal-bench-2-1": 78.7,
       "lmarena-elo": 1479.4,
-      "toolathlon-verified": 67.3
+      "toolathlon-verified": 67.3,
+      "deepswe": 36
     },
     "gemini-2-0-flash": {
       "swe-rebench": 9.1,
@@ -1814,7 +1849,8 @@
       "lmarena-elo": 1474,
       "webdev-arena": 1604.4,
       "toolathlon-verified": 78.4,
-      "gdpval-aa": 1765
+      "gdpval-aa": 1765,
+      "deepswe": 63
     },
     "qwen3-8-flash-next": {
       "gpqa-diamond": 92.3,
@@ -1836,6 +1872,43 @@
       "osworld-2-partial": 72.6,
       "terminal-bench-4": 56.7,
       "frontiermath-tier-4-v2": 97.6
+    },
+    "granite-4-2-30b": {
+      "swe-bench-verified": 57,
+      "swe-bench-multilingual": 41.89,
+      "swe-bench-pro": 33.29,
+      "terminal-bench-2-1": 29.24,
+      "aime-2025": 89.17,
+      "mmlu-pro": 77.6,
+      "scicode": 38.76,
+      "livecodebench": 75.77
+    },
+    "granite-4-2-8b": {
+      "swe-bench-verified": 47.67,
+      "swe-bench-multilingual": 30.78,
+      "swe-bench-pro": 19.11,
+      "terminal-bench-2-1": 20.56,
+      "aime-2025": 86.67,
+      "mmlu-pro": 74.04,
+      "scicode": 36.09,
+      "livecodebench": 73.24
+    },
+    "hy4-preview": {
+      "gpqa-diamond": 92.3,
+      "terminal-bench-2-1": 85.4,
+      "swe-bench-multilingual": 82.9,
+      "swe-bench-pro": 65.7,
+      "deepswe": 64.3,
+      "toolathlon-verified": 74.1,
+      "webdev-arena": 1626
+    },
+    "ling-3-0-flash": {
+      "swe-bench-multilingual": 72.4,
+      "swe-bench-pro": 56.6,
+      "hle": 22.7
+    },
+    "qwen3-8-max-0902": {
+      "webdev-arena": 1688
     }
   }
 }

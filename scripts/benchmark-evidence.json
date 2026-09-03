@@ -5,44 +5,44 @@
     "gpt-6-astra": {
       "gpqa-diamond": {
         "value": 96,
-        "sourceUrl": "https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra",
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
         "checkedOn": "2026-09-03",
-        "protocol": "OpenAI GPT-6 Astra launch benchmarks reported 2026-09-03; GPQA Diamond score.",
+        "protocol": "OpenAI GPT-6 Astra official launch blog, 2026-09-03; GPQA Diamond score.",
         "evaluationDate": "2026-09-03"
       },
       "deepswe": {
         "value": 74.1,
-        "sourceUrl": "https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra",
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
         "checkedOn": "2026-09-03",
-        "protocol": "OpenAI GPT-6 Astra launch benchmarks reported 2026-09-03; DeepSWE v1.1 score.",
+        "protocol": "OpenAI GPT-6 Astra official launch blog, 2026-09-03; DeepSWE v1.1 score.",
         "evaluationDate": "2026-09-03"
       },
       "terminal-bench-science": {
         "value": 64.6,
-        "sourceUrl": "https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra",
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
         "checkedOn": "2026-09-03",
-        "protocol": "OpenAI GPT-6 Astra launch benchmarks reported 2026-09-03; Terminal-Bench Science 0.1 score, up from 22.4% for GPT-5.6 Sol.",
+        "protocol": "OpenAI GPT-6 Astra official launch blog, 2026-09-03; Terminal-Bench Science 0.1 score, up from 22.4% for GPT-5.6 Sol.",
         "evaluationDate": "2026-09-03"
       },
       "agents-last-exam": {
         "value": 59.3,
-        "sourceUrl": "https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra",
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
         "checkedOn": "2026-09-03",
-        "protocol": "OpenAI GPT-6 Astra launch benchmarks reported 2026-09-03; Agents' Last Exam score.",
+        "protocol": "OpenAI GPT-6 Astra official launch blog, 2026-09-03; Agents' Last Exam score.",
         "evaluationDate": "2026-09-03"
       },
       "automation-bench": {
         "value": 41.4,
-        "sourceUrl": "https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra",
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
         "checkedOn": "2026-09-03",
-        "protocol": "OpenAI GPT-6 Astra launch benchmarks reported 2026-09-03; AutomationBench score.",
+        "protocol": "OpenAI GPT-6 Astra official launch blog, 2026-09-03; AutomationBench score.",
         "evaluationDate": "2026-09-03"
       },
       "osworld-2-partial": {
         "value": 72.6,
-        "sourceUrl": "https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra",
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
         "checkedOn": "2026-09-03",
-        "protocol": "OpenAI GPT-6 Astra launch benchmarks reported 2026-09-03; OSWorld 2.0 offline-subset partial-credit score (v2026.08.08 task release), ~40 min/task vs 75 min/task for GPT-5.6 Sol.",
+        "protocol": "OpenAI GPT-6 Astra official launch blog, 2026-09-03; OSWorld 2.0 offline-subset partial-credit score (v2026.08.08 task release), ~40 min/task vs 75 min/task for GPT-5.6 Sol.",
         "evaluationDate": "2026-09-03"
       },
       "terminal-bench-4": {
@@ -158,6 +158,41 @@
         "checkedOn": "2026-09-03",
         "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'gpt-5.6-sol-xhigh (codex-harness)'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-02"
+      },
+      "deepswe": {
+        "value": 72.7,
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch blog comparison table; DeepSWE v1.1 score for GPT-5.6 Sol at max reasoning effort.",
+        "evaluationDate": "2026-09-03"
+      },
+      "agents-last-exam": {
+        "value": 53.6,
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch blog comparison table; Agents' Last Exam score for GPT-5.6 Sol at max reasoning effort.",
+        "evaluationDate": "2026-09-03"
+      },
+      "osworld-2-partial": {
+        "value": 65.7,
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch blog comparison table; OSWorld 2.0 offline-subset partial-credit score (v2026.08.08 task release) for GPT-5.6 Sol.",
+        "evaluationDate": "2026-09-03"
+      },
+      "automation-bench": {
+        "value": 18.1,
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch blog comparison table; AutomationBench score for GPT-5.6 Sol at max reasoning effort.",
+        "evaluationDate": "2026-09-03"
+      },
+      "frontiermath-tier-4-v2": {
+        "value": 83,
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch blog comparison table; FrontierMath Tier 4 (v2) score for GPT-5.6 Sol at max reasoning effort.",
+        "evaluationDate": "2026-09-03"
       }
     },
     "gpt-5-6-terra": {
@@ -337,6 +372,13 @@
         "checkedOn": "2026-09-03",
         "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'gpt-5.6-luna-xhigh (codex-harness)'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-02"
+      },
+      "deepswe": {
+        "value": 67,
+        "sourceUrl": "https://deepswe.datacurve.ai/",
+        "checkedOn": "2026-09-03",
+        "protocol": "DeepSWE v1.1 official leaderboard (deepswe.datacurve.ai), 2026-09-02 snapshot; gpt-5.6-luna [max] pass@1 under mini-swe-agent.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "gpt-5-6-cyber": {},
@@ -423,6 +465,13 @@
         "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
         "checkedOn": "2026-09-03",
         "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'gpt-5.5-xhigh (codex-harness)'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      },
+      "deepswe": {
+        "value": 67,
+        "sourceUrl": "https://deepswe.datacurve.ai/",
+        "checkedOn": "2026-09-03",
+        "protocol": "DeepSWE v1.1 official leaderboard (deepswe.datacurve.ai), 2026-09-02 snapshot; gpt-5.5 [xhigh] pass@1 under mini-swe-agent.",
         "evaluationDate": "2026-09-02"
       }
     },
@@ -1198,6 +1247,20 @@
         "checkedOn": "2026-09-03",
         "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'claude-fable-5.1-max'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-02"
+      },
+      "deepswe": {
+        "value": 67.4,
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch blog comparison table, 2026-09-03; DeepSWE v1.1 score reported for Claude Fable 5.1 at max effort.",
+        "evaluationDate": "2026-09-03"
+      },
+      "frontiermath-tier-4-v2": {
+        "value": 87.8,
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch blog comparison table, 2026-09-03; FrontierMath Tier 4 (v2) score reported for Claude Fable 5.1 at max effort.",
+        "evaluationDate": "2026-09-03"
       }
     },
     "claude-opus-5": {
@@ -1298,6 +1361,48 @@
         "checkedOn": "2026-09-03",
         "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'claude-opus-5-max'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-02"
+      },
+      "agents-last-exam": {
+        "value": 55.5,
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch blog comparison table, 2026-09-03; Agents' Last Exam score reported for Claude Opus 5 at max effort.",
+        "evaluationDate": "2026-09-03"
+      },
+      "automation-bench": {
+        "value": 26.9,
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch blog comparison table, 2026-09-03; AutomationBench score reported for Claude Opus 5 at max effort.",
+        "evaluationDate": "2026-09-03"
+      },
+      "osworld-2-partial": {
+        "value": 70.2,
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch blog comparison table, 2026-09-03; OSWorld 2.0 (v2026.08.08, offline set, partial score) for Claude Opus 5. OpenAI notes Claude OSWorld-V2 Offline scores were reproduced by an independent third party using official settings, not the modified Fable 5.1 system-card grading.",
+        "evaluationDate": "2026-09-03"
+      },
+      "osworld-2-strict": {
+        "value": 39.6,
+        "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "checkedOn": "2026-09-03",
+        "protocol": "Anthropic Fable 5.1 / Mythos 5.1 launch comparison table, OSWorld 2.0 strict score for Claude Opus 5 on the benchmark authors' August 2026 task release.",
+        "evaluationDate": "2026-09-01"
+      },
+      "frontiermath-tier-4-v2": {
+        "value": 73.2,
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch blog comparison table, 2026-09-03; FrontierMath Tier 4 (v2) score reported for Claude Opus 5 at max effort.",
+        "evaluationDate": "2026-09-03"
+      },
+      "deepswe": {
+        "value": 73.7,
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch blog comparison table, 2026-09-03; DeepSWE v1.1 score reported for Claude Opus 5 at max effort.",
+        "evaluationDate": "2026-09-03"
       }
     },
     "claude-fable-5": {
@@ -1384,6 +1489,48 @@
         "checkedOn": "2026-09-03",
         "protocol": "Terminal-Bench 4.0 official leaderboard, Fable 5 with the Claude Code agent at max reasoning effort, 330 trials, accuracy%.",
         "evaluationDate": "2026-06-09"
+      },
+      "agents-last-exam": {
+        "value": 48.7,
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch blog comparison table, 2026-09-03; Agents' Last Exam score reported for Claude Fable 5 at max effort.",
+        "evaluationDate": "2026-09-03"
+      },
+      "automation-bench": {
+        "value": 17.4,
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch blog comparison table, 2026-09-03; AutomationBench score reported for Claude Fable 5 at max effort.",
+        "evaluationDate": "2026-09-03"
+      },
+      "osworld-2-partial": {
+        "value": 72.9,
+        "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "checkedOn": "2026-09-03",
+        "protocol": "Anthropic Fable 5.1 / Mythos 5.1 launch comparison table, OSWorld 2.0 partial-credit score for Claude Fable 5 on the benchmark authors' August 2026 task release.",
+        "evaluationDate": "2026-09-01"
+      },
+      "osworld-2-strict": {
+        "value": 36.1,
+        "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "checkedOn": "2026-09-03",
+        "protocol": "Anthropic Fable 5.1 / Mythos 5.1 launch comparison table, OSWorld 2.0 strict score for Claude Fable 5 on the benchmark authors' August 2026 task release.",
+        "evaluationDate": "2026-09-01"
+      },
+      "frontiermath-tier-4-v2": {
+        "value": 87.8,
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch blog comparison table, 2026-09-03; FrontierMath Tier 4 (v2) score reported for Claude Fable 5 at max effort.",
+        "evaluationDate": "2026-09-03"
+      },
+      "deepswe": {
+        "value": 69.9,
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch blog comparison table, 2026-09-03; DeepSWE v1.1 score reported for Claude Fable 5 at max effort.",
+        "evaluationDate": "2026-09-03"
       }
     },
     "claude-opus-4-8": {
@@ -1484,6 +1631,13 @@
         "checkedOn": "2026-09-03",
         "protocol": "Terminal-Bench 4.0 official leaderboard, Opus 4.8 with the Claude Code agent at max reasoning effort, 330 trials, accuracy%.",
         "evaluationDate": "2026-05-28"
+      },
+      "deepswe": {
+        "value": 59,
+        "sourceUrl": "https://deepswe.datacurve.ai/",
+        "checkedOn": "2026-09-03",
+        "protocol": "DeepSWE v1.1 official leaderboard (deepswe.datacurve.ai), 2026-09-02 snapshot; claude-opus-4.8 [max] pass@1 under mini-swe-agent.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "claude-sonnet-5": {
@@ -1569,6 +1723,13 @@
         "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
         "checkedOn": "2026-09-03",
         "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'claude-sonnet-5-high'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      },
+      "deepswe": {
+        "value": 54,
+        "sourceUrl": "https://deepswe.datacurve.ai/",
+        "checkedOn": "2026-09-03",
+        "protocol": "DeepSWE v1.1 official leaderboard (deepswe.datacurve.ai), 2026-09-02 snapshot; claude-sonnet-5 [max] pass@1 under mini-swe-agent.",
         "evaluationDate": "2026-09-02"
       }
     },
@@ -1971,6 +2132,13 @@
         "checkedOn": "2026-09-03",
         "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'gemini-3.6-flash-high'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-02"
+      },
+      "deepswe": {
+        "value": 47,
+        "sourceUrl": "https://deepswe.datacurve.ai/",
+        "checkedOn": "2026-09-03",
+        "protocol": "DeepSWE v1.1 official leaderboard (deepswe.datacurve.ai), 2026-09-02 snapshot; gemini-3.6-flash [high] pass@1 under mini-swe-agent.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "gemini-3-8-flash": {
@@ -2028,6 +2196,20 @@
         "sourceUrl": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-8-Flash-Model-Card.pdf",
         "checkedOn": "2026-09-03",
         "protocol": "Gemini 3.8 Flash model card results table; OSWorld 2.0 partial-credit score, batch tool enabled.",
+        "evaluationDate": "2026-09-02"
+      },
+      "gpqa-diamond": {
+        "value": 95.3,
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/",
+        "checkedOn": "2026-09-03",
+        "protocol": "OpenAI GPT-6 Astra launch blog comparison table, 2026-09-03; GPQA Diamond score reported for Gemini 3.8 Flash at max effort.",
+        "evaluationDate": "2026-09-03"
+      },
+      "terminal-bench-science": {
+        "value": 12.4,
+        "sourceUrl": "https://snorkel.ai/leaderboard/terminal-bench-science/",
+        "checkedOn": "2026-09-03",
+        "protocol": "Terminal-Bench-Science 0.1 leaderboard as published on Snorkel Open Benchmarks (mirrors the official Harbor/TB-Science results; overlapping Opus 5 / Sol / Fable 5 rates match the tbench.ai announcement table). Gemini 3.8 Flash with mini-SWE-agent at high effort, resolution rate, 2026-09-02.",
         "evaluationDate": "2026-09-02"
       }
     },
@@ -2110,6 +2292,13 @@
         "checkedOn": "2026-09-03",
         "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'gemini-3.7-flash-high'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-02"
+      },
+      "terminal-bench-science": {
+        "value": 5.7,
+        "sourceUrl": "https://snorkel.ai/leaderboard/terminal-bench-science/",
+        "checkedOn": "2026-09-03",
+        "protocol": "Terminal-Bench-Science 0.1 leaderboard as published on Snorkel Open Benchmarks (mirrors the official Harbor/TB-Science results; overlapping Opus 5 / Sol / Fable 5 rates match the tbench.ai announcement table). Gemini 3.7 Flash with mini-SWE-agent at high effort, resolution rate, 2026-08-13.",
+        "evaluationDate": "2026-08-13"
       }
     },
     "gemini-3-flash": {
@@ -2627,6 +2816,13 @@
         "protocol": "Artificial Analysis terminal-bench-2-1 evaluation snapshot, Grok 4.6 (high), terminalbench_v2_1 score.",
         "evaluationDate": "2026-08-12"
       },
+      "deepswe": {
+        "value": 67,
+        "sourceUrl": "https://deepswe.datacurve.ai/",
+        "checkedOn": "2026-09-03",
+        "protocol": "DeepSWE v1.1 official leaderboard (deepswe.datacurve.ai), 2026-09-02 snapshot; grok-4.6 [xhigh] pass@1 under mini-swe-agent.",
+        "evaluationDate": "2026-09-02"
+      },
       "terminal-bench-4": {
         "value": 20.3,
         "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/4.0",
@@ -2834,6 +3030,13 @@
         "checkedOn": "2026-09-03",
         "protocol": "Artificial Analysis scicode evaluation snapshot, Muse Spark 1.2 (xhigh), scicode score.",
         "evaluationDate": "2026-08-12"
+      },
+      "deepswe": {
+        "value": 55,
+        "sourceUrl": "https://deepswe.datacurve.ai/",
+        "checkedOn": "2026-09-03",
+        "protocol": "DeepSWE v1.1 official leaderboard (deepswe.datacurve.ai), 2026-09-02 snapshot; muse-spark-1.2 [xhigh] pass@1 under mini-swe-agent.",
+        "evaluationDate": "2026-09-02"
       },
       "terminal-bench-2-1": {
         "value": 80.1,
@@ -3982,6 +4185,15 @@
         "evaluationDate": "2026-08-12"
       }
     },
+    "qwen3-8-max-0902": {
+      "webdev-arena": {
+        "value": 1688,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-03",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'qwen3.8-max-0902' (preliminary). Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      }
+    },
     "qwen3-8-27b": {
       "gdpval-aa": {
         "value": 1543,
@@ -4963,6 +5175,13 @@
         "protocol": "MathArena leaderboard, Kimi K3 (Think), expected performance %.",
         "evaluationDate": "2026-08-13"
       },
+      "deepswe": {
+        "value": 69,
+        "sourceUrl": "https://deepswe.datacurve.ai/",
+        "checkedOn": "2026-09-03",
+        "protocol": "DeepSWE v1.1 official leaderboard (deepswe.datacurve.ai), 2026-09-02 snapshot; kimi-k3 [max] pass@1 under mini-swe-agent.",
+        "evaluationDate": "2026-09-02"
+      },
       "lmarena-elo": {
         "value": 1489,
         "sourceUrl": "https://lmarena.ai/leaderboard/text",
@@ -5185,6 +5404,13 @@
         "checkedOn": "2026-09-03",
         "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'glm-5.2-max'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-02"
+      },
+      "deepswe": {
+        "value": 44,
+        "sourceUrl": "https://deepswe.datacurve.ai/",
+        "checkedOn": "2026-09-03",
+        "protocol": "DeepSWE v1.1 official leaderboard (deepswe.datacurve.ai), 2026-09-02 snapshot; glm-5.2 [max] pass@1 under mini-swe-agent.",
+        "evaluationDate": "2026-09-02"
       }
     },
     "glm-5-3": {
@@ -5278,6 +5504,27 @@
         "checkedOn": "2026-09-03",
         "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'glm-5.3-max'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-02"
+      },
+      "nl2repo": {
+        "value": 58,
+        "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3",
+        "checkedOn": "2026-09-03",
+        "protocol": "Z.ai GLM-5.3 official model-card benchmark table; NL2Repo at temperature=1.0, top_p=1.0, max_new_tokens=64k under 1M context.",
+        "evaluationDate": "2026-08-14"
+      },
+      "toolathlon-verified": {
+        "value": 73,
+        "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3",
+        "checkedOn": "2026-09-03",
+        "protocol": "Z.ai GLM-5.3 official model-card benchmark table; Toolathlon Verified pass@1 averaged over 3 independent runs via the official evaluation service.",
+        "evaluationDate": "2026-08-14"
+      },
+      "automation-bench": {
+        "value": 48.2,
+        "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3",
+        "checkedOn": "2026-09-03",
+        "protocol": "Z.ai GLM-5.3 official model-card benchmark table; AutomationBench v1.0.6 public score.",
+        "evaluationDate": "2026-08-14"
       }
     },
     "glm-5-3-flash": {
@@ -5328,6 +5575,13 @@
         "sourceUrl": "https://lmarena.ai/leaderboard/text",
         "checkedOn": "2026-09-03",
         "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'glm-5.3-flash'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      },
+      "deepswe": {
+        "value": 63,
+        "sourceUrl": "https://deepswe.datacurve.ai/",
+        "checkedOn": "2026-09-03",
+        "protocol": "DeepSWE v1.1 official leaderboard (deepswe.datacurve.ai), 2026-09-02 snapshot; glm-5.3-flash [max] pass@1 under mini-swe-agent.",
         "evaluationDate": "2026-09-02"
       },
       "webdev-arena": {
@@ -7242,6 +7496,122 @@
         "evaluationDate": "2026-08-12"
       }
     },
+    "granite-4-2-30b": {
+      "swe-bench-verified": {
+        "value": 57,
+        "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.2-30b",
+        "checkedOn": "2026-09-03",
+        "protocol": "IBM Granite 4.2 official evaluation table (30B), NeMo Evaluator SDK; thinking mode default unless noted. SWE-bench Verified pass@1.",
+        "evaluationDate": "2026-08-25"
+      },
+      "swe-bench-multilingual": {
+        "value": 41.89,
+        "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.2-30b",
+        "checkedOn": "2026-09-03",
+        "protocol": "IBM Granite 4.2 official evaluation table (30B), NeMo Evaluator SDK; thinking mode default unless noted. SWE-bench Multilingual resolve rate.",
+        "evaluationDate": "2026-08-25"
+      },
+      "swe-bench-pro": {
+        "value": 33.29,
+        "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.2-30b",
+        "checkedOn": "2026-09-03",
+        "protocol": "IBM Granite 4.2 official evaluation table (30B), NeMo Evaluator SDK; thinking mode default unless noted. SWE-bench Pro resolve rate.",
+        "evaluationDate": "2026-08-25"
+      },
+      "terminal-bench-2-1": {
+        "value": 29.24,
+        "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.2-30b",
+        "checkedOn": "2026-09-03",
+        "protocol": "IBM Granite 4.2 official evaluation table (30B), NeMo Evaluator SDK; thinking mode default unless noted. Terminal-Bench 2.1 pass@1.",
+        "evaluationDate": "2026-08-25"
+      },
+      "aime-2025": {
+        "value": 89.17,
+        "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.2-30b",
+        "checkedOn": "2026-09-03",
+        "protocol": "IBM Granite 4.2 official evaluation table (30B), NeMo Evaluator SDK; thinking mode default unless noted. AIME25 pass@1.",
+        "evaluationDate": "2026-08-25"
+      },
+      "mmlu-pro": {
+        "value": 77.6,
+        "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.2-30b",
+        "checkedOn": "2026-09-03",
+        "protocol": "IBM Granite 4.2 official evaluation table (30B), NeMo Evaluator SDK; thinking mode default unless noted. MMLU-Pro.",
+        "evaluationDate": "2026-08-25"
+      },
+      "scicode": {
+        "value": 38.76,
+        "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.2-30b",
+        "checkedOn": "2026-09-03",
+        "protocol": "IBM Granite 4.2 official evaluation table (30B), NeMo Evaluator SDK; thinking mode default unless noted. SciCode.",
+        "evaluationDate": "2026-08-25"
+      },
+      "livecodebench": {
+        "value": 75.77,
+        "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.2-30b",
+        "checkedOn": "2026-09-03",
+        "protocol": "IBM Granite 4.2 official evaluation table (30B), NeMo Evaluator SDK; thinking mode default unless noted. LiveCodeBench v6 pass@1.",
+        "evaluationDate": "2026-08-25"
+      }
+    },
+    "granite-4-2-8b": {
+      "swe-bench-verified": {
+        "value": 47.67,
+        "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.2-8b",
+        "checkedOn": "2026-09-03",
+        "protocol": "IBM Granite 4.2 official evaluation table (8B), NeMo Evaluator SDK; thinking mode default unless noted. SWE-bench Verified pass@1.",
+        "evaluationDate": "2026-08-25"
+      },
+      "swe-bench-multilingual": {
+        "value": 30.78,
+        "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.2-8b",
+        "checkedOn": "2026-09-03",
+        "protocol": "IBM Granite 4.2 official evaluation table (8B), NeMo Evaluator SDK; thinking mode default unless noted. SWE-bench Multilingual resolve rate.",
+        "evaluationDate": "2026-08-25"
+      },
+      "swe-bench-pro": {
+        "value": 19.11,
+        "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.2-8b",
+        "checkedOn": "2026-09-03",
+        "protocol": "IBM Granite 4.2 official evaluation table (8B), NeMo Evaluator SDK; thinking mode default unless noted. SWE-bench Pro resolve rate.",
+        "evaluationDate": "2026-08-25"
+      },
+      "terminal-bench-2-1": {
+        "value": 20.56,
+        "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.2-8b",
+        "checkedOn": "2026-09-03",
+        "protocol": "IBM Granite 4.2 official evaluation table (8B), NeMo Evaluator SDK; thinking mode default unless noted. Terminal-Bench 2.1 pass@1.",
+        "evaluationDate": "2026-08-25"
+      },
+      "aime-2025": {
+        "value": 86.67,
+        "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.2-8b",
+        "checkedOn": "2026-09-03",
+        "protocol": "IBM Granite 4.2 official evaluation table (8B), NeMo Evaluator SDK; thinking mode default unless noted. AIME25 pass@1.",
+        "evaluationDate": "2026-08-25"
+      },
+      "mmlu-pro": {
+        "value": 74.04,
+        "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.2-8b",
+        "checkedOn": "2026-09-03",
+        "protocol": "IBM Granite 4.2 official evaluation table (8B), NeMo Evaluator SDK; thinking mode default unless noted. MMLU-Pro.",
+        "evaluationDate": "2026-08-25"
+      },
+      "scicode": {
+        "value": 36.09,
+        "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.2-8b",
+        "checkedOn": "2026-09-03",
+        "protocol": "IBM Granite 4.2 official evaluation table (8B), NeMo Evaluator SDK; thinking mode default unless noted. SciCode.",
+        "evaluationDate": "2026-08-25"
+      },
+      "livecodebench": {
+        "value": 73.24,
+        "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.2-8b",
+        "checkedOn": "2026-09-03",
+        "protocol": "IBM Granite 4.2 official evaluation table (8B), NeMo Evaluator SDK; thinking mode default unless noted. LiveCodeBench v6 pass@1.",
+        "evaluationDate": "2026-08-25"
+      }
+    },
     "granite-4-1-8b": {
       "lmarena-elo": {
         "value": 1306,
@@ -8453,6 +8823,13 @@
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-03",
         "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'gemini-3.5-flash-high'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      },
+      "deepswe": {
+        "value": 36,
+        "sourceUrl": "https://deepswe.datacurve.ai/",
+        "checkedOn": "2026-09-03",
+        "protocol": "DeepSWE v1.1 official leaderboard (deepswe.datacurve.ai), 2026-09-02 snapshot; gemini-3.5-flash [high] pass@1 under mini-swe-agent.",
         "evaluationDate": "2026-09-02"
       }
     },
@@ -9975,6 +10352,57 @@
       }
     },
     "hunyuan-turbo": {},
+    "hy4-preview": {
+      "gpqa-diamond": {
+        "value": 92.3,
+        "sourceUrl": "https://huggingface.co/tencent/Hy4-preview",
+        "checkedOn": "2026-09-03",
+        "protocol": "Official tencent/Hy4-preview Hugging Face eval results; GPQA Diamond.",
+        "evaluationDate": "2026-08-28"
+      },
+      "terminal-bench-2-1": {
+        "value": 85.4,
+        "sourceUrl": "https://huggingface.co/tencent/Hy4-preview",
+        "checkedOn": "2026-09-03",
+        "protocol": "Official tencent/Hy4-preview Hugging Face eval results; Terminal-Bench 2.1.",
+        "evaluationDate": "2026-08-28"
+      },
+      "swe-bench-multilingual": {
+        "value": 82.9,
+        "sourceUrl": "https://huggingface.co/tencent/Hy4-preview",
+        "checkedOn": "2026-09-03",
+        "protocol": "Official tencent/Hy4-preview Hugging Face eval results; SWE-bench Multilingual resolved %.",
+        "evaluationDate": "2026-08-28"
+      },
+      "swe-bench-pro": {
+        "value": 65.7,
+        "sourceUrl": "https://huggingface.co/tencent/Hy4-preview",
+        "checkedOn": "2026-09-03",
+        "protocol": "Official tencent/Hy4-preview Hugging Face eval results; SWE-bench Pro.",
+        "evaluationDate": "2026-08-28"
+      },
+      "deepswe": {
+        "value": 64.3,
+        "sourceUrl": "https://huggingface.co/tencent/Hy4-preview",
+        "checkedOn": "2026-09-03",
+        "protocol": "Official tencent/Hy4-preview Hugging Face eval results; DeepSWE.",
+        "evaluationDate": "2026-08-28"
+      },
+      "toolathlon-verified": {
+        "value": 74.1,
+        "sourceUrl": "https://huggingface.co/tencent/Hy4-preview",
+        "checkedOn": "2026-09-03",
+        "protocol": "Official tencent/Hy4-preview Hugging Face eval results; Toolathlon Verified.",
+        "evaluationDate": "2026-08-28"
+      },
+      "webdev-arena": {
+        "value": 1626,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-03",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-02; listing 'hy4-preview' (preliminary). Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-02"
+      }
+    },
     "hy3-preview": {
       "toolathlon-verified": {
         "value": 56.8,
@@ -10047,6 +10475,29 @@
         "checkedOn": "2026-09-03",
         "protocol": "Artificial Analysis terminal-bench-2-1 evaluation snapshot, Ling 2.6 Flash, terminalbench_v2_1 score.",
         "evaluationDate": "2026-08-12"
+      }
+    },
+    "ling-3-0-flash": {
+      "swe-bench-multilingual": {
+        "value": 72.4,
+        "sourceUrl": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
+        "checkedOn": "2026-09-03",
+        "protocol": "Official inclusionAI/Ling-3.0-flash Hugging Face eval results; SWE-bench Multilingual resolved %, OpenHands harness, thinking enabled by default.",
+        "evaluationDate": "2026-08-04"
+      },
+      "swe-bench-pro": {
+        "value": 56.6,
+        "sourceUrl": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
+        "checkedOn": "2026-09-03",
+        "protocol": "Official inclusionAI/Ling-3.0-flash Hugging Face eval results; SWE-bench Pro, OpenHands harness, thinking enabled by default.",
+        "evaluationDate": "2026-08-04"
+      },
+      "hle": {
+        "value": 22.7,
+        "sourceUrl": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
+        "checkedOn": "2026-09-03",
+        "protocol": "Official inclusionAI/Ling-3.0-flash Hugging Face eval results; Humanity's Last Exam.",
+        "evaluationDate": "2026-08-04"
       }
     },
     "ling-2-6-1t": {

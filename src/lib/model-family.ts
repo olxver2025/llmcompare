@@ -7,6 +7,7 @@ export type ModelFamily = {
 
 /** Product-line families for catalog / chart filters. */
 export const MODEL_FAMILIES: ModelFamily[] = [
+  { id: "gpt-6", label: "GPT-6.x" },
   { id: "gpt-5", label: "GPT-5.x" },
   { id: "gpt-4-o", label: "GPT-4 / o-series" },
   { id: "gpt-oss", label: "gpt-oss" },
@@ -43,6 +44,7 @@ export function modelFamilyId(m: Model): string {
   if (s.startsWith("composer")) return "composer";
   if (s.startsWith("cursor-grok") || s.startsWith("grok-")) return "grok";
   if (s.startsWith("gpt-oss")) return "gpt-oss";
+  if (s.startsWith("gpt-6")) return "gpt-6";
   if (
     s.startsWith("gpt-5") ||
     s.startsWith("gpt-4") ||

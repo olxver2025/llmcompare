@@ -1,6 +1,18 @@
 import type { BenchmarkId, ThinkingFamily } from "./types";
 
 export const THINKING_FAMILIES: Record<string, ThinkingFamily> = {
+  "openai-gpt-6-astra": {
+    id: "openai-gpt-6-astra",
+    param: "reasoning.effort",
+    sourceUrl: "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    levels: [
+      { id: "low", label: "low" },
+      { id: "medium", label: "medium" },
+      { id: "high", label: "high" },
+      { id: "xhigh", label: "xhigh" },
+      { id: "max", label: "max" },
+    ],
+  },
   "openai-gpt-5-6": {
     id: "openai-gpt-5-6",
     param: "reasoning.effort",
@@ -196,6 +208,44 @@ export const THINKING_FAMILIES: Record<string, ThinkingFamily> = {
       { id: "enabled", label: "enabled" },
     ],
   },
+  "ibm-granite-4-2": {
+    id: "ibm-granite-4-2",
+    param: "enable_thinking",
+    sourceUrl: "https://www.ibm.com/granite/docs/models/granite4-2",
+    levels: [
+      { id: "non-thinking", label: "non-thinking" },
+      { id: "low-effort", label: "low-effort" },
+      { id: "thinking", label: "thinking" },
+    ],
+  },
+  hy4: {
+    id: "hy4",
+    param: "reasoning_effort",
+    sourceUrl: "https://huggingface.co/tencent/Hy4-preview",
+    levels: [
+      { id: "no-think", label: "no_think" },
+      { id: "high", label: "high" },
+    ],
+  },
+  "ling-3-0": {
+    id: "ling-3-0",
+    param: "enable_thinking",
+    sourceUrl: "https://huggingface.co/inclusionAI/Ling-3.0-flash",
+    levels: [
+      { id: "disabled", label: "disabled" },
+      { id: "enabled", label: "enabled" },
+    ],
+  },
+  "glm-5-3": {
+    id: "glm-5-3",
+    param: "reasoning_effort",
+    sourceUrl: "https://huggingface.co/zai-org/GLM-5.3",
+    levels: [
+      { id: "low", label: "low" },
+      { id: "high", label: "high" },
+      { id: "max", label: "max" },
+    ],
+  },
 };
 
 export type ModelThinkingAssignment = {
@@ -204,6 +254,10 @@ export type ModelThinkingAssignment = {
 };
 
 export const MODEL_THINKING: Record<string, ModelThinkingAssignment> = {
+  "gpt-6-astra": {
+    familyId: "openai-gpt-6-astra",
+    levelIds: ["low", "medium", "high", "xhigh", "max"],
+  },
   "gpt-5-6-sol": {
     familyId: "openai-gpt-5-6",
     levelIds: ["none", "low", "medium", "high", "xhigh", "max"],
@@ -347,6 +401,26 @@ export const MODEL_THINKING: Record<string, ModelThinkingAssignment> = {
   "command-a-reasoning": {
     familyId: "cohere-thinking",
     levelIds: ["disabled", "enabled"],
+  },
+  "granite-4-2-30b": {
+    familyId: "ibm-granite-4-2",
+    levelIds: ["non-thinking", "low-effort", "thinking"],
+  },
+  "granite-4-2-8b": {
+    familyId: "ibm-granite-4-2",
+    levelIds: ["non-thinking", "low-effort", "thinking"],
+  },
+  "hy4-preview": {
+    familyId: "hy4",
+    levelIds: ["no-think", "high"],
+  },
+  "ling-3-0-flash": {
+    familyId: "ling-3-0",
+    levelIds: ["disabled", "enabled"],
+  },
+  "glm-5-3": {
+    familyId: "glm-5-3",
+    levelIds: ["low", "high", "max"],
   },
 };
 
