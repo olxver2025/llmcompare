@@ -2,7 +2,7 @@ import fs from "node:fs";
 import { execFileSync } from "node:child_process";
 import { load } from "./update-benchmarks/load.mjs";
 
-const asOf = "2026-09-03";
+const asOf = "2026-09-04";
 
 const models = load("src/data/models.ts", "models");
 const imageModels = load("src/data/image-models.ts", "imageModels");
@@ -220,12 +220,12 @@ exact("gpt-5-6-terra", "pricing.inputPer1M", 2);
 exact("gpt-5-6-terra", "pricing.outputPer1M", 12);
 exact("gpt-5-6-luna", "pricing.inputPer1M", 0.2);
 exact("gpt-5-6-luna", "pricing.outputPer1M", 1.2);
-exact("gpt-5-6-terra", "benchmarks.terminal-bench-2-1", 87.4);
+exact("gpt-5-6-terra", "benchmarks.terminal-bench-2-1", 88);
 exact("gpt-5-6-luna", "benchmarks.swe-bench-pro", 62.7);
 exact("deepseek-r1", "benchmarks.mmlu-pro", 84);
 exact("deepseek-r1", "benchmarks.math-500", 97.3);
 exact("deepseek-r1-0528", "benchmarks.aime-2025", 87.5);
-exact("deepseek-v3-1", "benchmarks.gpqa-diamond", 80.1);
+exact("deepseek-v3-1", "benchmarks.gpqa-diamond", 77.9);
 exact("gemma-3-12b", "benchmarks.mmlu-pro", 60.6);
 exact("kimi-k2-5", "benchmarks.swe-bench-verified", 76.8);
 exact("qwq-32b", "benchmarks.aime-2025", 69.5);
@@ -252,20 +252,20 @@ exact("grok-4-20", "releaseDate", "2026-05-20");
 exact("grok-4-20", "contextWindow", 1000000);
 exact("mistral-small-4", "releaseDate", "2026-03-01");
 exact("devstral-2", "releaseDate", "2025-12-01");
-exact("gpt-4-1", "benchmarks.gpqa-diamond", 66.3);
-exact("gpt-4-1", "benchmarks.swe-bench-verified", 54.6);
-exact("gpt-4-1-mini", "benchmarks.gpqa-diamond", 65);
-exact("gpt-4-1-mini", "benchmarks.swe-bench-verified", 23.6);
-exact("gpt-4-1-nano", "benchmarks.gpqa-diamond", 50.3);
-exact("claude-3-7-sonnet", "benchmarks.swe-bench-verified", 63.7);
-exact("gemini-2-5-pro", "benchmarks.hle", 18.8);
-exact("gemini-2-5-pro", "benchmarks.swe-bench-verified", 63.8);
+exact("gpt-4-1", "benchmarks.gpqa-diamond", 66.6);
+exact("gpt-4-1", "benchmarks.swe-bench-verified", 39.58);
+exact("gpt-4-1-mini", "benchmarks.gpqa-diamond", 66.4);
+exact("gpt-4-1-mini", "benchmarks.swe-bench-verified", 23.94);
+exact("gpt-4-1-nano", "benchmarks.gpqa-diamond", 51.2);
+exact("claude-3-7-sonnet", "benchmarks.swe-bench-verified", 52.8);
+exact("gemini-2-5-pro", "benchmarks.hle", 22.5);
+exact("gemini-2-5-pro", "benchmarks.swe-bench-verified", 53.6);
 exact("phi-4-mini", "benchmarks.mmlu-pro", 52.8);
 exact("glm-5-3", "openSource", true);
 exact("hy4-preview", "parameters.total", 770);
 exact("hy4-preview", "parameters.active", 49);
 exact("granite-4-2-30b", "benchmarks.swe-bench-verified", 57);
-exact("qwen3-8-max-0902", "benchmarks.webdev-arena", 1688);
+exact("qwen3-8-max-0902", "benchmarks.webdev-arena", 1687.7);
 exact("gpt-5-6-sol", "benchmarks.deepswe", 72.7);
 
 for (const slug of expectedEmptyBenchmarkModels) {
@@ -280,7 +280,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 1471, `expected 1471 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 1575, `expected 1575 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);
