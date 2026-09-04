@@ -5113,12 +5113,12 @@
     "gpqa-diamond": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
       "evaluationDate": "2026-09-04",
-      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Command A+', gpqa score."
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Command A' (not 'Command A+', which is a distinct Cohere model not in this catalog), gpqa score."
     },
     "hle": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
       "evaluationDate": "2026-09-04",
-      "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Command A+', hle score."
+      "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Command A' (not 'Command A+', which is a distinct Cohere model not in this catalog), hle score."
     },
     "aime-2025": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/aime-2025",
@@ -5133,17 +5133,12 @@
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
       "evaluationDate": "2026-09-04",
-      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Command A+', scicode score."
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Command A' (not 'Command A+', which is a distinct Cohere model not in this catalog), scicode score."
     },
     "livecodebench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/livecodebench",
       "evaluationDate": "2026-08-12",
       "protocol": "Artificial Analysis livecodebench evaluation snapshot, Command A, livecodebench score."
-    },
-    "terminal-bench-2-1": {
-      "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis terminal-bench-2-1 evaluation snapshot, Command A+, terminalbench_v2_1 score."
     }
   },
   "yi-lightning": {
@@ -5612,8 +5607,8 @@
     },
     "bigcodebench": {
       "sourceUrl": "https://bigcode-bench.github.io/",
-      "evaluationDate": "2024-10-22",
-      "protocol": "BigCodeBench official results, Claude-3.5-Sonnet-20241022, pass@1 instruct."
+      "evaluationDate": "2024-06-20",
+      "protocol": "BigCodeBench official results, Claude-3.5-Sonnet-20240620 (matching this catalog entry's Jun 20, 2024 release date; the Oct 22, 2024 checkpoint is the separate claude-3-5-sonnet-1022 entry), pass@1 instruct."
     },
     "gpqa-diamond": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
@@ -5696,6 +5691,11 @@
       "sourceUrl": "https://livecodebench.github.io/",
       "evaluationDate": "2026-08-12",
       "protocol": "LiveCodeBench official performances (pass@1 across questions), Claude-3.5-Sonnet-20241022."
+    },
+    "bigcodebench": {
+      "sourceUrl": "https://bigcode-bench.github.io/",
+      "evaluationDate": "2024-10-22",
+      "protocol": "BigCodeBench official results, Claude-3.5-Sonnet-20241022 (matching this catalog entry's Oct 22, 2024 release date), pass@1 instruct."
     }
   },
   "claude-3-7-sonnet": {

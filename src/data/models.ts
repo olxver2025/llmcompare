@@ -4034,13 +4034,12 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1354,
       "mmlu-pro": 71.2,
-      "gpqa-diamond": 76.1,
-      hle: 12,
+      "gpqa-diamond": 52.7,
+      hle: 4,
       "aime-2025": 13,
       "math-500": 81.9,
-      scicode: 37.8,
+      scicode: 28.1,
       livecodebench: 28.7,
-      "terminal-bench-2-1": 22.8,
     },
     links: {
       docs: "https://docs.cohere.com/",
@@ -5341,7 +5340,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 70, ttftSeconds: 0.45 },
     benchmarks: {
       "lmarena-elo": 1373.6,
-      bigcodebench: 44.6,
+      bigcodebench: 46.8,
       "gpqa-diamond": 59.9,
       hle: 3.7,
       "math-500": 69.5,
@@ -5379,6 +5378,7 @@ export const models: Model[] = [
       "mmlu-pro": 77.2,
       scicode: 36.6,
       livecodebench: 48.7,
+      bigcodebench: 44.6,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
