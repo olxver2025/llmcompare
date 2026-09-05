@@ -12364,11 +12364,11 @@
         "evaluationDate": "2026-09-04"
       },
       "bigcodebench": {
-        "value": 44.6,
+        "value": 46.8,
         "sourceUrl": "https://bigcode-bench.github.io/",
         "checkedOn": "2026-09-05",
-        "protocol": "BigCodeBench official results, Claude-3.5-Sonnet-20241022, pass@1 instruct.",
-        "evaluationDate": "2024-10-22"
+        "protocol": "BigCodeBench official results, Claude-3.5-Sonnet-20240620 (matching this catalog entry's Jun 20, 2024 release date; the Oct 22, 2024 checkpoint is the separate claude-3-5-sonnet-1022 entry), pass@1 instruct.",
+        "evaluationDate": "2024-06-20"
       },
       "gpqa-diamond": {
         "value": 59.9,

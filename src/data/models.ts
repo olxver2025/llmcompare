@@ -5856,7 +5856,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 70, ttftSeconds: 0.45 },
     benchmarks: {
       "lmarena-elo": 1373.6,
-      bigcodebench: 44.6,
+      bigcodebench: 46.8,
       "gpqa-diamond": 59.9,
       hle: 3.7,
       "math-500": 69.5,
