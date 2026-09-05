@@ -1,0 +1,207 @@
+name: Data integrity
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+concurrency:
+  group: data-integrity-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  # Deterministic gate. Runs on every pull request, including from forks, and is
+  # the check that branch protection should require.
+  verify:
+    name: Verify catalog
+    runs-on: ubuntu-latest
+    outputs:
+      data-changed: ${{ steps.scope.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Resolve base revision
+        id: base
+        env:
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PUSH_BEFORE: ${{ github.event.before }}
+        run: |
+          if [ -n "$PR_BASE_SHA" ]; then
+            # The merge base, not the base branch tip: data that landed on master
+            # after this branch was cut is not a change made by this pull request.
+            ref=$(git merge-base "$PR_BASE_SHA" HEAD)
+          elif [ -n "$PUSH_BEFORE" ] && git cat-file -e "${PUSH_BEFORE}^{commit}" 2>/dev/null; then
+            ref="$PUSH_BEFORE"
+          else
+            ref=$(git rev-parse HEAD^)
+          fi
+          echo "ref=$ref" >> "$GITHUB_OUTPUT"
+          echo "Base revision: $ref"
+
+      - name: Detect data changes
+        id: scope
+        env:
+          BASE_REF: ${{ steps.base.outputs.ref }}
+        run: |
+          changed_files=$(git diff --name-only "$BASE_REF" HEAD)
+          echo "$changed_files"
+          if echo "$changed_files" | grep -qE '^(src/data/|scripts/benchmark-|scripts/update-benchmarks/|BENCHMARKS\.md|PROVIDERS\.md)'; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      # The existing gate: pinned counts, evidence-ledger reproducibility, and
+      # the per-cell provenance rules in scripts/verify-data.mjs.
+      - name: npm run verify:data
+        run: npm run verify:data
+
+      # Proves benchmark-evidence.json was regenerated rather than hand-edited.
+      - name: Evidence ledger is reproducible
+        run: npm run generate:evidence -- --check
+
+      # Provenance rules for the facts this pull request actually changed.
+      - name: Audit changed data
+        env:
+          DATA_DIFF_BASE: ${{ steps.base.outputs.ref }}
+        run: node scripts/ci/audit-data-diff.mjs
+
+      - name: Upload data diff
+        if: always() && steps.scope.outputs.changed == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: data-diff
+          path: data-diff.json
+          if-no-files-found: ignore
+
+      # Only the files this pull request touches: the repository carries
+      # pre-existing lint errors in components unrelated to catalog data, and a
+      # blanket run would make every data PR red for reasons it did not cause.
+      - name: Lint changed files
+        env:
+          BASE_REF: ${{ steps.base.outputs.ref }}
+        run: |
+          files=$(git diff --name-only --diff-filter=ACMR "$BASE_REF" HEAD -- '*.ts' '*.tsx' '*.mjs' '*.js' '*.jsx')
+          if [ -z "$files" ]; then
+            echo "No lintable files changed."
+            exit 0
+          fi
+          echo "$files"
+          npx eslint $files
+
+      - name: Lint the whole repository (informational)
+        continue-on-error: true
+        run: npm run lint
+
+      - run: npm run build
+
+  # Network check. Broken citations block; bot walls and rate limits only warn.
+  sources:
+    name: Source reachability
+    needs: verify
+    if: needs.verify.outputs.data-changed == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: data-diff
+
+      - name: Check cited sources resolve
+        run: node scripts/ci/check-sources.mjs
+
+  # Reads each cited page and checks it actually reports the number in the diff.
+  # Secrets are withheld from fork pull requests, so this cannot run on outside
+  # contributions; review those by hand.
+  claude-source-review:
+    name: Claude source review
+    needs: verify
+    if: >-
+      needs.verify.outputs.data-changed == 'true' &&
+      github.event_name != 'push' &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: data-diff
+
+      - name: Check that a Claude credential is configured
+        id: credential
+        env:
+          OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -n "$OAUTH_TOKEN" ] || [ -n "$API_KEY" ]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "present=false" >> "$GITHUB_OUTPUT"
+            {
+              echo "## Claude source review"
+              echo
+              echo "Skipped: neither \`CLAUDE_CODE_OAUTH_TOKEN\` nor \`ANTHROPIC_API_KEY\` is set."
+              echo "Generate a subscription token with \`claude setup-token\` and add it as the"
+              echo "\`CLAUDE_CODE_OAUTH_TOKEN\` repository secret."
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Verify changed data against its sources
+        if: steps.credential.outputs.present == 'true'
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: "/verify-data-sources"
+          claude_args: |
+            --max-turns 80
+            --allowedTools "Read,Grep,Glob,Write,WebFetch,WebSearch"
+
+      - name: Gate on the review verdict
+        if: steps.credential.outputs.present == 'true'
+        run: node scripts/ci/verdict-gate.mjs
+
+      - name: Post the verdict on the pull request
+        if: always() && steps.credential.outputs.present == 'true' && hashFiles('source-verdict.md') != ''
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: node scripts/ci/pr-comment.mjs llmcompare-source-review source-verdict.md

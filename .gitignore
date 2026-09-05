@@ -47,7 +47,15 @@ next-env.d.ts
 /benchmarks
 
 # local AI tool caches/config (machine-local, not project source)
-/.claude/
+# ...except .claude/skills, which holds the prompt the data-integrity workflow runs.
+/.claude/*
+!/.claude/skills/
 /.serena/
 /.tokensave/
 /scripts/update-benchmarks/proposals-adds.json
+
+# CI data-integrity artifacts
+/data-diff.json
+/source-verdict.json
+/source-verdict.md
+/source-check.json
