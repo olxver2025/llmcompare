@@ -99,7 +99,7 @@ check(
   "evidence ledger must include every model, including intentional empty records"
 );
 
-check(models.length === 282, `expected 282 models, found ${models.length}`);
+check(models.length === 283, `expected 283 models, found ${models.length}`);
 check(new Set(models.map((model) => model.slug)).size === models.length, "duplicate model slug");
 const expectedEmptyBenchmarkModels = new Set(emptyBenchmarkManifest.slugs);
 check(
@@ -272,7 +272,7 @@ exact("glm-5-3", "openSource", true);
 exact("hy4-preview", "parameters.total", 770);
 exact("hy4-preview", "parameters.active", 49);
 exact("granite-4-2-30b", "benchmarks.swe-bench-verified", 57);
-exact("qwen3-8-max-0902", "benchmarks.webdev-arena", 1687.7);
+exact("qwen3-8-max-0902", "benchmarks.webdev-arena", 1688.7);
 exact("gpt-5-6-sol", "benchmarks.deepswe", 72.7);
 
 for (const slug of expectedEmptyBenchmarkModels) {
@@ -287,7 +287,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 2157, `expected 2157 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 2166, `expected 2166 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);
