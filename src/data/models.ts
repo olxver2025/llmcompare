@@ -2710,6 +2710,7 @@ export const models: Model[] = [
       scicode: 36.2,
       livecodebench: 46.5,
       "terminal-bench-2-1": 12,
+      "aa-intelligence-index": 11.1,
       "aa-omniscience-accuracy": 25,
       "aa-lcr": 36,
       "tau3-banking": 5.8,

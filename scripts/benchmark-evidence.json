@@ -6944,6 +6944,13 @@
         "protocol": "Artificial Analysis terminal-bench-2-1 evaluation snapshot, Mistral Large 3, terminalbench_v2_1 score.",
         "evaluationDate": "2026-08-12"
       },
+      "aa-intelligence-index": {
+        "value": 11.1,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+        "checkedOn": "2026-09-05",
+        "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Mistral Large 3', intelligenceIndex score.",
+        "evaluationDate": "2026-09-05"
+      },
       "aa-omniscience-accuracy": {
         "value": 25,
         "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
