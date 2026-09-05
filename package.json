@@ -10,6 +10,8 @@
     "lint": "eslint",
     "generate:evidence": "node scripts/generate-benchmark-evidence.mjs",
     "verify:data": "node scripts/verify-data.mjs",
+    "audit:diff": "node scripts/ci/audit-data-diff.mjs",
+    "audit:sources": "node scripts/ci/check-sources.mjs",
     "update:benchmarks": "node scripts/update-benchmarks/cli.mjs",
     "download:benchmarks": "node scripts/download-benchmark-scores.mjs"
   },
