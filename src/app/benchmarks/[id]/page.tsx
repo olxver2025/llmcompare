@@ -53,7 +53,9 @@ export default async function BenchmarkDetailPage({ params }: Props) {
       ? "Percent"
       : meta.unit === "elo"
         ? "Elo"
-        : meta.unit;
+        : meta.unit === "index"
+          ? "Index (0-100)"
+          : meta.unit;
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-12">

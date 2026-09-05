@@ -10,7 +10,7 @@ import { modelFamilyId, modelFamilyLabel } from "@/lib/model-family";
 
 export { QUALITY_COMPARABLE_ELO_BAND, type OverallBasis };
 
-export const DATA_FRESHNESS = "2026-09-04";
+export const DATA_FRESHNESS = "2026-09-05";
 
 /** Display for an absent numeric or text field. Never a guessed zero. */
 export const MISSING = "—";
@@ -291,7 +291,8 @@ export type CompareRow = {
     | "arena"
     | "agent"
     | "tool"
-    | "math";
+    | "math"
+    | "index";
   left: string;
   right: string;
   leftNum?: number;
@@ -558,6 +559,7 @@ export function compareBreakdown(a: Model, b: Model): CompareBreakdown {
     agent: "Agents",
     tool: "Tool use",
     math: "Math",
+    index: "Composite indices",
     pricing: "Pricing",
     speed: "Speed",
     spec: "Specs",

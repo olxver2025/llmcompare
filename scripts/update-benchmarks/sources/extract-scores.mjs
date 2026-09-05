@@ -147,7 +147,19 @@ function extractLiveCodeBenchJson() {
 
 export function extractAll({ evaluationDate = "2026-09-02" } = {}) {
   const out = {};
-  for (const id of ["gpqa-diamond", "hle", "scicode", "terminal-bench-2-1"]) {
+  for (const id of [
+    "gpqa-diamond",
+    "hle",
+    "scicode",
+    "terminal-bench-2-1",
+    "aa-intelligence-index",
+    "aa-omniscience-accuracy",
+    "aa-lcr",
+    "critpt",
+    "tau3-banking",
+    "mmmu-pro",
+    "ifbench",
+  ]) {
     out[id] = extractAA(id, { evaluationDate });
   }
   out["terminal-bench-4"] = extractTBench();

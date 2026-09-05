@@ -28,7 +28,57 @@ const AA_FIELDS = {
     label: "Terminal-Bench 2.1",
     sourceUrl: "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
   },
+  "aa-intelligence-index": {
+    field: "intelligenceIndex",
+    label: "Intelligence Index v4.2",
+    sourceUrl:
+      "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+    // Already published on the index's own 0-100 scale, unlike the per-eval fractions.
+    scale: 1,
+    // AA extrapolates an index for models it has not run every component on and
+    // flags those rows; only fully measured rows are published here.
+    requires: (row) => row.intelligenceIndexIsEstimated === false,
+  },
+  "aa-omniscience-accuracy": {
+    field: "omniscienceAccuracy",
+    label: "AA-Omniscience Accuracy",
+    sourceUrl: "https://artificialanalysis.ai/evaluations/omniscience",
+  },
+  "aa-lcr": {
+    field: "lcr",
+    label: "AA-LCR v1.1",
+    sourceUrl:
+      "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+  },
+  critpt: {
+    field: "critpt",
+    label: "CritPt",
+    sourceUrl: "https://artificialanalysis.ai/evaluations/critpt",
+  },
+  "tau3-banking": {
+    field: "tauBanking",
+    label: "\u03c4\u00b3-Banking",
+    sourceUrl: "https://artificialanalysis.ai/evaluations/tau3-banking",
+  },
+  "mmmu-pro": {
+    field: "mmmuPro",
+    label: "MMMU-Pro",
+    sourceUrl: "https://artificialanalysis.ai/evaluations/mmmu-pro",
+  },
+  ifbench: {
+    field: "ifbench",
+    label: "IFBench",
+    sourceUrl: "https://artificialanalysis.ai/evaluations/ifbench",
+  },
 };
+
+// Release names whose normalised form collides with a *different* catalog model.
+// `exactCatalogMatch` strips punctuation, so these would silently land on the wrong
+// record; they are dropped instead of guessed at.
+//   Command A+     - a distinct 2026 Cohere model the catalog does not list, normalises onto `command-a`.
+//   Command-R+ / Command-R - Artificial Analysis lists the Apr '24 / Mar '24 releases,
+//                            while the catalog holds the 08-2024 refreshes.
+const AMBIGUOUS_RELEASE_NAMES = new Set(["Command A+", "Command-R+", "Command-R"]);
 
 export function flightSegments(file) {
   const c = fs.readFileSync(file, "utf8");
@@ -139,16 +189,19 @@ export function canonicalAARows(rows) {
 export function extractAA(benchmarkId, { file = AA_LEADERBOARD_FILE, evaluationDate } = {}) {
   const cfg = AA_FIELDS[benchmarkId];
   if (!cfg) throw new Error(`No Artificial Analysis field mapped for ${benchmarkId}`);
+  const scale = cfg.scale ?? 100;
   const scores = [];
   for (const { baseName: name, row } of canonicalAARows(parseAALeaderboard(file))) {
+    if (AMBIGUOUS_RELEASE_NAMES.has(name)) continue;
     const raw = row[cfg.field];
     // AA stores "not evaluated" as null and, for some rows, as an exact 0; a
     // frontier model scoring exactly 0 is not a value worth publishing either way.
     if (typeof raw !== "number" || !Number.isFinite(raw) || raw <= 0) continue;
+    if (cfg.requires && !cfg.requires(row)) continue;
     scores.push({
       benchmarkId,
       sourceModelName: name,
-      value: Math.round(raw * 1000) / 10,
+      value: Math.round(raw * scale * 10) / 10,
       sourceUrl: cfg.sourceUrl,
       evaluationDate,
       protocol: `Artificial Analysis ${cfg.label} leaderboard snapshot, listing '${row.name}', ${cfg.field} score.`,

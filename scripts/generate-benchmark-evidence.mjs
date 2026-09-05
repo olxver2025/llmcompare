@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import { load } from "./update-benchmarks/load.mjs";
 
-const asOf = "2026-09-04";
+const asOf = "2026-09-05";
 const checkOnly = process.argv.includes("--check");
 
 function isIsoDate(value) {

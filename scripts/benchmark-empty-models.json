@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-04",
+  "asOf": "2026-09-05",
   "slugs": [
     "amazon-nova-2-lite",
     "amazon-nova-lite",
@@ -26,7 +26,6 @@
     "gemini-3-5-flash-cyber",
     "gpt-4-32k",
     "gpt-4o",
-    "gpt-5-4-pro",
     "gpt-5-6-cyber",
     "granite-4-0-h-micro",
     "grok-1",

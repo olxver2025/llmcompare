@@ -368,6 +368,92 @@ export const BENCHMARKS: Record<BenchmarkId, BenchmarkMeta> = {
     category: "math",
     sourceUrl: "https://epoch.ai/benchmarks/frontiermath-tier-4-v2",
   },
+
+  "aa-intelligence-index": {
+    id: "aa-intelligence-index",
+    name: "Artificial Analysis Intelligence Index v4.2",
+    shortName: "AA Index",
+    description:
+      "Artificial Analysis's own composite metric on a 0-100 scale, not a percentage. v4.2 is a weighted average of ten independently-run evaluations across four categories: agents 30% (AA-Briefcase 15%, GDPval-AA v2 10%, \u03c4\u00b3-Banking 5%), coding 20% (Terminal-Bench 2.1 10%, SciCode 10%), general 30% (AA-Omniscience 15%, split 10% accuracy and 5% non-hallucination, GDP.pdf 10%, AA-LCR v1.1 5%), and scientific reasoning 20% (Humanity's Last Exam 10%, CritPt 10%). Index versions are not comparable to each other \u2014 v4.2 dropped GPQA Diamond and added AA-Briefcase and GDP.pdf relative to v4.1.1 \u2014 and several components are agent-harness evaluations, so the index is not a model-only capability measurement. Only listings Artificial Analysis has fully measured are recorded here; its estimated index values are omitted.",
+    higherIsBetter: true,
+    unit: "index",
+    category: "index",
+    sourceUrl:
+      "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+  },
+
+  "aa-omniscience-accuracy": {
+    id: "aa-omniscience-accuracy",
+    name: "AA-Omniscience Accuracy",
+    shortName: "Omniscience Acc.",
+    description:
+      "Share of AA-Omniscience's 6,000 factual-recall questions answered correctly, across 42 topics in six domains (business, humanities and social sciences, STEM, health, law, and software engineering). This is the accuracy metric only \u2014 keep it distinct from the AA-Omniscience Index, a separate -100 to 100 metric that penalises hallucination and rewards abstention, and from the hallucination rate.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "reasoning",
+    sourceUrl: "https://artificialanalysis.ai/evaluations/omniscience",
+  },
+
+  "aa-lcr": {
+    id: "aa-lcr",
+    name: "AA-LCR v1.1",
+    shortName: "AA-LCR",
+    description:
+      "Artificial Analysis Long Context Reasoning: 100 open-answer questions requiring multi-step synthesis across documents of 10k-100k tokens (academic papers, financial reports, legal and government documents). Pass/fail graded by an LLM judge against official answers; scores are tied to the AA-LCR version and grader model and are not a needle-in-a-haystack retrieval measure.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "reasoning",
+    sourceUrl:
+      "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+  },
+
+  critpt: {
+    id: "critpt",
+    name: "CritPt",
+    shortName: "CritPt",
+    description:
+      "Complex Research using Integrated Thinking \u2014 Physics Test: 71 unpublished research-level physics challenges (decomposed into 190 checkpoint tasks) across 11 subfields, authored by 50+ working physicists. Reported here as Artificial Analysis's independently-run accuracy on the composite challenges; tool access materially changes results, so runs with and without code execution are not comparable.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "reasoning",
+    sourceUrl: "https://artificialanalysis.ai/evaluations/critpt",
+  },
+
+  "tau3-banking": {
+    id: "tau3-banking",
+    name: "\u03c4\u00b3-Banking",
+    shortName: "\u03c4\u00b3-Banking",
+    description:
+      "97 fintech customer-support tasks (disputes, account freezes, provisional credits, product changes) where an agent must navigate roughly 700 interconnected policy documents (~195k tokens) and execute multi-step tool calls. Graded pass@1 against backend database state rather than conversational quality. This is an agent-system result and is distinct from \u03c4\u00b2-bench Telecom and from earlier \u03c4-bench releases.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "tool",
+    sourceUrl: "https://artificialanalysis.ai/evaluations/tau3-banking",
+  },
+
+  "mmmu-pro": {
+    id: "mmmu-pro",
+    name: "MMMU-Pro (Vision)",
+    shortName: "MMMU-Pro",
+    description:
+      "Multimodal reasoning over 3,460 questions in six disciplines, in the vision-only format where the question itself is embedded in a screenshot. MMMU-Pro filters out text-answerable questions and expands the choice set from 4 to 10 options, so it is substantially harder than the original MMMU and the two are not comparable.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "reasoning",
+    sourceUrl: "https://artificialanalysis.ai/evaluations/mmmu-pro",
+  },
+
+  ifbench: {
+    id: "ifbench",
+    name: "IFBench",
+    shortName: "IFBench",
+    description:
+      "Ai2's precise instruction-following benchmark: 58 verifiable out-of-domain output constraints held out from the training constraints, so it measures generalisation to unseen instructions rather than familiarity with common ones. Scored as constraint-satisfaction accuracy.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "reasoning",
+    sourceUrl: "https://artificialanalysis.ai/evaluations/ifbench",
+  },
 };
 
 export const BENCHMARK_IDS = Object.keys(BENCHMARKS) as BenchmarkId[];
@@ -382,6 +468,11 @@ export const BENCHMARK_CATEGORIES = [
       "hle",
       "aime-2025",
       "math-500",
+      "critpt",
+      "aa-lcr",
+      "aa-omniscience-accuracy",
+      "mmmu-pro",
+      "ifbench",
     ] as BenchmarkId[],
   },
   {
@@ -416,6 +507,7 @@ export const BENCHMARK_CATEGORIES = [
     ids: [
       "tau-bench",
       "toolathlon-verified",
+      "tau3-banking",
     ] as BenchmarkId[],
   },
   {
@@ -435,5 +527,10 @@ export const BENCHMARK_CATEGORIES = [
     id: "arena" as const,
     label: "Arena",
     ids: ["lmarena-elo"] as BenchmarkId[],
+  },
+  {
+    id: "index" as const,
+    label: "Composite indices",
+    ids: ["aa-intelligence-index"] as BenchmarkId[],
   },
 ];

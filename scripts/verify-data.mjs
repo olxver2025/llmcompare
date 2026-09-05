@@ -2,7 +2,7 @@ import fs from "node:fs";
 import { execFileSync } from "node:child_process";
 import { load } from "./update-benchmarks/load.mjs";
 
-const asOf = "2026-09-04";
+const asOf = "2026-09-05";
 
 const models = load("src/data/models.ts", "models");
 const imageModels = load("src/data/image-models.ts", "imageModels");
@@ -55,6 +55,13 @@ const expectedBenchmarkIds = new Set([
   "osworld-2-partial",
   "osworld-2-strict",
   "frontiermath-tier-4-v2",
+  "aa-intelligence-index",
+  "aa-omniscience-accuracy",
+  "aa-lcr",
+  "critpt",
+  "tau3-banking",
+  "mmmu-pro",
+  "ifbench",
 ]);
 
 try {
@@ -68,7 +75,7 @@ try {
   check(false, `benchmark evidence ledger is not reproducible: ${detail}`);
 }
 
-check(benchmarkIds.size === 32, `expected 32 benchmark IDs, found ${benchmarkIds.size}`);
+check(benchmarkIds.size === 39, `expected 39 benchmark IDs, found ${benchmarkIds.size}`);
 check(
   benchmarkIds.size === Object.keys(benchmarkCatalog).length,
   "benchmark metadata and benchmark ID exports disagree"
@@ -76,7 +83,7 @@ check(
 check(
   benchmarkIds.size === expectedBenchmarkIds.size &&
     [...benchmarkIds].every((id) => expectedBenchmarkIds.has(id)),
-  "benchmark IDs changed outside the audited 35-field scope"
+  "benchmark IDs changed outside the audited 39-field scope"
 );
 check(evidenceLedger.asOf === asOf, `evidence ledger is not dated ${asOf}`);
 check(
@@ -280,7 +287,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 1575, `expected 1575 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 2156, `expected 2156 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);
