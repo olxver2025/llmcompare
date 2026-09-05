@@ -80,9 +80,21 @@ function isDiscriminating(id: BenchmarkId, scores: number[]): boolean {
   return true;
 }
 
+/**
+ * Published composite indices (the Artificial Analysis Intelligence Index) are
+ * themselves weighted averages of benchmarks that sit in the same battery, so
+ * feeding one into a composite would count its components twice. They are
+ * ranked on their own benchmark page instead.
+ */
+function isCompositeInput(id: BenchmarkId): boolean {
+  return BENCHMARKS[id].unit !== "index";
+}
+
 export function getCompositeBatteryIds(ids: BenchmarkId[]): BenchmarkId[] {
   const peers = getCompositePeerModels();
-  return ids.filter((id) => isDiscriminating(id, scoredValues(peers, id)));
+  return ids.filter(
+    (id) => isCompositeInput(id) && isDiscriminating(id, scoredValues(peers, id))
+  );
 }
 
 /** Categories with enough well-covered benchmarks to form a composite. */

@@ -58,6 +58,34 @@ https://arxiv.org/abs/2509.07968
 
 
 
+\## AA-Omniscience
+
+https://artificialanalysis.ai/evaluations/omniscience
+
+
+
+\## AA-LCR
+
+https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning
+
+
+
+\## CritPt
+
+https://artificialanalysis.ai/evaluations/critpt
+
+https://critpt.com/
+
+
+
+\## IFBench
+
+https://artificialanalysis.ai/evaluations/ifbench
+
+https://github.com/allenai/IFBench
+
+
+
 \## MMLU
 
 https://github.com/hendrycks/test
@@ -76,7 +104,7 @@ https://github.com/MMMU-Benchmark/MMMU
 
 https://github.com/MMMU-Benchmark/MMMU
 
-https://artificialanalysis.ai/evaluations
+https://artificialanalysis.ai/evaluations/mmmu-pro
 
 
 
@@ -402,6 +430,12 @@ https://docs.all-hands.dev/
 
 
 
+\## Tau3-Banking
+
+https://artificialanalysis.ai/evaluations/tau3-banking
+
+
+
 \## Berkeley Function Calling Leaderboard
 
 https://gorilla.cs.berkeley.edu/leaderboard.html
@@ -463,6 +497,14 @@ https://arxiv.org/abs/2403.04132
 
 
 \# General / Aggregated / Independent Evaluation Sources
+
+
+
+\## Artificial Analysis Intelligence Index
+
+https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
+
+https://artificialanalysis.ai/methodology/intelligence-benchmarking
 
 
 

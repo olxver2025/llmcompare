@@ -30,7 +30,14 @@ export type BenchmarkId =
   | "gdpval-aa"
   | "osworld-2-partial"
   | "osworld-2-strict"
-  | "frontiermath-tier-4-v2";
+  | "frontiermath-tier-4-v2"
+  | "aa-intelligence-index"
+  | "aa-omniscience-accuracy"
+  | "aa-lcr"
+  | "critpt"
+  | "tau3-banking"
+  | "mmmu-pro"
+  | "ifbench";
 
 export type ModelPricing = {
   provider: string;
@@ -98,14 +105,16 @@ export type BenchmarkMeta = {
   shortName: string;
   description: string;
   higherIsBetter: boolean;
-  unit: "percent" | "elo";
+  /** `index` is a published composite score on its own 0-100 scale, not a percentage. */
+  unit: "percent" | "elo" | "index";
   category:
     | "reasoning"
     | "coding"
     | "arena"
     | "agent"
     | "tool"
-    | "math";
+    | "math"
+    | "index";
   sourceUrl: string;
 };
 
