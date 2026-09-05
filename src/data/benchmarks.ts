@@ -433,10 +433,10 @@ export const BENCHMARKS: Record<BenchmarkId, BenchmarkMeta> = {
 
   "mmmu-pro": {
     id: "mmmu-pro",
-    name: "MMMU-Pro (Vision)",
+    name: "MMMU-Pro",
     shortName: "MMMU-Pro",
     description:
-      "Multimodal reasoning over 3,460 questions in six disciplines, in the vision-only format where the question itself is embedded in a screenshot. MMMU-Pro filters out text-answerable questions and expands the choice set from 4 to 10 options, so it is substantially harder than the original MMMU and the two are not comparable.",
+      "Multimodal reasoning over 3,460 questions in six core disciplines. MMMU-Pro hardens the original MMMU in three ways: it filters out questions answerable by text-only models, expands the choice set from 4 to 10 options, and introduces a vision-only input format in which the question itself is embedded in a screenshot. Scores run well below MMMU and the two are not comparable. Artificial Analysis publishes one MMMU-Pro figure rather than separate standard and vision splits, so this value should not be read as either split on its own.",
     higherIsBetter: true,
     unit: "percent",
     category: "reasoning",
