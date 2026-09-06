@@ -2,7 +2,7 @@ import fs from "node:fs";
 import { execFileSync } from "node:child_process";
 import { load } from "./update-benchmarks/load.mjs";
 
-const asOf = "2026-09-05";
+const asOf = "2026-09-06";
 
 const models = load("src/data/models.ts", "models");
 const imageModels = load("src/data/image-models.ts", "imageModels");
@@ -99,7 +99,7 @@ check(
   "evidence ledger must include every model, including intentional empty records"
 );
 
-check(models.length === 283, `expected 283 models, found ${models.length}`);
+check(models.length === 287, `expected 287 models, found ${models.length}`);
 check(new Set(models.map((model) => model.slug)).size === models.length, "duplicate model slug");
 const expectedEmptyBenchmarkModels = new Set(emptyBenchmarkManifest.slugs);
 check(
@@ -118,6 +118,10 @@ check(bySlug["granite-4-2-8b"], "Granite 4.2 8B should be catalogued");
 check(bySlug["hy4-preview"], "Hy4 Preview should be catalogued");
 check(bySlug["ling-3-0-flash"], "Ling-3.0 Flash should be catalogued");
 check(bySlug["qwen3-8-max-0902"], "Qwen3.8 Max 0902 should be catalogued");
+check(bySlug["mimo-v2-5-pro"], "MiMo-V2.5-Pro should be catalogued");
+check(bySlug["mimo-v2-5"], "MiMo-V2.5 should be catalogued");
+check(bySlug["granite-4-2-3b"], "Granite 4.2 3B should be catalogued");
+check(bySlug["ling-3-0-tiny"], "Ling-3.0 Tiny should be catalogued");
 
 for (const model of models) {
   check(model.releaseDate <= asOf, `${model.slug} has a future release date`);
@@ -272,7 +276,7 @@ exact("glm-5-3", "openSource", true);
 exact("hy4-preview", "parameters.total", 770);
 exact("hy4-preview", "parameters.active", 49);
 exact("granite-4-2-30b", "benchmarks.swe-bench-verified", 57);
-exact("qwen3-8-max-0902", "benchmarks.webdev-arena", 1688.7);
+exact("qwen3-8-max-0902", "benchmarks.webdev-arena", 1686.1);
 exact("gpt-5-6-sol", "benchmarks.deepswe", 72.7);
 
 for (const slug of expectedEmptyBenchmarkModels) {
@@ -287,7 +291,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 2166, `expected 2166 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 2210, `expected 2210 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);

@@ -10,7 +10,7 @@ import { modelFamilyId, modelFamilyLabel } from "@/lib/model-family";
 
 export { QUALITY_COMPARABLE_ELO_BAND, type OverallBasis };
 
-export const DATA_FRESHNESS = "2026-09-05";
+export const DATA_FRESHNESS = "2026-09-06";
 
 /** Display for an absent numeric or text field. Never a guessed zero. */
 export const MISSING = "—";
