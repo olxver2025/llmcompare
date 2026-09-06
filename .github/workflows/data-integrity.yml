@@ -193,7 +193,7 @@ jobs:
           prompt: "/verify-data-sources"
           claude_args: |
             --max-turns 80
-            --allowedTools "Read,Grep,Glob,Write,WebFetch,WebSearch"
+            --allowedTools "Read,Grep,Glob,Write,WebFetch,WebSearch,Bash(node scripts/ci/*),Bash(git diff:*),Bash(git log:*),Bash(cat:*)"
 
       - name: Gate on the review verdict
         if: steps.credential.outputs.present == 'true'
