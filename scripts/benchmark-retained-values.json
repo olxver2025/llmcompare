@@ -2674,6 +2674,95 @@
       "aa-omniscience-accuracy": 8.5,
       "aa-lcr": 60.3,
       "tau3-banking": 20.8
+    },
+    "apertus-8b-instruct": {
+      "aa-omniscience-accuracy": 9.7,
+      "gpqa-diamond": 25.6,
+      "hle": 5,
+      "ifbench": 22.4
+    },
+    "apertus-70b-instruct": {
+      "aa-omniscience-accuracy": 11.6,
+      "gpqa-diamond": 27.2,
+      "hle": 5.5,
+      "ifbench": 25.9
+    },
+    "olmo-3-7b-instruct": {
+      "aa-omniscience-accuracy": 7.4,
+      "gpqa-diamond": 40,
+      "hle": 5.8,
+      "ifbench": 32.8
+    },
+    "olmo-3-1-32b-instruct": {
+      "aa-omniscience-accuracy": 12,
+      "gpqa-diamond": 53.9,
+      "hle": 5,
+      "ifbench": 39.2
+    },
+    "intellect-3": {
+      "aa-lcr": 39.7,
+      "aa-omniscience-accuracy": 19.6,
+      "critpt": 0.3,
+      "gpqa-diamond": 76.1,
+      "hle": 13.1,
+      "ifbench": 34,
+      "lmarena-elo": 1356.2
+    },
+    "seed-oss-36b-instruct": {
+      "aa-lcr": 61.3,
+      "aa-omniscience-accuracy": 18.2,
+      "gpqa-diamond": 72.6,
+      "hle": 9.9,
+      "ifbench": 41.9
+    },
+    "kimi-linear-48b-a3b-instruct": {
+      "aa-lcr": 28,
+      "gpqa-diamond": 41.2,
+      "hle": 2.5,
+      "ifbench": 28.1
+    },
+    "hy3": {
+      "aa-lcr": 79,
+      "aa-omniscience-accuracy": 32,
+      "critpt": 4.9,
+      "gpqa-diamond": 89.7,
+      "hle": 33.5,
+      "lmarena-elo": 1455.4,
+      "scicode": 48.6,
+      "tau3-banking": 22.9,
+      "terminal-bench-2-1": 64.4,
+      "webdev-arena": 1511.6
+    },
+    "mercury-2": {
+      "aa-lcr": 43.7,
+      "aa-omniscience-accuracy": 21.2,
+      "critpt": 0.8,
+      "gpqa-diamond": 77,
+      "hle": 17.1,
+      "ifbench": 69.8,
+      "tau3-banking": 9.5,
+      "terminal-bench-2-1": 27.3
+    },
+    "k2-think-v2": {
+      "aa-lcr": 57,
+      "aa-omniscience-accuracy": 18,
+      "gpqa-diamond": 71.3,
+      "hle": 10.1,
+      "ifbench": 62.8,
+      "terminal-bench-2-1": 15
+    },
+    "lfm2-5-1-2b-instruct": {
+      "aa-omniscience-accuracy": 7,
+      "gpqa-diamond": 32.6,
+      "hle": 6.7,
+      "ifbench": 43.8
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "aa-omniscience-accuracy": 14.3,
+      "gpqa-diamond": 62,
+      "hle": 4.6,
+      "ifbench": 31.2,
+      "mmmu-pro": 55.5
     }
   }
 }
