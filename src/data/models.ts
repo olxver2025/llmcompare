@@ -799,6 +799,7 @@ export const models: Model[] = [
       critpt: 20.9,
       "tau3-banking": 34.2,
       ifbench: 62.2,
+      "aa-intelligence-index": 47.8,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -1535,6 +1536,7 @@ export const models: Model[] = [
       "tau3-banking": 12.4,
       "mmmu-pro": 78.1,
       ifbench: 81.3,
+      "aa-intelligence-index": 29.9,
     },
     links: {
       docs: "https://docs.x.ai/developers/models/grok-4.3",
@@ -1771,6 +1773,7 @@ export const models: Model[] = [
       "aa-lcr": 77.7,
       critpt: 15.1,
       "tau3-banking": 31.8,
+      "aa-intelligence-index": 41.2,
     },
     links: {
       docs: "https://dev.meta.ai/docs/models.md",
@@ -2022,6 +2025,7 @@ export const models: Model[] = [
       critpt: 12.9,
       "tau3-banking": 30.1,
       ifbench: 76.5,
+      "aa-intelligence-index": 34.5,
     },
     links: {
       docs: "https://api-docs.deepseek.com/",
@@ -2062,6 +2066,7 @@ export const models: Model[] = [
       critpt: 7.1,
       "tau3-banking": 30.9,
       ifbench: 79.2,
+      "aa-intelligence-index": 30.7,
     },
     links: {
       docs: "https://api-docs.deepseek.com/",
@@ -2132,7 +2137,9 @@ export const models: Model[] = [
       offPeak: { inputPer1M: 0.22, outputPer1M: 0.66 },
       peakHours: "01:00-04:00 and 06:00-10:00 UTC",
     },
-    benchmarks: {},
+    benchmarks: {
+      "aa-intelligence-index": 40.7,
+    },
     links: {
       docs: "https://api-docs.deepseek.com/",
       announcement: "https://api-docs.deepseek.com/news/news260821/",
@@ -2322,7 +2329,7 @@ export const models: Model[] = [
       "toolathlon-verified": 72.5,
       "automation-bench": 27.3,
       deepswe: 56.6,
-      "aa-intelligence-index": 46.9,
+      "aa-intelligence-index": 46.7,
       "aa-omniscience-accuracy": 31.9,
       "aa-lcr": 78.3,
       critpt: 20,
@@ -2458,6 +2465,7 @@ export const models: Model[] = [
       "tau3-banking": 17.5,
       "mmmu-pro": 80.5,
       ifbench: 78,
+      "aa-intelligence-index": 31.9,
     },
     links: {
       docs: "https://www.alibabacloud.com/help/en/model-studio/",
@@ -2546,6 +2554,7 @@ export const models: Model[] = [
       critpt: 13.4,
       "tau3-banking": 11.8,
       ifbench: 80.5,
+      "aa-intelligence-index": 36.6,
     },
     links: {
       docs: "https://www.alibabacloud.com/help/en/model-studio/",
@@ -3203,6 +3212,7 @@ export const models: Model[] = [
       ifbench: 67.1,
       "lmarena-elo": 1433.8,
       "webdev-arena": 1437.7,
+      "aa-intelligence-index": 28.2,
     },
     links: {
       modelCard: "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
@@ -3241,6 +3251,7 @@ export const models: Model[] = [
       critpt: 10,
       "tau3-banking": 20.2,
       ifbench: 63.1,
+      "aa-intelligence-index": 32.7,
     },
     links: {
       modelCard: "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
@@ -3320,6 +3331,7 @@ export const models: Model[] = [
       critpt: 20.9,
       "tau3-banking": 34.6,
       ifbench: 73.3,
+      "aa-intelligence-index": 42.1,
     },
     links: {
       docs: "https://docs.z.ai/",
@@ -3651,6 +3663,7 @@ export const models: Model[] = [
       hle: 26.7,
       livecodebench: 89.0,
       "terminal-bench-2-1": 56.4,
+      "aa-intelligence-index": 29.3,
     },
     links: {
       modelCard: "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
@@ -8222,6 +8235,7 @@ export const models: Model[] = [
       critpt: 8.3,
       "tau3-banking": 18.8,
       "mmmu-pro": 74,
+      "aa-intelligence-index": 32.2,
     },
     links: {
       modelCard: "https://huggingface.co/thinkingmachines/Inkling-Small",
@@ -8229,5 +8243,96 @@ export const models: Model[] = [
     },
     summary:
       "Efficient Inkling sibling (276B / 12B active MoE) — matches or beats Inkling on many benchmarks at ~¼ the size; Apache 2.0 weights with Tinker fine-tuning access.",
+  },
+  {
+    slug: "hy3",
+    name: "Hy3",
+    organization: "Tencent",
+    releaseDate: "2026-07-06",
+    openSource: true,
+    license: "Apache 2.0",
+    parameters: { total: 295, active: 21 },
+    contextWindow: 262_144,
+    modalities: { input: ["text"], output: ["text"] },
+    pricing: { provider: "Tencent Cloud", inputPer1M: 0.132, outputPer1M: 0.528 },
+    benchmarks: {
+      "gpqa-diamond": 89.7,
+      hle: 33.5,
+      scicode: 48.6,
+      "terminal-bench-2-1": 64.4,
+      "aa-intelligence-index": 32.4,
+      "aa-omniscience-accuracy": 32,
+      "aa-lcr": 79,
+      critpt: 4.9,
+      "tau3-banking": 22.9,
+      "lmarena-elo": 1455.4,
+      "webdev-arena": 1511.6,
+    },
+    links: {
+      modelCard: "https://huggingface.co/tencent/Hy3",
+      announcement: "https://www.tencent.com/en-us/articles/2202386.html",
+      docs: "https://cloud.tencent.com/document/product/1729",
+    },
+    summary:
+      "Tencent Hunyuan team's Jul 6, 2026 GA release of Hy3 (295B MoE / 21B active, Apache 2.0), graduating the preview SKU with disclosed weights, a 256K context window, and stronger agentic tool-use; open weights on Hugging Face, hosted via Tencent Cloud at $0.132/$0.528 per 1M tokens.",
+  },
+  {
+    slug: "celeris-1",
+    name: "Celeris-1",
+    organization: "Celeris",
+    releaseDate: "2026-07-27",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 131_072,
+    modalities: { input: ["text"], output: ["text"] },
+    pricing: { provider: "Celeris", inputPer1M: 0.2, outputPer1M: 0.7 },
+    speed: { tokensPerSec: 1626, ttftSeconds: 0.158 },
+    benchmarks: {
+      "gpqa-diamond": 63.1,
+      hle: 6.8,
+      scicode: 21.6,
+      "terminal-bench-2-1": 11.2,
+      "aa-intelligence-index": 7.6,
+      "aa-omniscience-accuracy": 11,
+      "aa-lcr": 38,
+      "tau3-banking": 3.9,
+    },
+    links: {
+      docs: "https://docs.celeris.ai/",
+      announcement:
+        "https://www.prnewswire.com/news-releases/celeris-unveils-celeris-1-unlocking-real-time-ai-through-diffusion-based-language-generation-302835273.html",
+    },
+    summary:
+      "Celeris's Jul 27, 2026 debut model — a diffusion-architecture LLM (not autoregressive) tuned for short, structured agentic calls like classification, extraction, and routing; trades a 128K combined prompt+completion budget and modest reasoning depth for very high throughput (~1.6k tok/s) and low latency via an OpenAI-compatible API at $0.20/$0.70 per 1M tokens.",
+  },
+  {
+    slug: "quasar-438b",
+    name: "Quasar 438B",
+    organization: "Multiverse Computing",
+    releaseDate: "2026-09-02",
+    openSource: false,
+    license: "Proprietary",
+    parameters: { total: 438 },
+    contextWindow: 1_000_000,
+    modalities: { input: ["text"], output: ["text"] },
+    pricing: { provider: "CompactifAI", inputPer1M: 0.6, outputPer1M: 1.8 },
+    benchmarks: {
+      "gpqa-diamond": 73.2,
+      hle: 18.7,
+      scicode: 48.1,
+      "terminal-bench-2-1": 69.3,
+      "aa-intelligence-index": 34.2,
+      "aa-omniscience-accuracy": 15.5,
+      "aa-lcr": 76.3,
+      critpt: 9.4,
+      "tau3-banking": 28.7,
+    },
+    links: {
+      docs: "https://multiversecomputing.com/resources/introducing-quasar-438b-europe-s-leading-ai-model",
+      announcement:
+        "https://multiversecomputing.com/resources/introducing-quasar-438b-europe-s-leading-ai-model",
+    },
+    summary:
+      "Multiverse Computing's Sept 2, 2026 flagship — a 438B reasoning model built by compressing/optimizing Zhipu's GLM-5.2 with the company's CompactifAI tensor-network technology; marketed as the top-scoring model built by a European AI company, with always-on extended thinking, a 1M context window, and API-only access at $0.60/$1.80 per 1M tokens.",
   },
 ];

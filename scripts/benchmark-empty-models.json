@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-06",
+  "asOf": "2026-09-07",
   "slugs": [
     "amazon-nova-2-lite",
     "amazon-nova-lite",
@@ -19,7 +19,6 @@
     "command-r7b",
     "composer-2",
     "deepseek-v2",
-    "deepseek-v4-flash-vision-exp",
     "falcon-180b",
     "falcon-40b",
     "gemini-2-0-flash-thinking",

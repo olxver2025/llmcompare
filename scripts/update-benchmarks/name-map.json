@@ -29,7 +29,10 @@
     },
     "aa-intelligence-index": {
       "claude-haiku-4-5": "Claude 4.5 Haiku",
-      "gemini-3-1-pro": "Gemini 3.1 Pro Preview"
+      "gemini-3-1-pro": "Gemini 3.1 Pro Preview",
+      "nemotron-3-ultra": "Nemotron 3 Ultra 550B A55B",
+      "deepseek-v4-flash-vision-exp": "DeepSeek V4 Flash Vision",
+      "qwen3-8-max": "Qwen3.8 2.4T A95B"
     },
     "swe-rebench": {
       "gpt-5-4": "gpt-5.4-2026-03-05-medium [tools]",
