@@ -3,7 +3,7 @@
     "terminal-bench-science": {
       "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
       "evaluationDate": "2026-09-01",
-      "protocol": "Anthropic's Fable 5.1 / Mythos 5.1 launch comparison table, Terminal-Bench-Science 0.1, Claude Fable 5.1 at max effort; standard error is roughly \u00b13.5-4.5 pts per model."
+      "protocol": "Anthropic's Fable 5.1 / Mythos 5.1 launch comparison table, Terminal-Bench-Science 0.1, Claude Fable 5.1 at max effort; standard error is roughly ±3.5-4.5 pts per model."
     },
     "terminal-bench-4": {
       "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/4.0",
@@ -98,7 +98,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)', tauBanking score."
     }
   },
   "claude-mythos-5-1": {
@@ -177,7 +177,7 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, GPT-5.6 Sol (max), Elo (\u00b115)."
+      "protocol": "GDPval-AA v2 leaderboard, GPT-5.6 Sol (max), Elo (±15)."
     },
     "deepswe": {
       "sourceUrl": "https://openai.com/index/gpt-6-astra/",
@@ -206,7 +206,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'GPT-5.6 Sol (max)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -227,7 +227,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'GPT-5.6 Sol (max)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'GPT-5.6 Sol (max)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -299,11 +299,11 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, GPT-5.6 Terra (max), Elo (\u00b115)."
+      "protocol": "GDPval-AA v2 leaderboard, GPT-5.6 Terra (max), Elo (±15)."
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'GPT-5.6 Terra (max)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -324,7 +324,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'GPT-5.6 Terra (max)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'GPT-5.6 Terra (max)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -401,7 +401,7 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, GPT-5.6 Luna (max), Elo (\u00b115)."
+      "protocol": "GDPval-AA v2 leaderboard, GPT-5.6 Luna (max), Elo (±15)."
     },
     "deepswe": {
       "sourceUrl": "https://deepswe.datacurve.ai/",
@@ -410,7 +410,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'GPT-5.6 Luna (max)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -431,7 +431,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'GPT-5.6 Luna (max)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'GPT-5.6 Luna (max)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -482,7 +482,7 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-02",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'GPT-5.5 (xhigh)', scicode score."
     },
     "webdev-arena": {
@@ -498,7 +498,7 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, GPT-5.5 (xhigh), Elo (\u00b115)."
+      "protocol": "GDPval-AA v2 leaderboard, GPT-5.5 (xhigh), Elo (±15)."
     },
     "deepswe": {
       "sourceUrl": "https://deepswe.datacurve.ai/",
@@ -523,7 +523,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'GPT-5.5 (xhigh)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'GPT-5.5 (xhigh)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -534,6 +534,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'GPT-5.5 (xhigh)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'GPT-5.5 (xhigh)', intelligenceIndex score."
     }
   },
   "gpt-5-4": {
@@ -595,7 +600,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'GPT-5.4 (xhigh)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'GPT-5.4 (xhigh)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -637,7 +642,7 @@
     "swe-bench-pro": {
       "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
       "evaluationDate": "2026-09-03",
-      "protocol": "SWE-bench Pro public leaderboard, gpt-5-2025-08-07 (High), resolved % (\u00b13.49)."
+      "protocol": "SWE-bench Pro public leaderboard, gpt-5-2025-08-07 (High), resolved % (±3.49)."
     },
     "lmarena-elo": {
       "sourceUrl": "https://lmarena.ai/leaderboard/text",
@@ -672,7 +677,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'GPT-5 (high)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'GPT-5 (high)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -723,7 +728,7 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-04",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'GPT-5 mini (high)', scicode score."
     },
     "terminal-bench-2-1": {
@@ -744,7 +749,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'GPT-5 mini (high)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'GPT-5 mini (high)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -755,6 +760,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'GPT-5 mini (high)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'GPT-5 mini (high)', intelligenceIndex score."
     }
   },
   "gpt-5-nano": {
@@ -1094,7 +1104,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'GPT-4.1 mini', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'GPT-4.1 mini', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -1171,7 +1181,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'GPT-4.1 nano', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'GPT-4.1 nano', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -1182,6 +1192,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'GPT-4.1 nano', ifbench score."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'GPT-4.1 nano', lcr score."
     }
   },
   "gpt-4o-mini": {
@@ -1243,7 +1258,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'GPT-4o mini', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'GPT-4o mini', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -1325,7 +1340,7 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, Claude Opus 5 (Adaptive Reasoning, Max Effort), Elo (\u00b118)."
+      "protocol": "GDPval-AA v2 leaderboard, Claude Opus 5 (Adaptive Reasoning, Max Effort), Elo (±18)."
     },
     "agents-last-exam": {
       "sourceUrl": "https://openai.com/index/gpt-6-astra/",
@@ -1359,7 +1374,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Claude Opus 5 (Adaptive Reasoning, Max Effort)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -1380,7 +1395,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Claude Opus 5 (Adaptive Reasoning, Max Effort)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Claude Opus 5 (Adaptive Reasoning, Max Effort)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -1481,7 +1496,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -1502,7 +1517,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)', tauBanking score."
     },
     "ifbench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
@@ -1631,7 +1646,7 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, Claude Opus 4.8 (Adaptive Reasoning, Max Effort), Elo (\u00b115)."
+      "protocol": "GDPval-AA v2 leaderboard, Claude Opus 4.8 (Adaptive Reasoning, Max Effort), Elo (±15)."
     },
     "deepswe": {
       "sourceUrl": "https://deepswe.datacurve.ai/",
@@ -1656,12 +1671,17 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Claude Opus 4.8 (Adaptive Reasoning, Max Effort)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Claude Opus 4.8 (Adaptive Reasoning, Max Effort)', tauBanking score."
     },
     "ifbench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Claude Opus 4.8 (Adaptive Reasoning, Max Effort)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Claude Opus 4.8 (Adaptive Reasoning, Max Effort)', intelligenceIndex score."
     }
   },
   "claude-sonnet-5": {
@@ -1723,7 +1743,7 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, Claude Sonnet 5 (Adaptive Reasoning, Max Effort), Elo (\u00b115)."
+      "protocol": "GDPval-AA v2 leaderboard, Claude Sonnet 5 (Adaptive Reasoning, Max Effort), Elo (±15)."
     },
     "deepswe": {
       "sourceUrl": "https://deepswe.datacurve.ai/",
@@ -1732,7 +1752,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Claude Sonnet 5 (Adaptive Reasoning, Max Effort)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -1753,7 +1773,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Claude Sonnet 5 (Adaptive Reasoning, Max Effort)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Claude Sonnet 5 (Adaptive Reasoning, Max Effort)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -1785,7 +1805,7 @@
     "swe-bench-pro": {
       "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
       "evaluationDate": "2026-09-03",
-      "protocol": "SWE-bench Pro public leaderboard, claude-opus-4-5-20251101, resolved % (\u00b13.60)."
+      "protocol": "SWE-bench Pro public leaderboard, claude-opus-4-5-20251101, resolved % (±3.60)."
     },
     "gpqa-diamond": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
@@ -1856,7 +1876,7 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-02",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)', scicode score."
     },
     "terminal-bench-2-1": {
@@ -1882,7 +1902,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -1893,6 +1913,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)', intelligenceIndex score."
     }
   },
   "claude-haiku-4-5": {
@@ -1919,11 +1944,11 @@
     "swe-bench-pro": {
       "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
       "evaluationDate": "2026-09-03",
-      "protocol": "SWE-bench Pro public leaderboard, claude-4-5-haiku, resolved % (\u00b13.55)."
+      "protocol": "SWE-bench Pro public leaderboard, claude-4-5-haiku, resolved % (±3.55)."
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-06",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Claude 4.5 Haiku (Reasoning)', intelligenceIndex score."
     }
   },
@@ -1951,7 +1976,7 @@
     "swe-bench-pro": {
       "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
       "evaluationDate": "2026-09-03",
-      "protocol": "SWE-bench Pro public leaderboard, claude-4-Sonnet, resolved % (\u00b13.59)."
+      "protocol": "SWE-bench Pro public leaderboard, claude-4-Sonnet, resolved % (±3.59)."
     }
   },
   "claude-haiku-3-5": {
@@ -2054,7 +2079,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-06",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Gemini 3.1 Pro Preview', intelligenceIndex score."
     }
   },
@@ -2143,7 +2168,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Gemini 3.6 Flash (high)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -2164,7 +2189,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Gemini 3.6 Flash (high)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Gemini 3.6 Flash (high)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -2221,7 +2246,7 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, Gemini 3.7 Flash (high), Elo (\u00b117)."
+      "protocol": "GDPval-AA v2 leaderboard, Gemini 3.7 Flash (high), Elo (±17)."
     },
     "terminal-bench-science": {
       "sourceUrl": "https://snorkel.ai/leaderboard/terminal-bench-science/",
@@ -2235,7 +2260,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Gemini 3.7 Flash (high)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -2256,7 +2281,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Gemini 3.7 Flash (high)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Gemini 3.7 Flash (high)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -2327,7 +2352,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Gemini 3.8 Flash (high)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -2348,7 +2373,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Gemini 3.8 Flash (high)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Gemini 3.8 Flash (high)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -2382,7 +2407,7 @@
     "swe-bench-pro": {
       "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
       "evaluationDate": "2026-09-03",
-      "protocol": "SWE-bench Pro public leaderboard, gemini-3-flash, resolved % (\u00b13.55)."
+      "protocol": "SWE-bench Pro public leaderboard, gemini-3-flash, resolved % (±3.55)."
     }
   },
   "gemini-3-5-flash-lite": {
@@ -2423,7 +2448,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Gemini 3.5 Flash-Lite', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -2439,7 +2464,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Gemini 3.5 Flash-Lite', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Gemini 3.5 Flash-Lite', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -2495,8 +2520,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Gemini 2.5 Pro, scicode score."
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Gemini 2.5 Pro', scicode score."
     },
     "livecodebench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/livecodebench",
@@ -2531,7 +2556,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Gemini 2.5 Pro', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Gemini 2.5 Pro', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -2542,6 +2567,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Gemini 2.5 Pro', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Gemini 2.5 Pro', intelligenceIndex score."
     }
   },
   "gemini-2-5-flash": {
@@ -2670,7 +2700,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Gemma 4 31B (Reasoning)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Gemma 4 31B (Reasoning)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -2681,6 +2711,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Gemma 4 31B (Reasoning)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Gemma 4 31B (Reasoning)', intelligenceIndex score."
     }
   },
   "gemma-4-26b": {
@@ -2816,11 +2851,11 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, Grok 4.5 (high), Elo (\u00b117)."
+      "protocol": "GDPval-AA v2 leaderboard, Grok 4.5 (high), Elo (±17)."
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Grok 4.5 (high)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -2841,7 +2876,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Grok 4.5 (high)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Grok 4.5 (high)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -2903,7 +2938,7 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, Grok 4.6 (xhigh), Elo (\u00b118)."
+      "protocol": "GDPval-AA v2 leaderboard, Grok 4.6 (xhigh), Elo (±18)."
     },
     "deepswe": {
       "sourceUrl": "https://deepswe.datacurve.ai/",
@@ -2912,7 +2947,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Grok 4.6 (high)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -2933,7 +2968,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Grok 4.6 (high)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Grok 4.6 (high)', tauBanking score."
     }
   },
   "grok-4-3": {
@@ -2985,7 +3020,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Grok 4.3 (high)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Grok 4.3 (high)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -2996,6 +3031,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Grok 4.3 (high)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Grok 4.3 (high)', intelligenceIndex score."
     }
   },
   "grok-4-1": {
@@ -3121,7 +3161,7 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, Muse Spark 1.2 (xhigh), Elo (\u00b117)."
+      "protocol": "GDPval-AA v2 leaderboard, Muse Spark 1.2 (xhigh), Elo (±17)."
     },
     "deepswe": {
       "sourceUrl": "https://deepswe.datacurve.ai/",
@@ -3130,7 +3170,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Muse Spark 1.2 (xhigh)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -3151,7 +3191,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Muse Spark 1.2 (xhigh)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Muse Spark 1.2 (xhigh)', tauBanking score."
     }
   },
   "muse-glimmer": {
@@ -3197,7 +3237,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Muse Glimmer (high)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -3218,7 +3258,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Muse Glimmer (high)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Muse Glimmer (high)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -3280,7 +3320,12 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Muse Spark 1.1 (xhigh)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Muse Spark 1.1 (xhigh)', tauBanking score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Muse Spark 1.1 (xhigh)', intelligenceIndex score."
     }
   },
   "llama-4-maverick": {
@@ -3326,8 +3371,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Llama 4 Maverick, scicode score."
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Llama 4 Maverick', scicode score."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -3352,7 +3397,7 @@
     "swe-bench-pro": {
       "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
       "evaluationDate": "2026-09-03",
-      "protocol": "SWE-bench Pro public leaderboard, llama4-maverick-17b-instruct, resolved % (\u00b11.24)."
+      "protocol": "SWE-bench Pro public leaderboard, llama4-maverick-17b-instruct, resolved % (±1.24)."
     },
     "aa-omniscience-accuracy": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
@@ -3367,7 +3412,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Llama 4 Maverick', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Llama 4 Maverick', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -3378,6 +3423,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Llama 4 Maverick', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Llama 4 Maverick', intelligenceIndex score."
     }
   },
   "llama-4-scout": {
@@ -3418,8 +3468,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Llama 4 Scout, scicode score."
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Llama 4 Scout', scicode score."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -3449,7 +3499,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Llama 4 Scout', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Llama 4 Scout', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -3460,6 +3510,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Llama 4 Scout', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Llama 4 Scout', intelligenceIndex score."
     }
   },
   "llama-3-3-70b": {
@@ -3677,12 +3732,17 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'DeepSeek V4 Pro (Reasoning, Max Effort)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'DeepSeek V4 Pro (Reasoning, Max Effort)', tauBanking score."
     },
     "ifbench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'DeepSeek V4 Pro (Reasoning, Max Effort)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'DeepSeek V4 Pro (Reasoning, Max Effort)', intelligenceIndex score."
     }
   },
   "deepseek-v4-flash": {
@@ -3769,12 +3829,17 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'DeepSeek V4 Flash (Reasoning, Max Effort)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'DeepSeek V4 Flash (Reasoning, Max Effort)', tauBanking score."
     },
     "ifbench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'DeepSeek V4 Flash (Reasoning, Max Effort)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'DeepSeek V4 Flash (Reasoning, Max Effort)', intelligenceIndex score."
     }
   },
   "deepseek-v4-flash-0731": {
@@ -3831,11 +3896,11 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, DeepSeek V4 Flash 0731 (Reasoning, Max Effort), Elo (\u00b117)."
+      "protocol": "GDPval-AA v2 leaderboard, DeepSeek V4 Flash 0731 (Reasoning, Max Effort), Elo (±17)."
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'DeepSeek V4 Flash 0731 (Reasoning, Max Effort)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -3856,7 +3921,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'DeepSeek V4 Flash 0731 (Reasoning, Max Effort)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'DeepSeek V4 Flash 0731 (Reasoning, Max Effort)', tauBanking score."
     }
   },
   "deepseek-v4-pro-0813": {
@@ -3913,11 +3978,11 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, DeepSeek V4 Pro 0813 (Reasoning, Max Effort), Elo (\u00b118)."
+      "protocol": "GDPval-AA v2 leaderboard, DeepSeek V4 Pro 0813 (Reasoning, Max Effort), Elo (±18)."
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'DeepSeek V4 Pro 0813 (Reasoning, Max Effort)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -3938,7 +4003,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'DeepSeek V4 Pro 0813 (Reasoning, Max Effort)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'DeepSeek V4 Pro 0813 (Reasoning, Max Effort)', tauBanking score."
     }
   },
   "deepseek-v3-2": {
@@ -4236,11 +4301,11 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, Qwen3.8 Max (max), Elo (\u00b116)."
+      "protocol": "GDPval-AA v2 leaderboard, Qwen3.8 Max (max), Elo (±16)."
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Qwen3.8 Max', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -4261,7 +4326,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Qwen3.8 Max', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Qwen3.8 Max', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -4323,11 +4388,11 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, Qwen3.8 27B (xhigh), Elo (\u00b118)."
+      "protocol": "GDPval-AA v2 leaderboard, Qwen3.8 27B (xhigh), Elo (±18)."
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Qwen3.8 27B (xhigh)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -4348,7 +4413,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Qwen3.8 27B (xhigh)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Qwen3.8 27B (xhigh)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -4400,7 +4465,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Qwen3.7 Plus', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Qwen3.7 Plus', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -4411,6 +4476,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Qwen3.7 Plus', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Qwen3.7 Plus', intelligenceIndex score."
     }
   },
   "qwen3-6-plus": {
@@ -4462,7 +4532,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Qwen3.6 Plus', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Qwen3.6 Plus', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -4534,12 +4604,17 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Qwen3.7 Max', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Qwen3.7 Max', tauBanking score."
     },
     "ifbench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Qwen3.7 Max', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Qwen3.7 Max', intelligenceIndex score."
     }
   },
   "qwen3-5-397b": {
@@ -4575,7 +4650,7 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-04",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Qwen3.5 397B A17B (Reasoning)', scicode score."
     },
     "terminal-bench-2-1": {
@@ -4601,7 +4676,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Qwen3.5 397B A17B (Reasoning)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Qwen3.5 397B A17B (Reasoning)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -4612,6 +4687,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Qwen3.5 397B A17B (Reasoning)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Qwen3.5 397B A17B (Reasoning)', intelligenceIndex score."
     }
   },
   "qwen3-235b": {
@@ -4648,7 +4728,7 @@
     "swe-bench-pro": {
       "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
       "evaluationDate": "2026-09-03",
-      "protocol": "SWE-bench Pro public leaderboard, qwen3-235b-a22b, resolved % (\u00b12.25)."
+      "protocol": "SWE-bench Pro public leaderboard, qwen3-235b-a22b, resolved % (±2.25)."
     },
     "aider-polyglot": {
       "sourceUrl": "https://aider.chat/docs/leaderboards/",
@@ -4771,7 +4851,7 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-04",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Qwen3 32B (Reasoning)', scicode score."
     },
     "terminal-bench-2-1": {
@@ -4792,12 +4872,17 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Qwen3 32B (Reasoning)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Qwen3 32B (Reasoning)', tauBanking score."
     },
     "ifbench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Qwen3 32B (Reasoning)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Qwen3 32B (Reasoning)', intelligenceIndex score."
     }
   },
   "mistral-large-3": {
@@ -4848,7 +4933,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Mistral Large 3', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -4864,7 +4949,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Mistral Large 3', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Mistral Large 3', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -4921,7 +5006,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Mistral Medium 3.5', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Mistral Medium 3.5', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -4932,6 +5017,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Mistral Medium 3.5', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Mistral Medium 3.5', intelligenceIndex score."
     }
   },
   "magistral-small": {
@@ -4979,8 +5069,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Devstral 2, scicode score."
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Devstral 2', scicode score."
     },
     "livecodebench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/livecodebench",
@@ -5010,12 +5100,17 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Devstral 2', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Devstral 2', tauBanking score."
     },
     "ifbench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Devstral 2', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Devstral 2', intelligenceIndex score."
     }
   },
   "mistral-small-3-2": {
@@ -5046,8 +5141,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Mistral Small 3.2, scicode score."
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Mistral Small 3.2', scicode score."
     },
     "livecodebench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/livecodebench",
@@ -5072,7 +5167,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Mistral Small 3.2', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Mistral Small 3.2', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -5083,6 +5178,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Mistral Small 3.2', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Mistral Small 3.2', intelligenceIndex score."
     }
   },
   "kimi-k3": {
@@ -5139,7 +5239,7 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, Kimi K3 (max), Elo (\u00b117)."
+      "protocol": "GDPval-AA v2 leaderboard, Kimi K3 (max), Elo (±17)."
     },
     "deepswe": {
       "sourceUrl": "https://deepswe.datacurve.ai/",
@@ -5148,7 +5248,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Kimi K3 (max)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -5169,7 +5269,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Kimi K3 (max)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Kimi K3 (max)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -5231,12 +5331,17 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Kimi K2.7 Code', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Kimi K2.7 Code', tauBanking score."
     },
     "ifbench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Kimi K2.7 Code', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Kimi K2.7 Code', intelligenceIndex score."
     }
   },
   "kimi-k2-5": {
@@ -5318,7 +5423,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Kimi K2.5 (Reasoning)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Kimi K2.5 (Reasoning)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -5385,7 +5490,7 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, GLM-5.2 (max), Elo (\u00b114)."
+      "protocol": "GDPval-AA v2 leaderboard, GLM-5.2 (max), Elo (±14)."
     },
     "deepswe": {
       "sourceUrl": "https://deepswe.datacurve.ai/",
@@ -5410,7 +5515,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'GLM-5.2 (max)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'GLM-5.2 (max)', tauBanking score."
     },
     "ifbench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
@@ -5482,7 +5587,7 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, GLM-5.3 (max), Elo (\u00b118)."
+      "protocol": "GDPval-AA v2 leaderboard, GLM-5.3 (max), Elo (±18)."
     },
     "nl2repo": {
       "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3",
@@ -5501,7 +5606,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'GLM-5.3 (max)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -5522,7 +5627,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'GLM-5.3 (max)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'GLM-5.3 (max)', tauBanking score."
     }
   },
   "glm-5": {
@@ -5641,7 +5746,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'GLM-4.7 (Reasoning)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'GLM-4.7 (Reasoning)', tauBanking score."
     },
     "ifbench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
@@ -5725,7 +5830,7 @@
     "livecodebench": {
       "sourceUrl": "https://huggingface.co/microsoft/Phi-4-reasoning",
       "evaluationDate": "2025-04-30",
-      "protocol": "Phi-4-reasoning official model-card LiveCodeBench (8/1/24\u20132/1/25)."
+      "protocol": "Phi-4-reasoning official model-card LiveCodeBench (8/1/24–2/1/25)."
     }
   },
   "minimax-m3": {
@@ -5771,7 +5876,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'MiniMax-M3', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -5792,7 +5897,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'MiniMax-M3', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'MiniMax-M3', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -5948,7 +6053,7 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, Claude Opus 4.7 (Adaptive Reasoning, Max Effort), Elo (\u00b115)."
+      "protocol": "GDPval-AA v2 leaderboard, Claude Opus 4.7 (Adaptive Reasoning, Max Effort), Elo (±15)."
     },
     "aa-omniscience-accuracy": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
@@ -5968,7 +6073,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Claude Opus 4.7 (Adaptive Reasoning, Max Effort)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Claude Opus 4.7 (Adaptive Reasoning, Max Effort)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -6072,7 +6177,7 @@
     "swe-bench-pro": {
       "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
       "evaluationDate": "2026-09-03",
-      "protocol": "SWE-bench Pro public leaderboard, claude-4-5-Sonnet, resolved % (\u00b13.60)."
+      "protocol": "SWE-bench Pro public leaderboard, claude-4-5-Sonnet, resolved % (±3.60)."
     }
   },
   "claude-opus-4-1": {
@@ -6115,7 +6220,7 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-02",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'GPT-5.4 mini (xhigh)', scicode score."
     },
     "terminal-bench-2-1": {
@@ -6151,7 +6256,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'GPT-5.4 mini (xhigh)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'GPT-5.4 mini (xhigh)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -6162,6 +6267,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'GPT-5.4 mini (xhigh)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'GPT-5.4 mini (xhigh)', intelligenceIndex score."
     }
   },
   "gpt-5-4-nano": {
@@ -6182,7 +6292,7 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-02",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'GPT-5.4 nano (xhigh)', scicode score."
     },
     "terminal-bench-2-1": {
@@ -6213,7 +6323,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'GPT-5.4 nano (xhigh)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'GPT-5.4 nano (xhigh)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -6224,6 +6334,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'GPT-5.4 nano (xhigh)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'GPT-5.4 nano (xhigh)', intelligenceIndex score."
     }
   },
   "o4-mini": {
@@ -6448,7 +6563,7 @@
     "swe-bench-pro": {
       "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
       "evaluationDate": "2026-09-03",
-      "protocol": "SWE-bench Pro public leaderboard, gpt-oss-120b, resolved % (\u00b12.67)."
+      "protocol": "SWE-bench Pro public leaderboard, gpt-oss-120b, resolved % (±2.67)."
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
@@ -6462,7 +6577,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'gpt-oss-120b (high)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -6483,7 +6598,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'gpt-oss-120b (high)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'gpt-oss-120b (high)', tauBanking score."
     },
     "ifbench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
@@ -6529,7 +6644,7 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-04",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'gpt-oss-20b (high)', scicode score."
     },
     "terminal-bench-2-1": {
@@ -6555,12 +6670,17 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'gpt-oss-20b (high)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'gpt-oss-20b (high)', tauBanking score."
     },
     "ifbench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'gpt-oss-20b (high)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'gpt-oss-20b (high)', intelligenceIndex score."
     }
   },
   "gemini-3-1-flash-lite": {
@@ -6612,7 +6732,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Gemini 3.1 Flash-Lite', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Gemini 3.1 Flash-Lite', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -6623,6 +6743,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Gemini 3.1 Flash-Lite', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Gemini 3.1 Flash-Lite', intelligenceIndex score."
     }
   },
   "grok-3": {
@@ -6730,8 +6855,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, DeepSeek V3 (Dec '24), scicode score."
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'DeepSeek V3 (Dec '24)', scicode score."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -6761,12 +6886,17 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'DeepSeek V3 (Dec '24)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'DeepSeek V3 (Dec '24)', tauBanking score."
     },
     "ifbench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'DeepSeek V3 (Dec '24)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'DeepSeek V3 (Dec '24)', intelligenceIndex score."
     }
   },
   "deepseek-r1": {
@@ -6812,7 +6942,7 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-04",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'DeepSeek R1 (Jan '25)', scicode score."
     },
     "terminal-bench-2-1": {
@@ -6838,12 +6968,17 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'DeepSeek R1 (Jan '25)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'DeepSeek R1 (Jan '25)', tauBanking score."
     },
     "ifbench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'DeepSeek R1 (Jan '25)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'DeepSeek R1 (Jan '25)', intelligenceIndex score."
     }
   },
   "qwen3-coder-480b": {
@@ -7020,7 +7155,7 @@
     "swe-bench-pro": {
       "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
       "evaluationDate": "2026-09-03",
-      "protocol": "SWE-bench Pro public leaderboard, gemma-3-27b-it, resolved % (\u00b12.15)."
+      "protocol": "SWE-bench Pro public leaderboard, gemma-3-27b-it, resolved % (±2.15)."
     },
     "aider-polyglot": {
       "sourceUrl": "https://aider.chat/docs/leaderboards/",
@@ -7067,7 +7202,7 @@
     "swe-bench-pro": {
       "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
       "evaluationDate": "2026-09-03",
-      "protocol": "SWE-bench Pro public leaderboard, llama3-1-405b-instruct, resolved % (\u00b12.15)."
+      "protocol": "SWE-bench Pro public leaderboard, llama3-1-405b-instruct, resolved % (±2.15)."
     },
     "lmarena-elo": {
       "sourceUrl": "https://lmarena.ai/leaderboard/text",
@@ -7980,7 +8115,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Gemini 3.5 Flash (high)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Gemini 3.5 Flash (high)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -7994,7 +8129,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-06",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Gemini 3.5 Flash (high)', intelligenceIndex score."
     }
   },
@@ -8564,7 +8699,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Qwen3 Next 80B A3B (Reasoning)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Qwen3 Next 80B A3B (Reasoning)', tauBanking score."
     },
     "ifbench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
@@ -8660,7 +8795,7 @@
     "swe-bench-pro": {
       "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
       "evaluationDate": "2026-09-03",
-      "protocol": "SWE-bench Pro public leaderboard, kimi-k2-instruct, resolved % (\u00b13.25)."
+      "protocol": "SWE-bench Pro public leaderboard, kimi-k2-instruct, resolved % (±3.25)."
     },
     "aa-omniscience-accuracy": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
@@ -8701,8 +8836,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Kimi K2.6, scicode score."
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Kimi K2.6', scicode score."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -8737,7 +8872,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Kimi K2.6', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Kimi K2.6', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -8835,8 +8970,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, MiniMax-M2.7, scicode score."
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'MiniMax-M2.7', scicode score."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -8871,12 +9006,17 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'MiniMax-M2.7', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'MiniMax-M2.7', tauBanking score."
     },
     "ifbench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'MiniMax-M2.7', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'MiniMax-M2.7', intelligenceIndex score."
     }
   },
   "yi-1-5-34b": {
@@ -9060,7 +9200,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Inkling (xhigh)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -9081,7 +9221,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Inkling (xhigh)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Inkling (xhigh)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -9153,12 +9293,17 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Inkling Small', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Inkling Small', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Inkling Small', mmmuPro score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Inkling Small', intelligenceIndex score."
     }
   },
   "gpt-5-5-pro": {
@@ -9196,8 +9341,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Ministral 3 14B, scicode score."
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Ministral 3 14B', scicode score."
     },
     "livecodebench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/livecodebench",
@@ -9222,7 +9367,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Ministral 3 14B', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Ministral 3 14B', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -9233,6 +9378,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Ministral 3 14B', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Ministral 3 14B', intelligenceIndex score."
     }
   },
   "ministral-3-8b": {
@@ -9258,8 +9408,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Ministral 3 8B, scicode score."
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Ministral 3 8B', scicode score."
     },
     "livecodebench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/livecodebench",
@@ -9284,7 +9434,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Ministral 3 8B', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Ministral 3 8B', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -9295,6 +9445,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Ministral 3 8B', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Ministral 3 8B', intelligenceIndex score."
     }
   },
   "ministral-3-3b": {
@@ -9320,8 +9475,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Ministral 3 3B, scicode score."
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Ministral 3 3B', scicode score."
     },
     "livecodebench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/livecodebench",
@@ -9346,7 +9501,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Ministral 3 3B', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Ministral 3 3B', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -9357,6 +9512,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Ministral 3 3B', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Ministral 3 3B', intelligenceIndex score."
     }
   },
   "granite-4-micro": {
@@ -9710,8 +9870,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Mistral Medium 3.1, scicode score."
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Mistral Medium 3.1', scicode score."
     },
     "livecodebench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/livecodebench",
@@ -9731,7 +9891,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Mistral Medium 3.1', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Mistral Medium 3.1', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -9885,8 +10045,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Solar Pro 3, scicode score."
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Solar Pro 3', scicode score."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -9906,12 +10066,17 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Solar Pro 3', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Solar Pro 3', tauBanking score."
     },
     "ifbench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Solar Pro 3', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Solar Pro 3', intelligenceIndex score."
     }
   },
   "longcat-2-0": {
@@ -9953,7 +10118,12 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'LongCat 2.0', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'LongCat 2.0', tauBanking score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'LongCat 2.0', intelligenceIndex score."
     }
   },
   "sonar-reasoning": {
@@ -10039,7 +10209,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Ling 2.6 Flash', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Ling 2.6 Flash', tauBanking score."
     },
     "ifbench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
@@ -10548,7 +10718,7 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, GLM-5.3-Flash, Elo (\u00b118)."
+      "protocol": "GDPval-AA v2 leaderboard, GLM-5.3-Flash, Elo (±18)."
     },
     "deepswe": {
       "sourceUrl": "https://deepswe.datacurve.ai/",
@@ -10557,7 +10727,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'GLM-5.3-Flash', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -10578,7 +10748,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'GLM-5.3-Flash', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'GLM-5.3-Flash', tauBanking score."
     }
   },
   "qwen3-8-flash-next": {
@@ -10610,7 +10780,7 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-03",
-      "protocol": "GDPval-AA v2 leaderboard, Qwen3.8-Flash-Next, Elo (\u00b121)."
+      "protocol": "GDPval-AA v2 leaderboard, Qwen3.8-Flash-Next, Elo (±21)."
     },
     "aa-omniscience-accuracy": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
@@ -10630,7 +10800,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Qwen3.8-Flash-Next', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Qwen3.8-Flash-Next', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -10642,41 +10812,41 @@
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
       "evaluationDate": "2026-09-02",
-      "protocol": "GDPval-AA v2 leaderboard, Muse Spark 1.3 (max), Elo (\u00b123)."
+      "protocol": "GDPval-AA v2 leaderboard, Muse Spark 1.3 (max), Elo (±23)."
     },
     "gpqa-diamond": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-      "evaluationDate": "2026-09-04",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Muse Spark 1.3 (max)', gpqa score."
     },
     "hle": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-      "evaluationDate": "2026-09-04",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Muse Spark 1.3 (max)', hle score."
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Muse Spark 1.3 (max)', scicode score."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
-      "evaluationDate": "2026-09-04",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Terminal-Bench 2.1 leaderboard snapshot, listing 'Muse Spark 1.3 (max)', terminalbenchV21 score."
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Muse Spark 1.3 (max)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Muse Spark 1.3 (max)', omniscienceAccuracy score."
     },
     "aa-lcr": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Muse Spark 1.3 (max)', lcr score."
     },
     "critpt": {
@@ -10686,8 +10856,8 @@
     },
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
-      "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Muse Spark 1.3 (max)', tauBanking score."
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Muse Spark 1.3 (max)', tauBanking score."
     }
   },
   "gpt-6-astra": {
@@ -10748,7 +10918,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'GPT-6 Astra (max)', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -10769,7 +10939,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'GPT-6 Astra (max)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'GPT-6 Astra (max)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -10846,7 +11016,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Granite 4.2 30B', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Granite 4.2 30B', tauBanking score."
     }
   },
   "granite-4-2-8b": {
@@ -10923,7 +11093,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Granite 4.2 8B', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Granite 4.2 8B', tauBanking score."
     }
   },
   "hy4-preview": {
@@ -11017,7 +11187,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Ling 3.0 Flash', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Ling 3.0 Flash', tauBanking score."
     }
   },
   "qwen3-8-max-0902": {
@@ -11040,7 +11210,7 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-04",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Mistral Small 4 (Reasoning)', scicode score."
     },
     "terminal-bench-2-1": {
@@ -11066,7 +11236,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Mistral Small 4 (Reasoning)', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Mistral Small 4 (Reasoning)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -11077,6 +11247,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Mistral Small 4 (Reasoning)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Mistral Small 4 (Reasoning)', intelligenceIndex score."
     }
   },
   "gemini-1-5-pro": {
@@ -11297,7 +11472,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'K2 Horizon 375B A23B', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'K2 Horizon 375B A23B', tauBanking score."
     }
   },
   "mimo-v2-5-pro": {
@@ -11323,7 +11498,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-06",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'MiMo-V2.5-Pro', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -11344,7 +11519,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-06",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'MiMo-V2.5-Pro', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'MiMo-V2.5-Pro', tauBanking score."
     },
     "ifbench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
@@ -11406,7 +11581,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-06",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'MiMo-V2.5', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'MiMo-V2.5', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
@@ -11427,6 +11602,11 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-06",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'mimo-v2.5'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'MiMo-V2.5', intelligenceIndex score."
     }
   },
   "granite-4-2-3b": {
@@ -11452,7 +11632,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-06",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Granite 4.2 3B', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -11468,7 +11648,7 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-06",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Granite 4.2 3B', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Granite 4.2 3B', tauBanking score."
     }
   },
   "ling-3-0-tiny": {
@@ -11494,7 +11674,7 @@
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "evaluationDate": "2026-09-06",
+      "evaluationDate": "2026-09-08",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Ling 3.0 Tiny', intelligenceIndex score."
     },
     "aa-omniscience-accuracy": {
@@ -11510,7 +11690,54 @@
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-06",
-      "protocol": "Artificial Analysis \u03c4\u00b3-Banking leaderboard snapshot, listing 'Ling 3.0 Tiny', tauBanking score."
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Ling 3.0 Tiny', tauBanking score."
+    }
+  },
+  "apodex-1-1": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Apodex 1.1', gpqa score."
+    },
+    "hle": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Apodex 1.1', hle score."
+    },
+    "scicode": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Apodex 1.1', scicode score."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis Terminal-Bench 2.1 leaderboard snapshot, listing 'Apodex 1.1', terminalbenchV21 score."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Apodex 1.1', omniscienceAccuracy score."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Apodex 1.1', lcr score."
+    },
+    "critpt": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis CritPt leaderboard snapshot, listing 'Apodex 1.1', critpt score."
+    },
+    "tau3-banking": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Apodex 1.1', tauBanking score."
+    },
+    "mmmu-pro": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+      "evaluationDate": "2026-09-08",
+      "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Apodex 1.1', mmmuPro score."
     }
   }
 }

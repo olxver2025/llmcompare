@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-06",
+  "asOf": "2026-09-08",
   "slugs": [
     "amazon-nova-2-lite",
     "amazon-nova-lite",
@@ -9,6 +9,7 @@
     "amazon-titan-text-express",
     "amazon-titan-text-lite",
     "amazon-titan-text-premier",
+    "apodex-1-1-mini",
     "aya-expanse-32b",
     "claude-instant-1-2",
     "codestral-2508",
@@ -40,6 +41,7 @@
     "llama-3-2-11b",
     "llama-3-2-90b",
     "magistral-medium",
+    "mercury-2-5-preview",
     "mistral-nemo",
     "nemotron-3-super-120b",
     "o1-pro",
