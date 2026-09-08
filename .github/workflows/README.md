@@ -1,7 +1,7 @@
 # Data integrity CI
 
-`data-integrity.yml` checks the catalog on every pull request. It runs in three
-layers, from cheapest to most thorough.
+`data-integrity.yml` checks the catalog on every pull request. It runs in two
+layers:
 
 ## 1. `verify` — deterministic, always runs, blocking
 
@@ -40,42 +40,6 @@ Fetches every URL the changed data cites. A citation that is definitively wrong
 limit, or a timeout is reported in the job summary but does **not** fail it:
 Artificial Analysis and provider blogs block CI runners routinely, and an
 unreachable page says nothing about whether the number is right.
-
-## 3. `claude-source-review` — reads the sources, blocking on contradictions
-
-Runs `.claude/skills/verify-data-sources/SKILL.md`, which opens each cited page
-and checks it actually reports that value, for that model variant, on that
-benchmark version, under the protocol the note claims. It writes
-`source-verdict.json`; `scripts/ci/verdict-gate.mjs` turns that into the build
-result and posts a sticky pull request comment.
-
-- `contradicted` → fails the build.
-- `unverifiable` → reported, does not fail.
-- A changed fact the review does not report on → fails, so an incomplete review
-  cannot pass silently.
-
-### Setup
-
-This job needs a Claude credential. On a Pro, Max, Team, or Enterprise plan it
-runs on your subscription rather than API billing:
-
-```bash
-claude setup-token
-```
-
-Add the result as the repository secret `CLAUDE_CODE_OAUTH_TOKEN` (Settings →
-Secrets and variables → Actions). An `ANTHROPIC_API_KEY` secret works too and
-takes the same code path. With neither set, the job reports that it was skipped
-and passes — layers 1 and 2 still gate the merge.
-
-Two limits worth knowing:
-
-- The OAuth token belongs to whoever ran `claude setup-token`, and it expires
-  eventually. Re-run the command and update the secret when the job starts
-  failing to authenticate.
-- `llmcompare` is public, and GitHub withholds secrets from fork pull requests,
-  so this job cannot run on outside contributions. Review those by hand — the
-  deterministic layers still run.
 
 ## Running it locally
 
