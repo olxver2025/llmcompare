@@ -15784,6 +15784,485 @@
         "evaluationDate": "2025-08-18"
       }
     },
+    "apertus-8b-instruct": {
+      "gpqa-diamond": {
+        "value": 25.6,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Apertus 8B Instruct', gpqa score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "hle": {
+        "value": 5,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Apertus 8B Instruct', hle score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "ifbench": {
+        "value": 22.4,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Apertus 8B Instruct', ifbench score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "aa-omniscience-accuracy": {
+        "value": 9.7,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Apertus 8B Instruct', omniscienceAccuracy score.",
+        "evaluationDate": "2026-09-06"
+      }
+    },
+    "apertus-70b-instruct": {
+      "gpqa-diamond": {
+        "value": 27.2,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Apertus 70B Instruct', gpqa score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "hle": {
+        "value": 5.5,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Apertus 70B Instruct', hle score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "ifbench": {
+        "value": 25.9,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Apertus 70B Instruct', ifbench score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "aa-omniscience-accuracy": {
+        "value": 11.6,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Apertus 70B Instruct', omniscienceAccuracy score.",
+        "evaluationDate": "2026-09-06"
+      }
+    },
+    "olmo-3-7b-instruct": {
+      "gpqa-diamond": {
+        "value": 40,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Olmo 3 7B Instruct', gpqa score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "hle": {
+        "value": 5.8,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Olmo 3 7B Instruct', hle score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "ifbench": {
+        "value": 32.8,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Olmo 3 7B Instruct', ifbench score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "aa-omniscience-accuracy": {
+        "value": 7.4,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Olmo 3 7B Instruct', omniscienceAccuracy score.",
+        "evaluationDate": "2026-09-06"
+      }
+    },
+    "olmo-3-1-32b-instruct": {
+      "gpqa-diamond": {
+        "value": 53.9,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Olmo 3.1 32B Instruct', gpqa score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "hle": {
+        "value": 5,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Olmo 3.1 32B Instruct', hle score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "ifbench": {
+        "value": 39.2,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Olmo 3.1 32B Instruct', ifbench score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "aa-omniscience-accuracy": {
+        "value": 12,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Olmo 3.1 32B Instruct', omniscienceAccuracy score.",
+        "evaluationDate": "2026-09-06"
+      }
+    },
+    "intellect-3": {
+      "gpqa-diamond": {
+        "value": 76.1,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'INTELLECT-3', gpqa score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "hle": {
+        "value": 13.1,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'INTELLECT-3', hle score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "ifbench": {
+        "value": 34,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'INTELLECT-3', ifbench score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "aa-omniscience-accuracy": {
+        "value": 19.6,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'INTELLECT-3', omniscienceAccuracy score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "aa-lcr": {
+        "value": 39.7,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'INTELLECT-3', lcr score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "critpt": {
+        "value": 0.3,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis CritPt leaderboard snapshot, listing 'INTELLECT-3', critpt score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "lmarena-elo": {
+        "value": 1356.2,
+        "sourceUrl": "https://arena.ai/leaderboard",
+        "checkedOn": "2026-09-06",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-06; listing 'intellect-3'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-06"
+      }
+    },
+    "seed-oss-36b-instruct": {
+      "gpqa-diamond": {
+        "value": 72.6,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Seed-OSS-36B-Instruct', gpqa score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "hle": {
+        "value": 9.9,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Seed-OSS-36B-Instruct', hle score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "ifbench": {
+        "value": 41.9,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Seed-OSS-36B-Instruct', ifbench score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "aa-omniscience-accuracy": {
+        "value": 18.2,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Seed-OSS-36B-Instruct', omniscienceAccuracy score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "aa-lcr": {
+        "value": 61.3,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Seed-OSS-36B-Instruct', lcr score.",
+        "evaluationDate": "2026-09-06"
+      }
+    },
+    "kimi-linear-48b-a3b-instruct": {
+      "gpqa-diamond": {
+        "value": 41.2,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Kimi Linear 48B A3B Instruct', gpqa score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "hle": {
+        "value": 2.5,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Kimi Linear 48B A3B Instruct', hle score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "ifbench": {
+        "value": 28.1,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Kimi Linear 48B A3B Instruct', ifbench score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "aa-lcr": {
+        "value": 28,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Kimi Linear 48B A3B Instruct', lcr score.",
+        "evaluationDate": "2026-09-06"
+      }
+    },
+    "hy3": {
+      "gpqa-diamond": {
+        "value": 89.7,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Hy3', gpqa score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "hle": {
+        "value": 33.5,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Hy3', hle score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "terminal-bench-2-1": {
+        "value": 64.4,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis Terminal-Bench 2.1 leaderboard snapshot, listing 'Hy3', terminalbenchV21 score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "scicode": {
+        "value": 48.6,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Hy3', scicode score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "aa-omniscience-accuracy": {
+        "value": 32,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Hy3', omniscienceAccuracy score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "aa-lcr": {
+        "value": 79,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Hy3', lcr score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "critpt": {
+        "value": 4.9,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis CritPt leaderboard snapshot, listing 'Hy3', critpt score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "tau3-banking": {
+        "value": 22.9,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Hy3', tauBanking score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "lmarena-elo": {
+        "value": 1455.4,
+        "sourceUrl": "https://arena.ai/leaderboard",
+        "checkedOn": "2026-09-06",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-06; listing 'hy3'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-06"
+      },
+      "webdev-arena": {
+        "value": 1511.6,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-06",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'hy3'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-06"
+      }
+    },
+    "mercury-2": {
+      "gpqa-diamond": {
+        "value": 77,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Mercury 2', gpqa score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "hle": {
+        "value": 17.1,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Mercury 2', hle score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "terminal-bench-2-1": {
+        "value": 27.3,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis Terminal-Bench 2.1 leaderboard snapshot, listing 'Mercury 2', terminalbenchV21 score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "ifbench": {
+        "value": 69.8,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Mercury 2', ifbench score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "aa-omniscience-accuracy": {
+        "value": 21.2,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Mercury 2', omniscienceAccuracy score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "aa-lcr": {
+        "value": 43.7,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Mercury 2', lcr score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "critpt": {
+        "value": 0.8,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis CritPt leaderboard snapshot, listing 'Mercury 2', critpt score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "tau3-banking": {
+        "value": 9.5,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Mercury 2', tauBanking score.",
+        "evaluationDate": "2026-09-06"
+      }
+    },
+    "k2-think-v2": {
+      "gpqa-diamond": {
+        "value": 71.3,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'K2 Think V2', gpqa score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "hle": {
+        "value": 10.1,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'K2 Think V2', hle score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "terminal-bench-2-1": {
+        "value": 15,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis Terminal-Bench 2.1 leaderboard snapshot, listing 'K2 Think V2', terminalbenchV21 score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "ifbench": {
+        "value": 62.8,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'K2 Think V2', ifbench score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "aa-omniscience-accuracy": {
+        "value": 18,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'K2 Think V2', omniscienceAccuracy score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "aa-lcr": {
+        "value": 57,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'K2 Think V2', lcr score.",
+        "evaluationDate": "2026-09-06"
+      }
+    },
+    "lfm2-5-1-2b-instruct": {
+      "gpqa-diamond": {
+        "value": 32.6,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'LFM2.5-1.2B-Instruct', gpqa score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "hle": {
+        "value": 6.7,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'LFM2.5-1.2B-Instruct', hle score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "ifbench": {
+        "value": 43.8,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'LFM2.5-1.2B-Instruct', ifbench score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "aa-omniscience-accuracy": {
+        "value": 7,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'LFM2.5-1.2B-Instruct', omniscienceAccuracy score.",
+        "evaluationDate": "2026-09-06"
+      }
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "gpqa-diamond": {
+        "value": 62,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Qwen3 Omni 30B A3B Instruct', gpqa score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "hle": {
+        "value": 4.6,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Qwen3 Omni 30B A3B Instruct', hle score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "ifbench": {
+        "value": 31.2,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Qwen3 Omni 30B A3B Instruct', ifbench score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "aa-omniscience-accuracy": {
+        "value": 14.3,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Qwen3 Omni 30B A3B Instruct', omniscienceAccuracy score.",
+        "evaluationDate": "2026-09-06"
+      },
+      "mmmu-pro": {
+        "value": 55.5,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+        "checkedOn": "2026-09-06",
+        "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Qwen3 Omni 30B A3B Instruct', mmmuPro score.",
+        "evaluationDate": "2026-09-06"
+      }
+    },
     "inkling": {
       "toolathlon-verified": {
         "value": 45.5,
