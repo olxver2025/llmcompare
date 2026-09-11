@@ -99,7 +99,7 @@ check(
   "evidence ledger must include every model, including intentional empty records"
 );
 
-check(models.length === 299, `expected 299 models, found ${models.length}`);
+check(models.length === 300, `expected 300 models, found ${models.length}`);
 check(new Set(models.map((model) => model.slug)).size === models.length, "duplicate model slug");
 const expectedEmptyBenchmarkModels = new Set(emptyBenchmarkManifest.slugs);
 check(
@@ -291,7 +291,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 2415, `expected 2415 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 2423, `expected 2423 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);

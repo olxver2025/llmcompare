@@ -5936,6 +5936,64 @@
         "evaluationDate": "2026-09-05"
       }
     },
+    "deepseek-v4-1-flash": {
+      "hle": {
+        "value": 39.2,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "checkedOn": "2026-09-11",
+        "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'DeepSeek V4.1 Flash (max)', hle score.",
+        "evaluationDate": "2026-09-11"
+      },
+      "scicode": {
+        "value": 51.9,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "checkedOn": "2026-09-11",
+        "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'DeepSeek V4.1 Flash (max)', scicode score.",
+        "evaluationDate": "2026-09-11"
+      },
+      "aa-lcr": {
+        "value": 84,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+        "checkedOn": "2026-09-11",
+        "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'DeepSeek V4.1 Flash (max)', lcr score.",
+        "evaluationDate": "2026-09-11"
+      },
+      "critpt": {
+        "value": 14.3,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
+        "checkedOn": "2026-09-11",
+        "protocol": "Artificial Analysis CritPt leaderboard snapshot, listing 'DeepSeek V4.1 Flash (max)', critpt score.",
+        "evaluationDate": "2026-09-11"
+      },
+      "mmmu-pro": {
+        "value": 77,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+        "checkedOn": "2026-09-11",
+        "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'DeepSeek V4.1 Flash (max)', mmmuPro score.",
+        "evaluationDate": "2026-09-11"
+      },
+      "aa-omniscience-accuracy": {
+        "value": 46.4,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+        "checkedOn": "2026-09-11",
+        "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'DeepSeek V4.1 Flash (max)', omniscienceAccuracy score.",
+        "evaluationDate": "2026-09-11"
+      },
+      "aa-intelligence-index": {
+        "value": 39.5,
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+        "checkedOn": "2026-09-11",
+        "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'DeepSeek V4.1 Flash (max)', intelligenceIndex score.",
+        "evaluationDate": "2026-09-11"
+      },
+      "webdev-arena": {
+        "value": 1619.8,
+        "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+        "checkedOn": "2026-09-11",
+        "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-11; listing 'deepseek-v4.1-flash-max'. Elo rating is a volatile leaderboard snapshot.",
+        "evaluationDate": "2026-09-11"
+      }
+    },
     "deepseek-v3-2": {
       "swe-bench-verified": {
         "value": 70,

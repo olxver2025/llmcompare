@@ -2909,6 +2909,16 @@
     "qwen2-5-coder-7b": {
       "gpqa-diamond": 33.9,
       "hle": 4.9
+    },
+    "deepseek-v4-1-flash": {
+      "hle": 39.2,
+      "scicode": 51.9,
+      "aa-lcr": 84,
+      "critpt": 14.3,
+      "mmmu-pro": 77,
+      "aa-omniscience-accuracy": 46.4,
+      "aa-intelligence-index": 39.5,
+      "webdev-arena": 1619.8
     }
   }
 }
