@@ -534,6 +534,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'GPT-5.5 (xhigh)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'GPT-5.5 (xhigh)', intelligenceIndex score."
     }
   },
   "gpt-5-4": {
@@ -755,6 +760,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'GPT-5 mini (high)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'GPT-5 mini (high)', intelligenceIndex score."
     }
   },
   "gpt-5-nano": {
@@ -1182,6 +1192,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'GPT-4.1 nano', ifbench score."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'GPT-4.1 nano', lcr score."
     }
   },
   "gpt-4o-mini": {
@@ -1662,6 +1677,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Claude Opus 4.8 (Adaptive Reasoning, Max Effort)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Claude Opus 4.8 (max)', intelligenceIndex score."
     }
   },
   "claude-sonnet-5": {
@@ -1893,6 +1913,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Claude Sonnet 4.6 (max)', intelligenceIndex score."
     }
   },
   "claude-haiku-4-5": {
@@ -2383,6 +2408,46 @@
       "sourceUrl": "https://scale.com/leaderboard/swe_bench_pro_public",
       "evaluationDate": "2026-09-03",
       "protocol": "SWE-bench Pro public leaderboard, gemini-3-flash, resolved % (±3.55)."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Gemini 3 Flash', gpqa score."
+    },
+    "hle": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Gemini 3 Flash', hle score."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Gemini 3 Flash', omniscienceAccuracy score."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Gemini 3 Flash', lcr score."
+    },
+    "critpt": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis CritPt leaderboard snapshot, listing 'Gemini 3 Flash', critpt score."
+    },
+    "tau3-banking": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Gemini 3 Flash', tauBanking score."
+    },
+    "mmmu-pro": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Gemini 3 Flash', mmmuPro score."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Gemini 3 Flash', ifbench score."
     }
   },
   "gemini-3-5-flash-lite": {
@@ -2542,6 +2607,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Gemini 2.5 Pro', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Gemini 2.5 Pro', intelligenceIndex score."
     }
   },
   "gemini-2-5-flash": {
@@ -2681,6 +2751,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Gemma 4 31B (Reasoning)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Gemma 4 31B', intelligenceIndex score."
     }
   },
   "gemma-4-26b": {
@@ -2760,6 +2835,36 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
       "evaluationDate": "2026-08-12",
       "protocol": "Artificial Analysis terminal-bench-2-1 evaluation snapshot, Gemma 3 12B Instruct, terminalbench_v2_1 score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Gemma 3 12B', intelligenceIndex score."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Gemma 3 12B', omniscienceAccuracy score."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Gemma 3 12B', lcr score."
+    },
+    "tau3-banking": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Gemma 3 12B', tauBanking score."
+    },
+    "mmmu-pro": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Gemma 3 12B', mmmuPro score."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Gemma 3 12B', ifbench score."
     }
   },
   "grok-4-5": {
@@ -2996,6 +3101,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Grok 4.3 (high)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Grok 4.3 (high)', intelligenceIndex score."
     }
   },
   "grok-4-1": {
@@ -3281,6 +3391,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Muse Spark 1.1 (xhigh)', tauBanking score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Muse Spark 1.1 (xhigh)', intelligenceIndex score."
     }
   },
   "llama-4-maverick": {
@@ -3378,6 +3493,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Llama 4 Maverick', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Llama 4 Maverick', intelligenceIndex score."
     }
   },
   "llama-4-scout": {
@@ -3460,6 +3580,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Llama 4 Scout', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Llama 4 Scout', intelligenceIndex score."
     }
   },
   "llama-3-3-70b": {
@@ -3492,6 +3617,31 @@
       "sourceUrl": "https://bigcode-bench.github.io/",
       "evaluationDate": "2024-12-19",
       "protocol": "BigCodeBench official results, Llama-3.3-70B-Instruct, pass@1 instruct."
+    },
+    "hle": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Llama 3.3 70B', hle score."
+    },
+    "terminal-bench-2-1": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Terminal-Bench 2.1 leaderboard snapshot, listing 'Llama 3.3 70B', terminalbenchV21 score."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Llama 3.3 70B', omniscienceAccuracy score."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Llama 3.3 70B', lcr score."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Llama 3.3 70B', ifbench score."
     }
   },
   "llama-3-1-70b": {
@@ -3539,6 +3689,16 @@
       "sourceUrl": "https://bigcode-bench.github.io/",
       "evaluationDate": "2024-07-23",
       "protocol": "BigCodeBench official results, Llama-3.1-70B-Instruct, pass@1 instruct."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Llama 3.1 70B', omniscienceAccuracy score."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Llama 3.1 70B', ifbench score."
     }
   },
   "llama-3-1-8b": {
@@ -3591,6 +3751,21 @@
       "sourceUrl": "https://bigcode-bench.github.io/",
       "evaluationDate": "2024-07-23",
       "protocol": "BigCodeBench official results, Llama-3.1-8B-Instruct, pass@1 instruct."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Llama 3.1 8B', omniscienceAccuracy score."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Llama 3.1 8B', lcr score."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Llama 3.1 8B', ifbench score."
     }
   },
   "deepseek-v4-pro": {
@@ -3683,6 +3858,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'DeepSeek V4 Pro (Reasoning, Max Effort)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'DeepSeek V4 Pro (max)', intelligenceIndex score."
     }
   },
   "deepseek-v4-flash": {
@@ -3775,6 +3955,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'DeepSeek V4 Flash (Reasoning, Max Effort)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'DeepSeek V4 Flash (max)', intelligenceIndex score."
     }
   },
   "deepseek-v4-flash-0731": {
@@ -4411,6 +4596,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Qwen3.7 Plus', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Qwen3.7 Plus', intelligenceIndex score."
     }
   },
   "qwen3-6-plus": {
@@ -4540,6 +4730,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Qwen3.7 Max', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Qwen3.7 Max', intelligenceIndex score."
     }
   },
   "qwen3-5-397b": {
@@ -4612,6 +4807,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Qwen3.5 397B A17B (Reasoning)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Qwen3.5 397B A17B', intelligenceIndex score."
     }
   },
   "qwen3-235b": {
@@ -4798,6 +4998,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Qwen3 32B (Reasoning)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Qwen3 32B', intelligenceIndex score."
     }
   },
   "mistral-large-3": {
@@ -4932,6 +5137,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Mistral Medium 3.5', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Mistral Medium 3.5', intelligenceIndex score."
     }
   },
   "magistral-small": {
@@ -5016,6 +5226,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Devstral 2', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Devstral 2', intelligenceIndex score."
     }
   },
   "mistral-small-3-2": {
@@ -5083,6 +5298,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Mistral Small 3.2', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Mistral Small 3.2', intelligenceIndex score."
     }
   },
   "kimi-k3": {
@@ -5237,6 +5457,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Kimi K2.7 Code', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Kimi K2.7 Code', intelligenceIndex score."
     }
   },
   "kimi-k2-5": {
@@ -5902,6 +6127,46 @@
       "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
       "evaluationDate": "2026-09-03",
       "protocol": "Toolathlon-Verified official leaderboard, Nemotron 3 Ultra, Pass@1."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Nemotron 3 Ultra', gpqa score."
+    },
+    "scicode": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Nemotron 3 Ultra', scicode score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Nemotron 3 Ultra', intelligenceIndex score."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Nemotron 3 Ultra', omniscienceAccuracy score."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Nemotron 3 Ultra', lcr score."
+    },
+    "critpt": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis CritPt leaderboard snapshot, listing 'Nemotron 3 Ultra', critpt score."
+    },
+    "tau3-banking": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Nemotron 3 Ultra', tauBanking score."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Nemotron 3 Ultra', ifbench score."
     }
   },
   "claude-opus-4-7": {
@@ -6162,6 +6427,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'GPT-5.4 mini (xhigh)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'GPT-5.4 mini (xhigh)', intelligenceIndex score."
     }
   },
   "gpt-5-4-nano": {
@@ -6224,6 +6494,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'GPT-5.4 nano (xhigh)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'GPT-5.4 nano (xhigh)', intelligenceIndex score."
     }
   },
   "o4-mini": {
@@ -6561,6 +6836,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'gpt-oss-20b (high)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'gpt-oss-20b (high)', intelligenceIndex score."
     }
   },
   "gemini-3-1-flash-lite": {
@@ -6623,6 +6903,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Gemini 3.1 Flash-Lite', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Gemini 3.1 Flash-Lite', intelligenceIndex score."
     }
   },
   "grok-3": {
@@ -6767,6 +7052,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'DeepSeek V3 (Dec '24)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'DeepSeek V3 (Dec)', intelligenceIndex score."
     }
   },
   "deepseek-r1": {
@@ -6844,6 +7134,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'DeepSeek R1 (Jan '25)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'DeepSeek R1 (Jan)', intelligenceIndex score."
     }
   },
   "qwen3-coder-480b": {
@@ -6896,6 +7191,21 @@
       "sourceUrl": "https://lmarena.ai/leaderboard/text",
       "evaluationDate": "2026-09-02",
       "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'qwen3-coder-480b-a35b-instruct'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Qwen3 Coder 480B', omniscienceAccuracy score."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Qwen3 Coder 480B', lcr score."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Qwen3 Coder 480B', ifbench score."
     }
   },
   "qwen2-5-72b": {
@@ -6923,6 +7233,26 @@
       "sourceUrl": "https://bigcode-bench.github.io/",
       "evaluationDate": "2024-09-19",
       "protocol": "BigCodeBench official results, Qwen2.5-72B-Instruct, pass@1 instruct."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Qwen2.5 72B', gpqa score."
+    },
+    "hle": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Qwen2.5 72B', hle score."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Qwen2.5 72B', omniscienceAccuracy score."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Qwen2.5 72B', ifbench score."
     }
   },
   "qwen2-5-32b": {
@@ -6964,6 +7294,16 @@
       "sourceUrl": "https://lmarena.ai/leaderboard/text",
       "evaluationDate": "2026-09-02",
       "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'qwen2-72b-instruct'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Qwen2 72B', gpqa score."
+    },
+    "hle": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Qwen2 72B', hle score."
     }
   },
   "gemma-3-27b": {
@@ -7026,6 +7366,36 @@
       "sourceUrl": "https://aider.chat/docs/leaderboards/",
       "evaluationDate": "2025-03-15",
       "protocol": "Aider polyglot official leaderboard, gemma-3-27b-it, whole edit format, pass rate 2."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Gemma 3 27B', intelligenceIndex score."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Gemma 3 27B', omniscienceAccuracy score."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Gemma 3 27B', lcr score."
+    },
+    "tau3-banking": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Gemma 3 27B', tauBanking score."
+    },
+    "mmmu-pro": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Gemma 3 27B', mmmuPro score."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Gemma 3 27B', ifbench score."
     }
   },
   "llama-3-1-405b": {
@@ -7073,6 +7443,21 @@
       "sourceUrl": "https://lmarena.ai/leaderboard/text",
       "evaluationDate": "2026-09-02",
       "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; catalog entry names no specific dated/effort variant, so mapped to the most defensible listed row ('llama-3.1-405b-instruct-bf16') by editorial judgment (earliest original release, or the plain/unqualified listing where one exists) rather than a confirmed 1:1 identity. Elo rating is a volatile leaderboard snapshot."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Llama 3.1 405B', omniscienceAccuracy score."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Llama 3.1 405B', lcr score."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Llama 3.1 405B', ifbench score."
     }
   },
   "ernie-5-1": {
@@ -7402,6 +7787,21 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
       "evaluationDate": "2026-08-12",
       "protocol": "Artificial Analysis scicode evaluation snapshot, Llama 3.1 Nemotron Instruct 70B, scicode score."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Llama 3.1 Nemotron 70B', omniscienceAccuracy score."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Llama 3.1 Nemotron 70B', lcr score."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Llama 3.1 Nemotron 70B', ifbench score."
     }
   },
   "phi-4-mini": {
@@ -7444,6 +7844,21 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
       "evaluationDate": "2026-08-12",
       "protocol": "Artificial Analysis terminal-bench-2-1 evaluation snapshot, Phi-4 Mini Instruct, terminalbench_v2_1 score."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Phi-4 Mini', omniscienceAccuracy score."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Phi-4 Mini', lcr score."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Phi-4 Mini', ifbench score."
     }
   },
   "dbrx-instruct": {
@@ -8074,6 +8489,31 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
       "evaluationDate": "2026-08-12",
       "protocol": "Artificial Analysis terminal-bench-2-1 evaluation snapshot, Gemma 3 4B Instruct, terminalbench_v2_1 score."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Gemma 3 4B', omniscienceAccuracy score."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Gemma 3 4B', lcr score."
+    },
+    "tau3-banking": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Gemma 3 4B', tauBanking score."
+    },
+    "mmmu-pro": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Gemma 3 4B', mmmuPro score."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Gemma 3 4B', ifbench score."
     }
   },
   "grok-2": {
@@ -8115,6 +8555,26 @@
       "sourceUrl": "https://bigcode-bench.github.io/",
       "evaluationDate": "2024-04-18",
       "protocol": "BigCodeBench official results, Llama-3-70B-Instruct, pass@1 instruct."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Llama 3 70B', gpqa score."
+    },
+    "hle": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Llama 3 70B', hle score."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Llama 3 70B', omniscienceAccuracy score."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Llama 3 70B', ifbench score."
     }
   },
   "llama-3-8b": {
@@ -8127,6 +8587,26 @@
       "sourceUrl": "https://bigcode-bench.github.io/",
       "evaluationDate": "2024-04-18",
       "protocol": "BigCodeBench official results, Llama-3-8B-Instruct, pass@1 instruct."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Llama 3 8B', gpqa score."
+    },
+    "hle": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Llama 3 8B', hle score."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Llama 3 8B', omniscienceAccuracy score."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Llama 3 8B', ifbench score."
     }
   },
   "llama-3-2-3b": {
@@ -8139,6 +8619,26 @@
       "sourceUrl": "https://bigcode-bench.github.io/",
       "evaluationDate": "2024-09-25",
       "protocol": "BigCodeBench official results, Llama-3.2-3B-Instruct, pass@1 instruct."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Llama 3.2 3B', gpqa score."
+    },
+    "hle": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Llama 3.2 3B', hle score."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Llama 3.2 3B', lcr score."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Llama 3.2 3B', ifbench score."
     }
   },
   "llama-3-2-1b": {
@@ -8151,6 +8651,31 @@
       "sourceUrl": "https://bigcode-bench.github.io/",
       "evaluationDate": "2024-09-25",
       "protocol": "BigCodeBench official results, Llama-3.2-1B-Instruct, pass@1 instruct."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Llama 3.2 1B', gpqa score."
+    },
+    "hle": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Llama 3.2 1B', hle score."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Llama 3.2 1B', omniscienceAccuracy score."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Llama 3.2 1B', lcr score."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Llama 3.2 1B', ifbench score."
     }
   },
   "codellama-70b": {
@@ -8419,6 +8944,26 @@
       "sourceUrl": "https://bigcode-bench.github.io/",
       "evaluationDate": "2024-05-22",
       "protocol": "BigCodeBench official results, Mistral-7B-Instruct-v0.3, pass@1 instruct."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Mistral 7B', gpqa score."
+    },
+    "hle": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Mistral 7B', hle score."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Mistral 7B', omniscienceAccuracy score."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Mistral 7B', ifbench score."
     }
   },
   "qwen2-5-coder-32b": {
@@ -8441,6 +8986,16 @@
       "sourceUrl": "https://bigcode-bench.github.io/",
       "evaluationDate": "2024-09-19",
       "protocol": "BigCodeBench official results, Qwen2.5-Coder-32B-Instruct, pass@1 instruct."
+    },
+    "gpqa-diamond": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Qwen2.5 Coder 32B', gpqa score."
+    },
+    "hle": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Qwen2.5 Coder 32B', hle score."
     }
   },
   "qwq-32b": {
@@ -8877,6 +9432,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'MiniMax-M2.7', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'MiniMax-M2.7', intelligenceIndex score."
     }
   },
   "yi-1-5-34b": {
@@ -9159,6 +9719,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Inkling Small', mmmuPro score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Inkling Small', intelligenceIndex score."
     }
   },
   "gpt-5-5-pro": {
@@ -9233,6 +9798,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Ministral 3 14B', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Ministral 3 14B', intelligenceIndex score."
     }
   },
   "ministral-3-8b": {
@@ -9295,6 +9865,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Ministral 3 8B', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Ministral 3 8B', intelligenceIndex score."
     }
   },
   "ministral-3-3b": {
@@ -9357,6 +9932,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Ministral 3 3B', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Ministral 3 3B', intelligenceIndex score."
     }
   },
   "granite-4-micro": {
@@ -9912,6 +10492,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Solar Pro 3', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Solar Pro 3', intelligenceIndex score."
     }
   },
   "longcat-2-0": {
@@ -9954,6 +10539,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'LongCat 2.0', tauBanking score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'LongCat 2.0', intelligenceIndex score."
     }
   },
   "sonar-reasoning": {
@@ -10153,6 +10743,11 @@
       "sourceUrl": "https://lmarena.ai/leaderboard/text",
       "evaluationDate": "2026-09-02",
       "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; catalog entry names no specific dated/effort variant, so mapped to the most defensible listed row ('phi-3-mini-4k-instruct') by editorial judgment (earliest original release, or the plain/unqualified listing where one exists) rather than a confirmed 1:1 identity. Elo rating is a volatile leaderboard snapshot."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Phi-3 Mini', ifbench score."
     }
   },
   "phi-3-medium": {
@@ -10330,6 +10925,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
       "evaluationDate": "2026-08-12",
       "protocol": "Artificial Analysis scicode evaluation snapshot, Phi-4 Multimodal Instruct, scicode score."
+    },
+    "mmmu-pro": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Phi-4 Multimodal', mmmuPro score."
     }
   },
   "mixtral-8x22b": {
@@ -10451,6 +11051,21 @@
       "sourceUrl": "https://swe-rebench.com/",
       "evaluationDate": "2026-08-13",
       "protocol": "SWE-rebench official leaderboard listing 'Qwen3-Coder-30B-A3B-Instruct', agent tools, current task window resolved rate."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Qwen3 Coder 30B A3B', omniscienceAccuracy score."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Qwen3 Coder 30B A3B', lcr score."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Qwen3 Coder 30B A3B', ifbench score."
     }
   },
   "devstral-small": {
@@ -10636,6 +11251,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Qwen3.8-Flash-Next', mmmuPro score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Qwen3.8-Flash-Next', intelligenceIndex score."
     }
   },
   "muse-spark-1-3": {
@@ -11077,6 +11697,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Mistral Small 4 (Reasoning)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Mistral Small 4', intelligenceIndex score."
     }
   },
   "gemini-1-5-pro": {
@@ -11427,6 +12052,11 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-06",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'mimo-v2.5'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'MiMo-V2.5', intelligenceIndex score."
     }
   },
   "granite-4-2-3b": {
@@ -11737,6 +12367,11 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-06",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'hy3'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Hy3', intelligenceIndex score."
     }
   },
   "mercury-2": {
@@ -11779,6 +12414,21 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
       "evaluationDate": "2026-09-06",
       "protocol": "Artificial Analysis Terminal-Bench 2.1 leaderboard snapshot, listing 'Mercury 2', terminalbenchV21 score."
+    },
+    "scicode": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Mercury 2', scicode score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Mercury 2', intelligenceIndex score."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-11; listing 'mercury-2'. Elo rating is a volatile leaderboard snapshot."
     }
   },
   "k2-think-v2": {
@@ -11860,6 +12510,109 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
       "evaluationDate": "2026-09-06",
       "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Qwen3 Omni 30B A3B Instruct', mmmuPro score."
+    }
+  },
+  "llama-3-2-11b": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Llama 3.2 11B (Vision)', gpqa score."
+    },
+    "hle": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Llama 3.2 11B (Vision)', hle score."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Llama 3.2 11B (Vision)', omniscienceAccuracy score."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Llama 3.2 11B (Vision)', lcr score."
+    },
+    "mmmu-pro": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Llama 3.2 11B (Vision)', mmmuPro score."
+    },
+    "ifbench": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Llama 3.2 11B (Vision)', ifbench score."
+    }
+  },
+  "llama-3-2-90b": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Llama 3.2 90B (Vision)', gpqa score."
+    },
+    "hle": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Llama 3.2 90B (Vision)', hle score."
+    },
+    "mmmu-pro": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Llama 3.2 90B (Vision)', mmmuPro score."
+    }
+  },
+  "qwen2-5-coder-7b": {
+    "gpqa-diamond": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Qwen2.5 Coder 7B ', gpqa score."
+    },
+    "hle": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Qwen2.5 Coder 7B ', hle score."
+    }
+  },
+  "deepseek-v4-1-flash": {
+    "hle": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'DeepSeek V4.1 Flash (max)', hle score."
+    },
+    "scicode": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'DeepSeek V4.1 Flash (max)', scicode score."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'DeepSeek V4.1 Flash (max)', lcr score."
+    },
+    "critpt": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis CritPt leaderboard snapshot, listing 'DeepSeek V4.1 Flash (max)', critpt score."
+    },
+    "mmmu-pro": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'DeepSeek V4.1 Flash (max)', mmmuPro score."
+    },
+    "aa-omniscience-accuracy": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'DeepSeek V4.1 Flash (max)', omniscienceAccuracy score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'DeepSeek V4.1 Flash (max)', intelligenceIndex score."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-11; listing 'deepseek-v4.1-flash-max'. Elo rating is a volatile leaderboard snapshot."
     }
   }
 }

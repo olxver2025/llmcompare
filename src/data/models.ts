@@ -239,6 +239,7 @@ export const models: Model[] = [
       "tau3-banking": 39,
       "mmmu-pro": 79.9,
       ifbench: 75.9,
+      "aa-intelligence-index": 38.6,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -366,6 +367,7 @@ export const models: Model[] = [
       "tau3-banking": 15.5,
       "mmmu-pro": 70.1,
       ifbench: 75.4,
+      "aa-intelligence-index": 17.4,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -591,6 +593,7 @@ export const models: Model[] = [
       "tau3-banking": 3.5,
       "mmmu-pro": 40.1,
       ifbench: 32,
+      "aa-lcr": 20.3,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -799,6 +802,7 @@ export const models: Model[] = [
       critpt: 20.9,
       "tau3-banking": 34.2,
       ifbench: 62.2,
+      "aa-intelligence-index": 42,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -904,6 +908,7 @@ export const models: Model[] = [
       "tau3-banking": 34.4,
       "mmmu-pro": 73.3,
       ifbench: 56.6,
+      "aa-intelligence-index": 30.5,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -1207,6 +1212,14 @@ export const models: Model[] = [
       "lmarena-elo": 1473.8,
       "webdev-arena": 1437.7,
       "swe-bench-multilingual": 72.7,
+      "gpqa-diamond": 89.8,
+      hle: 36.6,
+      "aa-omniscience-accuracy": 53.4,
+      "aa-lcr": 78,
+      critpt: 8.6,
+      "tau3-banking": 20.8,
+      "mmmu-pro": 79.9,
+      ifbench: 78,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -1297,6 +1310,7 @@ export const models: Model[] = [
       "tau3-banking": 9.7,
       "mmmu-pro": 74.9,
       ifbench: 48.7,
+      "aa-intelligence-index": 16.7,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -1365,6 +1379,7 @@ export const models: Model[] = [
       "tau3-banking": 14.8,
       "mmmu-pro": 73.4,
       ifbench: 75.6,
+      "aa-intelligence-index": 15.4,
     },
     links: {
       modelCard: "https://huggingface.co/google/gemma-4-31b-it",
@@ -1424,6 +1439,12 @@ export const models: Model[] = [
       "math-500": 85.3,
       scicode: 17.4,
       "terminal-bench-2-1": 0,
+      "aa-intelligence-index": 3.8,
+      "aa-omniscience-accuracy": 10.3,
+      "aa-lcr": 8.3,
+      "tau3-banking": 0.8,
+      "mmmu-pro": 37.5,
+      ifbench: 36.7,
     },
     links: {
       modelCard: "https://huggingface.co/google/gemma-3-12b-it",
@@ -1535,6 +1556,7 @@ export const models: Model[] = [
       "tau3-banking": 12.4,
       "mmmu-pro": 78.1,
       ifbench: 81.3,
+      "aa-intelligence-index": 25.4,
     },
     links: {
       docs: "https://docs.x.ai/developers/models/grok-4.3",
@@ -1771,6 +1793,7 @@ export const models: Model[] = [
       "aa-lcr": 77.7,
       critpt: 15.1,
       "tau3-banking": 31.8,
+      "aa-intelligence-index": 34.3,
     },
     links: {
       docs: "https://dev.meta.ai/docs/models.md",
@@ -1813,6 +1836,7 @@ export const models: Model[] = [
       "tau3-banking": 3.7,
       "mmmu-pro": 62.1,
       ifbench: 43,
+      "aa-intelligence-index": 9.3,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
@@ -1851,6 +1875,7 @@ export const models: Model[] = [
       "tau3-banking": 3.3,
       "mmmu-pro": 52.9,
       ifbench: 39.5,
+      "aa-intelligence-index": 6.5,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
@@ -1878,6 +1903,11 @@ export const models: Model[] = [
       "lmarena-elo": 1317,
       "swe-rebench": 11.5,
       bigcodebench: 46.9,
+      hle: 3.6,
+      "terminal-bench-2-1": 4.9,
+      "aa-omniscience-accuracy": 19,
+      "aa-lcr": 15.7,
+      ifbench: 47.1,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
@@ -1909,6 +1939,8 @@ export const models: Model[] = [
       "math-500": 64.9,
       scicode: 26.7,
       bigcodebench: 46.1,
+      "aa-omniscience-accuracy": 19.7,
+      ifbench: 34.4,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
@@ -1941,6 +1973,9 @@ export const models: Model[] = [
       scicode: 13.2,
       "terminal-bench-2-1": 1.5,
       bigcodebench: 32.8,
+      "aa-omniscience-accuracy": 8.5,
+      "aa-lcr": 18,
+      ifbench: 28.6,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
@@ -1961,7 +1996,11 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.35, outputPer1M: 0.4 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.5 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 43.2,
+      hle: 4.5,
+      "mmmu-pro": 39.5,
+    },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct",
     },
@@ -1981,7 +2020,14 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "AWS Bedrock / self-host", inputPer1M: 0.16, outputPer1M: 0.16 },
     speed: { tokensPerSec: 100, ttftSeconds: 0.25 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 22.1,
+      hle: 5.5,
+      "aa-omniscience-accuracy": 10.6,
+      "aa-lcr": 12.7,
+      "mmmu-pro": 29.3,
+      ifbench: 30.4,
+    },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct",
     },
@@ -2022,6 +2068,7 @@ export const models: Model[] = [
       critpt: 12.9,
       "tau3-banking": 30.1,
       ifbench: 76.5,
+      "aa-intelligence-index": 30.9,
     },
     links: {
       docs: "https://api-docs.deepseek.com/",
@@ -2062,6 +2109,7 @@ export const models: Model[] = [
       critpt: 7.1,
       "tau3-banking": 30.9,
       ifbench: 79.2,
+      "aa-intelligence-index": 24.6,
     },
     links: {
       docs: "https://api-docs.deepseek.com/",
@@ -2182,6 +2230,42 @@ export const models: Model[] = [
     },
     summary:
       "GA release of DeepSeek-V4-Pro (Aug 13, 2026) with substantially enhanced agentic coding (Terminal-Bench 2.1 87.9, NL2Repo 61.5, DeepSWE 62.7), native Responses API support, and low/high/max thinking-effort control. HLE is 42.7 without tools and 60.0 with tools. The hosted 0813 checkpoint weights are not yet published. Peak/off-peak API pricing took effect Aug 16, 2026: $1.32 in / $3.96 out peak, $0.66 in / $1.98 out off-peak (per 1M tokens).",
+  },
+  {
+    slug: "deepseek-v4-1-flash",
+    name: "DeepSeek V4.1 Flash",
+    organization: "DeepSeek",
+    releaseDate: "2026-09-10",
+    openSource: true,
+    license: "MIT",
+    parameters: { total: 552, active: 16 },
+    contextWindow: 1_000_000,
+    maxOutput: 384_000,
+    modalities: { input: ["text", "image"], output: ["text"] },
+    pricing: {
+      provider: "DeepSeek",
+      inputPer1M: 0.3,
+      outputPer1M: 1.2,
+      offPeak: { inputPer1M: 0.15, outputPer1M: 0.6 },
+      peakHours: "01:00-04:00 and 06:00-10:00 UTC",
+    },
+    benchmarks: {
+      hle: 39.2,
+      scicode: 51.9,
+      "aa-lcr": 84,
+      critpt: 14.3,
+      "mmmu-pro": 77,
+      "aa-omniscience-accuracy": 46.4,
+      "aa-intelligence-index": 39.5,
+      "webdev-arena": 1619.8,
+    },
+    links: {
+      docs: "https://api-docs.deepseek.com/",
+      modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      announcement: "https://api-docs.deepseek.com/updates/",
+    },
+    summary:
+      "New default DeepSeek Flash tier (Sep 10, 2026), the smallest model in a new Causal Encoder-Decoder architecture family: 552B total parameters activating 8B (prefill) / 16B (decode) per token, MIT-licensed weights on Hugging Face. Replaces DeepSeek-V4-Flash and V4-Flash-Vision-Exp, which are retired but still routed to this model for compatibility. DeepSeek's own reported numbers (GPQA Diamond 90.9, Terminal-Bench 2.1 90.6, text-only HLE 39.1) are self-measured and not directly comparable to this catalog's Artificial-Analysis-sourced cells. API pricing: $0.30 in / $1.20 out peak, $0.15 in / $0.60 out off-peak (per 1M tokens); off-peak cache-hit input is $0.003.",
   },
   {
     slug: "deepseek-v3-2",
@@ -2426,6 +2510,7 @@ export const models: Model[] = [
       critpt: 11.1,
       "tau3-banking": 45.4,
       "mmmu-pro": 79.8,
+      "aa-intelligence-index": 39.9,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
@@ -2458,6 +2543,7 @@ export const models: Model[] = [
       "tau3-banking": 17.5,
       "mmmu-pro": 80.5,
       ifbench: 78,
+      "aa-intelligence-index": 25.8,
     },
     links: {
       docs: "https://www.alibabacloud.com/help/en/model-studio/",
@@ -2546,6 +2632,7 @@ export const models: Model[] = [
       critpt: 13.4,
       "tau3-banking": 11.8,
       ifbench: 80.5,
+      "aa-intelligence-index": 29.9,
     },
     links: {
       docs: "https://www.alibabacloud.com/help/en/model-studio/",
@@ -2582,6 +2669,7 @@ export const models: Model[] = [
       "tau3-banking": 13.4,
       "mmmu-pro": 77.3,
       ifbench: 78.8,
+      "aa-intelligence-index": 19.1,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen",
@@ -2680,6 +2768,7 @@ export const models: Model[] = [
       critpt: 0.3,
       "tau3-banking": 5.4,
       ifbench: 36.3,
+      "aa-intelligence-index": 7.2,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen3-32B",
@@ -2751,6 +2840,7 @@ export const models: Model[] = [
       "tau3-banking": 15.1,
       "mmmu-pro": 64.9,
       ifbench: 68.8,
+      "aa-intelligence-index": 14.9,
     },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
@@ -2782,6 +2872,7 @@ export const models: Model[] = [
       "tau3-banking": 4.9,
       "mmmu-pro": 56.8,
       ifbench: 48.2,
+      "aa-intelligence-index": 11.5,
     },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
@@ -2815,6 +2906,7 @@ export const models: Model[] = [
       "tau3-banking": 6.6,
       "mmmu-pro": 49.8,
       ifbench: 32,
+      "aa-intelligence-index": 6,
     },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
@@ -2848,6 +2940,7 @@ export const models: Model[] = [
       "tau3-banking": 3.7,
       "mmmu-pro": 46,
       ifbench: 29.1,
+      "aa-intelligence-index": 5.5,
     },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
@@ -2881,6 +2974,7 @@ export const models: Model[] = [
       "tau3-banking": 4.7,
       "mmmu-pro": 38.1,
       ifbench: 26.8,
+      "aa-intelligence-index": 4.8,
     },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
@@ -2960,6 +3054,7 @@ export const models: Model[] = [
       "aa-lcr": 32.3,
       "tau3-banking": 10.5,
       ifbench: 38.1,
+      "aa-intelligence-index": 9.4,
     },
     links: {
       docs: "https://docs.mistral.ai/getting-started/models/",
@@ -3025,6 +3120,7 @@ export const models: Model[] = [
       "tau3-banking": 6.2,
       "mmmu-pro": 48,
       ifbench: 33.5,
+      "aa-intelligence-index": 7,
     },
     links: {
       modelCard: "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
@@ -3203,6 +3299,7 @@ export const models: Model[] = [
       ifbench: 67.1,
       "lmarena-elo": 1433.8,
       "webdev-arena": 1437.7,
+      "aa-intelligence-index": 22.3,
     },
     links: {
       modelCard: "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
@@ -3241,6 +3338,7 @@ export const models: Model[] = [
       critpt: 10,
       "tau3-banking": 20.2,
       ifbench: 63.1,
+      "aa-intelligence-index": 26.3,
     },
     links: {
       modelCard: "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
@@ -3623,6 +3721,7 @@ export const models: Model[] = [
       "aa-lcr": 65,
       critpt: 2.6,
       "tau3-banking": 13.2,
+      "aa-intelligence-index": 19.7,
     },
     links: {
       modelCard: "https://huggingface.co/meituan-longcat",
@@ -3651,6 +3750,14 @@ export const models: Model[] = [
       hle: 26.7,
       livecodebench: 89.0,
       "terminal-bench-2-1": 56.4,
+      "gpqa-diamond": 86.7,
+      scicode: 40.3,
+      "aa-intelligence-index": 23.4,
+      "aa-omniscience-accuracy": 22.6,
+      "aa-lcr": 79.3,
+      critpt: 3.1,
+      "tau3-banking": 14.2,
+      ifbench: 81.4,
     },
     links: {
       modelCard: "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
@@ -3875,6 +3982,7 @@ export const models: Model[] = [
       "tau3-banking": 25.6,
       "mmmu-pro": 73.3,
       ifbench: 73.3,
+      "aa-intelligence-index": 24.6,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -3907,6 +4015,7 @@ export const models: Model[] = [
       "tau3-banking": 27.4,
       "mmmu-pro": 65.4,
       ifbench: 75.9,
+      "aa-intelligence-index": 21.2,
     },
     links: {
       docs: "https://platform.openai.com/docs/models",
@@ -4116,6 +4225,7 @@ export const models: Model[] = [
       critpt: 1.4,
       "tau3-banking": 7,
       ifbench: 65.1,
+      "aa-intelligence-index": 9,
     },
     links: {
       modelCard: "https://huggingface.co/openai/gpt-oss-20b",
@@ -4148,6 +4258,7 @@ export const models: Model[] = [
       "tau3-banking": 9.7,
       "mmmu-pro": 75.5,
       ifbench: 77.2,
+      "aa-intelligence-index": 16,
     },
     links: {
       docs: "https://ai.google.dev/gemini-api/docs/models",
@@ -4272,6 +4383,7 @@ export const models: Model[] = [
       "aa-lcr": 29.3,
       "tau3-banking": 4.7,
       ifbench: 34.8,
+      "aa-intelligence-index": 8.5,
     },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-V3",
@@ -4308,6 +4420,7 @@ export const models: Model[] = [
       critpt: 0.6,
       "tau3-banking": 6.4,
       ifbench: 39,
+      "aa-intelligence-index": 11.4,
     },
     links: {
       modelCard: "https://huggingface.co/deepseek-ai/DeepSeek-R1",
@@ -4339,6 +4452,9 @@ export const models: Model[] = [
       "mmlu-pro": 78.8,
       scicode: 35.9,
       "swe-rebench": 36.3,
+      "aa-omniscience-accuracy": 15.7,
+      "aa-lcr": 45.7,
+      ifbench: 40.5,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
@@ -4365,6 +4481,10 @@ export const models: Model[] = [
       livecodebench: 55.5,
       "swe-rebench": 10.1,
       bigcodebench: 45.8,
+      "gpqa-diamond": 49.1,
+      hle: 3.6,
+      "aa-omniscience-accuracy": 17.5,
+      ifbench: 36.9,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen2.5-72B-Instruct",
@@ -4435,6 +4555,8 @@ export const models: Model[] = [
     speed: { tokensPerSec: 65, ttftSeconds: 0.4 },
     benchmarks: {
       "lmarena-elo": 1261,
+      "gpqa-diamond": 37.1,
+      hle: 3.7,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen2-72B-Instruct",
@@ -4468,6 +4590,12 @@ export const models: Model[] = [
       "terminal-bench-2-1": 4.5,
       "swe-rebench": 5.4,
       "aider-polyglot": 4.9,
+      "aa-intelligence-index": 4.9,
+      "aa-omniscience-accuracy": 13,
+      "aa-lcr": 7.3,
+      "tau3-banking": 0.8,
+      "mmmu-pro": 48,
+      ifbench: 31.8,
     },
     links: {
       modelCard: "https://huggingface.co/google/gemma-3-27b-it",
@@ -4498,6 +4626,9 @@ export const models: Model[] = [
       hle: 4,
       "math-500": 70.3,
       scicode: 29.9,
+      "aa-omniscience-accuracy": 23.2,
+      "aa-lcr": 25.3,
+      ifbench: 39,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct",
@@ -5303,6 +5434,9 @@ export const models: Model[] = [
       "math-500": 73.3,
       "mmlu-pro": 69,
       scicode: 23.3,
+      "aa-omniscience-accuracy": 17.8,
+      "aa-lcr": 8.3,
+      ifbench: 30.7,
     },
     links: {
       modelCard: "https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct",
@@ -5335,6 +5469,9 @@ export const models: Model[] = [
       "math-500": 69.6,
       scicode: 10.8,
       "terminal-bench-2-1": 0.4,
+      "aa-omniscience-accuracy": 9.5,
+      "aa-lcr": 15.3,
+      ifbench: 21.1,
     },
     links: {
       modelCard: "https://huggingface.co/microsoft/Phi-4-mini-instruct",
@@ -5362,6 +5499,7 @@ export const models: Model[] = [
       "math-500": 69.3,
       "mmlu-pro": 48.5,
       scicode: 11,
+      "mmmu-pro": 14.5,
     },
     links: {
       modelCard: "https://huggingface.co/microsoft/Phi-4-multimodal-instruct",
@@ -5436,6 +5574,7 @@ export const models: Model[] = [
       "mmlu-pro": 43.5,
       scicode: 9,
       bigcodebench: 29.6,
+      ifbench: 23.9,
     },
     links: {
       modelCard: "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
@@ -5608,6 +5747,7 @@ export const models: Model[] = [
       "aa-lcr": 32.3,
       "tau3-banking": 8.7,
       ifbench: 71.2,
+      "aa-intelligence-index": 7.8,
     },
     links: {
       docs: "https://developers.upstage.ai/",
@@ -6478,6 +6618,11 @@ export const models: Model[] = [
       "math-500": 76.6,
       scicode: 7.3,
       "terminal-bench-2-1": 0.4,
+      "aa-omniscience-accuracy": 7.7,
+      "aa-lcr": 6.7,
+      "tau3-banking": 0.4,
+      "mmmu-pro": 29.9,
+      ifbench: 28.3,
     },
     links: {
       modelCard: "https://huggingface.co/google/gemma-3-4b-it",
@@ -6586,6 +6731,10 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1276,
       bigcodebench: 43.6,
+      "gpqa-diamond": 37.9,
+      hle: 4.5,
+      "aa-omniscience-accuracy": 17.7,
+      ifbench: 37.1,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
@@ -6609,6 +6758,10 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1223,
       bigcodebench: 31.9,
+      "gpqa-diamond": 29.6,
+      hle: 5.1,
+      "aa-omniscience-accuracy": 10.4,
+      ifbench: 24.6,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
@@ -6632,6 +6785,10 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1166,
       bigcodebench: 23.4,
+      "gpqa-diamond": 25.5,
+      hle: 5.4,
+      "aa-lcr": 4.3,
+      ifbench: 26.2,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct",
@@ -6655,6 +6812,11 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1111,
       bigcodebench: 8.2,
+      "gpqa-diamond": 19.6,
+      hle: 5.5,
+      "aa-omniscience-accuracy": 7,
+      "aa-lcr": 6.7,
+      ifbench: 22.8,
     },
     links: {
       modelCard: "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct",
@@ -7149,6 +7311,10 @@ export const models: Model[] = [
     benchmarks: {
       "lmarena-elo": 1110,
       bigcodebench: 19.5,
+      "gpqa-diamond": 17.7,
+      hle: 4.6,
+      "aa-omniscience-accuracy": 9,
+      ifbench: 19.9,
     },
     links: {
       modelCard: "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3",
@@ -7223,6 +7389,8 @@ export const models: Model[] = [
       "swe-rebench": 3.1,
       "swe-bench-verified": 9,
       bigcodebench: 49,
+      "gpqa-diamond": 41.7,
+      hle: 3.5,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
@@ -7243,7 +7411,10 @@ export const models: Model[] = [
     modalities: { input: ["text"], output: ["text"] },
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.05, outputPer1M: 0.1 },
     speed: { tokensPerSec: 130, ttftSeconds: 0.2 },
-    benchmarks: {},
+    benchmarks: {
+      "gpqa-diamond": 33.9,
+      hle: 4.9,
+    },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct",
     },
@@ -7385,6 +7556,9 @@ export const models: Model[] = [
       "mmlu-pro": 70.6,
       scicode: 27.8,
       "swe-rebench": 21.6,
+      "aa-omniscience-accuracy": 16.4,
+      "aa-lcr": 32.7,
+      ifbench: 32.7,
     },
     links: {
       modelCard: "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
@@ -7520,6 +7694,7 @@ export const models: Model[] = [
       critpt: 0.6,
       "tau3-banking": 9.9,
       ifbench: 75.7,
+      "aa-intelligence-index": 23.2,
     },
     links: {
       docs: "https://www.minimax.io/",
@@ -8355,6 +8530,7 @@ export const models: Model[] = [
       "tau3-banking": 22.9,
       "lmarena-elo": 1455.4,
       "webdev-arena": 1511.6,
+      "aa-intelligence-index": 25.8,
     },
     links: {
       modelCard: "https://huggingface.co/tencent/Hy3",
@@ -8383,6 +8559,9 @@ export const models: Model[] = [
       "aa-lcr": 43.7,
       critpt: 0.8,
       "tau3-banking": 9.5,
+      scicode: 37.7,
+      "aa-intelligence-index": 11.5,
+      "webdev-arena": 1166.3,
     },
     links: {
       announcement: "https://www.inceptionlabs.ai/blog/introducing-mercury-2",
@@ -8535,6 +8714,7 @@ export const models: Model[] = [
       critpt: 8.3,
       "tau3-banking": 18.8,
       "mmmu-pro": 74,
+      "aa-intelligence-index": 26.1,
     },
     links: {
       modelCard: "https://huggingface.co/thinkingmachines/Inkling-Small",

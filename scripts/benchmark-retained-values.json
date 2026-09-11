@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-06",
+  "asOf": "2026-09-11",
   "cells": {
     "claude-fable-5-1": {
       "terminal-bench-science": 52.6,
@@ -116,7 +116,8 @@
       "critpt": 27.1,
       "tau3-banking": 39,
       "mmmu-pro": 79.9,
-      "ifbench": 75.9
+      "ifbench": 75.9,
+      "aa-intelligence-index": 38.6
     },
     "gpt-5-5-pro": {
       "hle": 43.1,
@@ -169,7 +170,8 @@
       "aa-lcr": 72.3,
       "tau3-banking": 15.5,
       "mmmu-pro": 70.1,
-      "ifbench": 75.4
+      "ifbench": 75.4,
+      "aa-intelligence-index": 17.4
     },
     "gpt-5-nano": {
       "gpqa-diamond": 67.6,
@@ -264,7 +266,8 @@
       "aa-omniscience-accuracy": 13.7,
       "tau3-banking": 3.5,
       "mmmu-pro": 40.1,
-      "ifbench": 32
+      "ifbench": 32,
+      "aa-lcr": 20.3
     },
     "gpt-4o-mini": {
       "lmarena-elo": 1317,
@@ -356,7 +359,8 @@
       "aa-lcr": 77.7,
       "critpt": 20.9,
       "tau3-banking": 34.2,
-      "ifbench": 62.2
+      "ifbench": 62.2,
+      "aa-intelligence-index": 42
     },
     "claude-sonnet-5": {
       "cursorbench": 61.5,
@@ -407,7 +411,8 @@
       "critpt": 3.1,
       "tau3-banking": 34.4,
       "mmmu-pro": 73.3,
-      "ifbench": 56.6
+      "ifbench": 56.6,
+      "aa-intelligence-index": 30.5
     },
     "claude-haiku-4-5": {
       "swe-bench-verified": 73.3,
@@ -521,7 +526,15 @@
       "lmarena-elo": 1473.8,
       "webdev-arena": 1437.7,
       "swe-bench-multilingual": 72.7,
-      "swe-bench-pro": 34.63
+      "swe-bench-pro": 34.63,
+      "gpqa-diamond": 89.8,
+      "hle": 36.6,
+      "aa-omniscience-accuracy": 53.4,
+      "aa-lcr": 78,
+      "critpt": 8.6,
+      "tau3-banking": 20.8,
+      "mmmu-pro": 79.9,
+      "ifbench": 78
     },
     "gemini-3-5-flash-lite": {
       "lmarena-elo": 1456.9,
@@ -556,7 +569,8 @@
       "critpt": 2.6,
       "tau3-banking": 9.7,
       "mmmu-pro": 74.9,
-      "ifbench": 48.7
+      "ifbench": 48.7,
+      "aa-intelligence-index": 16.7
     },
     "gemini-2-5-flash": {
       "lmarena-elo": 1409.8,
@@ -587,7 +601,8 @@
       "critpt": 1.4,
       "tau3-banking": 14.8,
       "mmmu-pro": 73.4,
-      "ifbench": 75.6
+      "ifbench": 75.6,
+      "aa-intelligence-index": 15.4
     },
     "gemma-4-26b": {
       "mmlu-pro": 82.6,
@@ -606,7 +621,13 @@
       "hle": 4.2,
       "math-500": 85.3,
       "scicode": 17.4,
-      "terminal-bench-2-1": 0
+      "terminal-bench-2-1": 0,
+      "aa-intelligence-index": 3.8,
+      "aa-omniscience-accuracy": 10.3,
+      "aa-lcr": 8.3,
+      "tau3-banking": 0.8,
+      "mmmu-pro": 37.5,
+      "ifbench": 36.7
     },
     "grok-4-5": {
       "terminal-bench-2-1": 81.6,
@@ -658,7 +679,8 @@
       "critpt": 8,
       "tau3-banking": 12.4,
       "mmmu-pro": 78.1,
-      "ifbench": 81.3
+      "ifbench": 81.3,
+      "aa-intelligence-index": 25.4
     },
     "grok-4-1": {
       "lmarena-elo": 1459.2
@@ -723,7 +745,8 @@
       "aa-omniscience-accuracy": 52.1,
       "aa-lcr": 77.7,
       "critpt": 15.1,
-      "tau3-banking": 31.8
+      "tau3-banking": 31.8,
+      "aa-intelligence-index": 34.3
     },
     "llama-4-maverick": {
       "mmlu-pro": 80.5,
@@ -744,7 +767,8 @@
       "aa-lcr": 50,
       "tau3-banking": 3.7,
       "mmmu-pro": 62.1,
-      "ifbench": 43
+      "ifbench": 43,
+      "aa-intelligence-index": 9.3
     },
     "llama-4-scout": {
       "mmlu-pro": 74.3,
@@ -762,7 +786,8 @@
       "aa-lcr": 27.7,
       "tau3-banking": 3.3,
       "mmmu-pro": 52.9,
-      "ifbench": 39.5
+      "ifbench": 39.5,
+      "aa-intelligence-index": 6.5
     },
     "llama-3-3-70b": {
       "mmlu-pro": 68.9,
@@ -770,7 +795,12 @@
       "livecodebench": 33.3,
       "lmarena-elo": 1317,
       "swe-rebench": 11.5,
-      "bigcodebench": 46.9
+      "bigcodebench": 46.9,
+      "hle": 3.6,
+      "terminal-bench-2-1": 4.9,
+      "aa-omniscience-accuracy": 19,
+      "aa-lcr": 15.7,
+      "ifbench": 47.1
     },
     "llama-3-1-70b": {
       "mmlu-pro": 66.4,
@@ -781,7 +811,9 @@
       "livecodebench": 23.2,
       "math-500": 64.9,
       "scicode": 26.7,
-      "bigcodebench": 46.1
+      "bigcodebench": 46.1,
+      "aa-omniscience-accuracy": 19.7,
+      "ifbench": 34.4
     },
     "llama-3-1-8b": {
       "mmlu-pro": 48.3,
@@ -793,7 +825,10 @@
       "math-500": 51.9,
       "scicode": 13.2,
       "terminal-bench-2-1": 1.5,
-      "bigcodebench": 32.8
+      "bigcodebench": 32.8,
+      "aa-omniscience-accuracy": 8.5,
+      "aa-lcr": 18,
+      "ifbench": 28.6
     },
     "deepseek-v4-pro": {
       "lmarena-elo": 1457.8,
@@ -813,7 +848,8 @@
       "aa-lcr": 74.7,
       "critpt": 12.9,
       "tau3-banking": 30.1,
-      "ifbench": 76.5
+      "ifbench": 76.5,
+      "aa-intelligence-index": 30.9
     },
     "deepseek-v4-flash": {
       "terminal-bench-2-1": 61.8,
@@ -833,7 +869,8 @@
       "aa-lcr": 74.3,
       "critpt": 7.1,
       "tau3-banking": 30.9,
-      "ifbench": 79.2
+      "ifbench": 79.2,
+      "aa-intelligence-index": 24.6
     },
     "deepseek-v4-flash-0731": {
       "terminal-bench-2-1": 78.7,
@@ -973,7 +1010,8 @@
       "critpt": 9.1,
       "tau3-banking": 17.5,
       "mmmu-pro": 80.5,
-      "ifbench": 78
+      "ifbench": 78,
+      "aa-intelligence-index": 25.8
     },
     "qwen3-6-plus": {
       "lmarena-elo": 1443.7,
@@ -1002,7 +1040,8 @@
       "aa-lcr": 79,
       "critpt": 13.4,
       "tau3-banking": 11.8,
-      "ifbench": 80.5
+      "ifbench": 80.5,
+      "aa-intelligence-index": 29.9
     },
     "qwen3-5-397b": {
       "lmarena-elo": 1441.1,
@@ -1018,7 +1057,8 @@
       "critpt": 1.7,
       "tau3-banking": 13.4,
       "mmmu-pro": 77.3,
-      "ifbench": 78.8
+      "ifbench": 78.8,
+      "aa-intelligence-index": 19.1
     },
     "qwen3-235b": {
       "gpqa-diamond": 70,
@@ -1060,7 +1100,8 @@
       "aa-omniscience-accuracy": 17.4,
       "critpt": 0.3,
       "tau3-banking": 5.4,
-      "ifbench": 36.3
+      "ifbench": 36.3,
+      "aa-intelligence-index": 7.2
     },
     "mistral-large-3": {
       "lmarena-elo": 1413.7,
@@ -1090,7 +1131,8 @@
       "aa-lcr": 69.3,
       "tau3-banking": 15.1,
       "mmmu-pro": 64.9,
-      "ifbench": 68.8
+      "ifbench": 68.8,
+      "aa-intelligence-index": 14.9
     },
     "ministral-3-14b": {
       "mmlu-pro": 69.3,
@@ -1104,7 +1146,8 @@
       "aa-lcr": 26.3,
       "tau3-banking": 6.6,
       "mmmu-pro": 49.8,
-      "ifbench": 32
+      "ifbench": 32,
+      "aa-intelligence-index": 6
     },
     "ministral-3-8b": {
       "mmlu-pro": 64.2,
@@ -1118,7 +1161,8 @@
       "aa-lcr": 25.7,
       "tau3-banking": 3.7,
       "mmmu-pro": 46,
-      "ifbench": 29.1
+      "ifbench": 29.1,
+      "aa-intelligence-index": 5.5
     },
     "ministral-3-3b": {
       "mmlu-pro": 52.4,
@@ -1132,7 +1176,8 @@
       "aa-lcr": 17,
       "tau3-banking": 4.7,
       "mmmu-pro": 38.1,
-      "ifbench": 26.8
+      "ifbench": 26.8,
+      "aa-intelligence-index": 4.8
     },
     "magistral-small": {
       "aime-2025": 62.76,
@@ -1152,7 +1197,8 @@
       "aa-omniscience-accuracy": 20.8,
       "aa-lcr": 32.3,
       "tau3-banking": 10.5,
-      "ifbench": 38.1
+      "ifbench": 38.1,
+      "aa-intelligence-index": 9.4
     },
     "mistral-medium-3-1": {
       "mmlu-pro": 68.3,
@@ -1180,7 +1226,8 @@
       "aa-lcr": 20.3,
       "tau3-banking": 6.2,
       "mmmu-pro": 48,
-      "ifbench": 33.5
+      "ifbench": 33.5,
+      "aa-intelligence-index": 7
     },
     "codestral-22b": {
       "bigcodebench": 41.8
@@ -1217,7 +1264,8 @@
       "aa-lcr": 79.3,
       "critpt": 10,
       "tau3-banking": 20.2,
-      "ifbench": 63.1
+      "ifbench": 63.1,
+      "aa-intelligence-index": 26.3
     },
     "kimi-k2-5": {
       "mmlu-pro": 87.1,
@@ -1367,7 +1415,8 @@
       "aa-omniscience-accuracy": 29.6,
       "aa-lcr": 65,
       "critpt": 2.6,
-      "tau3-banking": 13.2
+      "tau3-banking": 13.2,
+      "aa-intelligence-index": 19.7
     },
     "nemotron-3-ultra": {
       "mmlu-pro": 86.8,
@@ -1376,7 +1425,15 @@
       "hle": 26.7,
       "livecodebench": 89,
       "terminal-bench-2-1": 56.4,
-      "toolathlon-verified": 34.3
+      "toolathlon-verified": 34.3,
+      "gpqa-diamond": 86.7,
+      "scicode": 40.3,
+      "aa-intelligence-index": 23.4,
+      "aa-omniscience-accuracy": 22.6,
+      "aa-lcr": 79.3,
+      "critpt": 3.1,
+      "tau3-banking": 14.2,
+      "ifbench": 81.4
     },
     "claude-opus-4-7": {
       "terminal-bench-2-1": 83.1,
@@ -1448,7 +1505,8 @@
       "critpt": 10,
       "tau3-banking": 25.6,
       "mmmu-pro": 73.3,
-      "ifbench": 73.3
+      "ifbench": 73.3,
+      "aa-intelligence-index": 24.6
     },
     "gpt-5-4-nano": {
       "gpqa-diamond": 81.7,
@@ -1462,7 +1520,8 @@
       "critpt": 9.3,
       "tau3-banking": 27.4,
       "mmmu-pro": 65.4,
-      "ifbench": 75.9
+      "ifbench": 75.9,
+      "aa-intelligence-index": 21.2
     },
     "o4-mini": {
       "gpqa-diamond": 78.4,
@@ -1539,7 +1598,8 @@
       "aa-lcr": 34.7,
       "critpt": 1.4,
       "tau3-banking": 7,
-      "ifbench": 65.1
+      "ifbench": 65.1,
+      "aa-intelligence-index": 9
     },
     "gemini-3-1-flash-lite": {
       "lmarena-elo": 1432,
@@ -1553,7 +1613,8 @@
       "critpt": 1.1,
       "tau3-banking": 9.7,
       "mmmu-pro": 75.5,
-      "ifbench": 77.2
+      "ifbench": 77.2,
+      "aa-intelligence-index": 16
     },
     "grok-3": {
       "aider-polyglot": 53.3,
@@ -1585,7 +1646,8 @@
       "aa-omniscience-accuracy": 25.5,
       "aa-lcr": 29.3,
       "tau3-banking": 4.7,
-      "ifbench": 34.8
+      "ifbench": 34.8,
+      "aa-intelligence-index": 8.5
     },
     "deepseek-r1": {
       "mmlu-pro": 84,
@@ -1602,7 +1664,8 @@
       "aa-lcr": 57.7,
       "critpt": 0.6,
       "tau3-banking": 6.4,
-      "ifbench": 39
+      "ifbench": 39,
+      "aa-intelligence-index": 11.4
     },
     "qwen3-coder-480b": {
       "swe-bench-pro": 38.7,
@@ -1614,14 +1677,21 @@
       "mmlu-pro": 78.8,
       "scicode": 35.9,
       "swe-rebench": 36.3,
-      "lmarena-elo": 1387
+      "lmarena-elo": 1387,
+      "aa-omniscience-accuracy": 15.7,
+      "aa-lcr": 45.7,
+      "ifbench": 40.5
     },
     "qwen2-5-72b": {
       "lmarena-elo": 1303,
       "mmlu-pro": 71.1,
       "livecodebench": 55.5,
       "swe-rebench": 10.1,
-      "bigcodebench": 45.8
+      "bigcodebench": 45.8,
+      "gpqa-diamond": 49.1,
+      "hle": 3.6,
+      "aa-omniscience-accuracy": 17.5,
+      "ifbench": 36.9
     },
     "qwen2-5-32b": {
       "mmlu-pro": 69,
@@ -1634,7 +1704,9 @@
       "bigcodebench": 39.8
     },
     "qwen2-72b": {
-      "lmarena-elo": 1261
+      "lmarena-elo": 1261,
+      "gpqa-diamond": 37.1,
+      "hle": 3.7
     },
     "gemma-3-27b": {
       "mmlu-pro": 67.5,
@@ -1648,7 +1720,13 @@
       "terminal-bench-2-1": 4.5,
       "swe-rebench": 5.4,
       "swe-bench-pro": 11.38,
-      "aider-polyglot": 4.9
+      "aider-polyglot": 4.9,
+      "aa-intelligence-index": 4.9,
+      "aa-omniscience-accuracy": 13,
+      "aa-lcr": 7.3,
+      "tau3-banking": 0.8,
+      "mmmu-pro": 48,
+      "ifbench": 31.8
     },
     "llama-3-1-405b": {
       "mmlu-pro": 73.3,
@@ -1659,7 +1737,10 @@
       "math-500": 70.3,
       "scicode": 29.9,
       "swe-bench-pro": 11.18,
-      "lmarena-elo": 1335
+      "lmarena-elo": 1335,
+      "aa-omniscience-accuracy": 23.2,
+      "aa-lcr": 25.3,
+      "ifbench": 39
     },
     "ernie-5-1": {
       "lmarena-elo": 1468.1
@@ -1774,7 +1855,10 @@
       "livecodebench": 16.9,
       "math-500": 73.3,
       "mmlu-pro": 69,
-      "scicode": 23.3
+      "scicode": 23.3,
+      "aa-omniscience-accuracy": 17.8,
+      "aa-lcr": 8.3,
+      "ifbench": 30.7
     },
     "phi-4-mini": {
       "mmlu-pro": 52.8,
@@ -1784,7 +1868,10 @@
       "livecodebench": 12.6,
       "math-500": 69.6,
       "scicode": 10.8,
-      "terminal-bench-2-1": 0.4
+      "terminal-bench-2-1": 0.4,
+      "aa-omniscience-accuracy": 9.5,
+      "aa-lcr": 15.3,
+      "ifbench": 21.1
     },
     "phi-4-multimodal": {
       "gpqa-diamond": 31.5,
@@ -1792,7 +1879,8 @@
       "livecodebench": 13.1,
       "math-500": 69.3,
       "mmlu-pro": 48.5,
-      "scicode": 11
+      "scicode": 11,
+      "mmmu-pro": 14.5
     },
     "phi-3-medium": {
       "bigcodebench": 37.6,
@@ -1807,7 +1895,8 @@
       "mmlu-pro": 43.5,
       "scicode": 9,
       "bigcodebench": 29.6,
-      "lmarena-elo": 1128
+      "lmarena-elo": 1128,
+      "ifbench": 23.9
     },
     "dbrx-instruct": {
       "lmarena-elo": 1195,
@@ -1835,7 +1924,8 @@
       "aa-omniscience-accuracy": 18.5,
       "aa-lcr": 32.3,
       "tau3-banking": 8.7,
-      "ifbench": 71.2
+      "ifbench": 71.2,
+      "aa-intelligence-index": 7.8
     },
     "composer-2-5": {
       "swe-bench-multilingual": 79.8,
@@ -2039,7 +2129,12 @@
       "hle": 5.3,
       "math-500": 76.6,
       "scicode": 7.3,
-      "terminal-bench-2-1": 0.4
+      "terminal-bench-2-1": 0.4,
+      "aa-omniscience-accuracy": 7.7,
+      "aa-lcr": 6.7,
+      "tau3-banking": 0.4,
+      "mmmu-pro": 29.9,
+      "ifbench": 28.3
     },
     "grok-2": {
       "lmarena-elo": 1335,
@@ -2052,19 +2147,36 @@
     },
     "llama-3-70b": {
       "lmarena-elo": 1276,
-      "bigcodebench": 43.6
+      "bigcodebench": 43.6,
+      "gpqa-diamond": 37.9,
+      "hle": 4.5,
+      "aa-omniscience-accuracy": 17.7,
+      "ifbench": 37.1
     },
     "llama-3-8b": {
       "lmarena-elo": 1223,
-      "bigcodebench": 31.9
+      "bigcodebench": 31.9,
+      "gpqa-diamond": 29.6,
+      "hle": 5.1,
+      "aa-omniscience-accuracy": 10.4,
+      "ifbench": 24.6
     },
     "llama-3-2-3b": {
       "lmarena-elo": 1166,
-      "bigcodebench": 23.4
+      "bigcodebench": 23.4,
+      "gpqa-diamond": 25.5,
+      "hle": 5.4,
+      "aa-lcr": 4.3,
+      "ifbench": 26.2
     },
     "llama-3-2-1b": {
       "lmarena-elo": 1111,
-      "bigcodebench": 8.2
+      "bigcodebench": 8.2,
+      "gpqa-diamond": 19.6,
+      "hle": 5.5,
+      "aa-omniscience-accuracy": 7,
+      "aa-lcr": 6.7,
+      "ifbench": 22.8
     },
     "codellama-70b": {
       "lmarena-elo": 1119,
@@ -2189,7 +2301,11 @@
     },
     "mistral-7b": {
       "lmarena-elo": 1110,
-      "bigcodebench": 19.5
+      "bigcodebench": 19.5,
+      "gpqa-diamond": 17.7,
+      "hle": 4.6,
+      "aa-omniscience-accuracy": 9,
+      "ifbench": 19.9
     },
     "devstral-small": {
       "swe-rebench": 14.6,
@@ -2205,7 +2321,9 @@
       "lmarena-elo": 1270,
       "swe-rebench": 3.1,
       "swe-bench-verified": 9,
-      "bigcodebench": 49
+      "bigcodebench": 49,
+      "gpqa-diamond": 41.7,
+      "hle": 3.5
     },
     "qwq-32b": {
       "gpqa-diamond": 59.3,
@@ -2253,7 +2371,10 @@
       "math-500": 89.3,
       "mmlu-pro": 70.6,
       "scicode": 27.8,
-      "swe-rebench": 21.6
+      "swe-rebench": 21.6,
+      "aa-omniscience-accuracy": 16.4,
+      "aa-lcr": 32.7,
+      "ifbench": 32.7
     },
     "kimi-k2": {
       "mmlu-pro": 81.1,
@@ -2315,7 +2436,8 @@
       "aa-lcr": 78.3,
       "critpt": 0.6,
       "tau3-banking": 9.9,
-      "ifbench": 75.7
+      "ifbench": 75.7,
+      "aa-intelligence-index": 23.2
     },
     "yi-large": {
       "bigcodebench": 37.7
@@ -2434,7 +2556,8 @@
       "aa-lcr": 75.7,
       "critpt": 8.3,
       "tau3-banking": 18.8,
-      "mmmu-pro": 74
+      "mmmu-pro": 74,
+      "aa-intelligence-index": 26.1
     },
     "cursor-grok-4-5": {
       "cursorbench": 66.7
@@ -2466,7 +2589,8 @@
       "aa-lcr": 79.7,
       "critpt": 11.1,
       "tau3-banking": 45.4,
-      "mmmu-pro": 79.8
+      "mmmu-pro": 79.8,
+      "aa-intelligence-index": 39.9
     },
     "muse-spark-1-3": {
       "gdpval-aa": 1754,
@@ -2567,7 +2691,8 @@
       "critpt": 0.3,
       "tau3-banking": 4.9,
       "mmmu-pro": 56.8,
-      "ifbench": 48.2
+      "ifbench": 48.2,
+      "aa-intelligence-index": 11.5
     },
     "gemini-1-5-pro": {
       "gpqa-diamond": 58.9,
@@ -2653,7 +2778,8 @@
       "mmmu-pro": 75.4,
       "ifbench": 67.1,
       "lmarena-elo": 1433.8,
-      "webdev-arena": 1437.7
+      "webdev-arena": 1437.7,
+      "aa-intelligence-index": 22.3
     },
     "granite-4-2-3b": {
       "gpqa-diamond": 55.9,
@@ -2731,7 +2857,8 @@
       "scicode": 48.6,
       "tau3-banking": 22.9,
       "terminal-bench-2-1": 64.4,
-      "webdev-arena": 1511.6
+      "webdev-arena": 1511.6,
+      "aa-intelligence-index": 25.8
     },
     "mercury-2": {
       "aa-lcr": 43.7,
@@ -2741,7 +2868,10 @@
       "hle": 17.1,
       "ifbench": 69.8,
       "tau3-banking": 9.5,
-      "terminal-bench-2-1": 27.3
+      "terminal-bench-2-1": 27.3,
+      "scicode": 37.7,
+      "aa-intelligence-index": 11.5,
+      "webdev-arena": 1166.3
     },
     "k2-think-v2": {
       "aa-lcr": 57,
@@ -2763,6 +2893,33 @@
       "hle": 4.6,
       "ifbench": 31.2,
       "mmmu-pro": 55.5
+    },
+    "llama-3-2-11b": {
+      "gpqa-diamond": 22.1,
+      "hle": 5.5,
+      "aa-omniscience-accuracy": 10.6,
+      "aa-lcr": 12.7,
+      "mmmu-pro": 29.3,
+      "ifbench": 30.4
+    },
+    "llama-3-2-90b": {
+      "gpqa-diamond": 43.2,
+      "hle": 4.5,
+      "mmmu-pro": 39.5
+    },
+    "qwen2-5-coder-7b": {
+      "gpqa-diamond": 33.9,
+      "hle": 4.9
+    },
+    "deepseek-v4-1-flash": {
+      "hle": 39.2,
+      "scicode": 51.9,
+      "aa-lcr": 84,
+      "critpt": 14.3,
+      "mmmu-pro": 77,
+      "aa-omniscience-accuracy": 46.4,
+      "aa-intelligence-index": 39.5,
+      "webdev-arena": 1619.8
     }
   }
 }
