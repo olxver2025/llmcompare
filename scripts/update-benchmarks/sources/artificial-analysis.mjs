@@ -169,8 +169,8 @@ export function parseAALeaderboard(file = AA_LEADERBOARD_FILE) {
 export function canonicalAARows(rows) {
   const groups = new Map();
   for (const row of rows) {
-    if (typeof row.name !== "string" || !row.name.trim()) continue;
-    const key = baseName(row.name);
+    if (typeof row.shortName !== "string" || !row.shortName.trim()) continue;
+    const key = baseName(row.shortName);
     if (!key) continue;
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push(row);
@@ -204,7 +204,7 @@ export function extractAA(benchmarkId, { file = AA_LEADERBOARD_FILE, evaluationD
       value: Math.round(raw * scale * 10) / 10,
       sourceUrl: cfg.sourceUrl,
       evaluationDate,
-      protocol: `Artificial Analysis ${cfg.label} leaderboard snapshot, listing '${row.name}', ${cfg.field} score.`,
+      protocol: `Artificial Analysis ${cfg.label} leaderboard snapshot, listing '${row.shortName}', ${cfg.field} score.`,
     });
   }
   return scores;

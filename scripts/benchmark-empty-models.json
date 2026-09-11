@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-06",
+  "asOf": "2026-09-11",
   "slugs": [
     "amazon-nova-2-lite",
     "amazon-nova-lite",
@@ -37,8 +37,6 @@
     "jamba-large-1-7",
     "jamba-mini-2",
     "llama-2-70b",
-    "llama-3-2-11b",
-    "llama-3-2-90b",
     "magistral-medium",
     "mistral-nemo",
     "nemotron-3-super-120b",
@@ -47,7 +45,6 @@
     "palmyra-x5",
     "phi-3-5-mini",
     "pixtral-12b",
-    "qwen2-5-coder-7b",
     "qwen3-7-flash",
     "seed-1-6-flash",
     "seedrealtime",

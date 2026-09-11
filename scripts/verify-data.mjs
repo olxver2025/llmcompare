@@ -2,7 +2,7 @@ import fs from "node:fs";
 import { execFileSync } from "node:child_process";
 import { load } from "./update-benchmarks/load.mjs";
 
-const asOf = "2026-09-06";
+const asOf = "2026-09-11";
 
 const models = load("src/data/models.ts", "models");
 const imageModels = load("src/data/image-models.ts", "imageModels");
@@ -291,7 +291,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 2275, `expected 2275 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 2415, `expected 2415 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);
