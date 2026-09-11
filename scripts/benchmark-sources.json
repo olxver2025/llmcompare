@@ -12424,6 +12424,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Mercury 2', intelligenceIndex score."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-09-11",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-11; listing 'mercury-2'. Elo rating is a volatile leaderboard snapshot."
     }
   },
   "k2-think-v2": {

@@ -8561,6 +8561,7 @@ export const models: Model[] = [
       "tau3-banking": 9.5,
       scicode: 37.7,
       "aa-intelligence-index": 11.5,
+      "webdev-arena": 1166.3,
     },
     links: {
       announcement: "https://www.inceptionlabs.ai/blog/introducing-mercury-2",
