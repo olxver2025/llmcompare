@@ -41,6 +41,8 @@ export const models: Model[] = [
       critpt: 31.7,
       "tau3-banking": 41.4,
       "mmmu-pro": 86.9,
+      "webdev-arena": 1800,
+      matharena: 90.7,
     },
     links: {
       docs: "https://developers.openai.com/api/docs/models/gpt-6-astra",
@@ -670,6 +672,7 @@ export const models: Model[] = [
       "aa-lcr": 85.3,
       critpt: 29.7,
       "tau3-banking": 47.2,
+      matharena: 71.5,
     },
     links: {
       docs: "https://platform.claude.com/docs/en/models/fable-5-1/whats-new-fable-5-1",
@@ -1685,6 +1688,7 @@ export const models: Model[] = [
       "aa-lcr": 84.3,
       critpt: 24.9,
       "tau3-banking": 52.4,
+      "webdev-arena": 1652,
     },
     links: {
       docs: "https://developer.meta.com/ai/models/muse-spark/",
@@ -2258,6 +2262,7 @@ export const models: Model[] = [
       "aa-omniscience-accuracy": 46.4,
       "aa-intelligence-index": 39.5,
       "webdev-arena": 1619.8,
+      "gdpval-aa": 1632,
     },
     links: {
       docs: "https://api-docs.deepseek.com/",
@@ -3208,6 +3213,7 @@ export const models: Model[] = [
       critpt: 23.4,
       "tau3-banking": 46,
       "mmmu-pro": 80.5,
+      "automation-bench": 46.67,
     },
     links: {
       modelCard: "https://huggingface.co/moonshotai/Kimi-K3",
@@ -3418,6 +3424,7 @@ export const models: Model[] = [
       critpt: 20.9,
       "tau3-banking": 34.6,
       ifbench: 73.3,
+      "automation-bench": 26.17,
     },
     links: {
       docs: "https://docs.z.ai/",

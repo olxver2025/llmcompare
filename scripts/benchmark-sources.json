@@ -99,6 +99,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)', tauBanking score."
+    },
+    "matharena": {
+      "sourceUrl": "https://matharena.ai/",
+      "evaluationDate": "2026-09-13",
+      "protocol": "MathArena leaderboard snapshot dated 2026-09-13, listing 'Claude-Fable-5.1 (max)', expected performance %."
     }
   },
   "claude-mythos-5-1": {
@@ -5395,6 +5400,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Kimi K3 (max)', mmmuPro score."
+    },
+    "automation-bench": {
+      "sourceUrl": "https://github.com/zapier/AutomationBench",
+      "evaluationDate": "2026-09-13",
+      "protocol": "Zapier AutomationBench public leaderboard README, listing 'Kimi K3' at max reasoning effort, pass rate %."
     }
   },
   "kimi-k2-7-code": {
@@ -5641,6 +5651,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'GLM-5.2 (max)', ifbench score."
+    },
+    "automation-bench": {
+      "sourceUrl": "https://github.com/zapier/AutomationBench",
+      "evaluationDate": "2026-09-13",
+      "protocol": "Zapier AutomationBench public leaderboard README, listing 'GLM-5.2' at max reasoning effort, pass rate %."
     }
   },
   "glm-5-3": {
@@ -11308,6 +11323,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Muse Spark 1.3 (max)', tauBanking score."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-09-13",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-13; listing 'muse-spark-1.3-max'. Elo rating is a volatile leaderboard snapshot."
     }
   },
   "gpt-6-astra": {
@@ -11395,6 +11415,16 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'GPT-6 Astra (max)', mmmuPro score."
+    },
+    "webdev-arena": {
+      "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-09-13",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-13; listing 'gpt-6-astra-max'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "matharena": {
+      "sourceUrl": "https://matharena.ai/",
+      "evaluationDate": "2026-09-13",
+      "protocol": "MathArena leaderboard snapshot dated 2026-09-13, listing 'GPT-6 Astra (max)', expected performance %."
     }
   },
   "granite-4-2-30b": {
@@ -12613,6 +12643,11 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-11",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-11; listing 'deepseek-v4.1-flash-max'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "gdpval-aa": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "evaluationDate": "2026-09-13",
+      "protocol": "Artificial Analysis GDPval-AA v2 leaderboard snapshot dated 2026-09-13, listing 'DeepSeek V4.1 Flash (Reasoning, Max Effort)', Elo score."
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-11",
+  "asOf": "2026-09-13",
   "cells": {
     "claude-fable-5-1": {
       "terminal-bench-science": 52.6,
@@ -21,7 +21,8 @@
       "aa-omniscience-accuracy": 67.2,
       "aa-lcr": 85.3,
       "critpt": 29.7,
-      "tau3-banking": 47.2
+      "tau3-banking": 47.2,
+      "matharena": 71.5
     },
     "claude-mythos-5-1": {
       "terminal-bench-4": 60.9
@@ -1250,7 +1251,8 @@
       "aa-lcr": 88.7,
       "critpt": 23.4,
       "tau3-banking": 46,
-      "mmmu-pro": 80.5
+      "mmmu-pro": 80.5,
+      "automation-bench": 46.67
     },
     "kimi-k2-7-code": {
       "cursorbench": 49.7,
@@ -1304,7 +1306,8 @@
       "aa-lcr": 78.3,
       "critpt": 20.9,
       "tau3-banking": 34.6,
-      "ifbench": 73.3
+      "ifbench": 73.3,
+      "automation-bench": 26.17
     },
     "glm-5-3": {
       "terminal-bench-3": 28.3,
@@ -2602,7 +2605,8 @@
       "aa-omniscience-accuracy": 43.8,
       "aa-lcr": 84.3,
       "critpt": 24.9,
-      "tau3-banking": 52.4
+      "tau3-banking": 52.4,
+      "webdev-arena": 1652
     },
     "gpt-6-astra": {
       "gpqa-diamond": 96.1,
@@ -2621,7 +2625,9 @@
       "aa-lcr": 80.7,
       "critpt": 31.7,
       "tau3-banking": 41.4,
-      "mmmu-pro": 86.9
+      "mmmu-pro": 86.9,
+      "webdev-arena": 1800,
+      "matharena": 90.7
     },
     "granite-4-2-30b": {
       "swe-bench-verified": 57,
@@ -2919,7 +2925,8 @@
       "mmmu-pro": 77,
       "aa-omniscience-accuracy": 46.4,
       "aa-intelligence-index": 39.5,
-      "webdev-arena": 1619.8
+      "webdev-arena": 1619.8,
+      "gdpval-aa": 1632
     }
   }
 }
