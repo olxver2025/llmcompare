@@ -5641,6 +5641,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'GLM-5.2 (max)', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-15",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'GLM-5.2 (max)', intelligenceIndex score."
     }
   },
   "glm-5-3": {
@@ -9303,6 +9308,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Kimi K2.6', ifbench score."
+    },
+    "aa-intelligence-index": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-15",
+      "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Kimi K2.6', intelligenceIndex score."
     }
   },
   "glm-4-7-flash": {

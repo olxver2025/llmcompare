@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-11",
+  "asOf": "2026-09-15",
   "cells": {
     "claude-fable-5-1": {
       "terminal-bench-science": 52.6,
@@ -1304,7 +1304,8 @@
       "aa-lcr": 78.3,
       "critpt": 20.9,
       "tau3-banking": 34.6,
-      "ifbench": 73.3
+      "ifbench": 73.3,
+      "aa-intelligence-index": 34
     },
     "glm-5-3": {
       "terminal-bench-3": 28.3,
@@ -2407,7 +2408,8 @@
       "critpt": 8,
       "tau3-banking": 23.3,
       "mmmu-pro": 79.4,
-      "ifbench": 76
+      "ifbench": 76,
+      "aa-intelligence-index": 27.5
     },
     "glm-4-7-flash": {
       "lmarena-elo": 1366.4,

@@ -3418,6 +3418,7 @@ export const models: Model[] = [
       critpt: 20.9,
       "tau3-banking": 34.6,
       ifbench: 73.3,
+      "aa-intelligence-index": 34,
     },
     links: {
       docs: "https://docs.z.ai/",
@@ -7629,6 +7630,7 @@ export const models: Model[] = [
       "tau3-banking": 23.3,
       "mmmu-pro": 79.4,
       ifbench: 76,
+      "aa-intelligence-index": 27.5,
     },
     links: {
       docs: "https://platform.moonshot.cn/docs",
