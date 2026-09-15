@@ -2922,6 +2922,105 @@
       "aa-omniscience-accuracy": 46.4,
       "aa-intelligence-index": 39.5,
       "webdev-arena": 1619.8
+    },
+    "glm-5-1": {
+      "gpqa-diamond": 86.8,
+      "hle": 30.1,
+      "scicode": 44.8,
+      "terminal-bench-2-1": 61.8,
+      "aa-intelligence-index": 26.4,
+      "aa-omniscience-accuracy": 23.7,
+      "aa-lcr": 73.7,
+      "critpt": 4.6,
+      "tau3-banking": 13.6,
+      "ifbench": 76.3,
+      "lmarena-elo": 1465.5,
+      "webdev-arena": 1508.3
+    },
+    "qwen3-6-27b": {
+      "gpqa-diamond": 84.2,
+      "hle": 23.1,
+      "scicode": 42.8,
+      "terminal-bench-2-1": 60.7,
+      "aa-intelligence-index": 21.9,
+      "aa-omniscience-accuracy": 19.6,
+      "aa-lcr": 77.3,
+      "critpt": 1.1,
+      "tau3-banking": 16.7,
+      "mmmu-pro": 74.6,
+      "ifbench": 67.6
+    },
+    "qwen3-6-35b-a3b": {
+      "gpqa-diamond": 84.1,
+      "hle": 22.2,
+      "scicode": 36.6,
+      "terminal-bench-2-1": 44.9,
+      "aa-intelligence-index": 18.8,
+      "aa-omniscience-accuracy": 18.8,
+      "aa-lcr": 71.7,
+      "critpt": 0.3,
+      "tau3-banking": 9.3,
+      "mmmu-pro": 75,
+      "ifbench": 64.4
+    },
+    "nemotron-3-5-lightning": {
+      "gpqa-diamond": 74.3,
+      "hle": 10.6,
+      "scicode": 32.1,
+      "terminal-bench-2-1": 24.3,
+      "aa-intelligence-index": 13.6,
+      "aa-omniscience-accuracy": 14.4,
+      "aa-lcr": 60.3,
+      "tau3-banking": 8.9
+    },
+    "ring-2-6-1t": {
+      "gpqa-diamond": 85.7,
+      "hle": 21.6,
+      "scicode": 45,
+      "terminal-bench-2-1": 43.1,
+      "aa-intelligence-index": 17.3,
+      "aa-omniscience-accuracy": 25.7,
+      "aa-lcr": 70,
+      "critpt": 3.7,
+      "tau3-banking": 17.9,
+      "ifbench": 44.6
+    },
+    "solar-pro-4": {
+      "gpqa-diamond": 89.1,
+      "hle": 29.2,
+      "scicode": 44.6,
+      "terminal-bench-2-1": 57.3,
+      "aa-omniscience-accuracy": 18.9,
+      "aa-lcr": 74,
+      "critpt": 5.4,
+      "tau3-banking": 23.3,
+      "lmarena-elo": 1376.4,
+      "webdev-arena": 1371.5
+    },
+    "mimo-v2-flash": {
+      "gpqa-diamond": 83.5,
+      "hle": 22.1,
+      "aa-omniscience-accuracy": 19.8,
+      "aa-lcr": 71.3,
+      "critpt": 2.9,
+      "ifbench": 71.8
+    },
+    "trinity-large-thinking": {
+      "gpqa-diamond": 75.2,
+      "hle": 15.8,
+      "scicode": 40.6,
+      "terminal-bench-2-1": 20.6,
+      "aa-intelligence-index": 10.9,
+      "aa-omniscience-accuracy": 22.5,
+      "aa-lcr": 38,
+      "critpt": 0.9,
+      "tau3-banking": 5.8,
+      "ifbench": 56.3,
+      "lmarena-elo": 1369,
+      "webdev-arena": 1236.6
+    },
+    "longcat-flash-chat": {
+      "lmarena-elo": 1401.3
     }
   }
 }
