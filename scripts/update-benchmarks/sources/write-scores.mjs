@@ -18,7 +18,7 @@ writeScores("gpqa-diamond", structured["gpqa-diamond"]);
 writeScores("humanitys-last-exam", structured["hle"]);
 writeScores("scicode", structured["scicode"]);
 writeScores("terminal-bench-2-1", structured["terminal-bench-2-1"]);
-writeScores("aa-intelligence-index", structured["aa-intelligence-index"]);
+writeScores("aa-intelligence-index-v4-3", structured["aa-intelligence-index-v4-3"]);
 writeScores("aa-omniscience-accuracy", structured["aa-omniscience-accuracy"]);
 writeScores("aa-lcr", structured["aa-lcr"]);
 writeScores("critpt", structured["critpt"]);

@@ -152,7 +152,7 @@ export function extractAll({ evaluationDate = "2026-09-02" } = {}) {
     "hle",
     "scicode",
     "terminal-bench-2-1",
-    "aa-intelligence-index",
+    "aa-intelligence-index-v4-3",
     "aa-omniscience-accuracy",
     "aa-lcr",
     "critpt",

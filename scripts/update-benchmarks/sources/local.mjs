@@ -48,7 +48,7 @@ export const adapters = [
   adapter("aa-hle", "hle", "humanitys-last-exam", "https://artificialanalysis.ai/evaluations/humanitys-last-exam"),
   adapter("aa-scicode", "scicode", "scicode", "https://artificialanalysis.ai/evaluations/scicode"),
   adapter("aa-terminal-bench-2-1", "terminal-bench-2-1", "terminal-bench-2-1", "https://artificialanalysis.ai/evaluations/terminalbench-v2-1"),
-  adapter("aa-intelligence-index", "aa-intelligence-index", "aa-intelligence-index", "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index"),
+  adapter("aa-intelligence-index-v4-3", "aa-intelligence-index-v4-3", "aa-intelligence-index-v4-3", "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index"),
   adapter("aa-omniscience-accuracy", "aa-omniscience-accuracy", "aa-omniscience-accuracy", "https://artificialanalysis.ai/evaluations/omniscience"),
   adapter("aa-lcr", "aa-lcr", "aa-lcr", "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning"),
   adapter("aa-critpt", "critpt", "critpt", "https://artificialanalysis.ai/evaluations/critpt"),

@@ -382,6 +382,19 @@ export const BENCHMARKS: Record<BenchmarkId, BenchmarkMeta> = {
       "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
   },
 
+  "aa-intelligence-index-v4-3": {
+    id: "aa-intelligence-index-v4-3",
+    name: "Artificial Analysis Intelligence Index v4.3",
+    shortName: "AA Index v4.3",
+    description:
+      "Artificial Analysis's own composite metric on a 0-100 scale, not a percentage. v4.3 is a weighted average of ten independently-run evaluations across four equally-weighted (25% each) categories: agents (AA-Briefcase, GDPval-AA v2, AutomationBench-AA), coding (Terminal-Bench 4.0, SciCode), general (AA-Omniscience, GDP.pdf, AA-LCR v1.1), and scientific reasoning (Humanity's Last Exam, CritPt). Relative to v4.2, v4.3 removes τ³-Banking, adds AutomationBench-AA, and swaps in Terminal-Bench 4.0 for Terminal-Bench 2.1. Index versions are not comparable to each other, so v4.3 scores must not be merged with v4.2 scores; several components are agent-harness evaluations, so the index is not a model-only capability measurement. Only listings Artificial Analysis has fully measured are recorded here; its estimated index values are omitted.",
+    higherIsBetter: true,
+    unit: "index",
+    category: "index",
+    sourceUrl:
+      "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+  },
+
   "aa-omniscience-accuracy": {
     id: "aa-omniscience-accuracy",
     name: "AA-Omniscience Accuracy",
@@ -531,6 +544,6 @@ export const BENCHMARK_CATEGORIES = [
   {
     id: "index" as const,
     label: "Composite indices",
-    ids: ["aa-intelligence-index"] as BenchmarkId[],
+    ids: ["aa-intelligence-index", "aa-intelligence-index-v4-3"] as BenchmarkId[],
   },
 ];

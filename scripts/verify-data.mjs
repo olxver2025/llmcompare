@@ -2,7 +2,7 @@ import fs from "node:fs";
 import { execFileSync } from "node:child_process";
 import { load } from "./update-benchmarks/load.mjs";
 
-const asOf = "2026-09-15";
+const asOf = "2026-09-17";
 
 const models = load("src/data/models.ts", "models");
 const imageModels = load("src/data/image-models.ts", "imageModels");
@@ -56,6 +56,7 @@ const expectedBenchmarkIds = new Set([
   "osworld-2-strict",
   "frontiermath-tier-4-v2",
   "aa-intelligence-index",
+  "aa-intelligence-index-v4-3",
   "aa-omniscience-accuracy",
   "aa-lcr",
   "critpt",
@@ -75,7 +76,7 @@ try {
   check(false, `benchmark evidence ledger is not reproducible: ${detail}`);
 }
 
-check(benchmarkIds.size === 39, `expected 39 benchmark IDs, found ${benchmarkIds.size}`);
+check(benchmarkIds.size === 40, `expected 40 benchmark IDs, found ${benchmarkIds.size}`);
 check(
   benchmarkIds.size === Object.keys(benchmarkCatalog).length,
   "benchmark metadata and benchmark ID exports disagree"
@@ -99,7 +100,7 @@ check(
   "evidence ledger must include every model, including intentional empty records"
 );
 
-check(models.length === 309, `expected 309 models, found ${models.length}`);
+check(models.length === 311, `expected 311 models, found ${models.length}`);
 check(new Set(models.map((model) => model.slug)).size === models.length, "duplicate model slug");
 const expectedEmptyBenchmarkModels = new Set(emptyBenchmarkManifest.slugs);
 check(
@@ -122,6 +123,8 @@ check(bySlug["mimo-v2-5-pro"], "MiMo-V2.5-Pro should be catalogued");
 check(bySlug["mimo-v2-5"], "MiMo-V2.5 should be catalogued");
 check(bySlug["granite-4-2-3b"], "Granite 4.2 3B should be catalogued");
 check(bySlug["ling-3-0-tiny"], "Ling-3.0 Tiny should be catalogued");
+check(bySlug["atria-dawn-preview"], "Atria Dawn Preview should be catalogued");
+check(bySlug["ling-3-0-flash-fin"], "Ling-3.0 Flash Fin should be catalogued");
 
 for (const model of models) {
   check(model.releaseDate <= asOf, `${model.slug} has a future release date`);
@@ -276,7 +279,7 @@ exact("glm-5-3", "openSource", true);
 exact("hy4-preview", "parameters.total", 770);
 exact("hy4-preview", "parameters.active", 49);
 exact("granite-4-2-30b", "benchmarks.swe-bench-verified", 57);
-exact("qwen3-8-max-0902", "benchmarks.webdev-arena", 1686.1);
+exact("qwen3-8-max-0902", "benchmarks.webdev-arena", 1680.8);
 exact("gpt-5-6-sol", "benchmarks.deepswe", 72.7);
 
 for (const slug of expectedEmptyBenchmarkModels) {
@@ -291,7 +294,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 2507, `expected 2507 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 2600, `expected 2600 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);
