@@ -3110,6 +3110,12 @@
     },
     "longcat-flash-chat": {
       "lmarena-elo": 1401.3
+    },
+    "atria-dawn-preview": {
+      "swe-bench-pro": 59.6,
+      "automation-bench": 53.8,
+      "tau3-banking": 41.2,
+      "cybergym": 86.5
     }
   }
 }

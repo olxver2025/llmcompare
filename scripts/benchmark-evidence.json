@@ -18512,6 +18512,37 @@
         "evaluationDate": "2026-09-06"
       }
     },
+    "atria-dawn-preview": {
+      "swe-bench-pro": {
+        "value": 59.6,
+        "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview",
+        "checkedOn": "2026-09-17",
+        "protocol": "Atria Dawn Preview official model card (Shanghai AI Laboratory / ATRIA initiative), benchmark comparison table, Creation category, SWE-bench Pro score for Atria Dawn Preview. Vendor-reported; not yet independently verified.",
+        "evaluationDate": "2026-09-11"
+      },
+      "automation-bench": {
+        "value": 53.8,
+        "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview",
+        "checkedOn": "2026-09-17",
+        "protocol": "Atria Dawn Preview official model card (Shanghai AI Laboratory / ATRIA initiative), benchmark comparison table, Tool Use category, AutomationBench score for Atria Dawn Preview. Vendor-reported; not yet independently verified.",
+        "evaluationDate": "2026-09-11"
+      },
+      "tau3-banking": {
+        "value": 41.2,
+        "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview",
+        "checkedOn": "2026-09-17",
+        "protocol": "Atria Dawn Preview official model card (Shanghai AI Laboratory / ATRIA initiative), benchmark comparison table, Tool Use category, τ³-Bench Banking score for Atria Dawn Preview. Vendor-reported; not yet independently verified.",
+        "evaluationDate": "2026-09-11"
+      },
+      "cybergym": {
+        "value": 86.5,
+        "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview",
+        "checkedOn": "2026-09-17",
+        "protocol": "Atria Dawn Preview official model card (Shanghai AI Laboratory / ATRIA initiative), benchmark comparison table, Cybersecurity category, CyberGym score for Atria Dawn Preview. Vendor-reported; not yet independently verified.",
+        "evaluationDate": "2026-09-11"
+      }
+    },
+    "ling-3-0-flash-fin": {},
     "inkling": {
       "toolathlon-verified": {
         "value": 45.5,

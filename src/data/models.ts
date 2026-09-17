@@ -8990,6 +8990,51 @@ export const models: Model[] = [
       "Alibaba's first natively end-to-end omni-modal model (text/image/audio/video in; text and streamed speech out) via a Thinker-Talker MoE architecture; DashScope hosting pricing not publicly listed.",
   },
 
+  // ─── Additional open-weight models (2026-09-17) ────────────
+  {
+    slug: "atria-dawn-preview",
+    name: "Atria Dawn Preview",
+    organization: "Shanghai AI Lab",
+    releaseDate: "2026-09-11",
+    openSource: true,
+    license: "MIT",
+    parameters: { total: 744 },
+    contextWindow: 256_000,
+    maxOutput: 65_536,
+    modalities: { input: ["text"], output: ["text"] },
+    benchmarks: {
+      "swe-bench-pro": 59.6,
+      "automation-bench": 53.8,
+      "tau3-banking": 41.2,
+      cybergym: 86.5,
+    },
+    links: {
+      modelCard: "https://huggingface.co/internlm/Atria-Dawn-Preview",
+      docs: "https://github.com/atria-asi/Atria-Dawn-Preview",
+      announcement: "https://arxiv.org/abs/2609.15818",
+    },
+    summary:
+      "Shanghai AI Laboratory's open-weight agentic MoE (744B total, MIT license, 256K context), built on a GLM-5.2 base and trained by the cross-institutional ATRIA initiative (with Fudan NLP Lab) for long-horizon research and engineering workflows: problem analysis, tool use, code, experiments, and failure recovery. Benchmark scores are from the model's own technical report and have not yet been independently verified by a third-party evaluator.",
+  },
+  {
+    slug: "ling-3-0-flash-fin",
+    name: "Ling-3.0 Flash Fin",
+    organization: "InclusionAI",
+    releaseDate: "2026-09-03",
+    openSource: true,
+    license: "MIT",
+    parameters: { total: 124, active: 5.1 },
+    contextWindow: 262_144,
+    modalities: { input: ["text"], output: ["text"] },
+    benchmarks: {},
+    links: {
+      modelCard: "https://huggingface.co/inclusionAI/Ling-3.0-flash-Fin",
+      docs: "https://developer.ant-ling.com/zh-CN/docs/models/ling/",
+    },
+    summary:
+      "InclusionAI / Ant Group's finance-specialized fine-tune of Ling-3.0 Flash (124B total / 5.1B active MoE, MIT, 256K context), built with financial institutions for source-grounded financial research, multi-document analysis, valuation modeling, and spreadsheet workflows. Ant Group's model card reports evaluation on FinFIRST, FinSearchComp Verified, FinCRAFT, Finance Agent, APEX-Agents, SpreadsheetBench, and τ³-Banking without publishing numeric scores, so no benchmark values are recorded here.",
+  },
+
   // ─── Thinking Machines ────────────────────────────────────
   {
     slug: "inkling",
