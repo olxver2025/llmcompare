@@ -2,7 +2,7 @@ import fs from "node:fs";
 import { execFileSync } from "node:child_process";
 import { load } from "./update-benchmarks/load.mjs";
 
-const asOf = "2026-09-15";
+const asOf = "2026-09-17";
 
 const models = load("src/data/models.ts", "models");
 const imageModels = load("src/data/image-models.ts", "imageModels");
@@ -56,6 +56,7 @@ const expectedBenchmarkIds = new Set([
   "osworld-2-strict",
   "frontiermath-tier-4-v2",
   "aa-intelligence-index",
+  "aa-intelligence-index-v4-3",
   "aa-omniscience-accuracy",
   "aa-lcr",
   "critpt",
@@ -75,7 +76,7 @@ try {
   check(false, `benchmark evidence ledger is not reproducible: ${detail}`);
 }
 
-check(benchmarkIds.size === 39, `expected 39 benchmark IDs, found ${benchmarkIds.size}`);
+check(benchmarkIds.size === 40, `expected 40 benchmark IDs, found ${benchmarkIds.size}`);
 check(
   benchmarkIds.size === Object.keys(benchmarkCatalog).length,
   "benchmark metadata and benchmark ID exports disagree"
@@ -276,7 +277,7 @@ exact("glm-5-3", "openSource", true);
 exact("hy4-preview", "parameters.total", 770);
 exact("hy4-preview", "parameters.active", 49);
 exact("granite-4-2-30b", "benchmarks.swe-bench-verified", 57);
-exact("qwen3-8-max-0902", "benchmarks.webdev-arena", 1686.1);
+exact("qwen3-8-max-0902", "benchmarks.webdev-arena", 1680.8);
 exact("gpt-5-6-sol", "benchmarks.deepswe", 72.7);
 
 for (const slug of expectedEmptyBenchmarkModels) {
@@ -291,7 +292,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 2507, `expected 2507 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 2596, `expected 2596 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);

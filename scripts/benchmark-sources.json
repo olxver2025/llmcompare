@@ -57,8 +57,8 @@
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'claude-fable-5.1-max'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'claude-fable-5.1-max'. Elo rating is a volatile leaderboard snapshot."
     },
     "lmarena-elo": {
       "sourceUrl": "https://lmarena.ai/leaderboard/text",
@@ -99,6 +99,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)', tauBanking score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Claude Fable 5.1 (max with fallback)', intelligenceIndex score."
     }
   },
   "claude-mythos-5-1": {
@@ -166,8 +171,8 @@
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'gpt-5.6-sol-xhigh (codex-harness)'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'gpt-5.6-sol-xhigh (codex-harness)'. Elo rating is a volatile leaderboard snapshot."
     },
     "terminal-bench-science": {
       "sourceUrl": "https://www.tbench.ai/news/terminal-bench-science-0-1",
@@ -238,6 +243,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'GPT-5.6 Sol (max)', ifbench score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'GPT-5.6 Sol (max)', intelligenceIndex score."
     }
   },
   "gpt-5-6-terra": {
@@ -288,8 +298,8 @@
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'gpt-5.6-terra-xhigh (codex-harness)'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'gpt-5.6-terra-xhigh (codex-harness)'. Elo rating is a volatile leaderboard snapshot."
     },
     "terminal-bench-science": {
       "sourceUrl": "https://www.tbench.ai/news/terminal-bench-science-0-1",
@@ -335,6 +345,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'GPT-5.6 Terra (max)', ifbench score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'GPT-5.6 Terra (max)', intelligenceIndex score."
     }
   },
   "gpt-5-6-luna": {
@@ -390,8 +405,8 @@
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'gpt-5.6-luna-xhigh (codex-harness)'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'gpt-5.6-luna-xhigh (codex-harness)'. Elo rating is a volatile leaderboard snapshot."
     },
     "terminal-bench-science": {
       "sourceUrl": "https://www.tbench.ai/news/terminal-bench-science-0-1",
@@ -437,6 +452,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'GPT-5.6 Luna (max)', mmmuPro score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'GPT-5.6 Luna (max)', intelligenceIndex score."
     }
   },
   "gpt-5-5": {
@@ -467,8 +487,8 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'gpt-5.5'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'gpt-5.5'. Elo rating is a volatile leaderboard snapshot."
     },
     "matharena": {
       "sourceUrl": "https://matharena.ai/",
@@ -482,13 +502,13 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-02",
+      "evaluationDate": "2026-09-17",
       "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'GPT-5.5 (xhigh)', scicode score."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-05",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-05; listing 'gpt-5.5-xhigh (codex-harness)'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'gpt-5.5-xhigh (codex-harness)'. Elo rating is a volatile leaderboard snapshot."
     },
     "toolathlon-verified": {
       "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
@@ -539,6 +559,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'GPT-5.5 (xhigh)', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'GPT-5.5 (xhigh)', intelligenceIndex score."
     }
   },
   "gpt-5-4": {
@@ -559,13 +584,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'gpt-5.4'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'gpt-5.4'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'gpt-5.4'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'gpt-5.4'. Elo rating is a volatile leaderboard snapshot."
     },
     "swe-rebench": {
       "sourceUrl": "https://swe-rebench.com/",
@@ -728,7 +753,7 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-04",
+      "evaluationDate": "2026-09-17",
       "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'GPT-5 mini (high)', scicode score."
     },
     "terminal-bench-2-1": {
@@ -765,6 +790,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'GPT-5 mini (high)', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'GPT-5 mini (high)', intelligenceIndex score."
     }
   },
   "gpt-5-nano": {
@@ -852,8 +882,8 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'o3-2025-04-16'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'o3-2025-04-16'. Elo rating is a volatile leaderboard snapshot."
     },
     "mmlu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmlu-pro",
@@ -934,8 +964,8 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'gpt-4.1-2025-04-14'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'gpt-4.1-2025-04-14'. Elo rating is a volatile leaderboard snapshot."
     },
     "mmlu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmlu-pro",
@@ -1053,8 +1083,8 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'gpt-4.1-mini-2025-04-14'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'gpt-4.1-mini-2025-04-14'. Elo rating is a volatile leaderboard snapshot."
     },
     "mmlu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmlu-pro",
@@ -1329,8 +1359,8 @@
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'claude-opus-5-max'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'claude-opus-5-max'. Elo rating is a volatile leaderboard snapshot."
     },
     "terminal-bench-science": {
       "sourceUrl": "https://www.tbench.ai/news/terminal-bench-science-0-1",
@@ -1401,6 +1431,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Claude Opus 5 (Adaptive Reasoning, Max Effort)', mmmuPro score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Claude Opus 5 (max)', intelligenceIndex score."
     }
   },
   "claude-fable-5": {
@@ -1416,13 +1451,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'claude-fable-5'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'claude-fable-5'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'claude-fable-5'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'claude-fable-5'. Elo rating is a volatile leaderboard snapshot."
     },
     "swe-bench-pro": {
       "sourceUrl": "https://openai.com/index/gpt-5-6/",
@@ -1523,6 +1558,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)', ifbench score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Claude Fable 5 (with fallback)', intelligenceIndex score."
     }
   },
   "claude-mythos-5": {
@@ -1590,13 +1630,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'claude-opus-4-8'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'claude-opus-4-8'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'claude-opus-4-8'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'claude-opus-4-8'. Elo rating is a volatile leaderboard snapshot."
     },
     "swe-bench-pro": {
       "sourceUrl": "https://openai.com/index/gpt-5-6/",
@@ -1682,6 +1722,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Claude Opus 4.8 (max)', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Claude Opus 4.8 (max)', intelligenceIndex score."
     }
   },
   "claude-sonnet-5": {
@@ -1732,8 +1777,8 @@
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'claude-sonnet-5-high'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'claude-sonnet-5-high'. Elo rating is a volatile leaderboard snapshot."
     },
     "toolathlon-verified": {
       "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
@@ -1779,18 +1824,23 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Claude Sonnet 5 (Adaptive Reasoning, Max Effort)', mmmuPro score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Claude Sonnet 5 (max)', intelligenceIndex score."
     }
   },
   "claude-opus-4-5": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'claude-opus-4-5-20251101'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'claude-opus-4-5-20251101'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'claude-opus-4-5-20251101'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'claude-opus-4-5-20251101'. Elo rating is a volatile leaderboard snapshot."
     },
     "swe-rebench": {
       "sourceUrl": "https://swe-rebench.com/",
@@ -1851,13 +1901,13 @@
   "claude-sonnet-4-6": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'claude-sonnet-4-6'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'claude-sonnet-4-6'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-05",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-05; listing 'claude-sonnet-4-6'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'claude-sonnet-4-6'. Elo rating is a volatile leaderboard snapshot."
     },
     "swe-rebench": {
       "sourceUrl": "https://swe-rebench.com/",
@@ -1876,8 +1926,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-02",
-      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)', scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Claude Sonnet 4.6 (max)', scicode score."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -1918,6 +1968,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Claude Sonnet 4.6 (max)', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Claude Sonnet 4.6 (max)', intelligenceIndex score."
     }
   },
   "claude-haiku-4-5": {
@@ -1928,13 +1983,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'claude-haiku-4-5-20251001'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'claude-haiku-4-5-20251001'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'claude-haiku-4-5-20251001'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'claude-haiku-4-5-20251001'. Elo rating is a volatile leaderboard snapshot."
     },
     "swe-bench-multilingual": {
       "sourceUrl": "https://www.swebench.com/multilingual.html",
@@ -1950,13 +2005,18 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-06",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Claude 4.5 Haiku (Reasoning)', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Claude 4.5 Haiku', intelligenceIndex score."
     }
   },
   "claude-sonnet-4": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'claude-sonnet-4-20250514'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'claude-sonnet-4-20250514'. Elo rating is a volatile leaderboard snapshot."
     },
     "aider-polyglot": {
       "sourceUrl": "https://aider.chat/docs/leaderboards/",
@@ -2081,6 +2141,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-06",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Gemini 3.1 Pro Preview', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Gemini 3.1 Pro Preview', intelligenceIndex score."
     }
   },
   "gemini-3-pro": {
@@ -2096,13 +2161,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'gemini-3-pro'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'gemini-3-pro'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-05",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-05; listing 'gemini-3-pro'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'gemini-3-pro'. Elo rating is a volatile leaderboard snapshot."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/2.1",
@@ -2153,13 +2218,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'gemini-3.6-flash-high'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'gemini-3.6-flash-high'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'gemini-3.6-flash-high'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'gemini-3.6-flash-high'. Elo rating is a volatile leaderboard snapshot."
     },
     "deepswe": {
       "sourceUrl": "https://deepswe.datacurve.ai/",
@@ -2195,6 +2260,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Gemini 3.6 Flash (high)', mmmuPro score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Gemini 3.6 Flash', intelligenceIndex score."
     }
   },
   "gemini-3-7-flash": {
@@ -2240,8 +2310,8 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'gemini-3.7-flash-high'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'gemini-3.7-flash-high'. Elo rating is a volatile leaderboard snapshot."
     },
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
@@ -2287,6 +2357,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Gemini 3.7 Flash (high)', mmmuPro score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Gemini 3.7 Flash (high)', intelligenceIndex score."
     }
   },
   "gemini-3-8-flash": {
@@ -2379,6 +2454,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Gemini 3.8 Flash (high)', mmmuPro score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Gemini 3.8 Flash (high)', intelligenceIndex score."
     }
   },
   "gemini-3-8-flash-cyber": {
@@ -2391,13 +2471,13 @@
   "gemini-3-flash": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'gemini-3-flash'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'gemini-3-flash'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'gemini-3-flash'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'gemini-3-flash'. Elo rating is a volatile leaderboard snapshot."
     },
     "swe-bench-multilingual": {
       "sourceUrl": "https://www.swebench.com/multilingual.html",
@@ -2453,13 +2533,13 @@
   "gemini-3-5-flash-lite": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'gemini-3.5-flash-lite'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'gemini-3.5-flash-lite'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'gemini-3.5-flash-lite'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'gemini-3.5-flash-lite'. Elo rating is a volatile leaderboard snapshot."
     },
     "gpqa-diamond": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
@@ -2510,6 +2590,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Gemini 3.5 Flash-Lite', mmmuPro score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Gemini 3.5 Flash-Lite', intelligenceIndex score."
     }
   },
   "gemini-2-5-pro": {
@@ -2525,13 +2610,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'gemini-2.5-pro'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'gemini-2.5-pro'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'gemini-2.5-pro'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'gemini-2.5-pro'. Elo rating is a volatile leaderboard snapshot."
     },
     "aider-polyglot": {
       "sourceUrl": "https://aider.chat/docs/leaderboards/",
@@ -2560,8 +2645,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Gemini 2.5 Pro, scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Gemini 2.5 Pro', scicode score."
     },
     "livecodebench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/livecodebench",
@@ -2612,13 +2697,18 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Gemini 2.5 Pro', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Gemini 2.5 Pro', intelligenceIndex score."
     }
   },
   "gemini-2-5-flash": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'gemini-2.5-flash'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'gemini-2.5-flash'. Elo rating is a volatile leaderboard snapshot."
     },
     "swe-rebench": {
       "sourceUrl": "https://swe-rebench.com/",
@@ -2699,13 +2789,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'gemma-4-31b'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'gemma-4-31b'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'gemma-4-31b'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'gemma-4-31b'. Elo rating is a volatile leaderboard snapshot."
     },
     "swe-rebench": {
       "sourceUrl": "https://swe-rebench.com/",
@@ -2756,6 +2846,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Gemma 4 31B', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Gemma 4 31B', intelligenceIndex score."
     }
   },
   "gemma-4-26b": {
@@ -2797,9 +2892,9 @@
       "protocol": "Gemma 3 IT, 0-shot MMLU (Pro)."
     },
     "gpqa-diamond": {
-      "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_3",
-      "evaluationDate": "2025-03-12",
-      "protocol": "Gemma 3 IT, 0-shot GPQA Diamond."
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Gemma 3 12B', gpqa score."
     },
     "livecodebench": {
       "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_3",
@@ -2828,8 +2923,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Gemma 3 12B Instruct, scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Gemma 3 12B', scicode score."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -2865,6 +2960,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Gemma 3 12B', ifbench score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Gemma 3 12B', intelligenceIndex score."
     }
   },
   "grok-4-5": {
@@ -2875,13 +2975,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'grok-4.5'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'grok-4.5'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'grok-4.5'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'grok-4.5'. Elo rating is a volatile leaderboard snapshot."
     },
     "terminal-bench-3": {
       "sourceUrl": "https://www.frontierbench.ai/",
@@ -2952,6 +3052,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Grok 4.5 (high)', mmmuPro score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Grok 4.5 (high)', intelligenceIndex score."
     }
   },
   "grok-4-6": {
@@ -2992,13 +3097,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'grok-4.6-high'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'grok-4.6-high'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'grok-4.6-high'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'grok-4.6-high'. Elo rating is a volatile leaderboard snapshot."
     },
     "terminal-bench-science": {
       "sourceUrl": "https://www.tbench.ai/news/terminal-bench-science-0-1",
@@ -3039,18 +3144,23 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Grok 4.6 (high)', tauBanking score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Grok 4.6 (high)', intelligenceIndex score."
     }
   },
   "grok-4-3": {
     "lmarena-elo": {
-      "sourceUrl": "https://lmarena.ai/leaderboard/text",
-      "evaluationDate": "2026-09-02",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'grok-4.3'. Elo rating is a volatile leaderboard snapshot."
+      "sourceUrl": "https://arena.ai/leaderboard",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'grok-4.3'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'grok-4.3'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'grok-4.3'. Elo rating is a volatile leaderboard snapshot."
     },
     "gpqa-diamond": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
@@ -3106,6 +3216,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Grok 4.3 (high)', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Grok 4.3 (high)', intelligenceIndex score."
     }
   },
   "grok-4-1": {
@@ -3262,6 +3377,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Muse Spark 1.2 (xhigh)', tauBanking score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Muse Spark 1.2 (xhigh)', intelligenceIndex score."
     }
   },
   "muse-glimmer": {
@@ -3297,13 +3417,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'muse-glimmer'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'muse-glimmer'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'muse-glimmer'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'muse-glimmer'. Elo rating is a volatile leaderboard snapshot."
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
@@ -3334,6 +3454,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Muse Glimmer (high)', mmmuPro score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Muse Glimmer (high)', intelligenceIndex score."
     }
   },
   "muse-spark-1-1": {
@@ -3344,13 +3469,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'muse-spark-1.1'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'muse-spark-1.1'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'muse-spark-1.1'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'muse-spark-1.1'. Elo rating is a volatile leaderboard snapshot."
     },
     "gpqa-diamond": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
@@ -3396,6 +3521,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Muse Spark 1.1 (xhigh)', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Muse Spark 1.1 (xhigh)', intelligenceIndex score."
     }
   },
   "llama-4-maverick": {
@@ -3441,8 +3571,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Llama 4 Maverick, scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Llama 4 Maverick', scicode score."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -3498,6 +3628,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Llama 4 Maverick', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Llama 4 Maverick', intelligenceIndex score."
     }
   },
   "llama-4-scout": {
@@ -3538,8 +3673,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Llama 4 Scout, scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Llama 4 Scout', scicode score."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -3585,6 +3720,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Llama 4 Scout', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Llama 4 Scout', intelligenceIndex score."
     }
   },
   "llama-3-3-70b": {
@@ -3594,9 +3734,9 @@
       "protocol": "Meta Llama 3.3 Instruct MMLU-Pro result."
     },
     "gpqa-diamond": {
-      "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
-      "evaluationDate": "2024-12-06",
-      "protocol": "Meta Llama 3.3 Instruct GPQA result, retained under the catalog's GPQA field."
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Llama 3.3 70B', gpqa score."
     },
     "livecodebench": {
       "sourceUrl": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
@@ -3656,9 +3796,9 @@
       "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'llama-3.1-70b-instruct'. Elo rating is a volatile leaderboard snapshot."
     },
     "gpqa-diamond": {
-      "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
-      "evaluationDate": "2024-12-06",
-      "protocol": "Meta Llama 3.3 instruct comparison table; Llama 3.1 70B Instruct GPQA Diamond, 0-shot CoT."
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Llama 3.1 70B', gpqa score."
     },
     "aime-2025": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/aime-2025",
@@ -3713,9 +3853,9 @@
       "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'llama-3.1-8b-instruct'. Elo rating is a volatile leaderboard snapshot."
     },
     "gpqa-diamond": {
-      "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
-      "evaluationDate": "2024-12-06",
-      "protocol": "Meta Llama 3.3 instruct comparison table; Llama 3.1 8B Instruct GPQA Diamond, 0-shot CoT."
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Llama 3.1 8B', gpqa score."
     },
     "aime-2025": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/aime-2025",
@@ -3771,13 +3911,13 @@
   "deepseek-v4-pro": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'deepseek-v4-pro'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'deepseek-v4-pro'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'deepseek-v4-pro'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'deepseek-v4-pro'. Elo rating is a volatile leaderboard snapshot."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -3863,6 +4003,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'DeepSeek V4 Pro (max)', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'DeepSeek V4 Pro (max)', intelligenceIndex score."
     }
   },
   "deepseek-v4-flash": {
@@ -3903,8 +4048,8 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'deepseek-v4-flash'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'deepseek-v4-flash'. Elo rating is a volatile leaderboard snapshot."
     },
     "swe-rebench": {
       "sourceUrl": "https://swe-rebench.com/",
@@ -3928,8 +4073,8 @@
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'deepseek-v4-flash-high'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'deepseek-v4-flash-high'. Elo rating is a volatile leaderboard snapshot."
     },
     "aa-omniscience-accuracy": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
@@ -3960,6 +4105,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'DeepSeek V4 Flash (max)', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'DeepSeek V4 Flash (max)', intelligenceIndex score."
     }
   },
   "deepseek-v4-flash-0731": {
@@ -4042,6 +4192,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'DeepSeek V4 Flash 0731 (Reasoning, Max Effort)', tauBanking score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'DeepSeek V4 Flash 0731 (max)', intelligenceIndex score."
     }
   },
   "deepseek-v4-pro-0813": {
@@ -4124,6 +4279,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'DeepSeek V4 Pro 0813 (Reasoning, Max Effort)', tauBanking score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'DeepSeek V4 Pro 0813 (max)', intelligenceIndex score."
     }
   },
   "deepseek-v3-2": {
@@ -4144,8 +4304,8 @@
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'deepseek-v3.2'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'deepseek-v3.2'. Elo rating is a volatile leaderboard snapshot."
     },
     "swe-bench-multilingual": {
       "sourceUrl": "https://www.swebench.com/multilingual.html",
@@ -4246,8 +4406,8 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'deepseek-v3.1'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'deepseek-v3.1'. Elo rating is a volatile leaderboard snapshot."
     },
     "swe-rebench": {
       "sourceUrl": "https://swe-rebench.com/",
@@ -4318,8 +4478,8 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'deepseek-r1-0528'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'deepseek-r1-0528'. Elo rating is a volatile leaderboard snapshot."
     },
     "swe-rebench": {
       "sourceUrl": "https://swe-rebench.com/",
@@ -4360,13 +4520,13 @@
   "qwen3-8-max": {
     "gpqa-diamond": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Qwen3.8 Max', gpqa score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Qwen3.8 Max (0902)', gpqa score."
     },
     "hle": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Qwen3.8 Max', hle score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Qwen3.8 Max (0902)', hle score."
     },
     "swe-bench-pro": {
       "sourceUrl": "https://qwen.ai/blog?id=qwen3.8",
@@ -4385,18 +4545,18 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'qwen3.8-max'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'qwen3.8-max'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'qwen3.8-max'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'qwen3.8-max'. Elo rating is a volatile leaderboard snapshot."
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Qwen3.8 Max', scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Qwen3.8 Max (0902)', scicode score."
     },
     "tau-bench": {
       "sourceUrl": "https://www.taubench.com/",
@@ -4430,28 +4590,33 @@
     },
     "aa-omniscience-accuracy": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
-      "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Qwen3.8 Max', omniscienceAccuracy score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Qwen3.8 Max (0902)', omniscienceAccuracy score."
     },
     "aa-lcr": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-      "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Qwen3.8 Max', lcr score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Qwen3.8 Max (0902)', lcr score."
     },
     "critpt": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-      "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis CritPt leaderboard snapshot, listing 'Qwen3.8 Max', critpt score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis CritPt leaderboard snapshot, listing 'Qwen3.8 Max (0902)', critpt score."
     },
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
-      "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Qwen3.8 Max', tauBanking score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Qwen3.8 Max (0902)', tauBanking score."
     },
     "mmmu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-      "evaluationDate": "2026-09-05",
-      "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Qwen3.8 Max', mmmuPro score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Qwen3.8 Max (0902)', mmmuPro score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Qwen3.8 Max (0902)', intelligenceIndex score."
     }
   },
   "qwen3-8-27b": {
@@ -4497,13 +4662,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'qwen3.8-27b'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'qwen3.8-27b'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'qwen3.8-27b'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'qwen3.8-27b'. Elo rating is a volatile leaderboard snapshot."
     },
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
@@ -4539,13 +4704,18 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Qwen3.8 27B (xhigh)', mmmuPro score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Qwen3.8 27B (xhigh)', intelligenceIndex score."
     }
   },
   "qwen3-7-plus": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'qwen3.7-plus'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'qwen3.7-plus'. Elo rating is a volatile leaderboard snapshot."
     },
     "gpqa-diamond": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
@@ -4601,18 +4771,23 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Qwen3.7 Plus', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Qwen3.7 Plus', intelligenceIndex score."
     }
   },
   "qwen3-6-plus": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'qwen3.6-plus'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'qwen3.6-plus'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-05",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-05; listing 'qwen3.6-plus'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'qwen3.6-plus'. Elo rating is a volatile leaderboard snapshot."
     },
     "gpqa-diamond": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
@@ -4698,8 +4873,8 @@
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'qwen3.7-max-20260517'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'qwen3.7-max-20260517'. Elo rating is a volatile leaderboard snapshot."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -4735,18 +4910,23 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Qwen3.7 Max', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Qwen3.7 Max', intelligenceIndex score."
     }
   },
   "qwen3-5-397b": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'qwen3.5-397b-a17b'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'qwen3.5-397b-a17b'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'qwen3.5-397b-a17b'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'qwen3.5-397b-a17b'. Elo rating is a volatile leaderboard snapshot."
     },
     "swe-rebench": {
       "sourceUrl": "https://swe-rebench.com/",
@@ -4770,8 +4950,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Qwen3.5 397B A17B (Reasoning)', scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Qwen3.5 397B A17B', scicode score."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -4812,6 +4992,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Qwen3.5 397B A17B', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Qwen3.5 397B A17B', intelligenceIndex score."
     }
   },
   "qwen3-235b": {
@@ -4971,8 +5156,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Qwen3 32B (Reasoning)', scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Qwen3 32B', scicode score."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -5003,18 +5188,23 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Qwen3 32B', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Qwen3 32B', intelligenceIndex score."
     }
   },
   "mistral-large-3": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'mistral-large-3'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'mistral-large-3'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'mistral-large-3'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'mistral-large-3'. Elo rating is a volatile leaderboard snapshot."
     },
     "mmlu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmlu-pro",
@@ -5080,18 +5270,23 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Mistral Large 3', ifbench score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Mistral Large 3', intelligenceIndex score."
     }
   },
   "mistral-medium-3-5": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'mistral-medium-3.5'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'mistral-medium-3.5'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'mistral-medium-3.5'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'mistral-medium-3.5'. Elo rating is a volatile leaderboard snapshot."
     },
     "gpqa-diamond": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
@@ -5142,6 +5337,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Mistral Medium 3.5', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Mistral Medium 3.5', intelligenceIndex score."
     }
   },
   "magistral-small": {
@@ -5164,8 +5364,8 @@
   "devstral-2": {
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'devstral-2'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'devstral-2'. Elo rating is a volatile leaderboard snapshot."
     },
     "mmlu-pro": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmlu-pro",
@@ -5189,8 +5389,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Devstral 2, scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Devstral 2', scicode score."
     },
     "livecodebench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/livecodebench",
@@ -5231,6 +5431,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Devstral 2', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Devstral 2', intelligenceIndex score."
     }
   },
   "mistral-small-3-2": {
@@ -5261,8 +5466,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Mistral Small 3.2, scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Mistral Small 3.2', scicode score."
     },
     "livecodebench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/livecodebench",
@@ -5303,6 +5508,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Mistral Small 3.2', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Mistral Small 3.2', intelligenceIndex score."
     }
   },
   "kimi-k3": {
@@ -5338,8 +5548,8 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'kimi-k3-max'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'kimi-k3-max'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
@@ -5395,6 +5605,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Kimi K3 (max)', mmmuPro score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Kimi K3 (max)', intelligenceIndex score."
     }
   },
   "kimi-k2-7-code": {
@@ -5405,8 +5620,8 @@
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'kimi-k2.7-code'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'kimi-k2.7-code'. Elo rating is a volatile leaderboard snapshot."
     },
     "gpqa-diamond": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
@@ -5462,6 +5677,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Kimi K2.7 Code', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Kimi K2.7 Code', intelligenceIndex score."
     }
   },
   "kimi-k2-5": {
@@ -5594,13 +5814,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'glm-5.2-max'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'glm-5.2-max'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'glm-5.2-max'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'glm-5.2-max'. Elo rating is a volatile leaderboard snapshot."
     },
     "toolathlon-verified": {
       "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
@@ -5646,6 +5866,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-15",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'GLM-5.2 (max)', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'GLM-5.2 (max)', intelligenceIndex score."
     }
   },
   "glm-5-3": {
@@ -5696,13 +5921,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'glm-5.3-max'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'glm-5.3-max'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'glm-5.3-max'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'glm-5.3-max'. Elo rating is a volatile leaderboard snapshot."
     },
     "terminal-bench-science": {
       "sourceUrl": "https://www.tbench.ai/news/terminal-bench-science-0-1",
@@ -5753,18 +5978,23 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'GLM-5.3 (max)', tauBanking score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'GLM-5.3 (max)', intelligenceIndex score."
     }
   },
   "glm-5": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'glm-5'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'glm-5'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-05",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-05; listing 'glm-5'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'glm-5'. Elo rating is a volatile leaderboard snapshot."
     },
     "swe-bench-multilingual": {
       "sourceUrl": "https://www.swebench.com/multilingual.html",
@@ -5820,13 +6050,13 @@
   "glm-4-7": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'glm-4.7'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'glm-4.7'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'glm-4.7'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'glm-4.7'. Elo rating is a volatile leaderboard snapshot."
     },
     "swe-rebench": {
       "sourceUrl": "https://swe-rebench.com/",
@@ -5971,13 +6201,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'minimax-m3'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'minimax-m3'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'minimax-m3'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'minimax-m3'. Elo rating is a volatile leaderboard snapshot."
     },
     "gpqa-diamond": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
@@ -6033,18 +6263,23 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'MiniMax-M3', ifbench score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'MiniMax-M3', intelligenceIndex score."
     }
   },
   "minimax-m2-5": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'minimax-m2.5'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'minimax-m2.5'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
-      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'minimax-m2.5'. Elo rating is a volatile leaderboard snapshot."
+      "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'minimax-m2.5'. Elo rating is a volatile leaderboard snapshot."
     },
     "gpqa-diamond": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
@@ -6114,9 +6349,9 @@
       "protocol": "NVIDIA model card SWE-bench Multilingual agent evaluation."
     },
     "hle": {
-      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
-      "evaluationDate": "2026-06-03",
-      "protocol": "Humanity's Last Exam, no tools."
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Nemotron 3 Ultra', hle score."
     },
     "livecodebench": {
       "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
@@ -6172,6 +6407,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Nemotron 3 Ultra', ifbench score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Nemotron 3 Ultra', intelligenceIndex score."
     }
   },
   "claude-opus-4-7": {
@@ -6182,13 +6422,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'claude-opus-4-7'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'claude-opus-4-7'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'claude-opus-4-7'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'claude-opus-4-7'. Elo rating is a volatile leaderboard snapshot."
     },
     "swe-bench-pro": {
       "sourceUrl": "https://openai.com/index/introducing-gpt-5-5/",
@@ -6254,8 +6494,8 @@
   "claude-opus-4-6": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'claude-opus-4-6'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'claude-opus-4-6'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
@@ -6326,8 +6566,8 @@
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'claude-sonnet-4-5-20250929'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'claude-sonnet-4-5-20250929'. Elo rating is a volatile leaderboard snapshot."
     },
     "swe-rebench": {
       "sourceUrl": "https://swe-rebench.com/",
@@ -6385,7 +6625,7 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-02",
+      "evaluationDate": "2026-09-17",
       "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'GPT-5.4 mini (xhigh)', scicode score."
     },
     "terminal-bench-2-1": {
@@ -6395,8 +6635,8 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'gpt-5.4-mini-high'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'gpt-5.4-mini-high'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
@@ -6437,6 +6677,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'GPT-5.4 mini (xhigh)', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'GPT-5.4 mini (xhigh)', intelligenceIndex score."
     }
   },
   "gpt-5-4-nano": {
@@ -6457,7 +6702,7 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-02",
+      "evaluationDate": "2026-09-17",
       "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'GPT-5.4 nano (xhigh)', scicode score."
     },
     "terminal-bench-2-1": {
@@ -6467,8 +6712,8 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'gpt-5.4-nano-high'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'gpt-5.4-nano-high'. Elo rating is a volatile leaderboard snapshot."
     },
     "aa-omniscience-accuracy": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
@@ -6504,6 +6749,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'GPT-5.4 nano (xhigh)', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'GPT-5.4 nano (xhigh)', intelligenceIndex score."
     }
   },
   "o4-mini": {
@@ -6534,8 +6784,8 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'o4-mini-2025-04-16'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'o4-mini-2025-04-16'. Elo rating is a volatile leaderboard snapshot."
     },
     "swe-rebench": {
       "sourceUrl": "https://swe-rebench.com/",
@@ -6629,9 +6879,9 @@
   },
   "o1": {
     "lmarena-elo": {
-      "sourceUrl": "https://lmarena.ai/leaderboard/text",
-      "evaluationDate": "2026-09-02",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'o1-2024-12-17'. Elo rating is a volatile leaderboard snapshot."
+      "sourceUrl": "https://arena.ai/leaderboard",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'o1-2024-12-17'. Elo rating is a volatile leaderboard snapshot."
     },
     "aider-polyglot": {
       "sourceUrl": "https://aider.chat/docs/leaderboards/",
@@ -6769,6 +7019,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'gpt-oss-120b (high)', ifbench score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'gpt-oss-120b (high)', intelligenceIndex score."
     }
   },
   "gpt-oss-20b": {
@@ -6809,7 +7064,7 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-04",
+      "evaluationDate": "2026-09-17",
       "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'gpt-oss-20b (high)', scicode score."
     },
     "terminal-bench-2-1": {
@@ -6846,6 +7101,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'gpt-oss-20b (high)', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'gpt-oss-20b (high)', intelligenceIndex score."
     }
   },
   "gemini-3-1-flash-lite": {
@@ -6913,6 +7173,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Gemini 3.1 Flash-Lite', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Gemini 3.1 Flash-Lite', intelligenceIndex score."
     }
   },
   "grok-3": {
@@ -6990,8 +7255,8 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'deepseek-v3'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'deepseek-v3'. Elo rating is a volatile leaderboard snapshot."
     },
     "bigcodebench": {
       "sourceUrl": "https://bigcode-bench.github.io/",
@@ -7020,8 +7285,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, DeepSeek V3 (Dec '24), scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'DeepSeek V3 (Dec)', scicode score."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -7062,6 +7327,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'DeepSeek V3 (Dec)', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'DeepSeek V3 (Dec)', intelligenceIndex score."
     }
   },
   "deepseek-r1": {
@@ -7107,8 +7377,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'DeepSeek R1 (Jan '25)', scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'DeepSeek R1 (Jan)', scicode score."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -7144,6 +7414,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'DeepSeek R1 (Jan)', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'DeepSeek R1 (Jan)', intelligenceIndex score."
     }
   },
   "qwen3-coder-480b": {
@@ -7318,9 +7593,9 @@
       "protocol": "Gemma 3 Technical Report Table 6; instruction-tuned Gemma 3 27B zero-shot MMLU-Pro."
     },
     "gpqa-diamond": {
-      "sourceUrl": "https://arxiv.org/html/2503.19786",
-      "evaluationDate": "2025-03-25",
-      "protocol": "Gemma 3 Technical Report Table 6; instruction-tuned Gemma 3 27B zero-shot GPQA Diamond."
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Gemma 3 27B', gpqa score."
     },
     "livecodebench": {
       "sourceUrl": "https://arxiv.org/html/2503.19786",
@@ -7349,8 +7624,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Gemma 3 27B Instruct, scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Gemma 3 27B', scicode score."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -7401,6 +7676,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Gemma 3 27B', ifbench score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Gemma 3 27B', intelligenceIndex score."
     }
   },
   "llama-3-1-405b": {
@@ -7410,9 +7690,9 @@
       "protocol": "Meta Llama 3.1 Instruct MMLU-Pro, 5-shot CoT."
     },
     "gpqa-diamond": {
-      "sourceUrl": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
-      "evaluationDate": "2024-12-06",
-      "protocol": "Meta Llama 3.3 instruct comparison table; Llama 3.1 405B Instruct GPQA Diamond, 0-shot CoT."
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Llama 3.1 405B', gpqa score."
     },
     "livecodebench": {
       "sourceUrl": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
@@ -7468,8 +7748,8 @@
   "ernie-5-1": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'ernie-5.1'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'ernie-5.1'. Elo rating is a volatile leaderboard snapshot."
     }
   },
   "seed-2-pro": {
@@ -7679,8 +7959,8 @@
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'granite-4.1-8b'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'granite-4.1-8b'. Elo rating is a volatile leaderboard snapshot."
     },
     "gpqa-diamond": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
@@ -8072,8 +8352,8 @@
   "claude-3-5-sonnet": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'claude-3-5-sonnet-20241022'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'claude-3-5-sonnet-20241022'. Elo rating is a volatile leaderboard snapshot."
     },
     "bigcodebench": {
       "sourceUrl": "https://bigcode-bench.github.io/",
@@ -8176,8 +8456,8 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'claude-3-7-sonnet-20250219'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'claude-3-7-sonnet-20250219'. Elo rating is a volatile leaderboard snapshot."
     },
     "aider-polyglot": {
       "sourceUrl": "https://aider.chat/docs/leaderboards/",
@@ -8317,8 +8597,8 @@
   "claude-opus-4": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'claude-opus-4-20250514'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'claude-opus-4-20250514'. Elo rating is a volatile leaderboard snapshot."
     },
     "aider-polyglot": {
       "sourceUrl": "https://aider.chat/docs/leaderboards/",
@@ -8369,8 +8649,8 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-02",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-02; listing 'gemini-3.5-flash-high'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'gemini-3.5-flash-high'. Elo rating is a volatile leaderboard snapshot."
     },
     "toolathlon-verified": {
       "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
@@ -8416,6 +8696,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-06",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Gemini 3.5 Flash (high)', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Gemini 3.5 Flash', intelligenceIndex score."
     }
   },
   "gemma-2-27b": {
@@ -8456,9 +8741,9 @@
       "protocol": "Gemma 3 IT, 0-shot MMLU (Pro)."
     },
     "gpqa-diamond": {
-      "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_3",
-      "evaluationDate": "2025-03-12",
-      "protocol": "Gemma 3 IT, 0-shot GPQA Diamond."
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Gemma 3 4B', gpqa score."
     },
     "livecodebench": {
       "sourceUrl": "https://ai.google.dev/gemma/docs/core/model_card_3",
@@ -9135,13 +9420,13 @@
   "qwen3-5-flash": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'qwen3.5-flash'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'qwen3.5-flash'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
-      "sourceUrl": "https://lmarena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-08-12; listing 'qwen3.5-flash'. Elo rating is a volatile leaderboard snapshot."
+      "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'qwen3.5-flash'. Elo rating is a volatile leaderboard snapshot."
     }
   },
   "qwen2-5-7b": {
@@ -9241,8 +9526,8 @@
   "kimi-k2-6": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'kimi-k2.6'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'kimi-k2.6'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
@@ -9261,8 +9546,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Kimi K2.6, scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Kimi K2.6', scicode score."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -9313,13 +9598,18 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-15",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Kimi K2.6', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Kimi K2.6', intelligenceIndex score."
     }
   },
   "glm-4-7-flash": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'glm-4.7-flash'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'glm-4.7-flash'. Elo rating is a volatile leaderboard snapshot."
     },
     "swe-rebench": {
       "sourceUrl": "https://swe-rebench.com/",
@@ -9380,13 +9670,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'minimax-m2.7'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'minimax-m2.7'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'minimax-m2.7'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'minimax-m2.7'. Elo rating is a volatile leaderboard snapshot."
     },
     "gpqa-diamond": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
@@ -9400,8 +9690,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, MiniMax-M2.7, scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'MiniMax-M2.7', scicode score."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -9447,6 +9737,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'MiniMax-M2.7', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'MiniMax-M2.7', intelligenceIndex score."
     }
   },
   "yi-1-5-34b": {
@@ -9464,8 +9759,8 @@
   "step-3-5-flash": {
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'step-3.5-flash'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'step-3.5-flash'. Elo rating is a volatile leaderboard snapshot."
     },
     "gpqa-diamond": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
@@ -9610,13 +9905,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'inkling'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'inkling'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'inkling'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'inkling'. Elo rating is a volatile leaderboard snapshot."
     },
     "hle": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
@@ -9657,6 +9952,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'Inkling (xhigh)', mmmuPro score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Inkling', intelligenceIndex score."
     }
   },
   "inkling-small": {
@@ -9692,13 +9992,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'Inkling Small'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'Inkling Small'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'Inkling Small'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'Inkling Small'. Elo rating is a volatile leaderboard snapshot."
     },
     "toolathlon-verified": {
       "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
@@ -9734,6 +10034,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Inkling Small', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Inkling Small', intelligenceIndex score."
     }
   },
   "gpt-5-5-pro": {
@@ -9771,8 +10076,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Ministral 3 14B, scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Ministral 3 14B', scicode score."
     },
     "livecodebench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/livecodebench",
@@ -9813,6 +10118,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Ministral 3 14B', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Ministral 3 14B', intelligenceIndex score."
     }
   },
   "ministral-3-8b": {
@@ -9838,8 +10148,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Ministral 3 8B, scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Ministral 3 8B', scicode score."
     },
     "livecodebench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/livecodebench",
@@ -9880,6 +10190,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Ministral 3 8B', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Ministral 3 8B', intelligenceIndex score."
     }
   },
   "ministral-3-3b": {
@@ -9905,8 +10220,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Ministral 3 3B, scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Ministral 3 3B', scicode score."
     },
     "livecodebench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/livecodebench",
@@ -9947,6 +10262,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Ministral 3 3B', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Ministral 3 3B', intelligenceIndex score."
     }
   },
   "granite-4-micro": {
@@ -10066,8 +10386,8 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'o1-preview'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'o1-preview'. Elo rating is a volatile leaderboard snapshot."
     }
   },
   "gpt-3-5-turbo": {
@@ -10300,8 +10620,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Mistral Medium 3.1, scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Mistral Medium 3.1', scicode score."
     },
     "livecodebench": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/livecodebench",
@@ -10332,6 +10652,16 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Mistral Medium 3.1', ifbench score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Mistral Medium 3.1', intelligenceIndex score."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Mistral Medium 3.1', lcr score."
     }
   },
   "sonar-pro": {
@@ -10475,8 +10805,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-08-12",
-      "protocol": "Artificial Analysis scicode evaluation snapshot, Solar Pro 3, scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Solar Pro 3', scicode score."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -10507,6 +10837,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Solar Pro 3', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Solar Pro 3', intelligenceIndex score."
     }
   },
   "longcat-2-0": {
@@ -10554,6 +10889,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'LongCat 2.0', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'LongCat 2.0', intelligenceIndex score."
     }
   },
   "sonar-reasoning": {
@@ -11157,13 +11497,13 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-04; listing 'glm-5.3-flash'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'glm-5.3-flash'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'glm-5.3-flash'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'glm-5.3-flash'. Elo rating is a volatile leaderboard snapshot."
     },
     "toolathlon-verified": {
       "sourceUrl": "https://toolathlon.xyz/docs/leaderboard",
@@ -11204,6 +11544,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'GLM-5.3-Flash', tauBanking score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'GLM-5.3-Flash', intelligenceIndex score."
     }
   },
   "qwen3-8-flash-next": {
@@ -11229,8 +11574,8 @@
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'qwen3.8-flash-next'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'qwen3.8-flash-next'. Elo rating is a volatile leaderboard snapshot."
     },
     "gdpval-aa": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
@@ -11266,6 +11611,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Qwen3.8-Flash-Next', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Qwen3.8-Flash-Next', intelligenceIndex score."
     }
   },
   "muse-spark-1-3": {
@@ -11276,17 +11626,17 @@
     },
     "gpqa-diamond": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-      "evaluationDate": "2026-09-04",
+      "evaluationDate": "2026-09-17",
       "protocol": "Artificial Analysis GPQA Diamond leaderboard snapshot, listing 'Muse Spark 1.3 (max)', gpqa score."
     },
     "hle": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-      "evaluationDate": "2026-09-04",
+      "evaluationDate": "2026-09-17",
       "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot, listing 'Muse Spark 1.3 (max)', hle score."
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-17",
       "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Muse Spark 1.3 (max)', scicode score."
     },
     "terminal-bench-2-1": {
@@ -11301,12 +11651,12 @@
     },
     "aa-omniscience-accuracy": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-17",
       "protocol": "Artificial Analysis AA-Omniscience Accuracy leaderboard snapshot, listing 'Muse Spark 1.3 (max)', omniscienceAccuracy score."
     },
     "aa-lcr": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-17",
       "protocol": "Artificial Analysis AA-LCR v1.1 leaderboard snapshot, listing 'Muse Spark 1.3 (max)', lcr score."
     },
     "critpt": {
@@ -11316,8 +11666,13 @@
     },
     "tau3-banking": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
-      "evaluationDate": "2026-09-05",
+      "evaluationDate": "2026-09-17",
       "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Muse Spark 1.3 (max)', tauBanking score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Muse Spark 1.3 (max)', intelligenceIndex score."
     }
   },
   "gpt-6-astra": {
@@ -11405,6 +11760,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis MMMU-Pro leaderboard snapshot, listing 'GPT-6 Astra (max)', mmmuPro score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'GPT-6 Astra (max)', intelligenceIndex score."
     }
   },
   "granite-4-2-30b": {
@@ -11554,6 +11914,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Granite 4.2 8B', tauBanking score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Granite 4.2 8B', intelligenceIndex score."
     }
   },
   "hy4-preview": {
@@ -11589,8 +11954,8 @@
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'hy4-preview'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'hy4-preview'. Elo rating is a volatile leaderboard snapshot."
     }
   },
   "ling-3-0-flash": {
@@ -11648,13 +12013,18 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Ling 3.0 Flash', tauBanking score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Ling 3.0 Flash', intelligenceIndex score."
     }
   },
   "qwen3-8-max-0902": {
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'qwen3.8-max-0902'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'qwen3.8-max-0902'. Elo rating is a volatile leaderboard snapshot."
     }
   },
   "mistral-small-4": {
@@ -11670,8 +12040,8 @@
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-      "evaluationDate": "2026-09-04",
-      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Mistral Small 4 (Reasoning)', scicode score."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis SciCode leaderboard snapshot, listing 'Mistral Small 4', scicode score."
     },
     "terminal-bench-2-1": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
@@ -11712,6 +12082,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Mistral Small 4', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Mistral Small 4', intelligenceIndex score."
     }
   },
   "gemini-1-5-pro": {
@@ -11933,6 +12308,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-05",
       "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'K2 Horizon 375B A23B', tauBanking score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'K2 Horizon 375B A23B', intelligenceIndex score."
     }
   },
   "mimo-v2-5-pro": {
@@ -11988,8 +12368,8 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-06; listing 'mimo-v2.5-pro'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'mimo-v2.5-pro'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
@@ -12000,6 +12380,11 @@
       "sourceUrl": "https://swe-rebench.com/",
       "evaluationDate": "2026-09-06",
       "protocol": "SWE-rebench official leaderboard listing 'MiMo V2.5 Pro', agent tools, current task window resolved rate."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'MiMo-V2.5-Pro', intelligenceIndex score."
     }
   },
   "mimo-v2-5": {
@@ -12055,18 +12440,23 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-06; listing 'mimo-v2.5'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'mimo-v2.5'. Elo rating is a volatile leaderboard snapshot."
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'mimo-v2.5'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'mimo-v2.5'. Elo rating is a volatile leaderboard snapshot."
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'MiMo-V2.5', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'MiMo-V2.5', intelligenceIndex score."
     }
   },
   "granite-4-2-3b": {
@@ -12109,6 +12499,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-06",
       "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Granite 4.2 3B', tauBanking score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Granite 4.2 3B', intelligenceIndex score."
     }
   },
   "ling-3-0-tiny": {
@@ -12151,6 +12546,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-06",
       "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Ling 3.0 Tiny', tauBanking score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Ling 3.0 Tiny', intelligenceIndex score."
     }
   },
   "apertus-8b-instruct": {
@@ -12274,8 +12674,8 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-06; listing 'intellect-3'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'intellect-3'. Elo rating is a volatile leaderboard snapshot."
     }
   },
   "seed-oss-36b-instruct": {
@@ -12355,8 +12755,8 @@
     },
     "lmarena-elo": {
       "sourceUrl": "https://arena.ai/leaderboard",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-06; listing 'hy3'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-17; listing 'hy3'. Elo rating is a volatile leaderboard snapshot."
     },
     "scicode": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
@@ -12375,13 +12775,18 @@
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-06",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-06; listing 'hy3'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'hy3'. Elo rating is a volatile leaderboard snapshot."
     },
     "aa-intelligence-index": {
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-11",
       "protocol": "Artificial Analysis Intelligence Index v4.2 leaderboard snapshot, listing 'Hy3', intelligenceIndex score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Hy3', intelligenceIndex score."
     }
   },
   "mercury-2": {
@@ -12437,8 +12842,13 @@
     },
     "webdev-arena": {
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
-      "evaluationDate": "2026-09-11",
-      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-11; listing 'mercury-2'. Elo rating is a volatile leaderboard snapshot."
+      "evaluationDate": "2026-09-17",
+      "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-17; listing 'mercury-2'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Mercury 2', intelligenceIndex score."
     }
   },
   "k2-think-v2": {
@@ -12623,6 +13033,11 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-11",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-11; listing 'deepseek-v4.1-flash-max'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'DeepSeek V4.1 Flash (max)', intelligenceIndex score."
     }
   },
   "glm-5-1": {
@@ -12685,6 +13100,11 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-15",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-15; listing 'glm-5.1'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'GLM-5.1', intelligenceIndex score."
     }
   },
   "qwen3-6-27b": {
@@ -12742,6 +13162,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-15",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Qwen3.6 27B', ifbench score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Qwen3.6 27B', intelligenceIndex score."
     }
   },
   "qwen3-6-35b-a3b": {
@@ -12799,6 +13224,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-15",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Qwen3.6 35B A3B', ifbench score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Qwen3.6 35B A3B', intelligenceIndex score."
     }
   },
   "nemotron-3-5-lightning": {
@@ -12841,6 +13271,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/tau3-banking",
       "evaluationDate": "2026-09-15",
       "protocol": "Artificial Analysis τ³-Banking leaderboard snapshot, listing 'Nemotron 3.5 Lightning', tauBanking score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Nemotron 3.5 Lightning', intelligenceIndex score."
     }
   },
   "ring-2-6-1t": {
@@ -12893,6 +13328,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
       "evaluationDate": "2026-09-15",
       "protocol": "Artificial Analysis IFBench leaderboard snapshot, listing 'Ring-2.6-1T', ifbench score."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Ring-2.6-1T', intelligenceIndex score."
     }
   },
   "solar-pro-4": {
@@ -13039,6 +13479,11 @@
       "sourceUrl": "https://arena.ai/leaderboard/code/webdev",
       "evaluationDate": "2026-09-15",
       "protocol": "Arena Code/WebDev Overall leaderboard snapshot dated 2026-09-15; listing 'trinity-large-thinking'. Elo rating is a volatile leaderboard snapshot."
+    },
+    "aa-intelligence-index-v4-3": {
+      "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "evaluationDate": "2026-09-17",
+      "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Trinity Large Thinking', intelligenceIndex score."
     }
   },
   "longcat-flash-chat": {

@@ -28,9 +28,9 @@ const AA_FIELDS = {
     label: "Terminal-Bench 2.1",
     sourceUrl: "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
   },
-  "aa-intelligence-index": {
+  "aa-intelligence-index-v4-3": {
     field: "intelligenceIndex",
-    label: "Intelligence Index v4.2",
+    label: "Intelligence Index v4.3",
     sourceUrl:
       "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
     // Already published on the index's own 0-100 scale, unlike the per-eval fractions.

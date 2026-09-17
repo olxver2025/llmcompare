@@ -32,6 +32,7 @@ export type BenchmarkId =
   | "osworld-2-strict"
   | "frontiermath-tier-4-v2"
   | "aa-intelligence-index"
+  | "aa-intelligence-index-v4-3"
   | "aa-omniscience-accuracy"
   | "aa-lcr"
   | "critpt"
