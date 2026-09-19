@@ -8167,27 +8167,6 @@ export const models: Model[] = [
       "StepFun frontier reasoning model that broke into Chinese and global arenas in early 2025.",
   },
   {
-    slug: "step-5-preview",
-    name: "Step-5 Preview",
-    organization: "StepFun",
-    releaseDate: "2026-09-18",
-    openSource: false,
-    license: "Proprietary",
-    parameters: { total: 600 },
-    contextWindow: 1_000_000,
-    modalities: { input: ["text", "image"], output: ["text"] },
-    pricing: { provider: "StepFun", inputPer1M: 1, outputPer1M: 2.7 },
-    speed: { tokensPerSec: 99.8, ttftSeconds: 2.96 },
-    benchmarks: {
-      "aa-intelligence-index-v4-3": 43.6,
-    },
-    links: {
-      docs: "https://platform.stepfun.com/",
-    },
-    summary:
-      "StepFun's latest extended-thinking flagship (600B params, 1M-token context), available via StepFun's API since September 18, 2026.",
-  },
-  {
     slug: "lfm-2-5-8b",
     name: "LFM2.5-8B-A1B",
     organization: "Liquid AI",

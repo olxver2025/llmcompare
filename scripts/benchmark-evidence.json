@@ -17230,15 +17230,6 @@
       }
     },
     "step-2": {},
-    "step-5-preview": {
-      "aa-intelligence-index-v4-3": {
-        "value": 43.6,
-        "sourceUrl": "https://artificialanalysis.ai/models/step-5",
-        "checkedOn": "2026-09-19",
-        "protocol": "Artificial Analysis Intelligence Index v4.3 model page for Step 5 Preview (StepFun), overall Intelligence Index score from the embedded evaluation-chart data.",
-        "evaluationDate": "2026-09-18"
-      }
-    },
     "lfm-2-5-8b": {
       "gpqa-diamond": {
         "value": 51.3,

@@ -13541,12 +13541,5 @@
       "evaluationDate": "2026-09-13",
       "protocol": "Agnes-3.0-Flash Preview official Hugging Face model card, benchmark table, IFBench score for the open-weight Preview checkpoint. Vendor-reported; not yet independently verified."
     }
-  },
-  "step-5-preview": {
-    "aa-intelligence-index-v4-3": {
-      "sourceUrl": "https://artificialanalysis.ai/models/step-5",
-      "evaluationDate": "2026-09-18",
-      "protocol": "Artificial Analysis Intelligence Index v4.3 model page for Step 5 Preview (StepFun), overall Intelligence Index score from the embedded evaluation-chart data."
-    }
   }
 }
