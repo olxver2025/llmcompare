@@ -2,7 +2,7 @@ import fs from "node:fs";
 import { execFileSync } from "node:child_process";
 import { load } from "./update-benchmarks/load.mjs";
 
-const asOf = "2026-09-17";
+const asOf = "2026-09-19";
 
 const models = load("src/data/models.ts", "models");
 const imageModels = load("src/data/image-models.ts", "imageModels");
@@ -100,7 +100,7 @@ check(
   "evidence ledger must include every model, including intentional empty records"
 );
 
-check(models.length === 311, `expected 311 models, found ${models.length}`);
+check(models.length === 313, `expected 313 models, found ${models.length}`);
 check(new Set(models.map((model) => model.slug)).size === models.length, "duplicate model slug");
 const expectedEmptyBenchmarkModels = new Set(emptyBenchmarkManifest.slugs);
 check(
@@ -125,6 +125,8 @@ check(bySlug["granite-4-2-3b"], "Granite 4.2 3B should be catalogued");
 check(bySlug["ling-3-0-tiny"], "Ling-3.0 Tiny should be catalogued");
 check(bySlug["atria-dawn-preview"], "Atria Dawn Preview should be catalogued");
 check(bySlug["ling-3-0-flash-fin"], "Ling-3.0 Flash Fin should be catalogued");
+check(bySlug["agnes-3-0-flash-preview"], "Agnes-3.0-Flash Preview should be catalogued");
+check(bySlug["step-5-preview"], "Step-5 Preview should be catalogued");
 
 for (const model of models) {
   check(model.releaseDate <= asOf, `${model.slug} has a future release date`);
@@ -294,7 +296,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 2600, `expected 2600 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 2606, `expected 2606 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);

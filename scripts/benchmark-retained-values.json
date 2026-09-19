@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-17",
+  "asOf": "2026-09-19",
   "cells": {
     "claude-fable-5-1": {
       "terminal-bench-science": 52.6,
@@ -3116,6 +3116,16 @@
       "automation-bench": 53.8,
       "tau3-banking": 41.2,
       "cybergym": 86.5
+    },
+    "agnes-3-0-flash-preview": {
+      "gpqa-diamond": 85.05,
+      "scicode": 38.08,
+      "aa-lcr": 68.33,
+      "aa-omniscience-accuracy": 23,
+      "ifbench": 74.2
+    },
+    "step-5-preview": {
+      "aa-intelligence-index-v4-3": 43.6
     }
   }
 }
