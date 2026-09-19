@@ -9112,4 +9112,29 @@ export const models: Model[] = [
     summary:
       "Efficient Inkling sibling (276B / 12B active MoE) — matches or beats Inkling on many benchmarks at ~¼ the size; Apache 2.0 weights with Tinker fine-tuning access.",
   },
+
+  // ─── Additional open-weight models (2026-09-19) ────────────
+  {
+    slug: "agnes-3-0-flash-preview",
+    name: "Agnes-3.0-Flash Preview",
+    organization: "Agnes AI",
+    releaseDate: "2026-09-13",
+    openSource: true,
+    license: "Apache 2.0",
+    parameters: { total: 33 },
+    contextWindow: 262_144,
+    modalities: { input: ["text", "image", "video"], output: ["text"] },
+    benchmarks: {
+      "gpqa-diamond": 85.05,
+      scicode: 38.08,
+      "aa-lcr": 68.33,
+      "aa-omniscience-accuracy": 23,
+      ifbench: 74.2,
+    },
+    links: {
+      modelCard: "https://huggingface.co/Agnes-AI/Agnes-3.0-Flash",
+    },
+    summary:
+      "Agnes AI's (Sapiens AI, Singapore) first open-weight release: a 33B-parameter hybrid-attention model (54 gated delta-rule recurrent layers alternating with 18 global-attention layers, 3:1) under Apache 2.0, with a 262K-token context window and text/image/video input. This open-weight Preview checkpoint is distinct from Agnes AI's production \"Agnes 3.0 Flash\" API model, which runs a different checkpoint and is not open-weight; the two should not be conflated.",
+  },
 ];
