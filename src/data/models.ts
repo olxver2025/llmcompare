@@ -80,7 +80,7 @@ export const models: Model[] = [
       "terminal-bench-3": 34.6,
       matharena: 79.7,
       "swe-rebench": 62.3,
-      "lmarena-elo": 1483,
+      "lmarena-elo": 1483.5,
       hle: 49.5,
       scicode: 57.1,
       "terminal-bench-4": 37.3,
@@ -170,7 +170,7 @@ export const models: Model[] = [
       cursorbench: 61.1,
       "terminal-bench-3": 14.3,
       "swe-rebench": 43.6,
-      "lmarena-elo": 1453,
+      "lmarena-elo": 1452.5,
       hle: 39.5,
       scicode: 53.6,
       "terminal-bench-4": 17.3,
@@ -322,7 +322,7 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 1.25, outputPer1M: 10 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.4 },
     benchmarks: {
-      "lmarena-elo": 1434,
+      "lmarena-elo": 1434.7,
       "swe-bench-pro": 41.78,
       "gpqa-diamond": 85.4,
       hle: 28.5,
@@ -358,7 +358,7 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 0.25, outputPer1M: 2 },
     speed: { tokensPerSec: 160, ttftSeconds: 0.2 },
     benchmarks: {
-      "lmarena-elo": 1389,
+      "lmarena-elo": 1389.6,
       "gpqa-diamond": 82.8,
       hle: 21.5,
       "aime-2025": 91.1,
@@ -394,7 +394,7 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 0.05, outputPer1M: 0.4 },
     speed: { tokensPerSec: 200, ttftSeconds: 0.15 },
     benchmarks: {
-      "lmarena-elo": 1337,
+      "lmarena-elo": 1337.5,
       "gpqa-diamond": 67.6,
       hle: 9.5,
       "aime-2025": 85.2,
@@ -518,7 +518,7 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 5, outputPer1M: 15 },
     speed: { tokensPerSec: 100, ttftSeconds: 0.35 },
     benchmarks: {
-      "lmarena-elo": 1346,
+      "lmarena-elo": 1345.9,
       "gpqa-diamond": 52.6,
       hle: 1.8,
       livecodebench: 33.4,
@@ -586,7 +586,7 @@ export const models: Model[] = [
     benchmarks: {
       "gpqa-diamond": 51.2,
       "aider-polyglot": 8.9,
-      "lmarena-elo": 1322,
+      "lmarena-elo": 1322.2,
       "mmlu-pro": 65.7,
       hle: 3.8,
       "aime-2025": 24,
@@ -621,7 +621,7 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 0.15, outputPer1M: 0.6 },
     speed: { tokensPerSec: 150, ttftSeconds: 0.2 },
     benchmarks: {
-      "lmarena-elo": 1317,
+      "lmarena-elo": 1317.6,
       "aider-polyglot": 3.6,
       "mmlu-pro": 64.8,
       "gpqa-diamond": 42.6,
@@ -656,7 +656,7 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 10, outputPer1M: 50 },
     benchmarks: {
-      "lmarena-elo": 1504,
+      "lmarena-elo": 1498.5,
       "terminal-bench-science": 52.6,
       "terminal-bench-4": 57.9,
       "gdpval-aa": 1853,
@@ -705,7 +705,7 @@ export const models: Model[] = [
       "tau-bench": 48.7,
       matharena: 84.4,
       "swe-rebench": 63.4,
-      "lmarena-elo": 1493,
+      "lmarena-elo": 1492.9,
       "gpqa-diamond": 93.2,
       hle: 54.9,
       scicode: 56.4,
@@ -839,7 +839,7 @@ export const models: Model[] = [
       "terminal-bench-2-1": 80.5,
       "terminal-bench-3": 14.6,
       "swe-rebench": 56.8,
-      "lmarena-elo": 1462,
+      "lmarena-elo": 1461.2,
       "gpqa-diamond": 91.1,
       hle: 41.3,
       scicode: 54.3,
@@ -994,7 +994,7 @@ export const models: Model[] = [
     pricing: { provider: "Anthropic", inputPer1M: 0.8, outputPer1M: 4 },
     speed: { tokensPerSec: 160, ttftSeconds: 0.18 },
     benchmarks: {
-      "lmarena-elo": 1324,
+      "lmarena-elo": 1324.3,
       "gpqa-diamond": 40.8,
       hle: 3.6,
       livecodebench: 31.4,
@@ -1032,7 +1032,7 @@ export const models: Model[] = [
       "swe-bench-verified": 80.6,
       "swe-bench-pro": 54.2,
       "terminal-bench-2-1": 70.7,
-      "lmarena-elo": 1487,
+      "lmarena-elo": 1486.8,
       "webdev-arena": 1447,
       "swe-rebench": 54.9,
       "aa-intelligence-index": 36.7,
@@ -1120,7 +1120,7 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "audio", "video"], output: ["text"] },
     pricing: { provider: "Google", inputPer1M: 0.75, outputPer1M: 3.75 },
     benchmarks: {
-      "lmarena-elo": 1494,
+      "lmarena-elo": 1493,
       "webdev-arena": 1567,
       cursorbench: 69.2,
       deepswe: 73.7,
@@ -1426,7 +1426,7 @@ export const models: Model[] = [
       "gpqa-diamond": 82.3,
       hle: 8.7,
       livecodebench: 77.1,
-      "lmarena-elo": 1438,
+      "lmarena-elo": 1437.9,
       "webdev-arena": 1362,
     },
     links: {
@@ -1453,7 +1453,7 @@ export const models: Model[] = [
       "mmlu-pro": 60.6,
       "gpqa-diamond": 34.9,
       livecodebench: 24.6,
-      "lmarena-elo": 1342,
+      "lmarena-elo": 1341.7,
       "aime-2025": 18.3,
       hle: 4.2,
       "math-500": 85.3,
@@ -1736,7 +1736,7 @@ export const models: Model[] = [
     benchmarks: {
       "toolathlon-verified": 75.9,
       "gdpval-aa": 1615,
-      "lmarena-elo": 1499,
+      "lmarena-elo": 1499.6,
       "webdev-arena": 1535,
       "gpqa-diamond": 90.4,
       hle: 45.5,
@@ -1849,7 +1849,7 @@ export const models: Model[] = [
       "mmlu-pro": 80.5,
       livecodebench: 43.4,
       "aider-polyglot": 15.6,
-      "lmarena-elo": 1327,
+      "lmarena-elo": 1326.9,
       "gpqa-diamond": 67.1,
       hle: 4.9,
       "aime-2025": 19.3,
@@ -1891,7 +1891,7 @@ export const models: Model[] = [
       "mmlu-pro": 74.3,
       livecodebench: 32.8,
       "gpqa-diamond": 58.7,
-      "lmarena-elo": 1321,
+      "lmarena-elo": 1321.5,
       hle: 3.8,
       "aime-2025": 14,
       "math-500": 84.4,
@@ -1930,7 +1930,7 @@ export const models: Model[] = [
       "mmlu-pro": 68.9,
       "gpqa-diamond": 49.8,
       livecodebench: 33.3,
-      "lmarena-elo": 1317,
+      "lmarena-elo": 1317.6,
       "swe-rebench": 11.5,
       bigcodebench: 46.9,
       hle: 3.6,
@@ -1961,7 +1961,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 75, ttftSeconds: 0.4 },
     benchmarks: {
       "mmlu-pro": 66.4,
-      "lmarena-elo": 1293,
+      "lmarena-elo": 1293.1,
       "gpqa-diamond": 40.9,
       "aime-2025": 4,
       hle: 4.5,
@@ -1994,7 +1994,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 160, ttftSeconds: 0.15 },
     benchmarks: {
       "mmlu-pro": 48.3,
-      "lmarena-elo": 1211,
+      "lmarena-elo": 1211.1,
       "gpqa-diamond": 25.9,
       "aime-2025": 4.3,
       hle: 5.3,
@@ -2725,7 +2725,7 @@ export const models: Model[] = [
       "swe-bench-verified": 80.4,
       "swe-bench-multilingual": 78.3,
       scicode: 49.5,
-      "lmarena-elo": 1474,
+      "lmarena-elo": 1473.2,
       "webdev-arena": 1517.1,
       "terminal-bench-2-1": 74.5,
       "aa-omniscience-accuracy": 31.1,
@@ -2861,7 +2861,7 @@ export const models: Model[] = [
       "math-500": 97.2,
       "aime-2025": 72.9,
       livecodebench: 65.7,
-      "lmarena-elo": 1347,
+      "lmarena-elo": 1346.9,
       "aider-polyglot": 40,
       "swe-rebench": 8.1,
       hle: 7.4,
@@ -3772,7 +3772,7 @@ export const models: Model[] = [
     benchmarks: {
       "gpqa-diamond": 57.5,
       "mmlu-pro": 70.4,
-      "lmarena-elo": 1256,
+      "lmarena-elo": 1256.1,
       hle: 3.8,
       "aime-2025": 18,
       "math-500": 81,
@@ -4275,7 +4275,7 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 1.1, outputPer1M: 4.4 },
     speed: { tokensPerSec: 100, ttftSeconds: 0.6 },
     benchmarks: {
-      "lmarena-elo": 1348,
+      "lmarena-elo": 1347.7,
       "aider-polyglot": 53.8,
       "mmlu-pro": 79.1,
       "gpqa-diamond": 74.8,
@@ -4386,7 +4386,7 @@ export const models: Model[] = [
       "aime-2025": 92.5,
       "swe-bench-verified": 26,
       "aider-polyglot": 41.8,
-      "lmarena-elo": 1352.4,
+      "lmarena-elo": 1352.3,
       "swe-rebench": 27.3,
       scicode: 34,
       "terminal-bench-2-1": 26.2,
@@ -4423,7 +4423,7 @@ export const models: Model[] = [
       "aime-2025": 91.7,
       "swe-bench-verified": 60.7,
       "aider-polyglot": 34.2,
-      "lmarena-elo": 1317,
+      "lmarena-elo": 1317.2,
       "swe-rebench": 8.1,
       scicode: 38.9,
       "terminal-bench-2-1": 13.9,
@@ -4454,7 +4454,7 @@ export const models: Model[] = [
     pricing: { provider: "Google", inputPer1M: 0.25, outputPer1M: 1.5 },
     speed: { tokensPerSec: 240, ttftSeconds: 0.15 },
     benchmarks: {
-      "lmarena-elo": 1432,
+      "lmarena-elo": 1432.4,
       "webdev-arena": 1254,
       "gpqa-diamond": 82.2,
       hle: 17.2,
@@ -4543,7 +4543,7 @@ export const models: Model[] = [
     pricing: { provider: "xAI", inputPer1M: 3, outputPer1M: 15 },
     speed: { tokensPerSec: 75, ttftSeconds: 0.45 },
     benchmarks: {
-      "lmarena-elo": 1411,
+      "lmarena-elo": 1411.5,
       "aider-polyglot": 53.3,
       "mmlu-pro": 79.9,
       "gpqa-diamond": 69.3,
@@ -4653,7 +4653,7 @@ export const models: Model[] = [
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.4, outputPer1M: 1.6 },
     speed: { tokensPerSec: 65, ttftSeconds: 0.45 },
     benchmarks: {
-      "lmarena-elo": 1387,
+      "lmarena-elo": 1387.5,
       "swe-bench-pro": 38.7,
       "aime-2025": 39.3,
       "gpqa-diamond": 61.8,
@@ -4687,7 +4687,7 @@ export const models: Model[] = [
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.35, outputPer1M: 0.4 },
     speed: { tokensPerSec: 70, ttftSeconds: 0.35 },
     benchmarks: {
-      "lmarena-elo": 1303,
+      "lmarena-elo": 1302.8,
       "mmlu-pro": 71.1,
       livecodebench: 55.5,
       "swe-rebench": 10.1,
@@ -4765,7 +4765,7 @@ export const models: Model[] = [
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.35, outputPer1M: 0.4 },
     speed: { tokensPerSec: 65, ttftSeconds: 0.4 },
     benchmarks: {
-      "lmarena-elo": 1261,
+      "lmarena-elo": 1261.5,
       "gpqa-diamond": 37.1,
       hle: 3.7,
     },
@@ -4793,7 +4793,7 @@ export const models: Model[] = [
       "mmlu-pro": 67.5,
       "gpqa-diamond": 42.8,
       livecodebench: 29.7,
-      "lmarena-elo": 1365,
+      "lmarena-elo": 1365.2,
       "aime-2025": 20.7,
       hle: 4.4,
       "math-500": 88.3,
@@ -4829,7 +4829,7 @@ export const models: Model[] = [
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 3.5, outputPer1M: 3.5 },
     speed: { tokensPerSec: 40, ttftSeconds: 0.6 },
     benchmarks: {
-      "lmarena-elo": 1335,
+      "lmarena-elo": 1335.2,
       "swe-bench-pro": 11.18,
       "mmlu-pro": 73.3,
       "gpqa-diamond": 51.5,
@@ -4930,7 +4930,7 @@ export const models: Model[] = [
     pricing: { provider: "Cohere", inputPer1M: 2.5, outputPer1M: 10 },
     speed: { tokensPerSec: 75, ttftSeconds: 0.4 },
     benchmarks: {
-      "lmarena-elo": 1354,
+      "lmarena-elo": 1353.6,
       "mmlu-pro": 71.2,
       "gpqa-diamond": 52.7,
       hle: 4,
@@ -4961,7 +4961,7 @@ export const models: Model[] = [
     pricing: { provider: "01.AI", inputPer1M: 0.14, outputPer1M: 0.14 },
     speed: { tokensPerSec: 200, ttftSeconds: 0.15 },
     benchmarks: {
-      "lmarena-elo": 1328,
+      "lmarena-elo": 1328.2,
       "aider-polyglot": 12.9,
     },
     links: {
@@ -4984,7 +4984,7 @@ export const models: Model[] = [
     pricing: { provider: "self-host", inputPer1M: 0.1, outputPer1M: 0.3 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.4 },
     benchmarks: {
-      "lmarena-elo": 1307,
+      "lmarena-elo": 1306.7,
       "mmlu-pro": 75.9,
       "gpqa-diamond": 61,
       hle: 6.4,
@@ -5112,7 +5112,7 @@ export const models: Model[] = [
     pricing: { provider: "Cohere", inputPer1M: 2.5, outputPer1M: 10 },
     speed: { tokensPerSec: 75, ttftSeconds: 0.4 },
     benchmarks: {
-      "lmarena-elo": 1261,
+      "lmarena-elo": 1276.1,
     },
     links: {
       docs: "https://docs.cohere.com/docs/command-r-plus",
@@ -5134,7 +5134,7 @@ export const models: Model[] = [
     pricing: { provider: "Cohere", inputPer1M: 0.15, outputPer1M: 0.6 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.35 },
     benchmarks: {
-      "lmarena-elo": 1226,
+      "lmarena-elo": 1250.1,
       bigcodebench: 33.8,
     },
     links: {
@@ -5278,7 +5278,7 @@ export const models: Model[] = [
     pricing: { provider: "AI21", inputPer1M: 2, outputPer1M: 8 },
     speed: { tokensPerSec: 60, ttftSeconds: 0.7 },
     benchmarks: {
-      "lmarena-elo": 1289,
+      "lmarena-elo": 1289.3,
       "mmlu-pro": 57.2,
       "gpqa-diamond": 42.7,
       hle: 4.1,
@@ -5537,7 +5537,7 @@ export const models: Model[] = [
     pricing: { provider: "IBM watsonx", inputPer1M: 0.05, outputPer1M: 0.1 },
     speed: { tokensPerSec: 110, ttftSeconds: 0.15 },
     benchmarks: {
-      "lmarena-elo": 1208,
+      "lmarena-elo": 1208.2,
     },
     links: {
       modelCard: "https://huggingface.co/ibm-granite/granite-3.1-8b-instruct",
@@ -5667,7 +5667,7 @@ export const models: Model[] = [
     pricing: { provider: "NVIDIA NIM", inputPer1M: 0.35, outputPer1M: 0.4 },
     speed: { tokensPerSec: 60, ttftSeconds: 0.45 },
     benchmarks: {
-      "lmarena-elo": 1299,
+      "lmarena-elo": 1298.7,
       bigcodebench: 38.7,
       "aime-2025": 11,
       "gpqa-diamond": 46.5,
@@ -5784,7 +5784,7 @@ export const models: Model[] = [
     pricing: { provider: "Azure AI Foundry", inputPer1M: 0.17, outputPer1M: 0.68 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.28 },
     benchmarks: {
-      "lmarena-elo": 1197,
+      "lmarena-elo": 1197.6,
       bigcodebench: 37.6,
     },
     links: {
@@ -5807,7 +5807,7 @@ export const models: Model[] = [
     pricing: { provider: "Azure AI Foundry", inputPer1M: 0.13, outputPer1M: 0.52 },
     speed: { tokensPerSec: 140, ttftSeconds: 0.18 },
     benchmarks: {
-      "lmarena-elo": 1128,
+      "lmarena-elo": 1127.9,
       "aime-2025": 0.3,
       "gpqa-diamond": 31.9,
       hle: 5,
@@ -5841,7 +5841,7 @@ export const models: Model[] = [
     pricing: { provider: "Databricks Mosaic AI", inputPer1M: 0.75, outputPer1M: 2.25 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.5 },
     benchmarks: {
-      "lmarena-elo": 1195,
+      "lmarena-elo": 1195.2,
       "mmlu-pro": 39.7,
       "gpqa-diamond": 33.1,
       hle: 2.9,
@@ -5870,7 +5870,7 @@ export const models: Model[] = [
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 2.4, outputPer1M: 2.4 },
     speed: { tokensPerSec: 45, ttftSeconds: 0.55 },
     benchmarks: {
-      "lmarena-elo": 1179,
+      "lmarena-elo": 1179.7,
     },
     links: {
       modelCard: "https://huggingface.co/Snowflake/snowflake-arctic-instruct",
@@ -5936,7 +5936,7 @@ export const models: Model[] = [
     pricing: { provider: "Reka", inputPer1M: 0.8, outputPer1M: 2 },
     speed: { tokensPerSec: 95, ttftSeconds: 0.35 },
     benchmarks: {
-      "lmarena-elo": 1272,
+      "lmarena-elo": 1272.1,
     },
     links: {
       docs: "https://docs.reka.ai/pricing",
@@ -5957,7 +5957,7 @@ export const models: Model[] = [
     pricing: { provider: "Reka", inputPer1M: 2, outputPer1M: 6 },
     speed: { tokensPerSec: 70, ttftSeconds: 0.5 },
     benchmarks: {
-      "lmarena-elo": 1288,
+      "lmarena-elo": 1287.8,
     },
     links: {
       docs: "https://docs.reka.ai/pricing",
@@ -6161,7 +6161,7 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 1.1, outputPer1M: 4.4 },
     speed: { tokensPerSec: 90, ttftSeconds: 1.2 },
     benchmarks: {
-      "lmarena-elo": 1337,
+      "lmarena-elo": 1336.8,
       "aider-polyglot": 32.9,
       "mmlu-pro": 74.2,
       "gpqa-diamond": 60.3,
@@ -6214,7 +6214,7 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 10, outputPer1M: 30 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.6 },
     benchmarks: {
-      "lmarena-elo": 1324,
+      "lmarena-elo": 1324.3,
       "mmlu-pro": 69.4,
       hle: 3.1,
       "math-500": 73.7,
@@ -6241,7 +6241,7 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 30, outputPer1M: 60 },
     speed: { tokensPerSec: 35, ttftSeconds: 0.8 },
     benchmarks: {
-      "lmarena-elo": 1287,
+      "lmarena-elo": 1287.5,
       "mmlu-pro": 56.2,
       "gpqa-diamond": 34.9,
       "math-500": 56.8,
@@ -6286,7 +6286,7 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 75, outputPer1M: 150 },
     speed: { tokensPerSec: 45, ttftSeconds: 0.7 },
     benchmarks: {
-      "lmarena-elo": 1445,
+      "lmarena-elo": 1444.6,
       "aider-polyglot": 44.9,
     },
     links: {
@@ -6309,7 +6309,7 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 0.5, outputPer1M: 1.5 },
     speed: { tokensPerSec: 120, ttftSeconds: 0.25 },
     benchmarks: {
-      "lmarena-elo": 1225,
+      "lmarena-elo": 1225.1,
       "mmlu-pro": 46.2,
       "gpqa-diamond": 29.7,
       "math-500": 44.1,
@@ -6333,7 +6333,7 @@ export const models: Model[] = [
     pricing: { provider: "Anthropic", inputPer1M: 15, outputPer1M: 75 },
     speed: { tokensPerSec: 40, ttftSeconds: 0.9 },
     benchmarks: {
-      "lmarena-elo": 1322,
+      "lmarena-elo": 1321.9,
       "mmlu-pro": 69.6,
       "gpqa-diamond": 48.9,
       hle: 2.8,
@@ -6361,7 +6361,7 @@ export const models: Model[] = [
     pricing: { provider: "Anthropic", inputPer1M: 3, outputPer1M: 15 },
     speed: { tokensPerSec: 70, ttftSeconds: 0.45 },
     benchmarks: {
-      "lmarena-elo": 1374,
+      "lmarena-elo": 1343,
       bigcodebench: 46.8,
       "gpqa-diamond": 59.9,
       hle: 3.7,
@@ -6392,7 +6392,7 @@ export const models: Model[] = [
     pricing: { provider: "Anthropic", inputPer1M: 3, outputPer1M: 15 },
     speed: { tokensPerSec: 72, ttftSeconds: 0.42 },
     benchmarks: {
-      "lmarena-elo": 1373,
+      "lmarena-elo": 1374,
       "aider-polyglot": 51.6,
       "gpqa-diamond": 59.9,
       hle: 3.7,
@@ -6451,7 +6451,7 @@ export const models: Model[] = [
     pricing: { provider: "Anthropic", inputPer1M: 0.25, outputPer1M: 1.25 },
     speed: { tokensPerSec: 140, ttftSeconds: 0.2 },
     benchmarks: {
-      "lmarena-elo": 1261,
+      "lmarena-elo": 1261.4,
       "gpqa-diamond": 37.4,
       hle: 4.1,
       "math-500": 39.4,
@@ -6482,7 +6482,7 @@ export const models: Model[] = [
     pricing: { provider: "Anthropic", inputPer1M: 3, outputPer1M: 15 },
     speed: { tokensPerSec: 65, ttftSeconds: 0.5 },
     benchmarks: {
-      "lmarena-elo": 1281,
+      "lmarena-elo": 1281.1,
       "mmlu-pro": 57.9,
       "gpqa-diamond": 40,
       hle: 3.6,
@@ -6640,7 +6640,7 @@ export const models: Model[] = [
     pricing: { provider: "Google", inputPer1M: 0.1, outputPer1M: 0.4 },
     speed: { tokensPerSec: 180, ttftSeconds: 0.2 },
     benchmarks: {
-      "lmarena-elo": 1360,
+      "lmarena-elo": 1359.9,
       "swe-rebench": 9.1,
       "swe-bench-verified": 13.52,
       "gpqa-diamond": 62.3,
@@ -6785,7 +6785,7 @@ export const models: Model[] = [
     pricing: { provider: "Google", inputPer1M: 0.0375, outputPer1M: 0.15 },
     speed: { tokensPerSec: 180, ttftSeconds: 0.2 },
     benchmarks: {
-      "lmarena-elo": 1258,
+      "lmarena-elo": 1258.6,
       "mmlu-pro": 56.9,
       "gpqa-diamond": 35.9,
       hle: 4.7,
@@ -6814,7 +6814,7 @@ export const models: Model[] = [
     pricing: { provider: "Groq / Together (ref.)", inputPer1M: 0.27, outputPer1M: 0.27 },
     speed: { tokensPerSec: 80, ttftSeconds: 0.35 },
     benchmarks: {
-      "lmarena-elo": 1289,
+      "lmarena-elo": 1289.2,
       bigcodebench: 42.8,
     },
     links: {
@@ -6837,7 +6837,7 @@ export const models: Model[] = [
     pricing: { provider: "Groq / Together (ref.)", inputPer1M: 0.08, outputPer1M: 0.08 },
     speed: { tokensPerSec: 140, ttftSeconds: 0.2 },
     benchmarks: {
-      "lmarena-elo": 1267,
+      "lmarena-elo": 1266.7,
       bigcodebench: 34.7,
     },
     links: {
@@ -6860,7 +6860,7 @@ export const models: Model[] = [
     pricing: { provider: "Groq / Together (ref.)", inputPer1M: 0.04, outputPer1M: 0.04 },
     speed: { tokensPerSec: 200, ttftSeconds: 0.12 },
     benchmarks: {
-      "lmarena-elo": 1200,
+      "lmarena-elo": 1199.9,
     },
     links: {
       modelCard: "https://huggingface.co/google/gemma-2-2b-it",
@@ -6885,7 +6885,7 @@ export const models: Model[] = [
       "mmlu-pro": 43.6,
       "gpqa-diamond": 29.1,
       livecodebench: 12.6,
-      "lmarena-elo": 1303,
+      "lmarena-elo": 1303.1,
       "aime-2025": 12.7,
       hle: 5.3,
       "math-500": 76.6,
@@ -6916,7 +6916,7 @@ export const models: Model[] = [
     pricing: { provider: "xAI", inputPer1M: 2, outputPer1M: 10 },
     speed: { tokensPerSec: 70, ttftSeconds: 0.45 },
     benchmarks: {
-      "lmarena-elo": 1335,
+      "lmarena-elo": 1335.5,
       "gpqa-diamond": 51,
       hle: 3.1,
       scicode: 28.5,
@@ -6940,7 +6940,7 @@ export const models: Model[] = [
     pricing: { provider: "xAI", inputPer1M: 0.3, outputPer1M: 0.5 },
     speed: { tokensPerSec: 120, ttftSeconds: 0.25 },
     benchmarks: {
-      "lmarena-elo": 1308,
+      "lmarena-elo": 1308.3,
     },
     links: {
       docs: "https://docs.x.ai/docs/models",
@@ -7002,7 +7002,7 @@ export const models: Model[] = [
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.88, outputPer1M: 0.88 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.4 },
     benchmarks: {
-      "lmarena-elo": 1276,
+      "lmarena-elo": 1276.3,
       bigcodebench: 43.6,
       "gpqa-diamond": 37.9,
       hle: 4.5,
@@ -7029,7 +7029,7 @@ export const models: Model[] = [
     pricing: { provider: "Groq / Together (ref.)", inputPer1M: 0.05, outputPer1M: 0.08 },
     speed: { tokensPerSec: 200, ttftSeconds: 0.12 },
     benchmarks: {
-      "lmarena-elo": 1223,
+      "lmarena-elo": 1223.4,
       bigcodebench: 31.9,
       "gpqa-diamond": 29.6,
       hle: 5.1,
@@ -7056,7 +7056,7 @@ export const models: Model[] = [
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.03, outputPer1M: 0.05 },
     speed: { tokensPerSec: 220, ttftSeconds: 0.1 },
     benchmarks: {
-      "lmarena-elo": 1166,
+      "lmarena-elo": 1166.5,
       bigcodebench: 23.4,
       "gpqa-diamond": 25.5,
       hle: 5.4,
@@ -7083,7 +7083,7 @@ export const models: Model[] = [
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.02, outputPer1M: 0.02 },
     speed: { tokensPerSec: 280, ttftSeconds: 0.08 },
     benchmarks: {
-      "lmarena-elo": 1111,
+      "lmarena-elo": 1110.8,
       bigcodebench: 8.2,
       "gpqa-diamond": 19.6,
       hle: 5.5,
@@ -7131,7 +7131,7 @@ export const models: Model[] = [
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.9, outputPer1M: 0.9 },
     speed: { tokensPerSec: 35, ttftSeconds: 0.55 },
     benchmarks: {
-      "lmarena-elo": 1119,
+      "lmarena-elo": 1118.9,
       bigcodebench: 40.7,
     },
     links: {
@@ -7154,7 +7154,7 @@ export const models: Model[] = [
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.5, outputPer1M: 0.5 },
     speed: { tokensPerSec: 50, ttftSeconds: 0.45 },
     benchmarks: {
-      "lmarena-elo": 1136,
+      "lmarena-elo": 1136.6,
       bigcodebench: 29,
     },
     links: {
@@ -7177,7 +7177,7 @@ export const models: Model[] = [
     pricing: { provider: "DeepSeek / Together (ref.)", inputPer1M: 0.14, outputPer1M: 0.28 },
     speed: { tokensPerSec: 85, ttftSeconds: 0.35 },
     benchmarks: {
-      "lmarena-elo": 1265,
+      "lmarena-elo": 1265.1,
       "math-500": 74.3,
       bigcodebench: 48.2,
     },
@@ -7248,7 +7248,7 @@ export const models: Model[] = [
     pricing: { provider: "DeepSeek", inputPer1M: 0.14, outputPer1M: 0.28 },
     speed: { tokensPerSec: 85, ttftSeconds: 0.35 },
     benchmarks: {
-      "lmarena-elo": 1307,
+      "lmarena-elo": 1307.1,
       "gpqa-diamond": 42.3,
     },
     links: {
@@ -7419,7 +7419,7 @@ export const models: Model[] = [
     pricing: { provider: "Mistral", inputPer1M: 4, outputPer1M: 12 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.55 },
     benchmarks: {
-      "lmarena-elo": 1242,
+      "lmarena-elo": 1242.2,
       "gpqa-diamond": 35.1,
       hle: 3.5,
       livecodebench: 17.8,
@@ -7447,7 +7447,7 @@ export const models: Model[] = [
     pricing: { provider: "Mistral", inputPer1M: 0.2, outputPer1M: 0.6 },
     speed: { tokensPerSec: 110, ttftSeconds: 0.25 },
     benchmarks: {
-      "lmarena-elo": 1357,
+      "lmarena-elo": 1356.7,
       "gpqa-diamond": 38.1,
       hle: 4.3,
       livecodebench: 14.1,
@@ -7475,7 +7475,7 @@ export const models: Model[] = [
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 1.2, outputPer1M: 1.2 },
     speed: { tokensPerSec: 50, ttftSeconds: 0.5 },
     benchmarks: {
-      "lmarena-elo": 1229,
+      "lmarena-elo": 1229.3,
       "gpqa-diamond": 33.2,
       hle: 4,
       livecodebench: 14.8,
@@ -7504,7 +7504,7 @@ export const models: Model[] = [
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.24, outputPer1M: 0.24 },
     speed: { tokensPerSec: 90, ttftSeconds: 0.3 },
     benchmarks: {
-      "lmarena-elo": 1197,
+      "lmarena-elo": 1196.9,
       "gpqa-diamond": 29.2,
       hle: 4.7,
       livecodebench: 6.6,
@@ -7658,7 +7658,7 @@ export const models: Model[] = [
     pricing: { provider: "Together / Fireworks (ref.)", inputPer1M: 0.8, outputPer1M: 0.8 },
     speed: { tokensPerSec: 60, ttftSeconds: 0.4 },
     benchmarks: {
-      "lmarena-elo": 1270,
+      "lmarena-elo": 1270.5,
       "swe-rebench": 3.1,
       "swe-bench-verified": 9,
       bigcodebench: 49,
@@ -7712,7 +7712,7 @@ export const models: Model[] = [
       livecodebench: 63.4,
       "gpqa-diamond": 59.3,
       "math-500": 98,
-      "lmarena-elo": 1336,
+      "lmarena-elo": 1335.8,
       "mmlu-pro": 76.4,
       hle: 7.4,
       scicode: 35.8,
@@ -7745,7 +7745,7 @@ export const models: Model[] = [
       "aime-2025": 69.5,
       livecodebench: 56.6,
       "aider-polyglot": 49.8,
-      "lmarena-elo": 1401,
+      "lmarena-elo": 1399.3,
       "swe-rebench": 20.1,
       hle: 12.6,
       scicode: 38.8,
@@ -8109,7 +8109,7 @@ export const models: Model[] = [
     pricing: { provider: "01.AI", inputPer1M: 0.5, outputPer1M: 0.5 },
     speed: { tokensPerSec: 55, ttftSeconds: 0.45 },
     benchmarks: {
-      "lmarena-elo": 1212,
+      "lmarena-elo": 1212.6,
       bigcodebench: 33.9,
     },
     links: {
@@ -8253,7 +8253,7 @@ export const models: Model[] = [
     speed: { tokensPerSec: 100, ttftSeconds: 0.3 },
     benchmarks: {
       "toolathlon-verified": 56.8,
-      "lmarena-elo": 1413,
+      "lmarena-elo": 1412.7,
       "webdev-arena": 1356,
       "gpqa-diamond": 86.7,
       hle: 27.8,
