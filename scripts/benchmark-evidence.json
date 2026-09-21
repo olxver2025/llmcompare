@@ -198,7 +198,7 @@
         "value": 1483.5,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'gpt-5.6-sol-xhigh-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'gpt-5.6-sol-xhigh'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "hle": {
@@ -375,7 +375,7 @@
         "value": 1466,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'gpt-5.6-terra-xhigh-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'gpt-5.6-terra-xhigh'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "hle": {
@@ -524,7 +524,7 @@
         "value": 1452.5,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'gpt-5.6-luna-xhigh-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'gpt-5.6-luna-xhigh'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "hle": {
@@ -667,7 +667,7 @@
         "value": 1476.1,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'gpt-5.5-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'gpt-5.5'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "matharena": {
@@ -804,7 +804,7 @@
         "value": 1465.7,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'gpt-5.4-no-system-prompt'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'gpt-5.4'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -1805,7 +1805,7 @@
         "value": 1498.5,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'claude-fable-5.1-max-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'claude-fable-5.1-max'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "terminal-bench-science": {
@@ -2003,7 +2003,7 @@
         "value": 1492.9,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'claude-opus-5-high-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'claude-opus-5-high'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "gpqa-diamond": {
@@ -2180,7 +2180,7 @@
         "value": 1505.7,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'claude-fable-5-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'claude-fable-5-high'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -2371,7 +2371,7 @@
         "value": 1473.2,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'claude-opus-4-8-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'claude-opus-4-8'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -2520,7 +2520,7 @@
         "value": 1461.2,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'claude-sonnet-5-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'claude-sonnet-5-high'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "gpqa-diamond": {
@@ -3152,7 +3152,7 @@
         "value": 1479.9,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'gemini-3.6-flash'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'gemini-3.6-flash-high'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -3224,7 +3224,7 @@
         "value": 1493,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'skimaki-kwc6'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'gemini-3.8-flash-high'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -3431,7 +3431,7 @@
         "value": 1489.8,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'andwise-evfd'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'gemini-3.7-flash-high'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "terminal-bench-science": {
@@ -3946,7 +3946,7 @@
         "value": 1451.1,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'pteronura-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'gemma-4-31b'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -4067,7 +4067,7 @@
         "value": 1437.9,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'significant-otter-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'gemma-4-26b-a4b'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -4211,7 +4211,7 @@
         "value": 1468.1,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'grok-4.5-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'grok-4.5'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -4395,7 +4395,7 @@
         "value": 1455.6,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'grok-4.6-high-public-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'grok-4.6-high'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -4453,7 +4453,7 @@
         "value": 1442.7,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'grok-4.3-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'grok-4.3'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -4764,7 +4764,7 @@
         "value": 1499.6,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'muse-spark-1.2-xhigh-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'muse-spark-1.2 (xHigh)'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -4899,7 +4899,7 @@
         "value": 1427.2,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'onyx-v1-4-33s7'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'muse-glimmer'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -4978,7 +4978,7 @@
         "value": 1492.6,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'super-nova-ext-3tam-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'muse-spark-1.1'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -5652,7 +5652,7 @@
         "value": 1457.3,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'deepseek-v4-pro-ch1-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'deepseek-v4-pro'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -5843,7 +5843,7 @@
         "value": 1435.6,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'deepseek-v4-ch3-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'deepseek-v4-flash'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "swe-rebench": {
@@ -6607,7 +6607,7 @@
         "value": 1480.6,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'kinsley-mrp8'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'qwen3.8-max'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -7031,7 +7031,7 @@
         "value": 1443.3,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'qwen3.6-plus-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'qwen3.6-plus'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -7324,7 +7324,7 @@
         "value": 1473.2,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'melyora-9qr6'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'qwen3.7-max-preview'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -7403,7 +7403,7 @@
         "value": 1441.8,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'qwen3.5-397b-a17b-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'qwen3.5-397b-a17b'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -7896,7 +7896,7 @@
         "value": 1426.3,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'mistral-medium-3.5-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'mistral-medium-3.5'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -8786,7 +8786,7 @@
         "value": 1484.8,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'kimi-k3-v3-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'kimi-k3-max'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -8993,7 +8993,7 @@
         "value": 1467.4,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'mimo-v2.5-pro-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'mimo-v2.5-pro'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -9137,7 +9137,7 @@
         "value": 1433.6,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'mimo-v2.5-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'mimo-v2.5'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -9458,7 +9458,7 @@
         "value": 1472.1,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'glm-5.2-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'glm-5.2-max'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -9600,7 +9600,7 @@
         "value": 1465.5,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'glm-5.1-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'glm-5.1'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -9700,7 +9700,7 @@
         "value": 1483,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'glm-5.3'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'glm-5.3-max'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -9821,7 +9821,7 @@
         "value": 1475.4,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'glm-5.3-flash-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'glm-5.3-flash'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "deepswe": {
@@ -12607,7 +12607,7 @@
         "value": 1467.9,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'zero-prism'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'ernie-5.1'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       }
     },
@@ -13954,7 +13954,7 @@
         "value": 1376.4,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'solar-pro4-20260805'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'solar-pro4'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -14858,7 +14858,7 @@
         "value": 1477.7,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'gemini-3.5-flash-high-public'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'gemini-3.5-flash-high'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "deepswe": {
@@ -16839,7 +16839,7 @@
         "value": 1460.4,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'kimi-k2.6-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'kimi-k2.6'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -16946,7 +16946,7 @@
         "value": 1366.3,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'glm-4.7-flash-fireworks'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'glm-4.7-flash'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "swe-rebench": {
@@ -17039,7 +17039,7 @@
         "value": 1415.2,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'deep-octo'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'minimax-m2.7'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -17331,7 +17331,7 @@
         "value": 1412.7,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'hunyuan-hy3-preview-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'hunyuan-hy3-preview'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -18290,7 +18290,7 @@
         "value": 1455.8,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'hy3-tencent-cloud-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'hy3'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -18590,7 +18590,7 @@
         "value": 1440.1,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'inkling-text'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'inkling'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
@@ -18711,7 +18711,7 @@
         "value": 1404.6,
         "sourceUrl": "https://arena.ai/leaderboard",
         "checkedOn": "2026-09-21",
-        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'inkling-small'. Elo rating is a volatile leaderboard snapshot.",
+        "protocol": "Arena Text Overall leaderboard snapshot dated 2026-09-21; listing 'Inkling Small'. Elo rating is a volatile leaderboard snapshot.",
         "evaluationDate": "2026-09-21"
       },
       "webdev-arena": {
