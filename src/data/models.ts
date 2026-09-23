@@ -2,8 +2,8 @@ import type { Model } from "./types";
 
 /**
  * Curated static dataset for LLMcompare.
- * Prices: official primary-provider API rates ($/1M tokens) as of ~2026-09-01.
- * Benchmarks: public leaderboards / model cards / system cards as of ~2026-09-01;
+ * Prices: official primary-provider API rates ($/1M tokens) as of ~2026-09-23.
+ * Benchmarks: public leaderboards / model cards / system cards as of ~2026-09-23;
  * omitted when unverifiable. Scores marked as estimated are omitted rather than guessed.
  */
 export const models: Model[] = [
@@ -32,16 +32,19 @@ export const models: Model[] = [
       "osworld-2-partial": 72.6,
       "terminal-bench-4": 58.2,
       "frontiermath-tier-4-v2": 97.6,
-      hle: 54.7,
-      scicode: 56.5,
+      hle: 55,
+      scicode: 56,
       "terminal-bench-2-1": 88.4,
       "aa-intelligence-index": 54.7,
       "aa-omniscience-accuracy": 62.6,
-      "aa-lcr": 80.7,
+      "aa-lcr": 81,
       critpt: 31.7,
       "tau3-banking": 41.4,
       "mmmu-pro": 86.9,
       "aa-intelligence-index-v4-3": 52.8,
+      "aa-intelligence-index-v4-3-2": 53,
+      "gdpval-aa-v2-1": 1542,
+      "hle-with-tools": 57.2,
     },
     links: {
       docs: "https://developers.openai.com/api/docs/models/gpt-6-astra",
@@ -49,6 +52,65 @@ export const models: Model[] = [
     },
     summary:
       "OpenAI's September 2026 flagship, the first model OpenAI designates as reaching the Preparedness Framework's Critical cybersecurity capability threshold; rolling out first to Daybreak-program enterprises before wider ChatGPT/API/AWS availability. Standard API pricing is $10/$50 per 1M tokens (input/output), with a Fast mode at $20/$100.",
+  },
+  {
+    slug: "gpt-6-sol",
+    name: "GPT-6 Sol",
+    organization: "OpenAI",
+    releaseDate: "2026-09-22",
+    knowledgeCutoff: "2026-04-20",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 1_050_000,
+    maxOutput: 128_000,
+    modalities: { input: ["text", "image"], output: ["text"] },
+    pricing: { provider: "OpenAI", inputPer1M: 2, outputPer1M: 10 },
+    benchmarks: {
+      "automation-bench": 33.2,
+      "agents-last-exam": 56.4,
+      deepswe: 68.8,
+      "osworld-2-partial": 60.5,
+      "terminal-bench-4": 44,
+      scicode: 58,
+      hle: 48,
+      "gdpval-aa-v2-1": 1487,
+      "aa-lcr": 84,
+      "aa-intelligence-index-v4-3-2": 48,
+    },
+    links: {
+      docs: "https://developers.openai.com/api/docs/models/gpt-6-sol",
+      announcement: "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+    },
+    summary:
+      "OpenAI's September 2026 general-purpose GPT-6 model for complex coding and agentic workflows. Standard API rates for prompts up to 272K input tokens are $2/$10 per 1M input/output tokens; longer prompts use a higher rate.",
+  },
+  {
+    slug: "gpt-6-luna",
+    name: "GPT-6 Luna",
+    organization: "OpenAI",
+    releaseDate: "2026-09-22",
+    knowledgeCutoff: "2026-05-18",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 1_050_000,
+    maxOutput: 128_000,
+    modalities: { input: ["text", "image"], output: ["text"] },
+    pricing: { provider: "OpenAI", inputPer1M: 0.1, outputPer1M: 0.5 },
+    benchmarks: {
+      deepswe: 66.6,
+      "terminal-bench-4": 13,
+      scicode: 55,
+      hle: 39,
+      "gdpval-aa-v2-1": 1367,
+      "aa-lcr": 83,
+      "aa-intelligence-index-v4-3-2": 37,
+    },
+    links: {
+      docs: "https://developers.openai.com/api/docs/models/gpt-6-luna",
+      announcement: "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+    },
+    summary:
+      "OpenAI's September 2026 efficient GPT-6 model for focused, high-volume tasks. Standard API rates for prompts up to 272K input tokens are $0.10/$0.50 per 1M input/output tokens; longer prompts use a higher rate.",
   },
   {
     slug: "gpt-5-6-sol",
@@ -662,21 +724,25 @@ export const models: Model[] = [
       "gdpval-aa": 1853,
       "osworld-2-partial": 77.9,
       "osworld-2-strict": 41.7,
-      hle: 59.1,
+      hle: 59,
       "automation-bench": 31.4,
       cursorbench: 73.4,
       "gpqa-diamond": 93.7,
       "terminal-bench-2-1": 91.4,
-      scicode: 63.1,
+      scicode: 63,
       "webdev-arena": 1758,
       deepswe: 67.4,
       "frontiermath-tier-4-v2": 87.8,
       "aa-intelligence-index": 56.8,
       "aa-omniscience-accuracy": 67.2,
-      "aa-lcr": 85.3,
+      "aa-lcr": 83,
       critpt: 29.7,
       "tau3-banking": 47.2,
       "aa-intelligence-index-v4-3": 53.4,
+      "aa-intelligence-index-v4-3-2": 53,
+      "gdpval-aa-v2-1": 1735,
+      "cursorbench-4": 51.8,
+      "hle-with-tools": 65.6,
     },
     links: {
       docs: "https://platform.claude.com/docs/en/models/fable-5-1/whats-new-fable-5-1",
@@ -732,6 +798,38 @@ export const models: Model[] = [
     },
     summary:
       "Anthropic's July 2026 flagship - top Artificial Analysis Intelligence Index and strong agentic coding at Opus 4.8 pricing.",
+  },
+  {
+    slug: "claude-opus-5-5",
+    name: "Claude Opus 5.5",
+    organization: "Anthropic",
+    releaseDate: "2026-09-22",
+    knowledgeCutoff: "2026-06",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 1_000_000,
+    maxOutput: 128_000,
+    modalities: { input: ["text", "image"], output: ["text"] },
+    pricing: { provider: "Anthropic", inputPer1M: 4, outputPer1M: 20 },
+    benchmarks: {
+      "terminal-bench-4": 66.4,
+      "frontiercode-v1-1": 54.4,
+      "cursorbench-4": 57.8,
+      "gdpval-aa-v2-1": 1846,
+      "automation-bench": 40,
+      "hle-with-tools": 67.7,
+      "terminal-bench-science": 58.7,
+      "osworld-2-partial": 81.8,
+      "aa-intelligence-index-v4-3-2": 58,
+      scicode: 66.9,
+      hle: 61.4,
+    },
+    links: {
+      docs: "https://platform.claude.com/docs/en/models/opus-5-5/overview",
+      announcement: "https://www.anthropic.com/claude-opus-5-5",
+    },
+    summary:
+      "Anthropic's September 2026 Opus model for long-running agentic coding and knowledge work. It has a 1M context window, 128K output limit, always-on adaptive thinking, and standard API rates of $4/$20 per 1M input/output tokens.",
   },
   {
     slug: "claude-fable-5",

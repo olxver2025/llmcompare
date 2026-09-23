@@ -2,7 +2,7 @@ import fs from "node:fs";
 import { execFileSync } from "node:child_process";
 import { load } from "./update-benchmarks/load.mjs";
 
-const asOf = "2026-09-21";
+const asOf = "2026-09-23";
 
 const models = load("src/data/models.ts", "models");
 const imageModels = load("src/data/image-models.ts", "imageModels");
@@ -57,6 +57,11 @@ const expectedBenchmarkIds = new Set([
   "frontiermath-tier-4-v2",
   "aa-intelligence-index",
   "aa-intelligence-index-v4-3",
+  "aa-intelligence-index-v4-3-2",
+  "gdpval-aa-v2-1",
+  "cursorbench-4",
+  "frontiercode-v1-1",
+  "hle-with-tools",
   "aa-omniscience-accuracy",
   "aa-lcr",
   "critpt",
@@ -76,7 +81,7 @@ try {
   check(false, `benchmark evidence ledger is not reproducible: ${detail}`);
 }
 
-check(benchmarkIds.size === 40, `expected 40 benchmark IDs, found ${benchmarkIds.size}`);
+check(benchmarkIds.size === 45, `expected 45 benchmark IDs, found ${benchmarkIds.size}`);
 check(
   benchmarkIds.size === Object.keys(benchmarkCatalog).length,
   "benchmark metadata and benchmark ID exports disagree"
@@ -84,7 +89,7 @@ check(
 check(
   benchmarkIds.size === expectedBenchmarkIds.size &&
     [...benchmarkIds].every((id) => expectedBenchmarkIds.has(id)),
-  "benchmark IDs changed outside the audited 39-field scope"
+  "benchmark IDs changed outside the audited 45-field scope"
 );
 check(evidenceLedger.asOf === asOf, `evidence ledger is not dated ${asOf}`);
 check(
@@ -100,13 +105,16 @@ check(
   "evidence ledger must include every model, including intentional empty records"
 );
 
-check(models.length === 312, `expected 312 models, found ${models.length}`);
+check(models.length === 315, `expected 315 models, found ${models.length}`);
 check(new Set(models.map((model) => model.slug)).size === models.length, "duplicate model slug");
 const expectedEmptyBenchmarkModels = new Set(emptyBenchmarkManifest.slugs);
 check(
   expectedEmptyBenchmarkModels.size === emptyBenchmarkManifest.slugs.length,
   "empty benchmark manifest contains duplicate model slugs"
 );
+check(bySlug["gpt-6-sol"], "GPT-6 Sol should be catalogued");
+check(bySlug["gpt-6-luna"], "GPT-6 Luna should be catalogued");
+check(bySlug["claude-opus-5-5"], "Claude Opus 5.5 should be catalogued");
 check(bySlug["qwen3-7-plus"], "Qwen3.7 Plus should be catalogued");
 check(bySlug["qwen3-7-flash"], "Qwen3.7 Flash should be catalogued");
 check(bySlug["kimi-k2-7-code"], "Kimi K2.7 Code should be catalogued");
@@ -188,8 +196,13 @@ for (const model of models) {
       `${model.slug}/${id} evidence source URL is invalid`
     );
     check(
-      evidence?.checkedOn === asOf,
-      `${model.slug}/${id} evidence is not checked on ${asOf}`
+      typeof evidence?.checkedOn === "string" &&
+        /^\d{4}-\d{2}-\d{2}$/.test(evidence.checkedOn) &&
+        !Number.isNaN(new Date(`${evidence.checkedOn}T00:00:00Z`).getTime()) &&
+        new Date(`${evidence.checkedOn}T00:00:00Z`).toISOString().slice(0, 10) ===
+          evidence.checkedOn &&
+        evidence.checkedOn <= asOf,
+      `${model.slug}/${id} evidence has an invalid or future checked-on date`
     );
     const evaluationDate = evidence?.evaluationDate ?? "";
     const parsedEvaluationDate = new Date(`${evaluationDate}T00:00:00Z`);
@@ -295,7 +308,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 2605, `expected 2605 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 2640, `expected 2640 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);

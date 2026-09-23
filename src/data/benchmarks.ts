@@ -395,6 +395,61 @@ export const BENCHMARKS: Record<BenchmarkId, BenchmarkMeta> = {
       "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
   },
 
+  "aa-intelligence-index-v4-3-2": {
+    id: "aa-intelligence-index-v4-3-2",
+    name: "Artificial Analysis Intelligence Index v4.3.2",
+    shortName: "AA Index v4.3.2",
+    description:
+      "Artificial Analysis composite across AA-Briefcase v1.1, GDPval-AA v2.1, AutomationBench-AA, Terminal-Bench 4.0, SciCode, Humanity's Last Exam, GDP.pdf, CritPt, AA-Omniscience, and AA-LCR v1.1. Keep separate from prior index versions because its evaluation components changed.",
+    higherIsBetter: true,
+    unit: "index",
+    category: "index",
+    sourceUrl: "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+  },
+  "gdpval-aa-v2-1": {
+    id: "gdpval-aa-v2-1",
+    name: "GDPval-AA v2.1",
+    shortName: "GDPval-AA v2.1",
+    description:
+      "Artificial Analysis agentic evaluation of GDPval tasks across occupations, scored as Elo; v2.1 remains distinct from the earlier v2 release and requires the agent harness.",
+    higherIsBetter: true,
+    unit: "elo",
+    category: "agent",
+    sourceUrl: "https://artificialanalysis.ai/evaluations/gdpval-aa",
+  },
+  "cursorbench-4": {
+    id: "cursorbench-4",
+    name: "CursorBench 4.0",
+    shortName: "CursorBench 4",
+    description:
+      "Cursor's IDE-native agent evaluation on ambiguous multi-file tasks from real sessions; v4.0 is distinct from CursorBench 3.2 and scores depend on the Cursor agent scaffold and reasoning effort.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "coding",
+    sourceUrl: "https://cursor.com/cursorbench",
+  },
+  "frontiercode-v1-1": {
+    id: "frontiercode-v1-1",
+    name: "FrontierCode v1.1 (Main)",
+    shortName: "FrontierCode 1.1",
+    description:
+      "Agentic coding evaluation of whether code changes are ready to merge, including correctness, test quality, scope discipline, style, and repository standards; preserve the Main set and agent configuration.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "coding",
+    sourceUrl: "https://cognition.ai/blog/frontiercode",
+  },
+  "hle-with-tools": {
+    id: "hle-with-tools",
+    name: "Humanity's Last Exam (with tools)",
+    shortName: "HLE Tools",
+    description:
+      "Humanity's Last Exam evaluated with tool access; keep separate from no-tool results because browsing, code execution, and other tools change the task conditions.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "reasoning",
+    sourceUrl: "https://agi.safe.ai/",
+  },
   "aa-omniscience-accuracy": {
     id: "aa-omniscience-accuracy",
     name: "AA-Omniscience Accuracy",
@@ -544,6 +599,6 @@ export const BENCHMARK_CATEGORIES = [
   {
     id: "index" as const,
     label: "Composite indices",
-    ids: ["aa-intelligence-index", "aa-intelligence-index-v4-3"] as BenchmarkId[],
+    ids: ["aa-intelligence-index", "aa-intelligence-index-v4-3", "aa-intelligence-index-v4-3-2"] as BenchmarkId[],
   },
 ];

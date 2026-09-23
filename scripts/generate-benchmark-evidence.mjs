@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import { load } from "./update-benchmarks/load.mjs";
 
-const asOf = "2026-09-21";
+const asOf = "2026-09-23";
 const checkOnly = process.argv.includes("--check");
 
 function isIsoDate(value) {
@@ -67,7 +67,7 @@ for (const model of models) {
     cells[model.slug][id] = {
       value: auditedValue,
       sourceUrl: override.sourceUrl,
-      checkedOn: asOf,
+      checkedOn: override.checkedOn ?? "2026-09-21",
       protocol: override.protocol,
       evaluationDate: override.evaluationDate,
     };
