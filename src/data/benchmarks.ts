@@ -522,6 +522,18 @@ export const BENCHMARKS: Record<BenchmarkId, BenchmarkMeta> = {
     category: "reasoning",
     sourceUrl: "https://artificialanalysis.ai/evaluations/ifbench",
   },
+
+  "aa-briefcase-v1-1": {
+    id: "aa-briefcase-v1-1",
+    name: "AA-Briefcase v1.1",
+    shortName: "AA-Briefcase",
+    description:
+      "Artificial Analysis's private agentic knowledge-work evaluation across four multi-week projects and 91 tasks. Its combined Elo metric includes rubric pass rate, analytical quality, and presentation quality; scores evaluate the agent system and its harness, not a model alone.",
+    higherIsBetter: true,
+    unit: "elo",
+    category: "agent",
+    sourceUrl: "https://artificialanalysis.ai/evaluations/aa-briefcase",
+  },
 };
 
 export const BENCHMARK_IDS = Object.keys(BENCHMARKS) as BenchmarkId[];
@@ -585,6 +597,7 @@ export const BENCHMARK_CATEGORIES = [
       "cybergym",
       "agents-last-exam",
       "automation-bench",
+      "aa-briefcase-v1-1",
       "terminal-bench-science",
       "gdpval-aa",
       "osworld-2-partial",

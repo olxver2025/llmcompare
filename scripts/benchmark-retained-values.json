@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-23",
+  "asOf": "2026-09-24",
   "cells": {
     "claude-fable-5-1": {
       "terminal-bench-science": 52.6,
@@ -3217,6 +3217,18 @@
     "falcon-180b": {},
     "falcon-40b": {},
     "granite-4-0-h-micro": {},
-    "ling-3-0-flash-fin": {}
+    "ling-3-0-flash-fin": {},
+    "grok-4-7": {
+      "aa-briefcase-v1-1": 1657,
+      "aa-intelligence-index-v4-3-2": 46,
+      "gdpval-aa-v2-1": 1695,
+      "automation-bench": 66,
+      "terminal-bench-4": 26,
+      "scicode": 57,
+      "hle": 43,
+      "critpt": 18,
+      "aa-lcr": 77,
+      "cursorbench-4": 46.3
+    }
   }
 }

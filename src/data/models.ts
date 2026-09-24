@@ -2,8 +2,8 @@ import type { Model } from "./types";
 
 /**
  * Curated static dataset for LLMcompare.
- * Prices: official primary-provider API rates ($/1M tokens) as of ~2026-09-23.
- * Benchmarks: public leaderboards / model cards / system cards as of ~2026-09-23;
+ * Prices: official primary-provider API rates ($/1M tokens) as of ~2026-09-24.
+ * Benchmarks: public leaderboards / model cards / system cards as of ~2026-09-24;
  * omitted when unverifiable. Scores marked as estimated are omitted rather than guessed.
  */
 export const models: Model[] = [
@@ -1650,6 +1650,35 @@ export const models: Model[] = [
     },
     summary:
       "xAI/SpaceXAI's August 2026 flagship (1.5T-parameter) tuned for long-running agents and ambitious interactive/visual work — 500k context at $2/$6, matches GPT-5.6 Sol on the Artificial Analysis Intelligence Index (61). A fast variant is available at 2x price.",
+  },
+  {
+    slug: "grok-4-7",
+    name: "Grok 4.7",
+    organization: "xAI",
+    releaseDate: "2026-09-21",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 500_000,
+    modalities: { input: ["text", "image"], output: ["text"] },
+    pricing: { provider: "xAI", inputPer1M: 2, outputPer1M: 6 },
+    benchmarks: {
+      "aa-briefcase-v1-1": 1657,
+      "aa-intelligence-index-v4-3-2": 46,
+      "gdpval-aa-v2-1": 1695,
+      "automation-bench": 66,
+      "terminal-bench-4": 26,
+      scicode: 57,
+      hle: 43,
+      critpt: 18,
+      "aa-lcr": 77,
+      "cursorbench-4": 46.3,
+    },
+    links: {
+      docs: "https://docs.x.ai/developers/models/grok-4.7",
+      announcement: "https://x.ai/news/grok-4-7",
+    },
+    summary:
+      "SpaceXAI's September 2026 frontier model for coding, agentic tasks, and knowledge work. Its API base rates are $2/$6 per 1M input/output tokens, with higher rates above 200K context; the context window is 500K. Recorded Artificial Analysis evaluations use xhigh reasoning effort.",
   },
   {
     slug: "grok-4-3",

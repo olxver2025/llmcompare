@@ -43,7 +43,8 @@ export type BenchmarkId =
   | "critpt"
   | "tau3-banking"
   | "mmmu-pro"
-  | "ifbench";
+  | "ifbench"
+  | "aa-briefcase-v1-1";
 
 export type ModelPricing = {
   provider: string;

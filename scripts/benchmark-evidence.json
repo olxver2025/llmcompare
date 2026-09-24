@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-23",
+  "asOf": "2026-09-24",
   "policy": "Every retained numeric cell requires an independently reviewed value plus an explicit source URL, evaluation date, and protocol note. The ledger does not make cross-harness results comparable.",
   "cells": {
     "gpt-6-astra": {
@@ -4697,6 +4697,78 @@
         "checkedOn": "2026-09-21",
         "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Grok 4.6 (high)', intelligenceIndex score.",
         "evaluationDate": "2026-09-17"
+      }
+    },
+    "grok-4-7": {
+      "aa-briefcase-v1-1": {
+        "value": 1657,
+        "sourceUrl": "https://artificialanalysis.ai/models/comparisons/grok-4-7-vs-claude-opus-5-5-high",
+        "checkedOn": "2026-09-24",
+        "protocol": "Artificial Analysis comparison snapshot; Grok 4.7 (xhigh), AA-Briefcase v1.1 combined Elo.",
+        "evaluationDate": "2026-09-21"
+      },
+      "aa-intelligence-index-v4-3-2": {
+        "value": 46,
+        "sourceUrl": "https://artificialanalysis.ai/models/comparisons/grok-4-7-vs-claude-opus-5-5-high",
+        "checkedOn": "2026-09-24",
+        "protocol": "Artificial Analysis Intelligence Index v4.3.2 comparison snapshot; Grok 4.7 (xhigh), independently-run index score.",
+        "evaluationDate": "2026-09-21"
+      },
+      "gdpval-aa-v2-1": {
+        "value": 1695,
+        "sourceUrl": "https://artificialanalysis.ai/models/comparisons/grok-4-7-vs-claude-opus-5-5-high",
+        "checkedOn": "2026-09-24",
+        "protocol": "Artificial Analysis GDPval-AA v2.1 comparison snapshot; Grok 4.7 (xhigh), agent-system Elo.",
+        "evaluationDate": "2026-09-21"
+      },
+      "automation-bench": {
+        "value": 66,
+        "sourceUrl": "https://artificialanalysis.ai/models/comparisons/grok-4-7-vs-claude-opus-5-5-high",
+        "checkedOn": "2026-09-24",
+        "protocol": "Artificial Analysis AutomationBench-AA comparison snapshot; Grok 4.7 (xhigh), agent-system task success percentage.",
+        "evaluationDate": "2026-09-21"
+      },
+      "terminal-bench-4": {
+        "value": 26,
+        "sourceUrl": "https://artificialanalysis.ai/models/comparisons/grok-4-7-vs-claude-opus-5-5-high",
+        "checkedOn": "2026-09-24",
+        "protocol": "Artificial Analysis Terminal-Bench 4.0 comparison snapshot; Grok 4.7 (xhigh) under Artificial Analysis evaluation harness, agent-system success percentage.",
+        "evaluationDate": "2026-09-21"
+      },
+      "scicode": {
+        "value": 57,
+        "sourceUrl": "https://artificialanalysis.ai/models/comparisons/grok-4-7-vs-claude-opus-5-5-high",
+        "checkedOn": "2026-09-24",
+        "protocol": "Artificial Analysis SciCode comparison snapshot; Grok 4.7 (xhigh), benchmark score as reported by Artificial Analysis.",
+        "evaluationDate": "2026-09-21"
+      },
+      "hle": {
+        "value": 43,
+        "sourceUrl": "https://artificialanalysis.ai/models/comparisons/grok-4-7-vs-claude-opus-5-5-high",
+        "checkedOn": "2026-09-24",
+        "protocol": "Artificial Analysis Humanity's Last Exam comparison snapshot; Grok 4.7 (xhigh), no-tool result.",
+        "evaluationDate": "2026-09-21"
+      },
+      "critpt": {
+        "value": 18,
+        "sourceUrl": "https://artificialanalysis.ai/models/comparisons/grok-4-7-vs-claude-opus-5-5-high",
+        "checkedOn": "2026-09-24",
+        "protocol": "Artificial Analysis CritPt comparison snapshot; Grok 4.7 (xhigh), benchmark score as reported by Artificial Analysis.",
+        "evaluationDate": "2026-09-21"
+      },
+      "aa-lcr": {
+        "value": 77,
+        "sourceUrl": "https://artificialanalysis.ai/models/comparisons/grok-4-7-vs-claude-opus-5-5-high",
+        "checkedOn": "2026-09-24",
+        "protocol": "Artificial Analysis AA-LCR v1.1 comparison snapshot; Grok 4.7 (xhigh), long-context reasoning pass rate.",
+        "evaluationDate": "2026-09-21"
+      },
+      "cursorbench-4": {
+        "value": 46.3,
+        "sourceUrl": "https://x.ai/news/grok-4-7",
+        "checkedOn": "2026-09-24",
+        "protocol": "SpaceXAI Grok 4.7 launch comparison table; CursorBench 4.0 score for Grok 4.7 xHigh.",
+        "evaluationDate": "2026-09-21"
       }
     },
     "grok-4-3": {

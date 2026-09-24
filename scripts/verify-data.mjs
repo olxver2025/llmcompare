@@ -2,7 +2,7 @@ import fs from "node:fs";
 import { execFileSync } from "node:child_process";
 import { load } from "./update-benchmarks/load.mjs";
 
-const asOf = "2026-09-23";
+const asOf = "2026-09-24";
 
 const models = load("src/data/models.ts", "models");
 const imageModels = load("src/data/image-models.ts", "imageModels");
@@ -68,6 +68,7 @@ const expectedBenchmarkIds = new Set([
   "tau3-banking",
   "mmmu-pro",
   "ifbench",
+  "aa-briefcase-v1-1",
 ]);
 
 try {
@@ -81,7 +82,7 @@ try {
   check(false, `benchmark evidence ledger is not reproducible: ${detail}`);
 }
 
-check(benchmarkIds.size === 45, `expected 45 benchmark IDs, found ${benchmarkIds.size}`);
+check(benchmarkIds.size === 46, `expected 46 benchmark IDs, found ${benchmarkIds.size}`);
 check(
   benchmarkIds.size === Object.keys(benchmarkCatalog).length,
   "benchmark metadata and benchmark ID exports disagree"
@@ -105,7 +106,7 @@ check(
   "evidence ledger must include every model, including intentional empty records"
 );
 
-check(models.length === 315, `expected 315 models, found ${models.length}`);
+check(models.length === 316, `expected 316 models, found ${models.length}`);
 check(new Set(models.map((model) => model.slug)).size === models.length, "duplicate model slug");
 const expectedEmptyBenchmarkModels = new Set(emptyBenchmarkManifest.slugs);
 check(
@@ -115,6 +116,7 @@ check(
 check(bySlug["gpt-6-sol"], "GPT-6 Sol should be catalogued");
 check(bySlug["gpt-6-luna"], "GPT-6 Luna should be catalogued");
 check(bySlug["claude-opus-5-5"], "Claude Opus 5.5 should be catalogued");
+check(bySlug["grok-4-7"], "Grok 4.7 should be catalogued");
 check(bySlug["qwen3-7-plus"], "Qwen3.7 Plus should be catalogued");
 check(bySlug["qwen3-7-flash"], "Qwen3.7 Flash should be catalogued");
 check(bySlug["kimi-k2-7-code"], "Kimi K2.7 Code should be catalogued");
@@ -308,7 +310,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 2640, `expected 2640 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 2650, `expected 2650 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);

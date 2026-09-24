@@ -13763,5 +13763,67 @@
       "evaluationDate": "2026-09-23",
       "checkedOn": "2026-09-23"
     }
+  },
+  "grok-4-7": {
+    "aa-briefcase-v1-1": {
+      "sourceUrl": "https://artificialanalysis.ai/models/comparisons/grok-4-7-vs-claude-opus-5-5-high",
+      "evaluationDate": "2026-09-21",
+      "checkedOn": "2026-09-24",
+      "protocol": "Artificial Analysis comparison snapshot; Grok 4.7 (xhigh), AA-Briefcase v1.1 combined Elo."
+    },
+    "aa-intelligence-index-v4-3-2": {
+      "sourceUrl": "https://artificialanalysis.ai/models/comparisons/grok-4-7-vs-claude-opus-5-5-high",
+      "evaluationDate": "2026-09-21",
+      "checkedOn": "2026-09-24",
+      "protocol": "Artificial Analysis Intelligence Index v4.3.2 comparison snapshot; Grok 4.7 (xhigh), independently-run index score."
+    },
+    "gdpval-aa-v2-1": {
+      "sourceUrl": "https://artificialanalysis.ai/models/comparisons/grok-4-7-vs-claude-opus-5-5-high",
+      "evaluationDate": "2026-09-21",
+      "checkedOn": "2026-09-24",
+      "protocol": "Artificial Analysis GDPval-AA v2.1 comparison snapshot; Grok 4.7 (xhigh), agent-system Elo."
+    },
+    "automation-bench": {
+      "sourceUrl": "https://artificialanalysis.ai/models/comparisons/grok-4-7-vs-claude-opus-5-5-high",
+      "evaluationDate": "2026-09-21",
+      "checkedOn": "2026-09-24",
+      "protocol": "Artificial Analysis AutomationBench-AA comparison snapshot; Grok 4.7 (xhigh), agent-system task success percentage."
+    },
+    "terminal-bench-4": {
+      "sourceUrl": "https://artificialanalysis.ai/models/comparisons/grok-4-7-vs-claude-opus-5-5-high",
+      "evaluationDate": "2026-09-21",
+      "checkedOn": "2026-09-24",
+      "protocol": "Artificial Analysis Terminal-Bench 4.0 comparison snapshot; Grok 4.7 (xhigh) under Artificial Analysis evaluation harness, agent-system success percentage."
+    },
+    "scicode": {
+      "sourceUrl": "https://artificialanalysis.ai/models/comparisons/grok-4-7-vs-claude-opus-5-5-high",
+      "evaluationDate": "2026-09-21",
+      "checkedOn": "2026-09-24",
+      "protocol": "Artificial Analysis SciCode comparison snapshot; Grok 4.7 (xhigh), benchmark score as reported by Artificial Analysis."
+    },
+    "hle": {
+      "sourceUrl": "https://artificialanalysis.ai/models/comparisons/grok-4-7-vs-claude-opus-5-5-high",
+      "evaluationDate": "2026-09-21",
+      "checkedOn": "2026-09-24",
+      "protocol": "Artificial Analysis Humanity's Last Exam comparison snapshot; Grok 4.7 (xhigh), no-tool result."
+    },
+    "critpt": {
+      "sourceUrl": "https://artificialanalysis.ai/models/comparisons/grok-4-7-vs-claude-opus-5-5-high",
+      "evaluationDate": "2026-09-21",
+      "checkedOn": "2026-09-24",
+      "protocol": "Artificial Analysis CritPt comparison snapshot; Grok 4.7 (xhigh), benchmark score as reported by Artificial Analysis."
+    },
+    "aa-lcr": {
+      "sourceUrl": "https://artificialanalysis.ai/models/comparisons/grok-4-7-vs-claude-opus-5-5-high",
+      "evaluationDate": "2026-09-21",
+      "checkedOn": "2026-09-24",
+      "protocol": "Artificial Analysis AA-LCR v1.1 comparison snapshot; Grok 4.7 (xhigh), long-context reasoning pass rate."
+    },
+    "cursorbench-4": {
+      "sourceUrl": "https://x.ai/news/grok-4-7",
+      "evaluationDate": "2026-09-21",
+      "checkedOn": "2026-09-24",
+      "protocol": "SpaceXAI Grok 4.7 launch comparison table; CursorBench 4.0 score for Grok 4.7 xHigh."
+    }
   }
 }
