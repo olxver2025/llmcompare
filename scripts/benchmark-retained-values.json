@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-24",
+  "asOf": "2026-09-29",
   "cells": {
     "claude-fable-5-1": {
       "terminal-bench-science": 52.6,
@@ -395,7 +395,8 @@
       "critpt": 16.9,
       "tau3-banking": 37.3,
       "mmmu-pro": 77.3,
-      "aa-intelligence-index-v4-3": 38.4
+      "aa-intelligence-index-v4-3": 38.4,
+      "chartography": 15.6
     },
     "claude-opus-4-5": {
       "lmarena-elo": 1469.5,
@@ -3141,7 +3142,8 @@
       "scicode": 58,
       "hle": 48,
       "gdpval-aa-v2-1": 1487,
-      "aa-lcr": 84
+      "aa-lcr": 84,
+      "chartography": 53.6
     },
     "gpt-6-luna": {
       "deepswe": 66.6,
@@ -3165,7 +3167,8 @@
       "osworld-2-partial": 81.8,
       "aa-intelligence-index-v4-3-2": 58,
       "scicode": 66.9,
-      "hle": 61.4
+      "hle": 61.4,
+      "chartography": 64.4
     },
     "gemini-3-5-flash-cyber": {},
     "grok-build-0-1": {},
@@ -3229,6 +3232,43 @@
       "critpt": 18,
       "aa-lcr": 77,
       "cursorbench-4": 46.3
+    },
+    "gpt-6-1-sol": {
+      "aa-intelligence-index-v4-3-2": 52
+    },
+    "claude-sonnet-5-5": {
+      "terminal-bench-4": 70.6,
+      "frontiercode-v1-1": 52.1,
+      "cursorbench-4": 55.5,
+      "gdpval-aa-v2-1": 1844,
+      "aa-briefcase-v1-1": 1811,
+      "hle-with-tools": 64.5,
+      "osworld-2-partial": 80.1,
+      "chartography": 61.6,
+      "aa-intelligence-index-v4-3-2": 56
     }
+  },
+  "gpt-6-1-sol": {
+    "aa-intelligence-index-v4-3-2": 52
+  },
+  "claude-sonnet-5-5": {
+    "terminal-bench-4": 70.6,
+    "frontiercode-v1-1": 52.1,
+    "cursorbench-4": 55.5,
+    "gdpval-aa-v2-1": 1844,
+    "aa-briefcase-v1-1": 1811,
+    "hle-with-tools": 64.5,
+    "osworld-2-partial": 80.1,
+    "chartography": 61.6,
+    "aa-intelligence-index-v4-3-2": 56
+  },
+  "claude-sonnet-5": {
+    "chartography": 15.6
+  },
+  "claude-opus-5-5": {
+    "chartography": 64.4
+  },
+  "gpt-6-sol": {
+    "chartography": 53.6
   }
 }

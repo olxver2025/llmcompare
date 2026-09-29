@@ -534,6 +534,18 @@ export const BENCHMARKS: Record<BenchmarkId, BenchmarkMeta> = {
     category: "agent",
     sourceUrl: "https://artificialanalysis.ai/evaluations/aa-briefcase",
   },
+  chartography: {
+    id: "chartography",
+    name: "Chartography",
+    shortName: "Chartography",
+    description:
+      "Professional chart-understanding benchmark with 100 real-world chart questions across 12 domains; preserve tool access and scoring setup because tool-enabled and no-tool results are distinct.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "reasoning",
+    sourceUrl: "https://surgehq.ai/blog/chartography",
+  },
+
 };
 
 export const BENCHMARK_IDS = Object.keys(BENCHMARKS) as BenchmarkId[];
@@ -553,6 +565,7 @@ export const BENCHMARK_CATEGORIES = [
       "aa-omniscience-accuracy",
       "mmmu-pro",
       "ifbench",
+      "chartography",
     ] as BenchmarkId[],
   },
   {
