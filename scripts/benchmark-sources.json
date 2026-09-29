@@ -1856,6 +1856,11 @@
       "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "evaluationDate": "2026-09-17",
       "protocol": "Artificial Analysis Intelligence Index v4.3 leaderboard snapshot, listing 'Claude Sonnet 5 (max)', intelligenceIndex score."
+    },
+    "chartography": {
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-5-5",
+      "evaluationDate": "2026-09-28",
+      "protocol": "Anthropic Sonnet 5.5 launch table, Chartography accuracy without tools for claude-sonnet-5; scores are not comparable to tool-enabled Chartography runs."
     }
   },
   "claude-opus-4-5": {
@@ -13650,6 +13655,11 @@
       "protocol": "Artificial Analysis AA-LCR v1.1 evaluation snapshot; GPT-6 Sol at max effort.",
       "evaluationDate": "2026-09-23",
       "checkedOn": "2026-09-23"
+    },
+    "chartography": {
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-5-5",
+      "evaluationDate": "2026-09-28",
+      "protocol": "Anthropic Sonnet 5.5 launch table, Chartography accuracy without tools for gpt-6-sol; scores are not comparable to tool-enabled Chartography runs."
     }
   },
   "gpt-6-luna": {
@@ -13762,6 +13772,11 @@
       "protocol": "Artificial Analysis Humanity's Last Exam leaderboard snapshot; Claude Opus 5.5 at max effort with default fallback, no tools.",
       "evaluationDate": "2026-09-23",
       "checkedOn": "2026-09-23"
+    },
+    "chartography": {
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-5-5",
+      "evaluationDate": "2026-09-28",
+      "protocol": "Anthropic Sonnet 5.5 launch table, Chartography accuracy without tools for claude-opus-5-5; scores are not comparable to tool-enabled Chartography runs."
     }
   },
   "grok-4-7": {
@@ -13824,6 +13839,60 @@
       "evaluationDate": "2026-09-21",
       "checkedOn": "2026-09-24",
       "protocol": "SpaceXAI Grok 4.7 launch comparison table; CursorBench 4.0 score for Grok 4.7 xHigh."
+    }
+  },
+  "gpt-6-1-sol": {
+    "aa-intelligence-index-v4-3-2": {
+      "sourceUrl": "https://artificialanalysis.ai/models/releases/gpt-6-1-sol",
+      "evaluationDate": "2026-09-29",
+      "protocol": "Artificial Analysis Intelligence Index v4.3.2 release page, GPT-6.1 Sol at max reasoning effort; score 52."
+    }
+  },
+  "claude-sonnet-5-5": {
+    "terminal-bench-4": {
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-5-5",
+      "evaluationDate": "2026-09-28",
+      "protocol": "Anthropic Sonnet 5.5 launch table, Terminal-Bench 4.0 at Medium effort (Claude apps default); agent-system result."
+    },
+    "frontiercode-v1-1": {
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-5-5",
+      "evaluationDate": "2026-09-28",
+      "protocol": "Anthropic Sonnet 5.5 launch table, FrontierCode v1.1 Main at Xhigh effort; agent-system result. Max effort result is lower because of out-of-scope edits/timeouts."
+    },
+    "cursorbench-4": {
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-5-5",
+      "evaluationDate": "2026-09-28",
+      "protocol": "Anthropic Sonnet 5.5 launch table, CursorBench 4.0 best reported score; agent-system result with Cursor harness."
+    },
+    "gdpval-aa-v2-1": {
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-5-5",
+      "evaluationDate": "2026-09-28",
+      "protocol": "Anthropic Sonnet 5.5 launch table, GDPval-AA v2.1 Elo, based on a prerelease deployment with a structured-output bug that Anthropic says is fixed in public release."
+    },
+    "aa-briefcase-v1-1": {
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-5-5",
+      "evaluationDate": "2026-09-28",
+      "protocol": "Anthropic Sonnet 5.5 launch table, AA-Briefcase v1.1 Elo, based on a prerelease deployment with a structured-output bug that Anthropic says is fixed in public release; report as agent-system/harness score."
+    },
+    "hle-with-tools": {
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-5-5",
+      "evaluationDate": "2026-09-28",
+      "protocol": "Anthropic Sonnet 5.5 launch table, Humanity’s Last Exam with tools; effort configuration not specified in table."
+    },
+    "osworld-2-partial": {
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-5-5",
+      "evaluationDate": "2026-09-28",
+      "protocol": "Anthropic Sonnet 5.5 launch table, OSWorld 2.1 partial-credit evaluation; agent-system score, distinct from OSWorld 2.0."
+    },
+    "chartography": {
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-5-5",
+      "evaluationDate": "2026-09-28",
+      "protocol": "Anthropic Sonnet 5.5 launch table, Chartography accuracy without tools; scores are not comparable to tool-enabled Chartography runs."
+    },
+    "aa-intelligence-index-v4-3-2": {
+      "sourceUrl": "https://artificialanalysis.ai/articles/claude-sonnet-5-5",
+      "evaluationDate": "2026-09-28",
+      "protocol": "Artificial Analysis Intelligence Index v4.3.2, Claude Sonnet 5.5 at max effort with default fallback enabled; prerelease deployment had a structured-output bug since fixed."
     }
   }
 }

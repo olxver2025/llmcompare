@@ -2,7 +2,7 @@ import fs from "node:fs";
 import { execFileSync } from "node:child_process";
 import { load } from "./update-benchmarks/load.mjs";
 
-const asOf = "2026-09-24";
+const asOf = "2026-09-29";
 
 const models = load("src/data/models.ts", "models");
 const imageModels = load("src/data/image-models.ts", "imageModels");
@@ -69,6 +69,7 @@ const expectedBenchmarkIds = new Set([
   "mmmu-pro",
   "ifbench",
   "aa-briefcase-v1-1",
+  "chartography",
 ]);
 
 try {
@@ -82,7 +83,7 @@ try {
   check(false, `benchmark evidence ledger is not reproducible: ${detail}`);
 }
 
-check(benchmarkIds.size === 46, `expected 46 benchmark IDs, found ${benchmarkIds.size}`);
+check(benchmarkIds.size === 47, `expected 47 benchmark IDs, found ${benchmarkIds.size}`);
 check(
   benchmarkIds.size === Object.keys(benchmarkCatalog).length,
   "benchmark metadata and benchmark ID exports disagree"
@@ -90,7 +91,7 @@ check(
 check(
   benchmarkIds.size === expectedBenchmarkIds.size &&
     [...benchmarkIds].every((id) => expectedBenchmarkIds.has(id)),
-  "benchmark IDs changed outside the audited 45-field scope"
+  "benchmark IDs changed outside the audited 46-field scope"
 );
 check(evidenceLedger.asOf === asOf, `evidence ledger is not dated ${asOf}`);
 check(
@@ -106,13 +107,15 @@ check(
   "evidence ledger must include every model, including intentional empty records"
 );
 
-check(models.length === 316, `expected 316 models, found ${models.length}`);
+check(models.length === 318, `expected 318 models, found ${models.length}`);
 check(new Set(models.map((model) => model.slug)).size === models.length, "duplicate model slug");
 const expectedEmptyBenchmarkModels = new Set(emptyBenchmarkManifest.slugs);
 check(
   expectedEmptyBenchmarkModels.size === emptyBenchmarkManifest.slugs.length,
   "empty benchmark manifest contains duplicate model slugs"
 );
+check(bySlug["gpt-6-1-sol"], "GPT-6.1 Sol should be catalogued");
+check(bySlug["claude-sonnet-5-5"], "Claude Sonnet 5.5 should be catalogued");
 check(bySlug["gpt-6-sol"], "GPT-6 Sol should be catalogued");
 check(bySlug["gpt-6-luna"], "GPT-6 Luna should be catalogued");
 check(bySlug["claude-opus-5-5"], "Claude Opus 5.5 should be catalogued");
@@ -310,7 +313,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 2650, `expected 2650 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 2663, `expected 2663 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);

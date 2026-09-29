@@ -44,7 +44,8 @@ export type BenchmarkId =
   | "tau3-banking"
   | "mmmu-pro"
   | "ifbench"
-  | "aa-briefcase-v1-1";
+  | "aa-briefcase-v1-1"
+  | "chartography";
 
 export type ModelPricing = {
   provider: string;

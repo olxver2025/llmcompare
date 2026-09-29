@@ -2,8 +2,8 @@ import type { Model } from "./types";
 
 /**
  * Curated static dataset for LLMcompare.
- * Prices: official primary-provider API rates ($/1M tokens) as of ~2026-09-24.
- * Benchmarks: public leaderboards / model cards / system cards as of ~2026-09-24;
+ * Prices: official primary-provider API rates ($/1M tokens) as of ~2026-09-29.
+ * Benchmarks: public leaderboards / model cards / system cards as of ~2026-09-29;
  * omitted when unverifiable. Scores marked as estimated are omitted rather than guessed.
  */
 export const models: Model[] = [
@@ -54,6 +54,26 @@ export const models: Model[] = [
       "OpenAI's September 2026 flagship, the first model OpenAI designates as reaching the Preparedness Framework's Critical cybersecurity capability threshold; rolling out first to Daybreak-program enterprises before wider ChatGPT/API/AWS availability. Standard API pricing is $10/$50 per 1M tokens (input/output), with a Fast mode at $20/$100.",
   },
   {
+    slug: "gpt-6-1-sol",
+    name: "GPT-6.1 Sol",
+    organization: "OpenAI",
+    releaseDate: "2026-09-29",
+    knowledgeCutoff: "2026-04-30",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 1_050_000,
+    maxOutput: 128_000,
+    modalities: { input: ["text", "image"], output: ["text"] },
+    pricing: { provider: "OpenAI", inputPer1M: 2, outputPer1M: 10 },
+    benchmarks: { "aa-intelligence-index-v4-3-2": 52 },
+    links: {
+      docs: "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      announcement: "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-and-edu-release-notes",
+    },
+    summary:
+      "OpenAI's September 2026 GPT-6 Sol update for agentic coding, computer use, and professional work. It retains $2/$10 per 1M input/output tokens, a 1.05M context window, and 128K output limit; Artificial Analysis measured 52 on Intelligence Index v4.3.2 at max effort.",
+  },
+  {
     slug: "gpt-6-sol",
     name: "GPT-6 Sol",
     organization: "OpenAI",
@@ -76,6 +96,7 @@ export const models: Model[] = [
       "gdpval-aa-v2-1": 1487,
       "aa-lcr": 84,
       "aa-intelligence-index-v4-3-2": 48,
+      chartography: 53.6,
     },
     links: {
       docs: "https://developers.openai.com/api/docs/models/gpt-6-sol",
@@ -823,6 +844,7 @@ export const models: Model[] = [
       "aa-intelligence-index-v4-3-2": 58,
       scicode: 66.9,
       hle: 61.4,
+      chartography: 64.4,
     },
     links: {
       docs: "https://platform.claude.com/docs/en/models/opus-5-5/overview",
@@ -830,6 +852,34 @@ export const models: Model[] = [
     },
     summary:
       "Anthropic's September 2026 Opus model for long-running agentic coding and knowledge work. It has a 1M context window, 128K output limit, always-on adaptive thinking, and standard API rates of $4/$20 per 1M input/output tokens.",
+  },
+  {
+    slug: "claude-sonnet-5-5",
+    name: "Claude Sonnet 5.5",
+    organization: "Anthropic",
+    releaseDate: "2026-09-28",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 1_000_000,
+    modalities: { input: ["text", "image"], output: ["text"] },
+    pricing: { provider: "Anthropic", inputPer1M: 2, outputPer1M: 10 },
+    benchmarks: {
+      "terminal-bench-4": 70.6,
+      "frontiercode-v1-1": 52.1,
+      "cursorbench-4": 55.5,
+      "gdpval-aa-v2-1": 1844,
+      "aa-briefcase-v1-1": 1811,
+      "hle-with-tools": 64.5,
+      "osworld-2-partial": 80.1,
+      chartography: 61.6,
+      "aa-intelligence-index-v4-3-2": 56,
+    },
+    links: {
+      docs: "https://platform.claude.com/docs/en/about-claude/models/overview",
+      announcement: "https://www.anthropic.com/claude-sonnet-5-5",
+    },
+    summary:
+      "Anthropic's September 2026 Sonnet model for everyday coding, agentic work, and document creation. It supports text and image input, a 1M context window, and standard API rates of $2/$10 per 1M input/output tokens. Published benchmark results vary by effort and, for agent evaluations, harness; the cited Chartography score is no-tools.",
   },
   {
     slug: "claude-fable-5",
@@ -951,6 +1001,7 @@ export const models: Model[] = [
       "tau3-banking": 37.3,
       "mmmu-pro": 77.3,
       "aa-intelligence-index-v4-3": 38.4,
+      chartography: 15.6,
     },
     links: {
       docs: "https://docs.anthropic.com/en/docs/about-claude/models",
