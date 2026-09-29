@@ -54,6 +54,7 @@ const expectedBenchmarkIds = new Set([
   "gdpval-aa",
   "osworld-2-partial",
   "osworld-2-strict",
+  "osworld-2-1-partial",
   "frontiermath-tier-4-v2",
   "aa-intelligence-index",
   "aa-intelligence-index-v4-3",
@@ -70,6 +71,7 @@ const expectedBenchmarkIds = new Set([
   "ifbench",
   "aa-briefcase-v1-1",
   "chartography",
+  "chartography-with-tools",
 ]);
 
 try {
@@ -83,7 +85,7 @@ try {
   check(false, `benchmark evidence ledger is not reproducible: ${detail}`);
 }
 
-check(benchmarkIds.size === 47, `expected 47 benchmark IDs, found ${benchmarkIds.size}`);
+check(benchmarkIds.size === 49, `expected 49 benchmark IDs, found ${benchmarkIds.size}`);
 check(
   benchmarkIds.size === Object.keys(benchmarkCatalog).length,
   "benchmark metadata and benchmark ID exports disagree"
@@ -91,7 +93,7 @@ check(
 check(
   benchmarkIds.size === expectedBenchmarkIds.size &&
     [...benchmarkIds].every((id) => expectedBenchmarkIds.has(id)),
-  "benchmark IDs changed outside the audited 46-field scope"
+  "benchmark IDs changed outside the audited 49-field scope"
 );
 check(evidenceLedger.asOf === asOf, `evidence ledger is not dated ${asOf}`);
 check(
@@ -313,7 +315,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 2663, `expected 2663 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 2668, `expected 2668 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);

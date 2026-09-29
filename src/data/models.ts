@@ -65,7 +65,13 @@ export const models: Model[] = [
     maxOutput: 128_000,
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 2, outputPer1M: 10 },
-    benchmarks: { "aa-intelligence-index-v4-3-2": 52 },
+    benchmarks: {
+      "aa-intelligence-index-v4-3-2": 52,
+      deepswe: 75.2,
+      "automation-bench": 36.1,
+      "osworld-2-partial": 71.4,
+      "terminal-bench-science": 57,
+    },
     links: {
       docs: "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
       announcement: "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-and-edu-release-notes",
@@ -845,6 +851,7 @@ export const models: Model[] = [
       scicode: 66.9,
       hle: 61.4,
       chartography: 64.4,
+      "chartography-with-tools": 89,
     },
     links: {
       docs: "https://platform.claude.com/docs/en/models/opus-5-5/overview",
@@ -870,8 +877,8 @@ export const models: Model[] = [
       "gdpval-aa-v2-1": 1844,
       "aa-briefcase-v1-1": 1811,
       "hle-with-tools": 64.5,
-      "osworld-2-partial": 80.1,
       chartography: 61.6,
+      "osworld-2-1-partial": 80.1,
       "aa-intelligence-index-v4-3-2": 56,
     },
     links: {

@@ -158,6 +158,34 @@
         "checkedOn": "2026-09-21",
         "protocol": "Artificial Analysis Intelligence Index v4.3.2 release page, GPT-6.1 Sol at max reasoning effort; score 52.",
         "evaluationDate": "2026-09-29"
+      },
+      "deepswe": {
+        "value": 75.2,
+        "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-sol/",
+        "checkedOn": "2026-09-29",
+        "protocol": "OpenAI GPT-6.1 Sol launch evaluation, DeepSWE v1.1, High effort; agent-system result evaluated in OpenAI research environment or API.",
+        "evaluationDate": "2026-09-29"
+      },
+      "automation-bench": {
+        "value": 36.1,
+        "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-sol/",
+        "checkedOn": "2026-09-29",
+        "protocol": "OpenAI GPT-6.1 Sol launch evaluation, AutomationBench 1.0.6, Max effort; agent-system result using multi-step business workflows and tools.",
+        "evaluationDate": "2026-09-29"
+      },
+      "osworld-2-partial": {
+        "value": 71.4,
+        "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-sol/",
+        "checkedOn": "2026-09-29",
+        "protocol": "OpenAI GPT-6.1 Sol launch evaluation, OSWorld 2.0 offline set, v2026.08.08 task release, partial reward, maximum reasoning effort; agent-system result.",
+        "evaluationDate": "2026-09-29"
+      },
+      "terminal-bench-science": {
+        "value": 57,
+        "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-sol/",
+        "checkedOn": "2026-09-29",
+        "protocol": "OpenAI GPT-6.1 Sol launch evaluation, Terminal-Bench Science 0.1, maximum reasoning effort; agent-system result.",
+        "evaluationDate": "2026-09-29"
       }
     },
     "gpt-6-sol": {
@@ -2412,6 +2440,13 @@
         "checkedOn": "2026-09-21",
         "protocol": "Anthropic Sonnet 5.5 launch table, Chartography accuracy without tools for claude-opus-5-5; scores are not comparable to tool-enabled Chartography runs.",
         "evaluationDate": "2026-09-28"
+      },
+      "chartography-with-tools": {
+        "value": 89,
+        "sourceUrl": "https://www.anthropic.com/claude-opus-5-5",
+        "checkedOn": "2026-09-29",
+        "protocol": "Anthropic Claude Opus 5.5 release comparison table, Chartography with tools; distinct from no-tool Chartography results.",
+        "evaluationDate": "2026-09-22"
       }
     },
     "claude-sonnet-5-5": {
@@ -2457,18 +2492,18 @@
         "protocol": "Anthropic Sonnet 5.5 launch table, Humanity’s Last Exam with tools; effort configuration not specified in table.",
         "evaluationDate": "2026-09-28"
       },
-      "osworld-2-partial": {
-        "value": 80.1,
-        "sourceUrl": "https://www.anthropic.com/claude-sonnet-5-5",
-        "checkedOn": "2026-09-21",
-        "protocol": "Anthropic Sonnet 5.5 launch table, OSWorld 2.1 partial-credit evaluation; agent-system score, distinct from OSWorld 2.0.",
-        "evaluationDate": "2026-09-28"
-      },
       "chartography": {
         "value": 61.6,
         "sourceUrl": "https://www.anthropic.com/claude-sonnet-5-5",
         "checkedOn": "2026-09-21",
         "protocol": "Anthropic Sonnet 5.5 launch table, Chartography accuracy without tools; scores are not comparable to tool-enabled Chartography runs.",
+        "evaluationDate": "2026-09-28"
+      },
+      "osworld-2-1-partial": {
+        "value": 80.1,
+        "sourceUrl": "https://www.anthropic.com/claude-sonnet-5-5",
+        "checkedOn": "2026-09-29",
+        "protocol": "Anthropic Claude Sonnet 5.5 release comparison table, OSWorld 2.1 partial-credit evaluation; agent-system result.",
         "evaluationDate": "2026-09-28"
       },
       "aa-intelligence-index-v4-3-2": {
