@@ -30,6 +30,7 @@ export type BenchmarkId =
   | "gdpval-aa"
   | "osworld-2-partial"
   | "osworld-2-strict"
+  | "osworld-2-1-partial"
   | "frontiermath-tier-4-v2"
   | "aa-intelligence-index"
   | "aa-intelligence-index-v4-3"
@@ -45,7 +46,8 @@ export type BenchmarkId =
   | "mmmu-pro"
   | "ifbench"
   | "aa-briefcase-v1-1"
-  | "chartography";
+  | "chartography"
+  | "chartography-with-tools";
 
 export type ModelPricing = {
   provider: string;

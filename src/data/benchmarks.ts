@@ -357,6 +357,17 @@ export const BENCHMARKS: Record<BenchmarkId, BenchmarkMeta> = {
     category: "agent",
     sourceUrl: "https://os-world.github.io/",
   },
+  "osworld-2-1-partial": {
+    id: "osworld-2-1-partial",
+    name: "OSWorld 2.1 (Partial Credit)",
+    shortName: "OSWorld 2.1",
+    description:
+      "OSWorld-V2 2.1 task release with partial-credit scoring. Keep separate from OSWorld 2.0 and preserve the agent harness, task release, and tool setup in each score's provenance.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "agent",
+    sourceUrl: "https://github.com/xlang-ai/OSWorld-V2",
+  },
   "frontiermath-tier-4-v2": {
     id: "frontiermath-tier-4-v2",
     name: "FrontierMath Tier 4 (v2)",
@@ -545,6 +556,17 @@ export const BENCHMARKS: Record<BenchmarkId, BenchmarkMeta> = {
     category: "reasoning",
     sourceUrl: "https://surgehq.ai/blog/chartography",
   },
+  "chartography-with-tools": {
+    id: "chartography-with-tools",
+    name: "Chartography (With Tools)",
+    shortName: "Chartography + tools",
+    description:
+      "Chartography professional chart-understanding benchmark with tool access; keep separate from no-tool Chartography scores because tool use changes the evaluation setup.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "reasoning",
+    sourceUrl: "https://surgehq.ai/blog/chartography",
+  },
 
 };
 
@@ -566,6 +588,7 @@ export const BENCHMARK_CATEGORIES = [
       "mmmu-pro",
       "ifbench",
       "chartography",
+      "chartography-with-tools",
     ] as BenchmarkId[],
   },
   {
@@ -615,6 +638,7 @@ export const BENCHMARK_CATEGORIES = [
       "gdpval-aa",
       "osworld-2-partial",
       "osworld-2-strict",
+      "osworld-2-1-partial",
     ] as BenchmarkId[],
   },
   {
