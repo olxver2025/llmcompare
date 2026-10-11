@@ -24,6 +24,7 @@ export const models: Model[] = [
       pricing: { provider: "OpenAI", inputPer1M: 20, outputPer1M: 100 },
     },
     benchmarks: {
+      "epoch-automation-reports": 65,
       "gpqa-diamond": 96.1,
       deepswe: 74.1,
       "terminal-bench-science": 64.6,
@@ -745,6 +746,7 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 10, outputPer1M: 50 },
     benchmarks: {
+      "epoch-automation-reports": 65,
       "lmarena-elo": 1498.5,
       "terminal-bench-science": 52.6,
       "terminal-bench-4": 57.9,
@@ -1085,6 +1087,26 @@ export const models: Model[] = [
       "Prior Sonnet generation with strong coding and long-context support before Sonnet 5.",
   },
   {
+    slug: "claude-haiku-5-5",
+    name: "Claude Haiku 5.5",
+    organization: "Anthropic",
+    releaseDate: "2026-10-07",
+    knowledgeCutoff: "2026-06",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 1_000_000,
+    maxOutput: 128_000,
+    modalities: { input: ["text", "image"], output: ["text"] },
+    pricing: { provider: "Anthropic", inputPer1M: 0.1, outputPer1M: 0.5 },
+    benchmarks: {},
+    links: {
+      docs: "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+      announcement: "https://www.anthropic.com/claude-haiku-5-5",
+    },
+    summary:
+      "Anthropic's fast, high-volume Claude tier. Pricing is $0.10/$0.50 per million input/output tokens up to 100K prompt length and $0.50/$2.50 above 100K.",
+  },
+  {
     slug: "claude-haiku-4-5",
     name: "Claude Haiku 4.5",
     organization: "Anthropic",
@@ -1264,6 +1286,28 @@ export const models: Model[] = [
       "Newest Flash model powering the free Gemini app - cheaper output tokens and strong price/performance.",
   },
   {
+    slug: "gemini-4-argon",
+    name: "Gemini 4 Argon",
+    organization: "Google",
+    releaseDate: "2026-09-30",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 1_000_000,
+    maxOutput: 1_000_000,
+    modalities: { input: ["text", "image"], output: ["text"] },
+    pricing: { provider: "Google", inputPer1M: 2, outputPer1M: 10 },
+    benchmarks: {
+      deepswe: 77.9,
+      "automation-bench": 51.3,
+    },
+    links: {
+      announcement:
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+    },
+    summary:
+      "Google's September 2026 frontier model, currently rolling out to trusted cyber defenders before wider access. It supports text and image input, a 1M-token context and output limit, and introductory API rates of $2/$10 per 1M input/output tokens; Google says $4/$20 rates apply after the introductory period.",
+  },
+  {
     slug: "gemini-3-8-flash",
     name: "Gemini 3.8 Flash",
     organization: "Google",
@@ -1276,6 +1320,7 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "audio", "video"], output: ["text"] },
     pricing: { provider: "Google", inputPer1M: 0.75, outputPer1M: 3.75 },
     benchmarks: {
+      "epoch-automation-reports": 42,
       "lmarena-elo": 1493,
       "webdev-arena": 1567,
       cursorbench: 69.2,
@@ -1683,6 +1728,7 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "xAI", inputPer1M: 2, outputPer1M: 6 },
     benchmarks: {
+      "epoch-automation-reports": 59,
       "terminal-bench-science": 7.1,
       "gdpval-aa": 1755,
       cursorbench: 70.8,
@@ -2613,6 +2659,7 @@ export const models: Model[] = [
     pricing: { provider: "Alibaba Cloud", inputPer1M: 2.0, outputPer1M: 6.0 },
     speed: { tokensPerSec: 86, ttftSeconds: 0.4 },
     benchmarks: {
+      "epoch-automation-reports": 53,
       "gdpval-aa": 1721,
       "gpqa-diamond": 92.8,
       hle: 43.1,
@@ -3068,6 +3115,24 @@ export const models: Model[] = [
 
   // ─── Mistral ──────────────────────────────────────────────
   {
+    slug: "mistral-large-4",
+    name: "Mistral Large 4",
+    organization: "Mistral",
+    releaseDate: "2026-10-06",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 1_000_000,
+    modalities: { input: ["text", "image"], output: ["text"] },
+    pricing: { provider: "Mistral", inputPer1M: 1.36, outputPer1M: 4.18 },
+    benchmarks: {},
+    links: {
+      docs: "https://docs.mistral.ai/models/mistral-large/",
+      announcement: "https://mistral.ai/news/mistral-large-4/",
+    },
+    summary:
+      "Mistral's public preview of its new multimodal Large model. API pricing lists $1.36/$4.18 per million input/output tokens; Mistral says model weights are planned for release later in October.",
+  },
+  {
     slug: "mistral-large-3",
     name: "Mistral Large 3",
     organization: "Mistral",
@@ -3489,6 +3554,7 @@ export const models: Model[] = [
       speed: { tokensPerSec: 95, ttftSeconds: 0.35 },
     },
     benchmarks: {
+      "epoch-automation-reports": 52,
       "terminal-bench-science": 7.1,
       "toolathlon-verified": 76.5,
       "gdpval-aa": 1668,

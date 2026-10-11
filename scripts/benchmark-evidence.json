@@ -1,8 +1,15 @@
 {
-  "asOf": "2026-09-29",
+  "asOf": "2026-10-12",
   "policy": "Every retained numeric cell requires an independently reviewed value plus an explicit source URL, evaluation date, and protocol note. The ledger does not make cross-harness results comparable.",
   "cells": {
     "gpt-6-astra": {
+      "epoch-automation-reports": {
+        "value": 65,
+        "sourceUrl": "https://epoch.ai/benchmarks/epoch-automation-reports",
+        "checkedOn": "2026-10-12",
+        "protocol": "Epoch Automation Reports published system-level average across 11 human-graded tasks in five categories, run once per task at the highest reasoning setting with task-specific resources using the Codex harness. Scores are rubric percentages and reflect both model and harness, not model-only capability.",
+        "evaluationDate": "2026-10-08"
+      },
       "gpqa-diamond": {
         "value": 96.1,
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
@@ -1989,6 +1996,13 @@
       }
     },
     "claude-fable-5-1": {
+      "epoch-automation-reports": {
+        "value": 65,
+        "sourceUrl": "https://epoch.ai/benchmarks/epoch-automation-reports",
+        "checkedOn": "2026-10-12",
+        "protocol": "Epoch Automation Reports published system-level average across 11 human-graded tasks in five categories, run once per task at the highest reasoning setting with task-specific resources using the Claude Code harness. Scores are rubric percentages and reflect both model and harness, not model-only capability.",
+        "evaluationDate": "2026-10-08"
+      },
       "lmarena-elo": {
         "value": 1498.5,
         "sourceUrl": "https://arena.ai/leaderboard",
@@ -3196,6 +3210,7 @@
         "evaluationDate": "2026-09-17"
       }
     },
+    "claude-haiku-5-5": {},
     "claude-haiku-4-5": {
       "swe-bench-pro": {
         "value": 39.45,
@@ -3600,7 +3615,30 @@
         "evaluationDate": "2026-09-17"
       }
     },
+    "gemini-4-argon": {
+      "deepswe": {
+        "value": 77.9,
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+        "checkedOn": "2026-10-05",
+        "protocol": "Google Gemini 4 Argon launch evaluation; DeepSWE v1.1, reported 77.9%. Google did not publish the agent harness or effort configuration in the announcement; treat this as an agent-system result.",
+        "evaluationDate": "2026-09-30"
+      },
+      "automation-bench": {
+        "value": 51.3,
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+        "checkedOn": "2026-10-05",
+        "protocol": "Google Gemini 4 Argon launch evaluation; Zapier AutomationBench public benchmark, reported 51.3%. Google did not specify the benchmark version, agent harness, or effort configuration; treat this as an agent-system result.",
+        "evaluationDate": "2026-09-30"
+      }
+    },
     "gemini-3-8-flash": {
+      "epoch-automation-reports": {
+        "value": 42,
+        "sourceUrl": "https://epoch.ai/benchmarks/epoch-automation-reports",
+        "checkedOn": "2026-10-12",
+        "protocol": "Epoch Automation Reports published system-level average across 11 human-graded tasks in five categories, run once per task at the highest reasoning setting with task-specific resources using the Antigravity harness. Scores are rubric percentages and reflect both model and harness, not model-only capability.",
+        "evaluationDate": "2026-10-08"
+      },
       "lmarena-elo": {
         "value": 1493,
         "sourceUrl": "https://arena.ai/leaderboard",
@@ -4702,6 +4740,13 @@
       }
     },
     "grok-4-6": {
+      "epoch-automation-reports": {
+        "value": 59,
+        "sourceUrl": "https://epoch.ai/benchmarks/epoch-automation-reports",
+        "checkedOn": "2026-10-12",
+        "protocol": "Epoch Automation Reports published system-level average across 11 human-graded tasks in five categories, run once per task at the highest reasoning setting with task-specific resources using the Grok Build harness. Scores are rubric percentages and reflect both model and harness, not model-only capability.",
+        "evaluationDate": "2026-10-08"
+      },
       "terminal-bench-science": {
         "value": 7.1,
         "sourceUrl": "https://www.tbench.ai/news/terminal-bench-science-0-1",
@@ -7014,6 +7059,13 @@
       }
     },
     "qwen3-8-max": {
+      "epoch-automation-reports": {
+        "value": 53,
+        "sourceUrl": "https://epoch.ai/benchmarks/epoch-automation-reports",
+        "checkedOn": "2026-10-12",
+        "protocol": "Epoch Automation Reports published system-level average across 11 human-graded tasks in five categories, run once per task at the highest reasoning setting with task-specific resources using the Qwen Code harness. Scores are rubric percentages and reflect both model and harness, not model-only capability.",
+        "evaluationDate": "2026-10-08"
+      },
       "gdpval-aa": {
         "value": 1721,
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
@@ -8230,6 +8282,7 @@
         "evaluationDate": "2026-09-17"
       }
     },
+    "mistral-large-4": {},
     "mistral-large-3": {
       "lmarena-elo": {
         "value": 1413,
@@ -9165,6 +9218,13 @@
       }
     },
     "kimi-k3": {
+      "epoch-automation-reports": {
+        "value": 52,
+        "sourceUrl": "https://epoch.ai/benchmarks/epoch-automation-reports",
+        "checkedOn": "2026-10-12",
+        "protocol": "Epoch Automation Reports published system-level average across 11 human-graded tasks in five categories, run once per task at the highest reasoning setting with task-specific resources using the Kimi Code harness. Scores are rubric percentages and reflect both model and harness, not model-only capability.",
+        "evaluationDate": "2026-10-08"
+      },
       "terminal-bench-science": {
         "value": 7.1,
         "sourceUrl": "https://www.tbench.ai/news/terminal-bench-science-0-1",

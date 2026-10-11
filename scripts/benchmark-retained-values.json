@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-29",
+  "asOf": "2026-10-12",
   "cells": {
     "claude-fable-5-1": {
       "terminal-bench-science": 52.6,
@@ -26,7 +26,8 @@
       "aa-intelligence-index-v4-3-2": 53,
       "gdpval-aa-v2-1": 1735,
       "cursorbench-4": 51.8,
-      "hle-with-tools": 65.6
+      "hle-with-tools": 65.6,
+      "epoch-automation-reports": 65
     },
     "claude-mythos-5-1": {
       "terminal-bench-4": 60.9
@@ -538,7 +539,8 @@
       "critpt": 18.3,
       "tau3-banking": 44.9,
       "mmmu-pro": 85.6,
-      "aa-intelligence-index-v4-3": 41.2
+      "aa-intelligence-index-v4-3": 41.2,
+      "epoch-automation-reports": 42
     },
     "gemini-3-8-flash-cyber": {
       "cybergym": 86.2
@@ -692,7 +694,8 @@
       "aa-lcr": 80.3,
       "critpt": 17.1,
       "tau3-banking": 50.7,
-      "aa-intelligence-index-v4-3": 44.4
+      "aa-intelligence-index-v4-3": 44.4,
+      "epoch-automation-reports": 59
     },
     "grok-4-3": {
       "lmarena-elo": 1442.7,
@@ -1016,7 +1019,8 @@
       "critpt": 17.7,
       "tau3-banking": 47.8,
       "mmmu-pro": 82.8,
-      "aa-intelligence-index-v4-3": 45.4
+      "aa-intelligence-index-v4-3": 45.4,
+      "epoch-automation-reports": 53
     },
     "qwen3-8-27b": {
       "gpqa-diamond": 90.5,
@@ -1303,7 +1307,8 @@
       "critpt": 23.4,
       "tau3-banking": 46,
       "mmmu-pro": 80.5,
-      "aa-intelligence-index-v4-3": 43.8
+      "aa-intelligence-index-v4-3": 43.8,
+      "epoch-automation-reports": 52
     },
     "kimi-k2-7-code": {
       "cursorbench": 49.7,
@@ -2703,7 +2708,8 @@
       "aa-intelligence-index-v4-3": 52.8,
       "aa-intelligence-index-v4-3-2": 53,
       "gdpval-aa-v2-1": 1542,
-      "hle-with-tools": 57.2
+      "hle-with-tools": 57.2,
+      "epoch-automation-reports": 65
     },
     "granite-4-2-30b": {
       "swe-bench-verified": 57,
@@ -3251,6 +3257,10 @@
       "chartography": 61.6,
       "aa-intelligence-index-v4-3-2": 56,
       "osworld-2-1-partial": 80.1
+    },
+    "gemini-4-argon": {
+      "deepswe": 77.9,
+      "automation-bench": 51.3
     }
   },
   "gpt-6-1-sol": {

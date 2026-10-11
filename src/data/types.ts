@@ -47,7 +47,8 @@ export type BenchmarkId =
   | "ifbench"
   | "aa-briefcase-v1-1"
   | "chartography"
-  | "chartography-with-tools";
+  | "chartography-with-tools"
+  | "epoch-automation-reports";
 
 export type ModelPricing = {
   provider: string;
