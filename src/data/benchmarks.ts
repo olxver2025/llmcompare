@@ -280,6 +280,17 @@ export const BENCHMARKS: Record<BenchmarkId, BenchmarkMeta> = {
     category: "agent",
     sourceUrl: "https://github.com/zapier/AutomationBench",
   },
+  "epoch-automation-reports": {
+    id: "epoch-automation-reports",
+    name: "Epoch Automation Reports",
+    shortName: "Epoch Auto",
+    description:
+      "Epoch AI's 11 open-ended work tasks across five categories, graded by humans against internal rubrics. Published averages evaluate complete agent systems with different harnesses and highest reasoning settings; one run per task makes scores noisy and Epoch-specific.",
+    higherIsBetter: true,
+    unit: "percent",
+    category: "agent",
+    sourceUrl: "https://epoch.ai/benchmarks/epoch-automation-reports",
+  },
   "webdev-arena": {
     id: "webdev-arena",
     name: "WebDev Arena",
@@ -633,6 +644,7 @@ export const BENCHMARK_CATEGORIES = [
       "cybergym",
       "agents-last-exam",
       "automation-bench",
+      "epoch-automation-reports",
       "aa-briefcase-v1-1",
       "terminal-bench-science",
       "gdpval-aa",

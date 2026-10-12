@@ -2,8 +2,8 @@ import type { Model } from "./types";
 
 /**
  * Curated static dataset for LLMcompare.
- * Prices: official primary-provider API rates ($/1M tokens) as of ~2026-09-29.
- * Benchmarks: public leaderboards / model cards / system cards as of ~2026-09-29;
+ * Prices and model metadata are selectively refreshed from primary provider docs.
+ * Benchmark values and evaluation dates are tracked in the evidence manifests;
  * omitted when unverifiable. Scores marked as estimated are omitted rather than guessed.
  */
 export const models: Model[] = [
@@ -23,7 +23,11 @@ export const models: Model[] = [
     fast: {
       pricing: { provider: "OpenAI", inputPer1M: 20, outputPer1M: 100 },
     },
+    ultrafast: {
+      pricing: { provider: "OpenAI", inputPer1M: 60, outputPer1M: 300 },
+    },
     benchmarks: {
+      "epoch-automation-reports": 65,
       "gpqa-diamond": 96.1,
       deepswe: 74.1,
       "terminal-bench-science": 64.6,
@@ -51,7 +55,7 @@ export const models: Model[] = [
       announcement: "https://openai.com/index/gpt-6-astra/",
     },
     summary:
-      "OpenAI's September 2026 flagship, the first model OpenAI designates as reaching the Preparedness Framework's Critical cybersecurity capability threshold; rolling out first to Daybreak-program enterprises before wider ChatGPT/API/AWS availability. Standard API pricing is $10/$50 per 1M tokens (input/output), with a Fast mode at $20/$100.",
+      "OpenAI's September 2026 flagship, the first model OpenAI designates as reaching the Preparedness Framework's Critical cybersecurity capability threshold. Standard API pricing is $10/$50 per 1M tokens (input/output), Fast is $20/$100, and Ultrafast is $60/$300 for prompts up to 272K input tokens; longer prompts use a higher rate. OpenAI does not publish a fixed Ultrafast tokens-per-second figure.",
   },
   {
     slug: "gpt-6-1-sol",
@@ -65,6 +69,9 @@ export const models: Model[] = [
     maxOutput: 128_000,
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 2, outputPer1M: 10 },
+    ultrafast: {
+      pricing: { provider: "OpenAI", inputPer1M: 12, outputPer1M: 60 },
+    },
     benchmarks: {
       "aa-intelligence-index-v4-3-2": 52,
       deepswe: 75.2,
@@ -77,7 +84,7 @@ export const models: Model[] = [
       announcement: "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-and-edu-release-notes",
     },
     summary:
-      "OpenAI's September 2026 GPT-6 Sol update for agentic coding, computer use, and professional work. It retains $2/$10 per 1M input/output tokens, a 1.05M context window, and 128K output limit; Artificial Analysis measured 52 on Intelligence Index v4.3.2 at max effort.",
+      "OpenAI's September 2026 GPT-6 Sol update for agentic coding, computer use, and professional work. It retains $2/$10 per 1M standard input/output tokens, with Ultrafast available at $12/$60 for prompts up to 272K input tokens; longer prompts use a higher rate. It has a 1.05M context window and 128K output limit; Artificial Analysis measured 52 on Intelligence Index v4.3.2 at max effort.",
   },
   {
     slug: "gpt-6-sol",
@@ -745,6 +752,7 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 10, outputPer1M: 50 },
     benchmarks: {
+      "epoch-automation-reports": 65,
       "lmarena-elo": 1498.5,
       "terminal-bench-science": 52.6,
       "terminal-bench-4": 57.9,
@@ -1085,6 +1093,30 @@ export const models: Model[] = [
       "Prior Sonnet generation with strong coding and long-context support before Sonnet 5.",
   },
   {
+    slug: "claude-haiku-5-5",
+    name: "Claude Haiku 5.5",
+    organization: "Anthropic",
+    releaseDate: "2026-10-07",
+    knowledgeCutoff: "2026-06",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 1_000_000,
+    maxOutput: 128_000,
+    modalities: { input: ["text", "image"], output: ["text"] },
+    pricing: { provider: "Anthropic", inputPer1M: 0.1, outputPer1M: 0.5 },
+    benchmarks: {
+      "aa-intelligence-index-v4-3-2": 43,
+      hle: 45.9,
+      chartography: 46.4,
+    },
+    links: {
+      docs: "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+      announcement: "https://www.anthropic.com/claude-haiku-5-5",
+    },
+    summary:
+      "Anthropic's fast, high-volume Claude tier. Pricing is $0.10/$0.50 per million input/output tokens up to 100K prompt length and $0.50/$2.50 above 100K.",
+  },
+  {
     slug: "claude-haiku-4-5",
     name: "Claude Haiku 4.5",
     organization: "Anthropic",
@@ -1264,6 +1296,28 @@ export const models: Model[] = [
       "Newest Flash model powering the free Gemini app - cheaper output tokens and strong price/performance.",
   },
   {
+    slug: "gemini-4-argon",
+    name: "Gemini 4 Argon",
+    organization: "Google",
+    releaseDate: "2026-09-30",
+    openSource: false,
+    license: "Proprietary",
+    contextWindow: 1_000_000,
+    maxOutput: 1_000_000,
+    modalities: { input: ["text", "image"], output: ["text"] },
+    pricing: { provider: "Google", inputPer1M: 2, outputPer1M: 10 },
+    benchmarks: {
+      deepswe: 77.9,
+      "automation-bench": 51.3,
+    },
+    links: {
+      announcement:
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+    },
+    summary:
+      "Google's September 2026 frontier model, currently rolling out to trusted cyber defenders before wider access. It supports text and image input, a 1M-token context and output limit, and introductory API rates of $2/$10 per 1M input/output tokens; Google says $4/$20 rates apply after the introductory period.",
+  },
+  {
     slug: "gemini-3-8-flash",
     name: "Gemini 3.8 Flash",
     organization: "Google",
@@ -1276,6 +1330,7 @@ export const models: Model[] = [
     modalities: { input: ["text", "image", "audio", "video"], output: ["text"] },
     pricing: { provider: "Google", inputPer1M: 0.75, outputPer1M: 3.75 },
     benchmarks: {
+      "epoch-automation-reports": 42,
       "lmarena-elo": 1493,
       "webdev-arena": 1567,
       cursorbench: 69.2,
@@ -1683,6 +1738,7 @@ export const models: Model[] = [
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "xAI", inputPer1M: 2, outputPer1M: 6 },
     benchmarks: {
+      "epoch-automation-reports": 59,
       "terminal-bench-science": 7.1,
       "gdpval-aa": 1755,
       cursorbench: 70.8,
@@ -2613,6 +2669,7 @@ export const models: Model[] = [
     pricing: { provider: "Alibaba Cloud", inputPer1M: 2.0, outputPer1M: 6.0 },
     speed: { tokensPerSec: 86, ttftSeconds: 0.4 },
     benchmarks: {
+      "epoch-automation-reports": 53,
       "gdpval-aa": 1721,
       "gpqa-diamond": 92.8,
       hle: 43.1,
@@ -3068,6 +3125,26 @@ export const models: Model[] = [
 
   // ─── Mistral ──────────────────────────────────────────────
   {
+    slug: "mistral-large-4",
+    name: "Mistral Large 4",
+    organization: "Mistral",
+    releaseDate: "2026-10-06",
+    openSource: false,
+    parameters: { total: 1_050, active: 52 },
+    contextWindow: 1_000_000,
+    modalities: { input: ["text", "image"], output: ["text"] },
+    pricing: { provider: "Mistral", inputPer1M: 1.36, outputPer1M: 4.18 },
+    benchmarks: {
+      "aa-intelligence-index-v4-3-2": 38,
+    },
+    links: {
+      docs: "https://docs.mistral.ai/models/mistral-large/",
+      announcement: "https://mistral.ai/news/mistral-large-4/",
+    },
+    summary:
+      "Mistral's public preview of its open-weight multimodal Large model, available through its API while weights remain unreleased. It has 1.05T total and 52B active parameters and a 1M context window. List API pricing is $1.36/$4.18 per million input/output tokens; the current docs also show a sale price of $0.68/$2.09. Mistral says weights are planned for release later in October.",
+  },
+  {
     slug: "mistral-large-3",
     name: "Mistral Large 3",
     organization: "Mistral",
@@ -3489,6 +3566,7 @@ export const models: Model[] = [
       speed: { tokensPerSec: 95, ttftSeconds: 0.35 },
     },
     benchmarks: {
+      "epoch-automation-reports": 52,
       "terminal-bench-science": 7.1,
       "toolathlon-verified": 76.5,
       "gdpval-aa": 1668,
@@ -9200,6 +9278,22 @@ export const models: Model[] = [
     },
     summary:
       "Shanghai AI Laboratory's open-weight agentic MoE (744B total, MIT license, 256K context), built on a GLM-5.2 base and trained by the cross-institutional ATRIA initiative (with Fudan NLP Lab) for long-horizon research and engineering workflows: problem analysis, tool use, code, experiments, and failure recovery. Benchmark scores are from the model's own technical report and have not yet been independently verified by a third-party evaluator.",
+  },
+  {
+    slug: "beam",
+    name: "Beam",
+    organization: "Reflection AI",
+    releaseDate: "2026-10-05",
+    openSource: false,
+    parameters: { total: 501, active: 23 },
+    contextWindow: 1_000_000,
+    modalities: { input: ["text"], output: ["text"] },
+    benchmarks: {},
+    links: {
+      announcement: "https://reflection.ai/blog/introducing-beam",
+    },
+    summary:
+      "Reflection AI's text-only 501B-parameter MoE with 23B active parameters, announced for coding, reasoning, and agentic workloads. As of 2026-10-12, access is limited to an early-access waitlist and weights are not yet public; Reflection says Apache 2.0 weights are planned for later in October. Its announcement publishes benchmark values without enough configuration detail to retain them under this catalog's provenance rules.",
   },
   {
     slug: "ling-3-0-flash-fin",

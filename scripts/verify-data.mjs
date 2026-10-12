@@ -2,7 +2,7 @@ import fs from "node:fs";
 import { execFileSync } from "node:child_process";
 import { load } from "./update-benchmarks/load.mjs";
 
-const asOf = "2026-09-29";
+const asOf = "2026-10-12";
 
 const models = load("src/data/models.ts", "models");
 const imageModels = load("src/data/image-models.ts", "imageModels");
@@ -72,6 +72,7 @@ const expectedBenchmarkIds = new Set([
   "aa-briefcase-v1-1",
   "chartography",
   "chartography-with-tools",
+  "epoch-automation-reports",
 ]);
 
 try {
@@ -85,7 +86,7 @@ try {
   check(false, `benchmark evidence ledger is not reproducible: ${detail}`);
 }
 
-check(benchmarkIds.size === 49, `expected 49 benchmark IDs, found ${benchmarkIds.size}`);
+check(benchmarkIds.size === 50, `expected 50 benchmark IDs, found ${benchmarkIds.size}`);
 check(
   benchmarkIds.size === Object.keys(benchmarkCatalog).length,
   "benchmark metadata and benchmark ID exports disagree"
@@ -93,7 +94,7 @@ check(
 check(
   benchmarkIds.size === expectedBenchmarkIds.size &&
     [...benchmarkIds].every((id) => expectedBenchmarkIds.has(id)),
-  "benchmark IDs changed outside the audited 49-field scope"
+  "benchmark IDs changed outside the audited 50-field scope"
 );
 check(evidenceLedger.asOf === asOf, `evidence ledger is not dated ${asOf}`);
 check(
@@ -109,7 +110,7 @@ check(
   "evidence ledger must include every model, including intentional empty records"
 );
 
-check(models.length === 318, `expected 318 models, found ${models.length}`);
+check(models.length === 322, `expected 322 models, found ${models.length}`);
 check(new Set(models.map((model) => model.slug)).size === models.length, "duplicate model slug");
 const expectedEmptyBenchmarkModels = new Set(emptyBenchmarkManifest.slugs);
 check(
@@ -315,7 +316,7 @@ const scoreCount = models.reduce(
   (total, model) => total + Object.keys(model.benchmarks).length,
   0
 );
-check(scoreCount === 2668, `expected 2668 audited benchmark cells, found ${scoreCount}`);
+check(scoreCount === 2680, `expected 2680 audited benchmark cells, found ${scoreCount}`);
 
 const imageBenchmarkIds = new Set(["image-arena-elo"]);
 const videoBenchmarkIds = new Set(["video-arena-elo"]);
