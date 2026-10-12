@@ -2,8 +2,8 @@ import type { Model } from "./types";
 
 /**
  * Curated static dataset for LLMcompare.
- * Prices: official primary-provider API rates ($/1M tokens) as of ~2026-09-29.
- * Benchmarks: public leaderboards / model cards / system cards as of ~2026-09-29;
+ * Prices and model metadata are selectively refreshed from primary provider docs.
+ * Benchmark values and evaluation dates are tracked in the evidence manifests;
  * omitted when unverifiable. Scores marked as estimated are omitted rather than guessed.
  */
 export const models: Model[] = [
@@ -22,6 +22,9 @@ export const models: Model[] = [
     pricing: { provider: "OpenAI", inputPer1M: 10, outputPer1M: 50 },
     fast: {
       pricing: { provider: "OpenAI", inputPer1M: 20, outputPer1M: 100 },
+    },
+    ultrafast: {
+      pricing: { provider: "OpenAI", inputPer1M: 60, outputPer1M: 300 },
     },
     benchmarks: {
       "epoch-automation-reports": 65,
@@ -52,7 +55,7 @@ export const models: Model[] = [
       announcement: "https://openai.com/index/gpt-6-astra/",
     },
     summary:
-      "OpenAI's September 2026 flagship, the first model OpenAI designates as reaching the Preparedness Framework's Critical cybersecurity capability threshold; rolling out first to Daybreak-program enterprises before wider ChatGPT/API/AWS availability. Standard API pricing is $10/$50 per 1M tokens (input/output), with a Fast mode at $20/$100.",
+      "OpenAI's September 2026 flagship, the first model OpenAI designates as reaching the Preparedness Framework's Critical cybersecurity capability threshold. Standard API pricing is $10/$50 per 1M tokens (input/output), Fast is $20/$100, and Ultrafast is $60/$300 for prompts up to 272K input tokens; longer prompts use a higher rate. OpenAI does not publish a fixed Ultrafast tokens-per-second figure.",
   },
   {
     slug: "gpt-6-1-sol",
@@ -66,6 +69,9 @@ export const models: Model[] = [
     maxOutput: 128_000,
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "OpenAI", inputPer1M: 2, outputPer1M: 10 },
+    ultrafast: {
+      pricing: { provider: "OpenAI", inputPer1M: 12, outputPer1M: 60 },
+    },
     benchmarks: {
       "aa-intelligence-index-v4-3-2": 52,
       deepswe: 75.2,
@@ -78,7 +84,7 @@ export const models: Model[] = [
       announcement: "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-and-edu-release-notes",
     },
     summary:
-      "OpenAI's September 2026 GPT-6 Sol update for agentic coding, computer use, and professional work. It retains $2/$10 per 1M input/output tokens, a 1.05M context window, and 128K output limit; Artificial Analysis measured 52 on Intelligence Index v4.3.2 at max effort.",
+      "OpenAI's September 2026 GPT-6 Sol update for agentic coding, computer use, and professional work. It retains $2/$10 per 1M standard input/output tokens, with Ultrafast available at $12/$60 for prompts up to 272K input tokens; longer prompts use a higher rate. It has a 1.05M context window and 128K output limit; Artificial Analysis measured 52 on Intelligence Index v4.3.2 at max effort.",
   },
   {
     slug: "gpt-6-sol",
@@ -1098,7 +1104,11 @@ export const models: Model[] = [
     maxOutput: 128_000,
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Anthropic", inputPer1M: 0.1, outputPer1M: 0.5 },
-    benchmarks: {},
+    benchmarks: {
+      "aa-intelligence-index-v4-3-2": 43,
+      hle: 45.9,
+      chartography: 46.4,
+    },
     links: {
       docs: "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
       announcement: "https://www.anthropic.com/claude-haiku-5-5",
@@ -3120,17 +3130,19 @@ export const models: Model[] = [
     organization: "Mistral",
     releaseDate: "2026-10-06",
     openSource: false,
-    license: "Proprietary",
+    parameters: { total: 1_050, active: 52 },
     contextWindow: 1_000_000,
     modalities: { input: ["text", "image"], output: ["text"] },
     pricing: { provider: "Mistral", inputPer1M: 1.36, outputPer1M: 4.18 },
-    benchmarks: {},
+    benchmarks: {
+      "aa-intelligence-index-v4-3-2": 38,
+    },
     links: {
       docs: "https://docs.mistral.ai/models/mistral-large/",
       announcement: "https://mistral.ai/news/mistral-large-4/",
     },
     summary:
-      "Mistral's public preview of its new multimodal Large model. API pricing lists $1.36/$4.18 per million input/output tokens; Mistral says model weights are planned for release later in October.",
+      "Mistral's public preview of its open-weight multimodal Large model, available through its API while weights remain unreleased. It has 1.05T total and 52B active parameters and a 1M context window. List API pricing is $1.36/$4.18 per million input/output tokens; the current docs also show a sale price of $0.68/$2.09. Mistral says weights are planned for release later in October.",
   },
   {
     slug: "mistral-large-3",
@@ -9266,6 +9278,22 @@ export const models: Model[] = [
     },
     summary:
       "Shanghai AI Laboratory's open-weight agentic MoE (744B total, MIT license, 256K context), built on a GLM-5.2 base and trained by the cross-institutional ATRIA initiative (with Fudan NLP Lab) for long-horizon research and engineering workflows: problem analysis, tool use, code, experiments, and failure recovery. Benchmark scores are from the model's own technical report and have not yet been independently verified by a third-party evaluator.",
+  },
+  {
+    slug: "beam",
+    name: "Beam",
+    organization: "Reflection AI",
+    releaseDate: "2026-10-05",
+    openSource: false,
+    parameters: { total: 501, active: 23 },
+    contextWindow: 1_000_000,
+    modalities: { input: ["text"], output: ["text"] },
+    benchmarks: {},
+    links: {
+      announcement: "https://reflection.ai/blog/introducing-beam",
+    },
+    summary:
+      "Reflection AI's text-only 501B-parameter MoE with 23B active parameters, announced for coding, reasoning, and agentic workloads. As of 2026-10-12, access is limited to an early-access waitlist and weights are not yet public; Reflection says Apache 2.0 weights are planned for later in October. Its announcement publishes benchmark values without enough configuration detail to retain them under this catalog's provenance rules.",
   },
   {
     slug: "ling-3-0-flash-fin",

@@ -3261,6 +3261,14 @@
     "gemini-4-argon": {
       "deepswe": 77.9,
       "automation-bench": 51.3
+    },
+    "claude-haiku-5-5": {
+      "aa-intelligence-index-v4-3-2": 43,
+      "hle": 45.9,
+      "chartography": 46.4
+    },
+    "mistral-large-4": {
+      "aa-intelligence-index-v4-3-2": 38
     }
   },
   "gpt-6-1-sol": {

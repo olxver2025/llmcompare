@@ -3210,7 +3210,29 @@
         "evaluationDate": "2026-09-17"
       }
     },
-    "claude-haiku-5-5": {},
+    "claude-haiku-5-5": {
+      "aa-intelligence-index-v4-3-2": {
+        "value": 43,
+        "sourceUrl": "https://artificialanalysis.ai/models/releases/claude-haiku-5-5",
+        "checkedOn": "2026-09-21",
+        "protocol": "Artificial Analysis Intelligence Index v4.3.2 result published 2026-10-07; Claude Haiku 5.5 (Max), with default fallback, as identified in the release comparison. Composite index score.",
+        "evaluationDate": "2026-10-07"
+      },
+      "hle": {
+        "value": 45.9,
+        "sourceUrl": "https://www.anthropic.com/claude-haiku-5-5",
+        "checkedOn": "2026-09-21",
+        "protocol": "Anthropic launch comparison table published 2026-10-07; Humanity’s Last Exam, no tools, score reported for Claude Haiku 5.5. Prompt and sampling details are not stated in the table.",
+        "evaluationDate": "2026-10-07"
+      },
+      "chartography": {
+        "value": 46.4,
+        "sourceUrl": "https://www.anthropic.com/claude-haiku-5-5",
+        "checkedOn": "2026-09-21",
+        "protocol": "Anthropic launch comparison table published 2026-10-07; Chartography, no tools, score reported for Claude Haiku 5.5. Prompt and sampling details are not stated in the table.",
+        "evaluationDate": "2026-10-07"
+      }
+    },
     "claude-haiku-4-5": {
       "swe-bench-pro": {
         "value": 39.45,
@@ -8282,7 +8304,15 @@
         "evaluationDate": "2026-09-17"
       }
     },
-    "mistral-large-4": {},
+    "mistral-large-4": {
+      "aa-intelligence-index-v4-3-2": {
+        "value": 38,
+        "sourceUrl": "https://artificialanalysis.ai/models/mistral-large-4",
+        "checkedOn": "2026-09-21",
+        "protocol": "Artificial Analysis Intelligence Index v4.3.2 result published 2026-10-06 for Mistral Large 4 Preview; the release page lists a single model variant and no separate reasoning-effort setting.",
+        "evaluationDate": "2026-10-06"
+      }
+    },
     "mistral-large-3": {
       "lmarena-elo": {
         "value": 1413,
@@ -19055,6 +19085,7 @@
         "evaluationDate": "2026-09-11"
       }
     },
+    "beam": {},
     "ling-3-0-flash-fin": {},
     "inkling": {
       "toolathlon-verified": {
